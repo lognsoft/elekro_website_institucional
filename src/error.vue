@@ -1,3 +1,5 @@
 <template>
-    <main>Página não encontrada</main>
+    <NuxtLayout>
+        <main>Página não encontrada</main>
+    </NuxtLayout>
 </template>

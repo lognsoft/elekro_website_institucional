@@ -31,8 +31,4 @@ useHead({
     body{
         font-family: 'Source Sans 3', sans-serif;
     }
-
-    .section-title{
-        @apply text-5xl font-bold mb-5
-    }
 </style>
