@@ -20,7 +20,7 @@
                     <div class="px-8 lg:p-8 flex items-center">
                         <div class="">
                             <h2 class="text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
-                            <LinkOne class="text-slate-500" endereco="/">Lorem Ipsum</LinkOne>
+                            <LinkOne class="text-slate-500 hover:text-amber-500" endereco="/">Lorem Ipsum</LinkOne>
                         </div>
                     </div>
                 </div>

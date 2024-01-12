@@ -7,17 +7,21 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "clean": "nuxt clean"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.10.4",
-    "nuxt": "^3.9.0",
+    "nuxt": "^3.9.1",
+    "nuxt-icon": "^0.6.8",
     "vue": "^3.4.6",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.5",
+    "@nuxtjs/tailwindcss": "^6.10.4",
     "@pinia/nuxt": "^0.5.1",
-    "nuxt-icon": "^0.6.8",
     "pinia": "^2.1.7"
   }
 }
