@@ -25,17 +25,21 @@
 </template>
 
 <script setup lang="ts">
-const navigateOpen = ref<bool>(false);
-const scrollTopPage = ref<number>()
+const navigateOpen = ref<boolean>(false);
+const scrollTopPage = ref<number>(0);
+const janela:Window = window as Window;
 
 onMounted(() => {
-    window.addEventListener("scroll", scrollingHeaderColor);
-    scrollTopPage.value = window.document.scrollingElement.scrollTop;
-})
+    janela.addEventListener("scroll", scrollingHeaderColor);
+    let newValue:number = janela.document.scrollingElement?.scrollTop as number;
+    scrollTopPage.value = newValue;
+});
 
-const scrollingHeaderColor = (e) => {
-    scrollTopPage.value = e.target.scrollingElement.scrollTop;
-}
+const scrollingHeaderColor = (e:Event) => {
+    const elementTarget:Document = e.target as Document;
+    let newValue:number = elementTarget.scrollingElement?.scrollTop as number;
+    scrollTopPage.value = newValue;
+};
 
 const openNavigate = () => {
     navigateOpen.value = !navigateOpen.value;
@@ -55,6 +59,10 @@ const openNavigate = () => {
 
     .navigate-list .router-link-active{
         @apply text-slate-400
+    }
+
+    .header{
+        z-index: 1000;
     }
 
     .navigate{
