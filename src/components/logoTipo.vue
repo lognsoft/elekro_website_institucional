@@ -1,8 +1,6 @@
 <template>
     <NuxtLink class="flex items-center gap-2" to="/">
-        <!-- <ClientOnly>
-            <IconCSS name="ic:round-headset"/>
-        </ClientOnly> -->
+        <MyIcon icon="ic:round-headset"/>
         Elekro
     </NuxtLink>
 </template>

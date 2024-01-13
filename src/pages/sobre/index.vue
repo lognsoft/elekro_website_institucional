@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-span-4 lg:col-span-3">
                     <p class="text-xl text-white mb-6">
-                        <span class="quote"><IconCSS name="bi:quote"/></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod fugiat accusantium voluptatibus dolorum ipsa sint,
+                        <span class="quote"><MyIcon icon="bi:quote"/></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod fugiat accusantium voluptatibus dolorum ipsa sint,
                         voluptas voluptates aliquid distinctio quisquam deleniti exercitationem nobis assumenda, similique quasi in soluta qui?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod fugiat accusantium voluptatibus dolorum ipsa sint,
                         voluptas voluptates aliquid distinctio quisquam deleniti exercitationem nobis assumenda, similique quasi in soluta qui?
@@ -41,16 +41,44 @@
                 </div>
             </div>
         </section>
-        <section class="py-9">
-            <div class="container mx-auto w-full px-2"></div>
+        <section class="py-11">
+            <div class="container mx-auto w-full px-2">
+                <h3 class="text-center text-gray-400 font-bold mb-6">Lorem Ipsum</h3>
+                <TitleSection class="text-center mb-11">Lorem Ipsum</TitleSection>
+                <div class="grid gap-8 md:gap-4 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 text-center">
+                    <div v-for="content of array" :key="content.title">
+                        <h3 class="font-extrabold text-4xl mb-9">{{ content.title }}</h3>
+                        <h2 class="font-bold text-amber-600 tracking-widest">{{ content.text }}</h2>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useSeoMeta({
     title: "About"
 })
+
+const array:Array<{title:string, text:string}> = [
+    {
+        title: "Lorem Ipsum 1",
+        text: "lorem"
+    },
+    {
+        title: "Lorem Ipsum 2",
+        text: "lorem"
+    },
+    {
+        title: "Lorem Ipsum 3",
+        text: "lorem"
+    },
+    {
+        title: "Lorem Ipsum 4",
+        text: "lorem"
+    }
+]
 </script>
 
 <style scoped>

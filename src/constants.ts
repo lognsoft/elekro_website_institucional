@@ -5,9 +5,18 @@ export const rotas:IRouter[] = [
     {
         path: "/",
         pathName: "Home",
-    },{
+    },
+    {
         path: "/sobre",
         pathName: "Sobre",
+    },
+    {
+        path: "/contato",
+        pathName: "Contato",
+    },
+    {
+        path: "/shop",
+        pathName: "Loja",
     }
 ];
 

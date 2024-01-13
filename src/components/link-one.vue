@@ -3,7 +3,7 @@
         <span>
             <slot/>
         </span>
-        <IconCSS name="ic:baseline-play-arrow"/>
+        <MyIcon icon="ic:baseline-play-arrow"/>
     </NuxtLink>
 </template>
 

@@ -7,7 +7,7 @@
                 </div>
                 <div class="font-bold cursor-pointer text-xl flex justify-center gap-2 items-center" @click="openNavigate">
                     <span>Menu</span>
-                    <IconCSS class="text-2xl" name="fa6-solid:bars"/>
+                    <MyIcon class="text-2xl" icon="fa6-solid:bars"/>
                 </div>
             </nav>
         </div>
@@ -15,17 +15,17 @@
             <div class="navigate" :class="{ active:navigateOpen }">
                 <div class="container mx-auto px-2 py-5">
                     <ul class="navigate-list leading-5">
-                        <li class="text-end font-bold text-sm text-amber-500">
-                            <a class="flex items-center gap-1" href="javascript:void(0)">
+                        <li @click="openFormSearch" class="font-extrabold text-2xl md:text-4xl text-end cursor-pointer">
+                            <IconCSS name="ic:outline-search"/>
+                        </li>
+                        <li class="font-bold text-sm text-amber-600 my-4">
+                            <a class="flex justify-end items-center gap-1" href="javascript:void(0)">
                                 <IconCSS name="ic-round-phone"/>
                                 TEL: (00) 00000-0000
                             </a>
                         </li>
-                        <li @click="openFormSearch" class="font-extrabold text-2xl md:text-4xl text-end cursor-pointer my-4">
-                            <IconCSS name="ic:outline-search"/>
-                        </li>
                         <template v-for="rota of rotas" :key="rota.path">
-                            <li @click="openNavigate" class="font-extrabold text-2xl md:text-4xl text-end"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                            <li @click="openNavigate" class="font-extrabold text-2xl md:text-4xl text-end mb-3"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
                         </template>
                     </ul>
                 </div>
@@ -77,7 +77,7 @@ const openFormSearch = () => {
     }
 
     .navigate-list .router-link-active{
-        @apply text-slate-400
+        @apply text-amber-600
     }
 
     

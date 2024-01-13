@@ -17,9 +17,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/vue-fontawesome": "^3.0.5",
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@pinia/nuxt": "^0.5.1",
     "pinia": "^2.1.7"
