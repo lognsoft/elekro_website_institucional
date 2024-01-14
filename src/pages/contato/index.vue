@@ -25,17 +25,17 @@
                             <input class="input-contact" type="text" name="email" id="input-email" placeholder="E-mail"/>
                         </div>
                     </div>
-                    <div class="wrapper-form-container">
+                    <div class="wrapper-form-container-t">
                         <label for="input-message" class="label">mensagem</label>
                         <div class="container-input">
                             <!-- <input class="input-contact" type="text" name="nome" placeholder="Nome"/> -->
                             <textarea class="input-contact resize-y min-h-60" name="mensagem" id="input-message" placeholder="Mensagem"></textarea>
                         </div>
                     </div>
-                    <div class="wrapper-form-container">
+                    <div class="wrapper-form-container-t">
                         <div class="label"></div>
-                        <div class="container-input">
-                            <MyButton class="m-0" tipo="submit" :reverse="false">Enviar</MyButton>
+                        <div class="container-input text-center md:text-start">
+                            <MyButton class="my-0 mx-0" tipo="submit" :reverse="false">Enviar</MyButton>
                         </div>
                     </div>
                     
@@ -72,6 +72,9 @@ const submitContact = () => {
 <style scoped>
 .wrapper-form-container{
     @apply grid grid-cols-7 items-start mb-11
+}
+.wrapper-form-container-t{
+    @apply grid grid-cols-7 items-start mb-3
 }
 
 .input-contact{

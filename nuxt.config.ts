@@ -12,4 +12,17 @@ export default defineNuxtConfig({
     viewer: true,
   },
   ssr: true,
+  nitro: {
+    prerender:{
+      routes: [
+        "/",
+        "/sobre",
+        "/contato",
+        "/produtos"
+      ],
+      ignore:[
+        "/produtos/:id"
+      ]
+    }
+  }
 })

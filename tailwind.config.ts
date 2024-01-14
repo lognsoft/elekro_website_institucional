@@ -2,8 +2,8 @@
 module.exports = {
     theme: {
         extends:{
-            aspectRatio:{
-                '1/1': '1 / 1'
+            backgroundImage: {
+                'product-bg': "url(\"https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp\")"
             }
         }
     },

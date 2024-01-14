@@ -15,8 +15,14 @@
             <div class="navigate" :class="{ active:navigateOpen }">
                 <div class="container mx-auto px-2 py-5">
                     <ul class="navigate-list leading-5">
-                        <li @click="openFormSearch" class="font-extrabold text-2xl md:text-4xl text-end cursor-pointer">
-                            <IconCSS name="ic:outline-search"/>
+                        <li>
+                            <ul class="flex items-center justify-end text-xl gap-3">
+                                <li class="hover:text-amber-600 duration-100" v-for="rede of midiasSociais" :key="rede.title" @click="openNavigate" v-if="midiasSociais.length > 0">
+                                    <a :href="rede.href">
+                                        <Icon :name="rede.icon"/>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="font-bold text-sm text-amber-600 my-4">
                             <a class="flex justify-end items-center gap-1" href="javascript:void(0)">
@@ -30,15 +36,13 @@
                     </ul>
                 </div>
             </div>
-            <FormSearch :visible="searchOpen" @invisible="openFormSearch"/>
         </ClientOnly>
     </header>
 </template>
 
 <script setup lang="ts">
-import { rotas } from '~/constants';
+import { rotas, midiasSociais } from '~/constants';
 
-const searchOpen = ref<boolean>(false)
 const navigateOpen = ref<boolean>(false);
 const scrollTopPage = ref<number>(0);
 const janela:Window = window as Window;
@@ -58,10 +62,6 @@ const scrollingHeaderColor = (e:Event) => {
 const openNavigate = () => {
     navigateOpen.value = !navigateOpen.value;
 };
-const openFormSearch = () => {
-    if(navigateOpen.value) openNavigate();
-    searchOpen.value = !searchOpen.value;
-}
 </script>
 
 <style scoped>

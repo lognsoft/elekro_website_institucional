@@ -5,9 +5,9 @@
         <!-- </ClientOnly> -->
         <!-- destaque -->
         <section id="emphasis">
-            <div class="container w-full max-w-screen-2xl mx-auto py-11 px-2">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="px-8 pb-8 lg:p-8 flex justify-center items-center">
+            <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="mb-4 lg:mb-0 flex justify-center items-center">
                         <img
                             src="https://t.ctcdn.com.br/MAMFrOpUc8jcTCPpiuyAXubD3YM=/640x360/smart/i10363.png" 
                             alt="imagem"
@@ -17,9 +17,9 @@
                             class="bg-gray-200 fluid-image"
                         />
                     </div>
-                    <div class="px-8 lg:p-8 flex items-center">
+                    <div class="flex items-center">
                         <div class="">
-                            <h2 class="text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
+                            <h2 class="text-5xl md:text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
                             <LinkOne class="text-slate-500 hover:text-amber-600" endereco="/">Lorem Ipsum</LinkOne>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
             <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
                 <TitleSection>Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto">
-                    <div class="bg-gray-200 aspect-[1/1]">
+                    <div class="bg-gray-200 aspect-square">
                         <img
                             class="w-auto h-full object-cover"
                             src="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
@@ -42,13 +42,13 @@
                             height="500"
                         />
                     </div>
-                    <div class="p-8 bg-slate-500 aspect-[1/1] flex items-center">
+                    <div class="p-8 bg-slate-500 aspect-square flex items-center">
                         <div class="w-full text-center text-white">
                             <h3 class="text-5xl font-extrabold mb-9">Lorem Ipsum</h3>
                             <LinkOne class="justify-center" endereco="/">lorem ipsum</LinkOne>
                         </div>
                     </div>
-                    <div class="bg-gray-200 aspect-[1/1]">
+                    <div class="bg-gray-200 aspect-square">
                         <img
                             class="w-auto h-full object-cover"
                             src="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
@@ -58,7 +58,7 @@
                             height="500"
                         />
                     </div>
-                    <div class="bg-gray-200 aspect-[1/1]">
+                    <div class="bg-gray-200 aspect-square">
                         <img
                             class="w-auto h-full object-cover"
                             src="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
@@ -135,20 +135,11 @@
 </template>
 
 <style scoped>
-    .bg-image{
-        background-image: url("https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;    
+    .bg-image::before{
+        @apply absolute w-full h-full top-0 left-0 opacity-40 bg-black
     }
-    .bg-image::after{
+    .bg-image:before{
         content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
 
@@ -158,7 +149,7 @@
     }
 
     .bg-image{
-        @apply container w-11/12 mx-auto py-11 px-2
+        @apply container bg-center bg-no-repeat relative w-11/12 mx-auto py-11 px-2 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
     }
 
     .container-text{
