@@ -1,8 +1,8 @@
 <template>
     <main>
-        <!-- <ClientOnly> -->
-            <Slider/>
-        <!-- </ClientOnly> -->
+        <ClientOnly>
+            <Slide/>
+        </ClientOnly>
         <!-- destaque -->
         <section id="emphasis">
             <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
@@ -30,7 +30,7 @@
         <!-- features -->
         <section id="features">
             <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
-                <TitleSection>Lorem Ipsum</TitleSection>
+                <TitleSection class="text-start lg:text-center">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto">
                     <div class="bg-gray-200 aspect-square">
                         <img

@@ -1,9 +1,12 @@
 <template>
     <main>
+        <Banner>
+            Produto
+        </Banner>
         <section class="py-11">
             <div class="container w-12/12 md:w-11/12 mx-auto py-11 px-2">
                 <h3 class="text-center text-gray-400 font-bold mb-6">Lorem Ipsum</h3>
-                <TitleSection class="text-center mb-11">Lorem Ipsum</TitleSection>
+                <TitleSection class="text-center mb-11 animate__animated animate__fadeInDown">Lorem Ipsum</TitleSection>
                 <figure>
                     <img
                         src="https://conectaja.proteste.org.br/wp-content/uploads/2019/01/iphone-970x472.jpg"

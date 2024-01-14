@@ -1,8 +1,6 @@
 import type IRouter from "./interfaces/IRouter"
 import type ISocialMidia from "./interfaces/ISocialMidia";
-
-//apenas temporario
-import type IProduct from '~/interfaces/IProduct';
+import type ISlide from "./interfaces/ISlide";
 
 export const rotas:IRouter[] = [
     {
@@ -46,55 +44,27 @@ export const midiasSociais:ISocialMidia[] = [
     }
 ]
 
-//temporarios
-export const produtos:IProduct[] = [
+export const slide:ISlide[] = [
     {
-        id:1,
-        slug: "produto-lorem-1",
-        title: "Produto Lorem 1",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex saepe quam commodi voluptatem in assumenda officia recusandae. Fugit tempora aliquam voluptate, iusto voluptatum animi vel asperiores incidunt optio laborum libero?",
-        value: 50.6,
-        image: "https://media.moneytimes.com.br/uploads/2022/03/shutterstock-1863024973.jpg"
+        bg: "bg-[url('https://png.pngtree.com/thumb_back/fw800/background/20230516/pngtree-path-through-the-forest-wallpaper-image_2563082.jpg')]",
+        description: "Lorem Ipsum",
     },
     {
-        id:2,
-        slug: "produto-lorem-2",
-        title: "Produto Lorem 2",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex saepe quam commodi voluptatem in assumenda officia recusandae. Fugit tempora aliquam voluptate, iusto voluptatum animi vel asperiores incidunt optio laborum libero?",
-        value: 50.6,
-        image: "https://media.moneytimes.com.br/uploads/2022/03/shutterstock-1863024973.jpg"
+        bg: "bg-[url('https://i.pinimg.com/736x/cf/4a/e0/cf4ae0329ed839caea7fe5b8b140a3be.jpg')]",
+        description: "Lorem Ipsum",
     },
     {
-        id:3,
-        slug: "produto-lorem-3",
-        title: "Produto Lorem 3",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex saepe quam commodi voluptatem in assumenda officia recusandae. Fugit tempora aliquam voluptate, iusto voluptatum animi vel asperiores incidunt optio laborum libero?",
-        value: 50.6,
-        image: "https://media.moneytimes.com.br/uploads/2022/03/shutterstock-1863024973.jpg"
+        bg: "bg-[url('https://wallpapercave.com/wp/wp3219866.jpg')]",
+        description: "Lorem Ipsum",
     },
     {
-        id:4,
-        slug: "produto-lorem-4",
-        title: "Produto Lorem 4",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex saepe quam commodi voluptatem in assumenda officia recusandae. Fugit tempora aliquam voluptate, iusto voluptatum animi vel asperiores incidunt optio laborum libero?",
-        value: 50.6,
-        image: "https://media.moneytimes.com.br/uploads/2022/03/shutterstock-1863024973.jpg"
+        bg: "bg-[url('https://i.pinimg.com/originals/29/0c/5f/290c5f8f678d2d264590a483acf05673.jpg')]",
+        description: "Lorem Ipsum",
     },
     {
-        id:5,
-        slug: "produto-lorem-5",
-        title: "Produto Lorem 5",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex saepe quam commodi voluptatem in assumenda officia recusandae. Fugit tempora aliquam voluptate, iusto voluptatum animi vel asperiores incidunt optio laborum libero?",
-        value: 50.6,
-        image: "https://media.moneytimes.com.br/uploads/2022/03/shutterstock-1863024973.jpg"
-    },
-    {
-        id:5,
-        slug: "produto-lorem-6",
-        title: "Produto Lorem 6",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex saepe quam commodi voluptatem in assumenda officia recusandae. Fugit tempora aliquam voluptate, iusto voluptatum animi vel asperiores incidunt optio laborum libero?",
-        value: 332.6,
-        image: "https://media.moneytimes.com.br/uploads/2022/03/shutterstock-1863024973.jpg"
+        bg: "bg-[url('https://e0.pxfuel.com/wallpapers/950/811/desktop-wallpaper-o-caminho-atraves-do-floresta-widescreen.jpg')]",
+        description: "Lorem Ipsum",
     }
-];
+    
+]
 

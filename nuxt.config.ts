@@ -4,12 +4,16 @@ export default defineNuxtConfig({
   modules:[
     "@pinia/nuxt",
     "@nuxtjs/tailwindcss",
-    "nuxt-icon"
+    "nuxt-icon",
+    "nuxt-swiper"
   ],
   srcDir: 'src',
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
+  },
+  swiper:{
+    
   },
   ssr: true,
   nitro: {
@@ -24,5 +28,8 @@ export default defineNuxtConfig({
         "/produtos/:id"
       ]
     }
-  }
+  },
+  css:[
+    "animate.css/animate.min.css"
+  ]
 })
