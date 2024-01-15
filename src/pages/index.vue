@@ -1,8 +1,17 @@
 <template>
+    <Head>
+        <Meta name="description" content="lorem ipsum"/>
+        <Meta property="og:description" content="lorem ipsum"/>
+        <Meta property="og:title" content=""/>
+        <Meta property="og:image" content="/images/elekro-banner.jpg"/>
+        <Meta property="og:url" content="https://meuSite.com"/>
+        <Meta name="twitter:title" content="Elekro"/>
+        <Meta name="twitter:description" content="lorem ipsum"/>
+        <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
+        <Meta name="twitter:card" content="summary_large_image"/>
+    </Head>
     <main>
-        <ClientOnly>
-            <Slide/>
-        </ClientOnly>
+        <Slide/>
         <!-- destaque -->
         <section id="emphasis">
             <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
@@ -20,7 +29,7 @@
                     <div class="flex items-center">
                         <div class="">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
-                            <LinkOne class="text-slate-500 hover:text-amber-600" endereco="/">Lorem Ipsum</LinkOne>
+                            <MyLinkTwo class="text-slate-500 hover:text-amber-600 text-2xl" href="/">Lorem Ipsum</MyLinkTwo>
                         </div>
                     </div>
                 </div>
@@ -45,7 +54,7 @@
                     <div class="p-8 bg-slate-500 aspect-square flex items-center">
                         <div class="w-full text-center text-white">
                             <h3 class="text-5xl font-extrabold mb-9">Lorem Ipsum</h3>
-                            <LinkOne class="justify-center" endereco="/">lorem ipsum</LinkOne>
+                            <MyLinkTwo class="justify-center text-2xl" href="/">lorem ipsum</MyLinkTwo>
                         </div>
                     </div>
                     <div class="bg-gray-200 aspect-square">

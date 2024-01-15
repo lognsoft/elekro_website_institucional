@@ -1,5 +1,17 @@
 <template>
     <main>
+        <Head>
+            <Title>Sobre</Title>
+            <Meta name="description" content="lorem ipsum"/>
+            <Meta property="og:description" content="lorem ipsum"/>
+            <Meta property="og:title" content="Elekro - Sobre"/>
+            <Meta property="og:image" content="/images/elekro-banner.jpg"/>
+            <Meta property="og:url" content="https://meuSite.com"/>
+            <Meta name="twitter:title" content="Elekro - Sobre"/>
+            <Meta name="twitter:description" content="lorem ipsum"/>
+            <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
+            <Meta name="twitter:card" content="summary_large_image"/>
+        </Head>
         <Banner>
             Sobre
         </Banner>
@@ -83,7 +95,7 @@ const array:Array<{title:string, text:string}> = [
 
 <style scoped>
 .bg-image{
-    @apply py-9 h-screen
+    @apply py-9 h-screen bg-[url("https://ogimg.infoglobo.com.br/in/5727496-6f1-03e/FT1086A/2012-539074198-20120725102505273rts.jpg_20120730.jpg")] bg-center bg-no-repeat bg-cover bg-fixed
 }
 
 .quote{
@@ -95,10 +107,6 @@ const array:Array<{title:string, text:string}> = [
 }
 .bg-image{
     max-height: 26rem !important;
-    background-image: url("https://ogimg.infoglobo.com.br/in/5727496-6f1-03e/FT1086A/2012-539074198-20120725102505273rts.jpg_20120730.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 @media screen and (min-width: 640px){

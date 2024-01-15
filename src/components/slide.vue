@@ -34,7 +34,32 @@
 </template>
 
 <script setup lang="ts">
-import { slide } from '~/constants';
+import type ISlide from '~/interfaces/ISlide';
+// import { slide } from '~/constants';
+
+const slide:ISlide[] = [
+    {
+        bg: "bg-[url('/assets/images/slide/imagem-1.jpg')]",
+        description: "Lorem Ipsum",
+    },
+    {
+        bg: "bg-[url('/assets/images/slide/imagem-2.jpg')]",
+        description: "Lorem Ipsum",
+    },
+    {
+        bg: "bg-[url('/assets/images/slide/imagem-3.jpg')]",
+        description: "Lorem Ipsum",
+    },
+    {
+        bg: "bg-[url('/assets/images/slide/imagem-4.jpg')]",
+        description: "Lorem Ipsum",
+    },
+    {
+        bg: "bg-[url('/assets/images/slide/imagem-5.jpg')]",
+        description: "Lorem Ipsum",
+    }
+    
+]
 </script>
 
 <style scoped>

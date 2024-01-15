@@ -31,5 +31,5 @@ export default defineNuxtConfig({
   },
   css:[
     "animate.css/animate.min.css"
-  ]
+  ],
 })

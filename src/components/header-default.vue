@@ -13,10 +13,13 @@
         </div>
         <ClientOnly>
             <div class="navigate" :class="{ active:navigateOpen }">
-                <div class="container mx-auto px-2 py-5">
-                    <ul class="navigate-list leading-5">
+                <div class="container h-screen relative flex items-center justify-end mx-auto px-2 py-5">
+                    <button @click="navigateOpen = false" type="button" aria-label="fechar menu" class="cursor-pointer absolute text-black top-4 text-2xl bg-white h-8 w-8 right-1">
+                        <Icon name="ic:baseline-close"/>
+                    </button>
+                    <ul class="navigate-list w-full leading-5">
                         <li>
-                            <ul class="flex items-center justify-end text-xl md:text-3xl gap-3">
+                            <ul class="flex items-center justify-start text-xl md:text-3xl gap-3">
                                 <li class="hover:text-amber-600 duration-100" v-for="rede of midiasSociais" :key="rede.title" @click="openNavigate" v-if="midiasSociais.length > 0">
                                     <a :href="rede.href" :title="rede.title">
                                         <Icon :name="rede.icon"/>
@@ -25,13 +28,13 @@
                             </ul>
                         </li>
                         <li class="font-bold text-sm md:text-base text-amber-600 my-4">
-                            <a class="flex justify-end items-center gap-1" href="javascript:void(0)">
-                                <IconCSS name="ic-round-phone"/>
+                            <a class="flex justify-start items-center gap-1" href="javascript:void(0)">
+                                <IconCSS name="ic:round-phone"/>
                                 TEL: (00) 00000-0000
                             </a>
                         </li>
                         <template v-for="rota of rotas" :key="rota.path">
-                            <li @click="openNavigate" class="font-extrabold text-2xl md:text-4xl lg:text-6xl text-end mb-3"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                            <li @click="openNavigate" class="font-extrabold text-2xl md:text-4xl lg:text-6xl text-start mb-3"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
                         </template>
                     </ul>
                 </div>
@@ -73,7 +76,7 @@ const openNavigate = () => {
         @apply w-screen fixed text-slate-50 duration-300
     }
     .navigate{
-        @apply absolute w-screen bg-black duration-300
+        @apply absolute w-screen bg-black duration-700
     }
 
     .navigate-list .router-link-active{
@@ -88,12 +91,14 @@ const openNavigate = () => {
     }
 
     .navigate{
-        top: 100%;
-        height: 0;
+        top: 0;
+        left: -100%;
         overflow: hidden;
+        opacity: 0;
     }
 
     .navigate.active{
-        height: 550px
+        left: 0;
+        opacity: 1;
     }
 </style>~/app/constants
