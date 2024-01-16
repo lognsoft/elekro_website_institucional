@@ -16,11 +16,12 @@
             Produtos
         </Banner>
         <section class="py-11">
-            <div class="container mx-auto py-11 px-2">
+            <div class="w-full mx-auto py-11 px-5">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <NuxtLink v-for="n in 10" :key="n" :to="`/produtos/${n}`" class="col-span-1 block">
-                        <figure class="bg-amber-500 aspect-video mb-2 flex items-center justify-center">
-                            <h1 class="text-xl md:text-2xl font-bold mb-4">1080 x 607</h1>
+                        <figure class="bg-amber-500 aspect-video mb-2">
+                            <!-- <h1 class="text-xl md:text-2xl font-bold mb-4">1080 x 540</h1> -->
+                            <img src="" srcset="" alt="" class="aspect-[2/1]"/>
                         </figure>
                         <div>
                             <h3 class="text-xl md:text-2xl font-bold mb-4">lorem ipsum</h3>

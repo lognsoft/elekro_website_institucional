@@ -18,36 +18,46 @@
         <section class="py-11">
             <div class="container mx-auto px-2 py-11">
                 <TitleSection>Lorem Ipsum</TitleSection>
-                <form @submit.prevent="submitContact" class="w-full mt-6 py-5">
+                <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
+                    {{ submitMessage }}
+                    <span v-show="submitLoading" class="text-5xl flex items-center">
+                        <MyIcon icon="eos-icons:three-dots-loading"/>
+                    </span>
+                </h2>
+                <form class="w-full mt-6 py-5 duration-200" :class="{'opacity-25':submitForm}" @submit.prevent="validateInputs">
                     <div class="wrapper-form-container">
-                        <label for="input-name" class="label">nome</label>
+                        <label for="input-name" class="label">nome*</label>
                         <div class="container-input">
-                            <input class="input-contact" v-model="formulario.name" type="text" name="nome" placeholder="Nome" id="input-name" required/>
+                            <small v-show="!state.name.validate" class="text-sm text-red-500">{{ state.name.message }}</small>
+                            <input :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.name.validate}" v-model="state.name.value" type="text" name="nome" placeholder="Nome" id="input-name"/>
                         </div>
                     </div>
                     <div class="wrapper-form-container">
                         <label for="input-phone" class="label">telefone</label>
                         <div class="container-input">
-                            <input class="input-contact" v-model="formulario.telefone" maxlength="15" type="text" name="telefone" placeholder="(00) 00000-0000" id="input-phone" required/>
+                            <small v-show="!state.telefone.validate" class="text-sm text-red-500">{{ state.telefone.message }}</small>
+                            <InputMask :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.telefone.validate}" v-model="state.telefone.value" mask="(99) 99999-9999" type="text" name="telefone" placeholder="(00) 00000-0000" id="input-phone"/>
+                            
                         </div>
                     </div>
                     <div class="wrapper-form-container">
-                        <label for="input-email" class="label">email</label>
+                        <label for="input-email" class="label">email*</label>
                         <div class="container-input">
-                            <input class="input-contact" v-model="formulario.email" type="email" name="email" id="input-email" placeholder="E-mail" required/>
+                            <small v-show="!state.email.validate" class="text-sm text-red-500">{{ state.email.message }}</small>
+                            <input :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.email.validate}" v-model="state.email.value" type="email" name="email" id="input-email" placeholder="E-mail"/>
                         </div>
                     </div>
                     <div class="wrapper-form-container-t">
-                        <label for="input-message" class="label">mensagem</label>
+                        <label for="input-message" class="label">mensagem*</label>
                         <div class="container-input">
-                            <!-- <input class="input-contact" type="text" name="nome" placeholder="Nome"/> -->
-                            <textarea class="input-contact resize-y min-h-60" v-model="formulario.message" name="mensagem" id="input-message" placeholder="Mensagem" required></textarea>
+                            <small v-show="!state.message.validate" class="text-sm text-red-500">{{ state.message.message }}</small>
+                            <textarea :disabled="submitForm" class="input-contact min-h-80" :class="{'border-red-500 border-2':!state.message.validate}" v-model="state.message.value" name="mensagem" id="input-message" placeholder="Mensagem"></textarea>
                         </div>
                     </div>
                     <div class="wrapper-form-container-t">
                         <div class="label"></div>
                         <div class="container-input text-center md:text-start">
-                            <MyButton class="my-0 mx-0" tipo="submit" :reverse="false">Enviar</MyButton>
+                            <MyButton class="my-0 mx-0" type="submit" :disabled="submitForm">Enviar</MyButton>
                         </div>
                     </div>
                     
@@ -55,8 +65,8 @@
             </div>
         </section>
         <section class="py-11 bg-slate-500 text-white">
-            <div class="container mx-auto px-2 py-11">
-                <div class="grid grid-cols-4 gap-6 text-center md:text-start">
+            <div class="w-full mx-auto px-5 py-11">
+                <div class="grid grid-cols-3 lg:grid-cols-4 gap-6 text-center md:text-start">
                     <div class="col-span-4 md:col-span-1">
                         <h3 class="text-5xl font-extrabold mb-11">Lorem Ipsum</h3>
                         <p class="text-xl font-bold">Lorem ipsum dolor</p>
@@ -76,24 +86,109 @@
 </template>
 
 <script setup lang="ts">
-interface Form{
-    [name:string]:string;
-    telefone:string;
-    email:string;
-    message:string;
-}
-const formulario = ref<Form>({
-    'name':'',
-    'telefone':'',
-    'email':'',
-    'message':''
+
+//tipos
+import type IForm from '~/interfaces/IForm';
+import type { FormSubmit } from '~/types'
+
+//axios plugin
+const { $api } = useNuxtApp();
+
+
+//controle de formulário
+const submitForm = ref<boolean>(false);
+const submitShow = ref<boolean>(false)
+const submitMessage = ref<string>('Enviando');
+const submitColor = ref<string>('text-cyan-400');
+const submitLoading = ref<boolean>(false);
+
+//campos de formulário
+const state = ref<IForm>({
+    name : {
+        message: 'Campo obrigatório',
+        validate: true,
+        value: ''
+    },
+    telefone : {
+        message: 'Número inválido',
+        validate: true,
+        value: ''
+    },
+    email : {
+        message: 'Campo obrigatório',
+        validate: true,
+        value: ''
+    },
+    message : {
+        message: 'Campo obrigatório',
+        validate: true,
+        value: ''
+    }
 });
-const submitContact = () => {
-    let form:Form = formulario.value;
-    for(const val in form){
-        console.log(form[val]);
+
+//validação de campos
+const validateInputs = ():void => {
+    let validate:boolean = true;
+    for(const i in state.value){
+        if(i == 'telefone' && state.value[i].value == '') continue;
+        if(i == 'telefone' && state.value[i].value != ''){
+            if(state.value[i].value.length < 15){
+                state.value[i].validate = false;
+                validate = false;
+                continue;
+            }
+        }
+        if(state.value[i].value == ''){
+            state.value[i].validate = false;
+            validate = false;
+            continue;
+        }
+
+        state.value[i].validate = true;
+    }
+
+    if(validate){
+        submitForm.value = true;
+        submitShow.value = true;
+        submitLoading.value = true;
+        submitMailer();
     }
 }
+
+//submição de formulário
+const submitMailer = () => {
+    const data:FormSubmit = {
+        nome:state.value.name.value,
+        email:state.value.email.value,
+        mensagem:state.value.message.value
+    }
+    if(state.value.telefone.value !== '') data.telefone = state.value.telefone.value;
+
+    $api.defaults.headers.post['Content-Type'] = 'application/json';
+    $api.post("https://formsubmit.co/ajax/alantavaresmorais@gmail.com", data)
+    .then((response) => {
+        submitColor.value = 'text-green-500'
+        submitMessage.value = 'Enviado com sucesso.';
+        for(const i in state.value){
+            state.value[i].value = '';
+        }
+    })
+    .catch((error) => {
+        submitColor.value = 'text-red-500'
+        submitMessage.value = 'Ops!! ocorreu um erro.';
+    })
+    .finally(() => {
+        submitLoading.value = false;
+        submitForm.value = false;
+        setTimeout(() => {
+            submitShow.value = false;
+            submitMessage.value = 'Enviando';
+            submitColor.value = 'text-cyan-400';
+        },3500);
+    })
+    
+}
+
 </script>
 
 <style scoped>
@@ -105,7 +200,7 @@ const submitContact = () => {
 }
 
 .input-contact{
-    @apply w-full outline-none px-3 py-2
+    @apply w-full outline-none px-3 py-2 bg-white
 }
 
 .label{

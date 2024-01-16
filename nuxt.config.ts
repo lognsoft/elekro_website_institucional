@@ -3,9 +3,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules:[
     "@pinia/nuxt",
-    "@nuxtjs/tailwindcss",
+    "@nuxt/ui",
     "nuxt-icon",
-    "nuxt-swiper"
+    "nuxt-swiper",
+    "nuxt-primevue"
+  ],
+  plugins:[
+    "~/plugins/axios"
   ],
   srcDir: 'src',
   tailwindcss: {
@@ -32,4 +36,8 @@ export default defineNuxtConfig({
   css:[
     "animate.css/animate.min.css"
   ],
+  colorMode:{
+    preference: "light",
+    classSuffix: ''
+  }
 })

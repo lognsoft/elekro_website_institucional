@@ -18,7 +18,7 @@
 
         <section class="bg-image"></section>
         <section class="py-9 bg-black min-h-96 flex items-center">
-            <div class="container mx-auto w-full px-2 grid grid-cols-4">
+            <div class="mx-auto w-full px-5 grid grid-cols-4">
                 <div class="col-span-4 lg:col-span-1 pr-2">
                     <TitleSection class="text-white">Lorem Ipsum</TitleSection>
                 </div>
@@ -37,7 +37,7 @@
             </div>
         </section>
         <section class="py-9 bg-slate-400 min-h-96 flex items-center">
-            <div class="container mx-auto w-full px-2 grid grid-cols-6">
+            <div class="mx-auto w-full px-5 grid grid-cols-6">
                 <div class="col-span-6 lg:col-span-2 pr-2">
                     <TitleSection class="text-white">Lorem Ipsum</TitleSection>
                 </div>
@@ -54,7 +54,7 @@
             </div>
         </section>
         <section class="py-11">
-            <div class="container mx-auto w-full px-2">
+            <div class="w-full mx-auto px-5">
                 <h3 class="text-center text-gray-400 font-bold mb-6">Lorem Ipsum</h3>
                 <TitleSection class="text-center mb-11">Lorem Ipsum</TitleSection>
                 <div class="grid gap-8 md:gap-4 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 text-center">

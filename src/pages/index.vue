@@ -14,7 +14,7 @@
         <Slide/>
         <!-- destaque -->
         <section id="emphasis">
-            <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
+            <div class="w-full mx-auto py-11 px-5">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div class="mb-4 lg:mb-0 flex justify-center items-center">
                         <img
@@ -38,12 +38,12 @@
         <!-- end destaque -->
         <!-- features -->
         <section id="features">
-            <div class="container w-11/12 max-w-screen-2xl mx-auto py-11 px-2">
-                <TitleSection class="text-start lg:text-center">Lorem Ipsum</TitleSection>
-                <div class="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto">
-                    <div class="bg-gray-200 aspect-square">
+            <div class="w-full mx-auto py-11 px-5">
+                <TitleSection>Lorem Ipsum</TitleSection>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gray-200">
                         <img
-                            class="w-auto h-full object-cover"
+                            class="w-auto aspect-[1/1] md:aspect-[5/3] object-cover"
                             src="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
                             alt="imagem"
                             srcset="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
@@ -51,15 +51,15 @@
                             height="500"
                         />
                     </div>
-                    <div class="p-8 bg-slate-500 aspect-square flex items-center">
+                    <div class="p-8 bg-slate-500 aspect-[1/1] md:aspect-[5/3] flex items-center">
                         <div class="w-full text-center text-white">
                             <h3 class="text-5xl font-extrabold mb-9">Lorem Ipsum</h3>
                             <MyLinkTwo class="justify-center text-2xl" href="/">lorem ipsum</MyLinkTwo>
                         </div>
                     </div>
-                    <div class="bg-gray-200 aspect-square">
+                    <div class="bg-gray-200">
                         <img
-                            class="w-auto h-full object-cover"
+                            class="w-auto h-full object-cover aspect-[1/1] md:aspect-[5/3]"
                             src="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
                             alt="imagem"
                             srcset="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
@@ -69,7 +69,7 @@
                     </div>
                     <div class="bg-gray-200 aspect-square">
                         <img
-                            class="w-auto h-full object-cover"
+                            class="w-auto h-full object-cover aspect-[1/1] md:aspect-[5/3]"
                             src="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
                             alt="imagem"
                             srcset="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
@@ -83,12 +83,12 @@
         <!-- end features -->
         <!-- advantages -->
         <section id="advantages">
-            <div class="container w-11/12 mx-auto py-11 px-2">
+            <div class="w-full mx-auto py-11 px-5">
                 <TitleSection>Lorem Ipsum</TitleSection>
-                <div class="grid grid-cols-1 lg:grid-cols-3 grid">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
                     <div class="bg-slate-300 lg:order-last lg:col-span-2">
                         <img
-                            class="w-full max-h-96 object-cover"
+                            class="w-full aspect-[2/1] object-cover"
                             src="https://t2.tudocdn.net/667867?w=824&h=494"
                             srcset="https://t2.tudocdn.net/667867?w=824&h=494"
                             alt=""
@@ -118,11 +118,11 @@
         <!-- end-image -->
         <!-- advantages -->
         <section id="overview">
-            <div class="container w-11/12 mx-auto py-11 px-2">
+            <div class="w-full mx-auto py-11 px-5">
                 <div class="grid grid-cols-1 lg:grid-cols-3 grid">
                     <div class="bg-slate-300 lg:order-last lg:col-span-2">
                         <img
-                            class="w-full max-h-96 object-cover"
+                            class="w-full aspect-[2/1] object-cover"
                             src="https://t2.tudocdn.net/667867?w=824&h=494"
                             srcset="https://t2.tudocdn.net/667867?w=824&h=494"
                             alt=""
@@ -158,7 +158,7 @@
     }
 
     .bg-image{
-        @apply container bg-center bg-no-repeat relative w-11/12 mx-auto py-11 px-2 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
+        @apply w-full bg-center bg-no-repeat relative mx-auto py-11 px-5 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
     }
 
     .container-text{
