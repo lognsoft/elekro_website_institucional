@@ -1,7 +1,7 @@
 <template>
     <header ref="header" class="header" :class="{ 'bg-black':scrollTopPage > 0 || navigateOpen }">
         <div class="my-3 md:px-10 px-2">
-            <nav class="w-full mx-auto flex justify-between items-center">
+            <nav class="container mx-auto flex justify-between items-center">
                 <div class="logo">
                     <LogoTipo/>
                 </div>
@@ -13,7 +13,7 @@
         </div>
         <ClientOnly>
             <div class="navigate" :class="{ active:navigateOpen }">
-                <div class="w-full mx-auto h-screen relative flex items-center justify-end py-5">
+                <div class="container mx-auto h-screen relative flex items-center justify-end py-5 md:px-3">
                     <button @click="navigateOpen = false" type="button" aria-label="fechar menu" class="cursor-pointer absolute text-black top-4 text-2xl bg-white h-8 w-8 right-1">
                         <Icon name="ic:baseline-close"/>
                     </button>

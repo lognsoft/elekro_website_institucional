@@ -22,6 +22,7 @@
 </style>
 
 <script setup lang="ts">
+
 useSeoMeta({
     titleTemplate : (titleChunck) => {
         return titleChunck ? `Elekro - ${titleChunck}`: "Elekro";
@@ -30,6 +31,6 @@ useSeoMeta({
 useHead({
     htmlAttrs:{
         lang: 'pt-BR',
-    }
+    },
 })
 </script>

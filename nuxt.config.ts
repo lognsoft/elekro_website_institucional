@@ -6,10 +6,11 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "nuxt-icon",
     "nuxt-swiper",
-    "nuxt-primevue"
+    "nuxt-primevue",
+    "nuxt-aos"
   ],
   plugins:[
-    "~/plugins/axios"
+    "~/plugins/axios",
   ],
   srcDir: 'src',
   tailwindcss: {
@@ -39,5 +40,5 @@ export default defineNuxtConfig({
   colorMode:{
     preference: "light",
     classSuffix: ''
-  }
+  },
 })

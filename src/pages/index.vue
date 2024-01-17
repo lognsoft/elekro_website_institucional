@@ -9,14 +9,15 @@
         <Meta name="twitter:description" content="lorem ipsum"/>
         <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
         <Meta name="twitter:card" content="summary_large_image"/>
+        
     </Head>
     <main>
         <Slide/>
         <!-- destaque -->
         <section id="emphasis">
-            <div class="w-full mx-auto py-11 px-5">
+            <div class="container mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <div class="mb-4 lg:mb-0 flex justify-center items-center">
+                    <div class="mb-4 lg:mb-0 flex justify-center items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                         <img
                             src="https://t.ctcdn.com.br/MAMFrOpUc8jcTCPpiuyAXubD3YM=/640x360/smart/i10363.png" 
                             alt="imagem"
@@ -26,7 +27,7 @@
                             class="bg-gray-200 fluid-image"
                         />
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
                         <div class="">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
                             <MyLinkTwo class="text-slate-500 hover:text-amber-600 text-2xl" href="/">Lorem Ipsum</MyLinkTwo>
@@ -38,12 +39,12 @@
         <!-- end destaque -->
         <!-- features -->
         <section id="features">
-            <div class="w-full mx-auto py-11 px-5">
-                <TitleSection>Lorem Ipsum</TitleSection>
+            <div class="container mx-auto py-11 px-5 md:px-3">
+                <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="bg-gray-200">
+                    <div class="bg-gray-200" data-aos="zoom-in" data-aos-duration="1000">
                         <img
-                            class="w-auto aspect-[1/1] md:aspect-[5/3] object-cover"
+                            class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center"
                             src="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
                             alt="imagem"
                             srcset="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
@@ -53,13 +54,13 @@
                     </div>
                     <div class="p-8 bg-slate-500 aspect-[1/1] md:aspect-[5/3] flex items-center">
                         <div class="w-full text-center text-white">
-                            <h3 class="text-5xl font-extrabold mb-9">Lorem Ipsum</h3>
-                            <MyLinkTwo class="justify-center text-2xl" href="/">lorem ipsum</MyLinkTwo>
+                            <h3 class="text-5xl font-extrabold mb-9" data-aos="fade-up" data-aos-duration="1000">Animação</h3>
+                            <MyLinkTwo class="justify-center text-2xl" href="/" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</MyLinkTwo>
                         </div>
                     </div>
-                    <div class="bg-gray-200">
+                    <div class="bg-gray-200" data-aos="zoom-in" data-aos-duration="1000">
                         <img
-                            class="w-auto h-full object-cover aspect-[1/1] md:aspect-[5/3]"
+                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
                             src="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
                             alt="imagem"
                             srcset="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
@@ -67,9 +68,9 @@
                             height="500"
                         />
                     </div>
-                    <div class="bg-gray-200 aspect-square">
+                    <div class="bg-gray-200 aspect-square" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
                         <img
-                            class="w-auto h-full object-cover aspect-[1/1] md:aspect-[5/3]"
+                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
                             src="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
                             alt="imagem"
                             srcset="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
@@ -83,10 +84,10 @@
         <!-- end features -->
         <!-- advantages -->
         <section id="advantages">
-            <div class="w-full mx-auto py-11 px-5">
-                <TitleSection>Lorem Ipsum</TitleSection>
+            <div class="container mx-auto py-11 px-5 md:px-3">
+                <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-3">
-                    <div class="bg-slate-300 lg:order-last lg:col-span-2">
+                    <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full aspect-[2/1] object-cover"
                             src="https://t2.tudocdn.net/667867?w=824&h=494"
@@ -96,8 +97,8 @@
                     </div>
                     <div class="flex items-center pt-8 lg:px-11 lg:order-first">
                         <div>
-                            <h3 class="text-5xl font-extrabold mb-7">lorem ipsum</h3>
-                            <p>
+                            <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
+                            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ipsam magnam rem assumenda id expedita sed consectetur sit iure dignissimos eius nulla in perferendis voluptatibus illum voluptates, esse, ipsum soluta.
                             </p>
                         </div>
@@ -110,17 +111,17 @@
         <section id="bg-image">
             <div class="bg-image">
                 <div class="container-text">
-                    <h3 class="text-5xl font-extrabold mb-7">lorem ipsum</h3>
-                    <p class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
+                    <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
+                    <p class="max-w-xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
                 </div>
             </div>
         </section>
         <!-- end-image -->
         <!-- advantages -->
         <section id="overview">
-            <div class="w-full mx-auto py-11 px-5">
+            <div class="container mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-3 grid">
-                    <div class="bg-slate-300 lg:order-last lg:col-span-2">
+                    <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full aspect-[2/1] object-cover"
                             src="https://t2.tudocdn.net/667867?w=824&h=494"
@@ -130,8 +131,8 @@
                     </div>
                     <div class="flex items-center pt-8 lg:px-11 lg:order-first">
                         <div>
-                            <h3 class="text-5xl font-extrabold mb-7">lorem ipsum</h3>
-                            <p>
+                            <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
+                            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ipsam magnam rem assumenda id expedita sed consectetur sit iure dignissimos eius nulla in perferendis voluptatibus illum voluptates, esse, ipsum soluta.
                             </p>
                         </div>
@@ -142,6 +143,9 @@
         <!-- end advantages -->
     </main>
 </template>
+
+<script setup>
+</script>
 
 <style scoped>
     .bg-image::before{

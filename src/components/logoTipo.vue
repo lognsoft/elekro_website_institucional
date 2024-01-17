@@ -1,7 +1,5 @@
 <template>
-    <NuxtLink class="flex items-center gap-2" to="/">
-        <!-- <MyIcon icon="ic:baseline-headset"/>
-        Elekro -->
+    <NuxtLink to="/">
         <img src="~/assets/images/logotipo-elekro.png" srcset="~/assets/images/logotipo-elekro.png" alt="logotipo" width="1155" height="384"/>
     </NuxtLink>
 </template>
