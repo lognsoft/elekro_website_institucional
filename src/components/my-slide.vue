@@ -65,7 +65,7 @@ const slide:ISlide[] = [
 <style scoped>
     /* classes tailwind */
     .slider{
-        @apply bg-slate-700 flex h-screen md:h-auto
+        @apply bg-slate-700 flex h-screen
     }
     .slider{
     /* height: 100vh; */

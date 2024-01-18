@@ -12,7 +12,7 @@
         
     </Head>
     <main>
-        <Slide/>
+        <MySlide/>
         <!-- destaque -->
         <section id="emphasis">
             <div class="container mx-auto py-11 px-5 md:px-3">
@@ -162,10 +162,10 @@
     }
 
     .bg-image{
-        @apply w-full bg-center bg-no-repeat relative mx-auto py-11 px-5 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
+        @apply w-full bg-center bg-no-repeat relative mx-auto py-11 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
     }
 
     .container-text{
-        @apply flex justify-center flex-col w-full max-w-7xl mx-auto max-h-96 h-screen text-slate-50
+        @apply flex justify-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
     }
 </style>

@@ -22,7 +22,7 @@ export const rotas:IRouter[] = [
 
 export const midiasSociais:ISocialMidia[] = [
     {
-        title: "Instagram",
+        title: "instagram",
         icon: "ri:instagram-fill",
         href: "javascript:void(0)"
     },
@@ -32,12 +32,12 @@ export const midiasSociais:ISocialMidia[] = [
         href: "javascript:void(0)"
     },
     {
-        title: "Whatsapp",
+        title: "whatsapp",
         icon: "ri:whatsapp-fill",
         href: "javascript:void(0)"
     },
     {
-        title: "Twitter",
+        title: "twitter",
         icon: "pajamas:twitter",
         href: "javascript:void(0)"
     }

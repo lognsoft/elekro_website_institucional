@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-swiper",
     "nuxt-primevue",
-    "nuxt-aos"
+    "nuxt-aos",
+    'vue3-carousel-nuxt'
   ],
   plugins:[
     "~/plugins/axios",

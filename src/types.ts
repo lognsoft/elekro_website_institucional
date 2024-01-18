@@ -4,3 +4,8 @@ export type FormSubmit = {
     telefone?:string,
     mensagem:string
 }
+
+export type Info = {
+    title: string;
+    text: string;
+}

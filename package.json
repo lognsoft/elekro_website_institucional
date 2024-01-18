@@ -26,6 +26,7 @@
     "axios": "^1.6.5",
     "nuxt-swiper": "^1.2.2",
     "pinia": "^2.1.7",
-    "primevue": "^3.46.0"
+    "primevue": "^3.46.0",
+    "vue3-carousel-nuxt": "^1.1.0"
   }
 }
