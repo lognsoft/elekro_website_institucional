@@ -18,7 +18,7 @@
         <section class="py-11">
             <div class="container mx-auto py-11 px-5">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <NuxtLink v-for="n in 10" :key="n" :to="`/produtos/${n}`" class="col-span-1 block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <NuxtLink v-for="n in 2" :key="n" :to="`/produtos/${n}`" class="col-span-1 block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <figure class="bg-amber-500 aspect-video mb-2">
                             <!-- <h1 class="text-xl md:text-2xl font-bold mb-4">1080 x 540</h1> -->
                             <img src="" srcset="" alt="" class="aspect-[2/1]"/>

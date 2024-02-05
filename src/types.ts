@@ -9,3 +9,14 @@ export type Info = {
     title: string;
     text: string;
 }
+
+export type ObjectForm = {
+    message:string,
+    validate:boolean
+    value:string
+}
+
+export type MethodPayment = {
+    type:string;
+    icon:string;
+}

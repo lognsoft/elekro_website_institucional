@@ -51,24 +51,25 @@
 </template>
 
 <script setup lang="ts">
-defineProps(['title']) as { title:string | undefined }
+defineProps(['title']) as { title:String | undefined }
 
 //types
 import type IForm from '~/interfaces/IForm';
 import type { FormSubmit } from '~/types'
 
 //axios plugin
-const { $api } = useNuxtApp();
+const { $useAxios } = useNuxtApp();
 
 //controle de formulário
-const submitForm = ref<boolean>(false);
-const submitShow = ref<boolean>(false)
-const submitMessage = ref<string>('Enviando');
-const submitColor = ref<string>('text-cyan-400');
-const submitLoading = ref<boolean>(false);
+const submitForm:Ref<boolean> = ref(false);
+const submitShow:Ref<boolean> = ref(false);
+const submitMessage:Ref<string> = ref('Enviando');
+const submitColor:Ref<string> = ref('text-cyan-400');
+const submitLoading:Ref<boolean> = ref(false);
+const emaildefault:string = "alantavaresmorais@gmail.com";
 
 //campos de formulário
-const state = ref<IForm>({
+const state:Ref<IForm> = ref({
     name : {
         message: 'Campo obrigatório',
         validate: true,
@@ -121,7 +122,7 @@ const validateInputs = ():void => {
 }
 
 //submição de formulário
-const submitMailer = () => {
+const submitMailer = ():void => {
     const data:FormSubmit = {
         nome:state.value.name.value,
         email:state.value.email.value,
@@ -129,8 +130,8 @@ const submitMailer = () => {
     }
     if(state.value.telefone.value !== '') data.telefone = state.value.telefone.value;
 
-    $api.defaults.headers.post['Content-Type'] = 'application/json';
-    $api.post("https://formsubmit.co/ajax/alantavaresmorais@gmail.com", data)
+    $useAxios.defaults.headers.post['Content-Type'] = 'application/json';
+    $useAxios.post(`https://formsubmit.co/ajax/${emaildefault}`, data)
     .then((response) => {
         submitColor.value = 'text-green-500'
         submitMessage.value = 'Enviado com sucesso.';

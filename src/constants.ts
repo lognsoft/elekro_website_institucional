@@ -1,5 +1,6 @@
 import type IRouter from "./interfaces/IRouter"
 import type ISocialMidia from "./interfaces/ISocialMidia";
+import type { MethodPayment } from "./types";
 
 export const rotas:IRouter[] = [
     {
@@ -42,5 +43,28 @@ export const midiasSociais:ISocialMidia[] = [
         href: "javascript:void(0)"
     }
 ]
+
+export const methods:MethodPayment[] = [
+    {
+        type: "Cartão de crédito",
+        icon: "material-symbols:credit-card-outline"
+    },
+    {
+        type: "Cartão virtual caixa",
+        icon: "arcticons:caixa"
+    },
+    {
+        type: "Pix",
+        icon: "ic:baseline-pix"
+    },
+    {
+        type: "Boleto",
+        icon: "material-symbols:barcode"
+    },
+    {
+        type: "Paypal",
+        icon: "fa6-brands:paypal"
+    },
+];
 
 

@@ -34,7 +34,7 @@
 //tipos
 import type { Info } from '~/types'
 
-const infos = ref<Info[]>([
+const infos:Info[] = [
     {
         title: 'Lorem Ipsum 1',
         text: 'Lorem ipsum dolor 1'
@@ -47,6 +47,6 @@ const infos = ref<Info[]>([
         title: 'Lorem Ipsum 3',
         text: 'Lorem ipsum dolor 3'
     },
-])
+]
 
 </script>

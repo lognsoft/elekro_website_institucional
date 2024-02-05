@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "nuxt-primevue",
     "nuxt-aos",
-    'vue3-carousel-nuxt'
+    'vue3-carousel-nuxt',
   ],
   plugins:[
     "~/plugins/axios",
@@ -28,7 +28,8 @@ export default defineNuxtConfig({
         "/",
         "/sobre",
         "/contato",
-        "/produtos"
+        "/produtos",
+        "/elekro-landing-page"
       ],
       ignore:[
         "/produtos/:id"

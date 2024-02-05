@@ -1,4 +1,5 @@
 <template>
+    <Body @scroll="scrollingHeaderColor"/>
     <header ref="header" class="header" :class="{ 'bg-black':scrollTopPage > 0 || navigateOpen }">
         <div class="my-3 md:px-10 px-2">
             <nav class="container mx-auto flex justify-between items-center">
@@ -46,12 +47,11 @@
 <script setup lang="ts">
 import { rotas, midiasSociais } from '~/constants';
 
-const navigateOpen = ref<boolean>(false);
-const scrollTopPage = ref<number>(0);
+const navigateOpen:Ref<boolean> = ref(false);
+const scrollTopPage:Ref<number> = ref(0);
 const janela:Window = window as Window;
 
 onMounted(() => {
-    janela.addEventListener("scroll", scrollingHeaderColor);
     let newValue:number = janela.document.scrollingElement?.scrollTop as number;
     scrollTopPage.value = newValue;
 });

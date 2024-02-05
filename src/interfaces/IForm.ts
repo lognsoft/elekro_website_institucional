@@ -1,8 +1,4 @@
-type ObjectForm = {
-    message:string,
-    validate:boolean
-    value:string
-}
+import type { ObjectForm } from "~/types";
 
 export default interface Form{
     [name:string]:ObjectForm;

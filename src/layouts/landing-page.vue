@@ -1,4 +1,5 @@
 <template>
+    <Body @scroll="scrollingHeaderColor"/>
     <header class="text-white py-4 w-full fixed top-0 left-0 z-50 duration-300" :class="{ 'bg-black':scrollTopPage > 0 }">
         <div class="container mx-auto px-5 md:px-2">
             <div class="flex items-center justify-between">
@@ -24,7 +25,6 @@ const scrollTopPage = ref<number>(0);
 const janela:Window = window as Window;
 
 onMounted(() => {
-    janela.addEventListener("scroll", scrollingHeaderColor);
     let newValue:number = janela.document.scrollingElement?.scrollTop as number;
     scrollTopPage.value = newValue;
 });
