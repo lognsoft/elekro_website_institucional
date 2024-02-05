@@ -6,7 +6,7 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "yarn install && yarn build && yarn deploy --preview",
+    "start": "node .output/server/index.mjs",
     "build": "nuxt build",
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
