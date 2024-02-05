@@ -12,7 +12,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "node .output/server/index.mjs"
+    "deploy": "SERVER_PRESET=digital_ocean"
   },
   "devDependencies": {
     "nuxt": "^3.9.1",
