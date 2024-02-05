@@ -21,7 +21,7 @@
                     <NuxtLink v-for="n in 2" :key="n" :to="`/produtos/${n}`" class="col-span-1 block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <figure class="bg-amber-500 aspect-video mb-2">
                             <!-- <h1 class="text-xl md:text-2xl font-bold mb-4">1080 x 540</h1> -->
-                            <img src="" srcset="" alt="" class="aspect-[2/1]"/>
+                            <img src="" srcset="" alt="" class="aspect-[1/1]"/>
                         </figure>
                         <div>
                             <h3 class="text-xl md:text-2xl font-bold mb-4">lorem ipsum</h3>

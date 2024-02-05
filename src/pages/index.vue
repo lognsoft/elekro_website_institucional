@@ -42,7 +42,7 @@
             <div class="container mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="bg-gray-200" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="bg-gray-200" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center"
                             src="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
@@ -58,7 +58,7 @@
                             <MyLinkTwo class="justify-center text-2xl" href="/" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</MyLinkTwo>
                         </div>
                     </div>
-                    <div class="bg-gray-200" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="bg-gray-200" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
                             src="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
@@ -68,7 +68,7 @@
                             height="500"
                         />
                     </div>
-                    <div class="bg-gray-200 aspect-square" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="bg-gray-200 aspect-square" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
                             src="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"

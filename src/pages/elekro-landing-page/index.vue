@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <Formulario/>
+        <Formulario title="contate-nos"/>
     </main>
 </template>
 
