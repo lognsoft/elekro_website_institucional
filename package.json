@@ -11,8 +11,7 @@
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "node .output/server/index.mjs"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "nuxt": "^3.9.1",
