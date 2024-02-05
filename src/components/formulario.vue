@@ -66,7 +66,7 @@ const submitShow:Ref<boolean> = ref(false);
 const submitMessage:Ref<string> = ref('Enviando');
 const submitColor:Ref<string> = ref('text-cyan-400');
 const submitLoading:Ref<boolean> = ref(false);
-const emaildefault:string = "alantavaresmorais@gmail.com";
+const emaildefault:string = ""
 
 //campos de formulário
 const state:Ref<IForm> = ref({
@@ -138,6 +138,7 @@ const submitMailer = ():void => {
         for(const i in state.value){
             state.value[i].value = '';
         }
+        
     })
     .catch((error) => {
         submitColor.value = 'text-red-500'
