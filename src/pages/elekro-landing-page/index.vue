@@ -1,7 +1,7 @@
 <template>
     <main>
-        <Banner class="bg-cover bg-center bg-no-repeat bg-[url('https://www.macworld.com/wp-content/uploads/2023/01/iphone_13_wallpaper.jpg?quality=50&strip=all&w=1024')] h-full max-h-[400px] md:max-h-[600px]">
-            Banner
+        <Banner class="bg-cover bg-center bg-no-repeat bg-[url('/assets/images/4.jpeg')] h-full max-h-[400px] md:max-h-[600px]">
+            Elekro
         </Banner>
         <!-- <section class="pt-11">
             <div id="after-clip" class="relative text-white">
@@ -49,8 +49,8 @@
                     <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full aspect-[2/1] object-cover"
-                            src="https://t2.tudocdn.net/667867?w=824&h=494"
-                            srcset="https://t2.tudocdn.net/667867?w=824&h=494"
+                            src="/assets/images/de-lado-prateada.jpeg"
+                            srcset="/assets/images/de-lado-prateada.jpeg"
                             alt=""
                         />
                     </div>
@@ -128,11 +128,9 @@ const array:Array<{icon:string, title:string, text:string}> = [
 ]
 
 const images:string[] = [
-    "https://t2.tudocdn.net/638725?w=824&h=494",
-    "https://www.ytechb.com/wp-content/uploads/2022/09/iPhone-14-wallpapers.webp",
-    "https://s2-techtudo.glbimg.com/8uik7q6wKTrFiVWtQkZkgK4X1-w=/0x0:1280x720/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/e/fgNQTcRem3sfpXondFDg/ame-iphone14-ficha.png",
-    "https://t.ctcdn.com.br/0Wf5xQ0QdYZSmiKXeR7442VUgb0=/1920x1080/smart/i476585.jpeg",
-    "https://fintech.com.br/app/uploads/2022/03/pexels-pixabay-207589-scaled.jpg"
+    "de lado preta.jpeg",
+    "detalhe biometria preto.jpeg",
+    "porta de carregamento preta.jpeg"
 ]
 </script>
 
@@ -172,7 +170,7 @@ const images:string[] = [
 }
 
 .bg-image{
-    @apply w-full bg-center bg-no-repeat relative mx-auto py-11 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
+    @apply w-full bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/images/detalhe_6.jpeg')] bg-cover
 }
 
 .container-text{

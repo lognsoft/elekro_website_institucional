@@ -9,8 +9,8 @@
                 <TitleSection class="text-center mb-11 animate__animated animate__fadeInDown">Lorem Ipsum</TitleSection>
                 <figure>
                     <img
-                        src="https://conectaja.proteste.org.br/wp-content/uploads/2019/01/iphone-970x472.jpg"
-                        srcset="https://conectaja.proteste.org.br/wp-content/uploads/2019/01/iphone-970x472.jpg"
+                        src="/assets/images/de-lado-prateada.jpeg"
+                        srcset="/assets/images/de-lado-prateada.jpeg"
                         alt=""
                         width="907"
                         height="472"
@@ -38,8 +38,8 @@
                 <p class="text-center max-w-md mx-auto mb-11">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque maxime dolores corrupti maiores nemo necessitatibus!</p>
                 <figure>
                     <img
-                        src="https://conectaja.proteste.org.br/wp-content/uploads/2019/01/iphone-970x472.jpg"
-                        srcset="https://conectaja.proteste.org.br/wp-content/uploads/2019/01/iphone-970x472.jpg"
+                        src="/assets/images/de-lado-preta.jpeg"
+                        srcset="/assets/images/de-lado-preta.jpeg"
                         alt=""
                         width="907"
                         height="472"

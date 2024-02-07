@@ -1,7 +1,7 @@
 <template>
     <Carousel :autoplay="5000" :wrap-around="true" :transition="1000" :items-to-show="1">
         <Slide v-for="image,index in images" :key="index">
-            <img class="w-full h-full" :src="image" :srcset="image" alt=""/>
+            <img class="w-full h-full" :src="`/images/${image}`" :srcset="`/images/${image}`" alt=""/>
         </Slide>
         <template #addons>
             <Pagination />

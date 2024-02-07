@@ -19,9 +19,9 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div class="mb-4 lg:mb-0 flex justify-center items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                         <img
-                            src="https://t.ctcdn.com.br/MAMFrOpUc8jcTCPpiuyAXubD3YM=/640x360/smart/i10363.png" 
+                            src="/assets/images/4.jpeg" 
                             alt="imagem"
-                            srcset="https://t.ctcdn.com.br/MAMFrOpUc8jcTCPpiuyAXubD3YM=/640x360/smart/i10363.png"
+                            srcset="/assets/images/4.jpeg"
                             width="600"
                             height="500"
                             class="bg-gray-200 fluid-image"
@@ -45,11 +45,12 @@
                     <div class="bg-gray-200" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center"
-                            src="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
+                            src="/assets/images/de-lado-preta.jpeg"
                             alt="imagem"
-                            srcset="https://t.ctcdn.com.br/z57ZmpGL39hWSqandHBFkzX2tS4=/1024x576/smart/i480311.png"
+                            srcset="/assets/images/de-lado-preta.jpeg"
                             width="600"
                             height="500"
+                            loading="lazy"
                         />
                     </div>
                     <div class="p-8 bg-slate-500 aspect-[1/1] md:aspect-[5/3] flex items-center">
@@ -61,21 +62,23 @@
                     <div class="bg-gray-200" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
-                            src="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
+                            src="/assets/images/detalhe-biometria-preto.jpeg"
                             alt="imagem"
-                            srcset="https://noticiaoficial.com/wp-content/uploads/2021/08/Celular-Iphone-apple-1-758x505.png"
+                            srcset="/assets/images/detalhe-biometria-preto.jpeg"
                             width="600"
                             height="500"
+                            loading="lazy"
                         />
                     </div>
                     <div class="bg-gray-200 aspect-square" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
-                            src="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
+                            src="/assets/images/porta-de-carregamento-preta.jpeg"
                             alt="imagem"
-                            srcset="https://uploads.metropoles.com/wp-content/uploads/2022/10/06174619/iphone-14-roxo.jpg"
+                            srcset="/assets/images/porta-de-carregamento-preta.jpeg"
                             width="600"
                             height="500"
+                            loading="lazy"
                         />
                     </div>
                 </div>
@@ -90,9 +93,10 @@
                     <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full aspect-[2/1] object-cover"
-                            src="https://t2.tudocdn.net/667867?w=824&h=494"
-                            srcset="https://t2.tudocdn.net/667867?w=824&h=494"
+                            src="/assets/images/de-lado-prateada.jpeg"
+                            srcset="/assets/images/de-lado-prateada.jpeg"
                             alt=""
+                            loading="lazy"
                         />
                     </div>
                     <div class="flex items-center pt-8 lg:px-11 lg:order-first">
@@ -123,10 +127,11 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 grid">
                     <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full aspect-[2/1] object-cover"
-                            src="https://t2.tudocdn.net/667867?w=824&h=494"
-                            srcset="https://t2.tudocdn.net/667867?w=824&h=494"
+                            class="w-full aspect-[2/1] object-cover object-bottom"
+                            src="/assets/images/porta-de-carregamento-prateada.jpeg"
+                            srcset="/assets/images/porta-de-carregamento-prateada.jpeg"
                             alt=""
+                            loading="lazy"
                         />
                     </div>
                     <div class="flex items-center pt-8 lg:px-11 lg:order-first">
@@ -162,7 +167,7 @@
     }
 
     .bg-image{
-        @apply w-full bg-center bg-no-repeat relative mx-auto py-11 bg-[url('https://s.zst.com.br/cms-assets/2022/02/iphone-13.webp')] bg-cover
+        @apply w-full bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/images/4.jpeg')] bg-cover
     }
 
     .container-text{

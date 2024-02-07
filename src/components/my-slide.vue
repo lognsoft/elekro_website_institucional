@@ -39,25 +39,13 @@ import type ISlide from '~/interfaces/ISlide';
 
 const slide:ISlide[] = [
     {
-        bg: "bg-[url('/assets/images/slide/imagem-1.jpg')]",
+        bg: "bg-[url('/assets/images/slide/detalhe-2.jpeg')]",
         description: "Lorem Ipsum",
     },
     {
-        bg: "bg-[url('/assets/images/slide/imagem-2.jpg')]",
+        bg: "bg-[url('/assets/images/slide/detalhe-4.jpeg')]",
         description: "Lorem Ipsum",
     },
-    {
-        bg: "bg-[url('/assets/images/slide/imagem-3.jpg')]",
-        description: "Lorem Ipsum",
-    },
-    {
-        bg: "bg-[url('/assets/images/slide/imagem-4.jpg')]",
-        description: "Lorem Ipsum",
-    },
-    {
-        bg: "bg-[url('/assets/images/slide/imagem-5.jpg')]",
-        description: "Lorem Ipsum",
-    }
     
 ]
 </script>

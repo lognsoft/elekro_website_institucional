@@ -18,10 +18,10 @@
         <section class="py-11">
             <div class="container mx-auto py-11 px-5">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <NuxtLink v-for="n in 2" :key="n" :to="`/produtos/${n}`" class="col-span-1 block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <figure class="bg-amber-500 aspect-video mb-2">
-                            <!-- <h1 class="text-xl md:text-2xl font-bold mb-4">1080 x 540</h1> -->
-                            <img src="" srcset="" alt="" class="aspect-[1/1]"/>
+                    <NuxtLink v-for="product,index in products" :key="index" :to="`/produtos/1`" class="col-span-1 block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <figure class="aspect-video mb-2">
+                            <!-- <h1 class="text-xl md:text-2x_l font-bold mb-4">1080 x 540</h1> -->
+                            <img :src="`/images/${product}`" :srcset="`/images/${product}`" alt="lorem ipsum" class="aspect-[1/0.95] object-cover"/>
                         </figure>
                         <div>
                             <h3 class="text-xl md:text-2xl font-bold mb-4">lorem ipsum</h3>
@@ -36,8 +36,9 @@
     </main>
 </template>
 
-<script setup>
-// definePageMeta({
-//     layout: 'shop'
-// })
+<script setup lang="ts">
+const products:string[] = [
+    "detalhe_3.jpeg",
+    "detalhe_6.jpeg"
+]
 </script>
