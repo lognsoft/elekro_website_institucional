@@ -95,7 +95,7 @@ const array:Array<{title:string, text:string}> = [
 
 <style scoped>
 .bg-image{
-    @apply py-9 h-screen bg-[url("/assets/images/detalhe-3.jpeg")] bg-center bg-no-repeat bg-cover bg-fixed
+    @apply py-9 h-screen bg-[url("/images/detalhe_3.jpeg")] bg-center bg-no-repeat bg-cover bg-fixed
 }
 
 .quote{
