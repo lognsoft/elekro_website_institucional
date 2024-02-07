@@ -14,8 +14,12 @@ defineProps(['images']) as { images:string[] }
 </script>
 
 <style scoped>
+
+    .carousel__viewport{
+        @apply  shadow-xl
+    }
     .carousel__slide{
-        @apply aspect-[5/3] bg-gray-400
+        @apply aspect-[5/3] rounded-lg overflow-hidden
     }
 
     .carousel__pagination-button .carousel__pagination-button--active::after {

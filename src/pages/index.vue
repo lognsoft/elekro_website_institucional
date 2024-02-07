@@ -16,8 +16,8 @@
         <!-- destaque -->
         <section id="emphasis">
             <div class="container mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <div class="mb-4 lg:mb-0 flex justify-center items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                    <div class="mb-4 lg:mb-0 flex justify-center items-center">
                         <img
                             src="/assets/images/4.jpeg" 
                             alt="imagem"
@@ -27,10 +27,10 @@
                             class="bg-gray-200 fluid-image"
                         />
                     </div>
-                    <div class="flex items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+                    <div class="flex items-center">
                         <div class="">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
-                            <MyLinkTwo class="text-slate-500 hover:text-amber-600 text-2xl" href="/">Lorem Ipsum</MyLinkTwo>
+                            <MyLinkTwo class="hover:text-amber-600 text-2xl" href="/produto/1">Lorem Ipsum</MyLinkTwo>
                         </div>
                     </div>
                 </div>
@@ -42,9 +42,9 @@
             <div class="container mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="bg-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                    <div data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center"
+                            class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center rounded-tl-lg"
                             src="/assets/images/de-lado-preta.jpeg"
                             alt="imagem"
                             srcset="/assets/images/de-lado-preta.jpeg"
@@ -53,15 +53,15 @@
                             loading="lazy"
                         />
                     </div>
-                    <div class="p-8 bg-slate-500 aspect-[1/1] md:aspect-[5/3] flex items-center">
-                        <div class="w-full text-center text-white">
-                            <h3 class="text-5xl font-extrabold mb-9" data-aos="fade-up" data-aos-duration="1000">Animação</h3>
-                            <MyLinkTwo class="justify-center text-2xl" href="/" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</MyLinkTwo>
+                    <div class="p-8 bg-black aspect-[1/1] md:aspect-[5/3] flex items-center rounded-tr-lg">
+                        <div class="w-full text-center text-white" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="text-5xl font-extrabold mb-9" >Lorem Ipsum</h3>
+                            <MyLinkTwo class="justify-center text-2xl" href="/produto/1">lorem ipsum</MyLinkTwo>
                         </div>
                     </div>
-                    <div class="bg-gray-200" data-aos="fade-up" data-aos-duration="1000">
+                    <div data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
+                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center rounded-bl-lg"
                             src="/assets/images/detalhe-biometria-preto.jpeg"
                             alt="imagem"
                             srcset="/assets/images/detalhe-biometria-preto.jpeg"
@@ -70,9 +70,9 @@
                             loading="lazy"
                         />
                     </div>
-                    <div class="bg-gray-200 aspect-square" data-aos="fade-up" data-aos-duration="1000">
+                    <div data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center"
+                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center rounded-br-lg"
                             src="/assets/images/porta-de-carregamento-preta.jpeg"
                             alt="imagem"
                             srcset="/assets/images/porta-de-carregamento-preta.jpeg"
@@ -90,9 +90,9 @@
             <div class="container mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-3">
-                    <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="lg:order-last lg:col-span-2 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full aspect-[2/1] object-cover"
+                            class="w-full aspect-[2/1] object-cover rounded-lg shadow-lg"
                             src="/assets/images/de-lado-prateada.jpeg"
                             srcset="/assets/images/de-lado-prateada.jpeg"
                             alt=""
@@ -125,9 +125,9 @@
         <section id="overview">
             <div class="container mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-3 grid">
-                    <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full aspect-[2/1] object-cover object-bottom"
+                            class="w-full aspect-[2/1] object-cover object-bottom rounded-lg shadow-lg"
                             src="/assets/images/porta-de-carregamento-prateada.jpeg"
                             srcset="/assets/images/porta-de-carregamento-prateada.jpeg"
                             alt=""

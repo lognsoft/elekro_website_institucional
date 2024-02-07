@@ -22,11 +22,8 @@
             :speed="1200"
         >
             <SwiperSlide v-for="obj, index in slide" :key="index" :virtualIndex="index" class="slider">
-                <div class="w-full lg:basis-3/5 text-white py-11 flex items-center px-9 bg-center bg-cover bg-no-repeat" :class="obj.bg">
+                <div class="w-full text-white py-11 flex items-center px-9 bg-center bg-cover bg-no-repeat" :class="obj.bg">
                     <h1 class="text-6xl md:text-8xl font-extrabold">{{ obj.description }}</h1>
-                </div>
-                <div class="basis-2/5 bg-black hidden lg:block">
-                    <!-- <h1>Hello, world</h1> -->
                 </div>
             </SwiperSlide>
         </Swiper>

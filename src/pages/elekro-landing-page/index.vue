@@ -46,9 +46,9 @@
             <div class="container mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-3">
-                    <div class="bg-slate-300 lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full aspect-[2/1] object-cover"
+                            class="w-full aspect-[2/1] object-cover rounded-lg shadow-lg shadow-slate-600"
                             src="/assets/images/de-lado-prateada.jpeg"
                             srcset="/assets/images/de-lado-prateada.jpeg"
                             alt=""
