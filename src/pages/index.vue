@@ -12,7 +12,21 @@
         
     </Head>
     <main>
-        <MySlide/>
+        <!-- <MySlide/> -->
+        <section class="pt-[90px] bg-black">
+            <div class="image-bg">
+                <div class="container h-full mx-auto flex justify-center items-start relative z-20">
+                    <div class="col-span-3 w-full max-w-[500px] mt-10 text-center text-white">
+                        <h1 class="font-extrabold text-5xl md:text-7xl mb-2">Lorem ipsum</h1>
+                        <h5 class="font-bold text-2xl md:text-4xl mb-2">Lorem Ipsum</h5>
+                        <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
+                            <MyLinkTwo class="text-base md:text-2xl" href="/">Ver Produto</MyLinkTwo>
+                            <MyLinkTwo class="text-base md:text-2xl" href="/">Comprar</MyLinkTwo>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- destaque -->
         <section id="emphasis">
             <div class="container mx-auto py-11 px-5 md:px-3">
@@ -28,7 +42,7 @@
                         />
                     </div>
                     <div class="flex items-center">
-                        <div class="">
+                        <div class="px-3 pb-4 lg:px-0 lg:pb-0">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
                             <MyLinkTwo class="hover:text-amber-600 text-2xl" href="/produto/1">Lorem Ipsum</MyLinkTwo>
                         </div>
@@ -153,6 +167,17 @@
 </script>
 
 <style scoped>
+
+    .image-bg{
+        @apply h-screen max-h-[692px] bg-[url('/assets/images/4.jpeg')] bg-center bg-cover relative pb-10
+    }
+    .image-bg::before{
+        content: '';
+    }
+
+    .image-bg::before{
+        @apply bg-black w-full h-full absolute top-0 left-0 opacity-40 z-10
+    }
     .bg-image::before{
         @apply absolute w-full h-full top-0 left-0 opacity-40 bg-black
     }
