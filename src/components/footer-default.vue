@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-black text-white py-11 pb-0">
-        <div class="container mx-auto px-5">
+        <div class="w-full max-w-[1900px] mx-auto px-5">
             <div class="grid grid-cols-3">
                 <div class="text-5xl font-extrabold text-center md:text-start col-span-3 mb-6 md:col-span-1 md:mb-0">
                     <LogoTipo class="inline-block"/>

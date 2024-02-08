@@ -1,6 +1,6 @@
 <template>
     <section class="py-11">
-        <div class="container mx-auto px-5 md:px-3 py-11">
+        <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3 py-11">
             <TitleSection v-if="title !== undefined">{{ title }}</TitleSection>
             <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
                 {{ submitMessage }}

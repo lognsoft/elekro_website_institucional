@@ -28,10 +28,10 @@
             </div>
         </section>
         <section class="py-11">
-            <div class="container mx-auto px-5 md:px-3">
+            <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3">
                 <h3 class="text-center text-gray-400 font-bold mb-6" data-aos="fade-up" data-aos-duration="500">Lorem Ipsum</h3>
                 <TitleSection class="text-center mb-11" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
-                <div class="grid gap-8 md:gap-4 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 text-center lg:text-start">
+                <div class="grid gap-8 md:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 text-center lg:text-start">
                     <div v-for="content,index of array" :key="index">
                         <h3 class="font-extrabold text-4xl mb-9" data-aos="fade-up" data-aos-duration="1000">
                             <span class="inline-flex items-end"><Icon :name="content.icon"/></span>
@@ -43,7 +43,7 @@
             </div>
         </section>
         <section class="bg-black text-white">
-            <div class="container mx-auto py-11 px-5 md:px-3">
+            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-3">
                     <div class="lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
@@ -69,7 +69,7 @@
             </div>
         </section>
         <section class="py-11 bg-black bg-cover min-h-96 flex items-center">
-            <div class="mx-auto container px-5 md:px-3 grid grid-cols-4">
+            <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3 grid grid-cols-4">
                 <div class="col-span-4 lg:col-span-1 pr-2">
                     <TitleSection class="text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 </div>

@@ -17,7 +17,7 @@
             <div class="image-bg">
                 <div class="container h-full mx-auto flex justify-center items-start relative z-20">
                     <div class="col-span-3 w-full max-w-[500px] mt-10 text-center text-white">
-                        <h1 class="font-extrabold text-5xl md:text-7xl mb-2">Lorem ipsum</h1>
+                        <h1 class="font-extrabold text-5xl md:text-6xl mb-2">Lorem ipsum</h1>
                         <h5 class="font-bold text-2xl md:text-4xl mb-2">Lorem Ipsum</h5>
                         <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
                             <MyLinkTwo class="text-base md:text-2xl" href="/">Ver Produto</MyLinkTwo>
@@ -29,7 +29,7 @@
         </section>
         <!-- destaque -->
         <section id="emphasis">
-            <div class="container mx-auto py-11 px-5 md:px-3">
+            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                     <div class="mb-4 lg:mb-0 flex justify-center items-center">
                         <img
@@ -53,7 +53,7 @@
         <!-- end destaque -->
         <!-- features -->
         <section id="features">
-            <div class="container mx-auto py-11 px-5 md:px-3">
+            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
                     <div data-aos="fade-up" data-aos-duration="1000">
@@ -101,7 +101,7 @@
         <!-- end features -->
         <!-- advantages -->
         <section id="advantages">
-            <div class="container mx-auto py-11 px-5 md:px-3">
+            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-3">
                     <div class="lg:order-last lg:col-span-2 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
@@ -137,8 +137,8 @@
         <!-- end-image -->
         <!-- advantages -->
         <section id="overview">
-            <div class="container mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-3 grid">
+            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
                     <div class="lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
                         <img
                             class="w-full aspect-[2/1] object-cover object-bottom rounded-lg shadow-lg"

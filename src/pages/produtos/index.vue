@@ -16,8 +16,8 @@
             Produtos
         </Banner>
         <section class="py-11">
-            <div class="container mx-auto py-11 px-5">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="w-full max-w-[1900px] mx-auto py-11 px-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <NuxtLink v-for="product,index in products" :key="index" :to="`/produtos/1`" class="shadow-xl col-span-1 block overflow-hidden rounded-lg bg-black text-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <figure class="aspect-video mb-2">
                             <!-- <h1 class="text-xl md:text-2x_l font-bold mb-4">1080 x 540</h1> -->

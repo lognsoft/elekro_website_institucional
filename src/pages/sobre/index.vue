@@ -18,7 +18,7 @@
 
         <section class="bg-image"></section>
         <section class="py-9 bg-black min-h-96 flex items-center">
-            <div class="mx-auto container px-5 md:px-3 grid grid-cols-4">
+            <div class="mx-auto w-full max-w-[1900px] px-5 md:px-3 grid grid-cols-4">
                 <div class="col-span-4 lg:col-span-1 pr-2">
                     <TitleSection class="text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 </div>
@@ -37,7 +37,7 @@
             </div>
         </section>
         <section class="py-9 bg-slate-400 min-h-96 flex items-center">
-            <div class="mx-auto container px-5 md:px-3 grid grid-cols-6">
+            <div class="mx-auto w-full max-w-[1900px] px-5 md:px-3 grid grid-cols-6">
                 <div class="col-span-6 lg:col-span-2 pr-2">
                     <TitleSection class="text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 </div>
@@ -54,7 +54,7 @@
             </div>
         </section>
         <section class="py-11">
-            <div class="container mx-auto px-5 md:px-3">
+            <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3">
                 <h3 class="text-center text-amber-600 font-bold mb-6" data-aos="fade-up" data-aos-duration="500">Lorem Ipsum</h3>
                 <TitleSection class="text-center mb-11" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
                 <div class="grid gap-8 md:gap-4 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 text-center">

@@ -2,7 +2,7 @@
     <Body/>
     <header ref="header" class="header bg-black">
         <div class="my-3 md:px-10 px-2">
-            <nav class="container mx-auto flex justify-between items-center">
+            <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
                     <LogoTipo/>
                 </div>
@@ -14,7 +14,7 @@
         </div>
         <ClientOnly>
             <div class="navigate" :class="{ active:navigateOpen }">
-                <div class="container mx-auto h-screen relative flex items-center justify-end py-5 md:px-3">
+                <div class="w-full max-w-[1900px] mx-auto h-screen relative flex items-center justify-end py-5 md:px-3">
                     <button @click="navigateOpen = false" type="button" aria-label="fechar menu" class="cursor-pointer absolute text-black top-4 text-2xl bg-white h-8 w-8 right-1">
                         <Icon name="ic:baseline-close"/>
                     </button>
