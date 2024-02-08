@@ -130,7 +130,7 @@
             <div class="bg-image">
                 <div class="container-text">
                     <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                    <p class="max-w-xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
+                    <p class="max-w-screen-md" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
                 </div>
             </div>
         </section>
@@ -196,6 +196,6 @@
     }
 
     .container-text{
-        @apply flex justify-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
+        @apply w-full max-w-[1900px] flex justify-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
     }
 </style>
