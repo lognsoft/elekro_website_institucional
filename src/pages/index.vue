@@ -30,21 +30,22 @@
         <!-- destaque -->
         <section id="emphasis">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                     <div class="mb-4 lg:mb-0 flex justify-center items-center">
                         <img
-                            src="/assets/images/4.jpeg" 
+                            src="/assets/images/home.jpg" 
                             alt="imagem"
-                            srcset="/assets/images/4.jpeg"
+                            srcset="/assets/images/home.jpg"
                             width="600"
                             height="500"
-                            class="bg-gray-200 fluid-image"
+                            class="bg-gray-200 fluid-image rounded-lg lg:rounded-e-none"
                         />
                     </div>
-                    <div class="flex items-center">
-                        <div class="px-3 pb-4 lg:px-0 lg:pb-0">
-                            <h2 class="text-5xl md:text-7xl font-extrabold mb-7">Lorem Ipsum</h2>
-                            <MyLinkTwo class="hover:text-amber-600 text-2xl" href="/produto/1">Lorem Ipsum</MyLinkTwo>
+                    <div class="p-4 h-full">
+                        <div class="sticky top-[120px]">
+                            <h2 class="text-5xl md:text-7xl font-extrabold mb-5">Lorem Ipsum</h2>
+                            <p class="mb-4 text-base md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quaerat deserunt repellat. Modi alias laborum minima quasi rem obcaecati autem? Tempore est repellat, veniam molestias minus officia. Natus, autem ullam?</p>
+                            <MyLinkTwo class="hover:text-amber-600 text-2xl" href="/produtos/1">Lorem Ipsum</MyLinkTwo>
                         </div>
                     </div>
                 </div>
@@ -102,21 +103,20 @@
         <!-- advantages -->
         <section id="advantages">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
-                <div class="grid grid-cols-1 lg:grid-cols-3">
-                    <div class="lg:order-last lg:col-span-2 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+                <div class="grid grid-cols-1 lg:grid-cols-6">
+                    <div class="lg:order-last lg:col-span-2 lg:col-start-4 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full aspect-[2/1] object-cover rounded-lg shadow-lg"
-                            src="/assets/images/de-lado-prateada.jpeg"
-                            srcset="/assets/images/de-lado-prateada.jpeg"
+                            class="max-w-full object-cover rounded-lg shadow-lg"
+                            src="/assets/images/parte-de-tras-preto.jpeg"
+                            srcset="/assets/images/parte-de-tras-preto.jpeg"
                             alt=""
                             loading="lazy"
                         />
                     </div>
-                    <div class="flex items-center pt-8 lg:px-11 lg:order-first">
-                        <div>
-                            <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="lg:col-span-3 pt-8 lg:px-11 lg:order-first">
+                        <div class="sticky top-[120px] max-w-xl mx-auto">
+                            <h3 class="text-center lg:text-start text-7xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
+                            <p class="text-center lg:text-start text-2xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ipsam magnam rem assumenda id expedita sed consectetur sit iure dignissimos eius nulla in perferendis voluptatibus illum voluptates, esse, ipsum soluta.
                             </p>
                         </div>
@@ -130,7 +130,7 @@
             <div class="bg-image">
                 <div class="container-text">
                     <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                    <p class="max-w-screen-md" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
+                    <p class="text-xl max-w-5xl text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
                 </div>
             </div>
         </section>
@@ -138,20 +138,20 @@
         <!-- advantages -->
         <section id="overview">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-3">
-                    <div class="lg:order-last lg:col-span-2" data-aos="fade-up" data-aos-duration="1000">
+                <div class="grid grid-cols-1 lg:grid-cols-6">
+                    <div class="lg:col-span-2 lg:col-start-2 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
                         <img
-                            class="w-full aspect-[2/1] object-cover object-bottom rounded-lg shadow-lg"
-                            src="/assets/images/porta-de-carregamento-prateada.jpeg"
-                            srcset="/assets/images/porta-de-carregamento-prateada.jpeg"
+                            class="max-w-full object-cover rounded-lg shadow-lg"
+                            src="/assets/images/conjunto-preto.jpeg"
+                            srcset="/assets/images/conjunto-preto.jpeg"
                             alt=""
                             loading="lazy"
                         />
                     </div>
-                    <div class="flex items-center pt-8 lg:px-11 lg:order-first">
-                        <div>
-                            <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="lg:col-span-3 pt-8 lg:px-11">
+                        <div class="sticky top-[120px] max-w-xl mx-auto">
+                            <h3 class="text-center lg:text-start text-7xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
+                            <p class="text-center lg:text-start text-2xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ipsam magnam rem assumenda id expedita sed consectetur sit iure dignissimos eius nulla in perferendis voluptatibus illum voluptates, esse, ipsum soluta.
                             </p>
                         </div>
@@ -196,6 +196,6 @@
     }
 
     .container-text{
-        @apply w-full max-w-[1900px] flex justify-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
+        @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
     }
 </style>
