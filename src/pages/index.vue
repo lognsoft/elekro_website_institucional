@@ -88,11 +88,11 @@
                         loading="lazy"
                     />
                     <div
-                        class="max-w-full aspect-[1/0.8] bg-[url('/assets/images/house.png')] flex items-end justify-end"
+                        class="max-w-full aspect-[1/0.8] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
                     >
-                        <div class="py-5 px-5 mb-[60px] text-white relative">
+                        <div class="py-5 px-5 md:mb-[60px] text-white relative">
                             <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
-                            <h2 class="text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
+                            <h2 class="text-4xl md:text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
                         </div>
                     </div>
                 </div>
