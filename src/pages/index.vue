@@ -68,35 +68,35 @@
             </div>
         </section>
         <section class="mb-3">
-            <div class="w-full max-w-[2500px] mx-auto px-3">
+            <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <figure class="aspect-[1/0.8]">
+                    <figure class="aspect-[1/0.6]">
                         <img
                             aria-label="macaneta dupla preta"
                             src="/assets/images/macanetaCompletaPrata.png"
                             srcset="/assets/images/macanetaCompletaPrata.png"
-                            class="w-full"
+                            class="w-full h-full object-cover"
                             loading="lazy"
                         />
                     </figure>
-                    <figure class="aspect-[1/0.8]">
+                    <figure class="aspect-[1/0.6]">
                         <img
                             src="/assets/images/macanetaDuplaPreta.png"
                             srcset="/assets/images/macanetaDuplaPreta.png"
-                            class="w-full"
+                            class="w-full h-full object-cover"
                             loading="lazy"
                         />
                     </figure>
-                    <figure class="aspect-[1/0.8]">
+                    <figure class="aspect-[1/0.6]">
                         <img
                             src="/assets/images/cartao.png"
                             srcset="/assets/images/cartao.png"
-                            class="w-full"
+                            class="w-full h-full object-cover"
                             loading="lazy"
                         />
                     </figure>
                     <div
-                        class="aspect-[1/0.8] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
+                        class="aspect-[1/0.6] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
                     >
                         <div class="py-5 px-5 md:mb-[60px] text-white relative">
                             <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
@@ -106,78 +106,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="features">
-            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <LazyTitleSection data-aos="fade-up" data-aos-anchor-placement="center-bottom">Lorem Ipsum</LazyTitleSection>
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div data-aos="fade-in" data-aos-delay="50">
-                        <img
-                            class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center lg:rounded-tl-lg"
-                            src="/assets/images/de-lado-preta.jpeg"
-                            alt="imagem"
-                            srcset="/assets/images/de-lado-preta.jpeg"
-                            width="600"
-                            height="500"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="grid-image">
-                        <div class="w-full text-center text-white relative z-20" data-aos="fade-up" data-aos-delay="50">
-                            <h3 class="text-5xl font-extrabold mb-9" >Lorem Ipsum</h3>
-                            <LazyMyLinkTwo class="justify-center text-2xl" href="/produto/1">lorem ipsum</LazyMyLinkTwo>
-                        </div>
-                    </div>
-                    <div data-aos="fade-in" data-aos-delay="50">
-                        <img
-                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center lg:rounded-bl-lg"
-                            src="/assets/images/detalhe-biometria-preto.jpeg"
-                            alt="imagem"
-                            srcset="/assets/images/detalhe-biometria-preto.jpeg"
-                            width="600"
-                            height="500"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div data-aos="fade-in" data-aos-delay="50">
-                        <img
-                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center lg:rounded-br-lg"
-                            src="/assets/images/porta-de-carregamento-preta.jpeg"
-                            alt="imagem"
-                            srcset="/assets/images/porta-de-carregamento-preta.jpeg"
-                            width="600"
-                            height="500"
-                            loading="lazy"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- end features -->
-        <!-- advantages -->
-        <!-- <section id="advantages">
-            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-6">
-                    <div class="lg:order-last lg:col-span-2 lg:col-start-4 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
-                        <img
-                            class="max-w-full object-cover rounded-lg shadow-lg"
-                            src="/assets/images/parte-de-tras-preto.jpeg"
-                            srcset="/assets/images/parte-de-tras-preto.jpeg"
-                            alt=""
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="lg:col-span-3 pt-8 lg:px-11 lg:order-first">
-                        <div class="sticky top-[120px] max-w-xl mx-auto">
-                            <h3 class="text-center lg:text-start text-7xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                            <p class="text-center lg:text-start text-2xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ipsam magnam rem assumenda id expedita sed consectetur sit iure dignissimos eius nulla in perferendis voluptatibus illum voluptates, esse, ipsum soluta.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- end advantages -->
         <!-- bg-image -->
         <section id="bg-image">
             <div class="bg-image">
