@@ -46,7 +46,7 @@
         </section>
         <!-- end destaque -->
         <!-- features -->
-        <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] py-11 mb-3">
+        <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11 mb-3">
             <div class="container mx-auto h-full">
                 <div class="h-full flex flex-col items-center justify-center gap-5">
                     <figure>
@@ -59,36 +59,44 @@
                         />
                     </figure>
                     <div>
-                        <LazyMyLinkTwo href="/" class="text-3xl text-blue-600 capitalize">loja</LazyMyLinkTwo>
+                        <NuxtLink
+                                class="py-3 px-6 bg-black text-white rounded-full text-xl inline-block"
+                                to="/"
+                            >Conheça nossos produtos</NuxtLink>
                     </div>
                 </div>
             </div>
         </section>
         <section class="mb-3">
-            <div class="w-full max-w-[2000px] mx-auto px-3">
+            <div class="w-full max-w-[2500px] mx-auto px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <img
-                        aria-label="macaneta dupla preta"
-                        src="/assets/images/macanetaCompletaPrata.png"
-                        srcset="/assets/images/macanetaCompletaPrata.png"
-                        class="max-w-full aspect-[1/0.8]"
-                        loading="lazy"
-                    />
-                    <img
-                        src="/assets/images/macanetaDuplaPreta.png"
-                        srcset="/assets/images/macanetaDuplaPreta.png"
-                        class="max-w-full aspect-[1/0.8]"
-                        loading="lazy"
-                    />
-                    
-                    <img
-                        src="/assets/images/cartao.png"
-                        srcset="/assets/images/cartao.png"
-                        class="max-w-full aspect-[1/0.8]"
-                        loading="lazy"
-                    />
+                    <figure class="aspect-[1/0.8]">
+                        <img
+                            aria-label="macaneta dupla preta"
+                            src="/assets/images/macanetaCompletaPrata.png"
+                            srcset="/assets/images/macanetaCompletaPrata.png"
+                            class="w-full"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="aspect-[1/0.8]">
+                        <img
+                            src="/assets/images/macanetaDuplaPreta.png"
+                            srcset="/assets/images/macanetaDuplaPreta.png"
+                            class="w-full"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <figure class="aspect-[1/0.8]">
+                        <img
+                            src="/assets/images/cartao.png"
+                            srcset="/assets/images/cartao.png"
+                            class="w-full"
+                            loading="lazy"
+                        />
+                    </figure>
                     <div
-                        class="max-w-full aspect-[1/0.8] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
+                        class="aspect-[1/0.8] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
                     >
                         <div class="py-5 px-5 md:mb-[60px] text-white relative">
                             <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
@@ -242,7 +250,7 @@
     }
 
     .image-bg{
-        @apply h-screen max-h-[692px] bg-[url('/assets/images/f(1).jpg')] bg-center bg-cover relative pb-10
+        @apply h-screen max-h-[692px] bg-[url('/assets/images/f.jpg')] bg-center bg-cover relative pb-10
     }
     /* .image-bg::before{
         content: '';
