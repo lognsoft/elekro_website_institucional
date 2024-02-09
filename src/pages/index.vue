@@ -20,8 +20,8 @@
                         <h1 class="font-extrabold text-5xl md:text-6xl mb-2">Lorem ipsum</h1>
                         <h5 class="font-bold text-2xl md:text-4xl mb-2">Lorem Ipsum</h5>
                         <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
-                            <MyLinkTwo class="text-base md:text-2xl" href="/">Ver Produto</MyLinkTwo>
-                            <MyLinkTwo class="text-base md:text-2xl" href="/">Comprar</MyLinkTwo>
+                            <LazyMyLinkTwo class="text-base md:text-2xl" href="/">Ver Produto</LazyMyLinkTwo>
+                            <LazyMyLinkTwo class="text-base md:text-2xl" href="/">Comprar</LazyMyLinkTwo>
                         </nav>
                     </div>
                 </div>
@@ -30,9 +30,11 @@
         <!-- destaque -->
         <section id="emphasis">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white rounded-lg shadow-lg">
                     <div class="mb-4 lg:mb-0 flex justify-center items-center">
                         <img
+                            data-aos="fade-in"
+                            data-aos-duration="1000"
                             src="/assets/images/home.jpg" 
                             alt="imagem"
                             srcset="/assets/images/home.jpg"
@@ -42,7 +44,7 @@
                         />
                     </div>
                     <div class="p-4 h-full">
-                        <div class="sticky top-[120px]">
+                        <div class="sticky top-[120px]" data-aos="fade-up" data-aos-duration="1000">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-5">Lorem Ipsum</h2>
                             <p class="mb-4 text-base md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quaerat deserunt repellat. Modi alias laborum minima quasi rem obcaecati autem? Tempore est repellat, veniam molestias minus officia. Natus, autem ullam?</p>
                             <MyLinkTwo class="hover:text-amber-600 text-2xl" href="/produtos/1">Lorem Ipsum</MyLinkTwo>
@@ -55,11 +57,11 @@
         <!-- features -->
         <section id="features">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <TitleSection data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
+                <LazyTitleSection data-aos="fade-up" data-aos-anchor-placement="center-bottom">Lorem Ipsum</LazyTitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div data-aos="fade-up" data-aos-duration="1000">
+                    <div data-aos="fade-in" data-aos-delay="50">
                         <img
-                            class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center rounded-tl-lg"
+                            class="w-full h-full aspect-[1/1] md:aspect-[5/3] object-cover object-center lg:rounded-tl-lg"
                             src="/assets/images/de-lado-preta.jpeg"
                             alt="imagem"
                             srcset="/assets/images/de-lado-preta.jpeg"
@@ -68,15 +70,15 @@
                             loading="lazy"
                         />
                     </div>
-                    <div class="p-8 bg-black aspect-[1/1] md:aspect-[5/3] flex items-center rounded-tr-lg">
-                        <div class="w-full text-center text-white" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="grid-image">
+                        <div class="w-full text-center text-white relative z-20" data-aos="fade-up" data-aos-delay="50">
                             <h3 class="text-5xl font-extrabold mb-9" >Lorem Ipsum</h3>
-                            <MyLinkTwo class="justify-center text-2xl" href="/produto/1">lorem ipsum</MyLinkTwo>
+                            <LazyMyLinkTwo class="justify-center text-2xl" href="/produto/1">lorem ipsum</LazyMyLinkTwo>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000">
+                    <div data-aos="fade-in" data-aos-delay="50">
                         <img
-                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center rounded-bl-lg"
+                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center lg:rounded-bl-lg"
                             src="/assets/images/detalhe-biometria-preto.jpeg"
                             alt="imagem"
                             srcset="/assets/images/detalhe-biometria-preto.jpeg"
@@ -85,9 +87,9 @@
                             loading="lazy"
                         />
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000">
+                    <div data-aos="fade-in" data-aos-delay="50">
                         <img
-                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center rounded-br-lg"
+                            class="w-full h-full object-cover aspect-[1/1] md:aspect-[5/3] object-center lg:rounded-br-lg"
                             src="/assets/images/porta-de-carregamento-preta.jpeg"
                             alt="imagem"
                             srcset="/assets/images/porta-de-carregamento-preta.jpeg"
@@ -104,7 +106,7 @@
         <section id="advantages">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-6">
-                    <div class="lg:order-last lg:col-span-2 lg:col-start-4 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="lg:order-last lg:col-span-2 lg:col-start-4 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
                         <img
                             class="max-w-full object-cover rounded-lg shadow-lg"
                             src="/assets/images/parte-de-tras-preto.jpeg"
@@ -139,7 +141,7 @@
         <section id="overview">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-6">
-                    <div class="lg:col-span-2 lg:col-start-2 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="lg:col-span-2 lg:col-start-2 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
                         <img
                             class="max-w-full object-cover rounded-lg shadow-lg"
                             src="/assets/images/conjunto-preto.jpeg"
@@ -167,6 +169,17 @@
 </script>
 
 <style scoped>
+
+    .grid-image{
+        @apply p-8 bg-[url('/assets/images/home.jpg')] bg-center aspect-[1/1] md:aspect-[5/3] flex items-center rounded-tr-lg relative
+    }
+
+    .grid-image::before{
+        content: '';
+    }
+    .grid-image::before{
+        @apply  absolute w-full h-full top-0 left-0 bg-black opacity-30 z-10
+    }
 
     .image-bg{
         @apply h-screen max-h-[692px] bg-[url('/assets/images/4.jpeg')] bg-center bg-cover relative pb-10

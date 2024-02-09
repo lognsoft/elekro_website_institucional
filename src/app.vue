@@ -14,7 +14,7 @@
 
 <style>
     body{
-        @apply bg-slate-100;
+        @apply bg-white;
     }
     body{
         font-family: 'Source Sans 3', sans-serif;
