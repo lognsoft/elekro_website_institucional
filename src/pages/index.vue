@@ -13,41 +13,32 @@
     </Head>
     <main>
         <!-- <MySlide/> -->
-        <section class="pt-[90px] bg-black">
+        <section class="pt-[70px] mb-3">
             <div class="image-bg">
-                <div class="container h-full mx-auto flex justify-center items-start relative z-20">
-                    <div class="col-span-3 w-full max-w-[500px] mt-10 text-center text-white">
-                        <h1 class="font-extrabold text-5xl md:text-6xl mb-2">Lorem ipsum</h1>
-                        <h5 class="font-bold text-2xl md:text-4xl mb-2">Lorem Ipsum</h5>
+                <div class="container h-full mx-auto flex justify-center items-end relative z-20">
+                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
+                        <h1 class="cta-chamada font-extrabold uppercase">Tecnologia e segurança</h1>
+                        <!-- <h2 class="cta-chamada font-light">Fechadura eletrônica</h2> -->
+                        <!-- <h5 class="font-bold text-2xl md:text-4xl mb-2">Lorem Ipsum</h5> -->
                         <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
-                            <LazyMyLinkTwo class="text-base md:text-2xl" href="/">Ver Produto</LazyMyLinkTwo>
-                            <LazyMyLinkTwo class="text-base md:text-2xl" href="/">Comprar</LazyMyLinkTwo>
+                            <LazyMyLinkTwo class="cta-link" href="/">Ver Produto</LazyMyLinkTwo>
+                            <LazyMyLinkTwo class="cta-link" href="/">Comprar</LazyMyLinkTwo>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
         <!-- destaque -->
-        <section id="emphasis">
-            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-black text-white rounded-lg shadow-lg">
-                    <div class="mb-4 lg:mb-0 flex justify-center items-center">
-                        <img
-                            data-aos="fade-in"
-                            data-aos-duration="1000"
-                            src="/assets/images/home.jpg" 
-                            alt="imagem"
-                            srcset="/assets/images/home.jpg"
-                            width="600"
-                            height="500"
-                            class="bg-gray-200 fluid-image rounded-lg lg:rounded-e-none"
-                        />
-                    </div>
-                    <div class="p-4 h-full">
-                        <div class="sticky top-[120px]" data-aos="fade-up" data-aos-duration="1000">
-                            <h2 class="text-5xl md:text-7xl font-extrabold mb-5">Lorem Ipsum</h2>
-                            <p class="mb-4 text-base md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quaerat deserunt repellat. Modi alias laborum minima quasi rem obcaecati autem? Tempore est repellat, veniam molestias minus officia. Natus, autem ullam?</p>
-                            <MyLinkTwo class="hover:text-amber-600 text-2xl" href="/produtos/1">Lorem Ipsum</MyLinkTwo>
+        <section class="bg-[url('/assets/images/macaneta.jpg')] h-screen max-h-[692px] bg-center bg-cover py-11 mb-3">
+            <div class="container mx-auto h-full">
+                <div class="flex items-end justify-center h-full">
+                    <div class="text-white text-center max-w-[600px]">
+                        <h2 class="text-4xl mb-8 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        <div>
+                            <NuxtLink
+                                class="py-3 px-6 bg-white text-black rounded-full text-xl inline-block"
+                                to="/"
+                            >lorem ipsum</NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -55,7 +46,59 @@
         </section>
         <!-- end destaque -->
         <!-- features -->
-        <section id="features">
+        <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] py-11 mb-3">
+            <div class="container mx-auto h-full">
+                <div class="h-full flex flex-col items-center justify-center gap-5">
+                    <figure>
+                        <img
+                            class="max-w-full h-auto"
+                            src="/assets/images/bestpricelogo.png"
+                            srcset="/assets/images/bestpricelogo.png"
+                            alt=""
+                            loading="lazy"
+                        />
+                    </figure>
+                    <div>
+                        <LazyMyLinkTwo href="/" class="text-3xl text-blue-600 capitalize">loja</LazyMyLinkTwo>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-3">
+            <div class="w-full max-w-[2000px] mx-auto px-3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <img
+                        aria-label="macaneta dupla preta"
+                        src="/assets/images/macanetaCompletaPrata.png"
+                        srcset="/assets/images/macanetaCompletaPrata.png"
+                        class="max-w-full aspect-[1/0.8]"
+                        loading="lazy"
+                    />
+                    <img
+                        src="/assets/images/macanetaDuplaPreta.png"
+                        srcset="/assets/images/macanetaDuplaPreta.png"
+                        class="max-w-full aspect-[1/0.8]"
+                        loading="lazy"
+                    />
+                    
+                    <img
+                        src="/assets/images/cartao.png"
+                        srcset="/assets/images/cartao.png"
+                        class="max-w-full aspect-[1/0.8]"
+                        loading="lazy"
+                    />
+                    <div
+                        class="max-w-full aspect-[1/0.8] bg-[url('/assets/images/house.png')] flex items-end justify-end"
+                    >
+                        <div class="py-5 px-5 mb-[60px] text-white relative">
+                            <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
+                            <h2 class="text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="features">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <LazyTitleSection data-aos="fade-up" data-aos-anchor-placement="center-bottom">Lorem Ipsum</LazyTitleSection>
                 <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -100,10 +143,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end features -->
         <!-- advantages -->
-        <section id="advantages">
+        <!-- <section id="advantages">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-6">
                     <div class="lg:order-last lg:col-span-2 lg:col-start-4 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
@@ -125,7 +168,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end advantages -->
         <!-- bg-image -->
         <section id="bg-image">
@@ -170,6 +213,23 @@
 
 <style scoped>
 
+    .cta-chamada{
+        /* -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #231f20; */
+        /* color: #e9e9e9; */
+    }
+    .cta-chamada{
+        @apply text-3xl md:text-4xl mb-5 text-white
+    }
+
+    .cta-link{
+        @apply text-3xl text-white
+    }
+
+    /* .cta-link{
+        color: #0066cc
+    } */
+
     .grid-image{
         @apply p-8 bg-[url('/assets/images/home.jpg')] bg-center aspect-[1/1] md:aspect-[5/3] flex items-center rounded-tr-lg relative
     }
@@ -182,15 +242,15 @@
     }
 
     .image-bg{
-        @apply h-screen max-h-[692px] bg-[url('/assets/images/4.jpeg')] bg-center bg-cover relative pb-10
+        @apply h-screen max-h-[692px] bg-[url('/assets/images/f(1).jpg')] bg-center bg-cover relative pb-10
     }
-    .image-bg::before{
+    /* .image-bg::before{
         content: '';
     }
 
     .image-bg::before{
-        @apply bg-black w-full h-full absolute top-0 left-0 opacity-40 z-10
-    }
+        @apply bg-black w-full h-full absolute top-0 left-0 opacity-10 z-10
+    } */
     .bg-image::before{
         @apply absolute w-full h-full top-0 left-0 opacity-40 bg-black
     }

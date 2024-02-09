@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="props.href" class="flex items-center gap-0 hover:gap-3 duration-200">
+    <NuxtLink :to="props.href" class="flex items-center gap-0 hover:gap-3 duration-200 hover:underline">
         <slot/>
         <MyIcon icon="eva:arrow-right-fill"/>
     </NuxtLink>
