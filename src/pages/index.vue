@@ -11,9 +11,28 @@
         <Meta name="twitter:card" content="summary_large_image"/>
         
     </Head>
-    <main>
-        <!-- <MySlide/> -->
-        <section class="pt-[70px] mb-3">
+    <main class="">
+        <!-- destaque -->
+        <div class="pt-[70px]">
+            <section class=" bg-[url('/assets/images/macaneta.jpg')] h-screen max-h-[692px] bg-center bg-cover py-11 mb-3">
+                <div class="container mx-auto h-full">
+                    <div class="flex items-end justify-center h-full">
+                        <div class="text-white text-center max-w-[600px]">
+                            <!-- <h2 class="text-4xl mb-8 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2> -->
+                            <div>
+                                <NuxtLink
+                                    class="py-3 px-6 bg-white hover:bg-black hover:text-white duration-300 border-2 border-white text-black rounded-full text-xl inline-block"
+                                    to="/"
+                                >lorem ipsum</NuxtLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- end destaque -->
+        <section class=" mb-3">
             <div class="image-bg">
                 <div class="container h-full mx-auto flex justify-center items-end relative z-20 px-2">
                     <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
@@ -26,24 +45,6 @@
                 </div>
             </div>
         </section>
-        <!-- destaque -->
-        <section class="bg-[url('/assets/images/macaneta.jpg')] h-screen max-h-[692px] bg-center bg-cover py-11 mb-3">
-            <div class="container mx-auto h-full">
-                <div class="flex items-end justify-center h-full">
-                    <div class="text-white text-center max-w-[600px]">
-                        <h2 class="text-4xl mb-8 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <div>
-                            <NuxtLink
-                                class="py-3 px-6 bg-white hover:bg-black hover:text-white duration-300 border-2 border-white text-black rounded-full text-xl inline-block"
-                                to="/"
-                            >lorem ipsum</NuxtLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end destaque -->
-        <!-- features -->
         <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11 mb-3">
             <div class="container mx-auto h-full">
                 <div class="h-full flex flex-col items-center justify-center gap-5">
@@ -65,18 +66,20 @@
                 </div>
             </div>
         </section>
+        
+        
         <section class="mb-3">
             <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <figure class="aspect-[1/0.6]">
-                        <img
-                            aria-label="macaneta dupla preta"
-                            src="/assets/images/macanetaCompletaPrata.png"
-                            srcset="/assets/images/macanetaCompletaPrata.png"
-                            class="w-full h-full object-cover"
-                            loading="lazy"
-                        />
-                    </figure>
+                    <div
+                        class="aspect-[1/0.6] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
+                    >
+                        <div class="py-5 px-5 md:mb-[60px] text-white relative">
+                            <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
+                            <h2 class="text-4xl md:text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
+                        </div>
+                    </div>
+                    
                     <figure class="aspect-[1/0.6]">
                         <img
                             src="/assets/images/macanetaDuplaPreta.png"
@@ -93,14 +96,15 @@
                             loading="lazy"
                         />
                     </figure>
-                    <div
-                        class="aspect-[1/0.6] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
-                    >
-                        <div class="py-5 px-5 md:mb-[60px] text-white relative">
-                            <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
-                            <h2 class="text-4xl md:text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
-                        </div>
-                    </div>
+                    <figure class="aspect-[1/0.6]">
+                        <img
+                            aria-label="macaneta dupla preta"
+                            src="/assets/images/macanetaCompletaPrata.png"
+                            srcset="/assets/images/macanetaCompletaPrata.png"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                        />
+                    </figure>
                 </div>
             </div>
         </section>

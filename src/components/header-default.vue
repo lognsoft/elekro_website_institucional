@@ -1,5 +1,4 @@
 <template>
-    <Body/>
     <header ref="header" class="header bg-black">
         <div class="my-3 md:px-10 px-2">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
