@@ -30,14 +30,14 @@
         
         <section class="mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
             <div class="w-full h-full max-w-[2500px] mx-auto md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-6 gap-3 h-full">
+                <div class="grid grid-cols-1 md:grid-cols-6 gap-3 h-full">
                     <figure class="col-start-3 col-span-2 relative">
                         <div
                             class="info-plus bg-my-gray top-[18%] left-[43%]"
                             title="senha"
                         >
                             <div class="info-plus__line">
-                                <div class="w-[100px] bg-my-gray h-1"></div>
+                                <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
                                 SENHA
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                             title="tag"
                         >
                             <div class="info-plus__line">
-                                <div class="w-[100px] h-1 bg-my-gray"></div>
+                                <div class="w-[60px] md:w-[100px] h-1 bg-my-gray rounded"></div>
                                 TAG
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                         >
                             <div class="info-plus__line-left">
                                 BIOMETRIA
-                                <div class="w-[100px] bg-my-gray h-1"></div>
+                                <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
                             </div>
                         </div>
                         <div
@@ -64,7 +64,7 @@
                             title="conexão de energia"
                         >
                             <div class="info-plus__line">
-                                <div class="w-[100px] bg-my-gray h-1"></div>
+                                <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
                                 CONEXÂO DE ENERGIA
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                             <!-- <Icon name="fa6-solid:plus"/> -->
                             <div class="info-plus__line-left">
                                 FECHADURA
-                                <div class="w-[100px] bg-white bg-my-gray h-1"></div>
+                                <div class="w-[60px] md:w-[100px] bg-white bg-my-gray h-1 rounded"></div>
                             </div>
                         </div>
                         
@@ -117,14 +117,14 @@
                         />
                     </figure>
                     
-                    <div
-                        class="aspect-[1/0.6] bg-[url('/assets/images/fechadura.png')] flex items-end justify-end bg-center bg-cover"
-                    >
-                        <div class="py-5 px-5 md:mb-[60px] text-white relative">
-                            <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
-                            <h2 class="text-4xl md:text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
-                        </div>
-                    </div>
+                    <figure class="aspect-[1/0.6]">
+                        <img
+                            src="/assets/images/fechadura.png"
+                            srcset="/assets/images/fechadura.png"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                        />
+                    </figure>
                 </div>
             </div>
         </section>
