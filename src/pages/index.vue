@@ -15,11 +15,9 @@
         <!-- <MySlide/> -->
         <section class="pt-[70px] mb-3">
             <div class="image-bg">
-                <div class="container h-full mx-auto flex justify-center items-end relative z-20">
+                <div class="container h-full mx-auto flex justify-center items-end relative z-20 px-2">
                     <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
                         <h1 class="cta-chamada font-extrabold uppercase">Tecnologia e segurança</h1>
-                        <!-- <h2 class="cta-chamada font-light">Fechadura eletrônica</h2> -->
-                        <!-- <h5 class="font-bold text-2xl md:text-4xl mb-2">Lorem Ipsum</h5> -->
                         <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
                             <LazyMyLinkTwo class="cta-link" href="/">Ver Produto</LazyMyLinkTwo>
                             <LazyMyLinkTwo class="cta-link" href="/">Comprar</LazyMyLinkTwo>
@@ -36,7 +34,7 @@
                         <h2 class="text-4xl mb-8 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
                         <div>
                             <NuxtLink
-                                class="py-3 px-6 bg-white text-black rounded-full text-xl inline-block"
+                                class="py-3 px-6 bg-white hover:bg-black hover:text-white duration-300 border-2 border-white text-black rounded-full text-xl inline-block"
                                 to="/"
                             >lorem ipsum</NuxtLink>
                         </div>
@@ -60,7 +58,7 @@
                     </figure>
                     <div>
                         <NuxtLink
-                                class="py-3 px-6 bg-black text-white rounded-full text-xl inline-block"
+                                class="py-3 px-6 duration-300 bg-black hover:bg-white hover:text-black text-white border-2 border-black rounded-full text-xl inline-block"
                                 to="/"
                             >Conheça nossos produtos</NuxtLink>
                     </div>
@@ -155,11 +153,11 @@
         /* color: #e9e9e9; */
     }
     .cta-chamada{
-        @apply text-3xl md:text-4xl mb-5 text-white
+        @apply text-2xl md:text-4xl mb-5 text-white
     }
 
     .cta-link{
-        @apply text-3xl text-white
+        @apply text-xl md:text-3xl text-white
     }
 
     /* .cta-link{
@@ -178,7 +176,7 @@
     }
 
     .image-bg{
-        @apply h-screen max-h-[692px] bg-[url('/assets/images/f.jpg')] bg-center bg-cover relative pb-10
+        @apply h-screen max-h-[780px] md:max-h-[692px] bg-[url('/assets/images/f.jpg')] bg-center bg-cover relative pb-10
     }
     /* .image-bg::before{
         content: '';
