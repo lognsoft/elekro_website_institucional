@@ -22,12 +22,12 @@
             <div class="flex justify-center items-center flex-col py-10 gap-10 sm:gap-1 sm:justify-between sm:flex-row">
                 <ul class="social-midia">
                     <li class="text-2xl" v-for="rede of midiasSociais" :key="rede.title">
-                        <a class="text-white hover:text-amber-600 duration-200 flex items-center" :title="rede.title" :href="rede.href" target="_blank">
+                        <a class="text-white hover:text-sky-500 duration-200 flex items-center" :title="rede.title" :href="rede.href" target="_blank">
                             <MyIcon :icon="rede.icon"/>
                         </a>
                     </li>
                 </ul>
-                <p class="text-lg sm:order-first"><a class="font-black font-mono uppercase text-amber-600" href="https://logn.com.br/servicos" target="_blank">Logn</a> &copy; 2024</p>
+                <p class="text-lg sm:order-first"><a class="font-black font-mono uppercase text-sky-500" href="https://logn.com.br/servicos" target="_blank">Logn</a> &copy; 2024</p>
                 
             </div>
         </div>

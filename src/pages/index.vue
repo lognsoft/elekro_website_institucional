@@ -18,33 +18,20 @@
                 <div class="container mx-auto h-full">
                     <div class="flex items-end justify-center h-full">
                         <div class="text-white text-center max-w-[600px]">
-                            <!-- <h2 class="text-4xl mb-8 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2> -->
-                            <div>
-                                <NuxtLink
-                                    class="py-3 px-6 bg-white hover:bg-black hover:text-white duration-300 border-2 border-white text-black rounded-full text-xl inline-block"
-                                    to="/"
-                                >lorem ipsum</NuxtLink>
+                            
+                            <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
+                                <h1 class="cta-chamada font-extrabold uppercase">Tecnologia e segurança</h1>
+                                <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
+                                    <LazyMyLinkTwo class="cta-link" href="/">Ver Produto</LazyMyLinkTwo>
+                                    <LazyMyLinkTwo class="cta-link" href="/">Comprar</LazyMyLinkTwo>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        
         <!-- end destaque -->
-        <section class=" mb-3">
-            <div class="image-bg">
-                <div class="container h-full mx-auto flex justify-center items-end relative z-20 px-2">
-                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
-                        <h1 class="cta-chamada font-extrabold uppercase">Tecnologia e segurança</h1>
-                        <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
-                            <LazyMyLinkTwo class="cta-link" href="/">Ver Produto</LazyMyLinkTwo>
-                            <LazyMyLinkTwo class="cta-link" href="/">Comprar</LazyMyLinkTwo>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11 mb-3">
             <div class="container mx-auto h-full">
                 <div class="h-full flex flex-col items-center justify-center gap-5">
@@ -68,17 +55,19 @@
         </section>
         
         
+        
         <section class="mb-3">
             <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div
-                        class="aspect-[1/0.6] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
-                    >
-                        <div class="py-5 px-5 md:mb-[60px] text-white relative">
-                            <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
-                            <h2 class="text-4xl md:text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
-                        </div>
-                    </div>
+                    <figure class="aspect-[1/0.6]">
+                        <img
+                            aria-label="macaneta dupla preta"
+                            src="/assets/images/macanetaCompletaPrata.png"
+                            srcset="/assets/images/macanetaCompletaPrata.png"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                        />
+                    </figure>
                     
                     <figure class="aspect-[1/0.6]">
                         <img
@@ -96,30 +85,44 @@
                             loading="lazy"
                         />
                     </figure>
-                    <figure class="aspect-[1/0.6]">
-                        <img
-                            aria-label="macaneta dupla preta"
-                            src="/assets/images/macanetaCompletaPrata.png"
-                            srcset="/assets/images/macanetaCompletaPrata.png"
-                            class="w-full h-full object-cover"
-                            loading="lazy"
-                        />
-                    </figure>
+                    
+                    <div
+                        class="aspect-[1/0.6] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
+                    >
+                        <div class="py-5 px-5 md:mb-[60px] text-white relative">
+                            <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
+                            <h2 class="text-4xl md:text-5xl relative z-10">Conforto e segurança<br/>Para sua família</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" mb-3">
+            <div class="image-bg">
+                <div class="container h-full mx-auto flex justify-center items-end relative z-20 px-2">
+                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
+                        <NuxtLink
+                            class="py-3 px-6 duration-300 bg-black hover:bg-white hover:text-black text-white border-2 border-black rounded-full text-xl inline-block"
+                            to="/"
+                        >Entre em contato</NuxtLink>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- bg-image -->
         <section id="bg-image">
             <div class="bg-image">
-                <div class="container-text">
-                    <h3 class="text-5xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                    <p class="text-xl max-w-5xl text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius libero minima officia id rem illo tempora quibusdam, officiis temporibus ducimus, voluptate commodi ea odio ipsam autem! Illum, totam unde.</p>
+                <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
+                    <NuxtLink
+                        class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
+                        to="/"
+                    >Conheça nossos produtos</NuxtLink>
                 </div>
             </div>
         </section>
         <!-- end-image -->
         <!-- advantages -->
-        <section id="overview">
+        <!-- <section id="overview">
             <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-6">
                     <div class="lg:col-span-2 lg:col-start-2 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
@@ -141,7 +144,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end advantages -->
     </main>
 </template>
@@ -180,7 +183,7 @@
     }
 
     .image-bg{
-        @apply h-screen max-h-[780px] md:max-h-[692px] bg-[url('/assets/images/f.jpg')] bg-center bg-cover relative pb-10
+        @apply h-screen max-h-[780px] md:max-h-[692px] bg-[url('/assets/images/house2.png')] bg-center bg-cover relative pb-10
     }
     /* .image-bg::before{
         content: '';
@@ -190,7 +193,7 @@
         @apply bg-black w-full h-full absolute top-0 left-0 opacity-10 z-10
     } */
     .bg-image::before{
-        @apply absolute w-full h-full top-0 left-0 opacity-40 bg-black
+        @apply absolute w-full top-0 left-0 opacity-40 bg-black
     }
     .bg-image:before{
         content: '';
@@ -203,7 +206,7 @@
     }
 
     .bg-image{
-        @apply w-full bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/images/4.jpeg')] bg-cover
+        @apply w-full h-screen max-h-[692px] bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/images/f.jpg')] bg-cover flex items-end justify-center
     }
 
     .container-text{
