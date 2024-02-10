@@ -13,7 +13,7 @@
         </div>
         <ClientOnly>
             <div class="navigate" :class="{ active:navigateOpen }">
-                <div class="w-full max-w-[1900px] mx-auto h-screen relative flex items-center justify-end py-5 md:px-3">
+                <div class="w-full max-w-[1900px] mx-auto h-screen relative flex justify-end py-5 md:px-3">
                     <button
                         @click="navigateOpen = false"
                         type="button"
@@ -24,21 +24,21 @@
                     <ul class="navigate-list w-full leading-5">
                         <li>
                             <ul class="flex items-center justify-start text-xl md:text-3xl gap-3">
-                                <li class="hover:text-sky-500 duration-100" v-for="rede of midiasSociais" :key="rede.title" @click="openNavigate" v-if="midiasSociais.length > 0">
+                                <li class=" duration-100" v-for="rede of midiasSociais" :key="rede.title" @click="openNavigate" v-if="midiasSociais.length > 0">
                                     <a :href="rede.href" :title="rede.title">
                                         <Icon :name="rede.icon"/>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="font-bold text-sm md:text-base text-sky-500 my-4">
+                        <li class="font-bold text-sm md:text-base my-4">
                             <a class="flex justify-start items-center gap-1" href="javascript:void(0)">
                                 <IconCSS name="ic:round-phone"/>
                                 TEL: (00) 00000-0000
                             </a>
                         </li>
                         <template v-for="rota of rotas" :key="rota.path">
-                            <li @click="openNavigate" class="font-extrabold text-xl text-start mb-3"><NuxtLink class="hover:text-sky-300" :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                            <li @click="openNavigate" class="font-extrabold text-xl text-start mb-3"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
                         </template>
                     </ul>
                 </div>
@@ -81,12 +81,6 @@ const openNavigate = () => {
     .navigate{
         @apply absolute w-screen bg-black duration-700
     }
-
-    .navigate-list .router-link-active{
-        @apply text-sky-500
-    }
-
-    
 
     /* my style */
     .header{
