@@ -37,7 +37,7 @@
                             title="senha"
                         >
                             <div class="info-plus__line">
-                                <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
+                                <div class="w-[100px] bg-my-gray h-1 rounded"></div>
                                 SENHA
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                             title="tag"
                         >
                             <div class="info-plus__line">
-                                <div class="w-[60px] md:w-[100px] h-1 bg-my-gray rounded"></div>
+                                <div class="w-[100px] h-1 bg-my-gray rounded"></div>
                                 TAG
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                         >
                             <div class="info-plus__line-left">
                                 BIOMETRIA
-                                <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
+                                <div class="w-[100px] bg-my-gray h-1 rounded"></div>
                             </div>
                         </div>
                         <div
