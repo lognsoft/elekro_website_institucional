@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <template v-for="rota of rotas" :key="rota.path">
-                            <li @click="openNavigate" class="font-extrabold text-5xl lg:text-6xl text-start mb-3"><NuxtLink class="hover:text-sky-300" :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                            <li @click="openNavigate" class="font-extrabold text-xl text-start mb-3"><NuxtLink class="hover:text-sky-300" :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
                         </template>
                     </ul>
                 </div>

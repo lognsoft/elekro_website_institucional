@@ -11,44 +11,59 @@
         <Meta name="twitter:card" content="summary_large_image"/>
         
     </Head>
-    <main class="">
-        <!-- destaque -->
-        <div class="pt-[70px]">
-            <section class=" bg-[url('/assets/images/macaneta.jpg')] h-screen max-h-[692px] bg-center bg-cover py-11 mb-3">
-                <div class="container mx-auto h-full">
-                    <div class="flex items-end justify-center h-full">
-                        <div class="text-white text-center max-w-[600px]">
-                            
-                            <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
-                                <h1 class="cta-chamada font-extrabold uppercase">Tecnologia e segurança</h1>
-                                <nav class="flex gap-2 justify-center" aria-label="navegação para compra de produto">
-                                    <LazyMyLinkTwo class="cta-link" href="/">Ver Produto</LazyMyLinkTwo>
-                                    <LazyMyLinkTwo class="cta-link" href="/">Comprar</LazyMyLinkTwo>
-                                </nav>
-                            </div>
-                        </div>
+    <main class="pt-[70px]">
+        <div>
+            <section id="bg-image">
+                <div class="bg-image">
+                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
+                        <NuxtLink
+                            class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
+                            to="/"
+                        >Conheça nossos produtos</NuxtLink>
                     </div>
                 </div>
             </section>
         </div>
-        <!-- end destaque -->
-        <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11 mb-3">
-            <div class="container mx-auto h-full">
-                <div class="h-full flex flex-col items-center justify-center gap-5">
-                    <figure>
-                        <img
-                            class="max-w-full h-auto"
-                            src="/assets/images/bestpricelogo.png"
-                            srcset="/assets/images/bestpricelogo.png"
-                            alt=""
-                            loading="lazy"
-                        />
+        
+        
+        <section class="mb-3">
+            <div class="w-full h-full max-w-[2500px] mx-auto md:px-3">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-3 h-full">
+                    <figure class="col-span-2 relative">
+                        <button @click="selectedFeature = 'senha'" :class="{'active':selectedFeature == 'senha'}" class="info-plus top-[18%] left-[30%]" title="senha">
+                            <Icon name="fa6-solid:plus"/>
+                        </button>
+                        <button @click="selectedFeature = 'tag'" :class="{'active':selectedFeature == 'tag'}" class="info-plus top-[25%] left-[20%]" title="tag">
+                            <Icon name="fa6-solid:plus"/>
+                        </button>
+                        <button @click="selectedFeature = 'biometria'" :class="{'active':selectedFeature == 'biometria'}" class="info-plus top-[49%] left-[25%]" title="biometria">
+                            <Icon name="fa6-solid:plus"/>
+                        </button>
+                        <button @click="selectedFeature = 'conexao de energia'" :class="{'active':selectedFeature == 'conexao de energia'}" class="info-plus bottom-0 left-[30%]" title="conexão de energia">
+                            <Icon name="fa6-solid:plus"/>
+                        </button>
+                        <button @click="selectedFeature = 'fechadura'" :class="{'active':selectedFeature == 'fechadura'}" class="info-plus bottom-0 left-[20%]" title="fechadura">
+                            <Icon name="fa6-solid:plus"/>
+                        </button>
+                        
+                        <img class="w-full" src="/assets/images/de-frente-acessa-prateada.jpeg"/>
                     </figure>
-                    <div>
-                        <NuxtLink
-                                class="py-3 px-6 duration-300 bg-black hover:bg-white hover:text-black text-white border-2 border-black rounded-full text-xl inline-block"
-                                to="/"
-                            >Conheça nossos produtos</NuxtLink>
+                    <div class="bg-black col-span-3 text-white">
+                        <div v-show="selectedFeature == 'senha'">
+                            senha
+                        </div>
+                        <div v-show="selectedFeature == 'tag'">
+                            tag
+                        </div>
+                        <div v-show="selectedFeature == 'biometria'">
+                            biometria
+                        </div>
+                        <div v-show="selectedFeature == 'conexao de energia'">
+                            conexão de energia
+                        </div>
+                        <div v-show="selectedFeature == 'fechadura'">
+                            fechadura
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +102,7 @@
                     </figure>
                     
                     <div
-                        class="aspect-[1/0.6] bg-[url('/assets/images/house.png')] flex items-end justify-end bg-center bg-cover"
+                        class="aspect-[1/0.6] bg-[url('/assets/images/fechadura.png')] flex items-end justify-end bg-center bg-cover"
                     >
                         <div class="py-5 px-5 md:mb-[60px] text-white relative">
                             <div class="absolute w-full h-full bg-black top-0 left-0 opacity-70"></div>
@@ -97,67 +112,41 @@
                 </div>
             </div>
         </section>
-        <section class=" mb-3">
-            <div class="image-bg">
-                <div class="container h-full mx-auto flex justify-center items-end relative z-20 px-2">
-                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
-                        <NuxtLink
-                            class="py-3 px-6 duration-300 bg-black hover:bg-white hover:text-black text-white border-2 border-black rounded-full text-xl inline-block"
-                            to="/"
-                        >Entre em contato</NuxtLink>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- bg-image -->
-        <section id="bg-image">
-            <div class="bg-image">
-                <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
-                    <NuxtLink
-                        class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
-                        to="/"
-                    >Conheça nossos produtos</NuxtLink>
-                </div>
-            </div>
-        </section>
-        <!-- end-image -->
-        <!-- advantages -->
-        <!-- <section id="overview">
-            <div class="w-full max-w-[1900px] mx-auto py-11 px-5 md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-6">
-                    <div class="lg:col-span-2 lg:col-start-2 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
+        <!-- destaque -->
+        <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11">
+            <div class="container mx-auto h-full">
+                <div class="h-full flex flex-col items-center justify-center gap-5">
+                    <figure>
                         <img
-                            class="max-w-full object-cover rounded-lg shadow-lg"
-                            src="/assets/images/conjunto-preto.jpeg"
-                            srcset="/assets/images/conjunto-preto.jpeg"
+                            class="max-w-full h-auto"
+                            src="/assets/images/bestpricelogo.png"
+                            srcset="/assets/images/bestpricelogo.png"
                             alt=""
                             loading="lazy"
                         />
-                    </div>
-                    <div class="lg:col-span-3 pt-8 lg:px-11">
-                        <div class="sticky top-[120px] max-w-xl mx-auto">
-                            <h3 class="text-center lg:text-start text-7xl font-extrabold mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">lorem ipsum</h3>
-                            <p class="text-center lg:text-start text-2xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ipsam magnam rem assumenda id expedita sed consectetur sit iure dignissimos eius nulla in perferendis voluptatibus illum voluptates, esse, ipsum soluta.
-                            </p>
-                        </div>
+                    </figure>
+                    <div>
+                        <NuxtLink
+                                class="py-3 px-6 duration-300 bg-black hover:bg-white hover:text-black text-white border-2 border-black rounded-full text-xl inline-block"
+                                to="/"
+                            >Conheça nossos produtos</NuxtLink>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- end advantages -->
+        </section>
     </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const selectedFeature:Ref<string> = ref('senha');
 </script>
 
 <style scoped>
-
-    .cta-chamada{
-        /* -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #231f20; */
-        /* color: #e9e9e9; */
+    .info-plus{
+        @apply absolute w-10 h-10 bg-black border-2 border-white text-white opacity-70 rounded-full inline-flex items-center justify-center duration-300
+    }
+    .info-plus.active{
+        @apply absolute w-10 h-10 bg-sky-500 opacity-100
     }
     .cta-chamada{
         @apply text-2xl md:text-4xl mb-5 text-white
@@ -166,10 +155,6 @@
     .cta-link{
         @apply text-xl md:text-3xl text-white
     }
-
-    /* .cta-link{
-        color: #0066cc
-    } */
 
     .grid-image{
         @apply p-8 bg-[url('/assets/images/home.jpg')] bg-center aspect-[1/1] md:aspect-[5/3] flex items-center rounded-tr-lg relative
@@ -185,13 +170,6 @@
     .image-bg{
         @apply h-screen max-h-[780px] md:max-h-[692px] bg-[url('/assets/images/house2.png')] bg-center bg-cover relative pb-10
     }
-    /* .image-bg::before{
-        content: '';
-    }
-
-    .image-bg::before{
-        @apply bg-black w-full h-full absolute top-0 left-0 opacity-10 z-10
-    } */
     .bg-image::before{
         @apply absolute w-full top-0 left-0 opacity-40 bg-black
     }
@@ -199,16 +177,13 @@
         content: '';
         z-index: 1;
     }
-
     .container-text{
         position: relative;
         z-index: 2;
     }
-
     .bg-image{
-        @apply w-full h-screen max-h-[692px] bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/images/f.jpg')] bg-cover flex items-end justify-center
+        @apply w-full h-screen max-h-[692px] bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/images/f.jpg')] bg-cover flex items-end justify-center mb-3
     }
-
     .container-text{
         @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
     }
