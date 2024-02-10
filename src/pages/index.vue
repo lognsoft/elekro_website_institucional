@@ -28,45 +28,59 @@
         <section class="h-screen max-h-[692px] bg-[url('/assets/images/macaneta.png')] bg-cover bg-center mb-3"></section>
         
         
-        <section class="mb-3">
+        <section class="mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
             <div class="w-full h-full max-w-[2500px] mx-auto md:px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-3 h-full">
-                    <figure class="col-span-2 relative">
-                        <button @click="selectedFeature = 'senha'" :class="{'active':selectedFeature == 'senha'}" class="info-plus top-[18%] left-[30%]" title="senha">
-                            <Icon name="fa6-solid:plus"/>
-                        </button>
-                        <button @click="selectedFeature = 'tag'" :class="{'active':selectedFeature == 'tag'}" class="info-plus top-[25%] left-[20%]" title="tag">
-                            <Icon name="fa6-solid:plus"/>
-                        </button>
-                        <button @click="selectedFeature = 'biometria'" :class="{'active':selectedFeature == 'biometria'}" class="info-plus top-[49%] left-[25%]" title="biometria">
-                            <Icon name="fa6-solid:plus"/>
-                        </button>
-                        <button @click="selectedFeature = 'conexao de energia'" :class="{'active':selectedFeature == 'conexao de energia'}" class="info-plus bottom-0 left-[30%]" title="conexão de energia">
-                            <Icon name="fa6-solid:plus"/>
-                        </button>
-                        <button @click="selectedFeature = 'fechadura'" :class="{'active':selectedFeature == 'fechadura'}" class="info-plus bottom-0 left-[20%]" title="fechadura">
-                            <Icon name="fa6-solid:plus"/>
-                        </button>
+                <div class="grid grid-cols-1 lg:grid-cols-6 gap-3 h-full">
+                    <figure class="col-start-3 col-span-2 relative">
+                        <div
+                            class="info-plus bg-my-gray top-[18%] left-[43%]"
+                            title="senha"
+                        >
+                            <div class="info-plus__line">
+                                <div class="w-[100px] bg-my-gray h-1"></div>
+                                SENHA
+                            </div>
+                        </div>
+                        <div
+                            class="info-plus bg-my-gray top-[25%] left-[35%]"
+                            title="tag"
+                        >
+                            <div class="info-plus__line">
+                                <div class="w-[100px] h-1 bg-my-gray"></div>
+                                TAG
+                            </div>
+                        </div>
+                        <div
+                            class="info-plus bg-my-gray top-[48%] left-[39%]"
+                            title="biometria"
+                        >
+                            <div class="info-plus__line-left">
+                                BIOMETRIA
+                                <div class="w-[100px] bg-my-gray h-1"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="info-plus bg-my-gray bottom-[12%] left-[46%]"
+                            title="conexão de energia"
+                        >
+                            <div class="info-plus__line">
+                                <div class="w-[100px] bg-my-gray h-1"></div>
+                                CONEXÂO DE ENERGIA
+                            </div>
+                        </div>
+                        <div
+                            class="info-plus bg-my-gray bottom-[12%] left-[36%]"
+                            title="fechadura"
+                        >
+                            <!-- <Icon name="fa6-solid:plus"/> -->
+                            <div class="info-plus__line-left">
+                                FECHADURA
+                                <div class="w-[100px] bg-white bg-my-gray h-1"></div>
+                            </div>
+                        </div>
                         
-                        <img class="w-full" src="/assets/images/de-frente-acessa-prateada.jpeg"/>
+                        <img class="w-full" src="/assets/images/informacoes.png"/>
                     </figure>
-                    <div class="bg-black col-span-3 text-white">
-                        <div v-show="selectedFeature == 'senha'">
-                            senha
-                        </div>
-                        <div v-show="selectedFeature == 'tag'">
-                            tag
-                        </div>
-                        <div v-show="selectedFeature == 'biometria'">
-                            biometria
-                        </div>
-                        <div v-show="selectedFeature == 'conexao de energia'">
-                            conexão de energia
-                        </div>
-                        <div v-show="selectedFeature == 'fechadura'">
-                            fechadura
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -145,10 +159,16 @@ const selectedFeature:Ref<string> = ref('senha');
 
 <style scoped>
     .info-plus{
-        @apply absolute w-10 h-10 bg-black border-2 border-white text-white opacity-70 rounded-full inline-flex items-center justify-center duration-300
+        @apply absolute w-5 h-5 text-sky-500 rounded-full inline-flex items-center justify-center duration-300 
     }
-    .info-plus.active{
-        @apply absolute w-10 h-10 bg-sky-500 opacity-100
+    .bg-my-gray{
+        background-color: #565352;
+    }
+    .info-plus__line{
+        @apply absolute inline-flex items-center gap-1 left-[100%] text-black font-bold
+    }
+    .info-plus__line-left{
+        @apply absolute inline-flex items-center gap-1 right-[100%] text-black font-bold
     }
     .cta-chamada{
         @apply text-2xl md:text-4xl mb-5 text-white
