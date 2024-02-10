@@ -24,6 +24,8 @@
                 </div>
             </section>
         </div>
+
+        <section class="h-screen max-h-[692px] bg-[url('/assets/images/macaneta.png')] bg-cover bg-center mb-3"></section>
         
         
         <section class="mb-3">
