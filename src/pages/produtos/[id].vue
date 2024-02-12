@@ -10,7 +10,9 @@
                     <div class="lg:col-span-5">
                         <div class="w-full sticky flex items-center justify-center top-[100px] aspect-[2/1.3]">
                             <div class="w-full max-w-[1000px]">
-                                <MyCarousel :images="alterNativeImages"/>
+                                <ClientOnly>
+                                    <MyCarousel :images="alterNativeImages"/>
+                                </ClientOnly>
                             </div>
                         </div>
                     </div>
@@ -26,7 +28,6 @@
                                 <h3 class="text-2xl">Cor {{ color }}</h3>
                                 <p>R$ 00,00</p>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

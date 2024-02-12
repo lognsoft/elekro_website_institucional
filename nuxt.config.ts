@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/ui",
     "nuxt-icon",
-    "nuxt-swiper",
     "nuxt-primevue",
     "nuxt-aos",
     'vue3-carousel-nuxt',

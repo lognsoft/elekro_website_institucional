@@ -8,7 +8,7 @@
                         title="senha"
                     >
                         <div class="info-plus__line">
-                            <div class="w-[100px] bg-my-gray h-1 rounded"></div>
+                            <div class="w-[100px] bg-my-gray h-1 rounded-e"></div>
                             senha
                         </div>
                     </div>
@@ -17,7 +17,7 @@
                         title="tag"
                     >
                         <div class="info-plus__line">
-                            <div class="w-[100px] h-1 bg-my-gray rounded"></div>
+                            <div class="w-[100px] h-1 bg-my-gray rounded-e"></div>
                             tag
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                     >
                         <div class="info-plus__line-left">
                             biometria
-                            <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
+                            <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded-s"></div>
                         </div>
                     </div>
                     <div
@@ -35,7 +35,7 @@
                         title="conexão de energia"
                     >
                         <div class="info-plus__line">
-                            <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
+                            <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded-e"></div>
                             conexão de energia
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                         <!-- <Icon name="fa6-solid:plus"/> -->
                         <div class="info-plus__line-left">
                             fechadura
-                            <div class="w-[60px] md:w-[100px] bg-white bg-my-gray h-1 rounded"></div>
+                            <div class="w-[60px] md:w-[100px] bg-white bg-my-gray h-1 rounded-s"></div>
                         </div>
                     </div>
                     
