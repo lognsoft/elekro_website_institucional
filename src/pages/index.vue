@@ -38,7 +38,7 @@
                         >
                             <div class="info-plus__line">
                                 <div class="w-[100px] bg-my-gray h-1 rounded"></div>
-                                SENHA
+                                senha
                             </div>
                         </div>
                         <div
@@ -47,7 +47,7 @@
                         >
                             <div class="info-plus__line">
                                 <div class="w-[100px] h-1 bg-my-gray rounded"></div>
-                                TAG
+                                tag
                             </div>
                         </div>
                         <div
@@ -55,7 +55,7 @@
                             title="biometria"
                         >
                             <div class="info-plus__line-left">
-                                BIOMETRIA
+                                biometria
                                 <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                         >
                             <div class="info-plus__line">
                                 <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded"></div>
-                                CONEXÂO DE ENERGIA
+                                conexão de energia
                             </div>
                         </div>
                         <div
@@ -74,7 +74,7 @@
                         >
                             <!-- <Icon name="fa6-solid:plus"/> -->
                             <div class="info-plus__line-left">
-                                FECHADURA
+                                fechadura
                                 <div class="w-[60px] md:w-[100px] bg-white bg-my-gray h-1 rounded"></div>
                             </div>
                         </div>
@@ -165,10 +165,10 @@ const selectedFeature:Ref<string> = ref('senha');
         background-color: #565352;
     }
     .info-plus__line{
-        @apply absolute inline-flex items-center gap-1 left-[100%] text-black font-bold
+        @apply absolute inline-flex items-center gap-1 left-[100%] text-black font-bold capitalize
     }
     .info-plus__line-left{
-        @apply absolute inline-flex items-center gap-1 right-[100%] text-black font-bold
+        @apply absolute inline-flex items-center gap-1 right-[100%] text-black font-bold capitalize
     }
     .cta-chamada{
         @apply text-2xl md:text-4xl mb-5 text-white

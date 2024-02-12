@@ -1,7 +1,7 @@
 <template>
-    <Carousel :autoplay="5000" :wrap-around="true" :transition="1000" :items-to-show="1">
+    <Carousel :autoplay="7000" :wrap-around="true" :transition="2000" :items-to-show="1">
         <Slide v-for="image,index in images" :key="index">
-            <img class="w-full h-full" :src="`/images/${image}`" :srcset="`/images/${image}`" alt=""/>
+            <img class="w-full h-full object-cover" :src="`/images/${image}`" :srcset="`/images/${image}`" alt=""/>
         </Slide>
         <template #addons>
             <Pagination />
@@ -16,7 +16,7 @@ defineProps(['images']) as { images:string[] }
 <style scoped>
 
     .carousel__viewport{
-        @apply  shadow-xl
+        @apply shadow-xl
     }
     .carousel__slide{
         @apply aspect-[5/3] rounded-lg overflow-hidden
