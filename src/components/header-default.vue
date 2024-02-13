@@ -5,13 +5,14 @@
                 <div class="logo">
                     <LogoTipo/>
                 </div>
-                <div class="font-bold cursor-pointer text-xl flex justify-center gap-2 items-center" @click="openNavigate">
-                    <span>Menu</span>
-                    <MyIcon class="text-2xl" icon="fa6-solid:bars"/>
-                </div>
+                <ClientOnly>
+                    <div class="font-bold cursor-pointer text-xl flex justify-center gap-2 items-center" @click="openNavigate">
+                        <span>Menu</span>
+                        <MyIcon class="text-2xl" icon="fa6-solid:bars"/>
+                    </div>
+                </ClientOnly>
             </nav>
         </div>
-        <ClientOnly>
             <div class="navigate" :class="{ active:navigateOpen }">
                 <div class="w-full max-w-[1900px] mx-auto h-screen relative flex justify-end py-5 md:px-3">
                     <button
@@ -43,7 +44,6 @@
                     </ul>
                 </div>
             </div>
-        </ClientOnly>
     </header>
 </template>
 

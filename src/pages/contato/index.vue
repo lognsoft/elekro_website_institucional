@@ -12,10 +12,14 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Banner></Banner>
+        <div class="py-[70px]">
+            <section
+                class="py-11 h-screen max-h-[400px]  md:max-h-[600px] bg-[url('/assets/images/banner.jpg')] bg-center bg-no-repeat"
+            ></section>
+        </div>
         <Formulario title="Fale conosco"/>
         <section class="py-11 bg-slate-500 text-white">
-            <div class="container mx-auto px-5 md:px-3 py-11">
+            <div class="container mx-auto px-5 md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center md:text-start">
                     <div class="col-span-1" v-for="info,index of infos" :key="index">
                         <h3 class="text-5xl font-extrabold mb-11" data-aos="fade-up" data-aos-duration="1000">{{  info.title  }}</h3>
