@@ -33,17 +33,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="py-11">
-            <div class="w-full max-w-[2500px] mx-auto px-3">
-                <h1 class="text-4xl text-center font-light mb-4">lorem ipsum</h1>
-                <div>
-                    <figure class="max-w-[700px] mx-auto">
-                        <img class="w-full" src="/images/de lado preta.jpeg" alt="maçaneta de lado"/>
-                    </figure>
-                </div>
-            </div>
-        </section> -->
-        <Funcionalidades/>
+        <LazyFuncionalidades/>
         <section class="py-11">
             <div class="container mx-auto px-3">
                 <h1 class="text-4xl text-center font-light mb-4">Recursos</h1>
@@ -133,13 +123,20 @@ const images:Array<VariationImages> = [
         color:'preta',
         images: [
             'slide/detalhe-2.jpeg',
-            'de lado preta.jpeg'
+            'slide/cartao.png',
+            'porta de carregamento preta.jpeg',
+            'slide/macanetaDuplaPreta.png',
+            'slide/bestprice.jpg'
         ]
     },
     {
         color:'prateado',
         images: [
-            'slide/detalhe-4.jpeg'
+            'slide/detalhe-4.jpeg',
+            'slide/fechadura.png',
+            'slide/fechadurafuncoes.png',
+            'slide/cartao.png',
+            'slide/bestprice.jpg'
         ]
     }
 ]
