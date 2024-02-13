@@ -33,7 +33,7 @@
                 </div>
             </div>
         </section>
-        <LazyFuncionalidades/>
+        <Funcionalidades/>
         <section class="py-11">
             <div class="container mx-auto px-3">
                 <h1 class="text-4xl text-center font-light mb-4">Recursos</h1>
