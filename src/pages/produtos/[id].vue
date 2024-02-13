@@ -33,7 +33,7 @@
                 </div>
             </div>
         </section>
-        <Funcionalidades/>
+        <Funcionalidades :image="imageBanner"/>
         <section class="py-11">
             <div class="container mx-auto px-3">
                 <h1 class="text-4xl text-center font-light mb-4">Recursos</h1>
@@ -115,12 +115,14 @@ const variation:Ref<string> = ref('preta');
 
 type VariationImages = {
     color:string,
-    images:string[]
+    images:string[],
+    picture:string
 }
 
 const images:Array<VariationImages> = [
     {
         color:'preta',
+        picture: '/images/informacoes-2.png',
         images: [
             'slide/slide-preto-1.jpg',
             'slide/slide-preto-2.jpg',
@@ -131,6 +133,7 @@ const images:Array<VariationImages> = [
     },
     {
         color:'prateado',
+        picture: '/images/informacoes-1.png',
         images: [
             'slide/slide-prata-1.jpg',
             'slide/slide-prata-2.jpg',
@@ -149,6 +152,13 @@ const alterNativeImages = computed(():string[] => {
         arrayImage = imageVariation.images;
     }
     return arrayImage;
+})
+
+const imageBanner = computed(():string => {
+
+    const obj:VariationImages | undefined = images.find((val:VariationImages) => val.color == variation.value);
+
+    return obj == undefined ? '/images/informacoes-1.png' : obj.picture;
 })
 
 </script>
