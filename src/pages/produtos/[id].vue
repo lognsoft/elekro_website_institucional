@@ -122,21 +122,21 @@ const images:Array<VariationImages> = [
     {
         color:'preta',
         images: [
-            'slide/detalhe-2.jpeg',
-            'slide/cartao.png',
-            'porta de carregamento preta.jpeg',
-            'slide/macanetaDuplaPreta.png',
-            'slide/bestprice.jpg'
+            'slide/slide-preto-1.jpg',
+            'slide/slide-preto-2.jpg',
+            'slide/slide-preto-3.jpg',
+            'slide/slide-preto-4.jpg',
+            'slide/slide-1.jpg'
         ]
     },
     {
         color:'prateado',
         images: [
-            'slide/detalhe-4.jpeg',
-            'slide/fechadura.png',
-            'slide/fechadurafuncoes.png',
-            'slide/cartao.png',
-            'slide/bestprice.jpg'
+            'slide/slide-prata-1.jpg',
+            'slide/slide-prata-2.jpg',
+            'slide/slide-prata-3.jpg',
+            'slide/slide-prata-4.jpg',
+            'slide/slide-1.jpg'
         ]
     }
 ]
