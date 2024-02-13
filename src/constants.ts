@@ -17,7 +17,7 @@ export const rotas:IRouter[] = [
     },
     {
         path: "/contato",
-        pathName: "Contato",
+        pathName: "fale conosco",
     }
 ];
 

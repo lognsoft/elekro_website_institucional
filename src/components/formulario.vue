@@ -8,7 +8,7 @@
                     <MyIcon icon="eos-icons:three-dots-loading"/>
                 </span>
             </h2>
-            <form class="w-full mt-6 py-5 duration-200" :class="{'opacity-25':submitForm}" @submit.prevent="validateInputs">
+            <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200" :class="{'opacity-25':submitForm}" @submit.prevent="validateInputs">
                 <div class="wrapper-form-container">
                     <label for="input-name" class="label">nome*</label>
                     <div class="container-input">
@@ -31,16 +31,6 @@
                         <input :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.email.validate}" v-model="state.email.value" type="email" name="email" id="input-email" placeholder="E-mail"/>
                     </div>
                 </div>
-                <div class="wrapper-form-container">
-                    <label for="input-email" class="label">assunto*</label>
-                    <div class="container-input">
-                        <small v-show="!state.email.validate" class="text-sm text-red-500">{{ state.email.message }}</small>
-                        <select :disabled="submitForm" class="input-contact">
-                            <option selected disabled value="">Selecione o assunto</option>
-                            <option value="seja um revendedor">Seja um Revendedor</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="wrapper-form-container-t">
                     <label for="input-message" class="label">mensagem*</label>
                     <div class="container-input">
@@ -51,10 +41,31 @@
                 <div class="wrapper-form-container-t">
                     <div class="label"></div>
                     <div class="container-input text-center md:text-start">
-                        <MyButton class="my-0 mx-0" type="submit" :disabled="submitForm">Enviar</MyButton>
+                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit" :disabled="submitForm">
+                            Enviar
+                            <Icon name="fa-solid:paper-plane"/>
+                        </MyButton>
+                        <a href="#" @click.prevent="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Enviar currículo</a>
                     </div>
-                </div>
-                
+                </div> 
+            </form>
+            <form v-show="alterForm === 'revendedor'" class="w-full mt-6 py-5 duration-200">
+                <div class="wrapper-form-container-t">
+                    <div class="label"></div>
+                    <div class="container-input text-center md:text-start">
+                        formulário aqui
+                    </div>
+                </div> 
+                <div class="wrapper-form-container-t">
+                    <div class="label"></div>
+                    <div class="container-input text-center md:text-start md:col-start-2">
+                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit" :disabled="submitForm">
+                            Enviar
+                            <Icon name="fa-solid:paper-plane"/>
+                        </MyButton>
+                        <a href="#" @click.prevent="alterForm = 'default'" class="text-sky-500 underline ml-3">Seja um revendedor</a>
+                    </div>
+                </div> 
             </form>
         </div>
     </section>
@@ -66,6 +77,9 @@ defineProps(['title']) as { title:String | undefined }
 //types
 import type IForm from '~/interfaces/IForm';
 import type { FormSubmit } from '~/types'
+
+//formulario
+const alterForm:Ref<string> = ref('default')
 
 //axios plugin
 const { $useAxios } = useNuxtApp();

@@ -50,12 +50,21 @@
                         </div>
                     </div>
                     
-                    <img class="w-full" src="/assets/images/informacoes.png"/>
+                    <img class="w-full" :src="image" :srcset="image" alt=""/>
                 </figure>
             </div>
         </div>
     </section>
 </template>
+
+<script setup lang="ts">    
+    defineProps({
+        image: {
+            type:String,
+            default: '/assets/images/informacoes.png'
+        }
+    })
+</script>
 
 <style scoped>
 .info-plus{

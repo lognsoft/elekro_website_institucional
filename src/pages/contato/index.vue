@@ -12,10 +12,8 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Banner>
-            Contatos
-        </Banner>
-        <Formulario title="Entre em contato conosco"/>
+        <Banner></Banner>
+        <Formulario title="Fale conosco"/>
         <section class="py-11 bg-slate-500 text-white">
             <div class="container mx-auto px-5 md:px-3 py-11">
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center md:text-start">
