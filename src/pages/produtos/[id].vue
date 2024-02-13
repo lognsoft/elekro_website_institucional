@@ -9,7 +9,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-7 gap-3">
                     <div class="lg:col-span-5">
                         <div class="w-full sticky flex items-center justify-center top-[100px] aspect-[2/1.3]">
-                            <div class="w-full max-w-[1000px]">
+                            <div class="w-full">
                                 <ClientOnly>
                                     <MyCarousel :images="alterNativeImages"/>
                                 </ClientOnly>
