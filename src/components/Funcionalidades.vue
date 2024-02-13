@@ -61,7 +61,7 @@
     defineProps({
         image: {
             type:String,
-            default: '/assets/images/informacoes.png'
+            default: '/images/informacoes.png'
         }
     })
 </script>
