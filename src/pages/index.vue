@@ -51,7 +51,7 @@
             </div>
         </section>
 
-        <section class="h-screen max-h-[692px] bg-[url('/assets/esticadoRustico.png')] mb-3"></section>
+        <section class="h-screen max-h-[692px] bg-[url('/assets/MetadeesticadoRustico.png')] lg:bg-[url('/assets/esticadoRustico.png')] bg-left lg:bg-right bg-cover mb-3"></section>
         
         
         <Funcionalidades/>
