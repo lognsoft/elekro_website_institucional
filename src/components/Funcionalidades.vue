@@ -36,7 +36,7 @@
                     >
                         <div class="info-plus__line">
                             <div class="w-[60px] md:w-[100px] bg-my-gray h-1 rounded-e"></div>
-                            acesso por chave
+                            entrada de chave física
                         </div>
                     </div>
                     <div
