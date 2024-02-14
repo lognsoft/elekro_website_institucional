@@ -17,7 +17,7 @@
                 class="py-11 h-screen max-h-[400px]  md:max-h-[600px] bg-[url('/assets/images/banner.jpg')] bg-center bg-no-repeat"
             ></section>
         </div>
-        <Formulario title="Fale conosco"/>
+        <Formulario :title="true"/>
         <section class="py-11 bg-slate-500 text-white">
             <div class="container mx-auto px-5 md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center md:text-start">

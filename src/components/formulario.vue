@@ -1,7 +1,14 @@
 <template>
     <section class="py-11">
         <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3">
-            <TitleSection v-if="title !== undefined">{{ title }}</TitleSection>
+            <template v-if="title">
+                <TitleSection v-show="alterForm === 'revendedor'">
+                    Seja um revendedor
+                </TitleSection>
+                <TitleSection v-show="alterForm === 'default'">
+                    Fale conosco
+                </TitleSection>
+            </template>
             <!-- <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
                 {{ submitMessage }}
                 <span v-show="submitLoading" class="text-5xl flex items-center">
@@ -89,10 +96,11 @@
                             Enviar
                             <Icon name="fa-solid:paper-plane"/>
                         </MyButton>
-                        <a href="#" @click.prevent="alterForm = 'default'" class="text-sky-500 underline ml-3">Fale conosco</a>
+                        <button type="button" @click="alterForm = 'default'" class="text-sky-500 underline ml-3">Fale conosco</button>
                     </div>
                 </div> 
             </form>
+
             <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
                 <div class="wrapper-form-container">
                     <div for="nome_completo" class="label">Nome*</div>
@@ -156,7 +164,7 @@
                             Enviar
                             <Icon name="fa-solid:paper-plane"/>
                         </MyButton>
-                        <a href="#" @click.prevent="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Seja um revendedor</a>
+                        <button type="button" @click="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Seja um revendedor</button>
                     </div>
                 </div> 
             </form>
@@ -168,8 +176,13 @@
 import formRevenda from '~/stores/formRevenda';
 import formQuestion from '~/stores/formQuestion';
 
-defineProps(['title']) as { title:String | undefined }
-const alterForm:Ref<string> = ref('default');
+defineProps({
+    title:{
+        type:Boolean,
+        default:false
+    }
+}) as { title:boolean }
+const alterForm:Ref<string> = ref('revendedor');
 
 const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
 const { inputs:form1 } = formQuestion();
