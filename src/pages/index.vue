@@ -15,20 +15,44 @@
         <div>
             <section id="bg-image">
                 <div class="bg-image">
-                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center" style="color: #231f20">
+                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center text-white">
+                        <h1 class="text-4xl font-semibold">Elekro</h1>
+                        <h2 class="text-3xl font-light mb-3">Modernize seu lar com a Elekro</h2>
                         <NuxtLink
                             class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
                             to="/"
-                        >Conheça nossos produtos</NuxtLink>
+                        >Saiba Mais</NuxtLink>
                     </div>
                 </div>
             </section>
         </div>
 
-        <section class="h-screen max-h-[692px] bg-[url('/assets/images/macaneta.png')] bg-cover bg-center mb-3"></section>
+        <section class="min-h-[600px] flex items-center bg-[url('/assets/images/macaneta.png')] bg-cover bg-center mb-3 py-11">
+            <div class="w-full h-full max-w-[2500px] mx-auto px-3 text-white">
+                <h2 class="text-4xl font-semibold mb-4 text-start md:text-center">Elekro: Tecnologia, Inovação e Excelência.</h2>
+                <p class="mb-7 text-start md:text-center">Descubra a combinação perfeita de segurança e conveniência com a Elekro, a fechadura eletrônica que redefine o acesso ao seu lar.</p>
+                <ul class="list-decimal font-bold text-lg md:text-xl md:mx-auto mb-7 w-full max-w-[550px]">
+                    <li class="mb-2 ml-4">
+                        Modernidade ao Alcance: <span class="font-light">"Elevando seu lar ao futuro."</span>
+                    </li>
+                    <li class="mb-2 ml-4">
+                        Tecnologia intuitiva: <span class="font-light">"Controle simplificado."</span>
+                    </li>
+                    <li class="mb-2 ml-4">
+                        Praticidade Sem Igual: <span class="font-light">"Acesso fácil, vida tranquila."</span>
+                    </li>
+                </ul>
+                <div class="xtext-start md:text-center">
+                    <NuxtLink
+                        class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
+                        to="/"
+                    >Saiba Mais</NuxtLink>
+                </div>
+            </div>
+        </section>
         
         
-        <LazyFuncionalidades/>
+        <Funcionalidades/>
         
         
         
