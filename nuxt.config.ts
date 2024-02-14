@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/ui",
     "nuxt-icon",
-    "nuxt-primevue",
     "nuxt-aos",
     'vue3-carousel-nuxt',
   ],
@@ -16,9 +15,6 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
-  },
-  swiper:{
-    
   },
   ssr: true,
   nitro: {

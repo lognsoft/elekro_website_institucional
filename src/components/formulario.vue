@@ -2,68 +2,161 @@
     <section class="py-11">
         <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3">
             <TitleSection v-if="title !== undefined">{{ title }}</TitleSection>
-            <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
+            <!-- <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
                 {{ submitMessage }}
                 <span v-show="submitLoading" class="text-5xl flex items-center">
                     <MyIcon icon="eos-icons:three-dots-loading"/>
                 </span>
-            </h2>
-            <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200" :class="{'opacity-25':submitForm}" @submit.prevent="validateInputs">
-                <div class="wrapper-form-container">
-                    <label for="input-name" class="label">nome*</label>
-                    <div class="container-input">
-                        <small v-show="!state.name.validate" class="text-sm text-red-500">{{ state.name.message }}</small>
-                        <input :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.name.validate}" v-model="state.name.value" type="text" name="nome" placeholder="Nome" id="input-name"/>
-                    </div>
-                </div>
-                <div class="wrapper-form-container">
-                    <label for="input-phone" class="label">telefone</label>
-                    <div class="container-input">
-                        <small v-show="!state.telefone.validate" class="text-sm text-red-500">{{ state.telefone.message }}</small>
-                        <InputMask :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.telefone.validate}" v-model="state.telefone.value" mask="(99) 99999-9999" type="text" name="telefone" placeholder="(00) 00000-0000" id="input-phone"/>
-                        
-                    </div>
-                </div>
-                <div class="wrapper-form-container">
-                    <label for="input-email" class="label">email*</label>
-                    <div class="container-input">
-                        <small v-show="!state.email.validate" class="text-sm text-red-500">{{ state.email.message }}</small>
-                        <input :disabled="submitForm" class="input-contact" :class="{'border-red-500 border-2':!state.email.validate}" v-model="state.email.value" type="email" name="email" id="input-email" placeholder="E-mail"/>
-                    </div>
-                </div>
-                <div class="wrapper-form-container-t">
-                    <label for="input-message" class="label">mensagem*</label>
-                    <div class="container-input">
-                        <small v-show="!state.message.validate" class="text-sm text-red-500">{{ state.message.message }}</small>
-                        <textarea :disabled="submitForm" class="input-contact min-h-80" :class="{'border-red-500 border-2':!state.message.validate}" v-model="state.message.value" name="mensagem" id="input-message" placeholder="Mensagem"></textarea>
-                    </div>
-                </div>
-                <div class="wrapper-form-container-t">
-                    <div class="label"></div>
-                    <div class="container-input text-center md:text-start">
-                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit" :disabled="submitForm">
-                            Enviar
-                            <Icon name="fa-solid:paper-plane"/>
-                        </MyButton>
-                        <a href="#" @click.prevent="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Enviar currículo</a>
-                    </div>
-                </div> 
-            </form>
+            </h2> -->
             <form v-show="alterForm === 'revendedor'" class="w-full mt-6 py-5 duration-200">
-                <div class="wrapper-form-container-t">
-                    <div class="label"></div>
-                    <div class="container-input text-center md:text-start">
-                        formulário aqui
+                <div class="wrapper-form-container">
+                    <label for="default_nome_empresa" class="label">nome da empresa*</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="text"
+                            name="default_nome_empresa"
+                            placeholder="Nome"
+                            id="default_nome_empresa"
+                            v-model="form2.campos.nomeEmpresa.value"
+                        />
                     </div>
-                </div> 
+                </div>
+                <div class="wrapper-form-container">
+                    <label for="default_cnpj" class="label">CNPJ*</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="text"
+                            name="default_cnpj"
+                            maxlength="18"
+                            placeholder="CNPJ" id="default_cnpj"
+                            v-model="form2.campos.cnpjEmpresa.value"
+                            @input="cnpjMask"
+                        />
+                    </div>
+                </div>
+                <div class="wrapper-form-container">
+                    <label for="default_telefone" class="label">Telefone*</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="text"
+                            name="default_telefone"
+                            placeholder="(00) 00000-0000"
+                            id="default_telefone"
+                            maxlength="15"
+                            v-model="form2.campos.telefoneEmpresa.value"
+                            @input="phoneMask"
+                        />
+                    </div>
+                </div>
+                <div class="wrapper-form-container">
+                    <label for="default_telefone_fixo" class="label">Telefone fixo</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="text"
+                            name="default_telefone_fixo"
+                            placeholder="(00) 0000-0000 (opcional)"
+                            id="default_telefone_fixo"
+                            maxlength="14"
+                            v-model="form2.campos.telefoneFixoEmpresa.value"
+                            @input="fixedPhoneMask"
+                        />
+                    </div>
+                </div>
+                <div class="wrapper-form-container">
+                    <label for="default_message" class="label">Mensagem</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <textarea
+                            class="input-contact min-h-[300px]"
+                            name="default_message"
+                            id="default_message"
+                            v-model="form2.campos.messageEmpresa.value"
+                        ></textarea>
+                    </div>
+                </div>
                 <div class="wrapper-form-container-t">
                     <div class="label"></div>
                     <div class="container-input text-center md:text-start md:col-start-2">
-                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit" :disabled="submitForm">
+                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit">
                             Enviar
                             <Icon name="fa-solid:paper-plane"/>
                         </MyButton>
-                        <a href="#" @click.prevent="alterForm = 'default'" class="text-sky-500 underline ml-3">Seja um revendedor</a>
+                        <a href="#" @click.prevent="alterForm = 'default'" class="text-sky-500 underline ml-3">Fale conosco</a>
+                    </div>
+                </div> 
+            </form>
+            <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
+                <div class="wrapper-form-container-t">
+                    <div for="nome_completo" class="label">Nome*</div>
+                    <div class="container-input text-center md:text-start">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="text"
+                            name="nome_completo"
+                            placeholder="Nome"
+                            id="nome_completo"
+                            v-model="form1.campos.nome.value"
+                        />
+                    </div>
+                </div>
+                <div class="wrapper-form-container-t">
+                    <div for="telefone" class="label">Telefone*</div>
+                    <div class="container-input text-center md:text-start">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="text"
+                            name="telefone"
+                            placeholder="(00) 00000-0000"
+                            id="telefone"
+                            maxlength="15"
+                            v-model="form1.campos.telefone.value"
+                        />
+                    </div>
+                </div>
+                <div class="wrapper-form-container-t">
+                    <div for="email" class="label">E-mail*</div>
+                    <div class="container-input text-center md:text-start">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <input
+                            class="input-contact"
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                            id="email"
+                            v-model="form1.campos.email.value"
+                        />
+                    </div>
+                </div>
+                <div class="wrapper-form-container">
+                    <label for="message" class="label">Mensagem</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <textarea
+                            class="input-contact min-h-[300px]"
+                            name="message"
+                            id="message"
+                            v-model="form1.campos.message.value"
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="wrapper-form-container-t">
+                    <div class="label"></div>
+                    <div class="container-input text-center md:text-start md:col-start-2">
+                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit">
+                            Enviar
+                            <Icon name="fa-solid:paper-plane"/>
+                        </MyButton>
+                        <a href="#" @click.prevent="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Seja um revendedor</a>
                     </div>
                 </div> 
             </form>
@@ -72,113 +165,15 @@
 </template>
 
 <script setup lang="ts">
+import formRevenda from '~/stores/formRevenda';
+import formQuestion from '~/stores/formQuestion';
+
 defineProps(['title']) as { title:String | undefined }
+const alterForm:Ref<string> = ref('default');
 
-//types
-import type IForm from '~/interfaces/IForm';
-import type { FormSubmit } from '~/types'
+const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
+const { inputs:form1 } = formQuestion();
 
-//formulario
-const alterForm:Ref<string> = ref('default')
-
-//axios plugin
-const { $useAxios } = useNuxtApp();
-
-//controle de formulário
-const submitForm:Ref<boolean> = ref(false);
-const submitShow:Ref<boolean> = ref(false);
-const submitMessage:Ref<string> = ref('Enviando');
-const submitColor:Ref<string> = ref('text-cyan-400');
-const submitLoading:Ref<boolean> = ref(false);
-const emaildefault:string = ""
-
-//campos de formulário
-const state:Ref<IForm> = ref({
-    name : {
-        message: 'Campo obrigatório',
-        validate: true,
-        value: ''
-    },
-    telefone : {
-        message: 'Número inválido',
-        validate: true,
-        value: ''
-    },
-    email : {
-        message: 'Campo obrigatório',
-        validate: true,
-        value: ''
-    },
-    message : {
-        message: 'Campo obrigatório',
-        validate: true,
-        value: ''
-    }
-});
-
-//validação de campos
-const validateInputs = ():void => {
-    let validate:boolean = true;
-    for(const i in state.value){
-        if(i == 'telefone' && state.value[i].value == '') continue;
-        if(i == 'telefone' && state.value[i].value != ''){
-            if(state.value[i].value.length < 15){
-                state.value[i].validate = false;
-                validate = false;
-                continue;
-            }
-        }
-        if(state.value[i].value == ''){
-            state.value[i].validate = false;
-            validate = false;
-            continue;
-        }
-
-        state.value[i].validate = true;
-    }
-
-    if(validate){
-        submitForm.value = true;
-        submitShow.value = true;
-        submitLoading.value = true;
-        submitMailer();
-    }
-}
-
-//submição de formulário
-const submitMailer = ():void => {
-    const data:FormSubmit = {
-        nome:state.value.name.value,
-        email:state.value.email.value,
-        mensagem:state.value.message.value
-    }
-    if(state.value.telefone.value !== '') data.telefone = state.value.telefone.value;
-
-    $useAxios.defaults.headers.post['Content-Type'] = 'application/json';
-    $useAxios.post(`https://formsubmit.co/ajax/${emaildefault}`, data)
-    .then((response) => {
-        submitColor.value = 'text-green-500'
-        submitMessage.value = 'Enviado com sucesso.';
-        for(const i in state.value){
-            state.value[i].value = '';
-        }
-        
-    })
-    .catch((error) => {
-        submitColor.value = 'text-red-500'
-        submitMessage.value = 'Ops!! ocorreu um erro.';
-    })
-    .finally(() => {
-        submitLoading.value = false;
-        submitForm.value = false;
-        setTimeout(() => {
-            submitShow.value = false;
-            submitMessage.value = 'Enviando';
-            submitColor.value = 'text-cyan-400';
-        },3500);
-    })
-    
-}
 </script>
 
 <style scoped>
