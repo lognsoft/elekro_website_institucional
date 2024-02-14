@@ -1,6 +1,6 @@
 <template>
     <section class="py-11">
-        <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3">
+        <div class="container mx-auto px-5 md:px-3">
             <template v-if="title">
                 <TitleSection v-show="alterForm === 'revendedor'">
                     Seja um revendedor
@@ -96,16 +96,43 @@
                             Enviar
                             <Icon name="fa-solid:paper-plane"/>
                         </MyButton>
-                        <button type="button" @click="alterForm = 'default'" class="text-sky-500 underline ml-3">Fale conosco</button>
+                        <button type="button" @click="alterForm = 'default'" class="text-sky-500 underline ml-3">Comece a trabalhar conosco</button>
                     </div>
                 </div> 
             </form>
 
-            <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
+            <div v-show="alterForm === 'default'">
+                <ul class="mb-4">
+                    <li class="text-lg mb-2">
+                        <div class="font-bold inline-flex gap-1 items-center">
+                            <span class="text-xl"><Icon name="dashicons:email-alt"/></span>
+                            E-mail:
+                        </div> exemplo@email.com
+                    </li>
+                    <li class="text-lg mb-2">
+                        <div class="font-bold inline-flex gap-1 items-center">
+                            <span class="text-xl"><Icon name="ic:round-phone"/></span>
+                            Telefone:
+                        </div> (xx) xxxxx-xxxx
+                    </li>
+                    <li class="text-lg mb-2">
+                        <div class="font-bold inline-flex gap-1 items-center">
+                            <span class="text-xl"><Icon name="ic:twotone-whatsapp"/></span>
+                            Whatsapp:
+                        </div> (xx) xxxxx-xxxx
+                    </li>
+                    <button class="text-xl underline text-sky-500 inline-flex items-center gap-2">
+                        <span class="text-4xl"><Icon name="cryptocurrency:chat"/></span>
+                        Chat online
+                    </button>
+                </ul>
+                <button type="button" @click="alterForm = 'revendedor'" class="text-sky-500 underline">Seja um revendedor</button>
+            </div>
+
+            <!-- <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
                 <div class="wrapper-form-container">
                     <div for="nome_completo" class="label">Nome*</div>
                     <div class="container-input text-center md:text-start">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
                             class="input-contact"
                             type="text"
@@ -119,7 +146,6 @@
                 <div class="wrapper-form-container">
                     <div for="telefone" class="label">Telefone*</div>
                     <div class="container-input text-center md:text-start">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
                             class="input-contact"
                             type="text"
@@ -134,7 +160,6 @@
                 <div class="wrapper-form-container">
                     <div for="email" class="label">E-mail*</div>
                     <div class="container-input text-center md:text-start">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
                             class="input-contact"
                             type="email"
@@ -148,7 +173,6 @@
                 <div class="wrapper-form-container-t">
                     <label for="message" class="label">Mensagem</label>
                     <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <textarea
                             class="input-contact min-h-[300px]"
                             name="message"
@@ -167,7 +191,7 @@
                         <button type="button" @click="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Seja um revendedor</button>
                     </div>
                 </div> 
-            </form>
+            </form> -->
         </div>
     </section>
 </template>
