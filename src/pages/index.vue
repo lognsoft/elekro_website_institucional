@@ -161,7 +161,7 @@ const selectedFeature:Ref<string> = ref('senha');
         z-index: 2;
     }
     .bg-image{
-        @apply w-full h-screen max-h-[550px] lg:max-h-[692px] bg-right lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticado.png')] bg-cover flex items-end lg:items-center justify-start mb-3
+        @apply w-full h-screen max-h-[550px] lg:max-h-[692px] xl:max-h-[800px] bg-right lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticado.png')] bg-cover flex items-end lg:items-center justify-start mb-3
     }
     .container-text{
         @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
