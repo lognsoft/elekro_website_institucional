@@ -19,7 +19,7 @@
                         <h1 class="text-7xl font-semibold hidden md:block">Elekro</h1>
                         <h2 class="text-3xl font-light mb-3 hidden md:block">Modernize seu lar com a Elekro</h2>
                         <NuxtLink
-                            class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-white md:bg-black md:hover:bg-white md:hover:text-black md:text-white md:border-black lg:bg-white lg:hover:bg-black lg:hover:text-white lg:text-black border-2 lg:border-white rounded-full text-xl inline-block"
+                            class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-black hover:border-white md:bg-black md:hover:bg-white md:hover:text-black md:text-white md:border-black lg:bg-white lg:hover:bg-black lg:hover:text-white lg:text-black border-[1px] lg:border-white rounded-full text-xl inline-block"
                             to="/"
                         >Saiba Mais</NuxtLink>
                     </div>
