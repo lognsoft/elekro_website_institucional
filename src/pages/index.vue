@@ -27,7 +27,7 @@
             </section>
         </div>
         <!-- bg-[url('/assets/images/macaneta.png')] -->
-        <section class="min-h-[600px] flex items-center bg-[url('/assets/esticadoPrata.png')]  bg-cover bg-center mb-3 py-11">
+        <section class="h-screen flex items-center bg-[url('/assets/esticadoPrata.png')] bg-cover bg-center mb-3 py-11">
             <div class="w-full h-full max-w-[2500px] mx-auto px-3 text-white">
                 <!-- <h2 class="text-4xl font-semibold mb-4 text-start md:text-center">Elekro: Tecnologia, Inovação e Excelência.</h2>
                 <p class="mb-7 text-start md:text-center">Descubra a combinação perfeita de segurança e conveniência com a Elekro, a fechadura eletrônica que redefine o acesso ao seu lar.</p>
@@ -51,7 +51,7 @@
             </div>
         </section>
 
-        <section class="h-screen max-h-[692px] bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section>
+        <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section>
         
         
         <Funcionalidades/>
