@@ -11,7 +11,7 @@
         <Meta name="twitter:card" content="summary_large_image"/>
         
     </Head>
-    <main class="pt-[70px]">
+    <main>
         <div>
             <section id="bg-image">
                 <div class="bg-image">
@@ -26,38 +26,8 @@
                 </div>
             </section>
         </div>
-        <!-- bg-[url('/assets/images/macaneta.png')] -->
-        <section class="h-screen flex items-center bg-[url('/assets/esticadoPrata.png')] bg-cover bg-center mb-3 py-11">
-            <div class="w-full h-full max-w-[2500px] mx-auto px-3 text-white">
-                <!-- <h2 class="text-4xl font-semibold mb-4 text-start md:text-center">Elekro: Tecnologia, Inovação e Excelência.</h2>
-                <p class="mb-7 text-start md:text-center">Descubra a combinação perfeita de segurança e conveniência com a Elekro, a fechadura eletrônica que redefine o acesso ao seu lar.</p>
-                <ul class="list-decimal font-bold text-lg md:text-xl md:mx-auto mb-7 w-full max-w-[550px]">
-                    <li class="mb-2 ml-4">
-                        Modernidade ao Alcance: <span class="font-light">"Elevando seu lar ao futuro."</span>
-                    </li>
-                    <li class="mb-2 ml-4">
-                        Tecnologia intuitiva: <span class="font-light">"Controle simplificado."</span>
-                    </li>
-                    <li class="mb-2 ml-4">
-                        Praticidade Sem Igual: <span class="font-light">"Acesso fácil, vida tranquila."</span>
-                    </li>
-                </ul>
-                <div class="xtext-start md:text-center">
-                    <NuxtLink
-                        class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
-                        to="/"
-                    >Saiba Mais</NuxtLink>
-                </div> -->
-            </div>
-        </section>
-
-        <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section>
-        
-        
         <Funcionalidades/>
-        
-        
-        
+        <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section>
         <section class="mb-3">
             <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -99,6 +69,37 @@
                 </div>
             </div>
         </section>
+        <!-- bg-[url('/assets/images/macaneta.png')] -->
+        <section class="h-screen flex items-center bg-[url('/assets/esticadoPrata.png')] bg-cover bg-center mb-3 py-11">
+            <div class="w-full h-full max-w-[2500px] mx-auto px-3 text-white">
+                <!-- <h2 class="text-4xl font-semibold mb-4 text-start md:text-center">Elekro: Tecnologia, Inovação e Excelência.</h2>
+                <p class="mb-7 text-start md:text-center">Descubra a combinação perfeita de segurança e conveniência com a Elekro, a fechadura eletrônica que redefine o acesso ao seu lar.</p>
+                <ul class="list-decimal font-bold text-lg md:text-xl md:mx-auto mb-7 w-full max-w-[550px]">
+                    <li class="mb-2 ml-4">
+                        Modernidade ao Alcance: <span class="font-light">"Elevando seu lar ao futuro."</span>
+                    </li>
+                    <li class="mb-2 ml-4">
+                        Tecnologia intuitiva: <span class="font-light">"Controle simplificado."</span>
+                    </li>
+                    <li class="mb-2 ml-4">
+                        Praticidade Sem Igual: <span class="font-light">"Acesso fácil, vida tranquila."</span>
+                    </li>
+                </ul>
+                <div class="xtext-start md:text-center">
+                    <NuxtLink
+                        class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
+                        to="/"
+                    >Saiba Mais</NuxtLink>
+                </div> -->
+            </div>
+        </section>
+
+        
+    
+        
+        
+        
+        
         <!-- destaque -->
         <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11">
             <div class="container mx-auto h-full">
@@ -163,7 +164,7 @@ const selectedFeature:Ref<string> = ref('senha');
         z-index: 2;
     }
     .bg-image{
-        @apply w-full h-screen max-h-[550px] lg:max-h-[692px] xl:max-h-[800px] bg-left lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticadoSmall.png')] lg:bg-[url('/assets/esticado.png')] bg-cover flex items-end md:items-center justify-start mb-3
+        @apply w-full h-screen  bg-left lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticadoSmall.png')] lg:bg-[url('/assets/esticado.png')] bg-cover flex items-end md:items-center justify-start mb-3
     }
     .container-text{
         @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
