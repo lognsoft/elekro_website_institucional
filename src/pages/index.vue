@@ -15,11 +15,11 @@
         <div>
             <section id="bg-image">
                 <div class="bg-image">
-                    <div class="col-span-3 w-full container mx-auto mt-10 text-center lg:text-start lg:text-white px-3">
-                        <h1 class="text-7xl font-semibold hidden lg:block">Elekro</h1>
-                        <h2 class="text-3xl font-light mb-3 hidden lg:block">Modernize seu lar com a Elekro</h2>
+                    <div class="col-span-3 w-full container mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
+                        <h1 class="text-7xl font-semibold hidden md:block">Elekro</h1>
+                        <h2 class="text-3xl font-light mb-3 hidden md:block">Modernize seu lar com a Elekro</h2>
                         <NuxtLink
-                            class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
+                            class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-white md:bg-black md:hover:bg-white md:hover:text-black md:text-white md:border-black lg:bg-white lg:hover:bg-black lg:hover:text-white lg:text-black border-2 lg:border-white rounded-full text-xl inline-block"
                             to="/"
                         >Saiba Mais</NuxtLink>
                     </div>
@@ -161,7 +161,7 @@ const selectedFeature:Ref<string> = ref('senha');
         z-index: 2;
     }
     .bg-image{
-        @apply w-full h-screen max-h-[550px] lg:max-h-[692px] xl:max-h-[800px] bg-left lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticadoSmall.png')] lg:bg-[url('/assets/esticado.png')] bg-cover flex items-end lg:items-center justify-start mb-3
+        @apply w-full h-screen max-h-[550px] lg:max-h-[692px] xl:max-h-[800px] bg-left lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticadoSmall.png')] lg:bg-[url('/assets/esticado.png')] bg-cover flex items-end md:items-center justify-start mb-3
     }
     .container-text{
         @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
