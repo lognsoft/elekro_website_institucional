@@ -70,7 +70,7 @@
                         />
                     </div>
                 </div>
-                <div class="wrapper-form-container">
+                <div class="wrapper-form-container-t">
                     <label for="default_message" class="label">Mensagem</label>
                     <div class="container-input">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
@@ -94,7 +94,7 @@
                 </div> 
             </form>
             <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
-                <div class="wrapper-form-container-t">
+                <div class="wrapper-form-container">
                     <div for="nome_completo" class="label">Nome*</div>
                     <div class="container-input text-center md:text-start">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
@@ -108,7 +108,7 @@
                         />
                     </div>
                 </div>
-                <div class="wrapper-form-container-t">
+                <div class="wrapper-form-container">
                     <div for="telefone" class="label">Telefone*</div>
                     <div class="container-input text-center md:text-start">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
@@ -123,7 +123,7 @@
                         />
                     </div>
                 </div>
-                <div class="wrapper-form-container-t">
+                <div class="wrapper-form-container">
                     <div for="email" class="label">E-mail*</div>
                     <div class="container-input text-center md:text-start">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
@@ -137,7 +137,7 @@
                         />
                     </div>
                 </div>
-                <div class="wrapper-form-container">
+                <div class="wrapper-form-container-t">
                     <label for="message" class="label">Mensagem</label>
                     <div class="container-input">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
