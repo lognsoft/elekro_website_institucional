@@ -50,6 +50,8 @@
                 </div> -->
             </div>
         </section>
+
+        <section class="h-screen max-h-[692px] bg-[url('/assets/esticadoRustico.png')] mb-3"></section>
         
         
         <Funcionalidades/>
