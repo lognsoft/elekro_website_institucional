@@ -96,12 +96,12 @@
                             Enviar
                             <Icon name="fa-solid:paper-plane"/>
                         </MyButton>
-                        <button type="button" @click="alterForm = 'default'" class="text-sky-500 underline ml-3">Comece a trabalhar conosco</button>
+                        <!-- <button type="button" @click="alterForm = 'default'" class="text-sky-500 underline ml-3">Comece a trabalhar conosco</button> -->
                     </div>
                 </div> 
             </form>
 
-            <div v-show="alterForm === 'default'">
+            <!-- <div v-show="alterForm === 'default'">
                 <ul class="mb-4">
                     <li class="text-lg mb-2">
                         <div class="font-bold inline-flex gap-1 items-center">
@@ -127,7 +127,7 @@
                     </button>
                 </ul>
                 <button type="button" @click="alterForm = 'revendedor'" class="text-sky-500 underline">Seja um revendedor</button>
-            </div>
+            </div> -->
 
             <!-- <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
                 <div class="wrapper-form-container">

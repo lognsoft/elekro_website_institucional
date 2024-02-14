@@ -18,14 +18,33 @@
             ></section>
         </div>
         <Formulario :title="true"/>
-        <section class="py-11 bg-slate-500 text-white">
+        <section class="py-11 bg-gray-100 text-black">
             <div class="container mx-auto px-5 md:px-3">
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center md:text-start">
-                    <div class="col-span-1" v-for="info,index of infos" :key="index">
-                        <h3 class="text-5xl font-extrabold mb-11" data-aos="fade-up" data-aos-duration="1000">{{  info.title  }}</h3>
-                        <p class="text-base sm:text-xl font-bold" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">{{ info.text }}</p>
-                    </div>
-                </div>
+                <TitleSection>Comece a trabalhe conosco</TitleSection>
+                <ul class="mb-4">
+                    <li class="text-lg mb-2">
+                        <div class="font-bold inline-flex gap-1 items-center">
+                            <span class="text-xl"><Icon name="dashicons:email-alt"/></span>
+                            E-mail:
+                        </div> exemplo@email.com
+                    </li>
+                    <li class="text-lg mb-2">
+                        <div class="font-bold inline-flex gap-1 items-center">
+                            <span class="text-xl"><Icon name="ic:round-phone"/></span>
+                            Telefone:
+                        </div> (xx) xxxxx-xxxx
+                    </li>
+                    <li class="text-lg mb-2">
+                        <div class="font-bold inline-flex gap-1 items-center">
+                            <span class="text-xl"><Icon name="ic:twotone-whatsapp"/></span>
+                            Whatsapp:
+                        </div> (xx) xxxxx-xxxx
+                    </li>
+                    <button class="text-xl underline text-sky-500 inline-flex items-center gap-2">
+                        <span class="text-4xl"><Icon name="cryptocurrency:chat"/></span>
+                        Chat online
+                    </button>
+                </ul>
             </div>
         </section>
     </main>
