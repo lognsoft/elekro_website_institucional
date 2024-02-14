@@ -15,7 +15,7 @@
         <div>
             <section id="bg-image">
                 <div class="bg-image">
-                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center text-white">
+                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center text-black">
                         <h1 class="text-4xl font-semibold">Elekro</h1>
                         <h2 class="text-3xl font-light mb-3">Modernize seu lar com a Elekro</h2>
                         <NuxtLink
