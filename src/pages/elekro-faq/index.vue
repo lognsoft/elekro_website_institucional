@@ -9,7 +9,7 @@
                     <div class="dropdown">
                         <div class="bar-question" @click="faq_single.open = !faq_single.open">
                             <span class="">{{ faq_single.question }}</span>
-                            <span class="text-gray-300">
+                            <span class="text-gray-300 duration-200" :class="{'rotate-180':faq_single.open}">
                                 <Icon name="ep:arrow-down-bold"/>
                             </span>
                         </div>
@@ -61,6 +61,16 @@ const faq:Ref<Question[]> = ref([
         question: 'Como acesso minha casa se a bateria acabar?',
         open:false,
         response: 'Use chaves físicas fornecidas ou contate suporte.'
+    },
+    {
+        question: 'Que tipo de suporte a Elekro oferece?',
+        open:false,
+        response: 'Suporte completo via telefone, e-mail e WhatsApp.'
+    },
+    {
+        question: 'Os sons da fechadura podem ser silenciados?',
+        open:false,
+        response: 'sim'
     }
 ])
 

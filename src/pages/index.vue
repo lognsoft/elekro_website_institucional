@@ -15,9 +15,9 @@
         <div>
             <section id="bg-image">
                 <div class="bg-image">
-                    <div class="col-span-3 w-full max-w-[600px] mt-10 text-center text-black">
-                        <h1 class="text-4xl font-semibold">Elekro</h1>
-                        <h2 class="text-3xl font-light mb-3">Modernize seu lar com a Elekro</h2>
+                    <div class="col-span-3 w-full container mx-auto mt-10 text-center lg:text-start lg:text-white px-3">
+                        <h1 class="text-7xl font-semibold hidden lg:block">Elekro</h1>
+                        <h2 class="text-3xl font-light mb-3 hidden lg:block">Modernize seu lar com a Elekro</h2>
                         <NuxtLink
                             class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
                             to="/"
@@ -161,7 +161,7 @@ const selectedFeature:Ref<string> = ref('senha');
         z-index: 2;
     }
     .bg-image{
-        @apply w-full h-screen max-h-[692px] bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticado.png')] bg-cover flex items-end justify-center mb-3
+        @apply w-full h-screen max-h-[550px] lg:max-h-[692px] bg-right lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticado.png')] bg-cover flex items-end lg:items-center justify-start mb-3
     }
     .container-text{
         @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
