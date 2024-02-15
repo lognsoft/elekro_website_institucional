@@ -32,5 +32,8 @@ useHead({
     htmlAttrs:{
         lang: 'pt-BR',
     },
+    script:[
+        { src:"//code.jivosite.com/widget/Q2hasbDhZi", async:'' }
+    ]
 })
 </script>

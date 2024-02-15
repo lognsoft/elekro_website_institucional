@@ -22,12 +22,7 @@ export type VmodelRevenda = {
     telefoneEmpresa:Input;
     telefoneFixoEmpresa:Input;
     messageEmpresa:Input;
-}
-export type VModelQuestion = {
-    nome:Input;
-    telefone:Input;
-    email:Input;
-    message:Input;
+    selectOption:Input;
 }
 export type FormRevenda<T> = {
     loading:boolean;

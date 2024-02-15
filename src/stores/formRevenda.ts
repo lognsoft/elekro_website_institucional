@@ -30,6 +30,11 @@ const formRevenda = defineStore('formulario-revenda',() => {
                 value: '',
                 validate: false,
                 message: ''
+            },
+            selectOption:{
+                value: '',
+                validate: false,
+                message: ''
             }
         }
     })

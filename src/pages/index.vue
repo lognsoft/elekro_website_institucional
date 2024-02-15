@@ -15,11 +15,11 @@
         <div>
             <section id="bg-image">
                 <div class="bg-image">
-                    <div class="col-span-3 w-full container mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
-                        <h1 class="text-7xl font-semibold hidden md:block">Elekro</h1>
-                        <h2 class="text-3xl font-light mb-3 hidden md:block">Modernize seu lar com a Elekro</h2>
+                    <div class="col-span-3 w-full relative container md:bottom-11 lg:bottom-0 mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
+                        <h1 class="first_section_title">Elekro</h1>
+                        <h2 class="text-3xl mx-auto mr-0 lg:ml-0 font-light mb-3 hidden md:block max-w-[400px]">Modernize seu lar com Elekro One Plus</h2>
                         <NuxtLink
-                            class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-black hover:border-white md:bg-black md:hover:bg-white md:hover:text-black md:text-white md:border-black lg:bg-white lg:hover:bg-black lg:hover:text-white lg:text-black border-[1px] lg:border-white rounded-full text-xl inline-block"
+                            class="py-3 px-6 duration-300 border-[1px] border-black bg-white hover:border-white hover:bg-black hover:text-white md:bg-black md:border-white md:text-white md:hover:bg-white md:hover:border-black md:hover:text-black lg:border-black lg:text-black lg:bg-white lg:hover:border-white lg:hover:bg-black lg:hover:text-white  rounded-full text-xl inline-block"
                             to="/"
                         >Saiba Mais</NuxtLink>
                     </div>
@@ -27,7 +27,7 @@
             </section>
         </div>
         <Funcionalidades/>
-        <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section>
+        <!-- <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section> -->
         <section class="mb-3">
             <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -49,7 +49,7 @@
                             loading="lazy"
                         />
                     </figure>
-                    <figure class="aspect-[1/0.6]">
+                    <!-- <figure class="aspect-[1/0.6]">
                         <img
                             src="/assets/images/cartao.png"
                             srcset="/assets/images/cartao.png"
@@ -65,35 +65,28 @@
                             class="w-full h-full object-cover"
                             loading="lazy"
                         />
-                    </figure>
+                    </figure> -->
                 </div>
             </div>
         </section>
         <!-- bg-[url('/assets/images/macaneta.png')] -->
-        <section class="h-screen flex items-center bg-[url('/assets/esticadoPrata.png')] bg-cover bg-center mb-3 py-11">
+        <!-- <section class="h-screen flex items-center bg-[url('/assets/esticadoPrata.png')] bg-cover bg-center mb-3 py-11">
             <div class="w-full h-full max-w-[2500px] mx-auto px-3 text-white">
-                <!-- <h2 class="text-4xl font-semibold mb-4 text-start md:text-center">Elekro: Tecnologia, Inovação e Excelência.</h2>
-                <p class="mb-7 text-start md:text-center">Descubra a combinação perfeita de segurança e conveniência com a Elekro, a fechadura eletrônica que redefine o acesso ao seu lar.</p>
-                <ul class="list-decimal font-bold text-lg md:text-xl md:mx-auto mb-7 w-full max-w-[550px]">
-                    <li class="mb-2 ml-4">
-                        Modernidade ao Alcance: <span class="font-light">"Elevando seu lar ao futuro."</span>
-                    </li>
-                    <li class="mb-2 ml-4">
-                        Tecnologia intuitiva: <span class="font-light">"Controle simplificado."</span>
-                    </li>
-                    <li class="mb-2 ml-4">
-                        Praticidade Sem Igual: <span class="font-light">"Acesso fácil, vida tranquila."</span>
-                    </li>
-                </ul>
-                <div class="xtext-start md:text-center">
+                
+            </div>
+        </section> -->
+        <section class="flex items-center h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3 relative">
+            <div class="container mx-auto px-3 ">
+                <div class="max-w-[600px] relative py-5 px-3">
+                    <!-- <div class="absolute w-full h-full bg-white opacity-10 top-0 left-0 z-0 rounded blur"></div> -->
+                    <h1 class="last_section_title">Conforto, design e segurança</h1>
                     <NuxtLink
-                        class="py-3 px-6 duration-300 bg-white hover:bg-black hover:text-white text-black border-2 border-white rounded-full text-xl inline-block"
+                        class="relative z-10 py-3 px-6 duration-300 bg-white hover:bg-black hover:border-white hover:text-white border-black border-[1px] rounded-full text-xl inline-block"
                         to="/"
                     >Saiba Mais</NuxtLink>
-                </div> -->
+                </div>
             </div>
         </section>
-
         
     
         
@@ -101,7 +94,7 @@
         
         
         <!-- destaque -->
-        <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11">
+        <!-- <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11">
             <div class="container mx-auto h-full">
                 <div class="h-full flex flex-col items-center justify-center gap-5">
                     <figure>
@@ -121,7 +114,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 </template>
 
@@ -130,6 +123,10 @@ const selectedFeature:Ref<string> = ref('senha');
 </script>
 
 <style scoped>
+
+    .first_section_title{
+        @apply text-7xl font-semibold hidden md:block
+    }
     .cta-chamada{
         @apply text-2xl md:text-4xl mb-5 text-white
     }
@@ -168,5 +165,13 @@ const selectedFeature:Ref<string> = ref('senha');
     }
     .container-text{
         @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
+    }
+
+    .last_section_title{
+        @apply text-7xl font-bold mb-4 z-10 relative text-white
+    }
+
+    .last_section_title{
+        -webkit-text-stroke: 1px black;
     }
 </style>

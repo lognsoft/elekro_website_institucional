@@ -1,8 +1,9 @@
 <template>
     <section class="h-screen mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
         <div class="w-full h-full max-w-[2500px] mx-auto md:px-3 flex items-center">
-            <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
-                <figure class="col-start-3 col-span-2 relative">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class=""></div>
+                <figure class="col-span-1 relative">
                     <div
                         class="info-plus bg-my-gray top-[18%] left-[43%]"
                         title="senha"
@@ -52,6 +53,7 @@
                     
                     <img class="w-full" :src="image" :srcset="image" alt=""/>
                 </figure>
+                <div class=""></div>
             </div>
         </div>
     </section>

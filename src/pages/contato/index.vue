@@ -40,10 +40,6 @@
                             Whatsapp:
                         </div> (xx) xxxxx-xxxx
                     </li>
-                    <button class="text-xl underline text-sky-500 inline-flex items-center gap-2">
-                        <span class="text-4xl"><Icon name="cryptocurrency:chat"/></span>
-                        Chat online
-                    </button>
                 </ul>
             </div>
         </section>

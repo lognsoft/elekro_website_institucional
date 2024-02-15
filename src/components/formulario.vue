@@ -1,14 +1,9 @@
 <template>
     <section class="py-11">
         <div class="container mx-auto px-5 md:px-3">
-            <template v-if="title">
-                <TitleSection v-show="alterForm === 'revendedor'">
-                    Seja um revendedor
-                </TitleSection>
-                <TitleSection v-show="alterForm === 'default'">
-                    Fale conosco
-                </TitleSection>
-            </template>
+            <TitleSection>
+                Seja um parceiro
+            </TitleSection>
             <!-- <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
                 {{ submitMessage }}
                 <span v-show="submitLoading" class="text-5xl flex items-center">
@@ -77,6 +72,22 @@
                         />
                     </div>
                 </div>
+                <div class="wrapper-form-container">
+                    <label for="default_options" class="label">Parceiro</label>
+                    <div class="container-input">
+                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
+                        <select
+                            class="input-contact"
+                            name="default_options"
+                            id="default_options"
+                            v-model="form2.campos.selectOption.value"
+                        >
+                            <option selected disabled value="">Selecione uma opção</option>
+                            <option value="revendedor">Revendedor</option>
+                            <option value="parceiro">Instalador</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="wrapper-form-container-t">
                     <label for="default_message" class="label">Mensagem</label>
                     <div class="container-input">
@@ -101,104 +112,12 @@
                 </div> 
             </form>
 
-            <!-- <div v-show="alterForm === 'default'">
-                <ul class="mb-4">
-                    <li class="text-lg mb-2">
-                        <div class="font-bold inline-flex gap-1 items-center">
-                            <span class="text-xl"><Icon name="dashicons:email-alt"/></span>
-                            E-mail:
-                        </div> exemplo@email.com
-                    </li>
-                    <li class="text-lg mb-2">
-                        <div class="font-bold inline-flex gap-1 items-center">
-                            <span class="text-xl"><Icon name="ic:round-phone"/></span>
-                            Telefone:
-                        </div> (xx) xxxxx-xxxx
-                    </li>
-                    <li class="text-lg mb-2">
-                        <div class="font-bold inline-flex gap-1 items-center">
-                            <span class="text-xl"><Icon name="ic:twotone-whatsapp"/></span>
-                            Whatsapp:
-                        </div> (xx) xxxxx-xxxx
-                    </li>
-                    <button class="text-xl underline text-sky-500 inline-flex items-center gap-2">
-                        <span class="text-4xl"><Icon name="cryptocurrency:chat"/></span>
-                        Chat online
-                    </button>
-                </ul>
-                <button type="button" @click="alterForm = 'revendedor'" class="text-sky-500 underline">Seja um revendedor</button>
-            </div> -->
-
-            <!-- <form v-show="alterForm === 'default'" class="w-full mt-6 py-5 duration-200">
-                <div class="wrapper-form-container">
-                    <div for="nome_completo" class="label">Nome*</div>
-                    <div class="container-input text-center md:text-start">
-                        <input
-                            class="input-contact"
-                            type="text"
-                            name="nome_completo"
-                            placeholder="Nome"
-                            id="nome_completo"
-                            v-model="form1.campos.nome.value"
-                        />
-                    </div>
-                </div>
-                <div class="wrapper-form-container">
-                    <div for="telefone" class="label">Telefone*</div>
-                    <div class="container-input text-center md:text-start">
-                        <input
-                            class="input-contact"
-                            type="text"
-                            name="telefone"
-                            placeholder="(00) 00000-0000"
-                            id="telefone"
-                            maxlength="15"
-                            v-model="form1.campos.telefone.value"
-                        />
-                    </div>
-                </div>
-                <div class="wrapper-form-container">
-                    <div for="email" class="label">E-mail*</div>
-                    <div class="container-input text-center md:text-start">
-                        <input
-                            class="input-contact"
-                            type="email"
-                            name="email"
-                            placeholder="E-mail"
-                            id="email"
-                            v-model="form1.campos.email.value"
-                        />
-                    </div>
-                </div>
-                <div class="wrapper-form-container-t">
-                    <label for="message" class="label">Mensagem</label>
-                    <div class="container-input">
-                        <textarea
-                            class="input-contact min-h-[300px]"
-                            name="message"
-                            id="message"
-                            v-model="form1.campos.message.value"
-                        ></textarea>
-                    </div>
-                </div>
-                <div class="wrapper-form-container-t">
-                    <div class="label"></div>
-                    <div class="container-input text-center md:text-start md:col-start-2">
-                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit">
-                            Enviar
-                            <Icon name="fa-solid:paper-plane"/>
-                        </MyButton>
-                        <button type="button" @click="alterForm = 'revendedor'" class="text-sky-500 underline ml-3">Seja um revendedor</button>
-                    </div>
-                </div> 
-            </form> -->
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
 import formRevenda from '~/stores/formRevenda';
-import formQuestion from '~/stores/formQuestion';
 
 defineProps({
     title:{
@@ -209,7 +128,6 @@ defineProps({
 const alterForm:Ref<string> = ref('revendedor');
 
 const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
-const { inputs:form1 } = formQuestion();
 
 </script>
 

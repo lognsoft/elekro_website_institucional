@@ -7,7 +7,7 @@ export const rotas:IRouter[] = [
         pathName: "Home",
     },
     {
-        path: "/produtos",
+        path: "/produtos/1",
         pathName: "Produtos",
     },
     {
@@ -20,7 +20,7 @@ export const rotas:IRouter[] = [
     },
     {
         path: "/contato",
-        pathName: "seja um revendedor",
+        pathName: "seja um parceiro",
     }
 ];
 
