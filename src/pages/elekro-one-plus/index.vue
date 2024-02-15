@@ -132,7 +132,7 @@ const images:Array<VariationImages> = [
         ]
     },
     {
-        color:'prateado',
+        color:'prata',
         picture: '/images/informacoes-1.png',
         images: [
             'slide/slide-prata-1.jpg',

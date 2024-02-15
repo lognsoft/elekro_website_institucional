@@ -1,12 +1,12 @@
 <template>
     <section class="lg:h-screen mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
         <div class="w-full h-full max-w-[2500px] mx-auto flex items-center">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-                <figure class="order-last lg:order-first">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <figure class="order-last md:order-first">
                     <img src="/assets/celular.jpeg" alt=""/>
                 </figure>
                 <div>
-                    <figure class="col-span-1 relative max-w-[700px] mx-auto lg:max-w-auto">
+                    <figure class="col-span-1 relative max-w-[700px] mx-auto md:mx-none lg:max-w-auto">
                         <div
                             class="info-plus bg-my-gray top-[18%] left-[43%]"
                             title="senha"

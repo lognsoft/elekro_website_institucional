@@ -127,13 +127,6 @@ const selectedFeature:Ref<string> = ref('senha');
     .first_section_title{
         @apply text-7xl font-semibold hidden md:block
     }
-    .cta-chamada{
-        @apply text-2xl md:text-4xl mb-5 text-white
-    }
-
-    .cta-link{
-        @apply text-xl md:text-3xl text-white
-    }
 
     .grid-image{
         @apply p-8 bg-[url('/assets/images/home.jpg')] bg-center aspect-[1/1] md:aspect-[5/3] flex items-center rounded-tr-lg relative
@@ -168,7 +161,7 @@ const selectedFeature:Ref<string> = ref('senha');
     }
 
     .last_section_title{
-        @apply text-7xl font-bold mb-4 z-10 relative text-white
+        @apply text-6xl md:text-7xl font-bold mb-4 z-10 relative text-white
     }
 
     .last_section_title{
