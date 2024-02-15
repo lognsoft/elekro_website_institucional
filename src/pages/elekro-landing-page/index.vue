@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <Formulario title="contate-nos"/>
+        <Formulario :title="true"/>
     </main>
 </template>
 

@@ -23,11 +23,8 @@ export default defineNuxtConfig({
         "/",
         "/sobre",
         "/contato",
-        "/produtos",
-        "/elekro-landing-page"
-      ],
-      ignore:[
-        "/produtos/:id"
+        "/elekro-landing-page",
+        "/elekro-one-plus"
       ]
     }
   },
