@@ -20,7 +20,7 @@
         <Formulario :title="true"/>
         <section class="py-11 bg-gray-100 text-black">
             <div class="container mx-auto px-5 md:px-3">
-                <TitleSection>Comece a trabalhe conosco</TitleSection>
+                <TitleSection>Comece a trabalhar conosco</TitleSection>
                 <ul class="mb-4">
                     <li class="text-lg mb-2">
                         <div class="font-bold inline-flex gap-1 items-center">
