@@ -15,10 +15,6 @@ export const rotas:IRouter[] = [
         pathName: "Sobre",
     },
     {
-        path: "/elekro-faq",
-        pathName: "FaQ",
-    },
-    {
         path: "/contato",
         pathName: "seja um parceiro",
     }
