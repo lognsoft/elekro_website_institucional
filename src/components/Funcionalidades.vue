@@ -3,7 +3,7 @@
         <div class="w-full h-full max-w-[2500px] mx-auto flex items-center">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 <figure class="order-last md:order-first">
-                    <img src="/assets/celular.jpeg" alt=""/>
+                    <img class="w-full h-auto" src="/assets/celular.png" alt=""/>
                 </figure>
                 <div>
                     <figure class="col-span-1 relative max-w-[700px] mx-auto md:mx-none lg:max-w-auto">
