@@ -1,7 +1,7 @@
 <template>
     <section class="lg:h-screen mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
         <div class="w-full h-full max-w-[2500px] mx-auto flex items-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
                 <figure class="order-last md:order-first">
                     <img class="w-full h-auto" src="/assets/celular.png" alt=""/>
                 </figure>
