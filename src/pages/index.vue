@@ -75,10 +75,9 @@
                 
             </div>
         </section> -->
-        <section class="flex items-center h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3 relative">
+        <!--<section class="flex items-center h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3 relative">
             <div class="container mx-auto px-3 ">
                 <div class="max-w-[600px] relative py-5 px-3">
-                    <!-- <div class="absolute w-full h-full bg-white opacity-10 top-0 left-0 z-0 rounded blur"></div> -->
                     <h1 class="last_section_title">Conforto, design e segurança</h1>
                     <NuxtLink
                         class="relative z-10 py-3 px-6 duration-300 bg-white hover:bg-black hover:border-white hover:text-white border-black border-[1px] rounded-full text-xl inline-block"
@@ -86,7 +85,7 @@
                     >Saiba Mais</NuxtLink>
                 </div>
             </div>
-        </section>
+        </section> -->
         
     
         
