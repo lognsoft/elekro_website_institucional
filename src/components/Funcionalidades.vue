@@ -1,10 +1,8 @@
 <template>
-    <section class="lg:h-screen mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
+    <section class="xl:h-screen mb-3 bg-[url('/assets/images/bestpricebackground.jpg')] bg-no-repeat bg-cover bg-center">
         <div class="w-full h-full max-w-[2500px] mx-auto flex items-center">
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
-                <figure class="order-last md:order-first">
-                    <img class="w-full h-auto" src="/assets/celular.png" alt=""/>
-                </figure>
+                
                 <div>
                     <figure class="col-span-1 relative max-w-[700px] mx-auto md:mx-none lg:max-w-auto">
                         <div
@@ -57,7 +55,15 @@
                         <img class="w-full" :src="image" :srcset="image" alt=""/>
                     </figure>
                 </div>
-                <div class=""></div>
+                <figure class="md:order-first">
+                    <img class="w-full h-auto" src="/assets/celular.png" alt=""/>
+                </figure>
+                <div class="col-span-1 md:col-span-2 xl:col-span-1 flex items-center px-2 pb-10 text-center xl:text-start xl:pb-0">
+                    <div class="w-full">
+                        <h1 class="text-4xl font-semibold">O Aplicativo que Revoluciona a Sua Segurança</h1>
+                        <h2 class="text-3xl font-light">Transforme seu smartphone no chaveiro mais avançado que você já teve.</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
