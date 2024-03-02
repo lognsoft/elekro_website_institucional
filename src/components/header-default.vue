@@ -6,45 +6,24 @@
                     <LogoTipo/>
                 </div>
                 <ClientOnly>
-                    <div class="font-bold cursor-pointer text-xl flex justify-center gap-2 items-center" @click="openNavigate">
-                        <span>Menu</span>
+                    <div class="font-light cursor-pointer text-xl flex justify-center gap-2 items-center" @click="openNavigate">
                         <MyIcon class="text-2xl" icon="fa6-solid:bars"/>
+                        <span>Menu</span>
                     </div>
                 </ClientOnly>
             </nav>
         </div>
-            <div class="navigate" :class="{ active:navigateOpen }">
-                <div class="w-full max-w-[1900px] mx-auto h-screen relative flex justify-end py-5 md:px-3">
-                    <button
-                        @click="navigateOpen = false"
-                        type="button"
-                        aria-label="fechar menu"
-                        class="cursor-pointer absolute text-black top-4 text-2xl bg-white h-8 w-8 right-1 flex items-center justify-center">
-                        <Icon name="ic:baseline-close"/>
-                    </button>
-                    <ul class="navigate-list w-full leading-5">
-                        <li>
-                            <ul class="flex items-center justify-start text-xl md:text-3xl gap-3">
-                                <li class=" duration-100" v-for="rede of midiasSociais" :key="rede.title" @click="openNavigate" v-if="midiasSociais.length > 0">
-                                    <a :href="rede.href" :title="rede.title">
-                                        <Icon :name="rede.icon"/>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="font-bold text-sm md:text-base my-4">
-                            <a class="flex justify-start items-center gap-1" href="javascript:void(0)">
-                                <IconCSS name="ic:round-phone"/>
-                                TEL: (00) 00000-0000
-                            </a>
-                        </li>
-                        <template v-for="rota of rotas" :key="rota.path">
-                            <li @click="openNavigate" class="font-extrabold text-xl text-start mb-3 capitalize"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
-                        </template>
-                    </ul>
-                </div>
-            </div>
+        
     </header>
+    <div class="navigate" :class="{ active:navigateOpen }">
+        <div class="navigation">
+            <ul class="capitalize text-3xl font-bold text-slate-300">
+                <template v-for="rota,index in rotas" :key="index">
+                    <li class="mb-9 hover:text-white duration-200" @click="navigateOpen = false"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                </template>
+            </ul>
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -76,30 +55,17 @@ const openNavigate = () => {
         @apply text-3xl font-extrabold
     }
     .header{
-        @apply w-screen fixed text-slate-50 duration-300
+        @apply w-screen fixed text-slate-50 duration-300 z-50
     }
     .navigate{
-        @apply absolute w-screen bg-black duration-700
-    }
-
-    /* my style */
-    .header{
-        z-index: 1000;
-    }
-
-    .navigate{
-        top: 0;
-        left: -100%;
-        overflow: hidden;
-        opacity: 0;
-    }
-
-    .navigate > div{
-        max-width: 95%;
+        @apply fixed w-full bg-black h-screen duration-700 z-40 top-0 left-[-100%] overflow-hidden text-white
     }
 
     .navigate.active{
-        left: 0;
-        opacity: 1;
+        @apply left-0
     }
-</style>~/app/constants
+
+    .navigation{
+        @apply pt-[10rem] container max-w-5xl mx-auto px-2
+    }
+</style>
