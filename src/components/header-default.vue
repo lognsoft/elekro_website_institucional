@@ -19,7 +19,17 @@
         <div class="navigation">
             <ul class="capitalize text-[30px] font-bold text-white hover:text-slate-400">
                 <template v-for="rota,index in rotas" :key="index">
-                    <li class="mb-9 duration-200" @click="navigateOpen = false"><NuxtLink class="hover:text-white" :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                    <li class="mb-9 duration-200 overflow-hidden" @click="navigateOpen = false">
+                        <NuxtLink
+                            class="hover:text-white"
+                            :to="rota.path"
+                            data-aos="fade-up"
+                            data-aos-delay="6000"
+                            data-aos-duration="1000"
+                        >
+                            {{ rota.pathName }}
+                        </NuxtLink>
+                    </li>
                 </template>
             </ul>
         </div>
