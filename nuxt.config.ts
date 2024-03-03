@@ -29,7 +29,8 @@ export default defineNuxtConfig({
     }
   },
   css:[
-    "animate.css/animate.min.css"
+    "animate.css/animate.min.css",
+    "public/font.css"
   ],
   colorMode:{
     preference: "light",

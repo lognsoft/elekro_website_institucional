@@ -1,25 +1,25 @@
 <template>
     <header ref="header" class="header bg-black">
-        <div class="my-3 md:px-10 px-2">
+        <div class="py-5 md:px-10 px-2">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
                     <LogoTipo/>
                 </div>
                 <ClientOnly>
-                    <div class="font-light cursor-pointer text-xl flex justify-center gap-2 items-center" @click="openNavigate">
-                        <MyIcon class="text-2xl" icon="fa6-solid:bars"/>
-                        <span>Menu</span>
+                    <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" @click="openNavigate">
+                        <MyIcon class="text-2xl" icon="mdi-light:menu"/>
+                        <span class="w-[55px] text-center" v-if="navigateOpen === false" data-aos="fade-in">menu</span>
+                        <span class="w-[55px] text-center" v-else data-aos="fade-in">close</span>
                     </div>
                 </ClientOnly>
             </nav>
         </div>
-        
     </header>
     <div class="navigate" :class="{ active:navigateOpen }">
         <div class="navigation">
-            <ul class="capitalize text-3xl font-bold text-slate-300">
+            <ul class="capitalize text-[30px] font-bold text-white hover:text-slate-400">
                 <template v-for="rota,index in rotas" :key="index">
-                    <li class="mb-9 hover:text-white duration-200" @click="navigateOpen = false"><NuxtLink :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
+                    <li class="mb-9 duration-200" @click="navigateOpen = false"><NuxtLink class="hover:text-white" :to="rota.path">{{ rota.pathName }}</NuxtLink></li>
                 </template>
             </ul>
         </div>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { rotas, midiasSociais } from '~/constants';
+import { rotas } from '~/constants';
 
 const navigateOpen:Ref<boolean> = ref(false);
 const scrollTopPage:Ref<number> = ref(0);
