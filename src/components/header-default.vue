@@ -5,7 +5,7 @@
         <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
-                    <LogoTipo/>
+                    <img class="max-w-[150px]" src="/assets/images/logotipo-elekro.png" srcset="/assets/images/logotipo-elekro.png" alt=""/>
                 </div>
                 <ClientOnly>
                     <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" @click="openNavigate">
