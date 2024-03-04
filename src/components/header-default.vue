@@ -1,6 +1,9 @@
 <template>
     <header ref="header" class="header">
-        <div class="header-overlay" :class="{'bg-black opacity-85 backdrop-blur-lg':navigateOpen || scrollTopPage > 3, 'bg-transparent':!navigateOpen || scrollTopPage <= 3 }"></div>
+        <div class="header-overlay" :class="{
+            'bg-black/80 backdrop-blur-lg':navigateOpen || scrollTopPage > 1,
+            'bg-transparent':!navigateOpen || scrollTopPage <= 1
+        }"></div>
         <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
@@ -68,7 +71,7 @@ const openNavigate = () => {
         @apply w-screen fixed text-slate-50 z-50
     }
     .header-overlay{
-        @apply absolute h-[99px] w-full duration-500
+        @apply absolute h-[99px] w-full duration-500 
     }
     .navigate{
         @apply fixed w-full bg-black h-screen duration-700 z-40 top-0 left-[-100%] overflow-hidden text-white
