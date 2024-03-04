@@ -1,4 +1,5 @@
 <template>
+    
     <main>
         <Banner class="bg-cover bg-center bg-no-repeat bg-[url('/assets/images/4.jpeg')] h-full max-h-[400px] md:max-h-[600px]">
             Elekro

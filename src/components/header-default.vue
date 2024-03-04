@@ -1,5 +1,5 @@
 <template>
-    <header ref="header" class="header bg-black">
+    <header ref="header" class="header" :class="{'bg-black':navigateOpen || scrollTopPage > 3 }">
         <div class="py-5 md:px-10 px-2">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
@@ -19,13 +19,11 @@
         <div class="navigation">
             <ul class="capitalize text-[30px] font-bold text-white hover:text-slate-400">
                 <template v-for="rota,index in rotas" :key="index">
-                    <li class="mb-9 duration-200 overflow-hidden" @click="navigateOpen = false">
+                    <li class="mb-9 duration-200 overflow-hidden">
                         <NuxtLink
+                            @click="navigateOpen = false"
                             class="hover:text-white"
                             :to="rota.path"
-                            data-aos="fade-up"
-                            data-aos-delay="6000"
-                            data-aos-duration="1000"
                         >
                             {{ rota.pathName }}
                         </NuxtLink>
@@ -46,6 +44,7 @@ const janela:Window = window as Window;
 onMounted(() => {
     let newValue:number = janela.document.scrollingElement?.scrollTop as number;
     scrollTopPage.value = newValue;
+    janela.addEventListener("scroll", scrollingHeaderColor)
 });
 
 const scrollingHeaderColor = (e:Event) => {
@@ -65,7 +64,7 @@ const openNavigate = () => {
         @apply text-3xl font-extrabold
     }
     .header{
-        @apply w-screen fixed text-slate-50 duration-300 z-50
+        @apply w-screen fixed text-slate-50 duration-500 z-50
     }
     .navigate{
         @apply fixed w-full bg-black h-screen duration-700 z-40 top-0 left-[-100%] overflow-hidden text-white

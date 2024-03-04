@@ -4,9 +4,11 @@
     <FooterDefault/>
 </template>
 
-<style>
-    .fluid-image{
-        width: 100%;
-        height: auto;
-    }
-</style>
+<script setup lang="ts">
+useSeoMeta({
+    titleTemplate : (titleChunck) => {
+        return titleChunck ? `Elekro - ${titleChunck}`: "Elekro";
+    },
+})
+</script>
+

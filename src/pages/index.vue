@@ -9,23 +9,21 @@
         <Meta name="twitter:description" content="lorem ipsum"/>
         <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
         <Meta name="twitter:card" content="summary_large_image"/>
-        
     </Head>
     <main>
-        <div>
-            <section id="bg-image">
-                <div class="bg-image">
-                    <div class="col-span-3 w-full relative container md:bottom-11 lg:bottom-0 mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
-                        <h1 class="first_section_title">Elekro</h1>
-                        <h2 class="text-3xl mx-auto mr-0 lg:ml-0 font-light mb-3 hidden md:block max-w-[400px]">Modernize seu lar com Elekro One Plus</h2>
-                        <NuxtLink
-                            class="py-3 px-6 duration-300 border-[1px] border-black bg-white hover:border-white hover:bg-black hover:text-white md:bg-black md:border-white md:text-white md:hover:bg-white md:hover:border-black md:hover:text-black lg:border-black lg:text-black lg:bg-white lg:hover:border-white lg:hover:bg-black lg:hover:text-white  rounded-full text-xl inline-block"
-                            to="/"
-                        >Saiba Mais</NuxtLink>
-                    </div>
+        <Slide :images="images"/>
+        <section id="bg-image">
+            <div class="bg-image">
+                <div class="col-span-3 w-full relative container md:bottom-11 lg:bottom-0 mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
+                    <h1 class="first_section_title">Elekro</h1>
+                    <h2 class="text-3xl mx-auto mr-0 lg:ml-0 font-light mb-3 hidden md:block max-w-[400px]">Modernize seu lar com Elekro One Plus</h2>
+                    <NuxtLink
+                        class="py-3 px-6 duration-300 border-[1px] border-black bg-white hover:border-white hover:bg-black hover:text-white md:bg-black md:border-white md:text-white md:hover:bg-white md:hover:border-black md:hover:text-black lg:border-black lg:text-black lg:bg-white lg:hover:border-white lg:hover:bg-black lg:hover:text-white  rounded-full text-xl inline-block"
+                        to="/"
+                    >Saiba Mais</NuxtLink>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <Funcionalidades/>
         <!-- <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section> -->
         <section class="mb-3">
@@ -119,6 +117,8 @@
 
 <script setup lang="ts">
 const selectedFeature:Ref<string> = ref('senha');
+
+const images:Array<string> = ['4.jpeg','2.jpeg'];
 </script>
 
 <style scoped>

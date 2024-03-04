@@ -6,8 +6,15 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "nuxt-icon",
     "nuxt-aos",
-    'vue3-carousel-nuxt',
+    'nuxt-swiper'
   ],
+  swiper:{
+    modules: [
+      'navigation',
+      'pagination',
+      'autoplay'
+    ]
+  },
   plugins:[
     "~/plugins/axios",
   ],
@@ -30,7 +37,6 @@ export default defineNuxtConfig({
   },
   css:[
     "animate.css/animate.min.css",
-    "public/font.css"
   ],
   colorMode:{
     preference: "light",

@@ -1,16 +1,9 @@
 <template>
-    <Carousel :autoplay="7000" :wrap-around="true" :transition="2000" :items-to-show="1">
-        <Slide v-for="image,index in images" :key="index">
-            <img class="w-full h-full object-cover" :src="`/images/${image}`" :srcset="`/images/${image}`" alt=""/>
-        </Slide>
-        <template #addons>
-            <Pagination />
-        </template>
-    </Carousel>
+    slide
 </template>
 
-<script setup lang="ts">
-defineProps(['images']) as { images:string[] }
+<script setup>
+defineProps(['images'])
 </script>
 
 <style scoped>

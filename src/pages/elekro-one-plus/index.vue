@@ -1,4 +1,7 @@
 <template>
+    <Head>
+        <Title>Elekro One Plus</Title>
+    </Head>
     <main>
         <section class="pt-[7.75rem] pb-11">
             <div class="w-full max-w-[2500px] mx-auto px-3">
@@ -131,7 +134,7 @@
 
 const variation:Ref<string> = ref('preta');
 
-    type Question = {
+type Question = {
     question: string,
     open: boolean,
     response: string
