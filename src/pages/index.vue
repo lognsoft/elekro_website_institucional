@@ -118,7 +118,29 @@
 <script setup lang="ts">
 const selectedFeature:Ref<string> = ref('senha');
 
-const images:Array<string> = ['4.jpeg','2.jpeg'];
+type ObjSlide = {
+    img:string,
+    text:string,
+}
+
+const images:Array<ObjSlide> = [
+    {
+        img:'bm-slide/bg.jpg',
+        text:'Transformando<br/>Lares'
+    },
+    {
+        img:'bm-slide/bg1.jpg',
+        text:'Conforto<br/>sob Medida'
+    },
+    {
+        img:'bm-slide/bg2.jpg',
+        text:'Elegância<br/>e Arte'
+    },
+    // {
+    //     img:'bm-slide/bg3.jpg',
+    //     text:'lorem'
+    // }
+];
 </script>
 
 <style scoped>

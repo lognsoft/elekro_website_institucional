@@ -12,8 +12,9 @@ export default defineNuxtConfig({
     modules: [
       'navigation',
       'pagination',
-      'autoplay'
-    ]
+      'autoplay',
+      'effect-creative'
+    ],
   },
   plugins:[
     "~/plugins/axios",

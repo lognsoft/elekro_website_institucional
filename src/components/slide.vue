@@ -1,33 +1,32 @@
 <template>
-    <!-- <Carousel>
-        <Slide v-for="image,index in images" :key="index">
-            <img class="w-full h-full object-cover" :src="`/images/${image}`" :srcset="`/images/${image}`" alt="" loading="lazy"/>
-        </Slide>
-    </Carousel> -->
     <Swiper
     class="carousel"
     :loop="true"
-    :pagination="true"
+    
     :navigation="true"
     :modules="modules"
     :slidesPerView="1"
     :centeredSlides="true"
-    :autoplay="{delay: 4500}"
+    :autoplay="{delay: 8000}"
+    effect="creative"
+    :creative-effect="{
+        prev: {
+            shadow: false,
+            translate: ['-20%', 0, -1],
+        },
+        next: {
+            translate: ['100%', 0, 0],
+        },
+    }"
+    :speed="1200"
     >
         <swiper-slide
-            v-for="image,index in images"
+            v-for="{ img, text },index in images"
             :key="index"
         >
-            <!-- <img
-                class="w-full h-screen object-cover"
-                :src="`/images/${image}`"
-                :srcset="`/images/${image}`"
-                alt=""
-            /> -->
-            <div class="w-full h-screen bg-cover bg-center bg-no-repeat text-white flex items-center" :style="`background-image: url('/images/${image}')`">
-                <div class="container mx-auto px-3">
-                    <h1 class="text-center md:text-start text-4xl md:text-6xl lg:text-9xl font-bold">Lorem Ipsum</h1>
-                    <h4 class="text-center md:text-start text-2xl font-light underline">lorem ipsum</h4>
+            <div class="slider-single" :style="`background-image: url('/images/${img}')`">
+                <div class="container max-w-xl md:max-w-6xl mx-auto px-11">
+                    <h1 class="text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold relative z-10 leading-[60px] md:leading-[70px] lg:leading-[100px]" v-html="text"></h1>
                 </div>
             </div>
         </swiper-slide>
@@ -35,9 +34,9 @@
 </template>
 
 <script setup>
-import { SwiperPagination, SwiperNavigation, SwiperAutoplay } from '#imports';
+import { SwiperPagination, SwiperNavigation, SwiperAutoplay, SwiperEffectCreative } from '#imports';
 
-const modules = [SwiperPagination, SwiperNavigation, SwiperAutoplay];
+const modules = [SwiperPagination, SwiperNavigation, SwiperAutoplay, SwiperEffectCreative];
 
 defineProps(['images'])
 </script>
@@ -47,9 +46,21 @@ defineProps(['images'])
     @apply w-full h-screen min-h-full;
 }
 
+.slider-single {
+    @apply w-full h-screen bg-cover bg-center bg-no-repeat text-white flex items-center relative;
+}
+
+.slider-single::after{
+    content: ''
+}
+
+.slider-single::after{
+    @apply absolute w-full h-screen bg-black opacity-25
+}
+
 .swiper-button-prev,
 .swiper-button-next{
-    color: #fff !important;    
+    color: #fff !important;
 }
 
 .swiper-pagination-bullet{

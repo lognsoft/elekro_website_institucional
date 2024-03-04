@@ -1,9 +1,10 @@
 <template>
-    <header ref="header" class="header" :class="{'bg-black':navigateOpen || scrollTopPage > 3 }">
-        <div class="py-5 md:px-10 px-2">
+    <header ref="header" class="header">
+        <div class="header-overlay" :class="{'bg-black/85 backdrop-blur-lg':navigateOpen || scrollTopPage > 3, 'bg-transparent':!navigateOpen || scrollTopPage <= 3 }"></div>
+        <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
-                    <LogoTipo/>
+                    <img class="w-full max-w-[60px]" src="/assets/logo.png" alt=""/>
                 </div>
                 <ClientOnly>
                     <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" @click="openNavigate">
@@ -17,12 +18,12 @@
     </header>
     <div class="navigate" :class="{ active:navigateOpen }">
         <div class="navigation">
-            <ul class="capitalize text-[30px] font-bold text-white hover:text-slate-400">
+            <ul class="nav-list">
                 <template v-for="rota,index in rotas" :key="index">
-                    <li class="mb-9 duration-200 overflow-hidden">
+                    <li class="mb-9 overflow-hidden">
                         <NuxtLink
                             @click="navigateOpen = false"
-                            class="hover:text-white"
+                            class="hover:opacity-100 duration-200"
                             :to="rota.path"
                         >
                             {{ rota.pathName }}
@@ -64,7 +65,10 @@ const openNavigate = () => {
         @apply text-3xl font-extrabold
     }
     .header{
-        @apply w-screen fixed text-slate-50 duration-500 z-50
+        @apply w-screen fixed text-slate-50 z-50
+    }
+    .header-overlay{
+        @apply absolute h-[99px] w-full duration-500
     }
     .navigate{
         @apply fixed w-full bg-black h-screen duration-700 z-40 top-0 left-[-100%] overflow-hidden text-white
@@ -76,5 +80,16 @@ const openNavigate = () => {
 
     .navigation{
         @apply pt-[10rem] container max-w-5xl mx-auto px-2
+    }
+
+    .nav-list{
+        @apply capitalize text-[30px] font-bold text-white
+    }
+    .nav-list:hover a{
+        @apply opacity-70
+    }
+
+    .nav-list a:hover{
+        @apply hover:opacity-100 duration-200
     }
 </style>
