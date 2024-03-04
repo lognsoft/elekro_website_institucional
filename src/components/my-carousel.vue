@@ -1,21 +1,29 @@
 <template>
-    slide
+    <Swiper class="rounded-lg">
+        <SwiperSlide
+            v-for="image,index in images"
+            :key="index"
+            class="carousel__slide"
+            :modules="modules"
+            :loop="true"
+            :pagination="true"
+            :navigation="true"
+        >
+            <img class="w-full h-full object-cover" :src="`/images/${image}`" alt=""/>
+        </SwiperSlide>
+    </Swiper>
 </template>
 
 <script setup>
+import { SwiperAutoplay, SwiperNavigation, SwiperPagination } from '#imports';
 defineProps(['images'])
+
+const modules = [SwiperAutoplay, SwiperNavigation, SwiperPagination];
 </script>
 
 <style scoped>
-
-    .carousel__viewport{
-        @apply shadow-xl
-    }
     .carousel__slide{
-        @apply aspect-[5/3] rounded-lg overflow-hidden
+        @apply aspect-[5/3] overflow-hidden
     }
 
-    .carousel__pagination-button .carousel__pagination-button--active::after {
-        @apply w-3 aspect-[1/1] block
-    }
 </style>

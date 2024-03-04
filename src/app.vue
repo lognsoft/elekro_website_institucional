@@ -1,9 +1,6 @@
 <template>
   <div>
-    <Head>
-        <Link rel="icon" type="image/svg+xml" href="/images/elekro-icon.svg"/>
-        <Link rel="stylesheet" href="/css/font.css"/>
-    </Head>
+    
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>
@@ -25,7 +22,14 @@
     }
 </style>
 
-<script setupt lang="ts">
+
+
+<script setup>
+useSeoMeta({
+    titleTemplate : (titleChunck) => {
+        return titleChunck ? `Elekro - ${titleChunck}`: "Elekro";
+    },
+})
 useHead({
     htmlAttrs:{
         lang: 'pt-BR',
@@ -33,8 +37,5 @@ useHead({
     script:[
         { src:"//code.jivosite.com/widget/Q2hasbDhZi", async:'' }
     ],
-    // link:[
-    //     { rel:"stylesheet", href:"/css/font.css" }
-    // ]
 })
 </script>
