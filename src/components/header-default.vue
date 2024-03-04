@@ -1,7 +1,6 @@
 <template>
     <header ref="header" class="header" :class="{
             'bg-black/80 backdrop-blur-lg':navigateOpen || scrollTopPage > 1,
-            'bg-transparent':!navigateOpen || scrollTopPage <= 1
         }">
         <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
