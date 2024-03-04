@@ -14,7 +14,7 @@
                         </li>
                         <li class="text-lg flex gap-2 items-center justify-center md:justify-start mb-1">
                             <MyIcon icon="ic:round-mail"/>
-                            example@loremipsum.com
+                            vendas@elekro.com.br
                         </li>
                     </ul>
                 </div>
