@@ -1,13 +1,12 @@
 <template>
-    <header ref="header" class="header">
-        <div class="header-overlay" :class="{
+    <header ref="header" class="header" :class="{
             'bg-black/80 backdrop-blur-lg':navigateOpen || scrollTopPage > 1,
             'bg-transparent':!navigateOpen || scrollTopPage <= 1
-        }"></div>
+        }">
         <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
-                    <img class="w-full max-w-[60px]" src="/assets/logo.png" alt=""/>
+                    <LogoTipo/>
                 </div>
                 <ClientOnly>
                     <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" @click="openNavigate">
@@ -68,10 +67,7 @@ const openNavigate = () => {
         @apply text-3xl font-extrabold
     }
     .header{
-        @apply w-screen fixed text-slate-50 z-50
-    }
-    .header-overlay{
-        @apply absolute h-[99px] w-full duration-500 
+        @apply w-screen fixed text-slate-50 z-50 duration-500 
     }
     .navigate{
         @apply fixed w-full bg-black h-screen duration-700 z-40 top-0 left-[-100%] overflow-hidden text-white
