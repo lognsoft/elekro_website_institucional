@@ -1,6 +1,6 @@
 <template>
     <header ref="header" class="header">
-        <div class="header-overlay" :class="{'bg-black/85 backdrop-blur-lg':navigateOpen || scrollTopPage > 3, 'bg-transparent':!navigateOpen || scrollTopPage <= 3 }"></div>
+        <div class="header-overlay" :class="{'bg-black opacity-85 backdrop-blur-lg':navigateOpen || scrollTopPage > 3, 'bg-transparent':!navigateOpen || scrollTopPage <= 3 }"></div>
         <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
