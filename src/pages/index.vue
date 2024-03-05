@@ -77,57 +77,64 @@
                         <ul>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa6-solid:door-open"/>
+                                    <Icon name="fa-solid:wifi"/>
                                 </span>
-                                <span>Ideal para porta de madeira</span>
+                                <span>Wi-Fi 2.4 GHZ</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="material-symbols:notifications-unread-rounded"/>
+                                </span>
+                                <span>Notificação em Tempo Real</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
                                     <Icon name="fontisto:mobile-alt"/>
                                 </span>
-                                <span>Controle por Aplicativo</span>
+                                <span>Monitoramento com Celular</span>
+                            </li>
+                            
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="mdi:motion-sensor"/>
+                                </span>
+                                <span>Detector de Movimento</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa-solid:wifi"/>
+                                    <Icon name="system-uicons:angle"/>
                                 </span>
-                                <span>Conectividade Wi-Fi</span>
+                                <span>Amplo Ângulo de Aisão</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa-solid:fingerprint"/>
+                                    <Icon name="bi:camera-reels-fill"/>
                                 </span>
-                                <span>Biometria</span>
+                                <span>Vídeo e Áudio Bidirecional</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa-solid:star-of-life"/>
+                                    <Icon name="ph:moon-stars-fill"/>
                                 </span>
-                                <span>Senha Numérica</span>
+                                <span>Visão Noturna</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa:tag"/>
+                                    <Icon name="solar:music-note-3-bold-duotone"/>
                                 </span>
-                                <span>Cartão Tag</span>
+                                <span>56 Melodias</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa-solid:key"/>
+                                    <Icon name="mdi:battery-charging"/>
                                 </span>
-                                <span>Chave Mecânica</span>
+                                <span>Bateria Recarregável</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
-                                    <Icon name="fa-solid:award"/>
+                                    <Icon name="icon-park-solid:spanner"/>
                                 </span>
-                                <span>Garantia</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="fa6-solid:headset"/>
-                                </span>
-                                <span>Suporte Técnico</span>
+                                <span>Fácil Instalação</span>
                             </li>
                         </ul>
                     </div>

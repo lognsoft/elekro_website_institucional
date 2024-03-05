@@ -26,7 +26,7 @@
         >
             <div class="slider-single" :style="`background-image: url('/images/${img}')`">
                 <div class="container max-w-xl md:max-w-6xl mx-auto px-11">
-                    <h1 class="text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold relative z-10 leading-[60px] md:leading-[70px] lg:leading-[100px]" v-html="text"></h1>
+                    <h1 class="relative z-10 text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[60px] md:leading-[70px] lg:leading-[100px]" v-html="text"></h1>
                 </div>
             </div>
         </swiper-slide>
@@ -34,9 +34,19 @@
 </template>
 
 <script setup>
-import { SwiperPagination, SwiperNavigation, SwiperAutoplay, SwiperEffectCreative } from '#imports';
+import {
+    SwiperPagination,
+    SwiperNavigation,
+    SwiperAutoplay,
+    SwiperEffectCreative
+} from '#imports';
 
-const modules = [SwiperPagination, SwiperNavigation, SwiperAutoplay, SwiperEffectCreative];
+const modules = [
+    SwiperPagination,
+    SwiperNavigation,
+    SwiperAutoplay,
+    SwiperEffectCreative
+];
 
 defineProps(['images'])
 </script>
@@ -60,7 +70,12 @@ defineProps(['images'])
 
 .swiper-button-prev,
 .swiper-button-next{
-    color: #fff !important;
+    @apply text-white border-[1px] border-white w-11 h-11 flex items-center justify-center
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    @apply text-[13px]
 }
 
 .swiper-pagination-bullet{
