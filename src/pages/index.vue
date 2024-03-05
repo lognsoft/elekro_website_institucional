@@ -14,7 +14,7 @@
         <Slide :images="images"/>
         <section class="grid grid-cols-1 lg:grid-cols-2">
             <div class="col-span-1 bg-[#f5f5f5] text-[#333]">
-                <div class="my__container m-auto mr-0">
+                <div class="my__container m-auto mr-none md:mr-0">
                     <figure class="col-span-1">
                         <img class="w-full h-auto" src="/images/informacoes-2.png" srcset="/images/informacoes-2.png" alt=""/>
                     </figure>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="col-span-1 bg-black text-white">
-                <div class="my__container m-auto ml-0">
+                <div class="my__container m-auto ml-none md:ml-0">
                     <figure class="col-span-1">
                         <img class="w-full h-auto" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
                     </figure>
@@ -224,7 +224,7 @@ const images:Array<ObjSlide> = [
 
     /* segunda seção */
     .my__container{
-        @apply container px-3 py-10 grid grid-cols-1 lg:grid-cols-2
+        @apply container px-3 py-10 grid grid-cols-1 md:grid-cols-2
     }
 
     .features_elekro{
