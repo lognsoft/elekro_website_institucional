@@ -12,6 +12,128 @@
     </Head>
     <main>
         <Slide :images="images"/>
+        <section class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="col-span-1 bg-[#f5f5f5] text-[#333]">
+                <div class="my__container m-auto mr-0">
+                    <figure class="col-span-1">
+                        <img class="w-full h-auto" src="/images/informacoes-2.png" srcset="/images/informacoes-2.png" alt=""/>
+                    </figure>
+                    <div class="features_elekro">
+                        <h2>Lorem Ipsum</h2>
+                        <ul>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa6-solid:door-open"/>
+                                </span>
+                                <span>Ideal para porta de madeira</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:fingerprint"/>
+                                </span>
+                                <span>Biometria</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:star-of-life"/>
+                                </span>
+                                <span>Senha Numérica</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa:tag"/>
+                                </span>
+                                <span>Cartão Tag</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:key"/>
+                                </span>
+                                <span>Chave Mecânica</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:award"/>
+                                </span>
+                                <span>Garantia</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa6-solid:headset"/>
+                                </span>
+                                <span>Suporte Técnico</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 bg-black text-white">
+                <div class="my__container m-auto ml-0">
+                    <figure class="col-span-1">
+                        <img class="w-full h-auto" src="/images/informacoes-1.png" srcset="/images/informacoes-1.png" alt=""/>
+                    </figure>
+                    <div class="features_elekro">
+                        <h2>Lorem Ipsum</h2>
+                        <ul>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa6-solid:door-open"/>
+                                </span>
+                                <span>Ideal para porta de madeira</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fontisto:mobile-alt"/>
+                                </span>
+                                <span>Controle por Aplicativo</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:wifi"/>
+                                </span>
+                                <span>Conectividade Wi-Fi</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:fingerprint"/>
+                                </span>
+                                <span>Biometria</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:star-of-life"/>
+                                </span>
+                                <span>Senha Numérica</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa:tag"/>
+                                </span>
+                                <span>Cartão Tag</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:key"/>
+                                </span>
+                                <span>Chave Mecânica</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:award"/>
+                                </span>
+                                <span>Garantia</span>
+                            </li>
+                            <li class="border-[#333]">
+                                <span class="feature_icon">
+                                    <Icon name="fa6-solid:headset"/>
+                                </span>
+                                <span>Suporte Técnico</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="bg-image">
             <div class="bg-image">
                 <div class="col-span-3 w-full relative container md:bottom-11 lg:bottom-0 mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
@@ -24,8 +146,8 @@
                 </div>
             </div>
         </section>
+        
         <Funcionalidades/>
-        <!-- <section class="h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3"></section> -->
         <section class="mb-3">
             <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -67,51 +189,6 @@
                 </div>
             </div>
         </section>
-        <!-- bg-[url('/assets/images/macaneta.png')] -->
-        <!-- <section class="h-screen flex items-center bg-[url('/assets/esticadoPrata.png')] bg-cover bg-center mb-3 py-11">
-            <div class="w-full h-full max-w-[2500px] mx-auto px-3 text-white">
-                
-            </div>
-        </section> -->
-        <!--<section class="flex items-center h-screen bg-[url('/assets/MetadeesticadoRustico.png')] md:bg-[url('/assets/esticadoRustico.png')] bg-left md:bg-right bg-cover mb-3 relative">
-            <div class="container mx-auto px-3 ">
-                <div class="max-w-[600px] relative py-5 px-3">
-                    <h1 class="last_section_title">Conforto, design e segurança</h1>
-                    <NuxtLink
-                        class="relative z-10 py-3 px-6 duration-300 bg-white hover:bg-black hover:border-white hover:text-white border-black border-[1px] rounded-full text-xl inline-block"
-                        to="/"
-                    >Saiba Mais</NuxtLink>
-                </div>
-            </div>
-        </section> -->
-        
-    
-        
-        
-        
-        
-        <!-- destaque -->
-        <!-- <section class="h-screen max-h-[692px] bg-[url('/assets/images/bestpricebackground.jpg')] bg-cover bg-center py-11">
-            <div class="container mx-auto h-full">
-                <div class="h-full flex flex-col items-center justify-center gap-5">
-                    <figure>
-                        <img
-                            class="max-w-full h-auto"
-                            src="/assets/images/bestpricelogo.png"
-                            srcset="/assets/images/bestpricelogo.png"
-                            alt=""
-                            loading="lazy"
-                        />
-                    </figure>
-                    <div>
-                        <NuxtLink
-                                class="py-3 px-6 duration-300 bg-black hover:bg-white hover:text-black text-white border-2 border-black rounded-full text-xl inline-block"
-                                to="/"
-                            >Conheça nossos produtos</NuxtLink>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
 </template>
 
@@ -145,6 +222,33 @@ const images:Array<ObjSlide> = [
 
 <style scoped>
 
+    /* segunda seção */
+    .my__container{
+        @apply container px-3 py-10 grid grid-cols-2
+    }
+
+    .features_elekro{
+        @apply col-span-1 px-2
+    }
+
+    .features_elekro > h2{
+        @apply text-center text-[28px] font-bold
+    }
+
+    .features_elekro > ul{
+        @apply font-[16px]
+    }
+
+    .features_elekro > ul > li {
+        @apply flex items-center gap-3 py-5 border-b-[1px] font-light
+    }
+
+    .features_elekro > ul > li > .feature_icon{
+        @apply text-3xl flex items-center justify-center
+    }
+    /* fim da segunda seção */
+
+
     .first_section_title{
         @apply text-7xl font-semibold hidden md:block
     }
@@ -170,22 +274,7 @@ const images:Array<ObjSlide> = [
         content: '';
         z-index: 1;
     }
-    .container-text{
-        position: relative;
-        z-index: 2;
-    }
     .bg-image{
         @apply w-full h-screen  bg-left lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticadoSmall.png')] lg:bg-[url('/assets/esticado.png')] bg-cover flex items-end md:items-center justify-start mb-3
-    }
-    .container-text{
-        @apply w-full max-w-[1900px] flex justify-center items-center flex-col container mx-auto max-h-96 h-screen text-slate-50 px-5 md:px-3
-    }
-
-    .last_section_title{
-        @apply text-6xl md:text-7xl font-bold mb-4 z-10 relative text-white
-    }
-
-    .last_section_title{
-        -webkit-text-stroke: 1px black;
     }
 </style>
