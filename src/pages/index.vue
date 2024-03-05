@@ -70,7 +70,7 @@
             <div class="col-span-1 bg-black text-white">
                 <div class="my__container m-auto ml-0">
                     <figure class="col-span-1">
-                        <img class="w-full h-auto" src="/images/informacoes-1.png" srcset="/images/informacoes-1.png" alt=""/>
+                        <img class="w-full h-auto" src="/images/informacoes-2.png" srcset="/images/informacoes-2.png" alt=""/>
                     </figure>
                     <div class="features_elekro">
                         <h2>Lorem Ipsum</h2>
