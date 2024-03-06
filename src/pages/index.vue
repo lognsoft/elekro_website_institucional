@@ -55,13 +55,13 @@
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:fingerprint"/>
                                 </span>
-                                <span>Biometria</span>
+                                <span>Até 100 Cadastros de Biometria</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:star-of-life"/>
                                 </span>
-                                <span>Senhas Temporárias/Provisórias</span>
+                                <span>Até 100 Cadastros de Senhas Temporárias/Provisórias</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -92,12 +92,6 @@
                                     <Icon name="mdi:letters"/>
                                 </span>
                                 <span>Padrão ABNT 14913</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="bxs:memory-card"/>
-                                </span>
-                                <span>Armazenamento de 100 biometrias e 100 Senhas</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
