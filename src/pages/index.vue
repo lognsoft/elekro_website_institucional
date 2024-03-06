@@ -16,16 +16,40 @@
             <div class="col-span-1 bg-[#f5f5f5] text-[#333]">
                 <div class="my__container m-auto mr-none md:mr-0">
                     <figure class="col-span-1">
-                        <img class="w-full h-auto" src="/images/informacoes-2.png" srcset="/images/informacoes-2.png" alt=""/>
+                        <img
+                            class="w-full h-auto sticky top-[80px]"
+                            src="/images/informacoes-2.png"
+                            srcset="/images/informacoes-2.png"
+                            alt="Maçaneta preta de frente"
+                        />
                     </figure>
                     <div class="features_elekro">
                         <h2>E-Lock</h2>
                         <ul>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
+                                    <Icon name="fontisto:mobile-alt"/>
+                                </span>
+                                <span>Gestã de Abertura e Usuários via App</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
                                     <Icon name="fa6-solid:door-open"/>
                                 </span>
-                                <span>Ideal para porta de madeira</span>
+                                <span>Interação com Casa Inteligente</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <!-- <Icon name="fluent:usb-plug-20-filled"/> -->
+                                    <Icon name="mdi:usb-c-port"/>
+                                </span>
+                                <span>USB C</span>
+                            </li>
+                            <li>
+                                <span class="feature_icon">
+                                    <Icon name="mingcute:volume-mute-fill"/>
+                                </span>
+                                <span>Modo Silencioso</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -37,19 +61,43 @@
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:star-of-life"/>
                                 </span>
-                                <span>Senha Numérica</span>
+                                <span>Senhas Temporárias/Provisórias</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="fa:tag"/>
                                 </span>
-                                <span>Cartão Tag</span>
+                                <span>2 Cartões Tags</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:key"/>
                                 </span>
-                                <span>Chave Mecânica</span>
+                                <span>2 Chaves Mestras/Mecânicas</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="game-icons:door-handle"/>
+                                </span>
+                                <span>Maçaneta Revercivel</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fluent-emoji-high-contrast:battery"/>
+                                </span>
+                                <span>Alimentação via Pilhas AA</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="mdi:letters"/>
+                                </span>
+                                <span>Padrão ABNT 14913</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="bxs:memory-card"/>
+                                </span>
+                                <span>Armazenamento de 100 biometrias e 100 Senhas</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -70,7 +118,7 @@
             <div class="col-span-1 bg-black text-white">
                 <div class="my__container m-auto ml-none md:ml-0">
                     <figure class="col-span-1">
-                        <img class="w-full h-auto" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
+                        <img class="w-full h-auto sticky top-[80px]" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
                     </figure>
                     <div class="features_elekro">
                         <h2>E-Bell</h2>
