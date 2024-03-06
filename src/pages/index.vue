@@ -83,6 +83,12 @@
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
+                                    <Icon name="solar:waterdrops-bold"/>
+                                </span>
+                                <span>IP66 - Prova d’água</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
                                     <Icon name="fluent-emoji-high-contrast:battery"/>
                                 </span>
                                 <span>Alimentação via Pilhas AA</span>
