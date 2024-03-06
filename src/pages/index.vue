@@ -19,7 +19,7 @@
                         <img class="w-full h-auto" src="/images/informacoes-2.png" srcset="/images/informacoes-2.png" alt=""/>
                     </figure>
                     <div class="features_elekro">
-                        <h2>Lorem Ipsum</h2>
+                        <h2>E-Lock</h2>
                         <ul>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -73,7 +73,7 @@
                         <img class="w-full h-auto" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
                     </figure>
                     <div class="features_elekro">
-                        <h2>Lorem Ipsum</h2>
+                        <h2>E-Bell</h2>
                         <ul>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
@@ -104,7 +104,7 @@
                                 <span class="feature_icon">
                                     <Icon name="system-uicons:angle"/>
                                 </span>
-                                <span>Amplo Ângulo de Aisão</span>
+                                <span>Amplo Ângulo de Visão</span>
                             </li>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
