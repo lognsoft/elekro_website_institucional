@@ -24,7 +24,7 @@
                         />
                     </figure>
                     <div class="features_elekro">
-                        <h2>E-Lock</h2>
+                        <h2>Elekro One+</h2>
                         <ul>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -121,7 +121,7 @@
                         <img class="w-full h-auto sticky top-[80px]" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
                     </figure>
                     <div class="features_elekro">
-                        <h2>E-Bell</h2>
+                        <h2>Guardião Digital Elekro</h2>
                         <ul>
                             <li class="border-[#333]">
                                 <span class="feature_icon">
@@ -261,17 +261,13 @@ const images:Array<ObjSlide> = [
         text:'Transformando<br/>Lares'
     },
     {
-        img:'bm-slide/bg1.jpg',
+        img:'bm-slide/bg1.jpeg',
         text:'Conforto<br/>sob Medida'
     },
     {
-        img:'bm-slide/bg2.jpg',
+        img:'bm-slide/bg2.jpeg',
         text:'Elegância<br/>e Arte'
     },
-    // {
-    //     img:'bm-slide/bg3.jpg',
-    //     text:'lorem'
-    // }
 ];
 </script>
 
