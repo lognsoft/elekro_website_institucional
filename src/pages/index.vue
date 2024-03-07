@@ -257,7 +257,7 @@ type ObjSlide = {
 
 const images:Array<ObjSlide> = [
     {
-        img:'bm-slide/bg.jpg',
+        img:'bm-slide/bg.jpeg',
         text:'Transformando<br/>Lares'
     },
     {
