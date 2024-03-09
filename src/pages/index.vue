@@ -82,9 +82,14 @@
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
+                                    <Icon name="material-symbols:notifications-unread-rounded"/>
+                                </span>
+                                <span>Notificação em Tempo Real</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
                                     <Icon name="fa-solid:star-of-life"/>
                                 </span>
-                                <!-- <span>Até 100 Cadastros de Senhas Temporárias/Provisórias</span> -->
                                 <span>Senhas dinâmicas</span>
                             </li>
                             <li class="border-[#ddd]">
@@ -135,8 +140,6 @@
                                 </span>
                                 <span>Processador de Alto Desempenho</span>
                             </li>
-                            
-                            
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:award"/>
@@ -149,6 +152,8 @@
                                 </span>
                                 <span>Suporte Técnico 24/7</span>
                             </li>
+
+                            
                             
                             
                         </ul>
