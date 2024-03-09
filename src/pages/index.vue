@@ -57,11 +57,17 @@
                                 </span>
                                 <span>USB C</span>
                             </li>
-                            <li>
+                            <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="mingcute:volume-mute-fill"/>
                                 </span>
                                 <span>Modo Silencioso</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="ic:sharp-do-disturb-on"/>
+                                </span>
+                                <span>Modo não Perturbe</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
