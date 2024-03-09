@@ -17,15 +17,15 @@
                 <div class="my__container mx-auto "> <!-- mr-none md:mr-0 -->
                     <figure class="col-span-1">
                         <img
-                            class="w-full h-auto sticky top-[80px]"
-                            src="/images/informacoes-2.png"
-                            srcset="/images/informacoes-2.png"
+                            class="max-w-100 mx-auto h-auto object-cover sticky top-[80px]"
+                            src="/images/informacoes-2-teste.png"
+                            srcset="/images/informacoes-2-teste.png"
                             alt="Maçaneta preta de frente"
                         />
                     </figure>
                     <div class="features_elekro">
                         <h2>Elekro One+</h2>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                        <ul class="grid grid-cols-1 gap-x-4">
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="mdi:shield-lock"/>
