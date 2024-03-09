@@ -12,9 +12,9 @@
     </Head>
     <main>
         <Slide :images="images"/>
-        <section class="grid grid-cols-1 lg:grid-cols-2">
+        <section class="grid grid-cols-1 lg:grid-cols-1">
             <div class="col-span-1 bg-[#f5f5f5] text-[#333]">
-                <div class="my__container m-auto mr-none md:mr-0">
+                <div class="my__container mx-auto "> <!-- mr-none md:mr-0 -->
                     <figure class="col-span-1">
                         <img
                             class="w-full h-auto sticky top-[80px]"
@@ -25,7 +25,19 @@
                     </figure>
                     <div class="features_elekro">
                         <h2>Elekro One+</h2>
-                        <ul>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="mdi:shield-lock"/>
+                                </span>
+                                <span>Fechadura Inteligente de Embuir, para portas com espessura entre 30 e 60mm</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="game-icons:metal-bar"/>
+                                </span>
+                                <span>Aço Inoxidável</span>
+                            </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="fontisto:mobile-alt"/>
@@ -61,7 +73,14 @@
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:star-of-life"/>
                                 </span>
-                                <span>Até 100 Cadastros de Senhas Temporárias/Provisórias</span>
+                                <!-- <span>Até 100 Cadastros de Senhas Temporárias/Provisórias</span> -->
+                                <span>Senhas dinâmicas</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:star-of-life"/>
+                                </span>
+                                <span>Até 100 Cadastros de Senhas Numéricas</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -103,7 +122,7 @@
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:award"/>
                                 </span>
-                                <span>Garantia</span>
+                                <span>Garantia de 12 Meses</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -111,11 +130,24 @@
                                 </span>
                                 <span>Suporte Técnico</span>
                             </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="material-symbols:nest-doorbell-visitor"/>
+                                </span>
+                                <span>Modo de acesso para visitantes</span>
+                            </li>
+                            <!-- <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="material-symbols:nest-doorbell-visitor"/>
+                                </span>
+                                <span>Modo de acesso para visitantes</span>
+                            </li> -->
+                            
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-span-1 bg-black text-white">
+            <!-- <div class="col-span-1 bg-black text-white">
                 <div class="my__container m-auto ml-none md:ml-0">
                     <figure class="col-span-1">
                         <img class="w-full h-auto sticky top-[80px]" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
@@ -187,7 +219,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section id="bg-image">
             <div class="bg-image">
@@ -275,7 +307,7 @@ const images:Array<ObjSlide> = [
 
     /* segunda seção */
     .my__container{
-        @apply container px-3 py-10 grid grid-cols-1 md:grid-cols-2
+        @apply container px-3 py-10 grid grid-cols-1 lg:grid-cols-2
     }
 
     .features_elekro{
