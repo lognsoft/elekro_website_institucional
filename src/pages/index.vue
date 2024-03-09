@@ -17,7 +17,7 @@
                 <div class="my__container mx-auto "> <!-- mr-none md:mr-0 -->
                     <figure class="col-span-1">
                         <img
-                            class="max-w-100 mx-auto h-auto object-cover sticky top-[80px]"
+                            class="w-full max-w-[500px] mx-auto h-auto object-cover sticky top-[80px]"
                             src="/images/informacoes-2-teste.png"
                             srcset="/images/informacoes-2-teste.png"
                             alt="Maçaneta preta de frente"
@@ -34,71 +34,9 @@
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
-                                    <Icon name="game-icons:metal-bar"/>
+                                    <Icon name="mdi:letters"/>
                                 </span>
-                                <span>Aço Inoxidável</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fontisto:mobile-alt"/>
-                                </span>
-                                <span>Gestã de Abertura e Usuários via App</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fa6-solid:door-open"/>
-                                </span>
-                                <span>Interação com Casa Inteligente</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <!-- <Icon name="fluent:usb-plug-20-filled"/> -->
-                                    <Icon name="mdi:usb-c-port"/>
-                                </span>
-                                <span>USB C</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="mingcute:volume-mute-fill"/>
-                                </span>
-                                <span>Modo Silencioso</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="ic:sharp-do-disturb-on"/>
-                                </span>
-                                <span>Modo não Perturbe</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fa-solid:fingerprint"/>
-                                </span>
-                                <span>Até 100 Cadastros de Biometria</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fa-solid:star-of-life"/>
-                                </span>
-                                <!-- <span>Até 100 Cadastros de Senhas Temporárias/Provisórias</span> -->
-                                <span>Senhas dinâmicas</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fa-solid:star-of-life"/>
-                                </span>
-                                <span>Até 100 Cadastros de Senhas Numéricas</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fa:tag"/>
-                                </span>
-                                <span>2 Cartões Tags</span>
-                            </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="fa-solid:key"/>
-                                </span>
-                                <span>2 Chaves Mestras/Mecânicas</span>
+                                <span>Padrão ABNT 14913</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
@@ -114,16 +52,91 @@
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
+                                    <Icon name="game-icons:metal-bar"/>
+                                </span>
+                                <span>Aço Inoxidável</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fontisto:mobile-alt"/>
+                                </span>
+                                <span>Gestã de Abertura via App</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="mingcute:volume-mute-fill"/>
+                                </span>
+                                <span>Modo Silencioso</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="material-symbols:nest-doorbell-visitor"/>
+                                </span>
+                                <span>Modo de acesso para visitantes</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="ic:sharp-do-disturb-on"/>
+                                </span>
+                                <span>Modo não Perturbe</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:star-of-life"/>
+                                </span>
+                                <!-- <span>Até 100 Cadastros de Senhas Temporárias/Provisórias</span> -->
+                                <span>Senhas dinâmicas</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:fingerprint"/>
+                                </span>
+                                <span>Até 100 Cadastros de Biometria</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:star-of-life"/>
+                                </span>
+                                <span>Até 100 Cadastros de Senhas Numéricas</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa-solid:key"/>
+                                </span>
+                                <span>Acesso Através de Chave Mestra</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa:tag"/>
+                                </span>
+                                <span>Acesso Através de Tag</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="fa6-solid:door-open"/>
+                                </span>
+                                <span>Interação com Casa Inteligente</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
                                     <Icon name="fluent-emoji-high-contrast:battery"/>
                                 </span>
                                 <span>Alimentação via Pilhas AA</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
-                                    <Icon name="mdi:letters"/>
+                                    <Icon name="mdi:usb-c-port"/>
                                 </span>
-                                <span>Padrão ABNT 14913</span>
+                                <span>USB C</span>
                             </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
+                                    <Icon name="basil:processor-solid"/>
+                                </span>
+                                <span>Processador de Alto Desempenho</span>
+                            </li>
+                            
+                            
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="fa-solid:award"/>
@@ -134,20 +147,9 @@
                                 <span class="feature_icon">
                                     <Icon name="fa6-solid:headset"/>
                                 </span>
-                                <span>Suporte Técnico</span>
+                                <span>Suporte Técnico 24/7</span>
                             </li>
-                            <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="material-symbols:nest-doorbell-visitor"/>
-                                </span>
-                                <span>Modo de acesso para visitantes</span>
-                            </li>
-                            <!-- <li class="border-[#ddd]">
-                                <span class="feature_icon">
-                                    <Icon name="material-symbols:nest-doorbell-visitor"/>
-                                </span>
-                                <span>Modo de acesso para visitantes</span>
-                            </li> -->
+                            
                             
                         </ul>
                     </div>
