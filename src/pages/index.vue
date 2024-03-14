@@ -152,10 +152,6 @@
                                 </span>
                                 <span>Suporte Técnico 24/7</span>
                             </li>
-
-                            
-                            
-                            
                         </ul>
                     </div>
                 </div>
@@ -306,7 +302,7 @@ const images:Array<ObjSlide> = [
         text:'Transformando<br/>Lares'
     },
     {
-        img:'bm-slide/bg1.jpeg',
+        img:'bm-slide/bg1.jpg',
         text:'Conforto<br/>sob Medida'
     },
     {
