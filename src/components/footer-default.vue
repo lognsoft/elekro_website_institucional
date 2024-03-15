@@ -8,17 +8,17 @@
 
                 <div class="contact-container">
                     <h6>telefone:</h6>
-                    <a href="">(00) 00000-0000</a>
+                    <a href="javascript:void(0)" target="_blank">(00) 00000-0000</a>
                 </div>
 
                 <div class="contact-container">
                     <h6>whatsapp:</h6>
-                    <a href="">(00) 00000-0000</a>
+                    <a href="javascript:void(0)" target="_blank">(00) 00000-0000</a>
                 </div>
 
                 <div class="contact-container">
                     <h6>e-mail:</h6>
-                    <a href="">vendas@elekro.com.br</a>
+                    <a href="mailto:vendas@elekro.com.br?subject=Gostaria de saber mais sobre o produto" target="_blank">vendas@elekro.com.br</a>
                 </div>
             </div>
             <div class="py-11 lg:py-[100px] flex flex-col md:flex-row md:items-center md:justify-between border-t-[1px] border-[#1d1d1d] gap-y-3">
@@ -26,7 +26,7 @@
                 <ul class="flex gap-4">
                     <template v-for="midia, index in midiasSociais" :key="index">
                         <li class="text-xl md:text-2xl hover:text-[#aaaaaa] duration-200">
-                            <a href="" :title="midia.title">
+                            <a href="javascript:void(0)" target="_blank" :title="midia.title">
                                 <Icon :name="midia.icon"/>
                             </a>
                         </li>
