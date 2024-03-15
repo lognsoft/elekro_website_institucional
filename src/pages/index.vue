@@ -319,7 +319,7 @@ const images:Array<ObjSlide> = [
         text:'Conforto<br/>sob Medida'
     },
     {
-        img:'bm-slide/bg2.jpeg',
+        img:'bm-slide/bg2.jpg',
         text:'Elegância<br/>e Arte'
     },
 ];
