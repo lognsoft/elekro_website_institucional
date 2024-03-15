@@ -8,7 +8,7 @@
                 <p class="text-[#aaaaaa] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="pb-11 pt-6 text-center border-t-[1px] border-[#1d1d1d]">
-                <span class="font-light inline-block">&copy; 2024 <a class="hover:text-[#09aff4] duration-200 uppercase font-medium text-sm inline-block" target="_blank" href="https://logn.com.br/servicos">logn.</a></span>
+                <span class="font-light inline-block">&copy; 2024 Elekro</span>
             </div>
         </div>
     </footer>

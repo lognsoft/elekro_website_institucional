@@ -40,6 +40,12 @@
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
+                                    <Icon name="mdi:check-decagram"/>
+                                </span>
+                                <span>Selo Anatel</span>
+                            </li>
+                            <li class="border-[#ddd]">
+                                <span class="feature_icon">
                                     <Icon name="game-icons:door-handle"/>
                                 </span>
                                 <span>Maçaneta Revercivel</span>
