@@ -230,7 +230,7 @@
                 </div>
             </div> -->
         </section>
-        <section id="bg-image">
+        <!-- <section id="bg-image">
             <div class="bg-image">
                 <div class="col-span-3 w-full relative container md:bottom-11 lg:bottom-0 mx-auto mt-10 text-center md:text-end lg:text-start lg:text-black px-3">
                     <h1 class="first_section_title">Elekro</h1>
@@ -241,10 +241,10 @@
                     >Saiba Mais</NuxtLink>
                 </div>
             </div>
-        </section>
+        </section> -->
         
-        <Funcionalidades/>
-        <section class="mb-3">
+        <!-- <Funcionalidades/> -->
+        <!-- <section class="mb-3">
             <div class="w-full max-w-[2500px] mx-auto md:px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <figure class="aspect-[1/0.6]">
@@ -265,7 +265,7 @@
                             loading="lazy"
                         />
                     </figure>
-                    <!-- <figure class="aspect-[1/0.6]">
+                    <figure class="aspect-[1/0.6]">
                         <img
                             src="/assets/images/cartao.png"
                             srcset="/assets/images/cartao.png"
@@ -281,10 +281,10 @@
                             class="w-full h-full object-cover"
                             loading="lazy"
                         />
-                    </figure> -->
+                    </figure>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 </template>
 
