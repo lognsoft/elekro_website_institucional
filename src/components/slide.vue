@@ -26,7 +26,7 @@
         >
             <div class="slider-single" :style="`background-image: url('/images/${img}')`">
                 <div class="container max-w-xl md:max-w-6xl mx-auto px-11">
-                    <h1 class="relative z-10 text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[60px] md:leading-[70px] lg:leading-[100px]" v-html="text"></h1>
+                    <h1 class="relative z-10 text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]" v-html="text"></h1>
                 </div>
             </div>
         </swiper-slide>
