@@ -12,27 +12,27 @@
     </Head>
     <main>
         <Slide :images="images"/>
-        <section class="grid grid-cols-1 lg:grid-cols-1">
-            <div class="col-span-1 bg-[#f5f5f5] text-[#333]">
-                <div class="my__container mx-auto "> <!-- mr-none md:mr-0 -->
-                    <div>
-                        <div class="sticky top-[80px]">
-                            <div class="relative">
-                                <figure class="col-span-1">
-                                    <img
-                                        class="w-full max-w-[500px] mx-auto h-auto object-cover"
-                                        src="/images/macaneta-frente.png"
-                                        srcset="/images/macaneta-frente.png"
-                                        alt="Maçaneta preta de frente"
-                                    />
-                                </figure>
-                                <MyLinkTwo class="right-[15%] bottom-[10%] text-blue-400 hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
-                            </div>
-                        </div>
+        <section class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="col-span-1">
+                <div class="my__container mx-auto lg:mr-0 sticky top-[80px]">
+                    <div class="relative">
+                        <figure class="col-span-1">
+                            <img
+                                class="w-full  max-w-[560px] mx-auto h-auto object-cover"
+                                src="/images/macaneta-frente.png"
+                                srcset="/images/macaneta-frente.png"
+                                alt="Maçaneta preta de frente"
+                            />
+                        </figure>
+                        <MyLinkTwo class="right-[15%] bottom-[10%] text-blue-400 hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
                     </div>
-                    <div class="features_elekro">
+                </div>
+            </div>
+            <div class="bg-black text-white">
+                <div class="my__container mx-auto lg:ml-0">
+                    <div class="features_elekro mx-auto lg:mx-none lg:ml-0 max-w-[704px]">
                         <h2>Elekro One+</h2>
-                        <ul class="grid grid-cols-1 gap-x-4">
+                        <ul class="flex flex-col">
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
                                     <Icon name="mdi:shield-lock"/>
@@ -250,7 +250,7 @@ type ObjSlide = {
 const images:Array<ObjSlide> = [
     {
         img:'bm-slide/bg.jpeg',
-        text:'Modernizando<br/>Lares'
+        text:'Família<br/>Conectada'
     },
     {
         img:'bm-slide/bg1.jpg',
@@ -267,12 +267,12 @@ const images:Array<ObjSlide> = [
 
     /* segunda seção */
     .my__container{
-        @apply container px-3 py-10 grid grid-cols-1 lg:grid-cols-2
+        @apply container px-3 py-10 grid grid-cols-1 
     }
 
-    .features_elekro{
-        @apply col-span-1 px-2
-    }
+    /* .features_elekro{
+        @apply col-span-1
+    } */
 
     .features_elekro > h2{
         @apply text-center text-[28px] font-bold
