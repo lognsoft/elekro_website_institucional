@@ -25,11 +25,11 @@ const props:Readonly<MyLinkTwo> = defineProps({
 
 <style scoped>
 .link{
-    @apply flex items-center gap-0 duration-200 hover:underline
+    @apply duration-200 hover:underline
 }
 
 .icon{
-    @apply absolute left-[100%] duration-200
+    @apply absolute left-[100%] top-[50%] translate-y-[-50%] duration-200
 }
 
 .link:hover > .icon{

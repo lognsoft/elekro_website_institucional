@@ -26,7 +26,7 @@
                                         alt="Maçaneta preta de frente"
                                     />
                                 </figure>
-                                <MyLinkTwo class="right-[15%] bottom-[10%] text-blue-400" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                                <MyLinkTwo class="right-[15%] bottom-[10%] text-blue-400 hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
                             </div>
                         </div>
                     </div>
@@ -173,6 +173,9 @@
                                 <span>Suporte Técnico 24/7</span>
                             </li>
                         </ul>
+                        <div class="text-right mt-7 pr-6">
+                            <MyLinkTwo class="text-blue-400 lg:hidden" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                        </div>
                     </div>
                 </div>
             </div>
