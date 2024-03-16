@@ -57,7 +57,7 @@ defineProps(['images'])
 }
 
 .slider-single {
-    @apply w-full h-screen bg-cover bg-center bg-no-repeat text-white flex items-center relative;
+    @apply w-full h-screen bg-cover bg-no-repeat bg-center text-white flex items-center relative;
 }
 
 .slider-single::after{

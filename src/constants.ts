@@ -8,7 +8,7 @@ export const rotas:IRouter[] = [
     },
     {
         path: "/elekro-one-plus",
-        pathName: "Elekro one plus",
+        pathName: "Elekro one+",
     },
     {
         path: "/sobre",
