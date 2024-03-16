@@ -81,7 +81,7 @@ const openNavigate = () => {
     }
 
     .nav-list{
-        @apply capitalize text-[30px] font-bold text-white
+        @apply text-[30px] font-bold text-white
     }
     .nav-list:hover a{
         @apply opacity-70
