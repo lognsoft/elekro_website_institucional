@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-black text-white">
         <div class="container mx-auto px-5">
-            <div class="pb-11 pt-6 text-center stores">
+            <div class="pt-11 pb-6 text-center stores">
                 <a title="Play Store" href="javascript:void(0)">
                     <span class="icon-store">
                         <Icon name="simple-icons:googleplay"/>
@@ -21,7 +21,7 @@
                     <span class="block capitalize">linkedin</span>
                 </a>
             </div>
-            <div class="text-center pt-11 pb-6 border-t-[1px] border-[#1d1d1d]">
+            <div class="text-center pb-11 pt-6 border-t-[1px] border-[#1d1d1d]">
                 <figure class="mb-3">
                     <img class="max-w-full inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
