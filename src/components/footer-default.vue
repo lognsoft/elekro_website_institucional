@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-black text-white">
         <div class="container mx-auto px-5">
-            <div class="pt-11 pb-6 text-center stores">
+            <div class="pt-11 pb-3 text-center stores">
                 <a title="Play Store" href="javascript:void(0)">
                     <span class="icon-store">
                         <Icon name="simple-icons:googleplay"/>
@@ -21,9 +21,9 @@
                     <span class="block capitalize">linkedin</span>
                 </a>
             </div>
-            <div class="text-center pb-11 pt-6 border-t-[1px] border-[#1d1d1d]">
+            <div class="text-center pb-11 pt-3 border-t-[1px] border-[#1d1d1d]">
                 <figure class="mb-3">
-                    <img class="max-w-full inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
+                    <img class="max-w-[55px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
                 <p class="text-[#aaaaaa] font-light mb-4 text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
