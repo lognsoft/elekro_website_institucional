@@ -15,14 +15,21 @@
         <section class="grid grid-cols-1 lg:grid-cols-1">
             <div class="col-span-1 bg-[#f5f5f5] text-[#333]">
                 <div class="my__container mx-auto "> <!-- mr-none md:mr-0 -->
-                    <figure class="col-span-1">
-                        <img
-                            class="w-full max-w-[500px] mx-auto h-auto object-cover sticky top-[80px]"
-                            src="/images/informacoes-2-teste.png"
-                            srcset="/images/informacoes-2-teste.png"
-                            alt="Maçaneta preta de frente"
-                        />
-                    </figure>
+                    <div>
+                        <div class="sticky top-[80px]">
+                            <div class="relative">
+                                <figure class="col-span-1">
+                                    <img
+                                        class="w-full max-w-[500px] mx-auto h-auto object-cover"
+                                        src="/images/informacoes-2-teste.png"
+                                        srcset="/images/informacoes-2-teste.png"
+                                        alt="Maçaneta preta de frente"
+                                    />
+                                </figure>
+                                <MyLinkTwo class="right-[15%] bottom-[10%] text-blue-400" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                            </div>
+                        </div>
+                    </div>
                     <div class="features_elekro">
                         <h2>Elekro One+</h2>
                         <ul class="grid grid-cols-1 gap-x-4">
@@ -169,79 +176,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-span-1 bg-black text-white">
-                <div class="my__container m-auto ml-none md:ml-0">
-                    <figure class="col-span-1">
-                        <img class="w-full h-auto sticky top-[80px]" src="/images/produto-2-elekro.png" srcset="/images/produto-2-elekro.png" alt=""/>
-                    </figure>
-                    <div class="features_elekro">
-                        <h2>Guardião Digital Elekro</h2>
-                        <ul>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="fa-solid:wifi"/>
-                                </span>
-                                <span>Wi-Fi 2.4 GHZ</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="material-symbols:notifications-unread-rounded"/>
-                                </span>
-                                <span>Notificação em Tempo Real</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="fontisto:mobile-alt"/>
-                                </span>
-                                <span>Monitoramento com Celular</span>
-                            </li>
-                            
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="mdi:motion-sensor"/>
-                                </span>
-                                <span>Detector de Movimento</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="system-uicons:angle"/>
-                                </span>
-                                <span>Amplo Ângulo de Visão</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="bi:camera-reels-fill"/>
-                                </span>
-                                <span>Vídeo e Áudio Bidirecional</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="ph:moon-stars-fill"/>
-                                </span>
-                                <span>Visão Noturna</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="solar:music-note-3-bold-duotone"/>
-                                </span>
-                                <span>56 Melodias</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="mdi:battery-charging"/>
-                                </span>
-                                <span>Bateria Recarregável</span>
-                            </li>
-                            <li class="border-[#333]">
-                                <span class="feature_icon">
-                                    <Icon name="icon-park-solid:spanner"/>
-                                </span>
-                                <span>Fácil Instalação</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
+            
         </section>
         <!-- <section id="bg-image">
             <div class="bg-image">
