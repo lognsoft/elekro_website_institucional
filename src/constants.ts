@@ -12,11 +12,11 @@ export const rotas:IRouter[] = [
     },
     {
         path: "/sobre",
-        pathName: "Sobre",
+        pathName: "Institucional",
     },
     {
         path: "/contato",
-        pathName: "seja um parceiro",
+        pathName: "seja um autorizado",
     }
 ];
 

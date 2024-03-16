@@ -5,7 +5,21 @@
                 <figure class="mb-3">
                     <img class="max-w-full inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
-                <p class="text-[#aaaaaa] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text-[#aaaaaa] font-light mb-4 text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
+                <div class="stores">
+                    <a href="javascript:void(0)">
+                        <span class="icon-store">
+                            <Icon name="simple-icons:googleplay"/>
+                        </span>
+                        <span class="block capitalize">play store</span>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <span class="icon-store">
+                            <Icon name="grommet-icons:apple-app-store"/>
+                        </span>
+                        <span class="block capitalize">apple play</span>
+                    </a>
+                </div>
             </div>
             <div class="pb-11 pt-6 text-center border-t-[1px] border-[#1d1d1d]">
                 <span class="font-light inline-block">&copy; 2024 Elekro</span>
@@ -19,21 +33,10 @@
 </script>
 
 <style scoped>
-/* .social-midia{
-    @apply flex items-start justify-center gap-3 sm:order-last col-span-3 md:col-span-1
+.stores{
+    @apply flex items-center justify-center text-center gap-5
 }
-
-.contact-container{
-    @apply col-span-1;
+.icon-store{
+    @apply text-2xl mb-2 inline-block
 }
-.contact-container:not(:last-child){
-    @apply mb-9 lg:mb-0
-}
-.contact-container > h6{
-    @apply capitalize font-bold text-xl mb-4;
-}
-
-.contact-container > a{
-    @apply font-light text-xl inline-block;
-} */
 </style>~/app/constants
