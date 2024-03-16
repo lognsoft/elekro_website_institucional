@@ -21,8 +21,8 @@
                                 <figure class="col-span-1">
                                     <img
                                         class="w-full max-w-[500px] mx-auto h-auto object-cover"
-                                        src="/images/informacoes-2-teste.png"
-                                        srcset="/images/informacoes-2-teste.png"
+                                        src="/images/macaneta-frente.png"
+                                        srcset="/images/macaneta-frente.png"
                                         alt="Maçaneta preta de frente"
                                     />
                                 </figure>
