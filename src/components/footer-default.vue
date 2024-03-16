@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-black/80 backdrop-blur-lg text-white">
+    <footer class="bg-black text-white">
         <div class="container mx-auto px-5">
             <div class="pt-6 pb-3 text-center stores">
                 <a title="Play Store" href="javascript:void(0)">
@@ -21,7 +21,7 @@
                     <span class="block capitalize">linkedin</span>
                 </a>
             </div>
-            <div class="text-center pb-6 pt-3 border-t-[1px] border-[#1d1d1d]/50">
+            <div class="text-center pb-6 pt-3 border-t-[1px] border-[#1d1d1d]">
                 <figure class="mb-3">
                     <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
