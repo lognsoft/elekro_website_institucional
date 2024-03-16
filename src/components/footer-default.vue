@@ -7,17 +7,23 @@
                 </figure>
                 <p class="text-[#aaaaaa] font-light mb-4 text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
                 <div class="stores">
-                    <a href="javascript:void(0)">
+                    <a title="Play Store" href="javascript:void(0)">
                         <span class="icon-store">
                             <Icon name="simple-icons:googleplay"/>
                         </span>
                         <span class="block capitalize">play store</span>
                     </a>
-                    <a href="javascript:void(0)">
+                    <a title="Apple Store" href="javascript:void(0)">
                         <span class="icon-store">
                             <Icon name="grommet-icons:apple-app-store"/>
                         </span>
-                        <span class="block capitalize">apple play</span>
+                        <span class="block capitalize">apple store</span>
+                    </a>
+                    <a title="Linkedin" href="https://www.linkedin.com/posts/elekro-best-price_parceiro-elekro-activity-7165984652757868544-Pol6?utm_source=share&utm_medium=member_ios" target="_blank">
+                        <span class="icon-store">
+                            <Icon name="jam:linkedin-square"/>
+                        </span>
+                        <span class="block capitalize">linkedin</span>
                     </a>
                 </div>
             </div>
