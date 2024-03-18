@@ -2,7 +2,7 @@
     <section class="py-11">
         <div class="container mx-auto px-5 md:px-3">
             <TitleSection>
-                Seja um parceiro
+                Seja um autorizado
             </TitleSection>
             <!-- <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
                 {{ submitMessage }}
@@ -12,7 +12,7 @@
             </h2> -->
             <form v-show="alterForm === 'revendedor'" class="w-full mt-6 py-5 duration-200">
                 <div class="wrapper-form-container">
-                    <label for="default_nome_empresa" class="label">nome da empresa*</label>
+                    <label for="default_nome_empresa" class="label">empresa*</label>
                     <div class="container-input">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="wrapper-form-container">
-                    <label for="default_options" class="label">Parceiro</label>
+                    <label for="default_options" class="label">assunto</label>
                     <div class="container-input">
                         <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <select
