@@ -14,7 +14,7 @@
         <Slide :images="images"/>
         <section class="grid grid-cols-1 lg:grid-cols-2">
             <div class="col-span-1 bg-black">
-                <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
+                <div class="my__container mx-auto lg:mr-0 sticky top-[30px]">
                     <div class="relative">
                         <figure class="col-span-1">
                             <img
