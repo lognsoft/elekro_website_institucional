@@ -1,7 +1,7 @@
 <template>
-    <main>
+    <main class="mt-[87px]">
         <Head>
-            <Title>Contato</Title>
+            <Title>Seja Um Autorizado</Title>
             <Meta name="description" content="lorem ipsum"/>
             <Meta property="og:description" content="lorem ipsum"/>
             <Meta property="og:title" content="Elekro - Contato"/>
@@ -12,13 +12,9 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <div class="py-[70px]">
-            <section
-                class="py-11 h-screen max-h-[400px]  md:max-h-[600px] bg-[url('/assets/images/banner.jpg')] bg-center bg-no-repeat"
-            ></section>
-        </div>
+        
         <Formulario :title="true"/>
-        <section class="py-11 bg-gray-100 text-black">
+        <!-- <section class="py-11 bg-gray-100 text-black">
             <div class="container mx-auto px-5 md:px-3">
                 <TitleSection>Comece a trabalhar conosco</TitleSection>
                 <ul class="mb-4">
@@ -42,7 +38,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 </template>
 

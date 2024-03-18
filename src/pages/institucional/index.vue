@@ -1,7 +1,7 @@
 <template>
     <main>
         <Head>
-            <Title>Sobre</Title>
+            <Title>Institucional</Title>
             <Meta name="description" content="lorem ipsum"/>
             <Meta property="og:description" content="lorem ipsum"/>
             <Meta property="og:title" content="Elekro - Sobre"/>
@@ -13,10 +13,8 @@
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <Banner>
-            Sobre
+            Institucional
         </Banner>
-
-        <section class="bg-image"></section>
         <section class="py-9 bg-black min-h-96 flex items-center">
             <div class="mx-auto w-full max-w-[1900px] px-5 md:px-3 grid grid-cols-4">
                 <div class="col-span-4 lg:col-span-1 pr-2">
@@ -53,44 +51,11 @@
                 </div>
             </div>
         </section>
-        <section class="py-11">
-            <div class="w-full max-w-[1900px] mx-auto px-5 md:px-3">
-                <h3 class="text-center text-amber-600 font-bold mb-6" data-aos="fade-up" data-aos-duration="500">Lorem Ipsum</h3>
-                <TitleSection class="text-center mb-11" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
-                <div class="grid gap-8 md:gap-4 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 text-center">
-                    <div v-for="content of array" :key="content.title">
-                        <h3 class="font-extrabold text-4xl mb-9" data-aos="fade-up" data-aos-duration="1000">{{ content.title }}</h3>
-                        <h2 class="font-bold text-amber-600 tracking-widest" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">{{ content.text }}</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
     </main>
 </template>
 
 <script setup lang="ts">
-useSeoMeta({
-    title: "About"
-})
-
-const array:Array<{title:string, text:string}> = [
-    {
-        title: "Lorem Ipsum 1",
-        text: "lorem"
-    },
-    {
-        title: "Lorem Ipsum 2",
-        text: "lorem"
-    },
-    {
-        title: "Lorem Ipsum 3",
-        text: "lorem"
-    },
-    {
-        title: "Lorem Ipsum 4",
-        text: "lorem"
-    }
-]
 </script>
 
 <style scoped>

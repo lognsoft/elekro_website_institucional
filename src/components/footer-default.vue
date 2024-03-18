@@ -17,7 +17,7 @@
                     </div>
                     <div>
                         <div class="uppercase text-[10px]">disponivel na</div>
-                        <div class="block capitalize text-xl">apple store</div>
+                        <div class="block capitalize text-xl">app store</div>
                     </div>
                 </a>
                 <a title="Linkedin" href="https://www.linkedin.com/posts/elekro-best-price_parceiro-elekro-activity-7165984652757868544-Pol6?utm_source=share&utm_medium=member_ios" target="_blank">

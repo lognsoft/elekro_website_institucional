@@ -11,11 +11,11 @@ export const rotas:IRouter[] = [
         pathName: "Elekro One+",
     },
     {
-        path: "/sobre",
+        path: "/institucional",
         pathName: "Institucional",
     },
     {
-        path: "/contato",
+        path: "/autorizado",
         pathName: "Seja um autorizado",
     }
 ];
