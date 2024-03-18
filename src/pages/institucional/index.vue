@@ -12,9 +12,14 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Banner>
-            Institucional
-        </Banner>
+        <section class="relative w-full overflow-hidden">
+            <video class="absolute top-0 left-0 w-none h-none min-w-full min-h-screen object-cover" src="/video/blockchain.mp4" loop muted autoplay>
+                <!-- <source class="min-h-screen" /> -->
+            </video>
+            <div class="relative z-10 container mx-auto px-5 h-screen flex items-center text-white">
+                <h1 class="w-full text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Institucional</h1>
+            </div>
+        </section>
         <section class="py-9 bg-black min-h-96 flex items-center">
             <div class="mx-auto w-full max-w-[1900px] px-5 md:px-3 grid grid-cols-4">
                 <div class="col-span-4 lg:col-span-1 pr-2">
