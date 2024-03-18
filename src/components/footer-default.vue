@@ -40,7 +40,7 @@ type Link = {
 const links:Link[] = [
     {
         sub:'disponível na',
-        store:'play store',
+        store:'google play',
         icon:'simple-icons:googleplay',
         href:'javascript:void(0)',
     },
@@ -61,7 +61,7 @@ const links:Link[] = [
 
 <style scoped>
 .stores{
-    @apply w-full max-w-[200px] sm:max-w-[500px] grid grid-cols-1 sm:grid-cols-3 items-center justify-center gap-2 mx-auto
+    @apply w-full max-w-[200px] sm:max-w-[600px] grid grid-cols-1 sm:grid-cols-3 items-center justify-center gap-2 mx-auto
 }
 
 .stores a{
