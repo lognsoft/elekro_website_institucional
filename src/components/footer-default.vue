@@ -22,10 +22,11 @@
                 </a>
             </div>
             <div class="text-center pb-6 pt-3 border-t-[1px] border-[#1d1d1d]">
-                <figure class="mb-3">
+                <figure class="mb-1">
                     <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
-                <p class="text-[#aaaaaa] font-light mb-4 text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
+                <p class="mb-3">Paixão por desafios; alcançar o impossível e torná-lo possível está em nosso DNA</p>
+                <p class="text-[#aaaaaa] font-light text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
