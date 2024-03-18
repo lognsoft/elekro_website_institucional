@@ -7,7 +7,7 @@
                         <Icon name="simple-icons:googleplay"/>
                     </div>
                     <div>
-                        <div class="uppercase text-[10px]">disponivel na</div>
+                        <div class="uppercase text-[10px]">disponível na</div>
                         <div class="block capitalize text-xl">play store</div>
                     </div>
                 </a>
@@ -16,7 +16,7 @@
                         <Icon name="uiw:apple"/>
                     </div>
                     <div>
-                        <div class="uppercase text-[10px]">disponivel na</div>
+                        <div class="uppercase text-[10px]">disponível na</div>
                         <div class="block capitalize text-xl">app store</div>
                     </div>
                 </a>
