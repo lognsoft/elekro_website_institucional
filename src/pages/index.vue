@@ -283,14 +283,14 @@ const images:Array<ObjSlide> = [
     }
 
     .features_elekro > ul > li {
-        @apply flex flex-col lg:flex-row items-start lg:items-center gap-3 py-5 border-b-[1px] font-light text-xl lg:text-base
+        @apply flex items-center gap-3 py-5 border-b-[1px] font-light text-xl lg:text-base
     }
 
     .features_elekro > ul > li > .feature_icon{
         @apply flex items-center justify-center
     }
     .features_elekro > ul > li > .feature_icon > svg{
-        @apply w-[45px] h-[45px] lg:w-[30px] lg:h-[30px]
+        @apply w-[30px] h-[30px]
     }
     /* fim da segunda seção */
 
