@@ -27,13 +27,7 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     prerender:{
-      routes: [
-        "/",
-        "/sobre",
-        "/contato",
-        "/elekro-landing-page",
-        "/elekro-one-plus"
-      ]
+      
     }
   },
   css:[
