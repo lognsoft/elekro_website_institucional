@@ -1,4 +1,5 @@
 <template>
+    <!-- <Body class="bg-black text-white"/> -->
     <Head>
         <Title>Elekro One Plus</Title>
     </Head>

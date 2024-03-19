@@ -1,5 +1,5 @@
 <template>
-    <header ref="header" class="header" :class="{'bg-black/80 backdrop-blur-lg':navigateOpen || scrollTopPage > 1}">
+    <header ref="header" class="header" :class="{'bg-black/80 backdrop-blur-lg':navigateOpen || scrollTopPage > 1, 'bg-black/80 backdrop-blur-lg text-white':bgWhite}">
         <div class="py-5 md:px-10 px-2 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
@@ -39,6 +39,14 @@
 <script setup lang="ts">
 import { rotas } from '~/constants';
 
+const bgWhite:Ref<boolean> = ref(false);
+const route = useRoute();
+if(route.path === '/elekro-one-plus' || route.path === '/autorizado'){
+    bgWhite.value = true;
+} else {
+    bgWhite.value = false;
+}
+
 const navigateOpen:Ref<boolean> = ref(false);
 const scrollTopPage:Ref<number> = ref(0);
 const janela:Window = window as Window;
@@ -58,6 +66,15 @@ const scrollingHeaderColor = (e:Event) => {
 const openNavigate = () => {
     navigateOpen.value = !navigateOpen.value;
 };
+
+watch(() => route.path, (newValue) => {
+    console.log(newValue);
+    if(newValue === '/elekro-one-plus' || newValue === '/autorizado'){
+        bgWhite.value = true;
+    } else {
+        bgWhite.value = false;
+    }
+},{deep: true});
 </script>
 
 <style scoped>

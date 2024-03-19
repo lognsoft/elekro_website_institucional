@@ -60,7 +60,7 @@
                     <img class="w-full h-auto" src="/assets/celular.png" alt=""/>
                 </figure>
                 <div class="col-span-1 md:col-span-2 xl:col-span-1 flex items-center px-2 pb-10 text-center xl:text-start xl:pb-0">
-                    <div class="w-full">
+                    <div class="w-full text-black">
                         <h1 class="text-4xl font-semibold">O Aplicativo que Revoluciona a Sua Segurança</h1>
                         <h2 class="text-3xl font-light">Transforme seu smartphone no chaveiro mais avançado que você já teve.</h2>
                     </div>
