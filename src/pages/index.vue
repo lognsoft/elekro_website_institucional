@@ -248,10 +248,10 @@ type ObjSlide = {
 }
 
 const images:Array<ObjSlide> = [
-    {
-        img:'bm-slide/bg.png',
-        text:'Cultive<br/>Memórias'
-    },
+    // {
+    //     img:'bm-slide/bg.png',
+    //     text:'Cultive<br/>Memórias'
+    // },
     {
         img:'bm-slide/bg1.jpg',
         text:'Elegância<br/>e Arte'
