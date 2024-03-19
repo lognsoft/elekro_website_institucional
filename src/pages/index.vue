@@ -18,7 +18,7 @@
                     <div class="relative">
                         <figure class="col-span-1">
                             <img
-                                class="w-auto h-full max-h-[732px] mx-auto object-cover"
+                                class="w-auto h-full max-h-[690px] lg:max-h-[732px] mx-auto object-cover"
                                 src="/images/fechadura.png"
                                 srcset="/images/fechadura.png"
                                 alt="Maçaneta preta de frente"
