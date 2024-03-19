@@ -14,13 +14,13 @@
         <Slide :images="images"/>
         <section class="grid grid-cols-1 lg:grid-cols-2">
             <div class="col-span-1 bg-black">
-                <div class="my__container mx-auto lg:mr-0 sticky top-[30px]">
+                <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
                     <div class="relative">
                         <figure class="col-span-1">
                             <img
                                 class="w-auto h-full max-h-[732px] mx-auto object-cover"
-                                src="/images/macaneta-frente.png"
-                                srcset="/images/macaneta-frente.png"
+                                src="/images/fechadura.png"
+                                srcset="/images/fechadura.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
