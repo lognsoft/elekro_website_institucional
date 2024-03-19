@@ -17,7 +17,7 @@
                 
             </video> -->
             <div class="relative z-10 container mx-auto px-5 h-screen flex items-center text-white">
-                <h1 class="w-full text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Institucional</h1>
+                <h1 class="w-full text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Elekro</h1>
             </div>
         </section>
         <section class="py-9 text-black min-h-96 flex items-center">

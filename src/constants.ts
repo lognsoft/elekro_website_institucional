@@ -11,8 +11,8 @@ export const rotas:IRouter[] = [
         pathName: "Elekro One+",
     },
     {
-        path: "/institucional",
-        pathName: "Institucional",
+        path: "/elekro",
+        pathName: "Elekro",
     },
     {
         path: "/autorizado",
