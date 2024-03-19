@@ -13,7 +13,7 @@
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <section class="relative w-full overflow-hidden">
-            <video class="absolute top-0 left-0 w-none h-none min-w-full min-h-screen object-cover" src="/video/blockchain.mp4" loop muted autoplay>
+            <video id="video" class="absolute top-0 left-0 w-none h-none min-w-full min-h-screen object-cover" src="/video/blockchain.mp4" loop muted autoplay>
                 <!-- <source class="min-h-screen" /> -->
             </video>
             <div class="relative z-10 container mx-auto px-5 h-screen flex items-center text-white">
@@ -77,6 +77,10 @@
 }
 .bg-image{
     max-height: 26rem !important;
+}
+
+#video::-webkit-media-controls {
+    display: none;
 }
 
 @media screen and (min-width: 640px){
