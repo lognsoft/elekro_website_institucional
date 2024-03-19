@@ -21,21 +21,23 @@
             </div>
         </section>
         <section class="py-9 bg-black min-h-96 flex items-center">
-            <div class="mx-auto w-full max-w-[1900px] px-5 md:px-3 grid grid-cols-4">
-                <div class="col-span-4 lg:col-span-1 pr-2">
+            <div class="mx-auto container px-5 md:px-3">
+                <!-- <div class="col-span-4 lg:col-span-1 pr-2">
                     <TitleSection class="text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Lorem Ipsum</TitleSection>
-                </div>
-                <div class="col-span-4 lg:col-span-3">
-                    <p class="text-xl text-white mb-6" data-aos="fade-up" data-aos-duration="1000">
-                        <span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod fugiat accusantium voluptatibus dolorum ipsa sint,
-                        voluptas voluptates aliquid distinctio quisquam deleniti exercitationem nobis assumenda, similique quasi in soluta qui?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod fugiat accusantium voluptatibus dolorum ipsa sint,
-                        voluptas voluptates aliquid distinctio quisquam deleniti exercitationem nobis assumenda, similique quasi in soluta qui?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod fugiat accusantium voluptatibus dolorum ipsa sint,
-                        voluptas voluptates aliquid distinctio quisquam deleniti exercitationem nobis assumenda, similique quasi in soluta qui?
-                    </p>
+                </div> -->
+                <div class="">
+                    <div class="text-xl text-white mb-6 whitespace-pre-line" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="mb-3"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>A Elekro destaca-se como a melhor parceira para quem busca o melhor em tecnologia, desempenho e economia.</p>
+                        <p class="mb-3">Impulsionada pela inovação e pelo avanço tecnológico, a Elekro não apenas acompanha as tendências globais, mas também as define.</p>
+                        <p class="mb-3">Com mais de uma década de experiência em projetos internacionais de engenharia, a Elekro destacou-se ao desenvolver tecnologia para o Brasil nas áreas de energias renováveis e inteligência artificial, em parceria com grandes empresas no país e no exterior.</p>
+                        <p class="mb-3">Em 2023, conquistamos nosso grande orgulho, a Elekro One Plus.</p>
+                        <p class="mb-3">Ao iniciarmos a fabricação de fechaduras inteligentes, desenvolvidas por brasileiros, reafirmamos nossa missão de oferecer tecnologia, design e sofisticação que facilitam a vida das pessoas.</p>
+                        <p class="mb-3">A fechadura inteligente da Elekro, aliada ao aplicativo Elekro Smart, abre caminhos para inovações futuras que transformam a interação das pessoas com seus lares, representando o início de nosso avanço e de nosso compromisso em antecipar e satisfazer as necessidades no mundo dos eletrodomésticos inteligentes.</p>
+                        <p class="mb-3">Com esse passo, abrimos novos caminhos para inovações futuras, prontos para superar expectativas e transformar a interação das pessoas com seus lares.</p>
+                        <p>Na Elekro, prezamos por um padrão elevado de atendimento ao cliente, comprometidos a oferecer o melhor serviço, entrega, qualidade aliados ao melhor preço.</p>
+                    </div>
 
-                    <p class="text-slate-200 text-sm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">-nameExample</p>
+                    <p class="text-slate-200 text-sm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">-Time Elekro.</p>
                 </div>
             </div>
         </section>
