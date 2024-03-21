@@ -62,7 +62,7 @@
                                 <span class="feature_icon">
                                     <Icon name="game-icons:door-handle"/>
                                 </span>
-                                <span>Maçaneta Revercivel</span>
+                                <span>Maçaneta Reversível</span>
                             </li>
                             <li class="border-[#ddd]">
                                 <span class="feature_icon">
