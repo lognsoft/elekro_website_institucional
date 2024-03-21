@@ -253,7 +253,7 @@ const images:Array<ObjSlide> = [
     //     text:'Cultive<br/>Memórias'
     // },
     {
-        img:'bm-slide/bg1-b.jpg',
+        img:'bm-slide/bg1.jpg',
         text:'Elegância<br/>e Arte'
     },
     {
