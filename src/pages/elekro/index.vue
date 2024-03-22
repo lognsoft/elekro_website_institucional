@@ -12,7 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <section class="relative w-full overflow-hidden bg-[url('/images/blockchain.gif')] bg-no-repeat bg-cover">
+        <section class="apresentacao">
             <!-- <video id="video" class="absolute top-0 left-0 w-none h-none min-w-full min-h-screen object-cover" src="/video/blockchain.mp4" loop muted autoplay controls>
                 
             </video> -->
@@ -66,8 +66,12 @@
 </script>
 
 <style scoped>
-.bg-image{
-    @apply py-9 h-screen bg-[url("/assets/images/bg-edificios.jpg")] bg-bottom bg-no-repeat bg-cover bg-fixed
+.apresentacao{
+    @apply relative w-full overflow-hidden bg-[url('/images/trabalhadores.jpg')] bg-no-repeat bg-cover bg-right
+}
+.apresentacao:after{content:''}
+.apresentacao:after{
+    @apply absolute w-full h-full bg-black/40 top-0 left-0
 }
 
 .quote{
