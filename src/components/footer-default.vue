@@ -23,7 +23,7 @@
                 <figure class="mb-1">
                     <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
-                <p class="mb-3 font-light text-sm">Paixão por desafios; alcançar o impossível e torná-lo possível está em nosso DNA</p>
+                <p class="mb-3 font-light text-sm">Design e tecnologia, aliados à segurança.</p>
                 <p class="text-[#aaaaaa] font-light text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
         </div>
