@@ -15,7 +15,7 @@
         <section class="apresentacao">
             <div class="relative z-10 container mx-auto px-5 text-white gap-[-30px]">
                 <h1 class="w-full text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Seja um autorizado</h1>
-                <!-- <p class="w-full text-lg lg:text-2xl text-center lg:text-start">Design e tecnologia, aliados à segurança.</p> -->
+                <p class="w-full text-lg lg:text-2xl text-center lg:text-start">Entrega eficiente, tecnologia de ponta</p>
             </div>
         </section>
         <Formulario/>

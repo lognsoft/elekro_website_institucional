@@ -52,7 +52,7 @@
 }
 
 .elekro-text{
-    @apply py-9 text-white bg-black bg-center bg-cover min-h-96 flex items-center relative
+    @apply py-9 text-black bg-white bg-center bg-cover min-h-96 flex items-center relative
 }
 
 .quote{
