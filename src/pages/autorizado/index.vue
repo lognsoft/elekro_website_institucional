@@ -1,5 +1,5 @@
 <template>
-    <main class="mt-[87px]">
+    <main>
         <Head>
             <Title>Seja Um Autorizado</Title>
             <Meta name="description" content="lorem ipsum"/>
@@ -12,33 +12,13 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        
-        <Formulario :title="true"/>
-        <!-- <section class="py-11 bg-gray-100 text-black">
-            <div class="container mx-auto px-5 md:px-3">
-                <TitleSection>Comece a trabalhar conosco</TitleSection>
-                <ul class="mb-4">
-                    <li class="text-lg mb-2">
-                        <div class="font-bold inline-flex gap-1 items-center">
-                            <span class="text-xl"><Icon name="dashicons:email-alt"/></span>
-                            E-mail:
-                        </div> exemplo@email.com
-                    </li>
-                    <li class="text-lg mb-2">
-                        <div class="font-bold inline-flex gap-1 items-center">
-                            <span class="text-xl"><Icon name="ic:round-phone"/></span>
-                            Telefone:
-                        </div> (xx) xxxxx-xxxx
-                    </li>
-                    <li class="text-lg mb-2">
-                        <div class="font-bold inline-flex gap-1 items-center">
-                            <span class="text-xl"><Icon name="ic:twotone-whatsapp"/></span>
-                            Whatsapp:
-                        </div> (xx) xxxxx-xxxx
-                    </li>
-                </ul>
+        <section class="apresentacao">
+            <div class="relative z-10 container mx-auto px-5 text-white gap-[-30px]">
+                <h1 class="w-full text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Seja um autorizado</h1>
+                <!-- <p class="w-full text-lg lg:text-2xl text-center lg:text-start">Design e tecnologia, aliados à segurança.</p> -->
             </div>
-        </section> -->
+        </section>
+        <Formulario/>
     </main>
 </template>
 
@@ -63,3 +43,14 @@ const infos:Info[] = [
 ]
 
 </script>
+
+<style scoped>
+.apresentacao{
+    @apply relative w-full overflow-hidden bg-[url('/images/trabalhadores.jpg')] bg-no-repeat bg-cover bg-right flex items-center h-screen
+}
+
+.apresentacao:after{content:''}
+.apresentacao:after{
+    @apply absolute w-full h-full bg-black/40 top-0 left-0
+}
+</style>
