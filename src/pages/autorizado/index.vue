@@ -46,7 +46,7 @@ const infos:Info[] = [
 
 <style scoped>
 .apresentacao{
-    @apply relative w-full overflow-hidden bg-[url('/images/trabalhadores.jpg')] bg-no-repeat bg-cover bg-right flex items-center h-screen
+    @apply relative w-full overflow-hidden bg-[url('/images/trabalhadores.jpg')] bg-no-repeat bg-cover bg-center flex items-center h-screen
 }
 
 .apresentacao:after{content:''}
