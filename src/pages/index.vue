@@ -24,7 +24,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <MyLinkTwo class="right-[15%] bottom-[10%] text-blue-400 hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                        <MyLinkTwo :icon="false" class="right-[15%] bottom-[10%] my-link hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                             </li>
                         </ul>
                         <div class="text-start mt-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                            <MyLinkTwo :icon="false" class="my-link lg:hidden" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>
@@ -325,6 +325,6 @@ const images:Array<ObjSlide> = [
     }
 
     .my-link{
-        @apply bg-black px-6 py-3 text-white hover:text-blue-400 lg:hidden text-xl rounded-lg
+        @apply bg-black px-6 py-3 text-white hover:text-blue-400 text-xl rounded-lg
     }
 </style>

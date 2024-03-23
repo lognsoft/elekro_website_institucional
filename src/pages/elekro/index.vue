@@ -14,8 +14,8 @@
         </Head>
         <section class="apresentacao">
             <div class="relative z-10 container mx-auto px-5 text-white gap-[-30px]">
-                <h1 class="w-full text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Elekro</h1>
-                <p class="w-full text-lg lg:text-2xl text-center lg:text-start">Design e tecnologia, aliados à segurança</p>
+                <h1 class="w-full text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Elekro</h1>
+                <p class="w-full text-lg lg:text-2xl text-start">Design e tecnologia, aliados à segurança</p>
             </div>
         </section>
         <section class="elekro-text">
@@ -43,7 +43,7 @@
 
 <style scoped>
 .apresentacao{
-    @apply relative w-full overflow-hidden bg-[url('/images/bg-elekro.jpg')] bg-no-repeat bg-cover bg-right flex items-center h-screen
+    @apply relative w-full overflow-hidden bg-[url('/images/bg-elekro.jpg')] bg-no-repeat bg-cover bg-center flex items-center h-screen
 }
 
 .apresentacao:after{content:''}
