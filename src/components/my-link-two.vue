@@ -1,7 +1,7 @@
 <template>
     <NuxtLink :to="props.href" class="link" :class="{'absolute':absolute,'relative':!absolute}">
         <slot/>
-        <MyIcon class="icon" icon="eva:arrow-right-fill"/>
+        <MyIcon v-if="icon" class="icon" icon="eva:arrow-right-fill"/>
     </NuxtLink>
 </template>
 
@@ -18,6 +18,10 @@ const props:Readonly<MyLinkTwo> = defineProps({
     absolute:{
         type:Boolean,
         default: false,
+    },
+    icon:{
+        type:Boolean,
+        default: true
     }
 })
 

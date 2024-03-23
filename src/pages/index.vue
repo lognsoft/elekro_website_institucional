@@ -173,8 +173,8 @@
                                 <span>Suporte Técnico 24/7</span>
                             </li>
                         </ul>
-                        <div class="text-right mt-7 pr-6">
-                            <MyLinkTwo class="text-blue-400 lg:hidden" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                        <div class="text-start mt-7 pr-6">
+                            <MyLinkTwo :icon="false" class="my-link" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>
@@ -322,5 +322,9 @@ const images:Array<ObjSlide> = [
     }
     .bg-image{
         @apply w-full h-screen  bg-left lg:bg-center bg-no-repeat relative mx-auto py-11 bg-[url('/assets/esticadoSmall.png')] lg:bg-[url('/assets/esticado.png')] bg-cover flex items-end md:items-center justify-start mb-3
+    }
+
+    .my-link{
+        @apply bg-black px-6 py-3 text-white hover:text-blue-400 lg:hidden text-xl rounded-lg
     }
 </style>
