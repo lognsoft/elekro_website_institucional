@@ -24,7 +24,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <MyLinkTwo :icon="false" class="right-[15%] bottom-[20%] my-link hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                        <MyLinkTwo :icon="false" class="right-[15%] bottom-[20%] my-link hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                             </li>
                         </ul>
                         <div class="text-start mt-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link lg:hidden" href="/elekro-one-plus">Saiba Mais</MyLinkTwo>
+                            <MyLinkTwo :icon="false" class="my-link lg:hidden" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>
