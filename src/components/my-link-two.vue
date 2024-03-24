@@ -29,7 +29,7 @@ const props:Readonly<MyLinkTwo> = defineProps({
 
 <style scoped>
 .link{
-    @apply duration-200 hover:underline
+    @apply duration-200
 }
 
 .icon{
