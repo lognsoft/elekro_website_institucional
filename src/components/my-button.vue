@@ -10,7 +10,13 @@
 
 <script setup lang="ts">
 defineProps({
-    tipo:String,
-    reverse:Boolean
+    tipo:{
+        type: String,
+        default:'button'
+    },
+    reverse:{
+        type:Boolean,
+        default:false
+    },
 });
 </script>

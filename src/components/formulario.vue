@@ -10,25 +10,13 @@
                     <MyIcon icon="eos-icons:three-dots-loading"/>
                 </span>
             </h2> -->
-            <form v-show="alterForm === 'revendedor'" class="w-full mt-6 py-5 duration-200">
-                <div class="wrapper-form-container">
-                    <label for="default_nome_empresa" class="label">empresa*</label>
-                    <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
-                        <input
-                            class="input-contact"
-                            type="text"
-                            name="default_nome_empresa"
-                            placeholder="Nome"
-                            id="default_nome_empresa"
-                            v-model="form2.campos.nomeEmpresa.value"
-                        />
-                    </div>
+            <form class="w-full mt-6 py-5 duration-200 max-w-[1000px] mx-auto">
+                <div class="px-3">
+                    <InputForm ico="mingcute:building-2-fill" for="#empresa" name="nome" id="empresa" placeholder="Empresa"/>
                 </div>
-                <div class="wrapper-form-container">
+                <!-- <div class="wrapper-form-container">
                     <label for="default_cnpj" class="label">CNPJ*</label>
                     <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
                             class="input-contact"
                             type="text"
@@ -43,7 +31,6 @@
                 <div class="wrapper-form-container">
                     <label for="default_telefone" class="label">Telefone*</label>
                     <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
                             class="input-contact"
                             type="text"
@@ -59,7 +46,6 @@
                 <div class="wrapper-form-container">
                     <label for="default_telefone_fixo" class="label">Telefone fixo</label>
                     <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <input
                             class="input-contact"
                             type="text"
@@ -75,7 +61,6 @@
                 <div class="wrapper-form-container">
                     <label for="default_options" class="label">assunto</label>
                     <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <select
                             class="input-contact"
                             name="default_options"
@@ -91,7 +76,6 @@
                 <div class="wrapper-form-container-t">
                     <label for="default_message" class="label">Mensagem</label>
                     <div class="container-input">
-                        <!-- <small v-show="!state.name.validate" class="text-sm text-red-500">lero</small> -->
                         <textarea
                             class="input-contact min-h-[300px]"
                             name="default_message"
@@ -107,9 +91,8 @@
                             Enviar
                             <Icon name="fa-solid:paper-plane"/>
                         </MyButton>
-                        <!-- <button type="button" @click="alterForm = 'default'" class="text-sky-500 underline ml-3">Comece a trabalhar conosco</button> -->
                     </div>
-                </div> 
+                </div>  -->
             </form>
 
         </div>
@@ -125,14 +108,13 @@ defineProps({
         default:false
     }
 }) as { title:boolean }
-const alterForm:Ref<string> = ref('revendedor');
 
 const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
 
 </script>
 
 <style scoped>
-.wrapper-form-container{
+/* .wrapper-form-container{
     @apply grid grid-cols-7 items-start mb-11
 }
 .wrapper-form-container-t{
@@ -148,5 +130,9 @@ const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
 }
 .container-input{
     @apply col-span-7 md:col-span-6 lg:col-span-4
+} */
+
+form{
+    @apply border-[1px] border-red-600
 }
 </style>

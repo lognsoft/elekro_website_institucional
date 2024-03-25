@@ -21,12 +21,12 @@
             </div>
             <div class="border-t-[1px] border-[#1d1d1d]">
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 max-w-[600px] w-full mx-auto gap-x-2">
+                <div class="grid grid-cols-1 sm:grid-cols-3 max-w-[900px] w-full mx-auto gap-x-2">
 
                     <template v-for="card,index in cards" :key="index">
                         <div class="py-3 px-2 text-center sm:text-start">
-                            <h4 class="font-bold text-xl mb-1">lorem ipsum</h4>
-                            <p class="font-light text-sm text-[#aaaaaa]">exemple@email.com</p>
+                            <h4 class="font-bold text-xl mb-1">{{ card.title }}</h4>
+                            <a class="text-base text-[#aaaaaa]" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
                         </div>
                     </template>
 
@@ -69,7 +69,25 @@ const links:Link[] = [
         href:'https://www.linkedin.com/posts/elekro-best-price_parceiro-elekro-activity-7165984652757868544-Pol6?utm_source=share&utm_medium=member_ios',
     }
 ]
-const cards:number[] = [1,2]
+type Card = {
+    title:string,
+    email:string,
+    subject?:string,
+}
+const cards:Card[] = [
+    {
+        title:'Comercial',
+        email:'vendas@elekro.com.br'
+    },
+    {
+        title:'Recursos Humanos',
+        email:'rh@elekro.com.br'
+    },
+    {
+        title:'Marketing',
+        email:'marketing@elekro.com.br'
+    }
+]
 </script>
 
 <style scoped>
