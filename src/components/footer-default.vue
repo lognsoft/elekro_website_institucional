@@ -42,13 +42,13 @@ const links:Link[] = [
         sub:'disponível na',
         store:'google play',
         icon:'simple-icons:googleplay',
-        href:'javascript:void(0)',
+        href:'https://play.google.com/store/apps/details?id=com.tuya.smartlife&hl=en_US&pli=1',
     },
     {
         sub:'disponível na',
         store:'app store',
         icon:'uiw:apple',
-        href:'javascript:void(0)',
+        href:'https://apps.apple.com/br/app/smart-life-smart-living/id1115101477',
     },
     {
         sub:'encontre-nos no',
