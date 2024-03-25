@@ -11,88 +11,25 @@
                 </span>
             </h2> -->
             <form class="w-full mt-6 py-5 duration-200 max-w-[1000px] mx-auto">
-                <div class="px-3">
-                    <InputForm ico="mingcute:building-2-fill" for="#empresa" name="nome" id="empresa" placeholder="Empresa"/>
+                <div class="px-3 mb-4">
+                    <InputForm ico="entypo:email" id="email" name="email" placeholder="E-mail" />
                 </div>
-                <!-- <div class="wrapper-form-container">
-                    <label for="default_cnpj" class="label">CNPJ*</label>
-                    <div class="container-input">
-                        <input
-                            class="input-contact"
-                            type="text"
-                            name="default_cnpj"
-                            maxlength="18"
-                            placeholder="CNPJ" id="default_cnpj"
-                            v-model="form2.campos.cnpjEmpresa.value"
-                            @input="cnpjMask"
-                        />
-                    </div>
+                <div class="px-3 mb-4">
+                    <InputForm ico="mingcute:building-2-fill" id="empresa" name="nome" placeholder="Empresa" />
                 </div>
-                <div class="wrapper-form-container">
-                    <label for="default_telefone" class="label">Telefone*</label>
-                    <div class="container-input">
-                        <input
-                            class="input-contact"
-                            type="text"
-                            name="default_telefone"
-                            placeholder="(00) 00000-0000"
-                            id="default_telefone"
-                            maxlength="15"
-                            v-model="form2.campos.telefoneEmpresa.value"
-                            @input="phoneMask"
-                        />
-                    </div>
+                <div class="px-3 mb-4">
+                    <InputForm ico="entypo:address" id="cnpj" name="cnpj" placeholder="CNPJ" />
                 </div>
-                <div class="wrapper-form-container">
-                    <label for="default_telefone_fixo" class="label">Telefone fixo</label>
-                    <div class="container-input">
-                        <input
-                            class="input-contact"
-                            type="text"
-                            name="default_telefone_fixo"
-                            placeholder="(00) 0000-0000 (opcional)"
-                            id="default_telefone_fixo"
-                            maxlength="14"
-                            v-model="form2.campos.telefoneFixoEmpresa.value"
-                            @input="fixedPhoneMask"
-                        />
-                    </div>
+                <div class="px-3 mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <InputForm ico="solar:phone-bold" id="telefone" name="telefone" placeholder="Telefone" :max-length="15" @mask="mask" v-model="teste"/>
+                    <InputForm ico="majesticons:phone-retro" id="telefone_fixo" name="telefone_fixo" placeholder="Telefone Fixo (Opcional)" :max-length="14" @mask="mask2" v-model="teste2"/>
                 </div>
-                <div class="wrapper-form-container">
-                    <label for="default_options" class="label">assunto</label>
-                    <div class="container-input">
-                        <select
-                            class="input-contact"
-                            name="default_options"
-                            id="default_options"
-                            v-model="form2.campos.selectOption.value"
-                        >
-                            <option selected disabled value="">Selecione uma opção</option>
-                            <option value="revendedor">Revendedor</option>
-                            <option value="parceiro">Instalador</option>
-                        </select>
-                    </div>
+                <div class="px-3 mb-4">
+                    <SelectForm ico="bi:hand-index-fill" placeholder="Assunto" name="assunto" :options="options" v-model="teste1"/>
                 </div>
-                <div class="wrapper-form-container-t">
-                    <label for="default_message" class="label">Mensagem</label>
-                    <div class="container-input">
-                        <textarea
-                            class="input-contact min-h-[300px]"
-                            name="default_message"
-                            id="default_message"
-                            v-model="form2.campos.messageEmpresa.value"
-                        ></textarea>
-                    </div>
+                <div class="px-3 mb-4">
+                    <TextareaForm ico="fa6-solid:message" id="mensagem" name="mensagem" placeholder="Mensagem"/>
                 </div>
-                <div class="wrapper-form-container-t">
-                    <div class="label"></div>
-                    <div class="container-input text-center md:text-start md:col-start-2">
-                        <MyButton class="my-0 mx-0 inline-flex items-center gap-2" type="submit">
-                            Enviar
-                            <Icon name="fa-solid:paper-plane"/>
-                        </MyButton>
-                    </div>
-                </div>  -->
             </form>
 
         </div>
@@ -101,6 +38,10 @@
 
 <script setup lang="ts">
 import formRevenda from '~/stores/formRevenda';
+const teste:Ref<string> = ref('');
+const teste2:Ref<string> = ref('');
+const teste1:Ref<string> = ref('-1');
+
 
 defineProps({
     title:{
@@ -109,7 +50,29 @@ defineProps({
     }
 }) as { title:boolean }
 
-const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
+function mask(){;
+    // if(teste.value != ''){
+        let newPhone:string = teste.value;
+        newPhone = newPhone.replace(/\D/g,'')
+        newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+        newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+        teste.value = newPhone;
+    // }
+}
+
+function mask2(){;
+    // if(teste.value != ''){
+        let newPhone:string = teste2.value;
+        newPhone = newPhone.replace(/\D/g,'')
+        newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+        newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+        teste2.value = newPhone;
+    // }
+}
+
+// const { inputs, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
+
+const options:string[] = ['revendedor', 'parceiro'];
 
 </script>
 
@@ -132,7 +95,4 @@ const { inputs:form2, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
     @apply col-span-7 md:col-span-6 lg:col-span-4
 } */
 
-form{
-    @apply border-[1px] border-red-600
-}
 </style>

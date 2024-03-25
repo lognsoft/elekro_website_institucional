@@ -21,7 +21,7 @@
             </div>
             <div class="border-t-[1px] border-[#1d1d1d]">
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 max-w-[900px] w-full mx-auto gap-x-2">
+                <div class="grid grid-cols-1 sm:grid-cols-3 max-w-[700px] w-full mx-auto gap-x-2">
 
                     <template v-for="card,index in cards" :key="index">
                         <div class="py-3 px-2 text-center sm:text-start">

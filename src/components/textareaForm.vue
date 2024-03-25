@@ -1,9 +1,9 @@
 <template>
-    <div class="input">
+    <div class="textarea">
         <label v-if="ico !== ''" :for="id">
-            <Icon :name="ico"/>
+            <Icon class="text-2xl" :name="ico"/> <span>{{ placeholder }}</span>
         </label>
-        <input type="text" :name="name" :placeholder="placeholder" :id="id" v-model="model" :maxlength="maxLength"/>
+        <textarea :name="name" :placeholder="placeholder" :id="id" v-model="model"></textarea>
     </div>
 </template>
 
@@ -30,17 +30,12 @@ const props = defineProps({
         type:String,
         default:'',
     },
-    maxLength:{
-        type:Number,
-        default: '200'
-    },
     modelValue:String
 })
 const model:Ref<string | undefined> = ref(props.modelValue);
 
 watchEffect(() => {
     model.value = props.modelValue;
-    emit('mask')
 });
 watchEffect(() => {
     emit('update:modelValue', model.value)
@@ -50,19 +45,13 @@ watchEffect(() => {
 </script>
 
 <style scoped>
-.input {
-    @apply border-[1px] border-gray-100 w-full flex rounded-lg overflow-hidden
+.textarea{
+    @apply border-[1px] border-gray-100 overflow-hidden rounded-lg
 }
-
-.input > label{
-    @apply bg-gray-100 w-[50px] h-[40px] flex items-center justify-center text-2xl relative
+.textarea > label{
+    @apply flex text-lg items-center gap-1 bg-gray-100 h-[40px] px-3
 }
-.input > label:after{content:''}
-.input > label:after{
-    @apply w-full h-full absolute top-0 left-0
-}
-
-.input > input{
-    @apply w-full outline-none h-[40px] flex items-center px-3 text-lg
+.textarea > textarea{
+    @apply w-full rounded-lg px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-lg
 }
 </style>

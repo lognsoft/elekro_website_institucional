@@ -11,23 +11,14 @@ export type ObjectForm = {
 
 
 //formulários
-type Input = {
-    value:string | undefined;
-    validate:boolean | undefined;
-    message:string | undefined;
-}
-export type VmodelRevenda = {
-    nomeEmpresa:Input;
-    cnpjEmpresa:Input;
-    telefoneEmpresa:Input;
-    telefoneFixoEmpresa:Input;
-    messageEmpresa:Input;
-    selectOption:Input;
-}
-export type FormRevenda<T> = {
-    loading:boolean;
-    enabled:boolean;
-    campos:T;
+export type Form = {
+    email:string | undefined,
+    empresa:string | undefined,
+    cnpj:string | undefined,
+    phone:string | undefined,
+    fixedPhone:string | undefined,
+    subject:string | undefined,
+    message:string | undefined,
 }
 
 //fim formulários
