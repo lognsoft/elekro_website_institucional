@@ -31,3 +31,10 @@ export type FormRevenda<T> = {
 }
 
 //fim formulários
+
+export type Link = {
+    sub:string,
+    store:string,
+    icon:string,
+    href:string,
+}

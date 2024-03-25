@@ -19,6 +19,20 @@
 
 
             </div>
+            <div class="border-t-[1px] border-[#1d1d1d]">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 max-w-[600px] w-full mx-auto gap-x-2">
+
+                    <template v-for="card,index in cards" :key="index">
+                        <div class="py-3 px-2 text-center sm:text-start">
+                            <h4 class="font-bold text-xl mb-1">lorem ipsum</h4>
+                            <p class="font-light text-sm text-[#aaaaaa]">exemple@email.com</p>
+                        </div>
+                    </template>
+
+                </div>
+
+            </div>
             <div class="text-center pb-6 pt-3 border-t-[1px] border-[#1d1d1d]">
                 <figure class="mb-1">
                     <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
@@ -34,12 +48,7 @@
 </template>
 
 <script setup lang="ts">
-type Link = {
-    sub:string,
-    store:string,
-    icon:string,
-    href:string,
-}
+import type { Link } from "~/types";
 const links:Link[] = [
     {
         sub:'disponível na',
@@ -60,6 +69,7 @@ const links:Link[] = [
         href:'https://www.linkedin.com/posts/elekro-best-price_parceiro-elekro-activity-7165984652757868544-Pol6?utm_source=share&utm_medium=member_ios',
     }
 ]
+const cards:number[] = [1,2]
 </script>
 
 <style scoped>
