@@ -25,7 +25,7 @@
 
                     <template v-for="card,index in cards" :key="index">
                         <div class="py-3 px-2 text-center sm:text-start">
-                            <h4 class="font-bold text-xl mb-1">{{ card.title }}</h4>
+                            <h4 class="font-bold text-lg mb-1">{{ card.title }}</h4>
                             <a class="text-base text-[#aaaaaa]" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
                         </div>
                     </template>
