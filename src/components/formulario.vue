@@ -1,6 +1,6 @@
 <template>
     <section class="py-11">
-        <div class="container mx-auto px-5 md:px-3">
+        <div class="container mx-auto px-5 md:px-3 max-w-[1000px]">
             <TitleSection v-if="title">
                 Seja um autorizado
             </TitleSection>
@@ -10,7 +10,7 @@
                     <MyIcon icon="eos-icons:three-dots-loading"/>
                 </span>
             </h2> -->
-            <form class="w-full mt-6 py-5 duration-200 max-w-[1000px] mx-auto">
+            <form class="w-full mt-6 py-5 duration-200 mx-auto">
                 <div class="px-3 mb-[15px]">
                     <InputForm
                         id="nome"
