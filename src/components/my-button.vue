@@ -1,8 +1,8 @@
 <template>
     <button
         :type="tipo"
-        class="inline-block px-4 py-2 cursor-pointer m-3 text-base md:text-xl font-bold duration-200"
-        :class="{'bg-white text-black hover:bg-slate-300':reverse, 'bg-black text-white hover:bg-gray-700':!reverse }"
+        class="inline-block px-4 py-2 cursor-pointer text-base md:text-xl duration-200 rounded-lg"
+        :class="{'bg-white text-black':reverse, 'bg-black text-white':!reverse }"
     >
         <slot/>
     </button>

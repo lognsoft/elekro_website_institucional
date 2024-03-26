@@ -11,24 +11,127 @@
                 </span>
             </h2> -->
             <form class="w-full mt-6 py-5 duration-200 max-w-[1000px] mx-auto">
-                <div class="px-3 mb-4">
-                    <InputForm ico="entypo:email" id="email" name="email" placeholder="E-mail" />
+                <div class="px-3 mb-[15px]">
+                    <InputForm
+                        id="nome"
+                        name="nome"
+                        placeholder="Nome completo*"
+                        :required="true"
+                        :min-length="3"
+                        v-model="state.nome"
+                    />
                 </div>
-                <div class="px-3 mb-4">
-                    <InputForm ico="mingcute:building-2-fill" id="empresa" name="nome" placeholder="Empresa" />
+                <div class="px-3 mb-[15px]">
+                    <InputForm
+                        id="email"
+                        name="email"
+                        placeholder="E-mail*"
+                        :required="true"
+                        type="email"
+                        v-model="state.email"
+                    />
                 </div>
-                <div class="px-3 mb-4">
-                    <InputForm ico="entypo:address" id="cnpj" name="cnpj" placeholder="CNPJ" />
+                <div class="px-3 mb-[15px]">
+                    <InputForm
+                        id="empresa"
+                        name="nome"
+                        placeholder="Empresa*"
+                        :required="true"
+                        :min-length="4"
+                        v-model="state.empresa"
+                    />
                 </div>
-                <div class="px-3 mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <InputForm ico="solar:phone-bold" id="telefone" name="telefone" placeholder="Telefone" :max-length="15" @mask="mask" v-model="teste"/>
-                    <InputForm ico="majesticons:phone-retro" id="telefone_fixo" name="telefone_fixo" placeholder="Telefone Fixo (Opcional)" :max-length="14" @mask="mask2" v-model="teste2"/>
+                <div class="px-3 mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]">
+                    <div class="col-span-1 sm:col-span-2">
+                        <InputForm
+                            id="celular"
+                            name="celular"
+                            placeholder="Celular*"
+                            :max-length="15"
+                            @mask="phoneMask()"
+                            v-model="state.phone"
+                            :required="true"
+                            :min-length="14"
+                        />
+                    </div>
+                    <div class="col-span-1 sm:col-span-2">
+                        <InputForm
+                            id="telefone"
+                            name="telefone"
+                            placeholder="Telefone"
+                            :max-length="14"
+                            @mask="fixedPhoneMask()"
+                            v-model="state.fixedPhone"
+                            :min-length="14"
+                        />
+                    </div>
+                    <div class="col-span-1 sm:col-span-2">
+                        <InputForm
+                            id="cpf_cnpj"
+                            name="cpf_cnpj"
+                            placeholder="CPF/CNPJ"
+                            v-model="state.cpf_cnpj"
+                            :required="true"
+                            :min-length="14"
+                            :max-length="18"
+                            @mask="cpfCnpjMask()"
+                        />
+                    </div>
+                    
+                    <div class="col-span-1 sm:col-span-2">
+                        <SelectForm
+                            placeholder="Setor*"
+                            name="setor"
+                            :options="setores"
+                            :required="true"
+                            v-model="state.setor"
+                        />
+                    </div>
+
+                    <div class="col-span-1 sm:col-span-2">
+                        <InputForm
+                            id="cep"
+                            name="cep"
+                            placeholder="CEP"
+                            v-model="state.cep"
+                            :min-length="9"
+                            :max-length="9"
+                            @mask="cepMask()"
+                        />
+                    </div>
+                    <div class="col-span-1 sm:col-span-2">
+                        <SelectForm
+                            placeholder="País"
+                            name="pais"
+                            v-model="state.pais"
+                        />
+                    </div>
+                    <div class="col-span-1 sm:col-span-3">
+                        <SelectForm
+                            name="cidade"
+                            placeholder="Cidade"
+                            v-model="state.cidade"
+                        />
+                    </div>
+                    <div class="col-span-1">
+                        <SelectForm
+                            placeholder="Estado"
+                            name="estado"
+                            v-model="state.estado"
+                        />
+                    </div>
                 </div>
-                <div class="px-3 mb-4">
-                    <SelectForm ico="bi:hand-index-fill" placeholder="Assunto" name="assunto" :options="options" v-model="teste1"/>
+                <div class="px-3 mb-[15px]">
+                    <InputForm id="assunto" placeholder="Assunto" name="assunto" v-model="state.subject"/>
                 </div>
-                <div class="px-3 mb-4">
-                    <TextareaForm ico="fa6-solid:message" id="mensagem" name="mensagem" placeholder="Mensagem"/>
+                <div class="px-3 mb-[15px]">
+                    <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem" v-model="state.message"/>
+                </div>
+                <div class="px-3">
+                    <MyButton class="inline-flex items-center gap-x-1" type="submit">
+                        Enviar
+                        <Icon name="bxs:paper-plane"/>
+                    </MyButton>
                 </div>
             </form>
 
@@ -37,10 +140,17 @@
 </template>
 
 <script setup lang="ts">
+import type { Option } from '~/types';
 import formRevenda from '~/stores/formRevenda';
-const teste:Ref<string> = ref('');
-const teste2:Ref<string> = ref('');
-const teste1:Ref<string> = ref('-1');
+
+const {
+    stateForm:state,
+    phoneMask,
+    fixedPhoneMask,
+    cpfCnpjMask,
+    cepMask
+} = formRevenda();
+
 
 
 defineProps({
@@ -50,29 +160,56 @@ defineProps({
     }
 }) as { title:boolean }
 
-function mask(){;
-    // if(teste.value != ''){
-        let newPhone:string = teste.value;
-        newPhone = newPhone.replace(/\D/g,'')
-        newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
-        newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
-        teste.value = newPhone;
-    // }
-}
+// function mask(){;
+//     // if(teste.value != ''){
+//         let newPhone:string = teste.value;
+//         newPhone = newPhone.replace(/\D/g,'')
+//         newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+//         newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+//         teste.value = newPhone;
+//     // }
+// }
 
-function mask2(){;
-    // if(teste.value != ''){
-        let newPhone:string = teste2.value;
-        newPhone = newPhone.replace(/\D/g,'')
-        newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
-        newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
-        teste2.value = newPhone;
-    // }
-}
+// function mask2(){;
+//     // if(teste.value != ''){
+//         let newPhone:string = teste2.value;
+//         newPhone = newPhone.replace(/\D/g,'')
+//         newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+//         newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+//         teste2.value = newPhone;
+//     // }
+// }
 
-// const { inputs, phoneMask, fixedPhoneMask, cnpjMask } = formRevenda();
 
-const options:string[] = ['revendedor', 'parceiro'];
+
+// const options:string[] = ['revendedor', 'parceiro'];
+
+const setores:Option[] = [
+    {
+        option:'Administrativo/Financeiro',
+        value:'administrativo/financeiro'
+    },
+    {
+        option:'Comercial',
+        value:'comercial'
+    },
+    {
+        option:'Compras',
+        value:'compras'
+    },
+    {
+        option:'Marketing',
+        value:'marketing'
+    },
+    {
+        option:'Recursos Humanos',
+        value:'recursos humanos'
+    },
+    {
+        option:'Suporte',
+        value:'suporte'
+    }
+];
 
 </script>
 

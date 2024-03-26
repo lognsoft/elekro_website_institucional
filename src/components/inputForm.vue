@@ -1,13 +1,29 @@
 <template>
-    <div class="input">
-        <label v-if="ico !== ''" :for="id">
-            <Icon :name="ico"/>
-        </label>
-        <input type="text" :name="name" :placeholder="placeholder" :id="id" v-model="model" :maxlength="maxLength"/>
+    <div>
+        <div class="input border-gray-100" ref="input">
+            <label v-if="ico !== ''" :for="id">
+                <Icon :name="ico"/>
+            </label>
+            <input
+                :type="type"
+                :name="name"
+                :minlength="minLength"
+                :placeholder="placeholder"
+                :id="id"
+                v-model="model"
+                :maxlength="maxLength"
+                :required="required"
+                @keyup="validInput"
+            />
+        </div>
+        <small v-show="required === true && inputValid == false" class="small-alert text-red-400">campo obrigatório</small>
     </div>
 </template>
 
 <script setup lang="ts">
+const input:Ref<HTMLElement | undefined> = ref();
+const inputValid = ref(true);
+
 const emit = defineEmits(['update:modelValue','mask']);
 const props = defineProps({
     ico:{
@@ -32,11 +48,39 @@ const props = defineProps({
     },
     maxLength:{
         type:Number,
-        default: '200'
+        default: null
+    },
+    minLength:{
+        type:Number,
+        default: 2,
+    },
+    type:{
+        type:String,
+        default:'text',
+    },
+    required:{
+        type:Boolean,
+        default: false
     },
     modelValue:String
 })
 const model:Ref<string | undefined> = ref(props.modelValue);
+
+const validInput = (e:Event) => {
+    if(props.required){
+        const el:HTMLInputElement = e.target as HTMLInputElement;
+        let flag:boolean = el.validity.valid as boolean;
+        if(flag && model.value !== ''){
+            input.value?.classList.contains("border-gray-100") ? input.value?.classList.remove('border-gray-100') : input.value?.classList.remove('border-red-400');
+            input.value?.classList.add('border-green-300');
+            inputValid.value = true;
+        } else {
+            input.value?.classList.contains("border-gray-100") ? input.value?.classList.remove('border-gray-100') : input.value?.classList.remove('border-green-300');
+            input.value?.classList.add('border-red-400');
+            inputValid.value = false;
+        }
+    }
+}
 
 watchEffect(() => {
     model.value = props.modelValue;
@@ -51,11 +95,11 @@ watchEffect(() => {
 
 <style scoped>
 .input {
-    @apply border-[1px] border-gray-100 w-full flex rounded-lg overflow-hidden
+    @apply border-[1px] w-full flex rounded-lg overflow-hidden
 }
 
 .input > label{
-    @apply w-[50px] h-[40px] flex items-center justify-center text-2xl relative
+    @apply w-[50px] h-[40px] flex items-center justify-center text-xl relative text-[#333]
 }
 .input > label:after{content:''}
 .input > label:after{
@@ -63,6 +107,10 @@ watchEffect(() => {
 }
 
 .input > input{
-    @apply w-full outline-none h-[40px] flex items-center px-3 text-lg
+    @apply w-full outline-none h-[40px] flex items-center px-3 text-sm
+}
+
+.input > input:invalid ~ .small-alert{
+    @apply text-red-400
 }
 </style>

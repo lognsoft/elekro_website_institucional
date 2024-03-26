@@ -1,7 +1,7 @@
 <template>
     <div class="textarea">
         <label v-if="ico !== ''" :for="id">
-            <Icon class="text-2xl" :name="ico"/> <span>{{ placeholder }}</span>
+            <Icon class="text-xl" :name="ico"/> <span class="text-gray-400">{{ placeholder }}</span>
         </label>
         <textarea :name="name" :placeholder="placeholder" :id="id" v-model="model"></textarea>
     </div>
@@ -49,9 +49,9 @@ watchEffect(() => {
     @apply border-[1px] border-gray-100 overflow-hidden rounded-lg
 }
 .textarea > label{
-    @apply flex text-lg items-center gap-1 border-b-[1px] border-gray-100 h-[40px] px-3
+    @apply flex text-base items-center gap-1 border-b-[1px] border-gray-100 h-[40px] px-3 text-[#333]
 }
 .textarea > textarea{
-    @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-lg
+    @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-sm
 }
 </style>

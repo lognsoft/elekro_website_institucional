@@ -1,67 +1,84 @@
 import { defineStore } from 'pinia';
-import { z } from 'zod';
 import type { Form } from '~/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
-    const defaultSchema = z.object({
-        email: z.string('obrigatório'),
-        // empresa: z.string('obrigatório'),
-        // cnpj: z.string('obrigatório').,
-    })
 
     const stateForm:Ref<Form> = ref({
-        email:undefined,
-        empresa:undefined,
-        cnpj:undefined,
-        phone:undefined,
-        fixedPhone:undefined,
-        subject:undefined,
-        message:undefined,
-    })
+        nome:'',
+        email:'',
+        empresa:'',
+        phone:'',
+        fixedPhone:'',
+        cpf_cnpj:'',
+        setor:'-1',
+        cep:'',
+        pais:'-1',
+        cidade:'-1',
+        estado:'-1',
+        subject:'',
+        message:'',
+    });
     
 
-    // const cnpjMask = () => {
-    //     let cnpj:string | undefined = inputs.value.campos.cnpjEmpresa.value;
+    const cpfCnpjMask = () => {
+        let cpf_cnpj:string = stateForm.value.cpf_cnpj as string;
+        let newCpf_cnpj:string = '';
+        if(cpf_cnpj !== undefined && cpf_cnpj.length > 14){
+            newCpf_cnpj = cpf_cnpj;
+            newCpf_cnpj = cpf_cnpj.replace(/\D/g,'');
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{2})(\d)/, "$1.$2");
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1/$2");
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{4})(\d)/,"$1-$2");
+            
+        } else {
+            newCpf_cnpj = cpf_cnpj
+            newCpf_cnpj = cpf_cnpj.replace(/\D/g,'');
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
+            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1-$2");
+        }
+        stateForm.value.cpf_cnpj = newCpf_cnpj;
+    }
 
-    //     if(cnpj !== undefined){
-    //         let newCnpj: string = cnpj;
-    //         newCnpj = cnpj.replace(/\D/g,'');
-    //         newCnpj = newCnpj.replace(/(\d{2})(\d)/, "$1.$2");
-    //         newCnpj = newCnpj.replace(/(\d{3})(\d)/, "$1.$2");
-    //         newCnpj = newCnpj.replace(/(\d{3})(\d)/, "$1/$2");
-    //         newCnpj = newCnpj.replace(/(\d{4})(\d)/,"$1-$2");
-    //         inputs.value.campos.cnpjEmpresa.value = newCnpj;
-    //     }
-    // }
-
-    // const phoneMask = () => {
-    //     let phone:string | undefined = inputs.value.campos.telefoneEmpresa.value;
-    //     if(phone !== undefined){
-    //         let newPhone:string = phone;
-    //         newPhone = newPhone.replace(/\D/g,'')
-    //         newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
-    //         newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
-    //         inputs.value.campos.telefoneEmpresa.value = newPhone;
-    //     }
-    // }
-    // const fixedPhoneMask = () => {
-    //     let phone:string | undefined = inputs.value.campos.telefoneFixoEmpresa.value;
-    //     if(phone !== undefined){
-    //         let newPhone:string = phone;
-    //         newPhone = newPhone.replace(/\D/g,'')
-    //         newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
-    //         newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
-    //         inputs.value.campos.telefoneFixoEmpresa.value = newPhone;
-    //     }
-    // }
+    const phoneMask = () => {
+        let phone:string | undefined = stateForm.value.phone;
+        if(phone !== undefined){
+            let newPhone:string = phone;
+            newPhone = newPhone.replace(/\D/g,'')
+            newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+            newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+            stateForm.value.phone = newPhone;
+        }
+    }
+    const fixedPhoneMask = () => {
+        let phone:string | undefined = stateForm.value.fixedPhone;
+        if(phone !== undefined){
+            let newPhone:string = phone;
+            newPhone = newPhone.replace(/\D/g,'')
+            newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+            newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+            stateForm.value.fixedPhone = newPhone;
+        }
+    }
+    const cepMask = () => {
+        let cep:string | undefined = stateForm.value.cep;
+        if(cep !== undefined){
+            let newCep = cep;
+            newCep = newCep.replace(/\D/g,'');
+            newCep = newCep.replace(/(\d{5})(\d)/, "$1-$2");
+            stateForm.value.cep = newCep;
+        }      
+    }
 
 
 
     return {
         stateForm,
-        // phoneMask,
-        // fixedPhoneMask,
-        // cnpjMask
+        phoneMask,
+        fixedPhoneMask,
+        cpfCnpjMask,
+        cepMask
     }
 });
 
