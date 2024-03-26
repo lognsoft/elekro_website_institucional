@@ -68,7 +68,6 @@ const openNavigate = () => {
 };
 
 watch(() => route.path, (newValue) => {
-    console.log(newValue);
     if(newValue === '/elekro-one-plus'){
         bgWhite.value = true;
     } else {

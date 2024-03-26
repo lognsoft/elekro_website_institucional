@@ -22,14 +22,14 @@
             <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
                 <h2 class="text-3xl font-semibold mb-5">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
                 <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
-                    <div class="box col-span-1 md:col-span-3">
+                    <div class="box col-span-1 md:col-span-2">
                         <div class="icon">
                             <Icon name="mdi:partnership"/>
                         </div>
                         <h3 class="title">Parceria estratégica</h3>
                         <p>Preços competitivos, negociação especial com MOQ, projetos e licitações.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-3">
+                    <div class="box col-span-1 md:col-span-2">
                         <div class="icon">
                             <Icon name="ion:analytics-sharp"/>
                         </div>
@@ -57,14 +57,14 @@
                         <h3 class="title">Suporte Técnico</h3>
                         <p>Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-3">
+                    <div class="box col-span-1 md:col-span-2">
                         <div class="icon">
                             <Icon name="nimbus:marketing"/>
                         </div>
                         <h3 class="title">Marketing e Promoção</h3>
                         <p>Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-3">
+                    <div class="box col-span-1 md:col-span-2">
                         <div class="icon">
                             <Icon name="mdi:idea"/>
                         </div>
@@ -85,7 +85,7 @@
                         <h3 class="title">Certificação</h3>
                         <p>Cumprimos integralmente com todos os padrões estabelecidos pela Anatel, garantindo a qualidade e conformidade conforme lei nº 9.472.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-2">
+                    <div class="box col-span-1 md:col-span-3">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192.756 192.756">
                                 <g fill-rule="evenodd" clip-rule="evenodd">
@@ -96,7 +96,7 @@
                         <h3 class="title">ABNT</h3>
                         <p>Nossa adesão ao padrão ABNT 14913 garante aos nossos clientes e instaladores uma experiência tranquila e uma instalação descomplicada.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-6">
+                    <div class="box col-span-1 md:col-span-3">
                         <div class="icon">
                             <Icon name="ph:projector-screen-fill"/>
                         </div>
