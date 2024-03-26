@@ -155,4 +155,7 @@ const infos:Info[] = [
 .box > .title{
     @apply text-xl font-semibold mb-1
 }
+.box > p{
+    @apply font-light
+}
 </style>
