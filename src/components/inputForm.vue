@@ -55,7 +55,7 @@ watchEffect(() => {
 }
 
 .input > label{
-    @apply bg-gray-100 w-[50px] h-[40px] flex items-center justify-center text-2xl relative
+    @apply w-[50px] h-[40px] flex items-center justify-center text-2xl relative
 }
 .input > label:after{content:''}
 .input > label:after{

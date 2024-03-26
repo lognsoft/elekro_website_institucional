@@ -52,7 +52,7 @@ watchEffect(() => {
     @apply border-[1px] border-gray-100 w-full flex rounded-lg overflow-hidden
 }
 .select > span{
-    @apply bg-gray-100 w-[50px] h-[40px] flex items-center justify-center text-2xl relative
+    @apply w-[50px] h-[40px] flex items-center justify-center text-2xl relative
 }
 .select > span:after{content:''}
 .select > span:after{

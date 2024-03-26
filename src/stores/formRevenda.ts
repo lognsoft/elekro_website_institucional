@@ -4,7 +4,7 @@ import type { Form } from '~/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
     const defaultSchema = z.object({
-        // email: z.string('obrigatório'),
+        email: z.string('obrigatório'),
         // empresa: z.string('obrigatório'),
         // cnpj: z.string('obrigatório').,
     })
