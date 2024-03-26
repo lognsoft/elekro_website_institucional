@@ -1,6 +1,6 @@
 <template>
     <section class="py-11">
-        <div class="container mx-auto px-5 md:px-3 max-w-[1000px]">
+        <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
             <TitleSection v-if="title">
                 Seja um autorizado
             </TitleSection>
@@ -11,7 +11,7 @@
                 </span>
             </h2> -->
             <form class="w-full mt-6 py-5 duration-200 mx-auto">
-                <div class="px-3 mb-[15px]">
+                <div class="mb-[15px]">
                     <InputForm
                         id="nome"
                         name="nome"
@@ -21,7 +21,7 @@
                         v-model="state.nome"
                     />
                 </div>
-                <div class="px-3 mb-[15px]">
+                <div class="mb-[15px]">
                     <InputForm
                         id="email"
                         name="email"
@@ -31,7 +31,7 @@
                         v-model="state.email"
                     />
                 </div>
-                <div class="px-3 mb-[15px]">
+                <div class="mb-[15px]">
                     <InputForm
                         id="empresa"
                         name="nome"
@@ -41,7 +41,7 @@
                         v-model="state.empresa"
                     />
                 </div>
-                <div class="px-3 mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]">
+                <div class="mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]">
                     <div class="col-span-1 sm:col-span-2">
                         <InputForm
                             id="celular"
@@ -121,13 +121,13 @@
                         />
                     </div>
                 </div>
-                <div class="px-3 mb-[15px]">
+                <div class="mb-[15px]">
                     <SelectForm placeholder="Assunto" name="assunto" v-model="state.subject" :options="assuntos"/>
                 </div>
-                <div class="px-3 mb-[15px]">
+                <div class="mb-[15px]">
                     <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem" v-model="state.message"/>
                 </div>
-                <div class="px-3">
+                <div>
                     <MyButton class="inline-flex items-center gap-x-1" type="submit">
                         Enviar
                         <Icon name="bxs:paper-plane"/>
