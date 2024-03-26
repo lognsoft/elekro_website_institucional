@@ -20,7 +20,7 @@
         </section>
         <section class="pt-11">
             <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
-                <h2 class="text-center text-3xl font-semibold mb-5">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
+                <h2 class="text-3xl font-semibold mb-5">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
                 <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
                     <div class="box col-span-1 md:col-span-3">
                         <div class="icon">

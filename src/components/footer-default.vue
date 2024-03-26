@@ -38,9 +38,7 @@
                     <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
                 <p class="font-light text-sm">Design e tecnologia, aliados à segurança.</p>
-                <p class="mb-3 font-light text-sm flex items-center gap-1 justify-center">
-                    <Icon name="icon-park-outline:earth"/> <div><a href="javascript:void(0)">Português(BR)</a> e <a href="javascript:void(0)">Inglês</a></div>
-                </p>
+                <Translate/>
                 <p class="text-[#aaaaaa] font-light text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
         </div>

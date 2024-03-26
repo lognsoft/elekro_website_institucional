@@ -1,16 +1,8 @@
 <template>
     <section class="py-11">
         <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
-            <TitleSection v-if="title">
-                Seja um autorizado
-            </TitleSection>
-            <!-- <h2 v-show="submitShow" class="font-bold text-xl md:text-2xl flex items-center gap-3" :class="submitColor">
-                {{ submitMessage }}
-                <span v-show="submitLoading" class="text-5xl flex items-center">
-                    <MyIcon icon="eos-icons:three-dots-loading"/>
-                </span>
-            </h2> -->
-            <form class="w-full mt-6 py-5 duration-200 mx-auto">
+            <h2 class="text-3xl font-semibold mb-5">Formulário de contato</h2>
+            <form class="w-full duration-200 mx-auto">
                 <div class="mb-[15px]">
                     <InputForm
                         id="nome"
@@ -152,14 +144,6 @@ const {
     cepMask
 } = formRevenda();
 
-
-
-defineProps({
-    title:{
-        type:Boolean,
-        default:false
-    }
-}) as { title:boolean }
 
 // function mask(){;
 //     // if(teste.value != ''){
