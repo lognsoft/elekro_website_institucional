@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 <div class="px-3 mb-[15px]">
-                    <InputForm id="assunto" placeholder="Assunto" name="assunto" v-model="state.subject"/>
+                    <SelectForm placeholder="Assunto" name="assunto" v-model="state.subject" :options="assuntos"/>
                 </div>
                 <div class="px-3 mb-[15px]">
                     <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem" v-model="state.message"/>
@@ -140,11 +140,12 @@
 </template>
 
 <script setup lang="ts">
-import type { Option } from '~/types';
 import formRevenda from '~/stores/formRevenda';
 
 const {
     stateForm:state,
+    setores,
+    subjects:assuntos,
     phoneMask,
     fixedPhoneMask,
     cpfCnpjMask,
@@ -184,32 +185,7 @@ defineProps({
 
 // const options:string[] = ['revendedor', 'parceiro'];
 
-const setores:Option[] = [
-    {
-        option:'Administrativo/Financeiro',
-        value:'administrativo/financeiro'
-    },
-    {
-        option:'Comercial',
-        value:'comercial'
-    },
-    {
-        option:'Compras',
-        value:'compras'
-    },
-    {
-        option:'Marketing',
-        value:'marketing'
-    },
-    {
-        option:'Recursos Humanos',
-        value:'recursos humanos'
-    },
-    {
-        option:'Suporte',
-        value:'suporte'
-    }
-];
+
 
 </script>
 

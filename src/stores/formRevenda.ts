@@ -1,8 +1,7 @@
 import { defineStore } from 'pinia';
-import type { Form } from '~/types';
+import type { Form, Option } from '~/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
-
     const stateForm:Ref<Form> = ref({
         nome:'',
         email:'',
@@ -15,9 +14,46 @@ const formRevenda = defineStore('formulario-revenda',() => {
         pais:'-1',
         cidade:'-1',
         estado:'-1',
-        subject:'',
+        subject:'-1',
         message:'',
     });
+
+    const setores:Option[] = [
+        {
+            option:'Administrativo/Financeiro',
+            value:'administrativo/financeiro'
+        },
+        {
+            option:'Comercial',
+            value:'comercial'
+        },
+        {
+            option:'Compras',
+            value:'compras'
+        },
+        {
+            option:'Marketing',
+            value:'marketing'
+        },
+        {
+            option:'Recursos Humanos',
+            value:'recursos humanos'
+        },
+        {
+            option:'Suporte',
+            value:'suporte'
+        }
+    ];
+    const subjects:Option[] = [
+        {
+            option:'autorizado',
+            value:'autorizado'
+        },
+        {
+            option:'instalador',
+            value:'instalador'
+        }
+    ]
     
 
     const cpfCnpjMask = () => {
@@ -75,6 +111,8 @@ const formRevenda = defineStore('formulario-revenda',() => {
 
     return {
         stateForm,
+        setores,
+        subjects,
         phoneMask,
         fixedPhoneMask,
         cpfCnpjMask,
