@@ -22,14 +22,14 @@
             <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
                 <h2 class="text-center text-3xl font-semibold mb-5">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
                 <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
-                    <div class="box col-span-1 md:col-span-6">
+                    <div class="box col-span-1 md:col-span-3">
                         <div class="icon">
                             <Icon name="mdi:partnership"/>
                         </div>
                         <h3 class="title">Parceria estratégica</h3>
                         <p>Preços competitivos, negociação especial com MOQ, projetos e licitações.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-2">
+                    <div class="box col-span-1 md:col-span-3">
                         <div class="icon">
                             <Icon name="ion:analytics-sharp"/>
                         </div>
@@ -50,7 +50,7 @@
                         <h3 class="title">Parceria comercial</h3>
                         <p>Com nossa base de dados, direcionaremos clientes interessados para distribuidores exclusivos na região, garantindo acesso fácil ao produto desejado.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-3">
+                    <div class="box col-span-1 md:col-span-2">
                         <div class="icon">
                             <Icon name="fa6-solid:headset"/>
                         </div>
@@ -64,7 +64,7 @@
                         <h3 class="title">Marketing e Promoção</h3>
                         <p>Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-2">
+                    <div class="box col-span-1 md:col-span-3">
                         <div class="icon">
                             <Icon name="mdi:idea"/>
                         </div>
@@ -96,12 +96,13 @@
                         <h3 class="title">ABNT</h3>
                         <p>Nossa adesão ao padrão ABNT 14913 garante aos nossos clientes e instaladores uma experiência tranquila e uma instalação descomplicada.</p>
                     </div>
-                    <div class="box col-span-1 md:col-span-4">
+                    <div class="box col-span-1 md:col-span-6">
                         <div class="icon">
                             <Icon name="ph:projector-screen-fill"/>
                         </div>
                         <h3 class="title">Projetos</h3>
-                        <p>Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p>
+                        <p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p>
+                        <p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>
                     </div>
                 </div>
             </div>
