@@ -20,15 +20,35 @@
         </section>
         <section class="elekro-text">
             <div class="mx-auto container px-5 md:px-3 relative z-20">
-                <div class="text-sm font-light mb-6" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="mb-3"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>A Elekro destaca-se como a melhor parceira para quem busca o melhor em tecnologia, desempenho e economia.</div>
-                    <div class="mb-3">Impulsionada pela inovação e pelo avanço tecnológico, a Elekro não apenas acompanha as tendências globais, mas também as define.</div>
-                    <div class="mb-3">Com mais de uma década de experiência em projetos internacionais de engenharia, a Elekro destacou-se ao desenvolver tecnologia para o Brasil nas áreas de energias renováveis e inteligência artificial, em parceria com grandes empresas no país e no exterior.</div>
-                    <div class="mb-3">Em 2023, conquistamos nosso grande orgulho, a Elekro One Plus.</div>
-                    <div class="mb-3">Ao iniciarmos a fabricação de fechaduras inteligentes, desenvolvidas por brasileiros, reafirmamos nossa missão de oferecer tecnologia, design e sofisticação que facilitam a vida das pessoas.</div>
-                    <div class="mb-3">A fechadura inteligente da Elekro, aliada ao aplicativo Elekro Smart, abre caminhos para inovações futuras que transformam a interação das pessoas com seus lares, representando o início de nosso avanço e de nosso compromisso em antecipar e satisfazer as necessidades no mundo dos eletrodomésticos inteligentes.</div>
-                    <div class="mb-3">Com esse passo, abrimos novos caminhos para inovações futuras, prontos para superar expectativas e transformar a interação das pessoas com seus lares.</div>
-                    <div>Na Elekro, prezamos por um padrão elevado de atendimento ao cliente, comprometidos a oferecer o melhor serviço, entrega, qualidade aliados ao melhor preço.</div>
+                <div class="text-base font-light mb-6">
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="mb-2"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>A Elekro projeta fechaduras eletrônicas, incorporando tecnologia biométrica, chaves eletrônicas e conectividade inteligente.</p>
+                        <p class="mb-2">Em 2023, projetamos a Elekro One+, série FM-F31, motivo de muito orgulho para nós.</p>
+                        <p class="mb-2">Ao darmos início à fabricação de fechaduras inteligentes projetadas para o Brasil, reiteramos nosso compromisso em proporcionar tecnologia, design e praticidade através de soluções inteligentes e conectadas.</p>
+                        <p class="mb-2">A fechadura inteligente Elekro One+, e o aplicativo Smart Life, abrem caminhos para inovações futuras que transformam a interação das pessoas com seus lares.</p>
+                        <p>Este marco representa nosso firme compromisso em antecipar e atender às demandas da automação residencial, promovendo conforto, segurança e praticidade para os lares modernos.</p>
+                    </div>
+                    <h2 class="text-3xl font-semibold mb-5" data-aos="fade-up" data-aos-duration="1000">Valores</h2>
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-semibold mb-1">Inovação</h3>
+                        <p>Cada ideia começa com a visão de criadores talentosos. Na Elekro, oferecemos as ferramentas necessárias para dar vida às ideias. Abraçamos a inovação como uma filosofia de negócios e promovemos a melhoria contínua em todas as áreas de nossa empresa.</p>
+                    </div>
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-semibold mb-1">Qualidade</h3>
+                        <p>O compromisso com a qualidade na Elekro é fundamentado na excelência e na busca pela perfeição em todos os estágios de nossos processos, desde o design até a entrega dos produtos. Buscamos incessantemente atender a confiabilidade, durabilidade, altos padrões de segurança e desempenho em todos os nossos produtos.</p>
+                    </div>
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-semibold mb-1">Respeito pelas pessoas</h3>
+                        <p>Acreditamos que cada pessoa é única e merece viver com qualidade de vida. Comprometemo-nos a promover um ambiente de trabalho inclusivo e respeitoso, onde todos tenham a oportunidade de prosperar e alcançar seu pleno potencial.</p>
+                    </div>
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-semibold mb-1">Transparência</h3>
+                        <p>O valor de transparência da Elekro é evidenciado em seu compromisso com a comunicação aberta, clara e precisa em suas operações. Almejamos construir relacionamentos sólidos e de confiança com clientes, colaboradores, parceiros e todas as partes interessadas.</p>
+                    </div>
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-semibold mb-1">Missão</h3>
+                        <p>A missão da Elekro é proporcionar design elegante, tecnologia avançada, segurança e modernidade para o lar, promovendo um ambiente mais inteligente e confortável.</p>
+                    </div>
                 </div>
                 <p class="text-sm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">-Time Elekro.</p>
             </div>
