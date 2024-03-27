@@ -1,6 +1,12 @@
 <template>
     <div>
-        <div class="input border-gray-300" ref="input">
+        <div class="input" :class="{
+            // focus
+                'border-gray-300':!inputFocus,
+                'border-[#1c54d9]':inputFocus,
+                'border-green-300':inputValid && !inputFocus,
+                'border-red-400':!inputValid
+            }" ref="input">
             <label v-if="ico !== ''" :for="id">
                 <Icon :name="ico"/>
             </label>
@@ -14,6 +20,8 @@
                 :maxlength="maxLength"
                 :required="required"
                 @keyup="validInput"
+                @focus="focus"
+                @focusout="focus"
             />
         </div>
         <small v-show="required === true && inputValid == false" class="small-alert text-red-400">campo obrigatório</small>
@@ -22,8 +30,8 @@
 
 <script setup lang="ts">
 const input:Ref<HTMLElement | undefined> = ref();
-const inputValid = ref(true);
-
+const inputValid:Ref<boolean> = ref(true);
+const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
 const props = defineProps({
     ico:{
@@ -66,17 +74,20 @@ const props = defineProps({
 })
 const model:Ref<string | undefined> = ref(props.modelValue);
 
+const focus = (e:Event) => {
+    e.type === "focus" ? inputFocus.value = true : inputFocus.value = false;
+}
 const validInput = (e:Event) => {
     if(props.required){
         const el:HTMLInputElement = e.target as HTMLInputElement;
         let flag:boolean = el.validity.valid as boolean;
         if(flag && model.value !== ''){
-            input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-red-400');
-            input.value?.classList.add('border-[#1c54d9]');
+            // input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-red-400');
+            // input.value?.classList.add('border-[#1c54d9]');
             inputValid.value = true;
         } else {
-            input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-[#1c54d9]');
-            input.value?.classList.add('border-red-400');
+            // input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-[#1c54d9]');
+            // input.value?.classList.add('border-red-400');
             inputValid.value = false;
         }
     }

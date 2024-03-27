@@ -77,7 +77,7 @@ const cards:Card[] = [
         email:'vendas@elekro.com.br'
     },
     {
-        title:'Recursos Humanos',
+        title:'Suporte',
         email:'suporte@elekro.com.br'
     },
     {
