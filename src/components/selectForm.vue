@@ -77,6 +77,6 @@ watchEffect(() => {
 }
 
 .select > select{
-    @apply w-full px-2 outline-none text-sm h-[40px]
+    @apply w-full px-2 outline-none text-sm h-[40px] bg-white
 }
 </style>
