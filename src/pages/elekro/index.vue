@@ -19,7 +19,7 @@
             </div>
         </section>
         <section class="elekro-text">
-            <div class="mx-auto container px-5 md:px-3 relative z-20">
+            <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
                 <div class="text-base font-light mb-6">
                     <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
                         <p class="mb-2"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>A Elekro projeta fechaduras eletrônicas, incorporando tecnologia biométrica, chaves eletrônicas e conectividade inteligente.</p>
@@ -48,6 +48,10 @@
                     <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="text-xl font-semibold mb-1">Missão</h3>
                         <p>A missão da Elekro é proporcionar design elegante, tecnologia avançada, segurança e modernidade para o lar, promovendo um ambiente mais inteligente e confortável.</p>
+                    </div>
+                    <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-semibold mb-1">Visão</h3>
+                        <p>A visão da Elekro é tornar a tecnologia acessível e conveniente para todos os lares, simplificando a vida das pessoas por meio de soluções inteligentes e conectadas.</p>
                     </div>
                 </div>
                 <p class="text-sm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">-Time Elekro.</p>
