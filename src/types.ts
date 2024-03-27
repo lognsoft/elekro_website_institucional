@@ -11,6 +11,10 @@ export type ObjectForm = {
 
 
 //formulários
+export type Option = {
+    option:string,
+    value:string | number,
+}
 export type Form = {
     nome:string | undefined,
     email:string | undefined,
@@ -27,6 +31,50 @@ export type Form = {
     message:string | undefined,
 }
 
+export type Country = {
+    continent:string,
+    capital:string,
+    languages:string,
+    geonameId:number,
+    south:number,
+    isoAlpha3:string,
+    north:number,
+    fipsCode:string,
+    population:string,
+    east:number,
+    isoNumeric:string,
+    areaInSqKm:string,
+    countryCode:string,
+    west:number,
+    countryName:string,
+    postalCodeFormat:string,
+    continentName:string,
+    currencyCode:string
+}
+export type Province = {
+    adminCode1:string,
+    lng:string,
+    geonameId:number,
+    toponymName:string,
+    countryId:string,
+    fcl:string,
+    population:number,
+    countryCode:string,
+    name:string,
+    fclName:string,
+    adminCodes1: {
+        ISO3166_2:string
+    },
+    countryName: string,
+    fcodeName:string,
+    adminName1:string,
+    lat:string,
+    fcode:string
+}
+export type GeoNames<T> = {
+    geonames:Array<T>;
+}
+
 //fim formulários
 
 export type Link = {
@@ -34,9 +82,4 @@ export type Link = {
     store:string,
     icon:string,
     href:string,
-}
-
-export type Option = {
-    option:string,
-    value:string,
 }

@@ -9,7 +9,7 @@
                 </div>
                 <ClientOnly>
                     <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" @click="openNavigate">
-                        <MyIcon class="text-2xl" icon="mdi-light:menu"/>
+                        <Icon class="text-2xl" name="mdi-light:menu"/>
                         <span class="w-[55px] text-center" v-if="navigateOpen === false" data-aos="fade-in">menu</span>
                         <span class="w-[55px] text-center" v-else data-aos="fade-in">close</span>
                     </div>

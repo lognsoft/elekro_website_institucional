@@ -1,20 +1,32 @@
 <template>
-    <div class="select">
+    <div class="select" :class="{
+        'border-gray-300':!inputFocus,
+        'border-[#1c54d9]':inputFocus
+        }">
         <span v-if="ico !== ''">
             <Icon :name="ico"/>
         </span>
-        <select :name="name" v-model="model" :class="{'text-gray-400':model === '-1'}" :required="required">
+        <select
+            :name="name"
+            v-model="model"
+            :class="{'text-gray-400':model === '-1'}"
+            :required="required"
+            @focus="focus"
+            @focusout="focus"
+        >
             <option disabled value="-1">{{ placeholder }}</option>
-            <template v-for="option,index in options" :key="index">
-                <option :value="option.value" class="capitalize">{{ option.option }}</option>
-            </template>
+            <ClientOnly>
+                <template v-for="option,index in options" :key="index">
+                    <option :value="option.value" class="capitalize">{{ option.option }}</option>
+                </template>
+            </ClientOnly>
         </select>
     </div>
 </template>
 
 <script setup lang="ts">
-import type { DefineProps } from 'vue';
 import type { Option } from '~/types';
+const inputFocus:Ref<boolean> = ref(false);
 type SelectForm = {
     ico:string,
     placeholder:string,
@@ -32,29 +44,13 @@ const props = withDefaults(defineProps<SelectForm>(),{
     options: undefined,
     required:false,
     modelValue: '-1',
-    // ico:{
-    //     type:String,
-    //     default:''
-    // },
-    // placeholder:{
-    //     type:String,
-    //     default:'Selecione uma opção'
-    // },
-    // name:{
-    //     type:String,
-    //     default: ''
-    // },
-    // options:{
-    //     type:Array,
-    //     default:[]
-    // },
-    // modelValue:{
-    //     type:String,
-    //     default: '-1'
-    // }
 });
 
-const model:Ref<string | undefined> = ref(props.modelValue);
+const model:Ref<string> = ref(props.modelValue);
+
+const focus = (e:Event) => {
+    e.type === "focus" ? inputFocus.value = true : inputFocus.value = false;
+}
 
 watchEffect(() => {
     model.value = props.modelValue;
@@ -66,7 +62,7 @@ watchEffect(() => {
 
 <style scoped>
 .select{
-    @apply border-[1px] border-gray-300 w-full flex rounded-lg overflow-hidden
+    @apply border-[1px] w-full flex rounded-lg overflow-hidden
 }
 .select > span{
     @apply w-[50px] h-[40px] flex items-center justify-center text-xl relative text-[#333] 

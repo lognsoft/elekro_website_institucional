@@ -1,7 +1,7 @@
 <template>
     <NuxtLink :to="props.href" class="link" :class="{'absolute':absolute,'relative':!absolute}">
         <slot/>
-        <MyIcon v-if="icon" class="icon" icon="eva:arrow-right-fill"/>
+        <Icon v-if="icon" class="icon" name="eva:arrow-right-fill"/>
     </NuxtLink>
 </template>
 

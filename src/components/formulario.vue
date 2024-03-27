@@ -1,7 +1,7 @@
 <template>
     <section class="py-11">
         <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
-            <h2 class="text-3xl font-semibold mb-5">Formulário de contato</h2>
+            <h2 class="text-3xl font-semibold mb-5">Entre em contato</h2>
             <form class="w-full duration-200 mx-auto">
                 <div class="mb-[15px]">
                     <InputForm
@@ -96,6 +96,7 @@
                             placeholder="País"
                             name="pais"
                             v-model="state.pais"
+                            :options="countrys"
                         />
                     </div>
                     <div class="col-span-1 sm:col-span-3">
@@ -110,6 +111,7 @@
                             placeholder="Estado"
                             name="estado"
                             v-model="state.estado"
+                            :options="provinces"
                         />
                     </div>
                 </div>
@@ -138,11 +140,17 @@ const {
     stateForm:state,
     setores,
     subjects:assuntos,
+    countrys,
+    provinces,
+    getCountrys,
     phoneMask,
     fixedPhoneMask,
     cpfCnpjMask,
     cepMask
 } = formRevenda();
+
+getCountrys();
+
 
 
 // function mask(){;

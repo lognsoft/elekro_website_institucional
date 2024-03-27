@@ -5,7 +5,7 @@
                 'border-gray-300':!inputFocus && !inputValid,
                 'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
                 'border-red-400':(inputfocus && inputValid) || (model?.length >= 0 && !inputValid)
-            }" ref="input">
+            }">
             <label v-if="ico !== ''" :for="id">
                 <Icon :name="ico"/>
             </label>
@@ -28,7 +28,6 @@
 </template>
 
 <script setup lang="ts">
-const input:Ref<HTMLElement | undefined> = ref();
 const inputValid:Ref<boolean> = ref(true);
 const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);

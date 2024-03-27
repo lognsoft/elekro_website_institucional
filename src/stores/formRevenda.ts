@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import type { Form, Option } from '~/types';
+import type { Form, Option, Country, Province, GeoNames } from '~/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
     const stateForm:Ref<Form> = ref({
@@ -54,9 +54,30 @@ const formRevenda = defineStore('formulario-revenda',() => {
             value:'instalador'
         }
     ]
-    
+    const countrys:Ref<Option[] | undefined> = ref(undefined);
+    const provinces:Ref<Option[]> = ref([]);
 
-    const cpfCnpjMask = () => {
+    const getCountrys = async ():Promise<void> => {
+        let newCountrys:Array<Option> = [];
+        if(countrys.value === undefined || countrys.value.length === 0){
+            const { data } = await useAsyncData(
+                'countrys',
+                ():Promise<GeoNames<Country>> => $fetch('http://api.geonames.org/countryInfoJSON?username=alan_tavares_morais')
+            )
+            if(data.value !== null){
+                const sortedCountrys = data.value.geonames.sort((a,b) => a.countryName.localeCompare(b.countryName))
+                newCountrys = sortedCountrys.map((val:Country) => {
+                    let country_single:Option = {
+                        option: val.countryName,
+                        value: val.geonameId.toString()
+                    }
+                    return country_single
+                })
+            }
+        }
+        countrys.value = newCountrys;
+    }
+    const cpfCnpjMask = ():void => {
         let cpf_cnpj:string = stateForm.value.cpf_cnpj as string;
         let newCpf_cnpj:string = '';
         if(cpf_cnpj !== undefined && cpf_cnpj.length > 14){
@@ -76,8 +97,7 @@ const formRevenda = defineStore('formulario-revenda',() => {
         }
         stateForm.value.cpf_cnpj = newCpf_cnpj;
     }
-
-    const phoneMask = () => {
+    const phoneMask = ():void => {
         let phone:string | undefined = stateForm.value.phone;
         if(phone !== undefined){
             let newPhone:string = phone;
@@ -97,7 +117,7 @@ const formRevenda = defineStore('formulario-revenda',() => {
             stateForm.value.fixedPhone = newPhone;
         }
     }
-    const cepMask = () => {
+    const cepMask = ():void => {
         let cep:string | undefined = stateForm.value.cep;
         if(cep !== undefined){
             let newCep = cep;
@@ -107,12 +127,41 @@ const formRevenda = defineStore('formulario-revenda',() => {
         }      
     }
 
-
+    const getProvinces = async (geonameId:string) => {
+        let newProvinces:Array<Option> = [];
+        if(stateForm.value.pais !== "-1" && stateForm.value.pais != undefined){
+            const { data } = await useAsyncData(
+                `province:${stateForm.value.pais}`,
+                ():Promise<GeoNames<Province>> => $fetch(`http://api.geonames.org/childrenJSON?geonameId=${geonameId}&username=alan_tavares_morais`)
+            );
+            if(data.value !== null){
+                const sortedProvinces = data.value.geonames.sort((a,b) => a.countryName.localeCompare(b.countryName))
+                newProvinces = sortedProvinces.map((val:Province) => {
+                    let country_single:Option = {
+                        option: val.toponymName,
+                        value: val.geonameId.toString()
+                    }
+                    return country_single
+                })
+            }
+            provinces.value.length = 0;
+            provinces.value.push(...newProvinces);
+        }
+    }
+    watch(() => stateForm.value.pais, (value:string | undefined) => {
+        console.log(value);
+        if(value !== undefined && value !== "-1") {
+            getProvinces(value)
+        }
+    })
 
     return {
         stateForm,
         setores,
         subjects,
+        countrys,
+        provinces,
+        getCountrys,
         phoneMask,
         fixedPhoneMask,
         cpfCnpjMask,
