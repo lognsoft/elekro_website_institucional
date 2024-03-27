@@ -117,7 +117,7 @@
                     <SelectForm placeholder="Assunto" name="assunto" v-model="state.subject" :options="assuntos"/>
                 </div>
                 <div class="mb-[15px]">
-                    <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem" v-model="state.message"/>
+                    <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem" v-model="state.message" :required="true"/>
                 </div>
                 <div>
                     <MyButton class="inline-flex items-center gap-x-1" type="submit">

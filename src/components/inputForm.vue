@@ -2,10 +2,9 @@
     <div>
         <div class="input" :class="{
             // focus
-                'border-gray-300':!inputFocus,
-                'border-[#1c54d9]':inputFocus,
-                'border-green-300':inputValid && !inputFocus,
-                'border-red-400':!inputValid
+                'border-gray-300':!inputFocus && !inputValid,
+                'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
+                'border-red-400':(inputfocus && inputValid) || (model?.length >= 0 && !inputValid)
             }" ref="input">
             <label v-if="ico !== ''" :for="id">
                 <Icon :name="ico"/>
@@ -70,9 +69,12 @@ const props = defineProps({
         type:Boolean,
         default: false
     },
-    modelValue:String
+    modelValue:{
+        type:String,
+        default: ''
+    }
 })
-const model:Ref<string | undefined> = ref(props.modelValue);
+const model:Ref<string> = ref(props.modelValue);
 
 const focus = (e:Event) => {
     e.type === "focus" ? inputFocus.value = true : inputFocus.value = false;
@@ -82,12 +84,8 @@ const validInput = (e:Event) => {
         const el:HTMLInputElement = e.target as HTMLInputElement;
         let flag:boolean = el.validity.valid as boolean;
         if(flag && model.value !== ''){
-            // input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-red-400');
-            // input.value?.classList.add('border-[#1c54d9]');
             inputValid.value = true;
         } else {
-            // input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-[#1c54d9]');
-            // input.value?.classList.add('border-red-400');
             inputValid.value = false;
         }
     }

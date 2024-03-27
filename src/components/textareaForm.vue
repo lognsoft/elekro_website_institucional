@@ -1,13 +1,32 @@
 <template>
-    <div class="textarea">
-        <label v-if="ico !== ''" :for="id">
-            <Icon class="text-xl" :name="ico"/> <span class="text-gray-400">{{ placeholder }}</span>
-        </label>
-        <textarea :name="name" :placeholder="placeholder" :id="id" v-model="model"></textarea>
+    <div>
+        <div class="textarea" ref="input" :class="{
+        'border-gray-300':!inputFocus && !inputValid,
+        'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
+        'border-red-400':(inputfocus && inputValid) || (model?.length >= 0 && !inputValid)
+        }">
+            <label v-if="ico !== ''" :for="id">
+                <Icon class="text-xl" :name="ico"/> <span class="text-gray-400">{{ placeholder }}</span>
+            </label>
+            <textarea
+                :name="name"
+                :placeholder="placeholder"
+                :id="id"
+                v-model="model"
+                :required="required"
+                @keyup="validInput"
+                @focus="focus"
+                @focusout="focus"
+            ></textarea>
+        </div>
+        <small v-show="required === true && inputValid == false" class="small-alert text-red-400">campo obrigatório</small>
     </div>
 </template>
 
 <script setup lang="ts">
+const input:Ref<HTMLElement | undefined> = ref();
+const inputValid:Ref<boolean> = ref(true);
+const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
 const props = defineProps({
     ico:{
@@ -30,9 +49,30 @@ const props = defineProps({
         type:String,
         default:'',
     },
-    modelValue:String
+    required:{
+        type:Boolean,
+        default:false,
+    },
+    modelValue:{
+        type:String,
+        default:''
+    }
 })
-const model:Ref<string | undefined> = ref(props.modelValue);
+const model:Ref<string> = ref(props.modelValue);
+const focus = (e:Event) => {
+    e.type === "focus" ? inputFocus.value = true : inputFocus.value = false;
+}
+const validInput = (e:Event) => {
+    if(props.required){
+        const el:HTMLInputElement = e.target as HTMLInputElement;
+        let flag:boolean = el.validity.valid as boolean;
+        if(flag && model.value !== ''){
+            inputValid.value = true;
+        } else {
+            inputValid.value = false;
+        }
+    }
+}
 
 watchEffect(() => {
     model.value = props.modelValue;
@@ -46,7 +86,7 @@ watchEffect(() => {
 
 <style scoped>
 .textarea{
-    @apply border-[1px] border-gray-300 overflow-hidden rounded-lg
+    @apply border-[1px] overflow-hidden rounded-lg
 }
 .textarea > label{
     @apply flex text-base items-center gap-1 border-b-[1px] border-gray-300 h-[40px] px-3 text-[#333]
