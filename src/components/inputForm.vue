@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="input border-gray-100" ref="input">
+        <div class="input border-gray-300" ref="input">
             <label v-if="ico !== ''" :for="id">
                 <Icon :name="ico"/>
             </label>
@@ -71,11 +71,11 @@ const validInput = (e:Event) => {
         const el:HTMLInputElement = e.target as HTMLInputElement;
         let flag:boolean = el.validity.valid as boolean;
         if(flag && model.value !== ''){
-            input.value?.classList.contains("border-gray-100") ? input.value?.classList.remove('border-gray-100') : input.value?.classList.remove('border-red-400');
-            input.value?.classList.add('border-green-300');
+            input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-red-400');
+            input.value?.classList.add('border-[#1c54d9]');
             inputValid.value = true;
         } else {
-            input.value?.classList.contains("border-gray-100") ? input.value?.classList.remove('border-gray-100') : input.value?.classList.remove('border-green-300');
+            input.value?.classList.contains("border-gray-300") ? input.value?.classList.remove('border-gray-300') : input.value?.classList.remove('border-[#1c54d9]');
             input.value?.classList.add('border-red-400');
             inputValid.value = false;
         }
@@ -108,9 +108,5 @@ watchEffect(() => {
 
 .input > input{
     @apply w-full outline-none h-[40px] flex items-center px-3 text-sm
-}
-
-.input > input:invalid ~ .small-alert{
-    @apply text-red-400
 }
 </style>

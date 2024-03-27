@@ -25,8 +25,8 @@
 
                     <template v-for="card,index in cards" :key="index">
                         <div class="py-3 px-2 text-center sm:text-start">
-                            <h4 class="text-base mb-1 text-[#aaaaaa]">{{ card.title }}</h4>
-                            <a class="text-base text-[#aaaaaa]" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
+                            <h4 class="text-sm mb-1">{{ card.title }}</h4>
+                            <a class="text-sm" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
                         </div>
                     </template>
 
@@ -38,9 +38,6 @@
                     <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
                 <p class="font-light text-sm">Design e tecnologia, aliados à segurança.</p>
-                <ClientOnly>
-                    <Translate/>
-                </ClientOnly>
                 <p class="text-[#aaaaaa] font-light text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
         </div>
@@ -81,7 +78,7 @@ const cards:Card[] = [
     },
     {
         title:'Recursos Humanos',
-        email:'rh@elekro.com.br'
+        email:'suporte@elekro.com.br'
     },
     {
         title:'Marketing',

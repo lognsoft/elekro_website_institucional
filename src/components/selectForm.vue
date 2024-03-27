@@ -66,7 +66,7 @@ watchEffect(() => {
 
 <style scoped>
 .select{
-    @apply border-[1px] border-gray-100 w-full flex rounded-lg overflow-hidden
+    @apply border-[1px] border-gray-300 w-full flex rounded-lg overflow-hidden
 }
 .select > span{
     @apply w-[50px] h-[40px] flex items-center justify-center text-xl relative text-[#333] 

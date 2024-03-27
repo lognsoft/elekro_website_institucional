@@ -20,17 +20,16 @@
         </section>
         <section class="elekro-text">
             <div class="mx-auto container px-5 md:px-3 relative z-20">
-                <div class="text-xl mb-6 whitespace-pre-line" data-aos="fade-up" data-aos-duration="1000">
-                    <p class="mb-3"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>A Elekro destaca-se como a melhor parceira para quem busca o melhor em tecnologia, desempenho e economia.</p>
-                    <p class="mb-3">Impulsionada pela inovação e pelo avanço tecnológico, a Elekro não apenas acompanha as tendências globais, mas também as define.</p>
-                    <p class="mb-3">Com mais de uma década de experiência em projetos internacionais de engenharia, a Elekro destacou-se ao desenvolver tecnologia para o Brasil nas áreas de energias renováveis e inteligência artificial, em parceria com grandes empresas no país e no exterior.</p>
-                    <p class="mb-3">Em 2023, conquistamos nosso grande orgulho, a Elekro One Plus.</p>
-                    <p class="mb-3">Ao iniciarmos a fabricação de fechaduras inteligentes, desenvolvidas por brasileiros, reafirmamos nossa missão de oferecer tecnologia, design e sofisticação que facilitam a vida das pessoas.</p>
-                    <p class="mb-3">A fechadura inteligente da Elekro, aliada ao aplicativo Elekro Smart, abre caminhos para inovações futuras que transformam a interação das pessoas com seus lares, representando o início de nosso avanço e de nosso compromisso em antecipar e satisfazer as necessidades no mundo dos eletrodomésticos inteligentes.</p>
-                    <p class="mb-3">Com esse passo, abrimos novos caminhos para inovações futuras, prontos para superar expectativas e transformar a interação das pessoas com seus lares.</p>
-                    <p>Na Elekro, prezamos por um padrão elevado de atendimento ao cliente, comprometidos a oferecer o melhor serviço, entrega, qualidade aliados ao melhor preço.</p>
+                <div class="text-sm font-light mb-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="mb-3"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><MyIcon icon="bi:quote"/></span>A Elekro destaca-se como a melhor parceira para quem busca o melhor em tecnologia, desempenho e economia.</div>
+                    <div class="mb-3">Impulsionada pela inovação e pelo avanço tecnológico, a Elekro não apenas acompanha as tendências globais, mas também as define.</div>
+                    <div class="mb-3">Com mais de uma década de experiência em projetos internacionais de engenharia, a Elekro destacou-se ao desenvolver tecnologia para o Brasil nas áreas de energias renováveis e inteligência artificial, em parceria com grandes empresas no país e no exterior.</div>
+                    <div class="mb-3">Em 2023, conquistamos nosso grande orgulho, a Elekro One Plus.</div>
+                    <div class="mb-3">Ao iniciarmos a fabricação de fechaduras inteligentes, desenvolvidas por brasileiros, reafirmamos nossa missão de oferecer tecnologia, design e sofisticação que facilitam a vida das pessoas.</div>
+                    <div class="mb-3">A fechadura inteligente da Elekro, aliada ao aplicativo Elekro Smart, abre caminhos para inovações futuras que transformam a interação das pessoas com seus lares, representando o início de nosso avanço e de nosso compromisso em antecipar e satisfazer as necessidades no mundo dos eletrodomésticos inteligentes.</div>
+                    <div class="mb-3">Com esse passo, abrimos novos caminhos para inovações futuras, prontos para superar expectativas e transformar a interação das pessoas com seus lares.</div>
+                    <div>Na Elekro, prezamos por um padrão elevado de atendimento ao cliente, comprometidos a oferecer o melhor serviço, entrega, qualidade aliados ao melhor preço.</div>
                 </div>
-
                 <p class="text-sm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">-Time Elekro.</p>
             </div>
         </section>
@@ -56,7 +55,7 @@
 }
 
 .quote{
-    @apply text-amber-600 text-3xl relative
+    @apply text-[#333] text-3xl relative
 }
 
 .quote{

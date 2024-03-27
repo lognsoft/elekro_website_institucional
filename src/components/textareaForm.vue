@@ -46,10 +46,10 @@ watchEffect(() => {
 
 <style scoped>
 .textarea{
-    @apply border-[1px] border-gray-100 overflow-hidden rounded-lg
+    @apply border-[1px] border-gray-300 overflow-hidden rounded-lg
 }
 .textarea > label{
-    @apply flex text-base items-center gap-1 border-b-[1px] border-gray-100 h-[40px] px-3 text-[#333]
+    @apply flex text-base items-center gap-1 border-b-[1px] border-gray-300 h-[40px] px-3 text-[#333]
 }
 .textarea > textarea{
     @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-sm
