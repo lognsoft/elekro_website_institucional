@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import type { Form, Option, Country, Province, GeoNames } from '~/types';
+import type { Form, Option, Country, Province, City } from '~/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
     //estados reativos
@@ -116,10 +116,10 @@ const formRevenda = defineStore('formulario-revenda',() => {
         let array:Array<T> = [];
         const { data } = await useAsyncData(
             `info:${key}`,
-            ():Promise<GeoNames<T>> => $fetch(endPoint)
+            ():Promise<T[]> => $fetch(endPoint)
         )
-        if(data.value?.geonames !== null){
-            array = data.value?.geonames as Array<T>;
+        if(data.value !== null){
+            array = data.value as Array<T>;
         }
         return array;
     }
@@ -138,33 +138,33 @@ const formRevenda = defineStore('formulario-revenda',() => {
         }
         countrys.value.push(...options);
     }
-    const getProvinces = async (geonameId:string):Promise<void> => {
-        let endPoint:string = `http://api.geonames.org/childrenJSON?geonameId=${geonameId}&username=alan_tavares_morais&lang=pt`
+    const getProvinces = async ():Promise<void> => {
+        let endPoint:string = `https://servicodados.ibge.gov.br/api/v1/localidades/estados`
         let options:Array<Option> = [];
         let array:Array<Province> = await getInfo<Province>('brasil', endPoint);
         if(array.length > 0){
-            const sortedCountrys = array.sort((a,b) => a.toponymName.localeCompare(b.toponymName))
+            const sortedCountrys = array.sort((a,b) => a.nome.localeCompare(b.nome))
                 options = sortedCountrys.map((val:Province) => {
                 let country_single:Option = {
-                    option: val.toponymName,
-                    value: val.geonameId.toString()
+                    option: val.nome,
+                    value: val.sigla
                 }
                 return country_single
             })
         }
         provinces.value.push(...options);
     }
-    const getCities = async (geonameId:string):Promise<void> => {
-        let endPoint:string = `http://api.geonames.org/childrenJSON?geonameId=${geonameId}&username=alan_tavares_morais&lang=pt`
+    const getCities = async (UF:string):Promise<void> => {
+        let endPoint:string = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${UF}/municipios`
         let options:Array<Option> = [];
         loadingCities.value = true;
-        let array:Array<Province> = await getInfo<Province>(`city${geonameId}`, endPoint);
+        let array:Array<City> = await getInfo<City>(`city${UF}`, endPoint);
         if(array.length > 0){
-            const sortedCountrys = array.sort((a,b) => a.toponymName.localeCompare(b.toponymName))
-                options = sortedCountrys.map((val:Province) => {
+            const sortedCountrys = array.sort((a,b) => a.nome.localeCompare(b.nome));
+                options = sortedCountrys.map((val:City) => {
                 let country_single:Option = {
-                    option: val.toponymName,
-                    value: val.geonameId.toString()
+                    option: val.nome,
+                    value: val.nome
                 }
                 return country_single
             })

@@ -52,24 +52,54 @@ export type Country = {
     currencyCode:string
 }
 export type Province = {
-    adminCode1:string,
-    lng:string,
-    geonameId:number,
-    toponymName:string,
-    countryId:string,
-    fcl:string,
-    population:number,
-    countryCode:string,
-    name:string,
-    fclName:string,
-    adminCodes1: {
-        ISO3166_2:string
+    id:number,
+    sigla:string,
+    nome:string,
+    regiao: {
+        id:number,
+        sigla:string,
+        nome:string
+    }
+}
+export type City = {
+    id:number,
+    nome:string,
+    microrregiao: {
+        id:number,
+        nome:string,
+        mesorregiao: {
+            id:number,
+            nome:string,
+            UF: {
+                id:number,
+                sigla:string,
+                nome:string,
+                regiao: {
+                    id:number,
+                    sigla:string,
+                    nome:string
+                }
+            }
+        }
     },
-    countryName: string,
-    fcodeName:string,
-    adminName1:string,
-    lat:string,
-    fcode:string
+    'regiao-imediata': {
+        id:number,
+        nome:string,
+        'regiao-intermediaria': {
+            id:number,
+            nome:string,
+            UF: {
+                id:number,
+                sigla:string,
+                nome:string,
+                regiao: {
+                    id:number,
+                    sigla:string,
+                    nome:string
+                }
+            }
+        }
+    }
 }
 export type GeoNames<T> = {
     geonames:Array<T>;

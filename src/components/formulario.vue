@@ -153,7 +153,7 @@ const {
     loadingCities
 } = formRevenda();
 
-getProvinces("3469034");
+getProvinces();
 
 const disabledCities = computed(():boolean => {
     let flag:boolean = false;
