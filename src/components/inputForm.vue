@@ -21,6 +21,7 @@
                 @keyup="validInput"
                 @focus="focus"
                 @focusout="focus"
+                :disabled="disabled"
             />
         </div>
         <template v-if="required">
@@ -67,6 +68,10 @@ const props = defineProps({
         default:'text',
     },
     required:{
+        type:Boolean,
+        default: false
+    },
+    disabled:{
         type:Boolean,
         default: false
     },

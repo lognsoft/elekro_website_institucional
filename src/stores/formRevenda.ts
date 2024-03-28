@@ -112,6 +112,22 @@ const formRevenda = defineStore('formulario-revenda',() => {
         }      
     }
 
+    const resetForm = ():void => {
+        stateForm.value.nome = '';
+        stateForm.value.email = '';
+        stateForm.value.empresa = '';
+        stateForm.value.phone = '';
+        stateForm.value.fixedPhone = '';
+        stateForm.value.cpf_cnpj = '';
+        stateForm.value.setor = '-1';
+        stateForm.value.cep = '';
+        stateForm.value.pais = '-1';
+        stateForm.value.cidade = '-1';
+        stateForm.value.estado = '-1';
+        stateForm.value.subject = '-1';
+        stateForm.value.message = '';
+    }
+
     const getInfo = async <T>(key:string = 'country', endPoint:string = 'http://api.geonames.org/countryInfoJSON?username=alan_tavares_morais&lang=pt'):Promise<T[]> => {
         let array:Array<T> = [];
         const { data } = await useAsyncData(
@@ -173,15 +189,6 @@ const formRevenda = defineStore('formulario-revenda',() => {
         cities.value.push(...options);
         loadingCities.value = false;
     }
-    // observadores
-    // watch(() => stateForm.value.pais, (value:string | undefined) => {
-    //     stateForm.value.estado = "-1"
-    //     stateForm.value.cidade = "-1"
-    //     if(value !== undefined && value !== "-1") {
-    //         console.log(value);
-    //         getProvinces(value)
-    //     }
-    // })
     watch(() => stateForm.value.estado, (value:string | undefined) => {
         stateForm.value.cidade = "-1"
         if(value !== undefined && value !== "-1") {
@@ -204,6 +211,7 @@ const formRevenda = defineStore('formulario-revenda',() => {
         fixedPhoneMask,
         cpfCnpjMask,
         cepMask,
+        resetForm,
         //placeholdes
         loadingCities
     }

@@ -17,6 +17,7 @@
                 @keyup="validInput"
                 @focus="focus"
                 @focusout="focus"
+                :disabled="disabled"
             ></textarea>
         </div>
         <small v-show="required === true && inputValid == false" class="small-alert text-red-400">campo obrigatório</small>
@@ -49,6 +50,10 @@ const props = defineProps({
         default:'',
     },
     required:{
+        type:Boolean,
+        default:false,
+    },
+    disabled:{
         type:Boolean,
         default:false,
     },
