@@ -4,7 +4,7 @@
             // focus
                 'border-gray-300':!inputFocus && !inputValid,
                 'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
-                'border-red-400':(inputfocus && inputValid) || (model?.length >= 0 && !inputValid)
+                'border-red-400 placeholder:text-red-400':(inputfocus && inputValid) || (model?.length >= 0 && !inputValid)
             }">
             <label v-if="ico !== ''" :for="id">
                 <Icon :name="ico"/>
@@ -23,7 +23,9 @@
                 @focusout="focus"
             />
         </div>
-        <small v-show="required === true && inputValid == false" class="small-alert text-red-400">campo obrigatório</small>
+        <template v-if="required">
+            <small v-show="required && !inputValid" class="small-alert text-red-400">campo obrigatório</small>
+        </template>
     </div>
 </template>
 

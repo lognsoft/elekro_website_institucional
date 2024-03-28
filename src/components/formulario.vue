@@ -93,34 +93,34 @@
                     </div>
                     <div class="col-span-1 sm:col-span-2">
                         <SelectForm
-                            placeholder="País"
-                            name="pais"
-                            v-model="state.pais"
-                            :options="countrys"
+                            placeholder="Estado"
+                            name="estado"
+                            v-model="state.estado"
+                            :options="provinces"
                         />
                     </div>
-                    <div class="col-span-1 sm:col-span-3">
+                    <div class="col-span-1 sm:col-span-2">
                         <SelectForm
                             name="cidade"
                             placeholder="Cidade"
                             v-model="state.cidade"
                             :options="cities"
-                            :disabled="loadingCities"
+                            :disabled="disabledCities"
                         />
                     </div>
-                    <div class="col-span-1">
+                    <div class="col-span-1 sm:col-span-2">
+                        <SelectForm placeholder="Assunto" name="assunto" v-model="state.subject" :options="assuntos"/>
+                    </div>
+                    <!-- <div class="col-span-1">
                         <SelectForm
                             :placeholder="provincesLabel"
                             name="estado"
                             v-model="state.estado"
                             :options="provinces"
-                            :disabled="loadingProvinces"
                         />
-                    </div>
+                    </div> -->
                 </div>
-                <div class="mb-[15px]">
-                    <SelectForm placeholder="Assunto" name="assunto" v-model="state.subject" :options="assuntos"/>
-                </div>
+                
                 <div class="mb-[15px]">
                     <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem" v-model="state.message" :required="true"/>
                 </div>
@@ -143,33 +143,30 @@ const {
     stateForm:state,
     setores,
     subjects:assuntos,
-    countrys,
     provinces,
     cities,
-    getCountrys,
     phoneMask,
     fixedPhoneMask,
     cpfCnpjMask,
     cepMask,
-    provincesLabel,
-    citiesLabel,
+    getProvinces,
+    loadingCities
 } = formRevenda();
 
-getCountrys();
+getProvinces("3469034");
 
-const loadingProvinces = computed(():boolean => {
-    let disabled:boolean = true;
-    if(state.pais != "-1" && provincesLabel != "Carregando"){
-        disabled = false;
+const disabledCities = computed(():boolean => {
+    let flag:boolean = false;
+
+    if(state.estado === "-1"){
+        flag = true;
+    } else if(loadingCities){
+        flag = true;
     }
-    return disabled;
-})
-const loadingCities = computed(():boolean => {
-    let disabled:boolean = true;
-    if((state.pais != "-1" && provincesLabel != "Carregando") && (state.estado != "-1" && citiesLabel != "Carregando")){
-        disabled = false;
-    }
-    return disabled;
+
+    // return state.estado === "-1" && !loadingCities ? true : false;
+
+    return flag;
 })
 
 
