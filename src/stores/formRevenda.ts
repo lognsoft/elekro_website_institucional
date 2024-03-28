@@ -2,6 +2,7 @@ import { defineStore } from 'pinia';
 import type { Form, Option, Country, Province, GeoNames } from '~/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
+    //estados reativos
     const stateForm:Ref<Form> = ref({
         nome:'',
         email:'',
@@ -17,7 +18,6 @@ const formRevenda = defineStore('formulario-revenda',() => {
         subject:'-1',
         message:'',
     });
-
     const setores:Option[] = [
         {
             option:'Administrativo/Financeiro',
@@ -54,29 +54,14 @@ const formRevenda = defineStore('formulario-revenda',() => {
             value:'instalador'
         }
     ]
-    const countrys:Ref<Option[] | undefined> = ref(undefined);
+    const countrys:Ref<Option[]> = ref([]);
     const provinces:Ref<Option[]> = ref([]);
+    const cities:Ref<Option[]> = ref([]);
 
-    const getCountrys = async ():Promise<void> => {
-        let newCountrys:Array<Option> = [];
-        if(countrys.value === undefined || countrys.value.length === 0){
-            const { data } = await useAsyncData(
-                'countrys',
-                ():Promise<GeoNames<Country>> => $fetch('http://api.geonames.org/countryInfoJSON?username=alan_tavares_morais')
-            )
-            if(data.value !== null){
-                const sortedCountrys = data.value.geonames.sort((a,b) => a.countryName.localeCompare(b.countryName))
-                newCountrys = sortedCountrys.map((val:Country) => {
-                    let country_single:Option = {
-                        option: val.countryName,
-                        value: val.geonameId.toString()
-                    }
-                    return country_single
-                })
-            }
-        }
-        countrys.value = newCountrys;
-    }
+    const loadingProvinces:Ref<boolean> = ref(false);
+    const loadingCities:Ref<boolean> = ref(false);
+
+    //mascaras
     const cpfCnpjMask = ():void => {
         let cpf_cnpj:string = stateForm.value.cpf_cnpj as string;
         let newCpf_cnpj:string = '';
@@ -127,12 +112,34 @@ const formRevenda = defineStore('formulario-revenda',() => {
         }      
     }
 
-    const getProvinces = async (geonameId:string) => {
+    //países estados e cidades
+    const getCountrys = async ():Promise<void> => {
+        let newCountrys:Array<Option> = [];
+        if(countrys.value === undefined || countrys.value.length === 0){
+            const { data } = await useAsyncData(
+                'countrys',
+                ():Promise<GeoNames<Country>> => $fetch('http://api.geonames.org/countryInfoJSON?username=alan_tavares_morais&lang=pt')
+            )
+            if(data.value !== null){
+                const sortedCountrys = data.value.geonames.sort((a,b) => a.countryName.localeCompare(b.countryName))
+                newCountrys = sortedCountrys.map((val:Country) => {
+                    let country_single:Option = {
+                        option: val.countryName,
+                        value: val.geonameId.toString()
+                    }
+                    return country_single
+                })
+            }
+        }
+        countrys.value = newCountrys;
+    }
+    const getProvinces = async (geonameId:string):Promise<void> => {
         let newProvinces:Array<Option> = [];
         if(stateForm.value.pais !== "-1" && stateForm.value.pais != undefined){
+            loadingProvinces.value = true;
             const { data } = await useAsyncData(
-                `province:${stateForm.value.pais}`,
-                ():Promise<GeoNames<Province>> => $fetch(`http://api.geonames.org/childrenJSON?geonameId=${geonameId}&username=alan_tavares_morais`)
+                `province:${geonameId}`,
+                ():Promise<GeoNames<Province>> => $fetch(`http://api.geonames.org/childrenJSON?geonameId=${geonameId}&username=alan_tavares_morais&lang=pt`)
             );
             if(data.value !== null){
                 const sortedProvinces = data.value.geonames.sort((a,b) => a.countryName.localeCompare(b.countryName))
@@ -144,28 +151,82 @@ const formRevenda = defineStore('formulario-revenda',() => {
                     return country_single
                 })
             }
-            provinces.value.length = 0;
-            provinces.value.push(...newProvinces);
         }
+        provinces.value.length = 0;
+        provinces.value.push(...newProvinces);
+        loadingProvinces.value = true;
     }
+    const getCities = async (geonameId:string):Promise<void> => {
+        let newCities:Array<Option> = [];
+        if(stateForm.value.pais !== "-1" && stateForm.value.pais != undefined){
+            loadingCities.value = true;
+            const { data } = await useAsyncData(
+                `province:${geonameId}`,
+                ():Promise<GeoNames<Province>> => $fetch(`http://api.geonames.org/childrenJSON?geonameId=${geonameId}&username=alan_tavares_morais&lang=pt`)
+            );
+            if(data.value !== null){
+                const sortedCities = data.value.geonames.sort((a,b) => a.countryName.localeCompare(b.countryName))
+                newCities = sortedCities.map((val:Province) => {
+                    let country_single:Option = {
+                        option: val.toponymName,
+                        value: val.geonameId.toString()
+                    }
+                    return country_single
+                })
+            }
+        }
+        cities.value.length = 0;
+        cities.value.push(...newCities);
+        loadingCities.value = false;
+    }
+    //observadores
     watch(() => stateForm.value.pais, (value:string | undefined) => {
-        console.log(value);
+        stateForm.value.estado = "-1"
+        stateForm.value.cidade = "-1"
         if(value !== undefined && value !== "-1") {
             getProvinces(value)
         }
     })
+    watch(() => stateForm.value.estado, (value:string | undefined) => {
+        stateForm.value.cidade = "-1"
+        if(value !== undefined && value !== "-1") {
+            getCities(value)
+        }
+    })
+
+    //placeholds
+    const provincesLabel = computed(():string => {
+        let label:string = 'Estado';
+        if(stateForm.value.pais !== "-1" && loadingProvinces.value){
+            label = "Carregando";
+        }
+        return label;
+    })
+    const citiesLabel = computed(():string => {
+        let label:string = 'Cidade';
+        if(stateForm.value.pais !== "-1" && stateForm.value.estado != "-1" && loadingCities.value){
+            label = "Carregando";
+        }
+        return label;
+    })
 
     return {
+        //estados
         stateForm,
         setores,
         subjects,
         countrys,
         provinces,
+        cities,
+        //functions
         getCountrys,
         phoneMask,
         fixedPhoneMask,
         cpfCnpjMask,
-        cepMask
+        cepMask,
+        //placeholdes
+        provincesLabel,
+        citiesLabel
     }
 });
 

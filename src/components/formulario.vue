@@ -104,14 +104,17 @@
                             name="cidade"
                             placeholder="Cidade"
                             v-model="state.cidade"
+                            :options="cities"
+                            :disabled="loadingCities"
                         />
                     </div>
                     <div class="col-span-1">
                         <SelectForm
-                            placeholder="Estado"
+                            :placeholder="provincesLabel"
                             name="estado"
                             v-model="state.estado"
                             :options="provinces"
+                            :disabled="loadingProvinces"
                         />
                     </div>
                 </div>
@@ -142,14 +145,32 @@ const {
     subjects:assuntos,
     countrys,
     provinces,
+    cities,
     getCountrys,
     phoneMask,
     fixedPhoneMask,
     cpfCnpjMask,
-    cepMask
+    cepMask,
+    provincesLabel,
+    citiesLabel,
 } = formRevenda();
 
 getCountrys();
+
+const loadingProvinces = computed(():boolean => {
+    let disabled:boolean = true;
+    if(state.pais != "-1" && provincesLabel != "Carregando"){
+        disabled = false;
+    }
+    return disabled;
+})
+const loadingCities = computed(():boolean => {
+    let disabled:boolean = true;
+    if((state.pais != "-1" && provincesLabel != "Carregando") && (state.estado != "-1" && citiesLabel != "Carregando")){
+        disabled = false;
+    }
+    return disabled;
+})
 
 
 

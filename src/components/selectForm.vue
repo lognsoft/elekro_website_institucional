@@ -1,12 +1,14 @@
 <template>
     <div class="select" :class="{
         'border-gray-300':!inputFocus,
-        'border-[#1c54d9]':inputFocus
+        'border-[#1c54d9]':inputFocus,
+        'bg-gray-300':disabled
         }">
         <span v-if="ico !== ''">
             <Icon :name="ico"/>
         </span>
         <select
+            :disabled="disabled"
             :name="name"
             v-model="model"
             :class="{'text-gray-400':model === '-1'}"
@@ -31,8 +33,9 @@ type SelectForm = {
     ico:string,
     placeholder:string,
     name:string,
-    options:Array<Option> | undefined
-    required:boolean
+    options:Array<Option> | undefined,
+    required:boolean,
+    disabled:boolean,
     modelValue:string
 }
 
@@ -43,6 +46,7 @@ const props = withDefaults(defineProps<SelectForm>(),{
     name: '',
     options: undefined,
     required:false,
+    disabled: false,
     modelValue: '-1',
 });
 
