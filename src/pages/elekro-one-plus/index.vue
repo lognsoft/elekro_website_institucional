@@ -39,37 +39,51 @@
                 </div>
             </div>
         </section>
-        <section class="pt-[100px] pb-[50px]">
-            <div class="container w-full max-w-[1150px] mx-auto px-3">
-                <h2 class="mb-[40px] text-center text-semibold text-4xl">Recursos</h2>
+        <section class="pt-[100px]">
+            <div class="container w-full max-w-[1250px] mx-auto px-3">
+                <h2 class="mb-[40px] text-center text-bold text-xl md:text-4xl">Lorem Ipsum</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-3 mb-[50px]">
+                    <template v-for="obj,index in capacidades" :key="index">
+                        <div class="px-10 py-3">
+                            <div class="text-3xl text-[#333]">
+                                <Icon :name="obj.icon"/>
+                            </div>
+                            <h3 class="text-xl my-3 font-semibold">{{ obj.title }}</h3>
+                            <p class="text-sm">{{ obj.text }}</p>
+                            
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+        <section class="py-[100px]">
+            <div class="container w-full max-w-[1200px] mx-auto px-3">
+                <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Recursos</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mb-[50px]">
                     <template v-for="obj,index in resursos" :key="index">
                         <div class="px-11 py-3 relative">
-                            <div class="text-3xl absolute left-1 top-0">
+                            <div class="text-3xl absolute left-1 top-0 text-[#333]">
                                 <Icon name="i-mdi:checkbox-marked-circle"/>
                             </div>
-                            <h3 class="text-xl mb-3">{{ obj.title }}</h3>
+                            <h3 class="text-xl mb-3 font-semibold">{{ obj.title }}</h3>
                             <p class="text-sm" v-html="obj.text"></p>
                         </div>
                     </template>
                 </div>
-                <h2 class="mb-[20px] text-center text-semibold text-4xl">Integre com Amazon Alexa e Google Assistant</h2>
-                <p class="text-sm">Integre com Amazon Alexa e Google Assistant. Com nosso sistema de travamento ativado por voz, é possível destravar e verificar o status da fechadura com simples comandos de voz. No ecossistema Smart Life, nossas fechaduras inteligentes conectadas via nosso gateway Bluetooth e Wi-Fi podem facilmente se integrar com Amazon Alexa e Google Assistant. Graças às Rotinas da Alexa, os alto-falantes inteligentes da Amazon podem responder às vinculações de cenários. Integrar com a Amazon Alexa proporciona acesso ao amplo ecossistema de casa inteligente da Amazon.</p>
+                <h2 class="mb-[20px] text-center font-bold text-2xl md:text-4xl">Integre com Amazon Alexa e Google Assistant</h2>
+                <p class="text-sm text-center">Com nosso sistema de travamento ativado por voz, é possível destravar e verificar o status da fechadura com simples comandos de voz. No ecossistema Smart Life, nossas fechaduras inteligentes conectadas via nosso gateway Bluetooth e Wi-Fi podem facilmente se integrar com Amazon Alexa e Google Assistant. Graças às Rotinas da Alexa, os alto-falantes inteligentes da Amazon podem responder às vinculações de cenários. Integrar com a Amazon Alexa proporciona acesso ao amplo ecossistema de casa inteligente da Amazon.</p>
             </div>
         </section>
-        
+        <section class="bg-[url('https://seapromotionstatic.cdn5th.com/static/275168378354909184.jpeg')] bg-green-500 bg-center bg-cover min-h-[500px] md:min-h-[600px] bg-no-repeat relative">
+            <div class="bg-black/40 absolute w-full h-full top-0 left-0"></div>
+        </section>
     </main>
 </template>
 
 <script setup lang="ts">
+import type { Box, Recurso } from "~/types";
 
-type Box = {
-    title:string,
-    text:string,
-    img:string,
-    inverse:boolean
-}
-const texts:Array<Box> = [
+const texts:ReadonlyArray<Box> = [
     {
         title:'Controle Remoto',
         text: 'Adicionando o Gateway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. Isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.',
@@ -150,11 +164,7 @@ const texts:Array<Box> = [
     },
 ]
 
-type Recurso = {
-    title: string,
-    text: string
-}
-const resursos:Array<Recurso> = [
+const resursos:ReadonlyArray<Recurso> = [
     {
         title:'Tamanho do Produto',
         text: '275*65mm',
@@ -209,7 +219,43 @@ const resursos:Array<Recurso> = [
     },
 ]
 
-
+type Capacidade = {
+    icon:string,
+    title:string,
+    text:string
+}
+const capacidades:ReadonlyArray<Capacidade> = [
+    {
+        icon:'fa-solid:fingerprint',
+        title:'Lorem Ipsum',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+    },
+    {
+        icon:'i-bi:file-text-fill',
+        title:'Lorem Ipsum',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+    },
+    {
+        icon: 'i-ion:notifications-sharp',
+        title:'Lorem Ipsum',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+    },
+    {
+        icon: 'i-bi:unlock-fill',
+        title:'Lorem Ipsum',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+    },
+    {
+        icon: 'fa-solid:key',
+        title:'Lorem Ipsum',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+    },
+    {
+        icon: 'fa:tag',
+        title:'Lorem Ipsum',
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+    }
+];
 
 // const variation:Ref<string> = ref('preta');
 

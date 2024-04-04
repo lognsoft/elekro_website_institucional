@@ -113,3 +113,14 @@ export type Link = {
     icon:string,
     href:string,
 }
+
+export type Box = {
+    title:string,
+    text:string,
+    img:string,
+    inverse:boolean
+}
+export type Recurso = {
+    title: string,
+    text: string
+}
