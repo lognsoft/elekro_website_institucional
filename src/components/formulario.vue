@@ -14,7 +14,7 @@
                 ">
                     <Icon class="text-8xl" :name="iconSubmit"/>
                     <h4 class="text-3xl">
-                        {{ submitFlag === undefined ? 'Enviando' : submitFlag === true ? 'Enviado com sucesso' : 'Não foi possivel enviar o formulário :('}}  
+                        {{ messageSubmit }}
                     </h4>
                 </div>
                 <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync}" method="POST" @submit.prevent="submit()" disabled="true">
@@ -157,7 +157,7 @@
 <script setup lang="ts">
 import type { Form } from '~/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'luis@elekro.com.br' // luis@elekro.com.br;
+const mailerSubmit:string = 'alantavaresmorais@hotmail.com' // luis@elekro.com.br;
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
 
@@ -283,7 +283,6 @@ const disabledCities = computed(():boolean => {
     } else if(submitAsync.value){
         flag = true;
     }
-
     return flag;
 })
 
@@ -295,29 +294,18 @@ const iconSubmit = computed(():string => {
         icon = "mdi:close-circle-outline"
     }
     return icon;
-}) 
+})
+const messageSubmit = computed(():string => {
+    // submitFlag === undefined ? 'Enviando' : submitFlag === true ? 'Enviado com sucesso' : 'Não foi possivel enviar o formulário :('
+    let message:string = "Enviando";
+    if(submitFlag.value === true){
+        message = "Enviado com sucesso"
+    } else if(submitFlag.value === false) {
+        message = "Não foi possivel enviar o formulário :("
+    }
+    return message;
+})
 
 
 
 </script>
-
-<style scoped>
-/* .wrapper-form-container{
-    @apply grid grid-cols-7 items-start mb-11
-}
-.wrapper-form-container-t{
-    @apply grid grid-cols-7 items-start mb-3
-}
-
-.input-contact{
-    @apply w-full outline-none px-3 py-2 bg-gray-50
-}
-
-.label{
-    @apply col-span-7 mb-1 md:mb-0 md:col-span-1 block capitalize font-bold
-}
-.container-input{
-    @apply col-span-7 md:col-span-6 lg:col-span-4
-} */
-
-</style>
