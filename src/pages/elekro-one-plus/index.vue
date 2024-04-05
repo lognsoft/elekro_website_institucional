@@ -13,14 +13,14 @@
                 <img class="max-w-full min-h-[600px] object-cover" src="https://seapromotionstatic.cdn5th.com/static/275096818692636672.jpg" alt=""/>
             </div>
             <div class="container mx-auto px-3 absolute left-[50%] translate-x-[-50%] h-full flex items-center z-30">
-                <div class="w-full text-white lg:text-black">
+                <div class="w-full text-white lg:text-[#333]">
                     <h1 class="text-[40px] md:text-[50px] max-w-96 mb-[20px] font-semibold">Lorem Ipsum</h1>
                     <p class="max-w-[500px] mb-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia obcaecati commodi voluptatem qui quas neque laudantium sint</p>
                     <MyLink class="m-0" href="javascript:void(0)">Ver mais</MyLink>
                 </div>
             </div>
         </section>
-        <section class="pt-[100px]">
+        <section class="pt-[100px] text-[#333]">
             <div class="container mx-auto px-3 max-w-[1380px]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-2 lg:gap-y-5">
                     <template v-for="obj,index in texts" :key="index">
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </section>
-        <section class="pt-[100px]">
+        <section class="pt-[100px] text-[#333]">
             <div class="container w-full max-w-[1250px] mx-auto px-3">
                 <h2 class="mb-[40px] text-center text-bold text-xl md:text-4xl">Lorem Ipsum</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-3 mb-[50px]">
@@ -56,13 +56,13 @@
                 </div>
             </div>
         </section>
-        <section class="py-[100px]">
+        <section class="py-[100px] text-[#333]">
             <div class="container w-full max-w-[1200px] mx-auto px-3">
                 <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Recursos</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mb-[50px]">
                     <template v-for="obj,index in resursos" :key="index">
                         <div class="px-11 py-3 relative">
-                            <div class="text-3xl absolute left-1 top-0 text-[#333]">
+                            <div class="text-3xl absolute left-1 top-0">
                                 <Icon name="i-mdi:checkbox-marked-circle"/>
                             </div>
                             <h3 class="text-xl mb-3 font-semibold">{{ obj.title }}</h3>
@@ -74,7 +74,7 @@
                 <p class="text-sm text-center">Com nosso sistema de travamento ativado por voz, é possível destravar e verificar o status da fechadura com simples comandos de voz. No ecossistema Smart Life, nossas fechaduras inteligentes conectadas via nosso gateway Bluetooth e Wi-Fi podem facilmente se integrar com Amazon Alexa e Google Assistant. Graças às Rotinas da Alexa, os alto-falantes inteligentes da Amazon podem responder às vinculações de cenários. Integrar com a Amazon Alexa proporciona acesso ao amplo ecossistema de casa inteligente da Amazon.</p>
             </div>
         </section>
-        <section class="bg-[url('https://seapromotionstatic.cdn5th.com/static/275168378354909184.jpeg')] bg-green-500 bg-center bg-cover min-h-[500px] md:min-h-[600px] bg-no-repeat relative">
+        <section class="bg-[url('https://seapromotionstatic.cdn5th.com/static/275168378354909184.jpeg')] bg-center bg-cover min-h-[500px] md:min-h-[600px] bg-no-repeat relative">
             <div class="bg-black/40 absolute w-full h-full top-0 left-0"></div>
         </section>
     </main>
