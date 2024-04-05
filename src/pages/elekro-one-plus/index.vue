@@ -41,7 +41,7 @@
         </section>
         <section class="pt-[100px] text-[#333]">
             <div class="container w-full max-w-[1250px] mx-auto px-3">
-                <h2 class="mb-[40px] text-center text-bold text-xl md:text-4xl">Lorem Ipsum</h2>
+                <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Lorem Ipsum</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-3 mb-[50px]">
                     <template v-for="obj,index in capacidades" :key="index">
                         <div class="px-10 py-3">
