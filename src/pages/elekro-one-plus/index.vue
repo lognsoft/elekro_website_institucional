@@ -3,7 +3,6 @@
     <Head>
         <Title>Elekro One Plus</Title>
     </Head>
-    <Body class="bg-[#f6f9fc]"/>
     <main class="pt-[87px]">
         <section class="grid grid-cols-1 lg:grid-cols-2 relative">
             <div class="col-span-1 hidden lg:block"></div>
@@ -14,7 +13,7 @@
             </div>
             <div class="container mx-auto px-3 absolute left-[50%] translate-x-[-50%] h-full flex items-center z-30">
                 <div class="w-full text-white lg:text-[#333]">
-                    <h1 class="text-[40px] md:text-[50px] max-w-96 mb-[20px] font-semibold">Lorem Ipsum</h1>
+                    <h1 class="text-[40px] md:text-[50px] max-w-96 mb-[20px] font-semibold">Elekro One+</h1>
                     <p class="max-w-[500px] mb-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia obcaecati commodi voluptatem qui quas neque laudantium sint</p>
                     <MyLink class="m-0" href="javascript:void(0)">Ver mais</MyLink>
                 </div>

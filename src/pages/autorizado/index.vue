@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="text-[#333]">
         <Head>
             <Title>Seja Um Autorizado</Title>
             <Meta name="description" content="lorem ipsum"/>
@@ -12,6 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
+        <Body class="bg-white"/>
         <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
@@ -115,7 +116,7 @@ const infos:Info[] = [
 <style scoped>
 
 .box{
-    @apply bg-[#f7f8fb] rounded-lg py-5 px-4 text-[#333333]
+    @apply bg-[#f7f8fb] rounded-lg py-5 px-4
 }
 .box .icon{
     @apply inline-flex w-[40px] h-[40px] items-center justify-center
