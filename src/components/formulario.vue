@@ -1,7 +1,7 @@
 <template>
     <section class="py-11">
-        <div class="container mx-auto px-5 md:px-3 max-w-[1200px]">
-            <h2 class="text-3xl font-semibold mb-5">Entre em contato</h2>
+        <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
+            <h2 class="mb-[20px] text-center font-bold text-2xl md:text-4xl">Entre em contato</h2>
             <div class="relative">
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"

@@ -1,6 +1,18 @@
 export type Info = {
+    icon:string;
     title: string;
     text: string;
+    svg:boolean;
+}
+export type Feature = {
+    icon:string;
+    text:string;
+    svg:boolean;
+}
+
+export type ObjSlide = {
+    img:string,
+    text:string,
 }
 
 export type ObjectForm = {
