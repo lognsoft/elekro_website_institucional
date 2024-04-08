@@ -49,7 +49,6 @@
                         <p>A visão da Elekro é tornar a tecnologia acessível e conveniente para todos os lares, simplificando a vida das pessoas por meio de soluções inteligentes e conectadas.</p>
                     </div>
                 </div>
-                <p class="text-sm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">-Time Elekro.</p>
             </div>
         </section>
         
