@@ -2,7 +2,7 @@
     <div class="select" :class="{
         'border-gray-300':!inputFocus,
         'border-[#1c54d9]':inputFocus,
-        'bg-gray-300':disabled
+        'bg-gray-100':disabled
         }">
         <span v-if="ico !== ''">
             <Icon :name="ico"/>
@@ -77,6 +77,6 @@ watchEffect(() => {
 }
 
 .select > select{
-    @apply w-full px-2 outline-none text-sm h-[40px] bg-white
+    @apply w-full px-2 outline-none text-sm h-[40px] bg-transparent
 }
 </style>
