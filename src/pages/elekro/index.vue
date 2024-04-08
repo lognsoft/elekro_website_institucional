@@ -12,12 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <section class="apresentacao">
-            <div class="relative z-10 container mx-auto px-5 text-white gap-[-30px]">
-                <h1 class="w-full text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Elekro</h1>
-                <p class="w-full text-lg lg:text-2xl text-start">Design e tecnologia, aliados à segurança</p>
-            </div>
-        </section>
+        <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/structure.jpg')]" title="Elekro" text="Design e tecnologia, aliados à segurança"/>
         <section class="elekro-text">
             <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
                 <div class="text-base font-light mb-6">
@@ -65,14 +60,6 @@
 </script>
 
 <style scoped>
-.apresentacao{
-    @apply relative w-full overflow-hidden bg-[url('/images/bg-elekro.jpg')] bg-no-repeat bg-cover bg-center flex items-center h-screen
-}
-
-.apresentacao:after{content:''}
-.apresentacao:after{
-    @apply absolute w-full h-full bg-black/40 top-0 left-0
-}
 
 .elekro-text{
     @apply py-9 text-black bg-white bg-center bg-cover min-h-96 flex items-center relative

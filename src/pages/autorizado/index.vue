@@ -12,12 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <section class="apresentacao">
-            <div class="relative z-10 container mx-auto px-5 text-white gap-[-30px]">
-                <h1 class="w-full text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px]">Seja um autorizado</h1>
-                <p class="w-full text-lg lg:text-2xl text-start">Entrega eficiente, tecnologia de ponta</p>
-            </div>
-        </section>
+        <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
                 <h2 class="mb-[40px] text-center font-bold text-2xl md:text-4xl">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
@@ -118,14 +113,6 @@ const infos:Info[] = [
 </script>
 
 <style scoped>
-.apresentacao{
-    @apply relative w-full overflow-hidden bg-[url('/images/trabalhadores.jpg')] bg-no-repeat bg-cover bg-center flex items-center h-screen
-}
-
-.apresentacao:after{content:''}
-.apresentacao:after{
-    @apply absolute w-full h-full bg-black/40 top-0 left-0
-}
 
 .box{
     @apply bg-[#f7f8fb] rounded-lg py-5 px-4 text-[#333333]
