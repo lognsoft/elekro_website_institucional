@@ -21,26 +21,7 @@
             </div>
         </section>
         <section class="pt-[100px] text-[#333]">
-            <div class="container mx-auto px-3 max-w-[1380px]">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-2 lg:gap-y-5">
-                    <template v-for="obj,index in texts" :key="index">
-                        <div class="grid grid-cols-1 lg:grid-cols-2">
-                            <figure class="col-span-1" :class="{'lg:order-last':obj.inverse}">
-                                <img class="max-h-[600px] mx-auto" :src="obj.img" alt=""/>
-                            </figure>
-                            <div class="col-span-1 flex items-center">
-                                <div class="w-full px-5">
-                                    <h2 class="text-2xl lg:text-5xl mb-[10px] lg:mb-[20px]">{{ obj.title }}</h2>
-                                    <p class="text-sm">{{ obj.text }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </section>
-        <section class="pt-[100px] text-[#333]">
-            <div class="container w-full max-w-[1250px] mx-auto px-3">
+            <div class="container w-full max-w-[1380px] mx-auto px-3">
                 <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Ideal para</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-3 mb-[50px]">
                     <template v-for="obj,index in capacidades" :key="index">
@@ -53,6 +34,49 @@
                             <ul v-else class="text-sm list-decimal pl-3">
                                 <li class="mb-1" v-for="text,index in obj.text" :key="index">{{ text }}</li>
                             </ul>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+        <section class="pt-[100px] text-[#333]">
+            <div class="container w-full max-w-[1380px] mx-auto px-3">
+                <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Praticidade</h2>
+                <div class="grid md:grid-cols-2 gap-x-9 gap-y-3 mb-[50px] mb-2">
+                    <template v-for="obj,index in praticidades" :key="index">
+                        <div class="px-10 py-3">
+                            <div class="text-3xl text-[#333]">
+                                <Icon :name="obj.icon"/>
+                            </div>
+                            <h3 class="text-xl my-3 font-semibold">{{ obj.title }}</h3>
+                            <p v-if="typeof(obj.text) === 'string'" class="text-sm">{{ obj.text }}</p>
+                            <ul v-else class="text-sm list-decimal pl-3">
+                                <li class="mb-1" v-for="text,index in obj.text" :key="index">{{ text }}</li>
+                            </ul>
+                        </div>
+                    </template>
+                </div>
+                <div class="text-center">
+                    <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Clique no botão abaixo e fale com a Elekro</h2>
+                    <MyLink href="/autorizado">Fale com a Elekro</MyLink>
+                </div>
+            </div>
+        </section>
+        <section class="pt-[100px] text-[#333]">
+            <div class="container mx-auto px-3 max-w-[1380px]">
+                <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Tecnologia Avançada para uma Vida Mais Confortável e Segura</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-2 lg:gap-y-5">
+                    <template v-for="obj,index in texts" :key="index">
+                        <div class="grid grid-cols-1 lg:grid-cols-2">
+                            <figure class="col-span-1" :class="{'lg:order-last':obj.inverse}">
+                                <img class="max-h-[600px] mx-auto" :src="obj.img" alt=""/>
+                            </figure>
+                            <div class="col-span-1 flex items-center">
+                                <div class="w-full px-5">
+                                    <h2 class="text-2xl lg:text-5xl mb-[10px] lg:mb-[20px]">{{ obj.title }}</h2>
+                                    <p class="text-sm">{{ obj.text }}</p>
+                                </div>
+                            </div>
                         </div>
                     </template>
                 </div>
@@ -83,7 +107,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Box, Recurso } from "~/types";
+import type { Box, Recurso, Capacidade } from "~/types";
 
 const texts:ReadonlyArray<Box> = [
     {
@@ -220,12 +244,6 @@ const resursos:ReadonlyArray<Recurso> = [
         text: 'Porta Antirroubo / Porta de Madeira / Porta de Aço',
     },
 ]
-
-type Capacidade = {
-    icon:string;
-    title:string;
-    text:string | Array<string>;
-}
 const capacidades:ReadonlyArray<Capacidade> = [
     {
         icon:'simple-icons:airbnb',
@@ -247,138 +265,48 @@ const capacidades:ReadonlyArray<Capacidade> = [
             'Elimine a necessidade de fazer chaves e realizar troca de miolos.'
         ]
     },
+    {
+        icon:'mingcute:volume-mute-fill',
+        title:'Modo Silencioso e ajuste de volume',
+        text:'Utilize a fechadura sem gerar qualquer ruído, proporcionando conforto e discrição.'
+    },
+    {
+        icon:'clarity:design-solid',
+        title:'Design funcional',
+        text:'Facilmente adaptada para abrir tanto para o lado esquerdo quanto para o lado direito.'
+    },
+    {
+        icon:'ri:admin-fill',
+        title:'Modo Privacidade',
+        text:'Somente o administrador terá acesso de abertura da fechadura.'
+    },
+    {
+        icon:'game-icons:door-handle',
+        title:'Elegância e versatilidade de Instalação ',
+        text:'Design sofisticado, fechadura com altura e espessura de 275 por 65 (mm). Mortise, padrão nacional, simplificando sua instalação.'
+    },
+    {
+        icon:'bi:unlock-fill',
+        title:'Modo Acesso Livre',
+        text:'Mantenha a porta desbloqueada continuamente, ideal para eventos especiais e situações que exigem grande acesso de visitantes no local.'
+    },
+    {
+        icon:'game-icons:metal-bar',
+        title:'Construção em Liga de Alumínio e Proteção IP56',
+        text:'Resistente à corrosão, água e poeira, ideal para as condições climáticas do Brasil.'
+    }
 ];
-
-// const variation:Ref<string> = ref('preta');
-
-// type Question = {
-//     question: string,
-//     open: boolean,
-//     response: string
-// }
-
-// const faq:Ref<Question[]> = ref([
-//     {
-//         question: 'Posso instalar a Elekro em qualquer tipo de porta?',
-//         open:false,
-//         response: 'Sim, adequada para diversos tipos de portas com instalação profissional inclusa.'
-//     },
-//     {
-//         question: 'Quão eficiente é o consumo de energia da Elekro?',
-//         open:false,
-//         response: 'Projetada para eficiência, minimiza trocas de bateria.'
-//     },
-//     {
-//         question: 'Qual é a vida útil da Elekro em condições externas?',
-//         open:false,
-//         response: 'Resistente a intempéries, garante desempenho duradouro.'
-//     },
-//     {
-//         question: 'Qual é a política da Elekro?',
-//         open:false,
-//         response: '1 ano de garantia e política de devoluções flexível.'
-//     },
-//     {
-//         question: 'A Elekro recebe atualizações de software?',
-//         open:false,
-//         response: 'Recebe automaticamente, melhorando funcionalidades e segurança.'
-//     },
-//     {
-//         question: 'Como acesso minha casa se a bateria acabar?',
-//         open:false,
-//         response: 'Use chaves físicas fornecidas ou contate suporte.'
-//     },
-//     {
-//         question: 'Que tipo de suporte a Elekro oferece?',
-//         open:false,
-//         response: 'Suporte completo via telefone, e-mail e WhatsApp.'
-//     },
-//     {
-//         question: 'Os sons da fechadura podem ser silenciados?',
-//         open:false,
-//         response: 'sim'
-//     }
-// ])
-
-// type VariationImages = {
-//     color:string,
-//     images:string[],
-//     picture:string
-// }
-
-// const images:Array<VariationImages> = [
-//     {
-//         color:'preta',
-//         picture: '/images/informacoes-2.png',
-//         images: [
-//             'slide/slide-preto-1.jpg',
-//             'slide/slide-preto-2.jpg',
-//             'slide/slide-preto-3.jpg',
-//             'slide/slide-preto-4.jpg',
-//             'slide/slide-1.jpg'
-//         ]
-//     },
-//     {
-//         color:'prata',
-//         picture: '/images/informacoes-1.png',
-//         images: [
-//             'slide/slide-prata-1.jpg',
-//             'slide/slide-prata-2.jpg',
-//             'slide/slide-prata-3.jpg',
-//             'slide/slide-prata-4.jpg',
-//             'slide/slide-1.jpg'
-//         ]
-//     }
-// ]
-
-// const alterNativeImages = computed(():string[] => {
-//     let arrayImage:Array<string> = []
-//     const imageVariation:VariationImages | undefined = images.find((val:VariationImages) => val.color == variation.value);
-
-//     if(imageVariation !== undefined){
-//         arrayImage = imageVariation.images;
-//     }
-//     return arrayImage;
-// })
-
-// const imageBanner = computed(():string => {
-
-//     const obj:VariationImages | undefined = images.find((val:VariationImages) => val.color == variation.value);
-
-//     return obj == undefined ? '/images/informacoes-1.png' : obj.picture;
-// })
+const praticidades:ReadonlyArray<Capacidade> = [
+    {
+        icon:'ion:home',
+        title:'Mudou de casa?',
+        text:'A fechadura poderá ser resetada e o novo comprador poderá usufruir da segurança Elekro.'
+    },
+    {
+        icon:'mdi:battery-off',
+        title:'A bateria acabou?',
+        text:'Conte com o alarme de baixo nível de bateria e troque as pilhas com antecedência. Se os alarmes da fechadura não forem vistos, conte com a chave mestra para abertura da fechadura, ou utilize nossa porta USB C para energizar a fechadura, inserir sua senha/ biometria para ter acesso.'
+    }
+]
 
 </script>
-
-<style scoped>
-
-/* .img-fluid{
-    width: 100%;
-    height: auto;
-    max-width: 70rem;
-}
-
-#after-clip::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
-}
-
-#after-clip::after{
-    @apply z-0 bg-gradient-to-r from-slate-500 to-black
-}
-
-.dropdown{
-    @apply border-[1px] border-gray-400 overflow-hidden rounded-lg mb-3 text-gray-400
-}
-.bar-question{
-    @apply flex items-center justify-between p-5 text-2xl cursor-pointer
-}
-.response-question{
-    @apply px-5 duration-200
-} */
-</style>

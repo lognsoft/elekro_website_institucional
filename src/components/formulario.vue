@@ -1,7 +1,9 @@
 <template>
     <section class="py-11">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
-            <h2 class="mb-[20px] text-center font-bold text-2xl md:text-4xl">Entre em contato</h2>
+            <h2 class="mb-[20px] text-center text-2xl md:text-4xl">
+                Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível
+            </h2>
             <div class="relative">
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"

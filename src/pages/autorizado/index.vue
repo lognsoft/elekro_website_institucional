@@ -15,7 +15,7 @@
         <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
-                <h2 class="mb-[40px] text-center font-bold text-2xl md:text-4xl">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
+                <h2 class="mb-[40px] text-center text-2xl md:text-4xl">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
                     <template v-for="info,index in infos" :key="index">
                         <div class="box">

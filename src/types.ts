@@ -119,6 +119,12 @@ export type GeoNames<T> = {
 
 //fim formulários
 
+export type Capacidade = {
+    icon:string;
+    title:string;
+    text:string | Array<string>;
+}
+
 export type InputForm = {
     ico:string;
     id:string;
