@@ -41,11 +41,11 @@
                         <p>O valor de transparência da Elekro é evidenciado em seu compromisso com a comunicação aberta, clara e precisa em suas operações. Almejamos construir relacionamentos sólidos e de confiança com clientes, colaboradores, parceiros e todas as partes interessadas.</p>
                     </div>
                     <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="text-xl font-semibold mb-1">Missão</h3>
+                        <h3 class="text-3xl font-semibold mb-5">Missão</h3>
                         <p>A missão da Elekro é proporcionar design elegante, tecnologia avançada, segurança e modernidade para o lar, promovendo um ambiente mais inteligente e confortável.</p>
                     </div>
                     <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="text-xl font-semibold mb-1">Visão</h3>
+                        <h3 class="text-3xl font-semibold mb-5">Visão</h3>
                         <p>A visão da Elekro é tornar a tecnologia acessível e conveniente para todos os lares, simplificando a vida das pessoas por meio de soluções inteligentes e conectadas.</p>
                     </div>
                 </div>

@@ -25,8 +25,8 @@
 
                     <template v-for="card,index in cards" :key="index">
                         <div class="py-3 px-2 text-center sm:text-start">
-                            <h4 class="text-sm mb-1">{{ card.title }}</h4>
-                            <a class="text-sm" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
+                            <h4 class="text-sm font-bold mb-1">{{ card.title }}</h4>
+                            <a class="text-sm font-light" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
                         </div>
                     </template>
 
@@ -35,10 +35,10 @@
             </div>
             <div class="text-center pb-6 pt-3 border-t-[1px] border-[#1d1d1d]">
                 <figure class="mb-1">
-                    <img class="max-w-[45px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
+                    <img class="max-w-[40px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure>
                 <p class="font-light text-sm">Design e tecnologia, aliados à segurança.</p>
-                <p class="text-[#aaaaaa] font-light text-sm">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
+                <p class="text-[#aaaaaa] font-light text-xs">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -93,7 +93,7 @@ const cards:Card[] = [
 }
 
 .stores a{
-    @apply w-full flex items-center justify-center gap-2 border-[1px] px-4 py-2 rounded-lg border-white hover:border-blue-400 hover:text-blue-400 duration-200
+    @apply w-full flex items-center justify-center gap-2 border-[1px] px-4 py-2 rounded-lg border-white
 }
 .icon-store{
     @apply text-3xl inline-flex items-center justify-center
