@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="textarea" :class="{
-        'border-[#333]':!inputFocus && !inputValid,
-        'border-[#1c54d9]':inputFocus || inputValid || (model?.length > 0 && inputValid),
-        'border-red-400 placeholder:text-red-400':(inputFocus && !inputValid) || (model?.length >= 0 && !inputValid)
+            'border-[#333]':!inputFocus && !inputValid,
+            'border-[#1c54d9]':inputFocus || inputValid || (inputValid && inputFocus),
+            'border-red-400 placeholder:text-red-400':(inputFocus && model.length > 0 && model.length < props.minLength)
         }">
             <label v-if="ico !== ''" :for="id">
                 <Icon class="text-xl" :name="ico"/> <span class="text-gray-400">{{ placeholder }}</span>
