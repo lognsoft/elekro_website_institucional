@@ -2,7 +2,6 @@
     <Head>
         <Link rel="stylesheet" href="/css/font.css"/>
     </Head>
-    <Body class="bg-[#f6f9fc]"/>
     <HeaderDefault/>
         <slot/>
     <FooterDefault/>

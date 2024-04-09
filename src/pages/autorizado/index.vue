@@ -12,7 +12,6 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Body class="bg-white"/>
         <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">

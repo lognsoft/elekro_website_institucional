@@ -119,6 +119,20 @@ export type GeoNames<T> = {
 
 //fim formulários
 
+export type InputForm = {
+    ico:string;
+    id:string;
+    name:string;
+    placeholder:string;
+    value:string;
+    maxLength:number | null;
+    minLength:number;
+    type:string;
+    required:boolean;
+    disabled:boolean;
+    modelValue:string;
+}
+
 export type Link = {
     sub:string,
     store:string,

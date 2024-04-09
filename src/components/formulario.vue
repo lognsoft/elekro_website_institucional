@@ -157,7 +157,7 @@
 <script setup lang="ts">
 import type { Form } from '~/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'alantavaresmorais@hotmail.com' // luis@elekro.com.br;
+const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
 

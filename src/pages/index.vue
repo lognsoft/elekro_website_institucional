@@ -24,7 +24,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <MyLinkTwo :icon="false" class="right-[15%] bottom-[20%] my-link hidden lg:inline" :absolute="true" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                        <MyLinkTwo :icon="false" class="right-[5%] lg:right-[15%] bottom-[20%] my-link" :absolute="true" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                         <h2>Elekro One+</h2>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
-                                <li class="border-[#ddd] text-[#333]">
+                                <li class="border-[#ddd]">
                                     <span v-if="!feature.svg" class="feature_icon">
                                         <Icon :name="feature.icon"/>
                                     </span>
@@ -44,8 +44,8 @@
                             </template>
                             
                         </ul>
-                        <div class="text-start mt-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link lg:hidden" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                        <div class="text-start my-7 pr-6">
+                            <MyLinkTwo :icon="false" class="my-link inline-block lg:hidden" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const features:Array<Feature> = [
     },
     {
         icon:'solar:waterdrops-bold',
-        text:'IP66 - Prova d’água',
+        text:'IP66 - Boa proteção contra água e poeira',
         svg:false,
     },
     {
@@ -188,7 +188,7 @@ const images:Array<ObjSlide> = [
 
     /* segunda seção */
     .my__container{
-        @apply container px-3 py-10 grid grid-cols-1 
+        @apply container px-3 lg:py-10 grid grid-cols-1 
     }
 
     .features_elekro{
@@ -246,6 +246,6 @@ const images:Array<ObjSlide> = [
     }
 
     .my-link{
-        @apply bg-black px-6 py-3 text-white text-xl rounded-lg
+        @apply bg-black px-6 py-3 text-white text-sm lg:text-xl rounded-lg
     }
 </style>

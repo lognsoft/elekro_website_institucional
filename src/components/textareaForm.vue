@@ -3,7 +3,7 @@
         <div class="textarea" :class="{
         'border-gray-300':!inputFocus && !inputValid,
         'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
-        'border-red-400':(inputfocus && inputValid) || (model?.length >= 0 && !inputValid)
+        'border-red-400':(inputFocus && inputValid) || (model?.length >= 0 && !inputValid)
         }">
             <label v-if="ico !== ''" :for="id">
                 <Icon class="text-xl" :name="ico"/> <span class="text-gray-400">{{ placeholder }}</span>
@@ -96,6 +96,6 @@ watchEffect(() => {
     @apply flex text-base items-center gap-1 border-b-[1px] border-gray-300 h-[40px] px-3 text-[#333]
 }
 .textarea > textarea{
-    @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-sm
+    @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-sm bg-transparent
 }
 </style>
