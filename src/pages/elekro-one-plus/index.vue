@@ -13,9 +13,10 @@
             </div>
             <div class="container mx-auto px-3 absolute left-[50%] translate-x-[-50%] h-full flex items-center z-30">
                 <div class="w-full text-white lg:text-[#333]">
-                    <h1 class="text-[40px] md:text-[50px] max-w-96 mb-[20px] font-semibold">Elekro One+</h1>
-                    <p class="max-w-[500px] mb-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia obcaecati commodi voluptatem qui quas neque laudantium sint</p>
-                    <MyLink class="m-0" href="javascript:void(0)">Ver mais</MyLink>
+                    <h1 class="text-[40px] md:text-[50px] max-w-96 mb-[20px] font-semibold">Elekro One+ série FM-F31</h1>
+                    <p class="max-w-[500px] mb-2">Com a Elekro, você tem acesso conveniente à sua casa sem precisar de chaves. Seja através de impressão digital, cartão de acesso, senha ou aplicativo.</p>
+                    <p class="max-w-[500px] mb-[20px]">Aprimore sua rotina e garanta sua segurança.</p>
+                    <MyLink class="ml-0" href="javascript:void(0)">Ver mais</MyLink>
                 </div>
             </div>
         </section>
@@ -40,7 +41,7 @@
         </section>
         <section class="pt-[100px] text-[#333]">
             <div class="container w-full max-w-[1250px] mx-auto px-3">
-                <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Lorem Ipsum</h2>
+                <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Ideal para</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-3 mb-[50px]">
                     <template v-for="obj,index in capacidades" :key="index">
                         <div class="px-10 py-3">
@@ -48,8 +49,10 @@
                                 <Icon :name="obj.icon"/>
                             </div>
                             <h3 class="text-xl my-3 font-semibold">{{ obj.title }}</h3>
-                            <p class="text-sm">{{ obj.text }}</p>
-                            
+                            <p v-if="typeof(obj.text) === 'string'" class="text-sm">{{ obj.text }}</p>
+                            <ul v-else class="text-sm list-decimal pl-3">
+                                <li class="mb-1" v-for="text,index in obj.text" :key="index">{{ text }}</li>
+                            </ul>
                         </div>
                     </template>
                 </div>
@@ -219,41 +222,31 @@ const resursos:ReadonlyArray<Recurso> = [
 ]
 
 type Capacidade = {
-    icon:string,
-    title:string,
-    text:string
+    icon:string;
+    title:string;
+    text:string | Array<string>;
 }
 const capacidades:ReadonlyArray<Capacidade> = [
     {
-        icon:'fa-solid:fingerprint',
-        title:'Lorem Ipsum',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+        icon:'simple-icons:airbnb',
+        title:'Airbnb e Locações por Temporada ',
+        text:'Ofereça uma experiência de check-in e check-out sem complicações para seus hóspedes, com a possibilidade de criação de senhas com data de entrada e saída, melhore o gerenciamento dos hóspedes, eficiência operacional e a satisfação dos clientes.'
     },
     {
-        icon:'i-bi:file-text-fill',
-        title:'Lorem Ipsum',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+        icon:'material-symbols:real-estate-agent',
+        title:'Imobiliárias',
+        text:'Utilizando a função da senha dinâmica ou programada, dê acesso a imobiliária de forma rápida e fácil, sem expor sua senha pessoal.'
     },
     {
-        icon: 'i-ion:notifications-sharp',
-        title:'Lorem Ipsum',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
+        icon: 'mdi:company',
+        title:'Empresas',
+        text:[
+            'Garanta a segurança de sua empresa, com o controle e gerenciamento de acesso dos colaboradores a areas restritas, com a gestão de quem/quando/horário acessou o local.',
+            'Inclua e exclua acessos de forma rápida via celular ou tablet.',
+            'Cadastre até 100 biometrias, e até 100 senhas numérica.',
+            'Elimine a necessidade de fazer chaves e realizar troca de miolos.'
+        ]
     },
-    {
-        icon: 'i-bi:unlock-fill',
-        title:'Lorem Ipsum',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
-    },
-    {
-        icon: 'fa-solid:key',
-        title:'Lorem Ipsum',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
-    },
-    {
-        icon: 'fa:tag',
-        title:'Lorem Ipsum',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus sed veniam ab inventore, quas exercitationem obcaecati distinctio iusto. Dicta eum cum distinctio error, eos totam maiores voluptatibus deserunt quod!'
-    }
 ];
 
 // const variation:Ref<string> = ref('preta');
