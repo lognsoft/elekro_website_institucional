@@ -31,7 +31,7 @@
             <div class="text-[#333] bg-white col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <h2>Elekro One+</h2>
+                        <h2>Elekro One+ Série FM-F31</h2>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
@@ -86,7 +86,7 @@ const features:Array<Feature> = [
     },
     {
         icon:'game-icons:metal-bar',
-        text:'Aço Inoxidável',
+        text:'Tratamento Anticorrosivo, Padrão C4. ',
         svg:false
     },
     {
@@ -159,16 +159,16 @@ const features:Array<Feature> = [
         text:'Processador de Alto Desempenho',
         svg:false
     },
-    {
-        icon:'fa-solid:award',
-        text:'Garantia de 12 Meses',
-        svg:false
-    },
-    {
-        icon:'fa6-solid:headset',
-        text:'Suporte Técnico 24/7',
-        svg:false
-    }
+    // {
+    //     icon:'fa-solid:award',
+    //     text:'Garantia de 12 Meses',
+    //     svg:false
+    // },
+    // {
+    //     icon:'fa6-solid:headset',
+    //     text:'Suporte Técnico 24/7',
+    //     svg:false
+    // }
 ]
 
 
@@ -179,7 +179,7 @@ const images:Array<ObjSlide> = [
     },
     {
         img:'bm-slide/bg2.jpg',
-        text:'Conexão<br/>sob Medida'
+        text:'Conectividade<br/>sob Medida'
     },
 ];
 </script>
