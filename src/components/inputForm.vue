@@ -1,10 +1,9 @@
 <template>
     <div>
         <div class="input" :class="{
-            // focus
-                'border-gray-300':!inputFocus && !inputValid,
-                'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
-                'border-red-400 placeholder:text-red-400':(inputFocus && inputValid) || (model?.length >= 0 && !inputValid)
+                'border-[#333]':!inputFocus && !inputValid,
+                'border-[#1c54d9]':inputFocus || inputValid || (model?.length > 0 && inputValid),
+                'border-red-400 placeholder:text-red-400':(!inputValid && required) || (model?.length >= 0 && !inputValid && required)
             }">
             <label v-if="ico !== ''" :for="id">
                 <Icon :name="ico"/>
@@ -40,14 +39,14 @@
             />
         </div>
         <template v-if="required">
-            <small v-show="required && !inputValid" class="small-alert text-red-400">campo obrigatório</small>
+            <small v-show="required && !inputValid && model.length > 0" class="small-alert text-red-400">campo obrigatório</small>
         </template>
     </div>
 </template>
 
 <script setup lang="ts">
 import type { InputForm } from "~/types";
-const inputValid:Ref<boolean> = ref(true);
+const inputValid:Ref<boolean> = ref(false);
 const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
 

@@ -107,6 +107,12 @@ const infos:Info[] = [
         title:"Projetos",
         text:'<p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p><p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>',
         svg:false
+    },
+    {
+        icon:"fa-solid:award",
+        title:"Garantia Estendida de Confiança",
+        text:"Acompanhada de uma garantia estendida de 12 meses, reforçando nosso compromisso com a qualidade e a confiabilidade da Elekro.",
+        svg:false
     }
 ]
 
@@ -115,7 +121,7 @@ const infos:Info[] = [
 <style scoped>
 
 .box{
-    @apply bg-[#f7f8fb] rounded-lg py-5 px-4
+    @apply py-5 px-4
 }
 .box .icon{
     @apply inline-flex w-[40px] h-[40px] items-center justify-center

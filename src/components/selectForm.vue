@@ -1,6 +1,6 @@
 <template>
     <div class="select" :class="{
-        'border-gray-300':!inputFocus,
+        'border-[#333]':!inputFocus,
         'border-[#1c54d9]':inputFocus,
         'bg-gray-100':disabled
         }">

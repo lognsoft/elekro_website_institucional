@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="textarea" :class="{
-        'border-gray-300':!inputFocus && !inputValid,
-        'border-[#1c54d9]':(inputFocus && inputValid) || (model?.length > 0 && inputValid),
-        'border-red-400':(inputFocus && inputValid) || (model?.length >= 0 && !inputValid)
+        'border-[#333]':!inputFocus && !inputValid,
+        'border-[#1c54d9]':inputFocus || inputValid || (model?.length > 0 && inputValid),
+        'border-red-400 placeholder:text-red-400':(inputFocus && !inputValid) || (model?.length >= 0 && !inputValid)
         }">
             <label v-if="ico !== ''" :for="id">
                 <Icon class="text-xl" :name="ico"/> <span class="text-gray-400">{{ placeholder }}</span>
@@ -18,14 +18,15 @@
                 @focus="focus"
                 @focusout="focus"
                 :disabled="disabled"
+                :minlength="minLength"
             ></textarea>
         </div>
-        <small v-show="required === true && inputValid == false" class="small-alert text-red-400">campo obrigatório</small>
+        <small v-show="required === true && inputValid == false && model.length > 0" class="small-alert text-red-400">campo obrigatório</small>
     </div>
 </template>
 
 <script setup lang="ts">
-const inputValid:Ref<boolean> = ref(true);
+const inputValid:Ref<boolean> = ref(false);
 const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
 const props = defineProps({
@@ -56,6 +57,10 @@ const props = defineProps({
     disabled:{
         type:Boolean,
         default:false,
+    },
+    minLength:{
+        type:Number,
+        default:6
     },
     modelValue:{
         type:String,
@@ -93,7 +98,7 @@ watchEffect(() => {
     @apply border-[1px] overflow-hidden rounded-lg
 }
 .textarea > label{
-    @apply flex text-base items-center gap-1 border-b-[1px] border-gray-300 h-[40px] px-3 text-[#333]
+    @apply flex text-base items-center gap-1 border-b-[1px] border-[#333] h-[40px] px-3 text-[#333]
 }
 .textarea > textarea{
     @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-sm bg-transparent
