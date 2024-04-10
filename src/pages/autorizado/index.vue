@@ -33,7 +33,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2 lg:gap-0">
                     <template v-for="info,index in infos" :key="index">
                         <div class="grid grid-cols-1 lg:grid-cols-2">
-                            <div class="bg-black text-white min-h-[250px] md:min-h-[360px] lg:min-h-[300px] p-4 flex items-center">
+                            <div class="bg-black text-white aspect-[1/1] p-4 flex items-center">
                                 <div class="w-full">
                                     <h2 class="text-3xl lg:text-4xl mb-3 font-bold">{{ info.title }}</h2>
                                     <div v-html="info.text"></div>
@@ -41,10 +41,10 @@
                             </div>
                             <figure :class="{'lg:order-first':(index + 1) % 2 == 0}">
                                 <template v-if="info.img !== ''">
-                                    <img class="min-h-[300px] w-full object-cover" :src="info.img" alt="lorem ipsum"/>
+                                    <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" alt="lorem ipsum"/>
                                 </template>
                                 <template v-else>
-                                    <img class="min-h-[300px] w-full object-cover" src="/images/elekro-banner.jpg" alt="lorem ipsum"/>
+                                    <img class="h-full w-full object-cover aspect-[1/1]" src="/images/elekro-banner.jpg" alt="lorem ipsum"/>
                                 </template>
                             </figure>
                         </div>
