@@ -57,120 +57,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Feature, ObjSlide } from '~/types';
-
-const features:Array<Feature> = [
-    {
-        icon:'mdi:shield-lock',
-        text:'Fechadura inteligente de embutir, para portas com espessura entre 30 e 60mm',
-        svg:false
-    },
-    {
-        icon:'ri:contract-fill',
-        text:'Padrão ABNT',
-        svg:false
-    },
-    {
-        icon:'<svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192.756 192.756"><path d="M64.363 133.648c-17.218 0-31.24-14.021-31.24-31.191 0-17.218 14.022-31.239 31.24-31.239 17.17 0 31.192 14.021 31.192 31.239 0 17.17-14.022 31.191-31.192 31.191z" fill-rule="evenodd" clip-rule="evenodd"/><path d="M154.696 133.744c18.22-42.543 14.213-85.086-12.258-102.256-25.135-16.311-62.766-5.056-93.386 24.896 20.031-15.405 42.686-19.555 56.519-8.394 17.646 14.164 13.83 48.123-8.586 75.833-2.91 3.576-6.057 6.914-9.253 10.064l66.964-.143z" fill-rule="evenodd" clip-rule="evenodd"/></svg>',
-        text:'Selo anatel',
-        svg:true
-    },
-    {
-        icon:'game-icons:door-handle',
-        text:'Maçaneta reversível',
-        svg:false
-    },
-    {
-        icon:'fa6-solid:cloud-showers-water',
-        text:'IP65 - Boa proteção contra água e poeira',
-        svg:false,
-    },
-    {
-        icon:'game-icons:metal-bar',
-        text:'Alumínio - Tratamento anticorrosivo',
-        svg:false
-    },
-    {
-        icon:'fluent:phone-tablet-20-filled',
-        text:'Gestão de abertura via aplicativo',
-        svg:false
-    },
-    {
-        icon:'mingcute:volume-mute-fill',
-        text:'Modo silencioso',
-        svg:false
-    },
-    {
-        icon:'material-symbols:nest-doorbell-visitor',
-        text:'Modo de acesso para visitantes',
-        svg:false,
-    },
-    {
-        icon:'ic:sharp-do-disturb-on',
-        text:'Modo não perturbe',
-        svg:false,
-    },
-    {
-        icon:'material-symbols:notifications-unread-rounded',
-        text:'Notificação em tempo real',
-        svg:false,
-    },
-    {
-        icon:'teenyicons:password-solid',
-        text:'Senhas dinâmicas',
-        svg:false,
-    },
-    {
-        icon:'fa-solid:fingerprint',
-        text:'Até 100 cadastros de biometria',
-        svg:false
-    },
-    {
-        icon:'teenyicons:password-solid',
-        text:'Até 100 cadastros de senhas numéricas',
-        svg:false
-    },
-    {
-        icon:'fa-solid:key',
-        text:'Acesso através de chave mestra',
-        svg:false
-    },
-    {
-        icon:'mdi:card',
-        text:'Acesso através de tag',
-        svg:false
-    },
-    {
-        icon:'fa6-solid:door-open',
-        text:'Interação com casa anteligente',
-        svg:false
-    },
-    {
-        icon:'game-icons:battery-100',
-        text:'Alimentação via pilhas AA',
-        svg:false
-    },
-    {
-        icon:'bi:usb-c-fill',
-        text:'USB C',
-        svg:false
-    },
-    {
-        icon:'basil:processor-solid',
-        text:'Processador de alto desempenho',
-        svg:false
-    },
-    // {
-    //     icon:'fa-solid:award',
-    //     text:'Garantia de 12 Meses',
-    //     svg:false
-    // },
-    // {
-    //     icon:'fa6-solid:headset',
-    //     text:'Suporte Técnico 24/7',
-    //     svg:false
-    // }
-]
+import { features } from "~/core/constants";
+import type { ObjSlide } from '~/core/types';
 
 
 const images:Array<ObjSlide> = [
@@ -256,4 +144,4 @@ const images:Array<ObjSlide> = [
     /* .my-link{#1a6bd9
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     } */
-</style>
+</style>~/core/types

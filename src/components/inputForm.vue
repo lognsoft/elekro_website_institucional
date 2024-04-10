@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import type { InputForm } from "~/types";
+import type { InputForm } from "~/core/types";
 const inputValid:Ref<boolean> = ref(false);
 const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
@@ -108,4 +108,4 @@ watchEffect(() => {
 .input > input{
     @apply w-full outline-none h-[40px] flex items-center px-3 text-sm bg-transparent
 }
-</style>
+</style>~/core/types

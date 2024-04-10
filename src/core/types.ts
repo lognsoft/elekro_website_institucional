@@ -1,8 +1,7 @@
 export type Info = {
-    icon:string;
+    img:string;
     title: string;
     text: string;
-    svg:boolean;
 }
 export type Feature = {
     icon:string;

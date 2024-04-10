@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Option } from '~/types';
+import type { Option } from '~/core/types';
 const inputFocus:Ref<boolean> = ref(false);
 type SelectForm = {
     ico:string,
@@ -79,4 +79,4 @@ watchEffect(() => {
 .select > select{
     @apply w-full px-2 outline-none text-sm h-[40px] bg-transparent border-none shadow-none
 }
-</style>
+</style>~/core/types

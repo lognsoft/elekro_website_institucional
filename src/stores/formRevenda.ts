@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import type { Form, Option, Country, Province, City } from '~/types';
+import type { Form, Option, Country, Province, City } from '~/core/types';
 
 const formRevenda = defineStore('formulario-revenda',() => {
     //estados reativos

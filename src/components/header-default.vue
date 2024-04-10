@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { rotas } from '~/constants';
+import { rotas } from '~/core/constants';
 
 const bgWhite:Ref<boolean> = ref(false);
 const route = useRoute();
@@ -106,4 +106,4 @@ watch(() => route.path, (newValue) => {
     .nav-list a:hover{
         @apply hover:opacity-100 duration-200
     }
-</style>
+</style>~/core/constants

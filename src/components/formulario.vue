@@ -157,7 +157,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Form } from '~/types';
+import type { Form } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
 const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
@@ -310,4 +310,4 @@ const messageSubmit = computed(():string => {
 
 
 
-</script>
+</script>~/core/types

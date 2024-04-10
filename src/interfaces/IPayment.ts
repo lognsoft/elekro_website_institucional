@@ -1,4 +1,4 @@
-import type { ObjectForm } from "~/types";
+import type { ObjectForm } from "~/core/types";
 
 export default interface Payment {
     fullName:ObjectForm;

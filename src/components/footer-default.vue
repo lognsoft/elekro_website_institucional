@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Link } from "~/types";
+import type { Link } from "~/core/types";
 const links:Link[] = [
     {
         sub:'disponível na',
@@ -98,4 +98,4 @@ const cards:Card[] = [
 .icon-store{
     @apply text-3xl inline-flex items-center justify-center
 }
-</style>~/app/constants
+</style>~/app/constants~/core/types
