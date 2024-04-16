@@ -54,65 +54,65 @@ export const midiasSociais:ISocialMidia[] = [
 //página autorizado
 export const infos:ReadonlyArray<Info> = [
     {
-        img:'/images/trabalhadores.jpg',
+        img:'/images/autorizado/parceria-estrategica.jpg',
         title: 'Parceria estratégica',
-        text: 'Preços competitivos, negociação especial com MOQ, projetos e licitações.',
+        text: '<p>Preços competitivos, negociação especial com MOQ, projetos e licitações.</p><p>Com nossa base de dados, direcionaremos clientes interessados para distribuidores exclusivos na região, garantindo acesso fácil ao produto desejado.</p>',
     },
     {
-        img:'',
+        img:'/images/autorizado/analise-de-credito.jpeg',
         title:'Análise especial de crédito',
         text:'Condições especiais de prazo de pagamento para parceiros de relacionamento estratégicos com a Elekro.',
     },
     {
-        img:'',
+        img:'/images/autorizado/lead-time-de-entrega.jpg',
         title:'Lead-time de entrega',
         text:'Em até duas semanas após a aprovação do pedido.',
     },
+    // {
+    //     img:'',
+    //     title:'Parceria comercial',
+    //     text:'Com nossa base de dados, direcionaremos clientes interessados para distribuidores exclusivos na região, garantindo acesso fácil ao produto desejado.',
+    // },
     {
-        img:'',
-        title:'Parceria comercial',
-        text:'Com nossa base de dados, direcionaremos clientes interessados para distribuidores exclusivos na região, garantindo acesso fácil ao produto desejado.',
-    },
-    {
-        img:'',
+        img:'/images/autorizado/suporte-tecnico.png',
         title:'Suporte Técnico',
         text:'Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.',
     },
     {
-        img:'',
+        img:'/images/autorizado/marketing-promocao.png',
         title:"Marketing e Promoção",
         text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
     },
     {
-        img:'',
+        img:'/images/autorizado/inovacoes-elekro.png',
         title:"Participação nas inovações da Elekro",
         text:"Implementamos suas sugestões de melhorias em conjunto com nossa equipe de P&D.",
     },
     {
-        img:'',
+        img:'/images/autorizado/roadmap.png',
         title:"Roadmap",
         text:"Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.",
     },
+    // {
+    //     img:'',
+    //     title:"Certificação",
+    //     text:"Cumprimos integralmente com todos os padrões estabelecidos pela Anatel, garantindo a qualidade e conformidade conforme lei nº 9.472.",
+    // },
     {
-        img:'',
-        title:"Certificação",
-        text:"Cumprimos integralmente com todos os padrões estabelecidos pela Anatel, garantindo a qualidade e conformidade conforme lei nº 9.472.",
-    },
-    {
-        img:'',
+        img:'/images/autorizado/conformidade.jpeg',
         title:"Conformidade",
-        text:"Nossa adesão ao padrão ABNT 14913 garante aos nossos clientes e instaladores uma experiência tranquila e uma instalação descomplicada.",
+        text:"<p>Nossa adesão ao padrão ABNT 14913 garante aos nossos clientes e instaladores uma experiência tranquila e uma instalação descomplicada.</p><p>Cumprimos integralmente com todos os padrões estabelecidos pela Anatel, garantindo a qualidade e conformidade conforme lei nº 9.472.</p>",
     },
     {
-        img:'',
+        img:'/images/autorizado/projetos.jpeg',
         title:"Projetos",
         text:'<p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p><p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>',
     },
-    {
-        img:'',
-        title:"Garantia Estendida de Confiança",
-        text:"Acompanhada de uma garantia estendida de 12 meses, reforçando nosso compromisso com a qualidade e a confiabilidade da Elekro.",
-    }
+    // {
+    //     img:'',
+    //     title:"Garantia Estendida de Confiança",
+    //     text:"Acompanhada de uma garantia estendida de 12 meses, reforçando nosso compromisso com a qualidade e a confiabilidade da Elekro.",
+    // }
 ]
 
 //página home

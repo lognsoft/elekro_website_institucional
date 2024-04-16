@@ -12,7 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
+        <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/autorizado/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <h2 class="mb-[40px] text-center text-2xl md:text-4xl">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
