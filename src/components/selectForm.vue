@@ -2,7 +2,7 @@
     <div class="select" :class="{
         'border-[#333]':!inputFocus,
         'border-[#1c54d9]':inputFocus,
-        'bg-gray-100':disabled
+        // 'bg-gray-100':disabled
         }">
         <span v-if="ico !== ''">
             <Icon :name="ico"/>

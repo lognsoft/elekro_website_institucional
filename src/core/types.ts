@@ -21,6 +21,7 @@ export type ObjectForm = {
 }
 
 
+
 //formulários
 export type Option = {
     option:string,
@@ -114,6 +115,20 @@ export type City = {
 }
 export type GeoNames<T> = {
     geonames:Array<T>;
+}
+export type FormStateData = {
+    Assunto:string | undefined,
+    Nome:string | undefined,
+    Email:string | undefined,
+    Empresa:string | undefined,
+    Telefone:string | undefined,
+    Telefone_fixo:string | undefined,
+    'CPF/CNPJ':string | undefined,
+    Setor:string | undefined,
+    CEP:string | undefined,
+    Estado:string | undefined,
+    Cidade:string | undefined,
+    Mensagem:string | undefined
 }
 
 //fim formulários

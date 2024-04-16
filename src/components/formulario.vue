@@ -157,7 +157,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Form } from '~/core/types';
+import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
 const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
@@ -200,21 +200,6 @@ const validate = ():boolean => {
     }
 
     return flag;
-}
-
-type FormStateData = {
-    Assunto:string | undefined,
-    Nome:string | undefined,
-    Email:string | undefined,
-    Empresa:string | undefined,
-    Telefone:string | undefined,
-    Telefone_fixo:string | undefined,
-    'CPF/CNPJ':string | undefined,
-    Setor:string | undefined,
-    CEP:string | undefined,
-    Estado:string | undefined,
-    Cidade:string | undefined,
-    Mensagem:string | undefined
 }
 
 const createForm = (obj:Form):FormStateData => {
