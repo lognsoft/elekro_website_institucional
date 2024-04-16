@@ -77,6 +77,6 @@ watchEffect(() => {
 }
 
 .select > select{
-    @apply w-full px-2 outline-none text-sm h-[40px] bg-transparent border-none shadow-none
+    @apply w-full px-2 outline-none text-sm h-[40px] bg-transparent border-none shadow-none appearance-none
 }
 </style>~/core/types

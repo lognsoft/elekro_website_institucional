@@ -16,30 +16,16 @@
         <section class="pt-11">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <h2 class="mb-[40px] text-center text-2xl md:text-4xl">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
-                <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                <div class="grid grid-cols-1 gap-2 md:gap-0">
                     <template v-for="info,index in infos" :key="index">
-                        <div class="box">
-                            <div class="flex items-center gap-x-2 mb-3">
-                                <div v-if="!info.svg" class="icon">
-                                    <Icon :name="info.icon"/>
-                                </div>
-                                <div v-else class="icon" v-html="info.icon"></div>
-                                <h3 class="title">{{ info.title }}</h3>
-                            </div>
-                            <div class="text" v-html="info.text"></div>
-                        </div>
-                    </template>
-                </div> -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2 lg:gap-0">
-                    <template v-for="info,index in infos" :key="index">
-                        <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="grid grid-cols-1 md:grid-cols-2">
                             <div class="bg-black text-white aspect-[1/1] p-4 flex items-center">
                                 <div class="w-full">
                                     <h2 class="text-3xl lg:text-4xl mb-3 font-bold">{{ info.title }}</h2>
                                     <div v-html="info.text"></div>
                                 </div>
                             </div>
-                            <figure :class="{'lg:order-first':(index + 1) % 2 == 0}">
+                            <figure :class="{'md:order-first':(index + 1) % 2 == 0}">
                                 <template v-if="info.img !== ''">
                                     <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" alt="lorem ipsum"/>
                                 </template>
