@@ -1,14 +1,26 @@
-import type IRouter from "../interfaces/IRouter"
-import type ISocialMidia from "../interfaces/ISocialMidia";
 import type {
     Info,
     Feature,
     Box,
     Recurso,
-    Capacidade
+    Capacidade,
+    Route,
+    Midia,
+    Slide
 } from "~/core/types";
 
-export const rotas:IRouter[] = [
+export const slide:ReadonlyArray<Slide> = [
+    {
+        img:'bm-slide/bg1.jpg',
+        text: 'Proteção<br/>e Elegância'
+    },
+    {
+        img:'bm-slide/bg2.png',
+        text:'Conexão<br/>sob Medida'
+    },
+];
+
+export const rotas:ReadonlyArray<Route> = [
     {
         path: "/",
         pathName: "Home",
@@ -18,16 +30,16 @@ export const rotas:IRouter[] = [
         pathName: "Elekro One+",
     },
     {
-        path: "/elekro",
-        pathName: "Elekro",
-    },
-    {
         path: "/autorizado",
         pathName: "Seja um autorizado",
+    },
+    {
+        path: "/elekro",
+        pathName: "Sobre a Elekro",
     }
 ];
 
-export const midiasSociais:ISocialMidia[] = [
+export const midiasSociais:ReadonlyArray<Midia> = [
     {
         title: "instagram",
         icon: "ri:instagram-fill",
@@ -116,7 +128,7 @@ export const infos:ReadonlyArray<Info> = [
 ]
 
 //página home
-export const features:Array<Feature> = [
+export const features:ReadonlyArray<Feature> = [
     {
         icon:'mdi:shield-lock',
         text:'Fechadura inteligente de embutir, para portas com espessura entre 30 e 60mm',

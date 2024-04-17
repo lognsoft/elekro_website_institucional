@@ -11,7 +11,7 @@
         <Meta name="twitter:card" content="summary_large_image"/>
     </Head>
     <main>
-        <Slide :images="images"/>
+        <Slide :images="slide"/>
         <section class="grid grid-cols-1 lg:grid-cols-2">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
@@ -57,20 +57,7 @@
 </template>
 
 <script setup lang="ts">
-import { features } from "~/core/constants";
-import type { ObjSlide } from '~/core/types';
-
-
-const images:Array<ObjSlide> = [
-    {
-        img:'bm-slide/bg1.jpg',
-        text: 'Proteção<br/>e Elegância'
-    },
-    {
-        img:'bm-slide/bg2.png',
-        text:'Conexão<br/>sob Medida'
-    },
-];
+import { features, slide } from "~/core/constants";
 </script>
 
 <style scoped>

@@ -7,6 +7,9 @@
 </template>
 
 <script setup lang="ts">
-import type IMyLink from '~/interfaces/IMyLink';
-const props:Readonly<IMyLink> = defineProps(['href', 'reverse']) as Readonly<IMyLink>;
+import type { MyLink } from '~/core/types';
+const props = withDefaults(defineProps<MyLink>(),{
+    href:'',
+    reverse:false
+})
 </script>

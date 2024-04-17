@@ -1,3 +1,12 @@
+export type Route = {
+    path:string;
+    pathName:string;
+}
+export type Midia = {
+    title: string;
+    icon: string;
+    href: string;
+}
 export type Info = {
     img:string;
     title: string;
@@ -9,17 +18,10 @@ export type Feature = {
     svg:boolean;
 }
 
-export type ObjSlide = {
+export type Slide = {
     img:string,
     text:string,
 }
-
-export type ObjectForm = {
-    message:string,
-    validate:boolean
-    value:string
-}
-
 
 
 //formulários
@@ -169,4 +171,8 @@ export type Box = {
 export type Recurso = {
     title: string,
     text: string
+}
+export type MyLink = {
+    href: string;
+    reverse: boolean;
 }
