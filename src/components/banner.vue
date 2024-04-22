@@ -30,18 +30,6 @@ onMounted(():void => {
 function fadeContent(){
     let opc:number = Number(document.scrollingElement?.scrollTop);
     getOpacity(opc);
-    // if(newNumber > atualTop.value){
-    //     if(opacity.value > 0){
-    //         opacity.value -= 10;
-    //         atualTop.value = newNumber;
-    //     }
-    // } else {
-    //     if(opacity.value < 100){
-    //         opacity.value += 10;
-    //         atualTop.value = newNumber;
-    //     }
-    // }
-    // console.log(newNumber);
 }
 
 const getOpacity = (opc:number):void => {
