@@ -12,7 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Banner class="bg-center bg-cover bg-no-repeat bg-[url('/images/structure.jpg')]" title="Elekro" text="Design e tecnologia, aliados à segurança"/>
+        <Banner class="bg-[url('/images/structure.jpg')]" title="Elekro" text="Design e tecnologia, aliados à segurança"/>
         <section class="elekro-text">
             <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
                 <div class="text-base font-light mb-6">

@@ -128,11 +128,12 @@
                         </div>
                         <div class="col-span-1 sm:col-span-2">
                             <SelectForm
-                                name="cidade*"
-                                placeholder="Cidade"
+                                name="cidade"
+                                placeholder="Cidade*"
                                 v-model="state.cidade"
                                 :options="cities"
                                 :disabled="disabledCities"
+                                :required="true"
                             />
                         </div>
                         <div class="col-span-1 sm:col-span-2">

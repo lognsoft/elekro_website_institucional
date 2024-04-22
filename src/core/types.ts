@@ -1,3 +1,8 @@
+export type Banner = {
+    title:string,
+    text:string
+}
+
 export type Route = {
     path:string;
     pathName:string;
