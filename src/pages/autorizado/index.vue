@@ -15,9 +15,9 @@
         <Banner class="bg-[url('/images/autorizado/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
-                <div class="text-center mb-[40px]">
+                <div class="text-center mb-[40px] px-3 ">
                     <h2 class="mb-3 text-center text-2xl md:text-4xl">Abra as portas para o futuro com a Elekro</h2>
-                    <p class="text-[#626262] text-lg md:text-xl mb-4">
+                    <p class="text-[#626262] text-base md:text-xl mb-4">
                         Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
                         A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
                         incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.
