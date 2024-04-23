@@ -29,7 +29,7 @@ const props:Readonly<MyLinkTwo> = defineProps({
 
 <style scoped>
 .link{
-    @apply duration-200
+    @apply duration-200 text-base
 }
 
 .icon{

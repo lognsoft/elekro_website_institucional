@@ -16,12 +16,16 @@
         <section class="pt-11">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <div class="text-center mb-[40px]">
-                    <h2 class="mb-3 text-center text-2xl md:text-4xl">Inicie Sua Jornada ao Lado da Elekro</h2>
-                    <p class="font-semibold text-[#626262] text-lg md:text-xl mb-4">
-                        Como parceiro autorizado da Elekro, você desfruta do melhor serviço, entrega,
-                        qualidade, aliados ao melhor preço.
+                    <h2 class="mb-3 text-center text-2xl md:text-4xl">Abra as portas para o futuro com a Elekro</h2>
+                    <p class="text-[#626262] text-lg md:text-xl mb-4">
+                        Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
+                        A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
+                        incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.
+                        Essa integração possibilita a automação de tarefas e a criação de cenários personalizados,
+                        contribuindo para a construção de ambientes seguros, convenientes e livres de estresse para residentes e funcionários.
                     </p>
                     <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um parceiro elekro</button>
+                    <h2 class="mt-11 text-center text-2xl md:text-4xl">Explore os benefícios Exclusivos e diferenciais da Elekro</h2>
                 </div>
 
                 <div class="grid grid-cols-1 gap-2 md:gap-0">

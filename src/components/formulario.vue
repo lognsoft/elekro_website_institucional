@@ -1,162 +1,3 @@
-<template>
-    <section class="py-11" id="formSection">
-        <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
-            <h2 class="mb-[20px] text-center text-2xl md:text-4xl">
-                Benefícios de Ser um Parceiro Elekro
-            </h2>
-            <div class="relative">
-                <div
-                    class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
-                    :class="{
-                        'scale-0':!submitAsync, 'scale-100':submitAsync,
-                        'text-[#1c54d9]':submitFlag === undefined,
-                        'text-red-400':submitFlag === false,
-                        'text-green-300':submitFlag === true,
-                    }
-                ">
-                    <Icon class="text-8xl" :name="iconSubmit"/>
-                    <h4 class="text-3xl">
-                        {{ messageSubmit }}
-                    </h4>
-                </div>
-                <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync}" method="POST" @submit.prevent="submit()" disabled="true">
-                    
-                    <div class="mb-[15px]">
-                        <InputForm
-                            id="nome"
-                            name="nome"
-                            placeholder="Nome completo*"
-                            :required="true"
-                            :min-length="3"
-                            v-model="state.nome"
-                            :disabled="submitAsync"
-                        />
-                    </div>
-                    <div class="mb-[15px]">
-                        <InputForm
-                            id="email"
-                            name="email"
-                            placeholder="E-mail*"
-                            :required="true"
-                            type="email"
-                            v-model="state.email"
-                            :disabled="submitAsync"
-                        />
-                    </div>
-                    <div class="mb-[15px]">
-                        <InputForm
-                            id="empresa"
-                            name="nome"
-                            placeholder="Empresa*"
-                            :required="true"
-                            :min-length="4"
-                            v-model="state.empresa"
-                            :disabled="submitAsync"
-                        />
-                    </div>
-                    <div class="mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]">
-                        <div class="col-span-1 sm:col-span-2">
-                            <InputForm
-                                id="celular"
-                                name="celular"
-                                placeholder="Celular*"
-                                :max-length="15"
-                                @mask="phoneMask()"
-                                v-model="state.phone"
-                                :required="true"
-                                :min-length="14"
-                                :disabled="submitAsync"
-                            />
-                        </div>
-                        <div class="col-span-1 sm:col-span-2">
-                            <InputForm
-                                id="telefone"
-                                name="telefone"
-                                placeholder="Telefone"
-                                :max-length="14"
-                                @mask="fixedPhoneMask()"
-                                v-model="state.fixedPhone"
-                                :min-length="14"
-                                :disabled="submitAsync"
-                            />
-                        </div>
-                        <div class="col-span-1 sm:col-span-2">
-                            <InputForm
-                                id="cpf_cnpj"
-                                name="cpf_cnpj"
-                                placeholder="CPF/CNPJ*"
-                                v-model="state.cpf_cnpj"
-                                :required="true"
-                                :min-length="14"
-                                :max-length="18"
-                                @mask="cpfCnpjMask()"
-                                :disabled="submitAsync"
-                            />
-                        </div>
-                        
-                        <div class="col-span-1 sm:col-span-2">
-                            <SelectForm
-                                placeholder="Setor*"
-                                name="setor"
-                                :options="setores"
-                                :required="true"
-                                v-model="state.setor"
-                                :disabled="submitAsync"
-                            />
-                        </div>
-
-                        <div class="col-span-1 sm:col-span-2">
-                            <InputForm
-                                id="cep"
-                                name="cep"
-                                placeholder="CEP"
-                                v-model="state.cep"
-                                :min-length="9"
-                                :max-length="9"
-                                @mask="cepMask()"
-                                :disabled="submitAsync"
-                            />
-                        </div>
-                        <div class="col-span-1 sm:col-span-2">
-                            <SelectForm
-                                placeholder="Estado*"
-                                name="estado"
-                                v-model="state.estado"
-                                :options="provinces"
-                                :disabled="submitAsync"
-                            />
-                        </div>
-                        <div class="col-span-1 sm:col-span-2">
-                            <SelectForm
-                                name="cidade"
-                                placeholder="Cidade*"
-                                v-model="state.cidade"
-                                :options="cities"
-                                :disabled="disabledCities"
-                                :required="true"
-                            />
-                        </div>
-                        <div class="col-span-1 sm:col-span-2">
-                            <SelectForm placeholder="Assunto*" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-[15px]">
-                        <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem*" v-model="state.message" :required="true" :disabled="submitAsync"/>
-                    </div>
-                    <div>
-                        <MyButton class="inline-flex items-center gap-x-1" type="submit" :disabled="submitAsync">
-                            Enviar
-                            <Icon name="bxs:paper-plane"/>
-                        </MyButton>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </section>
-</template>
-
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
@@ -290,4 +131,173 @@ const messageSubmit = computed(():string => {
 
 
 
-</script>~/core/types
+</script>
+
+<template>
+    <section class="py-11" id="formSection">
+        <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
+            <h2 class="mb-3 text-center text-2xl md:text-4xl">
+                Inicie sua jornada ao lado da Elekro
+            </h2>
+            <h3 class="mb-[20px] text-center text-[#626262] text-lg md:text-xl">Contate nosso time comercial</h3>
+            <div class="relative">
+                <div
+                    class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
+                    :class="{
+                        'scale-0':!submitAsync, 'scale-100':submitAsync,
+                        'text-[#1c54d9]':submitFlag === undefined,
+                        'text-red-400':submitFlag === false,
+                        'text-green-300':submitFlag === true,
+                    }
+                ">
+                    <Icon class="text-8xl" :name="iconSubmit"/>
+                    <h4 class="text-3xl">
+                        {{ messageSubmit }}
+                    </h4>
+                </div>
+                <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync}" method="POST" @submit.prevent="submit()" disabled="true">
+                    
+                    <div class="mb-[15px]">
+                        <InputForm
+                            id="nome"
+                            name="nome"
+                            placeholder="Nome completo*"
+                            :required="true"
+                            :min-length="3"
+                            v-model="state.nome"
+                            :disabled="submitAsync"
+                        />
+                    </div>
+                    <div class="mb-[15px]">
+                        <InputForm
+                            id="email"
+                            name="email"
+                            placeholder="E-mail*"
+                            :required="true"
+                            type="email"
+                            v-model="state.email"
+                            :disabled="submitAsync"
+                        />
+                    </div>
+                    <div class="mb-[15px]">
+                        <InputForm
+                            id="empresa"
+                            name="nome"
+                            placeholder="Empresa*"
+                            :required="true"
+                            :min-length="4"
+                            v-model="state.empresa"
+                            :disabled="submitAsync"
+                        />
+                    </div>
+                    <div class="mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]">
+                        <div class="col-span-1 sm:col-span-2">
+                            <InputForm
+                                id="celular"
+                                name="celular"
+                                placeholder="Celular*"
+                                :max-length="15"
+                                @mask="phoneMask()"
+                                v-model="state.phone"
+                                :required="true"
+                                :min-length="14"
+                                :disabled="submitAsync"
+                            />
+                        </div>
+                        <div class="col-span-1 sm:col-span-2">
+                            <InputForm
+                                id="telefone"
+                                name="telefone"
+                                placeholder="Telefone"
+                                :max-length="14"
+                                @mask="fixedPhoneMask()"
+                                v-model="state.fixedPhone"
+                                :min-length="14"
+                                :disabled="submitAsync"
+                            />
+                        </div>
+                        <div class="col-span-1 sm:col-span-2">
+                            <InputForm
+                                id="cpf_cnpj"
+                                name="cpf_cnpj"
+                                placeholder="CPF/CNPJ*"
+                                v-model="state.cpf_cnpj"
+                                :required="true"
+                                :min-length="14"
+                                :max-length="18"
+                                @mask="cpfCnpjMask()"
+                                :disabled="submitAsync"
+                            />
+                        </div>
+                        
+                        <div class="col-span-1 sm:col-span-2">
+                            <SelectForm
+                                placeholder="Setor*"
+                                name="setor"
+                                :options="setores"
+                                :required="true"
+                                v-model="state.setor"
+                                :disabled="submitAsync"
+                            />
+                        </div>
+
+                        <div class="col-span-1 sm:col-span-2">
+                            <InputForm
+                                id="cep"
+                                name="cep"
+                                placeholder="CEP*"
+                                v-model="state.cep"
+                                :min-length="9"
+                                :max-length="9"
+                                @mask="cepMask()"
+                                :disabled="submitAsync"
+                            />
+                        </div>
+                        <div class="col-span-1 sm:col-span-2">
+                            <SelectForm
+                                placeholder="Estado*"
+                                name="estado"
+                                v-model="state.estado"
+                                :options="provinces"
+                                :disabled="submitAsync"
+                            />
+                        </div>
+                        <div class="col-span-1 sm:col-span-2">
+                            <SelectForm
+                                name="cidade"
+                                placeholder="Cidade*"
+                                v-model="state.cidade"
+                                :options="cities"
+                                :disabled="disabledCities"
+                                :required="true"
+                            />
+                        </div>
+                        <div class="col-span-1 sm:col-span-2">
+                            <SelectForm placeholder="Assunto*" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-[15px]">
+                        <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem*" v-model="state.message" :required="true" :disabled="submitAsync"/>
+                    </div>
+                    <div>
+                        <MyButton class="inline-flex items-center gap-x-1" type="submit" :disabled="submitAsync">
+                            Enviar
+                            <Icon name="bxs:paper-plane"/>
+                        </MyButton>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center mt-8 text-[#626262] text-lg md:text-xl">
+                <p class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</p>
+                <MyLinkTwo :icon="false" href="/elekro-one-plus" class="nav-form">Saiba mais sobre a Elekro One+</MyLinkTwo>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style scoped>
+.nav-form{
+    @apply duration-200 underline text-[#1a6bd9]
+}
+</style>
