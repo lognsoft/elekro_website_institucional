@@ -1,8 +1,8 @@
 <template>
-    <section class="py-11">
+    <section class="py-11" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <h2 class="mb-[20px] text-center text-2xl md:text-4xl">
-                Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível
+                Benefícios de Ser um Parceiro Elekro
             </h2>
             <div class="relative">
                 <div
@@ -179,10 +179,8 @@ const {
     loadingCities
 } = formRevenda();
 
+
 getProvinces();
-
-
-
 const validate = ():boolean => {
     let flag:boolean = true;
 
@@ -202,7 +200,6 @@ const validate = ():boolean => {
 
     return flag;
 }
-
 const createForm = (obj:Form):FormStateData => {
     const {
         nome:Nome,
@@ -233,7 +230,6 @@ const createForm = (obj:Form):FormStateData => {
         Mensagem
     }
 }
-
 const submit = async ():Promise<void> => {
     let valid:boolean = validate();
     if(valid){
@@ -260,7 +256,6 @@ const submit = async ():Promise<void> => {
         },2000)
     }
 }
-
 const disabledCities = computed(():boolean => {
     let flag:boolean = false;
 
@@ -273,7 +268,6 @@ const disabledCities = computed(():boolean => {
     }
     return flag;
 })
-
 const iconSubmit = computed(():string => {
     let icon:string = "eos-icons:three-dots-loading"
     if(submitFlag.value === true){

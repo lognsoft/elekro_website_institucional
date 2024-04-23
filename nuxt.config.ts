@@ -16,7 +16,8 @@ export default defineNuxtConfig({
       'navigation',
       'pagination',
       'autoplay',
-      'effect-creative'
+      'effect-creative',
+      'parallax'
     ],
   },
   plugins:[

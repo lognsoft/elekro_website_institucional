@@ -54,14 +54,14 @@ const getOpacity = (opc:number):void => {
 
 <style scoped>
 .apresentacao{
-    @apply relative w-full flex items-center h-screen bg-center bg-cover bg-no-repeat bg-fixed;
+    @apply relative w-full flex items-center h-screen bg-center bg-cover bg-no-repeat bg-fixed overflow-hidden z-[-1];
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
     @apply absolute w-full h-full bg-black/40 top-0 left-0;
 }
 .content-container{
-    @apply sticky z-10 container mx-auto px-5 text-white gap-[-30px] duration-200 top-[50%] translate-y-[-50%] ;
+    @apply fixed z-10 container mx-auto px-5 text-white gap-[-30px] duration-200 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ;
 }
 .banner-title{
     @apply w-full text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px];

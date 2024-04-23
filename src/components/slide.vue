@@ -25,8 +25,8 @@
             :key="index"
         >
             <div class="slider-single" :style="`background-image: url('/images/${img}');`">
-                <div class="container max-w-xl md:max-w-6xl mx-auto px-11">
-                    <h1 class="relative z-10 text-center lg:text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px] pt-5 md:pt-6 lg:pt-0" v-html="text"></h1>
+                <div class="slide-contents">
+                    <h1 class="slide-title" v-html="text"></h1>
                 </div>
             </div>
         </swiper-slide>
@@ -38,14 +38,16 @@ import {
     SwiperPagination,
     SwiperNavigation,
     SwiperAutoplay,
-    SwiperEffectCreative
+    SwiperEffectCreative,
+    SwiperParallax
 } from '#imports';
 
 const modules = [
     SwiperPagination,
     SwiperNavigation,
     SwiperAutoplay,
-    SwiperEffectCreative
+    SwiperEffectCreative,
+    SwiperParallax
 ];
 
 defineProps(['images'])
@@ -66,6 +68,28 @@ defineProps(['images'])
 
 .slider-single::after{
     @apply absolute w-full h-screen bg-black opacity-25
+}
+
+.slide-contents{
+    @apply container max-w-xl md:max-w-6xl mx-auto px-11
+}
+.slide-contents .slide-title{
+    @apply
+    sticky
+    top-[50%]
+    z-10
+    text-center
+    lg:text-start
+    text-[40px]
+    md:text-[50px]
+    lg:text-[80px]
+    font-bold
+    leading-[40px]
+    md:leading-[50px]
+    lg:leading-[100px]
+    pt-5
+    md:pt-6
+    lg:pt-0
 }
 
 .swiper-button-prev,

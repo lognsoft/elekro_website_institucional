@@ -15,7 +15,15 @@
         <Banner class="bg-[url('/images/autorizado/AdobeStock.jpeg')]" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
-                <h2 class="mb-[40px] text-center text-2xl md:text-4xl">Ao tornar-se um autorizado Elekro, disponibilizamos</h2>
+                <div class="text-center mb-[40px]">
+                    <h2 class="mb-3 text-center text-2xl md:text-4xl">Inicie Sua Jornada ao Lado da Elekro</h2>
+                    <p class="font-semibold text-[#626262] text-lg md:text-xl mb-4">
+                        Como parceiro autorizado da Elekro, você desfruta do melhor serviço, entrega,
+                        qualidade, aliados ao melhor preço.
+                    </p>
+                    <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um parceiro elekro</button>
+                </div>
+
                 <div class="grid grid-cols-1 gap-2 md:gap-0">
                     <template v-for="info,index in infos" :key="index">
                         <div class="grid grid-cols-1 md:grid-cols-2">
@@ -38,15 +46,25 @@
                 </div>
             </div>
         </section>
-        <Formulario/>
+        <Formulario ref="formulario"/>
     </main>
 </template>
 
 <script setup lang="ts">
-
 //tipos
 import { infos } from '~/core/constants';
+let formulario:HTMLElement | null = null;
 
+function scrollEl(){
+    formulario = document.querySelector("#formSection")
+    if(formulario !== null){
+        window.scroll({
+            top: formulario.offsetTop - 80,
+            behavior: "smooth"
+        })
+    }
+}
+onUnmounted(() => formulario = null);
 </script>
 
 <style scoped>
@@ -66,4 +84,8 @@ import { infos } from '~/core/constants';
 .box .text{
     @apply text-sm
 }
-</style>~/core/types
+
+.nav-form{
+    @apply duration-200 underline text-[#1a6bd9]
+}
+</style>
