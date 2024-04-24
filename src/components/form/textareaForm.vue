@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p class="label-p">{{ placeholder }}</p>
         <div class="textarea" :class="{
             'border-[#333]':!inputFocus && !inputValid,
             'border-[#1c54d9]':inputFocus || inputValid || (inputValid && inputFocus),
@@ -95,12 +96,15 @@ watchEffect(() => {
 
 <style scoped>
 .textarea{
-    @apply border-[1px] overflow-hidden rounded-lg
+    @apply border-[1px] overflow-hidden rounded
 }
 .textarea > label{
-    @apply flex text-base items-center gap-1 border-b-[1px] border-[#333] h-[40px] px-3 text-[#333]
+    @apply flex text-base items-center gap-1 border-b-[1px] border-[#333] h-[40px] px-3 text-black
 }
 .textarea > textarea{
     @apply w-full  px-4 py-3 min-h-[300px] mb-0 resize-y outline-none text-sm bg-transparent
+}
+.label-p{
+    @apply mb-1
 }
 </style>

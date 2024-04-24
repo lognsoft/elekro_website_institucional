@@ -41,7 +41,7 @@ import { rotas } from '~/core/constants';
 
 const bgWhite:Ref<boolean> = ref(false);
 const route = useRoute();
-if(route.path === '/elekro-one-plus'){
+if(route.path === '/doc'){
     bgWhite.value = true;
 } else {
     bgWhite.value = false;
@@ -68,7 +68,7 @@ const openNavigate = () => {
 };
 
 watch(() => route.path, (newValue) => {
-    if(newValue === '/elekro-one-plus'){
+    if(newValue === '/doc'){
         bgWhite.value = true;
     } else {
         bgWhite.value = false;

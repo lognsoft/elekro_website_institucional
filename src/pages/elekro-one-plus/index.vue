@@ -12,7 +12,7 @@
                 <img class="max-w-full min-h-[600px] object-cover" src="https://seapromotionstatic.cdn5th.com/static/275096818692636672.jpg" alt=""/>
             </div>
             <div class="container mx-auto px-3 absolute left-[50%] translate-x-[-50%] h-full flex items-center z-30">
-                <div class="w-full text-white lg:text-[#333]">
+                <div class="w-full text-white lg:text-black">
                     <h1 class="text-[40px] md:text-[50px] max-w-96 mb-[20px] font-semibold">Elekro One+ série FM-F31</h1>
                     <p class="max-w-[500px] mb-2">Com a Elekro, você tem acesso conveniente à sua casa sem precisar de chaves. Seja através de impressão digital, cartão de acesso, senha ou aplicativo.</p>
                     <p class="max-w-[500px] mb-[20px]">Aprimore sua rotina e garanta sua segurança.</p>
@@ -20,13 +20,13 @@
                 </div>
             </div>
         </section>
-        <section class="pt-[100px] text-[#333]">
+        <section class="pt-[100px] text-black">
             <div class="container w-full max-w-[1380px] mx-auto px-3">
                 <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Ideal para</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-3 mb-[50px]">
                     <template v-for="obj,index in capacidades" :key="index">
                         <div class="px-10 py-3">
-                            <div class="text-3xl text-[#333]">
+                            <div class="text-3xl text-black">
                                 <Icon :name="obj.icon"/>
                             </div>
                             <h3 class="text-xl my-3 font-semibold">{{ obj.title }}</h3>
@@ -39,13 +39,13 @@
                 </div>
             </div>
         </section>
-        <section class="pt-[100px] text-[#333]">
+        <section class="pt-[100px] text-black">
             <div class="container w-full max-w-[1380px] mx-auto px-3">
                 <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Praticidade</h2>
                 <div class="grid md:grid-cols-2 gap-x-9 gap-y-3 mb-[50px] mb-2">
                     <template v-for="obj,index in praticidades" :key="index">
                         <div class="px-10 py-3">
-                            <div class="text-3xl text-[#333]">
+                            <div class="text-3xl text-black">
                                 <Icon :name="obj.icon"/>
                             </div>
                             <h3 class="text-xl my-3 font-semibold">{{ obj.title }}</h3>
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <section class="pt-[100px] text-[#333]">
+        <section class="pt-[100px] text-black">
             <div class="container mx-auto px-3 max-w-[1380px]">
                 <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Tecnologia Avançada para uma Vida Mais Confortável e Segura</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-2 lg:gap-y-5">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-[100px] text-[#333]">
+        <section class="py-[100px] text-black">
             <div class="container w-full max-w-[1200px] mx-auto px-3">
                 <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Recursos</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mb-[50px]">

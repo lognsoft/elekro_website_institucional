@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p class="label-p">{{ props.placeholder }}</p>
         <div class="input" :class="{
                 'border-[#333]':!inputFocus && !inputValid,
                 'border-[#1c54d9]':inputFocus || inputValid || (inputValid && inputFocus),
@@ -88,17 +89,18 @@ watchEffect(() => {
 watchEffect(() => {
     emit('update:modelValue', model.value)
 })
-
-
 </script>
 
 <style scoped>
 .input {
-    @apply border-[1px] w-full flex rounded-lg overflow-hidden
+    @apply border-[1px] w-full flex rounded overflow-hidden
+}
+.label-p{
+    @apply mb-1
 }
 
 .input > label{
-    @apply w-[50px] h-[40px] flex items-center justify-center text-xl relative text-[#333]
+    @apply w-[50px] h-[40px] flex items-center justify-center text-xl relative text-black
 }
 .input > label:after{content:''}
 .input > label:after{
@@ -108,4 +110,4 @@ watchEffect(() => {
 .input > input{
     @apply w-full outline-none h-[40px] flex items-center px-3 text-sm bg-transparent
 }
-</style>~/core/types
+</style>

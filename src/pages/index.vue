@@ -11,7 +11,7 @@
         <Meta name="twitter:card" content="summary_large_image"/>
     </Head>
     <main>
-        <Slide :images="slide"/>
+        <GeneralSlide :images="slide"/>
         <section class="grid grid-cols-1 lg:grid-cols-2">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
@@ -32,7 +32,7 @@
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
                         <H2Title class="text-center">Elekro One+</H2Title>
-                        <H3Title class="text-center">Série FM-F31</H3Title>
+                        <H4SubTitle class="text-center">Série FM-F31</H4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
@@ -40,7 +40,7 @@
                                         <Icon :name="feature.icon"/>
                                     </span>
                                     <div v-else class="feature_icon" v-html="feature.icon"></div>
-                                    <span class="text-base">{{ feature.text }}</span>
+                                    <p class="text-base">{{ feature.text }}</p>
                                 </li>
                             </template>
                             
@@ -57,7 +57,6 @@
 </template>
 
 <script setup lang="ts">
-import H3Title from "~/components/h3Title.vue";
 import { features, slide } from "~/core/constants";
 </script>
 
@@ -81,7 +80,7 @@ import { features, slide } from "~/core/constants";
     }
 
     .features_elekro > ul > li {
-        @apply flex items-center gap-3 py-5 border-b-[1px] font-light text-xl lg:text-base
+        @apply flex items-center gap-3 py-5 border-b-[1px] text-xl lg:text-base
     }
 
     .features_elekro > ul > li > .feature_icon{

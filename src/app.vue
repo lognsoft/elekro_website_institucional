@@ -20,6 +20,9 @@
         width: 100%;
         height: auto;
     }
+    p{
+        @apply font-light
+    }
 </style>
 
 

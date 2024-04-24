@@ -1,5 +1,5 @@
 <template>
-    <main class="text-[#333]">
+    <main class="text-black">
         <Head>
             <Title>Seja Um Autorizado</Title>
             <Meta name="description" content="lorem ipsum"/>
@@ -17,7 +17,7 @@
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <div class="text-center mb-[40px] px-3 ">
                     <H2Title class="mb-3">Abra as portas para o futuro com a Elekro</H2Title>
-                    <p class="text-base md:text-lg mb-4">
+                    <p class="mb-4">
                         Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
                         A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
                         incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.
@@ -37,7 +37,7 @@
                                     <div v-html="info.text"></div>
                                 </div>
                             </div>
-                            <figure :class="{'md:order-first':(index + 1) % 2 == 0}">
+                            <figure ref="figure" :class="{'md:order-first':(index + 1) % 2 == 0}">
                                 <template v-if="info.img !== ''">
                                     <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" alt="lorem ipsum"/>
                                 </template>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <Formulario ref="formulario"/>
+        <FormDefault/>
     </main>
 </template>
 
@@ -58,9 +58,10 @@
 //tipos
 import { infos } from '~/core/constants';
 let formulario:HTMLElement | null = null;
+const figure:Ref<HTMLElement | null> = ref(null);
 
 function scrollEl(){
-    formulario = document.querySelector("#formSection")
+    if(formulario === null) formulario = document.querySelector("#formSection");
     if(formulario !== null){
         window.scroll({
             top: formulario.offsetTop - 80,

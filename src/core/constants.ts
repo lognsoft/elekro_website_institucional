@@ -62,7 +62,6 @@ export const midiasSociais:ReadonlyArray<Midia> = [
     }
 ]
 
-
 //página autorizado
 export const infos:ReadonlyArray<Info> = [
     {
@@ -73,43 +72,33 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/analise-de-credito.jpeg',
         title:'Análise especial de crédito',
-        text:'Condições especiais de prazo de pagamento para parceiros de relacionamento estratégicos com a Elekro.',
+        text:'<p>Condições especiais de prazo de pagamento para parceiros de relacionamento estratégicos com a Elekro.</p>',
     },
     {
         img:'/images/autorizado/lead-time-de-entrega.jpg',
         title:'Lead-time de entrega',
-        text:'Em até duas semanas após a aprovação do pedido.',
+        text:'<p>Em até duas semanas após a aprovação do pedido.</p>',
     },
-    // {
-    //     img:'',
-    //     title:'Parceria comercial',
-    //     text:'Com nossa base de dados, direcionaremos clientes interessados para distribuidores exclusivos na região, garantindo acesso fácil ao produto desejado.',
-    // },
     {
         img:'/images/autorizado/suporte-tecnico.png',
         title:'Suporte Técnico',
-        text:'Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.',
+        text:'<p>Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.</p>',
     },
     {
         img:'/images/autorizado/marketing-promocao.png',
         title:"Marketing e Promoção",
-        text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
+        text:"<p>Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.</p>",
     },
     {
         img:'/images/autorizado/inovacoes-elekro.png',
         title:"Participação nas inovações da Elekro",
-        text:"Implementamos suas sugestões de melhorias em conjunto com nossa equipe de P&D.",
+        text:"<p>Implementamos suas sugestões de melhorias em conjunto com nossa equipe de P&D.</p>",
     },
     {
         img:'/images/autorizado/roadmap.png',
         title:"Roadmap",
-        text:"Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.",
+        text:"<p>Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.</p>",
     },
-    // {
-    //     img:'',
-    //     title:"Certificação",
-    //     text:"Cumprimos integralmente com todos os padrões estabelecidos pela Anatel, garantindo a qualidade e conformidade conforme lei nº 9.472.",
-    // },
     {
         img:'/images/autorizado/conformidade.jpeg',
         title:"Conformidade",
@@ -120,11 +109,6 @@ export const infos:ReadonlyArray<Info> = [
         title:"Projetos",
         text:'<p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p><p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>',
     },
-    // {
-    //     img:'',
-    //     title:"Garantia Estendida de Confiança",
-    //     text:"Acompanhada de uma garantia estendida de 12 meses, reforçando nosso compromisso com a qualidade e a confiabilidade da Elekro.",
-    // }
 ]
 
 //página home

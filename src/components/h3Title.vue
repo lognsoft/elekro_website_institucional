@@ -3,7 +3,7 @@
 </template>
 
 <style scoped>
-.h3-title{
-    @apply text-xl text-[#626262] font-normal
-}
+    .h3-title{
+        @apply text-xl font-semibold
+    }
 </style>

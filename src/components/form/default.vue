@@ -140,7 +140,7 @@ const messageSubmit = computed(():string => {
             <!-- <h2 class="mb-3 text-center text-2xl md:text-4xl">
                 Inicie sua jornada ao lado da Elekro
             </h2> -->
-            <H3Title class="mb-[20px] text-center">Contate nosso time comercial</H3Title>
+            <H4SubTitle class="mb-[20px] text-center">Contate nosso time comercial</H4SubTitle>
             <div class="relative">
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
@@ -159,7 +159,7 @@ const messageSubmit = computed(():string => {
                 <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync}" method="POST" @submit.prevent="submit()" disabled="true">
                     
                     <div class="mb-[15px]">
-                        <InputForm
+                        <FormInputForm
                             id="nome"
                             name="nome"
                             placeholder="Nome completo*"
@@ -170,7 +170,7 @@ const messageSubmit = computed(():string => {
                         />
                     </div>
                     <div class="mb-[15px]">
-                        <InputForm
+                        <FormInputForm
                             id="email"
                             name="email"
                             placeholder="E-mail*"
@@ -181,7 +181,7 @@ const messageSubmit = computed(():string => {
                         />
                     </div>
                     <div class="mb-[15px]">
-                        <InputForm
+                        <FormInputForm
                             id="empresa"
                             name="nome"
                             placeholder="Empresa*"
@@ -193,7 +193,7 @@ const messageSubmit = computed(():string => {
                     </div>
                     <div class="mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]">
                         <div class="col-span-1 sm:col-span-2">
-                            <InputForm
+                            <FormInputForm
                                 id="celular"
                                 name="celular"
                                 placeholder="Celular*"
@@ -206,7 +206,7 @@ const messageSubmit = computed(():string => {
                             />
                         </div>
                         <div class="col-span-1 sm:col-span-2">
-                            <InputForm
+                            <FormInputForm
                                 id="telefone"
                                 name="telefone"
                                 placeholder="Telefone"
@@ -218,7 +218,7 @@ const messageSubmit = computed(():string => {
                             />
                         </div>
                         <div class="col-span-1 sm:col-span-2">
-                            <InputForm
+                            <FormInputForm
                                 id="cpf_cnpj"
                                 name="cpf_cnpj"
                                 placeholder="CPF/CNPJ*"
@@ -232,7 +232,8 @@ const messageSubmit = computed(():string => {
                         </div>
                         
                         <div class="col-span-1 sm:col-span-2">
-                            <SelectForm
+                            <FormSelectForm
+                                label="Setor"
                                 placeholder="Setor*"
                                 name="setor"
                                 :options="setores"
@@ -243,7 +244,7 @@ const messageSubmit = computed(():string => {
                         </div>
 
                         <div class="col-span-1 sm:col-span-2">
-                            <InputForm
+                            <FormInputForm
                                 id="cep"
                                 name="cep"
                                 placeholder="CEP*"
@@ -255,7 +256,8 @@ const messageSubmit = computed(():string => {
                             />
                         </div>
                         <div class="col-span-1 sm:col-span-2">
-                            <SelectForm
+                            <FormSelectForm
+                                label="Estado*"
                                 placeholder="Estado*"
                                 name="estado"
                                 v-model="state.estado"
@@ -264,7 +266,8 @@ const messageSubmit = computed(():string => {
                             />
                         </div>
                         <div class="col-span-1 sm:col-span-2">
-                            <SelectForm
+                            <FormSelectForm
+                                label="Cidade*"
                                 name="cidade"
                                 placeholder="Cidade*"
                                 v-model="state.cidade"
@@ -274,23 +277,22 @@ const messageSubmit = computed(():string => {
                             />
                         </div>
                         <div class="col-span-1 sm:col-span-2">
-                            <SelectForm placeholder="Assunto*" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
+                            <FormSelectForm label="Assunto*" placeholder="Assunto*" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
                         </div>
                     </div>
                     
                     <div class="mb-[15px]">
-                        <TextareaForm id="mensagem" name="mensagem" placeholder="Mensagem*" v-model="state.message" :required="true" :disabled="submitAsync"/>
+                        <FormTextareaForm id="mensagem" name="mensagem" placeholder="Mensagem*" v-model="state.message" :required="true" :disabled="submitAsync"/>
                     </div>
                     <div>
                         <MyButton class="inline-flex items-center gap-x-1" type="submit" :disabled="submitAsync">
                             Enviar
-                            <Icon name="bxs:paper-plane"/>
                         </MyButton>
                     </div>
                 </form>
             </div>
             <div class="text-center mt-8 text-[#626262] text-lg md:text-xl">
-                <H3Title class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</H3Title>
+                <H4SubTitle class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</H4SubTitle>
                 <MyLinkTwo :icon="false" href="/elekro-one-plus" class="nav-form">Saiba mais sobre a Elekro One+</MyLinkTwo>
             </div>
         </div>
