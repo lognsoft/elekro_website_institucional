@@ -134,7 +134,7 @@ const messageSubmit = computed(():string => {
 </script>
 
 <template>
-    <section class="py-11" id="formSection">
+    <section class="py-11 bg-white" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <h2 class="mb-3 text-center text-2xl md:text-4xl">
                 Inicie sua jornada ao lado da Elekro

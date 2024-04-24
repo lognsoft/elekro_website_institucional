@@ -13,7 +13,7 @@
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <Banner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
-        <section class="pt-11">
+        <section class="pt-11 bg-white">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <div class="text-center mb-[40px] px-3 ">
                     <h2 class="mb-3 text-center text-2xl md:text-4xl">Abra as portas para o futuro com a Elekro</h2>
