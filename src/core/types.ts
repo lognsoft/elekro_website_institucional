@@ -1,6 +1,7 @@
 export type Banner = {
     title:string,
-    text:string
+    text:string,
+    src:string,
 }
 
 export type Route = {

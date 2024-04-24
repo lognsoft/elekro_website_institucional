@@ -1,5 +1,6 @@
 <template>
     <section class="apresentacao">
+        <img :src="props.src" alt=""/>
         <div ref="content" class="content-container" :style="`opacity: ${opacity}%`">
             <h1 class="banner-title">{{ props.title }}</h1>
             <template v-if="props.text != ''">
@@ -16,7 +17,8 @@ const opacity:Ref<number> = ref(100);
 const content:Ref<HTMLDivElement | undefined> = ref();
 const props = withDefaults(defineProps<Banner>(),{
     title:'',
-    text:''
+    text:'',
+    src:'',
 })
 onMounted(():void => {
     let opc:number = Number(document.scrollingElement?.scrollTop)
@@ -54,7 +56,10 @@ const getOpacity = (opc:number):void => {
 
 <style scoped>
 .apresentacao{
-    @apply relative w-full flex items-center h-screen bg-center bg-cover bg-no-repeat bg-fixed overflow-hidden z-[-1];
+    @apply relative w-full flex items-center h-screen overflow-hidden z-[-1];
+}
+.apresentacao img{
+    @apply w-full h-full object-cover fixed top-0 left-0;
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
