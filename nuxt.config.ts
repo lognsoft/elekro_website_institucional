@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   srcDir: 'src',
   tailwindcss: {
     exposeConfig: true,
-    viewer: true,
+    viewer: false,
   },
   ssr: true,
   nitro: {

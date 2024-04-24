@@ -31,8 +31,8 @@
             <div class="text-black bg-white col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <h2>Elekro One+</h2>
-                        <h3 class="text-xl text-center text-[#626262] font-normal">Série FM-F31</h3>
+                        <H2Title class="text-center">Elekro One+</H2Title>
+                        <H3Title class="text-center">Série FM-F31</H3Title>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
@@ -57,6 +57,7 @@
 </template>
 
 <script setup lang="ts">
+import H3Title from "~/components/h3Title.vue";
 import { features, slide } from "~/core/constants";
 </script>
 
@@ -71,9 +72,9 @@ import { features, slide } from "~/core/constants";
         @apply w-full mx-auto lg:ml-0 max-w-[800px] lg:max-w-[704px]
     }
 
-    .features_elekro > h2{
+    /* .features_elekro > h2{
         @apply text-center text-[28px] font-bold
-    }
+    } */
 
     .features_elekro > ul{
         @apply font-[16px]

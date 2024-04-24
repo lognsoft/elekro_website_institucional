@@ -136,10 +136,11 @@ const messageSubmit = computed(():string => {
 <template>
     <section class="py-11 bg-white" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
-            <h2 class="mb-3 text-center text-2xl md:text-4xl">
+            <H2Title class="mb-3 text-center">Inicie sua jornada ao lado da Elekro</H2Title>
+            <!-- <h2 class="mb-3 text-center text-2xl md:text-4xl">
                 Inicie sua jornada ao lado da Elekro
-            </h2>
-            <h3 class="mb-[20px] text-center text-[#626262] text-lg md:text-xl">Contate nosso time comercial</h3>
+            </h2> -->
+            <H3Title class="mb-[20px] text-center">Contate nosso time comercial</H3Title>
             <div class="relative">
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
@@ -289,7 +290,7 @@ const messageSubmit = computed(():string => {
                 </form>
             </div>
             <div class="text-center mt-8 text-[#626262] text-lg md:text-xl">
-                <p class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</p>
+                <H3Title class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</H3Title>
                 <MyLinkTwo :icon="false" href="/elekro-one-plus" class="nav-form">Saiba mais sobre a Elekro One+</MyLinkTwo>
             </div>
         </div>

@@ -16,8 +16,8 @@
         <section class="pt-11 bg-white">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <div class="text-center mb-[40px] px-3 ">
-                    <h2 class="mb-3 text-center text-2xl md:text-4xl">Abra as portas para o futuro com a Elekro</h2>
-                    <p class="text-[#626262] text-base md:text-xl mb-4">
+                    <H2Title class="mb-3">Abra as portas para o futuro com a Elekro</H2Title>
+                    <p class="text-base md:text-lg mb-4">
                         Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
                         A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
                         incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.
@@ -25,15 +25,15 @@
                         contribuindo para a construção de ambientes seguros, convenientes e livres de estresse para residentes e funcionários.
                     </p>
                     <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um parceiro elekro</button>
-                    <h2 class="mt-11 text-center text-2xl md:text-4xl">Explore os benefícios Exclusivos e diferenciais da Elekro</h2>
+                    <H2Title class="mt-11">Explore os benefícios Exclusivos e diferenciais da Elekro</H2Title>
                 </div>
 
                 <div class="grid grid-cols-1 gap-2 md:gap-0">
                     <template v-for="info,index in infos" :key="index">
                         <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="bg-black text-white aspect-[1/1] p-4 flex items-center">
+                            <div class="bg-black/80 text-white aspect-[1/1] p-4 flex items-center">
                                 <div class="w-full">
-                                    <h2 class="text-3xl lg:text-4xl mb-3 font-bold">{{ info.title }}</h2>
+                                    <H2Title class="mb-3">{{ info.title }}</H2Title>
                                     <div v-html="info.text"></div>
                                 </div>
                             </div>
