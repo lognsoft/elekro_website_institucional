@@ -49,71 +49,61 @@ const modules = [
     SwiperEffectCreative,
     SwiperParallax
 ];
-defineProps(['images'])
+defineProps(['images']);
+
 const opacity:Ref<number> = ref(100);
-const slideSingle:Ref<Array<HTMLElement>> = ref([]);
-const windowHeight:Ref<number> = ref(0);
-const scrollPosition:Ref<number> = ref(0)
-
-// onMounted(() => {
-//     windowHeight.value = Number(document.scrollingElement?.clientHeight) / 2;
-//     scrollPosition.value = Number(document.scrollingElement.scrollTop);
-//     slideSingle.value = document.querySelectorAll(".slide-contents");
-//     window.addEventListener("scroll", scrollOpacity);
-// })
-// // onUnmounted(() => window.removeEventListener("scroll", scrollOpacity));
-
-// function scrollOpacity()
-// {
-//     const newScrollPosition:number = document.scrollingElement.scrollTop;
-//     // console.log(document.scrollingElement.scrollTop);
-//     // console.log('Scroll Position:', newScrollPosition);
-
-//     const div:number = windowHeight.value / 100;
-//     // console.log('div:', div);
-
-//     if (newScrollPosition > scrollPosition.value)
-//     {
-//         opacity.value = Math.max(0, opacity.value - div); 
-//     }
-//     else
-//     {
-//         opacity.value = Math.min(100, opacity.value + div);  
-//     }
-
-//     scrollPosition.value = newScrollPosition; 
-//     // console.log('opacity:', opacity.value);
-// }
-onMounted(():void => {
-    let opc:number = Number(document.scrollingElement?.scrollTop)
-    getOpacity(opc);
-    window.addEventListener("scroll", fadeContent);
-})
-onUnmounted(() => window.removeEventListener("scroll", fadeContent));
-
-
-function fadeContent(){
-    let opc:number = Number(document.scrollingElement?.scrollTop);
-    getOpacity(opc);
-}
-
-const getOpacity = (opc:number):void => {
-    if(opc > scrollPosition.value){
-        if(opc >= 100 && opc < 200) opacity.value = 80;
-        if(opc >= 200 && opc < 300) opacity.value = 60;
-        if(opc >= 300 && opc < 400) opacity.value = 40;
-        if(opc >= 400 && opc < 500) opacity.value = 20;
-        if(opc >= 500 && opc < 600) opacity.value = 0;
-    } else {
-        if(opc == 0 && opc <= 100) opacity.value = 100;
-        if(opc > 100 && opc <= 200) opacity.value = 80;
-        if(opc > 200 && opc <= 300) opacity.value = 60;
-        if(opc > 300 && opc <= 400) opacity.value = 40;
-        if(opc > 400 && opc <= 500) opacity.value = 20;
-        if(opc > 500 && opc <= 600) opacity.value = 0;
+const slideSingle:Ref<number> = ref(0);
+onMounted(() => {
+    let element:HTMLElement | null = document.querySelector(".slide-contents")
+    if(element !== null){
+        slideSingle.value = element.offsetTop;
+        window.addEventListener("scroll", scrollOpacity);
     }
-    scrollPosition.value = opc;
+})
+onUnmounted(() => window.removeEventListener("scroll", scrollOpacity))
+
+function scrollOpacity(){
+    //altura atual do scroll
+    let documentScroll:number = document.scrollingElement?.scrollTop as number;
+    let percent:number = 100 - (documentScroll / slideSingle.value) * 100;
+    percent = Math.max(0, Math.min(percent, 100));
+    opacity.value = percent;
 }
+
+
+
+
+
+// onMounted(():void => {
+//     let opc:number = Number(document.scrollingElement?.scrollTop)
+//     getOpacity(opc);
+//     window.addEventListener("scroll", fadeContent);
+// })
+// onUnmounted(() => window.removeEventListener("scroll", fadeContent));
+
+
+// function fadeContent(){
+//     let opc:number = Number(document.scrollingElement?.scrollTop);
+//     getOpacity(opc);
+// }
+
+// const getOpacity = (opc:number):void => {
+//     if(opc > scrollPosition.value){
+//         if(opc >= 100 && opc < 200) opacity.value = 80;
+//         if(opc >= 200 && opc < 300) opacity.value = 60;
+//         if(opc >= 300 && opc < 400) opacity.value = 40;
+//         if(opc >= 400 && opc < 500) opacity.value = 20;
+//         if(opc >= 500 && opc < 600) opacity.value = 0;
+//     } else {
+//         if(opc == 0 && opc <= 100) opacity.value = 100;
+//         if(opc > 100 && opc <= 200) opacity.value = 80;
+//         if(opc > 200 && opc <= 300) opacity.value = 60;
+//         if(opc > 300 && opc <= 400) opacity.value = 40;
+//         if(opc > 400 && opc <= 500) opacity.value = 20;
+//         if(opc > 500 && opc <= 600) opacity.value = 0;
+//     }
+//     scrollPosition.value = opc;
+// }
 </script>
 
 <style>
