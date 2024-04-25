@@ -19,12 +19,12 @@ const props = withDefaults(defineProps<Banner>(),{
 })
 const opacity:Ref<number> = ref(100);
 const transform:Ref<number> = ref(50);
-const slideSingle:Ref<number> = ref(0);
+const bannerSingle:Ref<number> = ref(0);
 const bannerTextHeight:Ref<number> = ref(0);
 onMounted(() => {
     let element:HTMLElement | null = document.querySelector('.content-container')
     if(element !== null){
-        slideSingle.value = element.offsetTop;
+        bannerSingle.value = element.offsetTop;
         bannerTextHeight.value = element.clientHeight;
         window.addEventListener("scroll", scrollOpacity);
     }
@@ -34,13 +34,12 @@ onUnmounted(() => window.removeEventListener("scroll", scrollOpacity));
 function scrollOpacity(){
     //altura atual do scroll
     let documentScroll:number = document.scrollingElement?.scrollTop as number;
-    let percent:number = (100 - (documentScroll / slideSingle.value) * 100) + (bannerTextHeight.value/100) * 10;
+    let percent:number = (100 - (documentScroll / bannerSingle.value) * 100) + (bannerTextHeight.value/100) * 10;
 
-    let translate:number = 50 + (documentScroll / slideSingle.value) * 50;
+    let translate:number = 50 + (documentScroll / bannerSingle.value) * 50;
     console.log(translate);
-    percent = Math.max(0, Math.min(percent, 100));
     transform.value = Math.max(50, Math.min(translate, 200));
-    opacity.value = percent;
+    opacity.value = Math.max(0, Math.min(percent, 100));
 };
 </script>
 

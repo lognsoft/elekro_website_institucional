@@ -25,7 +25,7 @@
             :key="index"
         >
             <div class="slider-single" :style="`background-image: url('/images/${img}');`">
-                <div class="slide-contents" :style="`opacity: ${opacity}%;`">
+                <div class="slide-contents" :style="`opacity: ${opacity}%; transform:translate(-50%,-${transform}%)`">
                     <h1 class="slide-title" v-html="text"></h1>
                 </div>
             </div>
@@ -52,11 +52,14 @@ const modules = [
 defineProps(['images']);
 
 const opacity:Ref<number> = ref(100);
+const transform:Ref<number> = ref(50);
 const slideSingle:Ref<number> = ref(0);
+const SlideTextHeight:Ref<number> = ref(0);
 onMounted(() => {
     let element:HTMLElement | null = document.querySelector(".slide-contents")
     if(element !== null){
         slideSingle.value = element.offsetTop;
+        SlideTextHeight.value = element.clientHeight;
         window.addEventListener("scroll", scrollOpacity);
     }
 })
@@ -64,10 +67,18 @@ onUnmounted(() => window.removeEventListener("scroll", scrollOpacity))
 
 function scrollOpacity(){
     //altura atual do scroll
+    // let documentScroll:number = document.scrollingElement?.scrollTop as number;
+    // let percent:number = 100 - (documentScroll / slideSingle.value) * 100;
+    // percent = Math.max(0, Math.min(percent, 100));
+    // opacity.value = percent;
+
     let documentScroll:number = document.scrollingElement?.scrollTop as number;
-    let percent:number = 100 - (documentScroll / slideSingle.value) * 100;
-    percent = Math.max(0, Math.min(percent, 100));
-    opacity.value = percent;
+    let percent:number = (100 - (documentScroll / slideSingle.value) * 100) + (slideSingle.value/100) * 10;
+
+    let translate:number = 50 + (documentScroll / slideSingle.value) * 50;
+    console.log(translate);
+    transform.value = Math.max(50, Math.min(translate, 200));
+    opacity.value = Math.max(0, Math.min(percent, 100));
 }
 </script>
 
@@ -89,7 +100,7 @@ function scrollOpacity(){
 }
 
 .slide-contents{
-    @apply container max-w-xl md:max-w-6xl mx-auto px-11
+    @apply container max-w-xl md:max-w-6xl mx-auto px-11 absolute left-[50%] top-[50%] z-20
 }
 .slide-contents .slide-title{
     @apply
