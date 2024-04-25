@@ -35,41 +35,6 @@ function scrollOpacity(){
     percent = Math.max(0, Math.min(percent, 100));
     opacity.value = percent;
 };
-
-
-
-// onMounted(():void => {
-//     let opc:number = Number(document.scrollingElement?.scrollTop)
-//     if(props.title !== '' || props.text !== ''){
-//         getOpacity(opc);
-//         window.addEventListener("scroll", fadeContent);
-//     }
-// })
-// onUnmounted(() => window.removeEventListener("scroll", fadeContent));
-
-// function fadeContent(){
-//     let opc:number = Number(document.scrollingElement?.scrollTop);
-//     getOpacity(opc);
-// }
-
-// const getOpacity = (opc:number):void => {
-//     if(opc > atualTop.value){
-//         if(opc >= 100 && opc < 200) opacity.value = 80;
-//         if(opc >= 200 && opc < 300) opacity.value = 60;
-//         if(opc >= 300 && opc < 400) opacity.value = 40;
-//         if(opc >= 400 && opc < 500) opacity.value = 20;
-//         if(opc >= 500 && opc < 600) opacity.value = 0;
-//     } else {
-//         if(opc == 0 && opc <= 100) opacity.value = 100;
-//         if(opc > 100 && opc <= 200) opacity.value = 80;
-//         if(opc > 200 && opc <= 300) opacity.value = 60;
-//         if(opc > 300 && opc <= 400) opacity.value = 40;
-//         if(opc > 400 && opc <= 500) opacity.value = 20;
-//         if(opc > 500 && opc <= 600) opacity.value = 0;
-//     }
-//     atualTop.value = opc;
-    
-// }
 </script>
 
 <style scoped>
