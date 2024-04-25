@@ -25,7 +25,7 @@
             :key="index"
         >
             <div class="slider-single" :style="`background-image: url('/images/${img}');`">
-                <div class="slide-contents">
+                <div class="slide-contents" :style="`opacity: ${opacity}%;`">
                     <h1 class="slide-title" v-html="text"></h1>
                 </div>
             </div>
@@ -33,7 +33,7 @@
     </Swiper>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {
     SwiperPagination,
     SwiperNavigation,
@@ -49,13 +49,77 @@ const modules = [
     SwiperEffectCreative,
     SwiperParallax
 ];
-
 defineProps(['images'])
+const opacity:Ref<number> = ref(100);
+const slideSingle:Ref<Array<HTMLElement>> = ref([]);
+const windowHeight:Ref<number> = ref(0);
+const scrollPosition:Ref<number> = ref(0)
+
+// onMounted(() => {
+//     windowHeight.value = Number(document.scrollingElement?.clientHeight) / 2;
+//     scrollPosition.value = Number(document.scrollingElement.scrollTop);
+//     slideSingle.value = document.querySelectorAll(".slide-contents");
+//     window.addEventListener("scroll", scrollOpacity);
+// })
+// // onUnmounted(() => window.removeEventListener("scroll", scrollOpacity));
+
+// function scrollOpacity()
+// {
+//     const newScrollPosition:number = document.scrollingElement.scrollTop;
+//     // console.log(document.scrollingElement.scrollTop);
+//     // console.log('Scroll Position:', newScrollPosition);
+
+//     const div:number = windowHeight.value / 100;
+//     // console.log('div:', div);
+
+//     if (newScrollPosition > scrollPosition.value)
+//     {
+//         opacity.value = Math.max(0, opacity.value - div); 
+//     }
+//     else
+//     {
+//         opacity.value = Math.min(100, opacity.value + div);  
+//     }
+
+//     scrollPosition.value = newScrollPosition; 
+//     // console.log('opacity:', opacity.value);
+// }
+onMounted(():void => {
+    let opc:number = Number(document.scrollingElement?.scrollTop)
+    getOpacity(opc);
+    window.addEventListener("scroll", fadeContent);
+})
+onUnmounted(() => window.removeEventListener("scroll", fadeContent));
+
+
+function fadeContent(){
+    let opc:number = Number(document.scrollingElement?.scrollTop);
+    getOpacity(opc);
+}
+
+const getOpacity = (opc:number):void => {
+    if(opc > scrollPosition.value){
+        if(opc >= 100 && opc < 200) opacity.value = 80;
+        if(opc >= 200 && opc < 300) opacity.value = 60;
+        if(opc >= 300 && opc < 400) opacity.value = 40;
+        if(opc >= 400 && opc < 500) opacity.value = 20;
+        if(opc >= 500 && opc < 600) opacity.value = 0;
+    } else {
+        if(opc == 0 && opc <= 100) opacity.value = 100;
+        if(opc > 100 && opc <= 200) opacity.value = 80;
+        if(opc > 200 && opc <= 300) opacity.value = 60;
+        if(opc > 300 && opc <= 400) opacity.value = 40;
+        if(opc > 400 && opc <= 500) opacity.value = 20;
+        if(opc > 500 && opc <= 600) opacity.value = 0;
+    }
+    scrollPosition.value = opc;
+    
+}
 </script>
 
 <style>
 .carousel {
-    @apply w-full h-screen min-h-full;
+    @apply w-full h-screen min-h-full fixed top-0 left-0 z-[1];
 }
 
 .slider-single {

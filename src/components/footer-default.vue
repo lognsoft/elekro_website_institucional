@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-black text-white">
+    <footer class="bg-black text-white relative z-50">
         <div class="container mx-auto px-5">
             <div class="pt-6 pb-3 stores">
 

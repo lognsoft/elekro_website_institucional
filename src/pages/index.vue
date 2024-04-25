@@ -11,8 +11,10 @@
         <Meta name="twitter:card" content="summary_large_image"/>
     </Head>
     <main>
-        <GeneralSlide :images="slide"/>
-        <section class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="w-full h-screen overflow-hidden">
+            <GeneralSlide :images="slide"/>
+        </div>
+        <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
                     <div class="relative">
@@ -28,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-black bg-white col-span-1">
+            <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
                         <H2Title class="text-center">Elekro One+</H2Title>

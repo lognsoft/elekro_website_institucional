@@ -27,7 +27,7 @@ onMounted(():void => {
         window.addEventListener("scroll", fadeContent);
     }
 })
-
+onUnmounted(() => window.removeEventListener("scroll", fadeContent));
 
 function fadeContent(){
     let opc:number = Number(document.scrollingElement?.scrollTop);
