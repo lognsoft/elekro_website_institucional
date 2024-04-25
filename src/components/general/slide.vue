@@ -113,7 +113,6 @@ const getOpacity = (opc:number):void => {
         if(opc > 500 && opc <= 600) opacity.value = 0;
     }
     scrollPosition.value = opc;
-    
 }
 </script>
 

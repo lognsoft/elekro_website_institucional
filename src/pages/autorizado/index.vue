@@ -17,7 +17,7 @@
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <div class="text-center mb-[40px] px-3 ">
                     <H2Title class="mb-3">Abra as portas para o futuro com a Elekro</H2Title>
-                    <p class="mb-4">
+                    <p class="mb-4 text-black">
                         Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
                         A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
                         incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.

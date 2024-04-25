@@ -59,7 +59,7 @@ const getOpacity = (opc:number):void => {
     @apply relative w-full flex items-center h-screen overflow-hidden z-[-1];
 }
 .apresentacao img{
-    @apply w-full h-full object-cover fixed top-0 left-0;
+    @apply w-full h-full object-cover fixed top-0 left-0 appearance-none;
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
