@@ -39,12 +39,7 @@
                                 </div>
                             </div>
                             <figure ref="figure" :class="{'md:order-first':(index + 1) % 2 == 0}">
-                                <template v-if="info.img !== ''">
-                                    <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" alt="lorem ipsum"/>
-                                </template>
-                                <template v-else>
-                                    <img class="h-full w-full object-cover aspect-[1/1]" src="/images/elekro-banner.jpg" alt="lorem ipsum"/>
-                                </template>
+                                <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" :alt="infos.title"/>
                             </figure>
                         </div>
                     </template>
