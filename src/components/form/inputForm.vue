@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="label-p">{{ props.placeholder }}</p>
+        <p v-if="label != ''" class="label-p">{{ props.label }}</p>
         <div class="input" :class="{
                 'border-[#333]':!inputFocus && !inputValid,
                 'border-[#1c54d9]':inputFocus || inputValid || (inputValid && inputFocus),
@@ -52,19 +52,53 @@ const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
 
 
-const props = withDefaults(defineProps<InputForm>(),{
-    ico:'',
-    id:'',
-    name:'',
-    placeholder:'',
-    value:'',
-    maxLength:null,
-    minLength:2,
-    type:'text',
-    required:false,
-    disabled:false,
-    modelValue:''
-})
+const props = defineProps({
+    label:{
+        type:String,
+        default:''
+    },
+    ico:{
+        type:String,
+        default: ''
+    },
+    id:{
+        type:String,
+        default:''
+    },
+    name:{
+        type:String,
+        default:''
+    },
+    placeholder:{
+        type:String,
+        default:''
+    },
+    value:{
+        type:String,
+        default:''
+    },
+    maxLength:{
+        type:Number,
+        default:null
+    },
+    minLength:{
+        type:Number,
+        default:2
+    },
+    type:{
+        type:String,
+        default:'text'
+    },
+    required:{
+        type:Boolean,
+        default:false
+    },
+    disabled:{
+        type:Boolean,
+        default:false
+    },
+    modelValue:String
+}) as InputForm;
 const model:Ref<string> = ref(props.modelValue);
 
 const focus = (e:Event) => {

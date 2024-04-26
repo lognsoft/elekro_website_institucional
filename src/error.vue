@@ -3,7 +3,7 @@
         <Link rel="stylesheet" href="/css/font.css"/>
     </Head>
     <div>
-        <HeaderDefault/>
+        <GeneralHeaderDefault/>
         <main class="bg-black text-white">
             <section class="py-11 h-screen">
                 <div class="container mx-auto py-11 px-2 h-full flex justify-center items-center flex-col gap-3">

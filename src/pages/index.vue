@@ -33,8 +33,8 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <H2Title class="text-center">Elekro One+</H2Title>
-                        <H4SubTitle class="text-center">Série FM-F31</H4SubTitle>
+                        <TextH2Title class="text-center">Elekro One+</TextH2Title>
+                        <TextH4SubTitle class="text-center">Série FM-F31</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">

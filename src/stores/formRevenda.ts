@@ -1,23 +1,47 @@
 import { defineStore } from 'pinia';
 import type { Form, Option, Country, Province, City } from '~/core/types';
 
+type DataCep = {
+    cep:string,
+    logradouro:string,
+    complemento:string,
+    bairro:string,
+    localidade:string,
+    uf:string,
+    ibge:string,
+    gia:string,
+    ddd:string,
+    siafi:string
+}
+
 const formRevenda = defineStore('formulario-revenda',() => {
     //estados reativos
     const stateForm:Ref<Form> = ref({
         nome:'',
         email:'',
-        empresa:'',
+        razaoSocial:'',
+        requiredPhone:'',
         phone:'',
-        fixedPhone:'',
-        cpf_cnpj:'',
+        cnpj:'',
         setor:'-1',
+        province:'-1',
+        city:'-1',
         cep:'',
-        pais:'-1',
-        cidade:'-1',
-        estado:'-1',
         subject:'-1',
         message:'',
     });
+    const dataCep:Ref<DataCep> = ref({
+        cep:'',
+        logradouro:'',
+        complemento:'',
+        bairro:'',
+        localidade:'',
+        uf:'',
+        ibge:'',
+        gia:'',
+        ddd:'',
+        siafi:''
+    }); 
     const setores:Option[] = [
         {
             option:'Administrativo/Financeiro',
@@ -58,31 +82,46 @@ const formRevenda = defineStore('formulario-revenda',() => {
     const provinces:Ref<Option[]> = ref([]);
     const cities:Ref<Option[]> = ref([]);
 
-    const loadingProvinces:Ref<boolean> = ref(false);
     const loadingCities:Ref<boolean> = ref(false);
 
     //mascaras
     const cpfCnpjMask = ():void => {
-        let cpf_cnpj:string = stateForm.value.cpf_cnpj as string;
-        let newCpf_cnpj:string = '';
-        if(cpf_cnpj !== undefined && cpf_cnpj.length > 14){
-            newCpf_cnpj = cpf_cnpj;
-            newCpf_cnpj = cpf_cnpj.replace(/\D/g,'');
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{2})(\d)/, "$1.$2");
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1/$2");
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{4})(\d)/,"$1-$2");
+        let cnpj:string = stateForm.value.cnpj;
+        let newCnpj:string = '';
+        // if(cpf_cnpj !== undefined && cpf_cnpj.length > 14){
+        //     newCpf_cnpj = cpf_cnpj;
+        //     newCpf_cnpj = cpf_cnpj.replace(/\D/g,'');
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{2})(\d)/, "$1.$2");
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1/$2");
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{4})(\d)/,"$1-$2");
             
-        } else {
-            newCpf_cnpj = cpf_cnpj
-            newCpf_cnpj = cpf_cnpj.replace(/\D/g,'');
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
-            newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1-$2");
-        }
-        stateForm.value.cpf_cnpj = newCpf_cnpj;
+        // } else {
+        //     newCpf_cnpj = cpf_cnpj
+        //     newCpf_cnpj = cpf_cnpj.replace(/\D/g,'');
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1.$2");
+        //     newCpf_cnpj = newCpf_cnpj.replace(/(\d{3})(\d)/, "$1-$2");
+        // }
+        newCnpj = cnpj;
+        newCnpj = cnpj.replace(/\D/g,'');
+        newCnpj = newCnpj.replace(/(\d{2})(\d)/, "$1.$2");
+        newCnpj = newCnpj.replace(/(\d{3})(\d)/, "$1.$2");
+        newCnpj = newCnpj.replace(/(\d{3})(\d)/, "$1/$2");
+        newCnpj = newCnpj.replace(/(\d{4})(\d)/,"$1-$2");
+        stateForm.value.cnpj = newCnpj;
     }
     const phoneMask = ():void => {
+        let phone:string | undefined = stateForm.value.requiredPhone;
+        if(phone !== undefined){
+            let newPhone:string = phone;
+            newPhone = newPhone.replace(/\D/g,'')
+            newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
+            newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
+            stateForm.value.requiredPhone = newPhone;
+        }
+    }
+    const fixedPhoneMask = () => {
         let phone:string | undefined = stateForm.value.phone;
         if(phone !== undefined){
             let newPhone:string = phone;
@@ -90,16 +129,6 @@ const formRevenda = defineStore('formulario-revenda',() => {
             newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
             newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
             stateForm.value.phone = newPhone;
-        }
-    }
-    const fixedPhoneMask = () => {
-        let phone:string | undefined = stateForm.value.fixedPhone;
-        if(phone !== undefined){
-            let newPhone:string = phone;
-            newPhone = newPhone.replace(/\D/g,'')
-            newPhone = newPhone.replace(/(\d{2})(\d)/,"($1) $2")
-            newPhone = newPhone.replace(/(\d)(\d{4})$/,"$1-$2")
-            stateForm.value.fixedPhone = newPhone;
         }
     }
     const cepMask = ():void => {
@@ -115,15 +144,12 @@ const formRevenda = defineStore('formulario-revenda',() => {
     const resetForm = ():void => {
         stateForm.value.nome = '';
         stateForm.value.email = '';
-        stateForm.value.empresa = '';
+        stateForm.value.razaoSocial = '';
+        stateForm.value.requiredPhone = '';
         stateForm.value.phone = '';
-        stateForm.value.fixedPhone = '';
-        stateForm.value.cpf_cnpj = '';
+        stateForm.value.cnpj = '';
         stateForm.value.setor = '-1';
         stateForm.value.cep = '';
-        stateForm.value.pais = '-1';
-        stateForm.value.cidade = '-1';
-        stateForm.value.estado = '-1';
         stateForm.value.subject = '-1';
         stateForm.value.message = '';
     }
@@ -189,12 +215,45 @@ const formRevenda = defineStore('formulario-revenda',() => {
         cities.value.push(...options);
         loadingCities.value = false;
     }
-    watch(() => stateForm.value.estado, (value:string | undefined) => {
-        stateForm.value.cidade = "-1"
+    watch(() => stateForm.value.province, (value:string | undefined) => {
+        stateForm.value.city = "-1"
         if(value !== undefined && value !== "-1") {
             getCities(value)
         }
     })
+
+    async function requireDataCep(){
+        if(stateForm.value.cep?.length === 9){
+            let cep = stateForm.value.cep.replace(/-/g,"");
+            const { data } = await useAsyncData(
+                `${cep}`,
+                async ():Promise<DataCep> => await $fetch(`https://viacep.com.br/ws/${cep}/json/`)
+            )
+            if(data.value){
+                dataCep.value.cep = data.value.cep;
+                dataCep.value.logradouro = data.value.logradouro;
+                dataCep.value.complemento = data.value.complemento;
+                dataCep.value.bairro = data.value.bairro;
+                dataCep.value.localidade = data.value.localidade;
+                dataCep.value.uf = data.value.uf;
+                dataCep.value.ibge = data.value.ibge;
+                dataCep.value.gia = data.value.gia;
+                dataCep.value.ddd = data.value.ddd;
+                dataCep.value.siafi = data.value.siafi;
+            }
+        } else if (stateForm.value.cep?.length === 0){
+            dataCep.value.cep = '';
+            dataCep.value.logradouro = '';
+            dataCep.value.complemento = '';
+            dataCep.value.bairro = '';
+            dataCep.value.localidade = '';
+            dataCep.value.uf = '';
+            dataCep.value.ibge = '';
+            dataCep.value.gia = '';
+            dataCep.value.ddd = '';
+            dataCep.value.siafi = '';
+        }
+    }
 
     return {
         //estados
@@ -204,14 +263,16 @@ const formRevenda = defineStore('formulario-revenda',() => {
         countrys,
         provinces,
         cities,
+        dataCep,
         //functions
-        getCountrys,
+        // getCountrys,
         getProvinces,
         phoneMask,
         fixedPhoneMask,
         cpfCnpjMask,
         cepMask,
         resetForm,
+        requireDataCep,
         //placeholdes
         loadingCities
     }

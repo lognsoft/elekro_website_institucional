@@ -12,20 +12,21 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <Banner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
+        <GeneralBanner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class="pt-11 bg-white">
             <div class="container mx-auto md:px-3 max-w-[1350px]">
                 <div class="text-center mb-[40px] px-3 ">
-                    <H2Title class="mb-3">Abra as portas para o futuro com a Elekro</H2Title>
+                    <TextH2Title class="mb-3">Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro</TextH2Title>
                     <p class="mb-4 text-black">
-                        Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
+                        Posicionamos o consumidor no centro todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco
+                        <!-- Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
                         A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
                         incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.
                         Essa integração possibilita a automação de tarefas e a criação de cenários personalizados,
-                        contribuindo para a construção de ambientes seguros, convenientes e livres de estresse para residentes e funcionários.
+                        contribuindo para a construção de ambientes seguros, convenientes e livres de estresse para residentes e funcionários. -->
                     </p>
-                    <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um parceiro elekro</button>
-                    <H2Title class="mt-11">Explore os benefícios Exclusivos e diferenciais da Elekro</H2Title>
+                    <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado elekro</button>
+                    <!-- <TextH2Title class="mt-11">Explore os benefícios Exclusivos e diferenciais da Elekro</TextH2Title> -->
                 </div>
 
                 <div class="grid grid-cols-1 gap-2 md:gap-0">
@@ -33,7 +34,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2">
                             <div class="bg-black/80 text-white aspect-[1/1] p-4 flex items-center">
                                 <div class="w-full">
-                                    <H2Title class="mb-3">{{ info.title }}</H2Title>
+                                    <TextH2Title class="mb-3">{{ info.title }}</TextH2Title>
                                     <div v-html="info.text"></div>
                                 </div>
                             </div>

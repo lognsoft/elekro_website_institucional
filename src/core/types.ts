@@ -36,19 +36,18 @@ export type Option = {
     value:string | number,
 }
 export type Form = {
-    nome:string | undefined,
-    email:string | undefined,
-    empresa:string | undefined,
-    phone:string | undefined,
-    fixedPhone:string | undefined,
-    cpf_cnpj:string | undefined,
-    setor:string | undefined
-    cep:string | undefined,
-    pais:string | undefined,
-    cidade:string | undefined,
-    estado:string | undefined
-    subject:string | undefined,
-    message:string | undefined,
+    nome:string;
+    email:string;
+    razaoSocial:string;
+    requiredPhone:string;
+    phone:string;
+    cnpj:string;
+    setor:string;
+    cep:string;
+    province:string;
+    city:string;
+    subject:string;
+    message:string;
 }
 
 export type Country = {
@@ -128,15 +127,15 @@ export type FormStateData = {
     Assunto:string | undefined,
     Nome:string | undefined,
     Email:string | undefined,
-    Empresa:string | undefined,
+    'Razão_Social':string | undefined,
     Telefone:string | undefined,
     Telefone_fixo:string | undefined,
-    'CPF/CNPJ':string | undefined,
+    'CNPJ':string | undefined,
     Setor:string | undefined,
     CEP:string | undefined,
-    Estado:string | undefined,
+    Mensagem:string | undefined,
     Cidade:string | undefined,
-    Mensagem:string | undefined
+    Estado:string | undefined,
 }
 
 //fim formulários
@@ -148,6 +147,7 @@ export type Capacidade = {
 }
 
 export type InputForm = {
+    label:string;
     ico:string;
     id:string;
     name:string;

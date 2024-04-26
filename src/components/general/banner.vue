@@ -37,7 +37,6 @@ function scrollOpacity(){
     let percent:number = (100 - (documentScroll / bannerSingle.value) * 100) + (bannerTextHeight.value/100) * 10;
 
     let translate:number = 50 + (documentScroll / bannerSingle.value) * 50;
-    console.log(translate);
     transform.value = Math.max(50, Math.min(translate, 200));
     opacity.value = Math.max(0, Math.min(percent, 100));
 };

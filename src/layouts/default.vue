@@ -2,9 +2,9 @@
     <Head>
         <Link rel="stylesheet" href="/css/font.css"/>
     </Head>
-    <HeaderDefault/>
+    <GeneralHeaderDefault/>
         <slot/>
-    <FooterDefault/>
+    <GeneralFooterDefault/>
 </template>
 
 <script setup lang="ts">

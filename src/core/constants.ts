@@ -67,21 +67,21 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/parceria-estrategica.jpg',
         title: 'Parceria estratégica',
-        text: '<p>Preços competitivos, negociação especial com MOQ, projetos e licitações.</p><p>Com nossa base de dados, direcionaremos clientes interessados para distribuidores exclusivos na região, garantindo acesso fácil ao produto desejado.</p>',
+        text: '<p>Encaminharemos clientes e projetos para distribuidores exclusivos da área, oferecendo preços competitivos e condições especiais de negociação para volumes em projetos e licitações.</p>',
     },
     {
         img:'/images/autorizado/analise-de-credito.jpeg',
-        title:'Análise especial de crédito',
+        title:'Avaliação de Crédito Personalizada',
         text:'<p>Condições especiais de prazo de pagamento para parceiros de relacionamento estratégicos com a Elekro.</p>',
     },
     {
         img:'/images/autorizado/lead-time-de-entrega.jpg',
-        title:'Lead-time de entrega',
+        title:'Entrega eficiente',
         text:'<p>Em até duas semanas após a aprovação do pedido.</p>',
     },
     {
         img:'/images/autorizado/suporte-tecnico.png',
-        title:'Suporte Técnico',
+        title:'Tecnologia de ponta',
         text:'<p>Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.</p>',
     },
     {
@@ -102,11 +102,11 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/conformidade.jpeg',
         title:"Conformidade",
-        text:"<p>Nossa adesão ao padrão ABNT 14913 garante aos nossos clientes e instaladores uma experiência tranquila e uma instalação descomplicada.</p><p>Cumprimos integralmente com todos os padrões estabelecidos pela Anatel, garantindo a qualidade e conformidade conforme lei nº 9.472.</p>",
+        text:"<p>Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.</p>",
     },
     {
         img:'/images/autorizado/projetos.jpeg',
-        title:"Projetos",
+        title:"Capilaridade e Rede de instaladores",
         text:'<p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p><p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>',
     },
 ]

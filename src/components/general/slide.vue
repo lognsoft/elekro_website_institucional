@@ -67,16 +67,10 @@ onUnmounted(() => window.removeEventListener("scroll", scrollOpacity))
 
 function scrollOpacity(){
     //altura atual do scroll
-    // let documentScroll:number = document.scrollingElement?.scrollTop as number;
-    // let percent:number = 100 - (documentScroll / slideSingle.value) * 100;
-    // percent = Math.max(0, Math.min(percent, 100));
-    // opacity.value = percent;
-
     let documentScroll:number = document.scrollingElement?.scrollTop as number;
     let percent:number = (100 - (documentScroll / slideSingle.value) * 100) + (slideSingle.value/100) * 10;
 
     let translate:number = 50 + (documentScroll / slideSingle.value) * 50;
-    console.log(translate);
     transform.value = Math.max(50, Math.min(translate, 200));
     opacity.value = Math.max(0, Math.min(percent, 100));
 }

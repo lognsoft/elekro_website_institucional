@@ -10,24 +10,24 @@
     <main class="mt-[100px]">
         <section class="py-11">
             <div class="container mx-auto px-3">
-                <h2Title class="mb-4">Fontes</h2Title>
+                <TextH2Title class="mb-4">Fontes</TextH2Title>
                 <h6>H2-Titulo:</h6>
-                <H2Title>título h2 padrão</H2Title>
+                <TextH2Title>título h2 padrão</TextH2Title>
                 <hr/>
 
                 <h6>H3-Titulo:</h6>
-                <H3Title>título h3 para textos</H3Title>
+                <TextH3Title>título h3 para textos</TextH3Title>
                 <hr/>
 
                 <h6>H4-Subtitulo:</h6>
-                <H4SubTitle>título h4 padrão de subtítulo</H4SubTitle>
+                <TextH4SubTitle>título h4 padrão de subtítulo</TextH4SubTitle>
                 <hr/>
 
                 <h6>parágrafo:</h6>
                 <p>paragráfo normal</p>
                 <hr/>
 
-                <h2Title class="mb-4">Cores</h2Title>
+                <TextH2Title class="mb-4">Cores</TextH2Title>
                 <h6>Preta</h6>
                 <div class="color">
                     <div class="box bg-[#000000]"></div>
