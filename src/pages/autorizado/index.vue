@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <figure ref="figure" :class="{'md:order-first':(index + 1) % 2 == 0}">
-                                <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" :alt="infos.title"/>
+                                <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" :alt="info.title"/>
                             </figure>
                         </div>
                     </template>

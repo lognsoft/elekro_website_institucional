@@ -67,7 +67,7 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/parceria-estrategica.jpeg',
         title: 'Parceria estratégica',
-        text: '<p>Encaminharemos clientes e projetos para distribuidores exclusivos da área, oferecendo preços competitivos e condições especiais de negociação para volumes em projetos e licitações.</p>',
+        text: '<p>Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.</p>',
     },
     {
         img:'/images/autorizado/analise-de-credito.jpeg',
