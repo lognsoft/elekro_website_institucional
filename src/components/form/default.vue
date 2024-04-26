@@ -202,7 +202,7 @@ const messageSubmit = computed(():string => {
                         <FormInputForm
                             id="empresa"
                             name="nome"
-                            label="Razão Social"
+                            label="Razão Social*"
                             placeholder="Digite sua razão social"
                             :required="true"
                             :min-length="4"
@@ -229,7 +229,7 @@ const messageSubmit = computed(():string => {
                             <FormInputForm
                                 id="telefone"
                                 name="telefone"
-                                label="Telefone para fixo contato"
+                                label="Telefone fixo"
                                 placeholder="(__) ____-____"
                                 :max-length="14"
                                 @mask="fixedPhoneMask()"
@@ -255,8 +255,8 @@ const messageSubmit = computed(():string => {
                         
                         <div class="col-span-1 sm:col-span-2">
                             <FormSelectForm
-                                label="Setor"
-                                placeholder="Setor*"
+                                label="Setor*"
+                                placeholder="Setor"
                                 name="setor"
                                 :options="setores"
                                 :required="true"
@@ -281,7 +281,7 @@ const messageSubmit = computed(():string => {
                         <div class="col-span-1 sm:col-span-2">
                             <FormSelectForm
                                 label="Estado*"
-                                placeholder="Estado*"
+                                placeholder="Estado"
                                 name="estado"
                                 v-model="state.province"
                                 :options="provinces"
@@ -292,7 +292,7 @@ const messageSubmit = computed(():string => {
                             <FormSelectForm
                                 label="Cidade*"
                                 name="cidade"
-                                placeholder="Cidade*"
+                                placeholder="Cidade"
                                 v-model="state.city"
                                 :options="cities"
                                 :disabled="disabledCities"
@@ -307,7 +307,7 @@ const messageSubmit = computed(():string => {
                         <FormSelectForm label="Assunto*" placeholder="Que tipo de parceiro você quer ser?" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
                     </div> -->
                     <div class="mb-[15px]">
-                        <FormTextareaForm id="mensagem" name="mensagem" placeholder="Mensagem*" v-model="state.message" :required="true" :disabled="submitAsync"/>
+                        <FormTextareaForm id="mensagem" name="mensagem" label="Mensagem*" placeholder="Mensagem" v-model="state.message" :required="true" :disabled="submitAsync"/>
                     </div>
                     <!-- <div class="input-grid">
                         <div class="col-span-1 sm:col-span-2">

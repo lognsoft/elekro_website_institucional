@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="label-p">{{ placeholder }}</p>
+        <p v-if="label !== ''" class="label-p">{{ label }}</p>
         <div class="textarea" :class="{
             'border-[#333]':!inputFocus && !inputValid,
             'border-[#1c54d9]':inputFocus || inputValid || (inputValid && inputFocus),
@@ -31,6 +31,10 @@ const inputValid:Ref<boolean> = ref(false);
 const inputFocus:Ref<boolean> = ref(false);
 const emit = defineEmits(['update:modelValue','mask']);
 const props = defineProps({
+    label:{
+        type:String,
+        default:''
+    },
     ico:{
         type:String,
         default:''
