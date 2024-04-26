@@ -65,7 +65,7 @@ export const midiasSociais:ReadonlyArray<Midia> = [
 //página autorizado
 export const infos:ReadonlyArray<Info> = [
     {
-        img:'/images/autorizado/parceria-estrategica.jpg',
+        img:'/images/autorizado/parceria-estrategica.jpeg',
         title: 'Parceria estratégica',
         text: '<p>Encaminharemos clientes e projetos para distribuidores exclusivos da área, oferecendo preços competitivos e condições especiais de negociação para volumes em projetos e licitações.</p>',
     },
@@ -100,12 +100,12 @@ export const infos:ReadonlyArray<Info> = [
         text:"<p>Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.</p>",
     },
     {
-        img:'/images/autorizado/conformidade.jpeg',
+        img:'/images/autorizado/conformidade.png',
         title:"Conformidade",
         text:"<p>Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.</p>",
     },
     {
-        img:'/images/autorizado/projetos.jpeg',
+        img:'/images/autorizado/projetos.jpg',
         title:"Capilaridade e Rede de instaladores",
         text:'<p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p><p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>',
     },

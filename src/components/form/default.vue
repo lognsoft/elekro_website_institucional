@@ -366,7 +366,7 @@ const messageSubmit = computed(():string => {
     @apply duration-200 underline text-[#1a6bd9]
 }
 .form-ul{
-    @apply max-w-[500px] mx-auto mb-[20px] pl-7 space-y-2 text-center
+    @apply max-w-[500px] mx-auto mb-[20px] pl-7 space-y-2 list-disc
 }
 .input-grid{
     @apply mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]

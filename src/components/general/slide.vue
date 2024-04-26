@@ -38,16 +38,14 @@ import {
     SwiperPagination,
     SwiperNavigation,
     SwiperAutoplay,
-    SwiperEffectCreative,
-    SwiperParallax
+    SwiperEffectCreative
 } from '#imports';
 
 const modules = [
     SwiperPagination,
     SwiperNavigation,
     SwiperAutoplay,
-    SwiperEffectCreative,
-    SwiperParallax
+    SwiperEffectCreative
 ];
 defineProps(['images']);
 
@@ -68,7 +66,7 @@ onUnmounted(() => window.removeEventListener("scroll", scrollOpacity))
 function scrollOpacity(){
     //altura atual do scroll
     let documentScroll:number = document.scrollingElement?.scrollTop as number;
-    let percent:number = (100 - (documentScroll / slideSingle.value) * 100) + (slideSingle.value/100) * 10;
+    let percent:number = (100 - (documentScroll / slideSingle.value) * 100) + (slideSingle.value/100) * 4;
 
     let translate:number = 50 + (documentScroll / slideSingle.value) * 50;
     transform.value = Math.max(50, Math.min(translate, 200));
