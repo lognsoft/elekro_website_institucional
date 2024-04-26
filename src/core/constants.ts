@@ -72,7 +72,7 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/analise-de-credito.jpeg',
         title:'Avaliação de Crédito Personalizada',
-        text:'<p>Condições especiais de prazo de pagamento para parceiros de relacionamento estratégicos com a Elekro.</p>',
+        text:'<p>Oferecemos condições especiais de prazo de pagamento para parceiros estratégicos da Elekro.</p>',
     },
     {
         img:'/images/autorizado/lead-time-de-entrega.jpg',
@@ -107,7 +107,7 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/projetos.jpg',
         title:"Capilaridade e Rede de instaladores",
-        text:'<p class="mb-2">Estamos prontos para contribuir e apoiar projetos que atendam às necessidades específicas do mercado, trabalhando em colaboração com nossos distribuidores, com foco especial em inteligência artificial, segurança eletrônica e energias renováveis.</p><p>Agende uma reunião com nossa equipe comercial através do chat online ou preenchendo o formulário disponível.</p>',
+        text:'<p class="mb-2">Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país</p>',
     },
 ]
 
