@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
-import H4SubTitle from '../text/h4SubTitle.vue';
-import H3Title from '../text/H3Title.vue';
 const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
@@ -11,7 +9,6 @@ const {
     stateForm:state,
     setores,
     subjects:assuntos,
-    dataCep,
     cities,
     provinces,
     phoneMask,

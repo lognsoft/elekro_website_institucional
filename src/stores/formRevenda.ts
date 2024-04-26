@@ -70,12 +70,12 @@ const formRevenda = defineStore('formulario-revenda',() => {
     ];
     const subjects:Option[] = [
         {
-            option:'autorizado',
-            value:'autorizado'
+            option:'revendedor autorizado',
+            value:'revendedor autorizado'
         },
         {
-            option:'instalador',
-            value:'instalador'
+            option:'instalador autorizado',
+            value:'instalador autorizado'
         }
     ]
     const countrys:Ref<Option[]> = ref([]);
@@ -181,20 +181,22 @@ const formRevenda = defineStore('formulario-revenda',() => {
         countrys.value.push(...options);
     }
     const getProvinces = async ():Promise<void> => {
-        let endPoint:string = `https://servicodados.ibge.gov.br/api/v1/localidades/estados`
-        let options:Array<Option> = [];
-        let array:Array<Province> = await getInfo<Province>('brasil', endPoint);
-        if(array.length > 0){
-            const sortedCountrys = array.sort((a,b) => a.nome.localeCompare(b.nome))
-                options = sortedCountrys.map((val:Province) => {
-                let country_single:Option = {
-                    option: val.nome,
-                    value: val.sigla
-                }
-                return country_single
-            })
+        if(provinces.value.length === 0){
+            let endPoint:string = `https://servicodados.ibge.gov.br/api/v1/localidades/estados`
+            let options:Array<Option> = [];
+            let array:Array<Province> = await getInfo<Province>('brasil', endPoint);
+            if(array.length > 0){
+                const sortedCountrys = array.sort((a,b) => a.nome.localeCompare(b.nome))
+                    options = sortedCountrys.map((val:Province) => {
+                    let country_single:Option = {
+                        option: val.nome,
+                        value: val.sigla
+                    }
+                    return country_single
+                })
+            }
+            provinces.value.push(...options);
         }
-        provinces.value.push(...options);
     }
     const getCities = async (UF:string):Promise<void> => {
         let endPoint:string = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${UF}/municipios`

@@ -75,7 +75,7 @@ export const infos:ReadonlyArray<Info> = [
         text:'<p>Oferecemos condições especiais de prazo de pagamento para parceiros estratégicos da Elekro.</p>',
     },
     {
-        img:'/images/autorizado/lead-time-de-entrega.jpg',
+        img:'/images/autorizado/entrega-eficiente.png',
         title:'Entrega eficiente',
         text:'<p>Em até duas semanas após a aprovação do pedido.</p>',
     },
@@ -105,7 +105,7 @@ export const infos:ReadonlyArray<Info> = [
         text:"<p>Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.</p>",
     },
     {
-        img:'/images/autorizado/projetos.jpg',
+        img:'/images/autorizado/capilaridade.jpeg',
         title:"Capilaridade e Rede de instaladores",
         text:'<p class="mb-2">Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país</p>',
     },
