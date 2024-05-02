@@ -65,49 +65,54 @@ export const midiasSociais:ReadonlyArray<Midia> = [
 //página autorizado
 export const infos:ReadonlyArray<Info> = [
     {
+        img:'/images/autorizado/analise-de-credito.jpeg',
+        title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
+        text: 'Posicionamos o consumidor no centro todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
+    },
+    {
         img:'/images/autorizado/parceria-estrategica.jpeg',
         title: 'Parceria estratégica',
-        text: '<p>Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.</p>',
+        text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
     },
     {
         img:'/images/autorizado/analise-de-credito.jpeg',
         title:'Avaliação de Crédito Personalizada',
-        text:'<p>Oferecemos condições especiais de prazo de pagamento para parceiros estratégicos da Elekro.</p>',
+        text:'Oferecemos condições especiais de prazo de pagamento para parceiros estratégicos da Elekro.',
     },
     {
         img:'/images/autorizado/entrega-eficiente.png',
         title:'Entrega eficiente',
-        text:'<p>Em até duas semanas após a aprovação do pedido.</p>',
+        text:'Em até duas semanas após a aprovação do pedido.',
     },
     {
         img:'/images/autorizado/suporte-tecnico.png',
         title:'Tecnologia de ponta',
-        text:'<p>Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.</p>',
+        text:'Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.',
     },
     {
         img:'/images/autorizado/marketing-promocao.png',
         title:"Marketing e Promoção",
-        text:"<p>Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.</p>",
+        text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
     },
     {
         img:'/images/autorizado/inovacoes-elekro.png',
         title:"Participação nas inovações da Elekro",
-        text:"<p>Implementamos suas sugestões de melhorias em conjunto com nossa equipe de P&D.</p>",
+        text:"Implementamos suas sugestões de melhorias em conjunto com nossa equipe de P&D.",
     },
     {
         img:'/images/autorizado/roadmap.png',
         title:"Roadmap",
-        text:"<p>Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.</p>",
+        text:"Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.",
     },
     {
         img:'/images/autorizado/conformidade.png',
         title:"Conformidade",
-        text:"<p>Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.</p>",
+        text:"Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.",
     },
     {
         img:'/images/autorizado/capilaridade.jpeg',
         title:"Capilaridade e Rede de instaladores",
-        text:'<p class="mb-2">Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país</p>',
+        text:'Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país',
     },
 ]
 

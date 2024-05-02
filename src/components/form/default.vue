@@ -135,7 +135,7 @@ const messageSubmit = computed(():string => {
 <template>
     <section class="py-11 bg-white" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
-            <TextH2Title class="mb-3 text-center">Inicie sua jornada ao lado da Elekro</TextH2Title>
+            <!-- <TextH2Title class="mb-3 text-center">Inicie sua jornada ao lado da Elekro</TextH2Title>
             <TextH4SubTitle class="mb-3 text-center">Atitudes que esperamos:</TextH4SubTitle>
             <ul class="form-ul">
                 <li>
@@ -153,7 +153,7 @@ const messageSubmit = computed(():string => {
                 <li>
                     <p>Comprometa-se com a gestão do negócio</p>
                 </li>
-            </ul>
+            </ul> -->
             <div class="relative">
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"

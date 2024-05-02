@@ -14,6 +14,7 @@
 
     body{
         font-family: "Lufga";
+        scroll-behavior: smooth;
     }
 
     .fluid-image{

@@ -13,33 +13,39 @@
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <GeneralBanner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
-        <section class="pt-11 bg-white">
-            <div class="container mx-auto md:px-3 max-w-[1350px]">
-                <div class="text-center mb-[40px] px-3 ">
+        <section class=" bg-white">
+            <div class="mx-auto w-full max-w-[2000px]">
+                <!-- <div class="text-center mb-[40px] px-3 max-w-[1350px] mx-auto">
                     <TextH2Title class="mb-3">Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro</TextH2Title>
                     <p class="mb-4 text-black">
                         Posicionamos o consumidor no centro todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco
-                        <!-- Com o avanço da IAoT, o setor imobiliário está explorando novas oportunidades.
-                        A Elekro One+ se integra a uma variedade de dispositivos domésticos inteligentes,
-                        incluindo sistemas de segurança, câmeras de vigilância e dispositivos de iluminação.
-                        Essa integração possibilita a automação de tarefas e a criação de cenários personalizados,
-                        contribuindo para a construção de ambientes seguros, convenientes e livres de estresse para residentes e funcionários. -->
                     </p>
                     <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado elekro</button>
-                    <!-- <TextH2Title class="mt-11">Explore os benefícios Exclusivos e diferenciais da Elekro</TextH2Title> -->
-                </div>
+                </div> -->
 
                 <div class="grid grid-cols-1 gap-2 md:gap-0">
                     <template v-for="info,index in infos" :key="index">
                         <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="bg-black/80 text-white aspect-[1/1] p-4 flex items-center">
+                            <div class="bg-black/80 text-white aspect-[1/1] lg:aspect-[2/1.2] p-4 flex items-center">
                                 <div class="w-full">
                                     <TextH2Title class="mb-3">{{ info.title }}</TextH2Title>
-                                    <div v-html="info.text"></div>
+                                    <div>
+                                        <template v-if="typeof info.text == 'string'">
+                                            <p>{{ info.text }}</p>
+                                        </template>
+                                        <template v-else>
+                                            <p v-for="text,index in info.text" :key="index">
+                                                {{ text }}
+                                            </p>
+                                        </template>
+                                        <template v-if="info.title === 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro'">
+                                            <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado elekro</button>
+                                        </template>
+                                    </div>
                                 </div>
                             </div>
                             <figure ref="figure" :class="{'md:order-first':(index + 1) % 2 == 0}">
-                                <img class="h-full w-full object-cover aspect-[1/1]" :src="info.img" :alt="info.title"/>
+                                <img class="h-full w-full object-cover aspect-[1/1] lg:aspect-[2/1.2]" :src="info.img" :alt="info.title"/>
                             </figure>
                         </div>
                     </template>

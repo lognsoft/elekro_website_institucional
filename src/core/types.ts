@@ -16,7 +16,7 @@ export type Midia = {
 export type Info = {
     img:string;
     title: string;
-    text: string;
+    text: string | Array<string>;
 }
 export type Feature = {
     icon:string;
