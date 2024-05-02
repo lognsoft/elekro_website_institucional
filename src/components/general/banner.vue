@@ -1,7 +1,7 @@
 <template>
     <section class="apresentacao">
         <img :src="props.src" alt=""/>
-        <div class="content-container" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
+        <div class="content-container" :class="{'hidden md:block':hidden}" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <h1 class="banner-title">{{ props.title }}</h1>
             <template v-if="props.text != ''">
                 <p class="banner-text">{{ props.text }}</p>
@@ -12,10 +12,23 @@
 
 <script setup lang="ts">
 import type { Banner } from "~/core/types";
-const props = withDefaults(defineProps<Banner>(),{
-    title:'',
-    text:'',
-    src:'',
+const props = defineProps({
+    title:{
+        type:String,
+        default:''
+    },
+    text:{
+        type:String,
+        default:''
+    },
+    src:{
+        type:String,
+        default:''
+    },
+    hidden:{
+        type:Boolean,
+        default:false
+    }
 })
 const opacity:Ref<number> = ref(100);
 const transform:Ref<number> = ref(50);

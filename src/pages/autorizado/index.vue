@@ -14,7 +14,7 @@
         </Head>
         <GeneralBanner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section class=" bg-white">
-            <div class="mx-auto w-full max-w-[2000px]">
+            <div class="mx-auto w-full">
                 <!-- <div class="text-center mb-[40px] px-3 max-w-[1350px] mx-auto">
                     <TextH2Title class="mb-3">Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro</TextH2Title>
                     <p class="mb-4 text-black">
@@ -27,7 +27,7 @@
                     <template v-for="info,index in infos" :key="index">
                         <div class="grid grid-cols-1 md:grid-cols-2">
                             <div class="bg-black/80 text-white aspect-[1/1] lg:aspect-[2/1.2] p-4 flex items-center">
-                                <div class="w-full">
+                                <div class="w-full container max-w-[900px]" :class="{'md:ml-0 md:mr-auto':(index + 1) % 2 == 0,'md:mr-0 md:ml-auto':(index + 1) % 2 > 0}">
                                     <TextH2Title class="mb-3">{{ info.title }}</TextH2Title>
                                     <div>
                                         <template v-if="typeof info.text == 'string'">

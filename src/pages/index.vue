@@ -11,9 +11,10 @@
         <Meta name="twitter:card" content="summary_large_image"/>
     </Head>
     <main>
-        <div class="w-full h-screen overflow-hidden">
+        <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
-        </div>
+        </div> -->
+        <GeneralBanner src="/images/bm-slide/bg1.jpg" title="Proteção e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
@@ -133,4 +134,4 @@ import { features, slide } from "~/core/constants";
     /* .my-link{#1a6bd9
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     } */
-</style>~/core/types
+</style>

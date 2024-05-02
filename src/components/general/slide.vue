@@ -92,7 +92,7 @@ function scrollOpacity(){
 }
 
 .slide-contents{
-    @apply container max-w-xl md:max-w-6xl mx-auto px-11 absolute left-[50%] top-[50%] z-20 hidden md:block
+    @apply container max-w-xl md:max-w-6xl mx-auto px-11 absolute left-[50%] top-[50%] z-20
 }
 .slide-contents .slide-title{
     @apply
