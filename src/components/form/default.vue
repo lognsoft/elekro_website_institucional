@@ -350,10 +350,10 @@ const messageSubmit = computed(():string => {
                     </div>
                 </form>
             </div>
-            <div class="text-center mt-8 text-[#626262] text-lg md:text-xl">
+            <!-- <div class="text-center mt-8 text-[#626262] text-lg md:text-xl">
                 <TextH4SubTitle class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</TextH4SubTitle>
                 <MyLinkTwo :icon="false" href="/elekro-one-plus" class="nav-form">Saiba mais sobre a Elekro One+</MyLinkTwo>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

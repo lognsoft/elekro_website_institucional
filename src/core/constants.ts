@@ -65,17 +65,17 @@ export const midiasSociais:ReadonlyArray<Midia> = [
 //página autorizado
 export const infos:ReadonlyArray<Info> = [
     {
-        img:'/images/autorizado/analise-de-credito.jpeg',
+        img:'/images/autorizado/futuro-elekro.jpeg',
         title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
-        text: 'Posicionamos o consumidor no centro todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
+        text: 'Posicionamos o consumidor no centro de todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
     },
     {
-        img:'/images/autorizado/parceria-estrategica.jpeg',
+        img:'/images/autorizado/parceria-estrategica.jpg',
         title: 'Parceria estratégica',
         text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
     },
     {
-        img:'/images/autorizado/analise-de-credito.jpeg',
+        img:'/images/autorizado/analise-de-credito.jpg',
         title:'Avaliação de Crédito Personalizada',
         text:'Oferecemos condições especiais de prazo de pagamento para parceiros estratégicos da Elekro.',
     },
