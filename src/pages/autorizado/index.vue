@@ -39,7 +39,7 @@
                                             </p>
                                         </template>
                                         <template v-if="info.title === 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro'">
-                                            <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado elekro</button>
+                                            <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado Elekro</button>
                                         </template>
                                     </div>
                                 </div>
