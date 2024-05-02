@@ -2,7 +2,7 @@
     <section class="apresentacao">
         <img :src="props.src" alt=""/>
         <div class="content-container" :class="{'hidden md:block':hidden}" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
-            <h1 class="banner-title">{{ props.title }}</h1>
+            <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
                 <p class="banner-text">{{ props.text }}</p>
             </template>
@@ -64,7 +64,7 @@ function scrollOpacity(){
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
-    @apply absolute w-full h-full bg-black/40 top-0 left-0;
+    @apply absolute w-full h-full bg-black/30 top-0 left-0;
 }
 .content-container{
     @apply fixed z-10 container mx-auto px-5 text-white gap-[-30px] top-[50%] left-[50%]
