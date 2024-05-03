@@ -1,6 +1,7 @@
 <template>
     <section class="apresentacao">
-        <img :src="props.src" alt=""/>
+        <img :class="{'hidden md:block object-contain':props.srcMobile !== undefined, 'object-cover':props.srcMobile === undefined}" :src="props.src" alt=""/>
+        <img v-if="props.srcMobile !== undefined" class="block md:hidden object-contain" :src="props.srcMobile" alt=""/>
         <div class="content-container" :class="{'hidden md:block':hidden}" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
@@ -24,6 +25,10 @@ const props = defineProps({
     src:{
         type:String,
         default:''
+    },
+    srcMobile:{
+        type:String,
+        default:undefined
     },
     hidden:{
         type:Boolean,
@@ -60,7 +65,7 @@ function scrollOpacity(){
     @apply relative w-full flex items-center h-screen overflow-hidden z-[-1];
 }
 .apresentacao img{
-    @apply w-full h-full object-cover fixed top-0 left-0 appearance-none;
+    @apply w-full h-full fixed top-0 left-0 appearance-none;
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
