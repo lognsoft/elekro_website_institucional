@@ -21,9 +21,9 @@
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
                         <TextH2Title class="text-center lg:hidden">Elekro One+</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
-                        <figure class="col-span-1">
+                        <figure>
                             <img
-                                class="w-auto h-full max-h-[690px] mx-auto object-contain"
+                                class="max-w-[100%] max-h-[690px] mx-auto object-contain"
                                 src="/images/home/fechaduradupla.png"
                                 srcset="/images/home/fechaduradupla.png"
                                 alt="Maçaneta preta de frente"
