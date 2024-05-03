@@ -64,7 +64,7 @@
                             
                         </ul>
                         <div class="text-center my-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                            <MyLinkTwo :icon="false" class="my-link hidden lg:inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>
