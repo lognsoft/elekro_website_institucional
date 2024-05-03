@@ -18,7 +18,9 @@
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[50px]">
-                    <div class="relative text-center mb-3 mt-[20px] lg:mb-0 lg:mt-0">
+                    <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
+                        <TextH2Title class="text-center lg:hidden">Elekro One+</TextH2Title>
+                        <TextH4SubTitle class="text-center mb-2 lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
                         <figure class="col-span-1">
                             <img
                                 class="w-auto h-full max-h-[690px] mx-auto object-contain"
@@ -35,11 +37,11 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure> -->
-                        <MyLinkTwo :icon="false" class="
+                        <!-- <MyLinkTwo :icon="false" class="
                             mt-7 inline-block my-link
                             " 
                             href="/elekro-one-plus"
-                        >Saiba mais</MyLinkTwo>
+                        >Saiba mais</MyLinkTwo> -->
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
                 </div>
@@ -47,8 +49,8 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center">Elekro One+</TextH2Title>
-                        <TextH4SubTitle class="text-center">Série FM-F31</TextH4SubTitle>
+                        <TextH2Title class="text-center hidden lg:block">Elekro One+</TextH2Title>
+                        <TextH4SubTitle class="text-center hidden lg:block">Série FM-F31</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
@@ -62,7 +64,7 @@
                             
                         </ul>
                         <div class="text-center my-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link inline-block lg:hidden" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                            <MyLinkTwo :icon="false" class="my-link inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>
