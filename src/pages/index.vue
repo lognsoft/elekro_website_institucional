@@ -20,7 +20,7 @@
                 <div class="my__container mx-auto lg:mr-0 sticky top-[50px]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
                         <TextH2Title class="text-center lg:hidden">Elekro One+</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-2 lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
+                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
                         <figure class="col-span-1">
                             <img
                                 class="w-auto h-full max-h-[690px] mx-auto object-contain"
