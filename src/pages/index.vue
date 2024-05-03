@@ -21,7 +21,7 @@
                     <div class="relative text-center mb-3 mt-[20px] lg:mb-0 lg:mt-0">
                         <figure class="col-span-1">
                             <img
-                                class="w-auto h-full max-h-[690px] mx-auto object-cover"
+                                class="w-auto h-full max-h-[690px] mx-auto object-contain"
                                 src="/images/home/fechaduradupla.png"
                                 srcset="/images/home/fechaduradupla.png"
                                 alt="Maçaneta preta de frente"
