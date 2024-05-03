@@ -60,7 +60,7 @@ function scrollOpacity(){
     @apply relative w-full flex items-center h-screen overflow-hidden z-[-1];
 }
 .apresentacao img{
-    @apply w-full h-full fixed top-0 left-0 appearance-none object-cover;
+    @apply w-full h-screen fixed top-0 left-0 appearance-none object-cover;
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
