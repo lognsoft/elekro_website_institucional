@@ -18,7 +18,7 @@
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[50px]">
-                    <div class="relative text-center mb-3 lg:mb-0">
+                    <div class="relative text-center mb-3 mt-[20px] lg:mb-0 lg:mt-0">
                         <figure class="col-span-1">
                             <img
                                 class="w-auto h-full max-h-[690px] mx-auto object-cover"
