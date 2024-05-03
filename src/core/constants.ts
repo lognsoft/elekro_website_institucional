@@ -27,7 +27,7 @@ export const rotas:ReadonlyArray<Route> = [
     },
     {
         path: "/elekro-one-plus",
-        pathName: "Elekro One+",
+        pathName: "Fechadura inteligente",
     },
     {
         path: "/autorizado",
@@ -66,13 +66,13 @@ export const midiasSociais:ReadonlyArray<Midia> = [
 export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/futuro-elekro.jpeg',
-        title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
-        text: 'Posicionamos o consumidor no centro de todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
+        title: 'Parceria estratégica',
+        text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
     },
     {
         img:'/images/autorizado/parceria-estrategica.jpg',
-        title: 'Parceria estratégica',
-        text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
+        title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
+        text: 'Posicionamos o consumidor no centro de todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
     },
     {
         img:'/images/autorizado/analise-de-credito.jpg',

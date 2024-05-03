@@ -79,7 +79,7 @@ watch(() => route.path, (newValue) => {
 <style scoped>
     /* tailwind style */
     .logo{
-        @apply text-3xl font-extrabold
+        @apply text-3xl font-extrabold cursor-pointer
     }
     .header{
         @apply w-screen fixed text-slate-50 z-[999] duration-500  top-0 left-0

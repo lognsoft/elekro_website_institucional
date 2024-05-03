@@ -135,8 +135,8 @@ const messageSubmit = computed(():string => {
 <template>
     <section class="py-11 bg-white" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
-            <!-- <TextH2Title class="mb-3 text-center">Inicie sua jornada ao lado da Elekro</TextH2Title>
-            <TextH4SubTitle class="mb-3 text-center">Atitudes que esperamos:</TextH4SubTitle>
+            <TextH2Title class="mb-3 text-center">Cadastre-se</TextH2Title>
+            <!-- <TextH4SubTitle class="mb-3 text-center">Atitudes que esperamos:</TextH4SubTitle>
             <ul class="form-ul">
                 <li>
                     <p>Visão de negócios voltada para resultados tangíveis</p>

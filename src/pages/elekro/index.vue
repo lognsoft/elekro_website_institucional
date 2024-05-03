@@ -18,8 +18,7 @@
                 <div class="text-base mb-6">
                     <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
                         <p class="mb-2"><span class="quote" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><Icon name="bi:quote"/></span>A Elekro projeta fechaduras eletrônicas, incorporando tecnologia biométrica, chaves eletrônicas e conectividade inteligente.</p>
-                        <p class="mb-2">Em 2023, projetamos a Elekro One+, série FM-F31, motivo de muito orgulho para nós.</p>
-                        <p class="mb-2">Ao darmos início à fabricação de fechaduras inteligentes projetadas para o Brasil, reiteramos nosso compromisso em proporcionar tecnologia, design e praticidade através de soluções inteligentes e conectadas.</p>
+                        <p class="mb-2">Em 2023, projetamos a Elekro One+, série FM-F31, e ao darmos início à fabricação de fechaduras inteligentes projetadas para o Brasil, reiteramos nosso compromisso em proporcionar tecnologia, design e praticidade através de soluções inteligentes e conectadas.</p>
                         <p class="mb-2">A fechadura inteligente Elekro One+, e o aplicativo Smart Life, abrem caminhos para inovações futuras que transformam a interação das pessoas com seus lares.</p>
                         <p>Este marco representa nosso firme compromisso em antecipar e atender às demandas da automação residencial, promovendo conforto, segurança e praticidade para os lares modernos.</p>
                     </div>
