@@ -66,12 +66,12 @@ export const midiasSociais:ReadonlyArray<Midia> = [
 export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/futuro-elekro.jpeg',
-        title: 'Parceria estratégica',
+        title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
         text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
     },
     {
         img:'/images/autorizado/parceria-estrategica.jpg',
-        title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
+        title: 'Parceria estratégica',
         text: 'Posicionamos o consumidor no centro de todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
     },
     {
