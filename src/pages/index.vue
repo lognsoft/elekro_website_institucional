@@ -17,25 +17,30 @@
         <GeneralBanner src="/images/bm-slide/bg1.jpg" title="Proteção<br/>e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
-                <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
-                    <div class="relative">
-                        <figure class="col-span-1 hidden md:block">
+                <div class="my__container mx-auto lg:mr-0 sticky top-[50px]">
+                    <div class="relative text-center mb-3 lg:mb-0">
+                        <figure class="col-span-1">
                             <img
-                                class="w-auto h-full max-h-[690px] lg:max-h-[732px] mx-auto object-cover"
+                                class="w-auto h-full max-h-[690px] mx-auto object-cover"
                                 src="/images/home/fechaduradupla.png"
                                 srcset="/images/home/fechaduradupla.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <figure class="col-span-1 md:hidden">
+                        <!-- <figure class="col-span-1 md:hidden">
                             <img
-                                class="w-auto h-full max-h-[690px] lg:max-h-[732px] mx-auto object-cover"
+                                class="w-auto h-full max-h-[690px] mx-auto object-cover"
                                 src="/images/home/fechaduraunica.png"
                                 srcset="/images/home/fechaduraunica.png"
                                 alt="Maçaneta preta de frente"
                             />
-                        </figure>
-                        <MyLinkTwo :icon="false" class="right-[20%] md:right-[32%] lg:right-[34%] bottom-[20%] my-link" :absolute="true" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                        </figure> -->
+                        <MyLinkTwo :icon="false" class="
+                            mt-7 inline-block my-link
+                            " 
+                            href="/elekro-one-plus"
+                        >Saiba mais</MyLinkTwo>
+                        <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
                 </div>
             </div>
