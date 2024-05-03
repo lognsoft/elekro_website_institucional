@@ -4,7 +4,7 @@
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
                     <NuxtLink to="/" @click="navigateOpen = false">
-                        <img class="max-w-[150px]" src="/assets/images/logotipo-elekro--.png" srcset="/assets/images/logotipo-elekro--.png" alt=""/>
+                        <img class="max-w-[150px]" src="/images/general/logo.png" srcset="/images/general/logo.png" alt=""/>
                     </NuxtLink>
                 </div>
                 <ClientOnly>
