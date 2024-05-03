@@ -17,7 +17,7 @@
         <GeneralBanner src="/images/bm-slide/bg1.jpg" title="Proteção<br/>e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
-                <div class="my__container mx-auto lg:mr-0 sticky top-[10%]">
+                <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
                         <TextH2Title class="text-center lg:hidden">Elekro One+</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
@@ -37,11 +37,11 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure> -->
-                        <!-- <MyLinkTwo :icon="false" class="
-                            mt-7 inline-block my-link
+                        <MyLinkTwo :icon="false" class="
+                            mt-7 hidden lg:inline-block my-link
                             " 
                             href="/elekro-one-plus"
-                        >Saiba mais</MyLinkTwo> -->
+                        >Saiba mais</MyLinkTwo>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
                 </div>
