@@ -17,13 +17,13 @@
         <GeneralBanner src="/images/bm-slide/bg1.jpg" title="Proteção<br/>e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
-                <div class="my__container mx-auto lg:mr-0 sticky top-[50px]">
+                <div class="my__container mx-auto lg:mr-0 sticky top-[10%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
                         <TextH2Title class="text-center lg:hidden">Elekro One+</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
                         <figure>
                             <img
-                                class="max-w-[100%] max-h-[690px] mx-auto object-contain"
+                                class="max-w-[100%] mx-auto object-contain"
                                 src="/images/home/fechaduradupla.png"
                                 srcset="/images/home/fechaduradupla.png"
                                 alt="Maçaneta preta de frente"
