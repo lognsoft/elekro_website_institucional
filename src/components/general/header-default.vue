@@ -82,10 +82,10 @@ watch(() => route.path, (newValue) => {
         @apply text-3xl font-extrabold
     }
     .header{
-        @apply w-screen fixed text-slate-50 z-50 duration-500  top-0 left-0
+        @apply w-screen fixed text-slate-50 z-[999] duration-500  top-0 left-0
     }
     .navigate{
-        @apply fixed w-full bg-black h-screen duration-700 z-40 top-0 left-[-100%] overflow-hidden text-white
+        @apply fixed w-full bg-black h-screen duration-700 top-0 left-[-100%] overflow-hidden text-white z-[998]
     }
 
     .navigate.active{
