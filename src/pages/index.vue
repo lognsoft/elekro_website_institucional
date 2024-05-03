@@ -14,16 +14,24 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <GeneralBanner src="/images/home/fechaduradupla.png" src-mobile="/images/home/fechaduraunica.png" title="Proteção<br/>e Elegância" :hidden="true"/>
+        <GeneralBanner src="/images/bm-slide/bg1.jpg" title="Proteção<br/>e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[40px]">
                     <div class="relative">
-                        <figure class="col-span-1">
+                        <figure class="col-span-1 hidden md:block">
                             <img
                                 class="w-auto h-full max-h-[690px] lg:max-h-[732px] mx-auto object-cover"
-                                src="/images/fechadura.png"
-                                srcset="/images/fechadura.png"
+                                src="/images/home/fechaduradupla.png"
+                                srcset="/images/home/fechaduradupla.png"
+                                alt="Maçaneta preta de frente"
+                            />
+                        </figure>
+                        <figure class="col-span-1 md:hidden">
+                            <img
+                                class="w-auto h-full max-h-[690px] lg:max-h-[732px] mx-auto object-cover"
+                                src="/images/home/fechaduraunica.png"
+                                srcset="/images/home/fechaduraunica.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
