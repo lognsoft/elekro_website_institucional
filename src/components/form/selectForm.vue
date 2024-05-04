@@ -19,11 +19,13 @@
                 @focusout="focus"
             >
                 <option disabled value="-1">{{ placeholder }}</option>
-                <ClientOnly>
-                    <template v-for="option,index in options" :key="index">
-                        <option :value="option.value" class="capitalize">{{ option.option }}</option>
-                    </template>
-                </ClientOnly>
+                <template v-if="options !== undefined">
+                    <ClientOnly>
+                        <template v-for="option,index in options" :key="index">
+                            <option :value="option.value" class="capitalize">{{ option.option }}</option>
+                        </template>
+                    </ClientOnly>
+                </template>
             </select>
         </div>
     </div>
@@ -43,17 +45,52 @@ type SelectForm = {
     label:string,
 }
 
+const props = defineProps({
+    ico: {
+        type:String,
+        default:''
+    },
+    placeholder:{
+        type:String,
+        default:'Selecione uma opção'
+    },
+    name: {
+        type:String,
+        default:''
+    },
+    options: {
+        type:Array,
+        default:undefined
+    },
+    required:{
+        type:Boolean,
+        default:false
+    },
+    disabled: {
+        type:Boolean,
+        default:false
+    },
+    modelValue:{
+        type:String,
+        default:'-1'
+    },
+    label:{
+        type:String,
+        default:''
+    }
+}) as SelectForm
+
 const emit = defineEmits(['update:modelValue']);
-const props = withDefaults(defineProps<SelectForm>(),{
-    ico: '',
-    placeholder: 'Selecione uma opção',
-    name: '',
-    options: undefined,
-    required:false,
-    disabled: false,
-    modelValue: '-1',
-    label:''
-});
+// const props = withDefaults(defineProps<SelectForm>(),{
+//     ico: '',
+//     placeholder: 'Selecione uma opção',
+//     name: '',
+//     options: undefined,
+//     required:false,
+//     disabled: false,
+//     modelValue: '-1',
+//     label:''
+// });
 
 const model:Ref<string> = ref(props.modelValue);
 
@@ -87,4 +124,4 @@ watchEffect(() => {
 .select > select{
     @apply w-full px-2 outline-none text-sm h-[40px] bg-transparent border-none shadow-none appearance-none
 }
-</style>~/core/types
+</style>

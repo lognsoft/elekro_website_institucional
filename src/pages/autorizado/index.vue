@@ -13,7 +13,7 @@
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <GeneralBanner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
-        <section class=" bg-white">
+        <section class="bg-white">
             <div class="mx-auto w-full">
                 <!-- <div class="text-center mb-[40px] px-3 max-w-[1350px] mx-auto">
                     <TextH2Title class="mb-3">Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro</TextH2Title>
@@ -93,6 +93,6 @@ onUnmounted(() => formulario = null);
 }
 
 .nav-form{
-    @apply duration-200 underline text-[#1a6bd9]
+    @apply duration-200 underline text-[#1a6bd9] mt-3
 }
 </style>

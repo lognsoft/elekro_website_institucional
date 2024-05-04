@@ -133,7 +133,7 @@ const messageSubmit = computed(():string => {
 </script>
 
 <template>
-    <section class="py-11 bg-white" id="formSection">
+    <section class="py-3 bg-white" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <TextH2Title class="mb-3 text-center">Cadastre-se</TextH2Title>
             <!-- <TextH4SubTitle class="mb-3 text-center">Atitudes que esperamos:</TextH4SubTitle>
