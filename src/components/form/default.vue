@@ -30,13 +30,14 @@ const validate = ():boolean => {
         (state.nome === "" || !state.nome.includes(" ")) ||
         (state.email === "" || !state.email.includes("@")) ||
         (state.razaoSocial === "") ||
-        (state.phone === "" || state.phone.length < 14) ||
+        (state.requiredPhone === "" || state.requiredPhone.length < 14) ||
         (state.province === "" || state.province === '-1') ||
         (state.city === "" || state.city === '-1') ||
         (state.cnpj === "" || state.cnpj.length < 14) ||
         (state.subject === "" || state.subject == "-1") ||
         (state.setor === "-1" || state.setor === "" || state.setor === undefined)
     ){
+        alert("preencha todos os campos corretamente");
         flag = false;
     }
 
@@ -136,24 +137,6 @@ const messageSubmit = computed(():string => {
     <section class="py-11 bg-white" id="formSection">
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <TextH2Title class="mb-[15px] text-center">Cadastre-se</TextH2Title>
-            <!-- <TextH4SubTitle class="mb-3 text-center">Atitudes que esperamos:</TextH4SubTitle>
-            <ul class="form-ul">
-                <li>
-                    <p>Visão de negócios voltada para resultados tangíveis</p>
-                </li>
-                <li>
-                    <p>Esteja sempre em busca da melhor experiência para o consumidor</p>
-                </li>
-                <li>
-                    <p>Interesse genuíno e paixão pela inovação</p>
-                </li>
-                <li>
-                    <p>Habilidades para liderar, desenvolver talentos</p>
-                </li>
-                <li>
-                    <p>Comprometa-se com a gestão do negócio</p>
-                </li>
-            </ul> -->
             <div class="relative">
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
@@ -300,44 +283,9 @@ const messageSubmit = computed(():string => {
                             <FormSelectForm label="Assunto*" placeholder="Que tipo de parceiro você quer ser?" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
                         </div>
                     </div>
-                    <!-- <div class="mb-[15px]">
-                        <FormSelectForm label="Assunto*" placeholder="Que tipo de parceiro você quer ser?" name="assunto" v-model="state.subject" :options="assuntos" :disabled="submitAsync"/>
-                    </div> -->
                     <div class="mb-[15px]">
                         <FormTextareaForm id="mensagem" name="mensagem" label="Mensagem*" placeholder="Mensagem" v-model="state.message" :required="true" :disabled="submitAsync"/>
                     </div>
-                    <!-- <div class="input-grid">
-                        <div class="col-span-1 sm:col-span-2">
-                            <FormInputForm
-                                id="cep"
-                                name="cep"
-                                label="CEP*"
-                                placeholder="_____-___"
-                                v-model="state.cep"
-                                :min-length="9"
-                                :max-length="9"
-                                @mask="cepMask()"
-                                :disabled="submitAsync"
-                                @input="requireDataCep()"
-                            />
-                        </div>
-                        <div v-show="dataCep.bairro !== '' || dataCep.logradouro !== '' || dataCep.localidade !== ''" class="col-span-1 sm:col-span-4">
-                            <div class="grid md:grid-cols-3 gap-2 max-w-[700px]">
-                                <div>
-                                    <H3Title>Rua:</H3Title>
-                                    <p>{{ dataCep.logradouro }}</p>
-                                </div>
-                                <div>
-                                    <H3Title>Bairro:</H3Title>
-                                    <p>{{ dataCep.bairro }}</p>
-                                </div>
-                                <div>
-                                    <H3Title>Cidade e Estado:</H3Title>
-                                    <p>{{ dataCep.localidade }} - {{ dataCep.uf }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     <table>
                         <tr>
                             <td></td>
@@ -350,10 +298,6 @@ const messageSubmit = computed(():string => {
                     </div>
                 </form>
             </div>
-            <!-- <div class="text-center mt-8 text-[#626262] text-lg md:text-xl">
-                <TextH4SubTitle class="mb-3">Garanta uma proteção completa para a propriedade e o bem-estar dos seus clientes com a Elekro</TextH4SubTitle>
-                <MyLinkTwo :icon="false" href="/elekro-one-plus" class="nav-form">Saiba mais sobre a Elekro One+</MyLinkTwo>
-            </div> -->
         </div>
     </section>
 </template>
