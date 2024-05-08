@@ -70,11 +70,11 @@ const formRevenda = defineStore('formulario-revenda',() => {
     ];
     const subjects:Option[] = [
         {
-            option:'revendedor autorizado',
+            option:'Revendedor Autorizado',
             value:'revendedor autorizado'
         },
         {
-            option:'instalador autorizado',
+            option:'Instalador Autorizado',
             value:'instalador autorizado'
         }
     ]

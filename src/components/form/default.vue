@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
+const mailerSubmit:string = 'alantavaresmorais@gmail.com' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
+const popUpWarning:Ref<{visible:boolean, msg:string}> = ref({
+    visible:false,
+    msg:''
+});
 
 const {
     stateForm:state,
@@ -22,26 +26,60 @@ const {
 } = formRevenda();
 
 getProvinces();
-// getProvinces();
-const validate = ():boolean => {
-    let flag:boolean = true;
 
-    if(
-        (state.nome === "" || !state.nome.includes(" ")) ||
-        (state.email === "" || !state.email.includes("@")) ||
-        (state.razaoSocial === "") ||
-        (state.requiredPhone === "" || state.requiredPhone.length < 14) ||
-        (state.province === "" || state.province === '-1') ||
-        (state.city === "" || state.city === '-1') ||
-        (state.cnpj === "" || state.cnpj.length < 14) ||
-        (state.subject === "" || state.subject == "-1") ||
-        (state.setor === "-1" || state.setor === "" || state.setor === undefined)
-    ){
-        alert("preencha todos os campos corretamente");
-        flag = false;
+function alertWarning(msg:string):void {
+    popUpWarning.value.visible = true;
+    popUpWarning.value.msg = msg;
+    setTimeout(() => {
+        popUpWarning.value.visible = false;
+        popUpWarning.value.msg = '';
+    }, 3000);
+}
+
+const validate = ():boolean => {
+
+    if(state.nome === "" || !state.nome.includes(" ")){
+        alertWarning("Informe seu nome e sobrenome");
+        return false;
+    }
+    if(state.email === "" || !state.email.includes("@")){
+        alertWarning("E-mail inválido");
+        return false;
+    }
+    if(state.razaoSocial === ""){
+        alertWarning("Informe a sua razão social");
+        return false;
+    }
+    if(state.requiredPhone === "" || state.requiredPhone.length < 15){
+        alertWarning("Número de telefone incorreto ou não informado");
+        return false;
+    }
+    if(state.phone  !== "" && state.phone.length < 14){
+        alertWarning("O número de telefone opcional não é válido");
+        return false;
+    }
+    if(state.province === "" || state.province === '-1'){
+        alertWarning("Informe o nome do seu estado");
+        return false;
+    }
+    if(state.city === "" || state.city === '-1'){
+        alertWarning("Informe o nome da sua cidade");
+        return false;
+    }
+    if(state.cnpj === "" || state.cnpj.length < 18){
+        alertWarning("O CNPJ não foi informado ou é inválido");
+        return false;
+    }
+    if(state.subject === "" || state.subject == "-1"){
+        alertWarning("Informe o tipo de parceria deseja");
+        return false;
+    }
+    if(state.setor === "-1" || state.setor === "" || state.setor === undefined){
+        alertWarning("Informe um setor");
+        return false;
     }
 
-    return flag;
+    return true;
 }
 const createForm = (obj:Form):FormStateData => {
     const {
@@ -138,6 +176,12 @@ const messageSubmit = computed(():string => {
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <TextH2Title class="mb-[15px] text-center">Cadastre-se</TextH2Title>
             <div class="relative">
+                <div class="warning" :class="{'scale-0':!popUpWarning.visible, 'scale-100':popUpWarning.visible}">
+                    <Icon class="text-8xl" name="ph:warning-bold"/>
+                    <h4 class="text-2xl">
+                        {{ popUpWarning.msg }}
+                    </h4>
+                </div>
                 <div
                     class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
                     :class="{
@@ -152,7 +196,7 @@ const messageSubmit = computed(():string => {
                         {{ messageSubmit }}
                     </h4>
                 </div>
-                <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync}" method="POST" @submit.prevent="submit()" disabled="true">
+                <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync || popUpWarning.visible}" method="POST" @submit.prevent="submit()" disabled="true">
                     
                     <div class="mb-[15px]">
                         <FormInputForm
@@ -311,5 +355,22 @@ const messageSubmit = computed(():string => {
 }
 .input-grid{
     @apply mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]
+}
+
+.warning{
+    @apply
+    absolute
+    translate-x-[-50%]
+    translate-y-[-50%]
+    top-[50%]
+    left-[50%]
+    text-center
+    z-10
+    duration-300
+    text-yellow-400
+    w-full
+    max-w-[500px]
+    py-3
+    rounded
 }
 </style>
