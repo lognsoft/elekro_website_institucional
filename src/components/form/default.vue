@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'alantavaresmorais@gmail.com' // 'luis@elekro.com.br';
+const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
 const popUpWarning:Ref<{visible:boolean, msg:string}> = ref({
