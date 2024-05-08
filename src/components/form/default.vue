@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
+const mailerSubmit:string = 'alantavaresmorais@gmail.com' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
 const popUpWarning:Ref<{visible:boolean, msg:string}> = ref({
     visible:false,
     msg:'a'
 });
+let timeOut:any = null;
 
 const {
     stateForm:state,
@@ -30,10 +31,16 @@ getProvinces();
 function alertWarning(msg:string):void {
     popUpWarning.value.visible = true;
     popUpWarning.value.msg = msg;
-    setTimeout(() => {
+    timeOut = setTimeout(() => {
         popUpWarning.value.visible = false;
         popUpWarning.value.msg = '';
     }, 3000);
+}
+
+function closeAlertWarning(){
+    clearTimeout(timeOut);
+    popUpWarning.value.visible = false;
+    popUpWarning.value.msg = '';
 }
 
 const validate = ():boolean => {
@@ -153,9 +160,9 @@ const disabledCities = computed(():boolean => {
 const iconSubmit = computed(():string => {
     let icon:string = "eos-icons:three-dots-loading"
     if(submitFlag.value === true){
-        icon = "fa6-regular:circle-check"
+        icon = "simple-line-icons:check"
     } else if(submitFlag.value === false) {
-        icon = "mdi:close-circle-outline"
+        icon = "ep:circle-close"
     }
     return icon;
 })
@@ -178,7 +185,10 @@ const messageSubmit = computed(():string => {
             <div class="relative">
                 <div class="container-alert" :class="{'scale-0':!popUpWarning.visible,'scale-100':popUpWarning.visible}">
                     <div class="warning">
-                        <Icon class="text-4xl md:text-8xl" name="ph:warning-bold"/>
+                        <span @click="closeAlertWarning" class="absolute text-3xl w-8 h-8 flex items-center justify-center top-0 right-0 cursor-pointer">
+                            <Icon name="material-symbols:close-small-outline-rounded"/>
+                        </span>
+                        <Icon class="text-4xl md:text-8xl" name="ph:warning-thin"/>
                         <h4 class="text-lg md:text-2xl">
                             {{ popUpWarning.msg }}
                         </h4>
@@ -370,12 +380,13 @@ const messageSubmit = computed(():string => {
     translate-y-[-50%]
     top-[50%]
     left-[50%]
+    z-[10000]
 }
 
 .warning{
     @apply
+    relative
     text-center
-    z-10
     duration-300
     text-black
     w-full
@@ -390,12 +401,9 @@ const messageSubmit = computed(():string => {
     text-center
     w-full
     py-3
-    z-10
     duration-300
     rounded
     bg-white
     border-[1px]
-    md:bg-transparent
-    md:border-0
 }
 </style>
