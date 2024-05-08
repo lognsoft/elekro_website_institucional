@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
+const mailerSubmit:string = 'alantavaresmorais@gmail.com' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
 const popUpWarning:Ref<{visible:boolean, msg:string}> = ref({
@@ -176,25 +176,29 @@ const messageSubmit = computed(():string => {
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <TextH2Title class="mb-[15px] text-center">Cadastre-se</TextH2Title>
             <div class="relative">
-                <div class="warning" :class="{'scale-0':!popUpWarning.visible,'scale-100':popUpWarning.visible}">
-                    <Icon class="text-8xl" name="ph:warning-bold"/>
-                    <h4 class="text-2xl">
-                        {{ popUpWarning.msg }}
-                    </h4>
+                <div class="container-alert" :class="{'scale-0':!popUpWarning.visible,'scale-100':popUpWarning.visible}">
+                    <div class="warning">
+                        <Icon class="text-4xl md:text-8xl" name="ph:warning-bold"/>
+                        <h4 class="text-lg md:text-2xl">
+                            {{ popUpWarning.msg }}
+                        </h4>
+                    </div>
                 </div>
-                <div
-                    class="submitAlert"
-                    :class="{
-                        'scale-0':!submitAsync, 'scale-100':submitAsync,
-                        'text-[#1c54d9] border-[#1c54d9]':submitFlag === undefined,
-                        'text-red-400 border-red-400':submitFlag === false,
-                        'text-green-300 border-green-300':submitFlag === true,
-                    }
-                ">
-                    <Icon class="text-8xl" :name="iconSubmit"/>
-                    <h4 class="text-3xl">
-                        {{ messageSubmit }}
-                    </h4>
+                <div class="container-alert" :class="{'scale-0':!submitAsync, 'scale-100':submitAsync}">
+                    <div
+                        class="submitAlert"
+                        :class="{
+                            'scale-0':!submitAsync, 'scale-100':submitAsync,
+                            'text-[#1c54d9] border-[#1c54d9]':submitFlag === undefined,
+                            'text-red-400 border-red-400':submitFlag === false,
+                            'text-green-300 border-green-300':submitFlag === true,
+                        }
+                    ">
+                        <Icon class="text-4xl md:text-8xl" :name="iconSubmit"/>
+                        <h4 class="text-lg md:text-2xl">
+                            {{ messageSubmit }}
+                        </h4>
+                    </div>
                 </div>
                 <form class="w-full duration-200 mx-auto" :class="{'opacity-15':submitAsync || popUpWarning.visible}" method="POST" @submit.prevent="submit()" disabled="true">
                     
@@ -356,39 +360,35 @@ const messageSubmit = computed(():string => {
 .input-grid{
     @apply mb-[15px] grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-[15px]
 }
-
-.warning{
+.container-alert{
     @apply
-    fixed md:absolute
+    px-3
+    w-full
+    max-w-[500px]
+    fixed
     translate-x-[-50%]
     translate-y-[-50%]
     top-[50%]
     left-[50%]
+}
+
+.warning{
+    @apply
     text-center
     z-10
     duration-300
-    text-yellow-400
+    text-black
     w-full
-    max-w-[500px]
     py-3
     rounded
     bg-white
     border-[1px]
-    border-yellow-400
-    md:bg-transparent
-    md:border-0
+    border-black
 }
 .submitAlert{
     @apply
-    fixed
-    md:absolute
-    translate-x-[-50%]
-    translate-y-[-50%]
-    top-[50%]
-    left-[50%]
     text-center
     w-full
-    max-w-[500px]
     py-3
     z-10
     duration-300
