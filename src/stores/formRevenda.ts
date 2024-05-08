@@ -151,6 +151,8 @@ const formRevenda = defineStore('formulario-revenda',() => {
         stateForm.value.setor = '-1';
         stateForm.value.cep = '';
         stateForm.value.subject = '-1';
+        stateForm.value.province = '-1';
+        stateForm.value.city = '-1';
         stateForm.value.message = '';
     }
 

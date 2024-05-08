@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { Form, FormStateData } from '~/core/types';
 import formRevenda from '~/stores/formRevenda';
-const mailerSubmit:string = 'luis@elekro.com.br' // 'luis@elekro.com.br';
+const mailerSubmit:string = 'alantavaresmorais@gmail.com' // 'luis@elekro.com.br';
 const submitAsync:Ref<boolean> = ref(false);
 const submitFlag:Ref<boolean | undefined> = ref(undefined);
 const popUpWarning:Ref<{visible:boolean, msg:string}> = ref({
     visible:false,
-    msg:''
+    msg:'a'
 });
 
 const {
@@ -176,19 +176,19 @@ const messageSubmit = computed(():string => {
         <div class="container mx-auto px-5 md:px-3 max-w-[1350px]">
             <TextH2Title class="mb-[15px] text-center">Cadastre-se</TextH2Title>
             <div class="relative">
-                <div class="warning" :class="{'scale-0':!popUpWarning.visible, 'scale-100':popUpWarning.visible}">
+                <div class="warning" :class="{'scale-0':!popUpWarning.visible,'scale-100':popUpWarning.visible}">
                     <Icon class="text-8xl" name="ph:warning-bold"/>
                     <h4 class="text-2xl">
                         {{ popUpWarning.msg }}
                     </h4>
                 </div>
                 <div
-                    class="absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-center z-10 duration-300"
+                    class="submitAlert"
                     :class="{
                         'scale-0':!submitAsync, 'scale-100':submitAsync,
-                        'text-[#1c54d9]':submitFlag === undefined,
-                        'text-red-400':submitFlag === false,
-                        'text-green-300':submitFlag === true,
+                        'text-[#1c54d9] border-[#1c54d9]':submitFlag === undefined,
+                        'text-red-400 border-red-400':submitFlag === false,
+                        'text-green-300 border-green-300':submitFlag === true,
                     }
                 ">
                     <Icon class="text-8xl" :name="iconSubmit"/>
@@ -359,7 +359,7 @@ const messageSubmit = computed(():string => {
 
 .warning{
     @apply
-    absolute
+    fixed md:absolute
     translate-x-[-50%]
     translate-y-[-50%]
     top-[50%]
@@ -372,5 +372,30 @@ const messageSubmit = computed(():string => {
     max-w-[500px]
     py-3
     rounded
+    bg-white
+    border-[1px]
+    border-yellow-400
+    md:bg-transparent
+    md:border-0
+}
+.submitAlert{
+    @apply
+    fixed
+    md:absolute
+    translate-x-[-50%]
+    translate-y-[-50%]
+    top-[50%]
+    left-[50%]
+    text-center
+    w-full
+    max-w-[500px]
+    py-3
+    z-10
+    duration-300
+    rounded
+    bg-white
+    border-[1px]
+    md:bg-transparent
+    md:border-0
 }
 </style>
