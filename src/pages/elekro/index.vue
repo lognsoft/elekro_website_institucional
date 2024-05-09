@@ -59,7 +59,7 @@
 <style scoped>
 
 .elekro-text{
-    @apply py-9 text-black bg-white bg-center bg-cover min-h-96 flex items-center relative
+    @apply py-9 text-black bg-center bg-cover min-h-96 flex items-center relative
 }
 
 .quote{

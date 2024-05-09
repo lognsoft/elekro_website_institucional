@@ -16,6 +16,9 @@
         font-family: "Lufga";
         scroll-behavior: smooth;
     }
+    section{
+        @apply bg-white
+    }
 
     .fluid-image{
         width: 100%;

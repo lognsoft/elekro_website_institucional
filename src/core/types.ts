@@ -2,6 +2,7 @@ export type Banner = {
     title:string,
     text:string,
     src:string,
+    position:"center"|"left"|"right"
 }
 
 export type Route = {

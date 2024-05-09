@@ -1,6 +1,10 @@
 <template>
     <section class="apresentacao">
-        <img :src="props.src" alt=""/>
+        <img :class="{
+            'object-center':position == undefined || position == 'center',
+            'object-left':position == 'left',
+            'object-right':position == 'right',
+            }" :src="props.src" alt=""/>
         <div class="content-container" :class="{'hidden md:block':hidden}" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
@@ -28,8 +32,12 @@ const props = defineProps({
     hidden:{
         type:Boolean,
         default:false
+    },
+    position:{
+        type:String,
+        default:undefined
     }
-})
+}) as Banner
 const opacity:Ref<number> = ref(100);
 const transform:Ref<number> = ref(50);
 const bannerSingle:Ref<number> = ref(0);
