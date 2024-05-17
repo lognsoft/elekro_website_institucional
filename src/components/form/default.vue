@@ -45,8 +45,8 @@ function closeAlertWarning(){
 
 const validate = ():boolean => {
 
-    if(state.nome === "" || !state.nome.includes(" ")){
-        alertWarning("Informe seu nome e sobrenome");
+    if(state.nome === ""){
+        alertWarning("Informe seu nome");
         return false;
     }
     if(state.email === "" || !state.email.includes("@")){
