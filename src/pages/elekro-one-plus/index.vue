@@ -19,7 +19,7 @@
                     <MyLink class="ml-0" href="javascript:void(0)">Ver mais</MyLink>
                 </div>
             </div>
-        </section> -->
+        </section> ..-->
         <GeneralBanner src="/images/fechadura/elekro-one+.png" title="Fechadura<br/> inteligente" text="Lorem Ipsum dolor amet"/>
         <div class="container-section bg-white">
             <section class="pt-[100px] text-black">
