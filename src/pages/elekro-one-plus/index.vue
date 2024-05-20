@@ -20,7 +20,7 @@
                 </div>
             </div>
         </section> ..-->
-        <GeneralBanner src="/images/fechadura/elekro-one_.png" title="Fechadura<br/> inteligente" text="Lorem Ipsum dolor amet"/>
+        <GeneralBanner src="/images/fechadura/elekro_one_pedestral.png" title="Fechadura<br/> inteligente" text="Lorem Ipsum dolor amet"/>
         <div class="container-section bg-white">
             <section class="pt-[100px] text-black">
                 <div class="container w-full max-w-[1380px] mx-auto px-3">
