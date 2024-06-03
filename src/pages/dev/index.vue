@@ -5,10 +5,9 @@ definePageMeta({
 </script>
 
 <template>
-    <main class="h-screen flex items-center justify-center px-3 bg-black text-white">
-        <div>
-            <img src="/dev.png" alt=""/>
-            <h1 class="text-4xl text-center">Estamos em construção</h1>
-        </div>
+    <main class="h-screen flex items-center justify-center px-3 bg-[url('/dev.png')] bg-center bg-contain md:bg-cover bg-no-repeat bg-black">
+        <!-- <div>
+            <img class="w-full" src="/dev.png" alt=""/>
+        </div> -->
     </main>
 </template>
