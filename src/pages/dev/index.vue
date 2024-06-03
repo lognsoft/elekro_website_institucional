@@ -7,7 +7,7 @@ definePageMeta({
 <template>
     <main class="h-screen flex items-center justify-center bg-black">
         <div>
-            <img class="w-full max-w-[900px] h-screen object-center object-cover" src="/dev.png" alt=""/>
+            <img class="w-full h-screen object-center object-cover" src="/dev.png" alt=""/>
         </div>
     </main>
 </template>
