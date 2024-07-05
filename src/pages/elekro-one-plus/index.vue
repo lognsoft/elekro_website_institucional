@@ -1,9 +1,35 @@
+<script setup lang="ts">
+import { texts, recursos, capacidades, praticidades } from "~/core/constants";
+
+</script>
+
 <template>
     <!-- <Body class="bg-black text-white"/> -->
     <Head>
         <Title>Elekro One Plus</Title>
     </Head>
     <main>
+        <section class="grid lg:grid-cols-2 relative h-screen ">
+            <div class="bg-black w-full hidden lg:block"></div>
+            <div class="py-5 md:px-10 px-2 absolute z-[1] h-full">
+                <div class="mx-auto max-w-[1900px] flex items-center h-full relative">
+                    <div class="w-full">
+                        <a class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg" href="javascript:void(0)">Faça parte</a>
+                        <h1 class="banner-title text-white">Revolucione</h1>
+                        <p class="banner-text text-white">Conheça a Elekro Signature</p>
+                    </div>
+                </div>
+            </div>
+            <div class=":after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-black after:bg-opacity-30 relative ">
+                <img class="h-full object-cover" src="/images/bg-elekro.jpg" alt=""/>
+            </div>
+           
+            <figure class="hidden lg:block absolute left-[44%] 2xl:left-[45%] top-[5%]">
+                <img class="object-cover max-w-full max-h-[90vh] " src="/images/home/fechaduraunica.png" alt="">
+            </figure>
+            
+             
+        </section>
         <!-- <section class="grid grid-cols-1 lg:grid-cols-2 relative">
             <div class="col-span-1 hidden lg:block"></div>
             <div class="col-span-1 relative">
@@ -19,9 +45,9 @@
                     <MyLink class="ml-0" href="javascript:void(0)">Ver mais</MyLink>
                 </div>
             </div>
-        </section> ..-->
-        <GeneralBanner src="/images/fechadura/elekro_one.png" title="Fechadura<br/> inteligente" text="Lorem Ipsum dolor amet"/>
-        <div class="container-section bg-white">
+        </section> .. -->
+         <!-- <GeneralBanner src="/images/fechadura/elekro_one.png" title="Fechadura<br/> inteligente" text="Lorem Ipsum dolor amet"/> -->
+        <!-- <div class="container-section bg-white">
             <section class="pt-[100px] text-black">
                 <div class="container w-full max-w-[1380px] mx-auto px-3">
                     <h2 class="mb-[40px] text-center font-bold text-xl md:text-4xl">Ideal para</h2>
@@ -105,11 +131,16 @@
             <section class="bg-[url('https://seapromotionstatic.cdn5th.com/static/275168378354909184.jpeg')] bg-center bg-cover min-h-[500px] md:min-h-[600px] bg-no-repeat relative">
                 <div class="bg-black/40 absolute w-full h-full top-0 left-0"></div>
             </section>
-        </div>
+        </div> -->
     </main>
 </template>
 
-<script setup lang="ts">
-import { texts, recursos, capacidades, praticidades } from "~/core/constants";
+<style scoped>
+.banner-title{
+    @apply w-full text-start text-[50px] md:text-[80px] lg:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px] lg:mt-5 mt-8;
+}
+.banner-text{
+    @apply lg:max-w-[250px] text-xl lg:text-2xl xl:text-5xl text-start font-light lg:mt-0 mt-2;
+}
 
-</script>
+</style>
