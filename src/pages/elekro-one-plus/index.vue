@@ -30,6 +30,66 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
             
              
         </section>
+        <section class="pt-44">
+            <div class="max-w-[1900px] mx-auto md:px-10 px-2 h-full">
+                <div class="grid md:grid-cols-3  content-center">
+                    <div class="col-start-1 col-end-3 border-2 border-black h-[600px]">
+                        <div class="bg-black text-white h-[70%] py-12 px-12">
+                            <a class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg" href="javascript:void(0)">Exclusiva no Brasil</a>
+                            <h2 class="text-3xl lg:text-5xl sm:pt-16 pt-10 h2-title">Inspirada na obra <br> de Stefano Boeri,<br> Bosco Verticale.</h2>
+                            <h3 class="h3-title sm:pt-10 pt-5">/ Milão . Itália</h3>
+                        </div>
+                        <div class="flex gap-10 h-[30%] items-center justify-between px-12">
+                            <p>A</p>
+                            <p>B</p>
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div class="md:block hidden">
+                        <img class="object-cover w-full h-full" src="/images/bg-elekro.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-44">
+            <div class="max-w-[1900px] mx-auto md:px-10 px-2 h-full">
+                <div class="flex items-center justify-evenly">
+                    <div class="">
+                        <h2 class="text-5xl max-w-96 pb-10 font-semibold">O inicio de uma nova geração de fechaduras inteligentes</h2>
+                        <MyLinkTwo>Assista ao vídeo</MyLinkTwo>
+                        <div class="mt-14 pt-10 border-t-2">
+                            <h3 class="max-w-[19rem] font-semibold">A COMBINAÇÃO DE SOFISTICAÇÃO COM FUNCIONALIDADES AVANÇADAS</h3>
+                            <p class="max-w-[19rem] pt-3">Getway integrado, acesso biométrico, gestão de acesso em tempo real, remoto e muito mais</p>
+                        </div>
+                    </div>
+                    <div class="md:block hidden">
+                        <img class="object-cover h-[700px]" src="/images/macaneta-frente.png" alt=""/>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="max-w-[1900px] mx-auto md:px-10 px-2 pt-16 border-t-2 ">
+                <h2 class="text-5xl pb-10 font-semibold">Explore a <br> Elekro Signature</h2>
+                <h3 class="max-w-96 font-medium">PROJETADA PARA AS CONDIÇÕES CLIMÁTICAS DO BRASIL</h3>
+                <p class="mt-3">Construída em liga de alumínio e com proteção IP56 (resistente à corrosão, à <br> água* e poeira) <span class="text-[12px]">*Proteção limitada. Protegida de jatos de água de alta pressão de qualquer direção.</span></p>
+            </div>
+            <div class="mt-24 lg:relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-t from-black after:bg-opacity-30">
+                <img class="max-h-[600px] object-cover w-full" src="/images/bm-slide/bg-bkp.jpg" alt="">
+                <div class="flex lg:absolute bottom-16 z-10 items-center justify-around w-full">
+                    <div>
+                        <h2 class="text-[#aaaaaa] mb-4">COM DESIGN FUNCIONAL</h2>
+                        <h3 class="max-w-96 text-white">Construída com um design funcional, facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito.</h3>
+                    </div>
+                    <div>
+                        <h2 class="text-[#aaaaaa] mb-4">CRIE ECOSISTEMAS DO SEU JEITO</h2>
+                        <h3 class="max-w-96 text-white">Ao abrir sua porta, luzes podem se acender, temperatura de ambiente serem ajustadas e muito mais, tudo através do aplicativo.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- <section class="grid grid-cols-1 lg:grid-cols-2 relative">
             <div class="col-span-1 hidden lg:block"></div>
             <div class="col-span-1 relative">
