@@ -31,7 +31,7 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
              
         </section>
         <section class="pt-44">
-            <div class="max-w-[1900px] mx-auto md:px-10 px-2 h-full">
+            <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
                 <div class="grid md:grid-cols-3  content-center">
                     <div class="col-start-1 col-end-3 border-2 border-black h-[600px]">
                         <div class="bg-black text-white h-[70%] py-12 px-12">
@@ -51,12 +51,12 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
                 </div>
             </div>
         </section>
-        <section class="pt-44">
-            <div class="max-w-[1900px] mx-auto md:px-10 px-2 h-full">
-                <div class="flex items-center justify-evenly">
+        <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-44">
+            <div class="max-w-[1300px] mx-auto h-full">
+                <div class="flex items-center justify-between">
                     <div class="">
                         <h2 class="text-5xl max-w-96 pb-10 font-semibold">O inicio de uma nova geração de fechaduras inteligentes</h2>
-                        <MyLinkTwo>Assista ao vídeo</MyLinkTwo>
+                        <MyLink>Assista ao vídeo</MyLink>
                         <div class="mt-14 pt-10 border-t-2">
                             <h3 class="max-w-[19rem] font-semibold">A COMBINAÇÃO DE SOFISTICAÇÃO COM FUNCIONALIDADES AVANÇADAS</h3>
                             <p class="max-w-[19rem] pt-3">Getway integrado, acesso biométrico, gestão de acesso em tempo real, remoto e muito mais</p>
@@ -70,26 +70,71 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
             </div>
             
         </section>
-        <section>
-            <div class="max-w-[1900px] mx-auto md:px-10 px-2 pt-16 border-t-2 ">
-                <h2 class="text-5xl pb-10 font-semibold">Explore a <br> Elekro Signature</h2>
-                <h3 class="max-w-96 font-medium">PROJETADA PARA AS CONDIÇÕES CLIMÁTICAS DO BRASIL</h3>
-                <p class="mt-3">Construída em liga de alumínio e com proteção IP56 (resistente à corrosão, à <br> água* e poeira) <span class="text-[12px]">*Proteção limitada. Protegida de jatos de água de alta pressão de qualquer direção.</span></p>
+        <section class="pt-44">
+            <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
+                <div class="max-w-[1300px] mx-auto h-full pt-16 border-t-2 ">
+                    <h2 class="text-5xl pb-10 font-semibold">Explore a <br> Elekro Signature</h2>
+                    <h3 class="max-w-96 font-medium">PROJETADA PARA AS CONDIÇÕES CLIMÁTICAS DO BRASIL</h3>
+                    <p class="mt-3">Construída em liga de alumínio e com proteção IP56 (resistente à corrosão, à <br> água* e poeira) <span class="text-[12px]">*Proteção limitada. Protegida de jatos de água de alta pressão de qualquer direção.</span></p>
+                </div>
             </div>
-            <div class="mt-24 lg:relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-t from-black after:bg-opacity-30">
-                <img class="max-h-[600px] object-cover w-full" src="/images/bm-slide/bg-bkp.jpg" alt="">
-                <div class="flex lg:absolute bottom-16 z-10 items-center justify-around w-full">
-                    <div>
-                        <h2 class="text-[#aaaaaa] mb-4">COM DESIGN FUNCIONAL</h2>
-                        <h3 class="max-w-96 text-white">Construída com um design funcional, facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito.</h3>
-                    </div>
-                    <div>
-                        <h2 class="text-[#aaaaaa] mb-4">CRIE ECOSISTEMAS DO SEU JEITO</h2>
-                        <h3 class="max-w-96 text-white">Ao abrir sua porta, luzes podem se acender, temperatura de ambiente serem ajustadas e muito mais, tudo através do aplicativo.</h3>
+            <div class="mt-24 w-full relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-t from-black after:bg-opacity-30">
+                <img class="max-h-[600px]  object-cover w-full " src="/images/bm-slide/bg-bkp.jpg" alt="">
+                <div class="lg:absolute relative bottom-16 z-10 w-full ">
+                    <div class="flex items-center justify-between max-w-[1300px] mx-auto max-md:px-1">
+                        <div>
+                            <h2 class="text-[#aaaaaa] mb-4">COM DESIGN FUNCIONAL</h2>
+                            <h3 class="max-w-96 text-white">Construída com um design funcional, facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito.</h3>
+                        </div>
+                        <div>
+                            <h2 class="text-[#aaaaaa] mb-4">CRIE ECOSISTEMAS DO SEU JEITO</h2>
+                            <h3 class="max-w-96 text-white">Ao abrir sua porta, luzes podem se acender, temperatura de ambiente serem ajustadas e muito mais, tudo através do aplicativo.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-44">
+            <div class="max-w-[1300px] mx-auto h-full">
+                <div class="md:flex justify-between">
+                    <div>
+                        <h2 class="text-5xl pb-5 font-semibold">Diversas funções e <br> criptografia <br> segura</h2>
+                        <h3>Criptografia com <br> Chip integrado de proteção</h3>
+                    </div>
+                    <div class="max-md:pt-10">
+                        <div class="pb-5">
+                            <h3 class="font-medium">MODOS DE ACESSO</h3>
+                            <h4 class="max-w-96 pt-3">Acesso Privado, apenas para o administrador e acesso livre, para que qualquer um acesse</h4>
+                        </div>
+                        <div class="border-t-2 pt-5">
+                            <h3 class="font-medium">CONFIGURAÇÕES DE VOLUME</h3>
+                            <h4 class="max-w-96 pt-3">Controle de volume e modo silencioso, que não emite sons ao utilizar a fechadura</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex max-md:flex-col-reverse max-md:gap-10 justify-between pt-44">
+                    <div class="">
+                        <figure class="max-w-[500px] xl:max-w-[704px]">
+                        <img class="object-contain mx-auto" src="/images/porta-de-carregamento-preta.jpeg" alt=""/>
+                        </figure>
+                    </div>
+                    <div class="">
+                        <MyLink class="m-0">Bateria inteligente</MyLink>
+                        <h3 class="font-medium pt-5">ALERTAS DE BATERIA E VIOLAMENTO</h3>
+                        <h4 class="max-w-96 pt-20">adicionando o getway da Elekro, receba aviso de bateria fraca, violamento ou tentativa indevida de abertura da fechadura.</h4>
+                        <h4 class="max-w-96 pt-3">Caso não veja o alarme, você ainda  pode abrir a porta utilizando a chave mestra ou então utilizar a entrada USB localizada na parte de baixo para energizar a fechadura.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="pt-44">
+            <div class="w-full relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-r from-black after:bg-opacity-30">
+                <img class="w-full max-h-[600px] object-cover" src="/images/bm-slide/bg-bkp.jpg" alt="">
+                <div class="absolute lg:top-28 xl:top-16 top-12 md:top-20 left-1/4  z-10">
+                    <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white">Funções para <br> empresa, com <br> gestão completa <br> de usuarios.</h2>
+                </div>
+            </div>
+        </aside>
         <!-- <section class="grid grid-cols-1 lg:grid-cols-2 relative">
             <div class="col-span-1 hidden lg:block"></div>
             <div class="col-span-1 relative">
@@ -197,7 +242,7 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
 
 <style scoped>
 .banner-title{
-    @apply w-full text-start text-[50px] md:text-[80px] lg:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px] lg:mt-5 mt-8;
+    @apply text-start text-[50px] md:text-[80px] lg:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px] lg:mt-5 mt-8;
 }
 .banner-text{
     @apply lg:max-w-[250px] text-xl lg:text-2xl xl:text-5xl text-start font-light lg:mt-0 mt-2;
