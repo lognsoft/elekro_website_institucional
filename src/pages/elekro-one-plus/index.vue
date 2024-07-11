@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { texts, recursos, capacidades, praticidades } from "~/core/constants";
-
 </script>
 
 <template>
@@ -134,13 +133,32 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
                 </div>
             </div>
         </section>
-        <aside class="pt-10">
-            <div class="w-full relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-r from-black after:bg-opacity-30">
-                <figure>
-                    <img class="w-full max-h-[600px] object-cover" src="/images/bm-slide/bg-bkp.jpg" alt="">
-                </figure>
-                <div class="absolute lg:top-28 xl:top-16 top-12 md:top-20 left-1/4  z-10">
-                    <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white">Funções para <br> empresa, com <br> gestão completa <br> de usuarios.</h2>
+        <aside class="pt-10 overflow-hidden">
+            <div class="flex animacao">
+                <div class="min-w-full relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-r from-black after:bg-opacity-30">
+                    <figure>
+                        <img class="w-full max-h-[600px] object-cover" src="/images/bm-slide/bg-bkp.jpg" alt="">
+                    </figure>
+                    <div class="absolute top-1/2 -translate-y-1/2 left-1/4 z-10 scale-100">
+                        <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white">Funções para <br> empresa, com <br> gestão completa <br> de usuarios.</h2>
+                    </div>
+                </div>
+                <div class="min-w-full relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-r from-black after:bg-opacity-30">
+                    <figure>
+                        <img class="w-full max-h-[600px] object-cover" src="/images/bm-slide/bg-bkp.jpg" alt="">
+                    </figure>
+                    <div class="absolute top-1/2 -translate-y-1/2 left-1/4 z-10 scale-100 duration-300">
+                        <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white ">Funções de <br> senha dinamica <br> para imobiliárias</h2>
+                    </div>
+                </div>
+                <div class="min-w-full relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-gradient-to-r from-black after:bg-opacity-30">
+                    <figure>
+                        <img class="w-full max-h-[600px] object-cover" src="/images/bm-slide/bg-bkp.jpg" alt="">
+                    </figure>
+                    <div class="absolute top-1/2 -translate-y-1/2 left-1/4 z-10">
+                        <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white">Funções Check in <br>
+                        e Check-out para <br> Airbnb e locações</h2>
+                    </div>
                 </div>
             </div>
         </aside>
@@ -179,29 +197,43 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
             </div>
         </section>
         <section class="pt-10">
-            <div>
-                <div class="">
-                    <h2></h2>
+            <div class="w-full">
+                <div class="relative after:content-[''] after:absolute after:h-full after:w-full after:left-0 after:top-0 after:bg-black after:bg-opacity-50">
                     <figure>
                         <img class="w-full object-cover max-h-[400px]" src="/images/trabalhadores.jpg" alt="">
                     </figure>
+                    <div class="absolute left-[15.5%] top-1/2 -translate-y-1/2 z-10">
+                        <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white">Gerenciamento completo <br> Smart Life na palma da mão</h2>
+                    </div>
                 </div>
             </div>
             <div class="w-full relative after:content-[''] after:absolute after:h-full after:w-1/2 after:left-0 after:top-0 md:after:bg-black ">
                 <div class="max-w-[1300px] mx-auto h-full z-10 relative">
                     <div class="grid md:grid-cols-2 ">
-                        <div class="text-white max-md:bg-black py-20 max-md:py-10 max-lg:text-center">
+                        <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
                             <h3 class="titleh3">INTEGRAÇÃO</h3>
-                            <h4 class="max-w-96 titleh4">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
+                            <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
                         </div>
-                        <div class="md:justify-self-end py-20 max-md:py-10 max-lg:text-center">
+                        <div class="lg:justify-self-end py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
                             <h3 class="titleh3">CONTROLE REMOTO</h3>
-                            <h4 class="max-w-96 titleh4">adicionando o getway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.</h4>
+                            <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">adicionando o getway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            
+            <div class="max-w-[1300px] mx-auto h-full">
+                <div class="grid grid-cols-2">
+                    <div class="flex">
+                        <button></button>
+                        <button></button>
+                        <h3 class="titleh3">Passe para o lado e confira todas <br> as funções inteligentes</h3>
+                    </div>
+                    <div class="justify-self-end">
+                        pontihos
+                    </div>
+                </div>
+                swiper
+            </div>
         </section>
         <section class="">
             <div class="bg-black text-white">
@@ -293,4 +325,23 @@ import { texts, recursos, capacidades, praticidades } from "~/core/constants";
 .titleh4{
     @apply mt-5 text-base
 }
+
+.animacao{
+    @apply flex;
+    animation: slide 20s ease-in-out infinite;
+    @keyframes slide {
+        0% { transform: translateX(0%); }
+        10% { transform: translateX(0%); }
+        20% { transform: translateX(-100%); }
+        30% { transform: translateX(-100%); }
+        40% { transform: translateX(-200%); }
+        50% { transform: translateX(-200%); }
+        60% { transform: translateX(-200%); }
+        70% { transform: translateX(-100%); }
+        80% { transform: translateX(-100%); }
+        90% { transform: translateX(-0%); }
+        100% { transform: translateX(0%); }  
+}
+}
+
 </style>
