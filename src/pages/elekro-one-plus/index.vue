@@ -26,8 +26,8 @@ import 'swiper/css/pagination'
                 <img class="h-full object-cover w-full" src="/images/elekro-one/Header.png" alt=""/>
             </figure>
             
-            <figure class="hidden lg:block absolute left-1/2 -translate-x-1/3 top-1/2 -translate-y-1/2">
-                <img class="object-cover max-w-full max-h-[90vh] " src="/images/elekro-one/FechaduraHeader.png" alt="">
+            <figure class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-full">
+                <img class="w-full object-contain h-full" src="/images/elekro-one/ElekroDupla.png" alt="">
             </figure>
             
              
