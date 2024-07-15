@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
         <Title>Elekro One Plus</Title>
     </Head>
     <main>
-        <section class="relative h-screen">
+        <section class="relative h-screen overflow-hidden">
             <div class="py-5 md:px-10 px-2 absolute z-[1] h-full">
                 <div class="mx-auto max-w-[1900px] flex items-center h-full relative">
                     <div class="w-full">
@@ -28,19 +28,19 @@ import 'swiper/css/pagination';
                 <img class="h-full object-cover w-full" src="/images/elekro-one/Header.png" alt="Fundo do cabeçalho"/>
             </figure>
             
-            <figure class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-full">
-                <img class="w-full h-full" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras">
+            <figure class="hidden lg:block w-full h-full object-contain">
+                <img class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras">
             </figure>
             
              
         </section>
-        <section class="pt-10">
+        <section class="pt-10 overflow-hidden">
             <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
                 <div class="md:grid md:grid-cols-3  content-center ">
-                    <div class="col-start-1 col-end-3 border-2 border-black md:h-[800px] relative">
-                        <div class="bg-black text-white h-[70%] py-12 px-12 ">
-                            <a class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg" href="javascript:void(0)">Exclusiva no Brasil</a>
-                            <h2 class="text-3xl lg:text-5xl sm:pt-32 pt-10 h2-title">Inspirada na obra <br> de Stefano Boeri,<br> Bosco Verticale.</h2>
+                    <div class="col-start-1 col-end-3 md:border-2 md:border-black md:h-[800px] relative">
+                        <div class="md:bg-black md:text-white h-[70%] py-12 px-12 ">
+                            <a class="lg:text-xl ml-0 border px-2 py-1 md:border-white border-black md:text-white rounded-lg" href="javascript:void(0)">Exclusiva no Brasil</a>
+                            <h2 class="text-3xl lg:text-5xl sm:pt-32 pt-10 h2-title md:w-[413px]">Inspirada na obra  de Stefano Boeri, Bosco Verticale.</h2>
                             <h3 class="h3-title sm:pt-10 pt-5">/ Milão . Itália</h3>
                         </div>
                         <div class="md:flex gap-10 h-[30%] items-center justify-around  absolute bottom-0 w-full hidden ">
@@ -61,17 +61,19 @@ import 'swiper/css/pagination';
                             </div>
                             <div class="flex items-center flex-col">
                                 <figure>
-                                    <img class="lg:block hidden" src="/images/elekro-one/IconeSmartLife.png" alt="Icone Smart Life">
-                                    <img class="lg:hidden block" src="/images/elekro-one/mobile/06Mobile_IconeSmartLife.png" alt="Icone Smart Life">
+                                    <img class="lg:block hidden" src="/images/elekro-one/IconeSmartLifeBlack.png" alt="Icone Smart Life">
+                                    <img class="lg:hidden block" src="/images/elekro-one/mobile/06Mobile_IconeSmartLifeBlack.png" alt="Icone Smart Life">
                                 </figure>
                                 <h3 class="titleh3 text-center">Com gerenciamento <br> Smart Life</h3>
                             </div>
                         </div>
                     </div>
-                    <figure class="h-max ">
-                        <img class="object-cover w-full h-[800px] max-md:hidden" src="/images/elekro-one/BoscoVerticale.png" alt="Prédios com varandas de flores"/>
-                        <img class="object-cover w-full md:hidden " src="/images/elekro-one/mobile/03Mobile_BoscoVerticale.png" alt="Prédios com varandas de flores"/>
-                    </figure>
+                    <div class="w-auto mx-[-5px]">
+                        <figure class="w-full">
+                            <img class="object-cover w-full h-[800px] max-md:hidden" src="/images/elekro-one/BoscoVerticale.png" alt="Prédios com varandas de flores"/>
+                            <img class="w-full md:hidden " src="/images/elekro-one/mobile/03Mobile_BoscoVerticale.png" alt="Prédios com varandas de flores"/>
+                        </figure>
+                    </div>
                     <div class="flex flex-wrap gap-10 h-[30%] items-center justify-around  bottom-0 w-full md:hidden">
                         <div class="flex items-center flex-col">
                             <figure>
@@ -103,7 +105,7 @@ import 'swiper/css/pagination';
                         <button class="linksB lg:!mb-40">Assista ao vídeo</button>
                         <div class="justify-self-end relative pt-10 pb-10 max-lg:block hidden" >
                             <figure>
-                                <img class="max-lg:block hidden" src="/images/elekro-one/mobile/08Mobile_Fechadura.png" alt="Fechadura"/>
+                                <img class="max-lg:block hidden" src="/images/elekro-one/FechaduraGeracao.png" alt="Fechadura"/>
                             </figure>
                             <div class="absolute top-7 left-1/2 -translate-x-1/2">
                                 <img src="/images/elekro-one/mobile/07Mobile_SeloFechadura.png" alt="Selo de autenticação">
@@ -115,9 +117,9 @@ import 'swiper/css/pagination';
                             <h4 class="lg:max-w-[19rem] titleh4">Getway integrado, acesso biométrico, gestão de acesso em tempo real, remoto e muito mais</h4>
                         </div>
                     </div>
-                    <div class="lg:block hidden justify-self-end relative">
-                        <figure>
-                            <img class="" src="/images/elekro-one/FechaduraGeracao.png" alt="Fechadura"/>
+                    <div class="lg:block hidden justify-self-end relative h-full">
+                        <figure class="h-full">
+                            <img class="h-full" src="/images/elekro-one/FechaduraGeracao.png" alt="Fechadura"/>
                         </figure>
                         <div class="absolute -bottom-14 left-1/2 -translate-x-1/2">
                             <img src="/images/elekro-one/SeloFechadura.png" alt="Selo de autenticação">
@@ -129,7 +131,7 @@ import 'swiper/css/pagination';
         </section>
         <section class="pt-5 lg:border-t-2">
             <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full ">
-                <div class="max-w-[1300px] mx-auto h-full max-lg:text-center max-lg:border-t-2">
+                <div class="max-w-[1300px] mx-auto h-full  max-lg:border-t-2">
                     <h2 class="titleh2">Explore a <br> Elekro Signature</h2>
                     <h3 class="lg:max-w-96 titleh3">PROJETADA PARA AS CONDIÇÕES CLIMÁTICAS DO BRASIL</h3>
                     <h4 class="titleh4">Construída em liga de alumínio e com proteção IP56 (resistente à corrosão, à <br> água* e poeira) <span class="text-[12px]">*Proteção limitada. Protegida de jatos de água de alta pressão de qualquer direção.</span></h4>
@@ -141,18 +143,18 @@ import 'swiper/css/pagination';
                         <figure>
                             <img class="max-h-[600px]  object-cover w-full" src="/images/elekro-one/DesignFuncional.png" alt="Fechadura em porta de Madeira de fundo">
                         </figure>
-                        <div class="absolute lg:bottom-[10%] bottom-10 left-1/2 -translate-x-1/2 ">
+                        <div class="absolute lg:bottom-[10%] bottom-10 left-1/2 -translate-x-1/2 max-lg:text-center max-md:w-full">
                             <h2 class="text-[#aaaaaa] mb-4">COM DESIGN FUNCIONAL</h2>
-                            <h3 class="max-w-96 text-white text-lg max-sm:text-sm">Construída com um design funcional, facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito.</h3>
+                            <h3 class="w-[340px] max-sm:w-[320px] text-white text-md max-sm:text-sm mx-auto">Construída com um design funcional, facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito.</h3>
                         </div>
                     </div>
                     <div class="relative">
                         <figure>
                             <img class="max-h-[600px]  object-cover w-full" src="/images/elekro-one/Ecossistemas.png" alt="Sala com luminarias de fundo">
                         </figure>
-                        <div class="absolute lg:bottom-[10%] bottom-6 left-1/2 -translate-x-1/2">
+                        <div class="absolute lg:bottom-[10%] bottom-10 left-1/2 -translate-x-1/2 max-lg:text-center max-md:w-full">
                             <h2 class="text-[#aaaaaa] mb-4">CRIE ECOSISTEMAS DO SEU JEITO</h2>
-                            <h3 class="max-w-96 text-white text-lg max-sm:text-sm ">Ao abrir sua porta, luzes podem se acender, temperatura de ambiente serem ajustadas e muito mais, tudo através do aplicativo.</h3>
+                            <h3 class="w-[340px] max-sm:w-[320px] text-white text-md max-sm:text-sm mx-auto">Ao abrir sua porta, luzes podem se acender, temperatura de ambiente serem ajustadas e muito mais, tudo através do aplicativo.</h3>
                         </div>
                      </div>
                 </div>
@@ -161,11 +163,11 @@ import 'swiper/css/pagination';
         <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-5">
             <div class="max-w-[1300px] mx-auto h-full">
                 <div class="grid md:grid-cols-2">
-                    <div class="max-md:text-center">
+                    <div class="">
                         <h2 class="titleh2">Diversas funções e <br> criptografia <br> segura</h2>
                         <h3 class="titleh3">Criptografia com <br> Chip integrado de proteção</h3>
                     </div>
-                    <div class="md:justify-self-end max-md:pt-10 max-md:text-center">
+                    <div class="md:justify-self-end max-md:pt-10 ">
                         <div class="mb-5">
                             <h3 class="titleh3">MODOS DE ACESSO</h3>
                             <h4 class="max-w-96 titleh4">Acesso Privado, apenas para o administrador e acesso livre, para que qualquer um acesse</h4>
@@ -182,17 +184,17 @@ import 'swiper/css/pagination';
                             <img class="object-cover w-full" src="/images/elekro-one/FechaduraBateria.png" alt=""/>
                         </figure>
                     </div>
-                    <div class="lg:absolute bottom-14 lg:bottom-24 right-0 max-lg:text-center pt-5">
+                    <div class="lg:absolute bottom-14 lg:bottom-24 right-0 pt-5">
                         <button class="m-0 linksB">Bateria inteligente</button>
                         <h3 class="titleh3">ALERTAS DE BATERIA E VIOLAMENTO</h3>
                         <h4 class="lg:max-w-96 titleh4">adicionando o getway da Elekro, receba aviso de bateria fraca, violamento ou tentativa indevida de abertura da fechadura.</h4>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-2 max-lg:text-center">
+                <div class="grid lg:grid-cols-2">
                     <div class="lg:block hidden ">
                         <h4 class="lg:max-w-96 titleh4">Caso não veja o alarme, você ainda  pode abrir a porta utilizando a <span class="font-semibold">chave mestra ou então utilizar a entrada USB </span> localizada na parte de baixo para energizar a fechadura.</h4>
                     </div>
-                    <div class="flex lg:justify-self-end gap-28 lg:max-w-96 max-lg:text-center justify-around pt-5">
+                    <div class="flex lg:justify-self-end lg:gap-28 lg:max-w-96 justify-between pt-5">
                         <div>
                             <img src="/images/elekro-one/IconeVolume.png" alt="Icone de volume">
                             <h4 class="font-semibold mt-1">Gerenciamento <br> de volume de voz</h4>
@@ -205,7 +207,7 @@ import 'swiper/css/pagination';
                 </div>
                 <div>
                     <div class="max-lg:block hidden ">
-                        <h4 class="lg:max-w-96 titleh4 max-md:text-center">Caso não veja o alarme, você ainda  pode abrir a porta utilizando a <span class="font-semibold">chave mestra ou então utilizar a entrada USB </span> localizada na parte de baixo para energizar a fechadura.</h4>
+                        <h4 class="lg:max-w-96 titleh4">Caso não veja o alarme, você ainda  pode abrir a porta utilizando a <span class="font-semibold">chave mestra ou então utilizar a entrada USB </span> localizada na parte de baixo para energizar a fechadura.</h4>
                     </div>
                     <div>
                         <figure class="max-lg:block hidden">
@@ -254,16 +256,16 @@ import 'swiper/css/pagination';
         </aside>
         <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-5">
             <div class="max-w-[1300px] mx-auto h-full" >
-                <div class="grid lg:grid-cols-2 pb-10 max-lg:text-center">
+                <div class="grid lg:grid-cols-2 pb-10">
                     <div class="flex flex-col ">
                         <h3 class="titleh3">CADASTRE ATÉ 100 <br> BIOMETRIAS E ATÉ 100 <br> SENHAS NUMÉRICAS <br> DIFERENTES</h3>
-                        <h4 class="max-w-96 max-lg:mx-auto titleh4">Ideal para empresas, você pode dar acesso a diversos funcionários e parceiros com as senhas biométricos ou numéricas. Além disso, é possível gerenciar todo o acesso por meio do aplicativo com: historico permissões e áreas restritas, inclusão e exclusão em tempo real e muito mais.</h4>
+                        <h4 class="max-w-96 titleh4">Ideal para empresas, você pode dar acesso a diversos funcionários e parceiros com as senhas biométricos ou numéricas. Além disso, é possível gerenciar todo o acesso por meio do aplicativo com: historico permissões e áreas restritas, inclusão e exclusão em tempo real e muito mais.</h4>
                     </div>
                     <div class="flex flex-col lg:justify-self-end">
                         <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
-                        <h4 class="max-w-96 max-lg:mx-auto titleh4">Com a função de Check-in e Check-out crise senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
+                        <h4 class="max-w-96  titleh4">Com a função de Check-in e Check-out crise senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
                         <h3 class="titleh3">LIBERE O ACESSO COM A SENHA DINÂMICA</h3>
-                        <h4 class="max-w-96 max-lg:mx-auto titleh4">Ideal para imobiliárias, você pode criar uma senha dinâmica, de uso único. Garanta o acesso de forma segura, rápida e prática.</h4>
+                        <h4 class="max-w-96 titleh4">Ideal para imobiliárias, você pode criar uma senha dinâmica, de uso único. Garanta o acesso de forma segura, rápida e prática.</h4>
                     </div>
                 </div>
                 <div class="border-t-2 pt-5">
@@ -273,7 +275,7 @@ import 'swiper/css/pagination';
                             <img src="/images/elekro-one/AmazonGoogle.png" alt="Foto de uma Amazon Alexa e Google Assistant">
                         </figure>
                     </div>
-                    <div class="grid lg:grid-cols-2 max-lg:text-center">
+                    <div class="grid lg:grid-cols-2">
                         <div class="flex flex-col">
                             <h3 class="titleh3">DESTRAVE E VERIFIQUE O <br class="lg:block hidden"> STATUS DA FECHADURA <br class="lg:block hidden"> COM SIMPLES COMANDOS <br class="lg:block hidden"> DE VOZ</h3>
                             <h4 class="lg:max-w-96 titleh4">Função disponível com o nosso sistema de travamento ativado por voz.</h4>
@@ -308,45 +310,45 @@ import 'swiper/css/pagination';
                     :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                         <SwiperSlide>
                             <div class="grid md:grid-cols-2 justify-items-center justify-center">
-                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
+                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:px-3">
                                     <h3 class="titleh3">INTEGRAÇÃO</h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
+                                    <h4 class="2xl:max-w-96 titleh4">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
                                 </div>
-                                <div class="lg:justify-self-end py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
+                                <div class="lg:justify-self-end py-20 max-md:py-5  max-2xl:px-3">
                                     <h3 class="titleh3">CONTROLE REMOTO</h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">adicionando o getway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.</h4>
+                                    <h4 class="2xl:max-w-96 titleh4">adicionando o getway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.</h4>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="grid md:grid-cols-2 ">
-                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3 ">
+                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:px-3 ">
                                     <h3 class="titleh3">NOTIFICAÇÕES EM TEMPO REAL</h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">O Smart Life pode enviar notificações  em tempo real para o celular do usuário sempre que ocorrer uma atividade na  fechadura inteligente, como tentativas  de acesso não autorizado ou a entrada  de um convidado.</h4>
+                                    <h4 class="2xl:max-w-96 titleh4">O Smart Life pode enviar notificações  em tempo real para o celular do usuário sempre que ocorrer uma atividade na  fechadura inteligente, como tentativas  de acesso não autorizado ou a entrada  de um convidado.</h4>
                                 </div>
-                                <div class="lg:justify-self-end py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3 ">
+                                <div class="lg:justify-self-end py-20 max-md:py-5  max-2xl:px-3 ">
                                     <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">Ele mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança</h4>
+                                    <h4 class="2xl:max-w-96 titleh4 ">Ele mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança</h4>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="grid md:grid-cols-2 ">
-                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
+                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:px-3">
                                     <h3 class="titleh3">CONTROLE POR VOZ</h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">Integrado com assistentes de voz como Amazon Alexa e Google Assistant, o Smart Life permite qur os usuários controlem suas fechaduras inteligentes usando comandos de voz simples.</h4>
+                                    <h4 class="2xl:max-w-96 titleh4 ">Integrado com assistentes de voz como Amazon Alexa e Google Assistant, o Smart Life permite qur os usuários controlem suas fechaduras inteligentes usando comandos de voz simples.</h4>
                                 </div>
-                                <div class="lg:justify-self-end py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
+                                <div class="lg:justify-self-end py-20 max-md:py-5  max-2xl:px-3">
                                     <h3 class="titleh3">ALERTAS DE BATERIA </h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">O sistema Smart Life pode enviar alertas quando a bateria da fechadura inteligente estiver fraca, garantindo que os usuários saibam quando é necessário trocar a bateria para evitar interrupções no funcionamento.</h4>
+                                    <h4 class="2xl:max-w-96 titleh4">O sistema Smart Life pode enviar alertas quando a bateria da fechadura inteligente estiver fraca, garantindo que os usuários saibam quando é necessário trocar a bateria para evitar interrupções no funcionamento.</h4>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="grid md:grid-cols-2 ">
-                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3">
+                                <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:px-3">
                                     <h3 class="titleh3">GERENCIAMENTO DE USUÁRIOS</h3>
-                                    <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">Adicione ou remova usuários autorizados rapidamente. Tenha total gerenciamento das permissoões de acesso e controle facilmente o acesso de visitantes em cenários residencias, sociais e comercias.</h4>
+                                    <h4 class="2xl:max-w-96 titleh4">Adicione ou remova usuários autorizados rapidamente. Tenha total gerenciamento das permissoões de acesso e controle facilmente o acesso de visitantes em cenários residencias, sociais e comercias.</h4>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -357,45 +359,45 @@ import 'swiper/css/pagination';
                     :pagination="{clickable: true, el: '.pagination-mobile'}"
                     :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                         <SwiperSlide >
-                                <div class="text-white bg-black h-[344px] py-10 text-center px-3">
+                                <div class="text-white bg-black h-[344px] py-10 px-3">
                                     <h3 class="titleh3">INTEGRAÇÃO</h3>
-                                    <h4 class="titleh4 text-center">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
+                                    <h4 class="titleh4">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div class="py-10 text-center px-3">
+                            <div class="py-10  px-3">
                                 <h3 class="titleh3">CONTROLE REMOTO</h3>
-                                <h4 class="titleh4 text-center">adicionando o getway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.</h4>
+                                <h4 class="titleh4">adicionando o getway da Elekro, com o Smart Life, os usuários podem controlar suas fechaduras inteligentes remotamente por meio do aplicativo em seus dispositivos móveis. isso permite destrancar portas de qualquer lugar, oferecendo conveniência e segurança adicional.</h4>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="text-white bg-black py-10 h-[344px] text-center px-3 ">
+                            <div class="text-white bg-black py-10 h-[344px] px-3 ">
                                     <h3 class="titleh3">NOTIFICAÇÕES EM TEMPO REAL</h3>
-                                    <h4 class="titleh4 text-center">O Smart Life pode enviar notificações  em tempo real para o celular do usuário sempre que ocorrer uma atividade na  fechadura inteligente, como tentativas  de acesso não autorizado ou a entrada  de um convidado.</h4>
+                                    <h4 class="titleh4">O Smart Life pode enviar notificações  em tempo real para o celular do usuário sempre que ocorrer uma atividade na  fechadura inteligente, como tentativas  de acesso não autorizado ou a entrada  de um convidado.</h4>
                                 </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="py-10 text-center px-3 ">
+                            <div class="py-10 px-3 ">
                                     <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
-                                    <h4 class="titleh4 text-center">Ele mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança</h4>
+                                    <h4 class="titleh4">Ele mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança</h4>
                                 </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="text-white bg-black py-14 px-3 h-[344px] text-center">
+                            <div class="text-white bg-black py-14 px-3 h-[344px]">
                                     <h3 class="titleh3">CONTROLE POR VOZ</h3>
-                                    <h4 class="titleh4 text-center">Integrado com assistentes de voz como Amazon Alexa e Google Assistant, o Smart Life permite qur os usuários controlem suas fechaduras inteligentes usando comandos de voz simples.</h4>
+                                    <h4 class="titleh4">Integrado com assistentes de voz como Amazon Alexa e Google Assistant, o Smart Life permite qur os usuários controlem suas fechaduras inteligentes usando comandos de voz simples.</h4>
                                 </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="py-10 px-3 text-center">
+                            <div class="py-10 px-3">
                                     <h3 class="titleh3">ALERTAS DE BATERIA </h3>
-                                    <h4 class="titleh4 text-center">O sistema Smart Life pode enviar alertas quando a bateria da fechadura inteligente estiver fraca, garantindo que os usuários saibam quando é necessário trocar a bateria para evitar interrupções no funcionamento.</h4>
+                                    <h4 class="titleh4">O sistema Smart Life pode enviar alertas quando a bateria da fechadura inteligente estiver fraca, garantindo que os usuários saibam quando é necessário trocar a bateria para evitar interrupções no funcionamento.</h4>
                                 </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                                <div class="text-white bg-black py-10 h-[344px] text-center px-3">
+                                <div class="text-white bg-black py-10 h-[344px] px-3">
                                     <h3 class="titleh3">GERENCIAMENTO DE USUÁRIOS</h3>
-                                    <h4 class="titleh4 text-center">Adicione ou remova usuários autorizados rapidamente. Tenha total gerenciamento das permissoões de acesso e controle facilmente o acesso de visitantes em cenários residencias, sociais e comercias.</h4>
+                                    <h4 class="titleh4">Adicione ou remova usuários autorizados rapidamente. Tenha total gerenciamento das permissoões de acesso e controle facilmente o acesso de visitantes em cenários residencias, sociais e comercias.</h4>
                                 </div>
                         </SwiperSlide>
                         <div class="flex relative">
@@ -439,8 +441,8 @@ import 'swiper/css/pagination';
             <button class="linksB absolute xl:-top-40 xl:right-[28%] max-sm:-top-24 -top-32 !cursor-pointer max-sm:right-[10%] max-md:!text-[10px] max-md!py-1 max-md:!px-1 right-[10%]">Analisar de perto</button>
             <div class="bg-black text-white relative">
                 <figure class="absolute lg:left-1/2 lg:-translate-x-1/2  -translate-y-3/4 max-xl:w-full">
-                    <img class="w-full max-md:hidden" src="/images/elekro-one/FechaduraFicha.png" alt="Fechadura deitada na pagina">
-                    <img class="w-full md:hidden" src="/images/elekro-one/mobile/19Mobile_FechaduraFicha.png" alt="Fechadura deitada na pagina">
+                    <img class="w-full " src="/images/elekro-one/FechaduraFicha2.png" alt="Fechadura deitada na pagina">
+                    <!-- <img class="w-full md:hidden" src="/images/elekro-one/mobile/19Mobile_FechaduraFicha.png" alt="Fechadura deitada na pagina"> -->
                 </figure>
                 <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
                     <div class="max-w-[1300px] mx-auto h-full text-center md:pt-36 pt-10 pb-5">
@@ -515,7 +517,7 @@ import 'swiper/css/pagination';
 
 <style scoped>
 .banner-title{
-    @apply text-start text-[50px] md:text-[80px] lg:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px] lg:mt-5 mt-8;
+    @apply text-start text-[30px] md:text-[80px] lg:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[70px] lg:leading-[100px] lg:mt-5 mt-8;
 }
 .banner-text{
     @apply lg:max-w-[250px] text-xl lg:text-2xl xl:text-5xl text-start font-light lg:mt-0 mt-2;
