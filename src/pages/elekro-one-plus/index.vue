@@ -2,8 +2,10 @@
 import { texts, recursos, capacidades, praticidades } from "~/core/constants";
 import { Swiper, SwiperSlide, } from "swiper/vue";
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css'
-import 'swiper/css/pagination'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 </script>
 
 <template>
@@ -98,7 +100,7 @@ import 'swiper/css/pagination'
                 <div class="lg:grid lg:grid-cols-2 ">
                     <div class="items-center max-lg:flex flex-col max-lg:text-center">
                         <h2 class="titleh2">O inicio de uma nova geração de fechaduras inteligentes</h2>
-                        <MyLink class="lg:mb-40">Assista ao vídeo</MyLink>
+                        <button class="linksB lg:!mb-40">Assista ao vídeo</button>
                         <div class="justify-self-end relative pt-10 pb-10 max-lg:block hidden" >
                             <figure>
                                 <img class="max-lg:block hidden" src="/images/elekro-one/mobile/08Mobile_Fechadura.png" alt="Fechadura"/>
@@ -181,7 +183,7 @@ import 'swiper/css/pagination'
                         </figure>
                     </div>
                     <div class="lg:absolute bottom-14 lg:bottom-24 right-0 max-lg:text-center pt-5">
-                        <MyLink class="m-0">Bateria inteligente</MyLink>
+                        <button class="m-0 linksB">Bateria inteligente</button>
                         <h3 class="titleh3">ALERTAS DE BATERIA E VIOLAMENTO</h3>
                         <h4 class="lg:max-w-96 titleh4">adicionando o getway da Elekro, receba aviso de bateria fraca, violamento ou tentativa indevida de abertura da fechadura.</h4>
                     </div>
@@ -214,7 +216,7 @@ import 'swiper/css/pagination'
             </div>
         </section>
         <aside class="pt-10 relative ">
-            <Swiper :modules="[Autoplay, Pagination]" :autoplay="{ delay: 3500 }" :pagination="true">
+            <Swiper :modules="[Autoplay, Pagination]" :autoplay="{ delay: 3500 }" :pagination="{clickable: true, el: '.pagination-aside'}">
                     <SwiperSlide>
                         <div class="min-w-full relative">
                             <figure>
@@ -242,12 +244,13 @@ import 'swiper/css/pagination'
                             </figure>
                             <div class="absolute top-1/2 -translate-y-1/2 left-1/4 z-10">
                                 <h2 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white">Funções Check in <br>
-                                e Check-out para <br> Airbnb e locações</h2>
+                                    e Check-out para <br> Airbnb e locações</h2>
+                                </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-                    <div class="swiper-pagination"></div>
-            </Swiper>
+                        </SwiperSlide>
+                    </Swiper>
+                    <div class="pagination-aside flex flex-col gap-2 py-3 !px-1 rounded-xl items-center absolute !top-1/2 !lg:-translate-y-1/2 z-10 !right-[5%] !left-auto w-auto h-16 bg-black"></div>
+                    
         </aside>
         <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-5">
             <div class="max-w-[1300px] mx-auto h-full" >
@@ -301,7 +304,7 @@ import 'swiper/css/pagination'
                 <div class="max-w-[1300px] mx-auto h-full z-10 relative">
                     <div class="md:block hidden">
                     <Swiper :modules="[Navigation, Pagination]"
-                    :pagination="true"
+                    :pagination="{clickable: true, el: '.pagination-desktop', type: 'bullets'}"
                     :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                         <SwiperSlide>
                             <div class="grid md:grid-cols-2 justify-items-center justify-center">
@@ -316,7 +319,7 @@ import 'swiper/css/pagination'
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="grid md:grid-cols-2 min-h-[300px]">
+                            <div class="grid md:grid-cols-2 ">
                                 <div class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:text-center max-2xl:px-3 ">
                                     <h3 class="titleh3">NOTIFICAÇÕES EM TEMPO REAL</h3>
                                     <h4 class="2xl:max-w-96 titleh4 max-xl:text-center">O Smart Life pode enviar notificações  em tempo real para o celular do usuário sempre que ocorrer uma atividade na  fechadura inteligente, como tentativas  de acesso não autorizado ou a entrada  de um convidado.</h4>
@@ -349,12 +352,12 @@ import 'swiper/css/pagination'
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                    <div class="md:hidden relative">
+                    <div class="md:hidden relative h-full">
                     <Swiper :modules="[Navigation, Pagination]"
-                    :pagination="true"
+                    :pagination="{clickable: true, el: '.pagination-mobile'}"
                     :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
-                        <SwiperSlide>
-                                <div class="text-white bg-black py-10 text-center px-3">
+                        <SwiperSlide >
+                                <div class="text-white bg-black h-[344px] py-10 text-center px-3">
                                     <h3 class="titleh3">INTEGRAÇÃO</h3>
                                     <h4 class="titleh4 text-center">O Smart Life pode ser integrado a outros dispositivos domésticos inteligentes, como sistemas de segurança, câmeras de vigilancia e dispositivos de iluminação. Isso permite automatizar tarefas e criar cenários personalizados.</h4>
                                 </div>
@@ -366,7 +369,7 @@ import 'swiper/css/pagination'
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="text-white bg-black py-10  text-center px-3 ">
+                            <div class="text-white bg-black py-10 h-[344px] text-center px-3 ">
                                     <h3 class="titleh3">NOTIFICAÇÕES EM TEMPO REAL</h3>
                                     <h4 class="titleh4 text-center">O Smart Life pode enviar notificações  em tempo real para o celular do usuário sempre que ocorrer uma atividade na  fechadura inteligente, como tentativas  de acesso não autorizado ou a entrada  de um convidado.</h4>
                                 </div>
@@ -378,7 +381,7 @@ import 'swiper/css/pagination'
                                 </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="text-white bg-black py-14 px-3 text-center">
+                            <div class="text-white bg-black py-14 px-3 h-[344px] text-center">
                                     <h3 class="titleh3">CONTROLE POR VOZ</h3>
                                     <h4 class="titleh4 text-center">Integrado com assistentes de voz como Amazon Alexa e Google Assistant, o Smart Life permite qur os usuários controlem suas fechaduras inteligentes usando comandos de voz simples.</h4>
                                 </div>
@@ -390,12 +393,14 @@ import 'swiper/css/pagination'
                                 </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                                <div class="text-white bg-black py-10 text-center px-3">
+                                <div class="text-white bg-black py-10 h-[344px] text-center px-3">
                                     <h3 class="titleh3">GERENCIAMENTO DE USUÁRIOS</h3>
                                     <h4 class="titleh4 text-center">Adicione ou remova usuários autorizados rapidamente. Tenha total gerenciamento das permissoões de acesso e controle facilmente o acesso de visitantes em cenários residencias, sociais e comercias.</h4>
                                 </div>
                         </SwiperSlide>
-                        <div class="flex items-center mt-5 gap-2 absolute bottom-8 right-0 px-3 z-10">
+                        <div class="flex relative">
+                            <div class="pagination-mobile absolute !bottom-3 z-10 bg-black !px-2 !py-1 !left-4 flex  rounded-xl"></div>
+                            <div class="flex items-center gap-2 absolute bottom-3 right-0 px-3 z-10">
                                 <button class="prev-button">
                                     <img class="object-contain w-5" src="/images/elekro-one/arrow-left.png" alt="Seta cinza para esquerda">
                                 </button>
@@ -403,13 +408,15 @@ import 'swiper/css/pagination'
                                     <img class="w-5" src="/images/elekro-one/arrow-right.png" alt="Seta cinza para direita">
                                 </button>
                             </div>
+                        </div>
                     </Swiper>
+                        
                 </div>
                 </div>
             </div>
             
-                <div class="max-w-[1300px] mx-auto h-full max-md:hidden block">
-                    <div class="grid lg:grid-cols-2">
+                <div class="max-w-[1300px] mx-auto h-full max-md:hidden block relative">
+                    <div class="grid lg:grid-cols-2 items-center">
                         <div class="flex items-center justify-around">
                             <div class="flex items-center mt-5">
                                 <button class="prev-button">
@@ -421,16 +428,17 @@ import 'swiper/css/pagination'
                             </div>
                             <h3 class="titleh3 mt-0">Passe para o lado e confira todas <br> as funções inteligentes</h3>
                         </div>
-                        <!-- <div class="justify-self-end swiper-pagination">
+                        <div class="col-start-2 pagination-desktop max-xl:mr-10 h-3 flex py-3 px-2 rounded-xl items-center w-auto  bg-black justify-self-end mt-5">
                             
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             
         </section>
-        <section class="">
+        <section class="relative">
+            <button class="linksB absolute xl:-top-40 xl:right-[28%] max-sm:-top-24 -top-32 !cursor-pointer max-sm:right-[10%] max-md:!text-[10px] max-md!py-1 max-md:!px-1 right-[10%]">Analisar de perto</button>
             <div class="bg-black text-white relative">
-                <figure class="absolute lg:left-1/2 lg:-translate-x-1/2  -translate-y-3/4">
+                <figure class="absolute lg:left-1/2 lg:-translate-x-1/2  -translate-y-3/4 max-xl:w-full">
                     <img class="w-full max-md:hidden" src="/images/elekro-one/FechaduraFicha.png" alt="Fechadura deitada na pagina">
                     <img class="w-full md:hidden" src="/images/elekro-one/mobile/19Mobile_FechaduraFicha.png" alt="Fechadura deitada na pagina">
                 </figure>
@@ -498,7 +506,7 @@ import 'swiper/css/pagination'
         <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-5 pb-10">
             <div class="max-w-[1300px] mx-auto h-full">
                 <h2 class="banner-title">Venha ser Elekro <br> tambem, junte se a nos.</h2>
-                <MyLink>Comprar</MyLink>
+                <button class="linksB" >Comprar</button>
             </div>
         </section>
        
@@ -522,5 +530,25 @@ import 'swiper/css/pagination'
 .titleh4{
     @apply mt-5 text-base
 }
+.linksB{
+    @apply inline-block px-4 py-2 cursor-pointer my-3 text-base md:text-xl rounded-md bg-black text-white
+}
+</style>
+    
 
+
+<!-- Por algum motivo o css do swiper estava renderizando depois do css da pagina, tive que estilizar globalmente para funcionar -->
+<style>
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  @apply w-auto 
+}
+.swiper-pagination-bullet{
+    @apply bg-black border border-white opacity-60
+}
+.swiper-pagination-bullet-active{
+    @apply bg-green-600 border-none opacity-100
+}
 </style>
