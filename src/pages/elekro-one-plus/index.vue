@@ -15,21 +15,23 @@ import 'swiper/css/pagination';
     </Head>
     <main>
         <section class="relative h-screen overflow-hidden">
-            <div class="py-5 md:px-10 px-2 absolute z-[1] h-full">
-                <div class="mx-auto max-w-[1900px] flex items-center h-full relative">
-                    <div class="w-full">
+            <div class="py-5 md:px-10 px-2 absolute z-[1] h-full w-full">
+                <div class="mx-auto max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center">
+                    <div class="max-lg:text-center">
                         <a class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg" href="javascript:void(0)">Faça parte</a>
-                        <h1 class="banner-title text-white">Revolucione</h1>
-                        <p class="banner-text text-white">Conheça a Elekro Signature</p>
+                        <h1 class="banner-title !mt-5 max-lg:!text-center text-white">Revolucione</h1>
+                        <p class="banner-text max-lg:!text-center text-white">Conheça a Elekro Signature</p>
                     </div>
                 </div>
             </div>
             <figure class="h-full w-full">
-                <img class="h-full object-cover w-full" src="/images/elekro-one/Header.png" alt="Fundo do cabeçalho"/>
+                <img class="h-full object-cover w-full max-lg:hidden" src="/images/elekro-one/Header.png" alt="Fundo do cabeçalho"/>
+                <img class="h-screen w-full lg:hidden" src="/images/elekro-one/mobile/02Mobile_HeaderFundo.png" alt="Fundo do cabeçalho"/>
             </figure>
             
-            <figure class="hidden lg:block w-full h-full object-contain">
-                <img class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras">
+            <figure class="w-full h-full">
+                <img class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras">
+                <img class="w-full h-[60%] lg:hidden absolute top-[36%] sm:left-[55%] left-[65%] -translate-x-1/2 object-contain" src="/images/elekro-one/mobile/01Mobile_FechaduraHeader.png" alt="Fechadura">
             </figure>
             
              
@@ -40,7 +42,7 @@ import 'swiper/css/pagination';
                     <div class="col-start-1 col-end-3 md:border-2 md:border-black md:h-[800px] relative">
                         <div class="md:bg-black md:text-white h-[70%] py-12 px-12 ">
                             <a class="lg:text-xl ml-0 border px-2 py-1 md:border-white border-black md:text-white rounded-lg" href="javascript:void(0)">Exclusiva no Brasil</a>
-                            <h2 class="text-3xl lg:text-5xl sm:pt-32 pt-10 h2-title md:w-[413px]">Inspirada na obra  de Stefano Boeri, Bosco Verticale.</h2>
+                            <h2 class="text-3xl lg:text-5xl sm:pt-32 pt-10 h2-title md:w-[413px] font-semibold">Inspirada na obra  de Stefano Boeri, Bosco Verticale.</h2>
                             <h3 class="h3-title sm:pt-10 pt-5">/ Milão . Itália</h3>
                         </div>
                         <div class="md:flex gap-10 h-[30%] items-center justify-around  absolute bottom-0 w-full hidden ">
@@ -68,7 +70,7 @@ import 'swiper/css/pagination';
                             </div>
                         </div>
                     </div>
-                    <div class="w-auto mx-[-5px]">
+                    <div class="w-auto max-md:mx-[-5px]">
                         <figure class="w-full">
                             <img class="object-cover w-full h-[800px] max-md:hidden" src="/images/elekro-one/BoscoVerticale.png" alt="Prédios com varandas de flores"/>
                             <img class="w-full md:hidden " src="/images/elekro-one/mobile/03Mobile_BoscoVerticale.png" alt="Prédios com varandas de flores"/>
@@ -89,7 +91,7 @@ import 'swiper/css/pagination';
                         </div>
                         <div class="flex items-center flex-col">
                             <figure>
-                                <img src="/images/elekro-one/mobile/06Mobile_IconeSmartLife.png" alt="Icone Smart Life">
+                                <img src="/images/elekro-one/mobile/06Mobile_IconeSmartLifeBlack.png" alt="Icone Smart Life">
                             </figure>
                             <h3 class="titleh3 text-center">Com gerenciamento <br> Smart Life</h3>
                         </div>
@@ -206,19 +208,19 @@ import 'swiper/css/pagination';
                     </div>
                 </div>
                 <div>
-                    <div class="max-lg:block hidden ">
-                        <h4 class="lg:max-w-96 titleh4">Caso não veja o alarme, você ainda  pode abrir a porta utilizando a <span class="font-semibold">chave mestra ou então utilizar a entrada USB </span> localizada na parte de baixo para energizar a fechadura.</h4>
-                    </div>
                     <div>
                         <figure class="max-lg:block hidden">
                             <img class="object-cover w-full" src="/images/elekro-one/mobile/13Mobile_FechaduraBateria.png" alt="Parte de baixo da fechadura mostrando entrada de carregador USB e chave de segurança"/>
                         </figure>
                     </div>
+                    <div class="max-lg:block hidden ">
+                        <h4 class="lg:max-w-96 titleh4">Caso não veja o alarme, você ainda  pode abrir a porta utilizando a <span class="font-semibold">chave mestra ou então utilizar a entrada USB </span> localizada na parte de baixo para energizar a fechadura.</h4>
+                    </div>
                 </div>
             </div>
         </section>
         <aside class="pt-10 relative ">
-            <Swiper :modules="[Autoplay, Pagination]" :autoplay="{ delay: 3500 }" :pagination="{clickable: true, el: '.pagination-aside'}">
+            <Swiper :modules="[Autoplay, Pagination]" :autoplay="{ delay: 3500 }" :pagination="{clickable: true, el: '.pagination-aside',}">
                     <SwiperSlide>
                         <div class="min-w-full relative">
                             <figure>
@@ -251,7 +253,7 @@ import 'swiper/css/pagination';
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                    <div class="pagination-aside flex flex-col gap-2 py-3 !px-1 rounded-xl items-center absolute !top-1/2 !lg:-translate-y-1/2 z-10 !right-[5%] !left-auto w-auto h-16 bg-black"></div>
+                    <div class="pagination-aside flex md:flex-col md:gap-2 md:py-3 py-2 !px-1 rounded-xl items-center absolute md:!top-1/2 !lg:-translate-y-1/2 z-10 !right-[5%] !left-auto w-auto md:h-16 h-0 bg-black"></div>
                     
         </aside>
         <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-5">
@@ -447,15 +449,15 @@ import 'swiper/css/pagination';
                 <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
                     <div class="max-w-[1300px] mx-auto h-full text-center md:pt-36 pt-10 pb-5">
                         <div class="grid md:grid-cols-4 grid-cols-2 border-b border-[#626262] pb-5 ">
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 ">
                                 <h3 class="titleh4 text-[#aaaaaa]">Tamanho do <br> produto</h3>
                                 <p>275*65mm</p>
                             </div>
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 ">
                                 <h3 class="titleh4 text-[#aaaaaa] ">Fontes de <br> alimentação</h3>
                                 <p>4 Pilhas AAA</p>
                             </div>
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 ">
                                 <h3 class="titleh4 text-[#aaaaaa]">Capacidades de <br> tags</h3>
                                 <p>Até 100 registros <br> de tag</p>
                             </div>
@@ -465,11 +467,11 @@ import 'swiper/css/pagination';
                             </div>
                         </div>
                         <div class="grid md:grid-cols-4 grid-cols-2 border-b border-[#626262] pb-5 ">
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 ">
                                 <h4 class="titleh4 text-[#aaaaaa]">Tensão de alimentação</h4>
                                 <p class="text-sm">4.5V-6V</p>
                             </div>
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 ">
                                 <h4 class="titleh4 text-[#aaaaaa]">Capacidade de <br> senhas</h4>
                                 <p  class="text-sm">Até 100 registros <br> de senha</p>
                             </div>
@@ -483,12 +485,12 @@ import 'swiper/css/pagination';
                             </div>
                         </div>
                         <div class="grid md:grid-cols-4 grid-cols-2 pb-5">
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 ">
                                 <h4 class="titleh4 text-[#aaaaaa]">Tipo de porta</h4>
                                 <p  class="text-sm">Porta Antirroubo <br>
                                 Porta de Madeira <br> Porta de Aço</p>
                             </div>
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 ">
                                 <h4 class="titleh4 text-[#aaaaaa]">Tipos de trinco</h4>
                                 <p class="text-sm">Trinco Único <br> 60-70mm ou <br> Trinco Duplo <br> 5050/4585/6085</p>
                             </div>
@@ -517,7 +519,7 @@ import 'swiper/css/pagination';
 
 <style scoped>
 .banner-title{
-    @apply text-start text-[30px] md:text-[80px] lg:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[70px] lg:leading-[100px] lg:mt-5 mt-8;
+    @apply text-start text-[30px] md:text-[60px] xl:text-[80px] font-bold leading-[40px] md:leading-[70px] lg:leading-[100px] lg:mt-5 mt-8;
 }
 .banner-text{
     @apply lg:max-w-[250px] text-xl lg:text-2xl xl:text-5xl text-start font-light lg:mt-0 mt-2;
