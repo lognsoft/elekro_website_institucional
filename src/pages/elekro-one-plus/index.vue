@@ -14,24 +14,24 @@ import 'swiper/css/pagination';
         <Title>Elekro One Plus</Title>
     </Head>
     <main>
-        <section class="relative h-screen overflow-hidden">
+        <section class="relative overflow-hidden">
             <div class="py-5 md:px-10 px-2 absolute z-[1] h-full w-full">
                 <div class="mx-auto max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center">
-                    <div class="max-lg:text-center">
+                    <div class="max-lg:text-center max-sm:mt-10 max-lg:mt-10">
                         <a class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg" href="javascript:void(0)">Faça parte</a>
                         <h1 class="banner-title !mt-5 max-lg:!text-center text-white">Revolucione</h1>
-                        <p class="banner-text max-lg:!text-center text-white">Conheça a Elekro Signature</p>
+                        <p class="banner-text max-lg:!text-center text-white">Conheça a <br class="lg:hidden"> Elekro Signature</p>
                     </div>
                 </div>
             </div>
             <figure class="h-full w-full">
                 <img class="h-full object-cover w-full max-lg:hidden" src="/images/elekro-one/Header.png" alt="Fundo do cabeçalho"/>
                 <img class="h-screen w-full lg:hidden" src="/images/elekro-one/mobile/02Mobile_HeaderFundo.png" alt="Fundo do cabeçalho"/>
-            </figure>
+            </figure> 
             
             <figure class="w-full h-full">
                 <img class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras">
-                <img class="w-full h-[60%] lg:hidden absolute top-[36%] sm:left-[55%] left-[65%] -translate-x-1/2 object-contain" src="/images/elekro-one/mobile/01Mobile_FechaduraHeader.png" alt="Fechadura">
+                <img class="max-sm:w-[80%] h-[60%] lg:hidden absolute top-[36%] sm:left-[55%] left-[65%] -translate-x-1/2 object-contain" src="/images/elekro-one/mobile/01Mobile_FechaduraHeader.png" alt="Fechadura">
             </figure>
             
              
@@ -253,7 +253,7 @@ import 'swiper/css/pagination';
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                    <div class="pagination-aside flex md:flex-col md:gap-2 md:py-3 py-2 !px-1 rounded-xl items-center absolute md:!top-1/2 !lg:-translate-y-1/2 z-10 !right-[5%] !left-auto w-auto md:h-16 h-0 bg-black"></div>
+                    <div class="pagination-aside flex md:flex-col md:gap-2 md:py-3 py-2 !px-1 rounded-md items-center absolute md:!top-1/2 !lg:-translate-y-1/2 z-10 !right-[5%] !left-auto w-auto md:h-16 h-0 bg-black"></div>
                     
         </aside>
         <section class="max-w-[1900px] mx-auto md:px-10 px-1 h-full pt-5">
@@ -403,7 +403,7 @@ import 'swiper/css/pagination';
                                 </div>
                         </SwiperSlide>
                         <div class="flex relative">
-                            <div class="pagination-mobile absolute !bottom-3 z-10 bg-black !px-2 !py-1 !left-4 flex  rounded-xl"></div>
+                            <div class="pagination-mobile absolute !bottom-3 z-10 bg-black !px-2 !py-1 !left-4 flex  rounded-md"></div>
                             <div class="flex items-center gap-2 absolute bottom-3 right-0 px-3 z-10">
                                 <button class="prev-button">
                                     <img class="object-contain w-5" src="/images/elekro-one/arrow-left.png" alt="Seta cinza para esquerda">
@@ -432,7 +432,7 @@ import 'swiper/css/pagination';
                             </div>
                             <h3 class="titleh3 mt-0">Passe para o lado e confira todas <br> as funções inteligentes</h3>
                         </div>
-                        <div class="col-start-2 pagination-desktop max-xl:mr-10 h-3 flex py-3 px-2 rounded-xl items-center w-auto  bg-black justify-self-end mt-5">
+                        <div class="col-start-2 pagination-desktop max-xl:mr-10 h-3 flex py-3 px-2 rounded-md items-center w-auto  bg-black justify-self-end mt-5">
                             
                         </div>
                     </div>
@@ -553,6 +553,6 @@ import 'swiper/css/pagination';
     @apply bg-black border border-white opacity-60
 }
 .swiper-pagination-bullet-active{
-    @apply bg-green-600 border-none opacity-100
+    @apply bg-[#7CB44C] border-none opacity-100
 }
 </style>
