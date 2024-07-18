@@ -638,10 +638,10 @@ import "swiper/css/pagination";
         </div>
       </div>
       <div
-        class="w-full relative after:content-[''] after:absolute after:h-full after:w-1/2 after:left-0 after:top-0 md:after:bg-black"
+        class="w-full relative after:content-[''] after:absolute after:h-full after:w-1/2 after:left-0 after:top-0 lg:after:bg-black"
       >
         <div class="max-w-[1300px] mx-auto h-full z-10 relative">
-          <div class="md:block hidden">
+          <div class="lg:block hidden">
             <Swiper
               :modules="[Navigation, Pagination]"
               :pagination="{
@@ -654,7 +654,7 @@ import "swiper/css/pagination";
               <SwiperSlide>
                 <div class="grid md:grid-cols-2">
                   <div
-                    class="text-white max-md:bg-black py-20 max-md:py-5 max-2xl:px-3"
+                    class="text-white max-lg:bg-black py-20 max-md:py-5 max-2xl:px-3"
                   >
                     <h3 class="titleh3">INTEGRAÇÃO</h3>
                     <h4 class="2xl:max-w-96 titleh4 mt-5">
@@ -748,7 +748,7 @@ import "swiper/css/pagination";
               </SwiperSlide>
             </Swiper>
           </div>
-          <div class="md:hidden relative h-full">
+          <div class="lg:hidden relative h-full">
             <Swiper
               :modules="[Navigation, Pagination]"
               :pagination="{ clickable: true, el: '.pagination-mobile' }"
@@ -756,7 +756,7 @@ import "swiper/css/pagination";
             >
               <SwiperSlide>
                 <div
-                  class="text-white bg-black h-[344px] py-10 max-md:pl-[40px] max-md:pr-[20px]"
+                  class="text-white bg-black h-[344px] py-10 max-md:pl-[40px] max-lg:pr-[20px] max-lg:pl-[130px]"
                 >
                   <h3 class="titleh3">INTEGRAÇÃO</h3>
                   <h4 class="titleh4 mt-5">
@@ -768,7 +768,9 @@ import "swiper/css/pagination";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="py-10 max-md:pl-[40px] max-md:pr-[20px]">
+                <div
+                  class="py-10 max-md:pl-[40px] bg-white max-md:pr-[20px] max-lg:pl-[130px]"
+                >
                   <h3 class="titleh3">CONTROLE REMOTO</h3>
                   <h4 class="titleh4 mt-5">
                     adicionando o getway da Elekro, com o Smart Life, os
@@ -781,7 +783,7 @@ import "swiper/css/pagination";
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  class="text-white bg-black py-10 h-[344px] max-md:pl-[40px] max-md:pr-[20px]"
+                  class="text-white bg-black py-10 h-[344px] max-md:pl-[40px] max-lg:pr-[20px] max-lg:pl-[130px]"
                 >
                   <h3 class="titleh3">NOTIFICAÇÕES EM TEMPO REAL</h3>
                   <h4 class="titleh4 mt-5">
@@ -793,7 +795,9 @@ import "swiper/css/pagination";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="py-10 max-md:pl-[40px] max-md:pr-[20px]">
+                <div
+                  class="py-10 max-md:pl-[40px] max-lg:pr-[20px] max-lg:pl-[130px]"
+                >
                   <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
                   <h4 class="titleh4 mt-5">
                     Ele mantém um registro detalhado de todas as atividades de
@@ -805,7 +809,7 @@ import "swiper/css/pagination";
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  class="text-white bg-black py-14 max-md:pl-[40px] max-md:pr-[20px] h-[344px]"
+                  class="text-white bg-black py-14 max-md:pl-[40px] max-lg:pr-[20px] h-[344px] max-lg:pl-[130px]"
                 >
                   <h3 class="titleh3">CONTROLE POR VOZ</h3>
                   <h4 class="titleh4 mt-5">
@@ -816,7 +820,9 @@ import "swiper/css/pagination";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="py-10 max-md:pl-[40px] max-md:pr-[20px]">
+                <div
+                  class="py-10 max-md:pl-[40px] max-lg:pr-[20px] max-lg:pl-[130px]"
+                >
                   <h3 class="titleh3">ALERTAS DE BATERIA</h3>
                   <h4 class="titleh4 mt-5">
                     O sistema Smart Life pode enviar alertas quando a bateria da
@@ -828,7 +834,7 @@ import "swiper/css/pagination";
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  class="text-white bg-black py-10 h-[344px] max-md:pl-[40px] max-md:pr-[20px]"
+                  class="text-white bg-black py-10 h-[344px] max-md:pl-[40px] max-lg:pr-[20px] max-lg:pl-[130px]"
                 >
                   <h3 class="titleh3">GERENCIAMENTO DE USUÁRIOS</h3>
                   <h4 class="titleh4 mt-5">
@@ -841,10 +847,10 @@ import "swiper/css/pagination";
               </SwiperSlide>
               <div class="flex relative">
                 <div
-                  class="pagination-mobile absolute !bottom-7 z-10 bg-black md:!px-2 !py-1 !left-10 flex rounded-[4px]"
+                  class="pagination-mobile absolute !bottom-7 z-10 bg-black lg:!px-2 !py-1 max-md:!left-10 max-lg:!left-[8.5rem] flex rounded-[4px"
                 ></div>
                 <div
-                  class="flex items-center gap-2 absolute bottom-7 right-0 px-3 z-10"
+                  class="flex items-center gap-2 absolute bottom-7 right-3 px-3 z-10"
                 >
                   <button class="prev-button">
                     <img
@@ -868,7 +874,7 @@ import "swiper/css/pagination";
       </div>
 
       <div
-        class="max-w-[1300px] mx-auto h-full max-md:hidden block relative mt-10"
+        class="max-w-[1300px] mx-auto h-full max-lg:hidden block relative mt-10"
       >
         <div
           class="grid lg:grid-cols-2 items-center lg:justify-center justify-between"
