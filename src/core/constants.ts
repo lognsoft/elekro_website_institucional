@@ -72,7 +72,7 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/parceria-estrategica.jpg',
         title: 'Parceria estratégica',
-        text: 'Posicionamos o consumidor no centro de todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco',
+        text: 'Posicionamos o consumidor no centro de todas as nossas decisões e buscamos parceiros que compartilhem dessa missão conosco.',
     },
     {
         img:'/images/autorizado/analise-de-credito.jpg',
@@ -112,7 +112,7 @@ export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/capilaridade.jpeg',
         title:"Capilaridade e Rede de instaladores",
-        text:'Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país',
+        text:'Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país.',
     },
 ]
 

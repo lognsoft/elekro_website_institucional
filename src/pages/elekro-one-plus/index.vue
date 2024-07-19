@@ -462,7 +462,7 @@ import "swiper/css/pagination";
               >
                 Funções de <br />
                 senha dinâmica <br />
-                para imobiliárias
+                para imobiliárias.
               </h2>
             </div>
           </div>
@@ -484,7 +484,7 @@ import "swiper/css/pagination";
               >
                 Funções Check in <br />
                 e Check-out para <br />
-                Airbnb e locações
+                Airbnb e locações.
               </h2>
             </div>
           </div>
@@ -509,8 +509,8 @@ import "swiper/css/pagination";
             <h4 class="max-w-96 titleh4 mt-5">
               Ideal para empresas, você pode dar acesso a diversos funcionários
               e parceiros com as senhas biométricos ou numéricas. Além disso, é
-              possível gerenciar todo o acesso por meio do aplicativo com:
-              historico permissões e áreas restritas, inclusão e exclusão em
+              possível gerenciar todo o acesso por meio do aplicativo com: 
+               histórico permissões e áreas restritas, inclusão e exclusão em
               tempo real e muito mais.
             </h4>
           </div>
@@ -644,7 +644,7 @@ import "swiper/css/pagination";
                       Adicionando o getway da Elekro, com o Smart Life, os
                       usuários podem controlar suas fechaduras inteligentes
                       remotamente por meio do aplicativo em seus dispositivos
-                      móveis. isso permite destrancar portas de qualquer lugar,
+                      móveis. Isso permite destrancar portas de qualquer lugar,
                       oferecendo conveniência e segurança adicional.
                     </h4>
                   </div>
@@ -710,9 +710,9 @@ import "swiper/css/pagination";
                     <h3 class="titleh3">GERENCIAMENTO DE USUÁRIOS</h3>
                     <h4 class="2xl:max-w-96 titleh4 mt-5">
                       Adicione ou remova usuários autorizados rapidamente. Tenha
-                      total gerenciamento das permissoões de acesso e controle
-                      facilmente o acesso de visitantes em cenários residencias,
-                      sociais e comercias.
+                      total gerenciamento das permisões de acesso e controle
+                      facilmente o acesso de visitantes em cenários residenciais,
+                      sociais e comerciais.
                     </h4>
                   </div>
                 </div>
@@ -747,7 +747,7 @@ import "swiper/css/pagination";
                     Adicionando o getway da Elekro, com o Smart Life, os
                     usuários podem controlar suas fechaduras inteligentes
                     remotamente por meio do aplicativo em seus dispositivos
-                    móveis. isso permite destrancar portas de qualquer lugar,
+                    móveis. Isso permite destrancar portas de qualquer lugar,
                     oferecendo conveniência e segurança adicional.
                   </h4>
                 </div>
@@ -810,9 +810,9 @@ import "swiper/css/pagination";
                   <h3 class="titleh3">GERENCIAMENTO DE USUÁRIOS</h3>
                   <h4 class="titleh4 mt-5">
                     Adicione ou remova usuários autorizados rapidamente. Tenha
-                    total gerenciamento das permissoões de acesso e controle
-                    facilmente o acesso de visitantes em cenários residencias,
-                    sociais e comercias.
+                    total gerenciamento das permissões de acesso e controle
+                    facilmente o acesso de visitantes em cenários residenciais,
+                    sociais e comerciais.
                   </h4>
                 </div>
               </SwiperSlide>
@@ -870,7 +870,7 @@ import "swiper/css/pagination";
             <div>
               <h3 class="titleh3 mt-0">
                 Passe para o lado e confira todas <br />
-                as funções inteligentes
+                as funções inteligentes.
               </h3>
             </div>
           </div>
@@ -915,7 +915,7 @@ import "swiper/css/pagination";
               class="grid md:grid-cols-4 grid-cols-2 border-b border-[#626262] pb-5"
             >
               <div
-                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5"
+                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5" 
               >
                 <h3 class="titleh4 text-[#aaaaaa]">
                   Tamanho do <br />
@@ -924,7 +924,7 @@ import "swiper/css/pagination";
                 <p>275*65mm</p>
               </div>
               <div
-                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5"
+                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 "
               >
                 <h3 class="titleh4 text-[#aaaaaa]">
                   Fontes de <br />
@@ -932,9 +932,9 @@ import "swiper/css/pagination";
                 </h3>
                 <p>4 Pilhas AAA</p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 max-md:pt-5">
                 <h3 class="titleh4 text-[#aaaaaa]">
-                  Capacidades de <br />
+                  Capacidade de <br />
                   tags
                 </h3>
                 <p>
@@ -942,7 +942,7 @@ import "swiper/css/pagination";
                   de tag
                 </p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 max-md:pt-5">
                 <h4 class="titleh4 text-[#aaaaaa]">
                   Velocidade de <br />
                   reconhecimento
@@ -954,13 +954,13 @@ import "swiper/css/pagination";
               class="grid md:grid-cols-4 grid-cols-2 border-b border-[#626262] pb-5"
             >
               <div
-                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5"
+                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 pt-5"
               >
                 <h4 class="titleh4 text-[#aaaaaa]">Tensão de alimentação</h4>
                 <p class="text-sm">4.5V-6V</p>
               </div>
               <div
-                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5"
+                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 pt-5"
               >
                 <h4 class="titleh4 text-[#aaaaaa]">
                   Capacidade de <br />
@@ -971,7 +971,7 @@ import "swiper/css/pagination";
                   de senha
                 </p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 pt-5">
                 <h4 class="titleh4 text-[#aaaaaa]">
                   Capacidade de <br />
                   biometrias
@@ -981,14 +981,14 @@ import "swiper/css/pagination";
                   de digitais
                 </p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 pt-5">
                 <h4 class="titleh4 text-[#aaaaaa]">Espessura da porta</h4>
                 <p class="text-sm">30-120mm</p>
               </div>
             </div>
             <div class="grid md:grid-cols-4 grid-cols-2 pb-5">
               <div
-                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5"
+                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 pt-5"
               >
                 <h4 class="titleh4 text-[#aaaaaa]">Tipo de porta</h4>
                 <p class="text-sm">
@@ -998,7 +998,7 @@ import "swiper/css/pagination";
                 </p>
               </div>
               <div
-                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5"
+                class="flex flex-col gap-3 max-md:border-b max-md:border-[#626262] max-md:pb-5 pt-5"
               >
                 <h4 class="titleh4 text-[#aaaaaa]">Tipos de trinco</h4>
                 <p class="text-sm">
@@ -1008,14 +1008,14 @@ import "swiper/css/pagination";
                   5050/4585/6085
                 </p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 pt-5">
                 <h4 class="titleh4 text-[#aaaaaa]">
                   Temperatura <br />
                   operacional
                 </h4>
                 <p class="text-sm">-20°C-70°C</p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 pt-5">
                 <h4 class="titleh4 text-[#aaaaaa]">
                   Taxa de <br />
                   rejeição
