@@ -15,53 +15,24 @@ import "swiper/css/pagination";
   <main class="overflow-hidden">
     <section class="relative overflow-hidden">
       <div class="py-5 md:px-10 px-2 absolute z-[1] h-full w-full">
-        <div
-          class="mx-auto max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center pb-60"
-        >
-          <div
-            class="max-lg:text-center max-sm:mt-10 max-lg:mt-10 max-w-[1700px] mx-auto w-full"
-          >
-            <a
-              class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg"
-              href="javascript:void(0)"
-              >Faça parte</a
-            >
-            <h1 class="banner-title !mt-5 max-lg:!text-center text-white">
-              Revolucione
-            </h1>
-            <p class="banner-text max-lg:!text-center text-white">
-              Conheça a <br class="lg:hidden" />
-              Elekro Signature
-            </p>
+        <div class="mx-auto max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center xl:pb-60 pb-28">
+          <div class="max-lg:text-center max-sm:mt-10 max-lg:mt-10 max-w-[1700px] mx-auto w-full">
+            <a class="lg:text-xl ml-0 border px-2 py-1 border-white text-white rounded-lg" href="javascript:void(0)">Faça parte</a>
+            <h1 class="banner-title !mt-5 max-lg:!text-center text-white">Revolucione</h1>
+            <p class="banner-text max-lg:!text-center text-white">Conheça a <br class="lg:hidden" /> Elekro Signature</p>
           </div>
         </div>
-      </div>
-      <figure class="h-full w-full">
-        <img
-          class="h-full object-cover w-full max-lg:hidden"
-          src="/images/elekro-one/Header.png"
-          alt="Fundo do cabeçalho"
-        />
-        <img
-          class="h-screen w-full lg:hidden"
-          src="/images/elekro-one/mobile/02Mobile_HeaderFundo.png"
-          alt="Fundo do cabeçalho"
-        />
-      </figure>
-
-      <figure class="w-full h-full">
-        <img
-          class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden lg:block"
-          src="/images/elekro-one/ElekroDupla.png"
-          alt="Duas fechaduras"
-        />
-        <img
-          class="max-sm:w-[80%] h-[60%] lg:hidden absolute top-[36%] sm:left-[55%] left-[65%] -translate-x-1/2 object-contain"
-          src="/images/elekro-one/mobile/01Mobile_FechaduraHeader.png"
-          alt="Fechadura"
-        />
-      </figure>
-    </section>
+    </div>
+    <figure class="h-full w-full">
+      <img class="h-full object-cover w-full max-lg:hidden" src="/images/elekro-one/Header.png" alt="Fundo do cabeçalho" />
+      <img class="h-screen w-full lg:hidden" src="/images/elekro-one/mobile/02Mobile_HeaderFundo.png" alt="Fundo do cabeçalho" />
+    </figure>
+    <figure class="w-full h-full">
+      <img class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras" />
+      <img class="max-sm:w-full h-[60%] lg:hidden absolute top-[35.5%] sm:top-[35%] left-1/2 -translate-x-1/2 object-contain" src="/images/elekro-one/ElekroDupla.png" alt="Fechadura" />
+    </figure>
+  </section>
+    
     <section class="lg:pt-52 pt-28 overflow-hidden">
       <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
         <div
@@ -208,7 +179,7 @@ import "swiper/css/pagination";
         <div class="lg:grid lg:grid-cols-2">
           <div class="items-center max-lg:flex flex-col max-lg:text-center">
             <h2 class="titleh2">
-              O inicio de uma nova geração de fechaduras inteligentes
+              O Início de uma nova geração de fechaduras inteligentes
             </h2>
             <button class="linksB lg:!mb-40 flex items-center gap-2">
               <span>Assista ao vídeo</span>
@@ -243,7 +214,7 @@ import "swiper/css/pagination";
               </h3>
               <h4 class="lg:max-w-[19rem] titleh4 mt-5">
                 Getway integrado, acesso biométrico, gestão de acesso em tempo
-                real, remoto e muito mais
+                real, remoto e muito mais.
               </h4>
             </div>
           </div>
@@ -357,14 +328,14 @@ import "swiper/css/pagination";
               <h3 class="titleh3">MODOS DE ACESSO</h3>
               <h4 class="max-w-96 titleh4 mt-5">
                 Acesso Privado, apenas para o administrador e acesso livre, para
-                que qualquer um acesse
+                que qualquer pessoa acesse.
               </h4>
             </div>
             <div class="border-t-2">
               <h3 class="titleh3 mt-5">CONFIGURAÇÕES DE VOLUME</h3>
               <h4 class="max-w-96 titleh4 mt-5">
                 Controle de volume e modo silencioso, que não emite sons ao
-                utilizar a fechadura
+                utilizar a fechadura.
               </h4>
             </div>
           </div>
@@ -383,7 +354,7 @@ import "swiper/css/pagination";
             <button class="m-0 linksB">Bateria inteligente</button>
             <h3 class="titleh3">ALERTAS DE BATERIA E VIOLAMENTO</h3>
             <h4 class="lg:max-w-96 titleh4 mt-5">
-              adicionando o getway da Elekro, receba aviso de bateria fraca,
+              Adicionando o getway da Elekro, receba aviso de bateria fraca,
               violamento ou tentativa indevida de abertura da fechadura.
             </h4>
           </div>
@@ -469,7 +440,7 @@ import "swiper/css/pagination";
                 Funções para <br />
                 empresa, com <br />
                 gestão completa <br />
-                de usuarios.
+                de usuários.
               </h2>
             </div>
           </div>
@@ -490,7 +461,7 @@ import "swiper/css/pagination";
                 class="text-[20px] md:text-[50px] lg:text-[60px] xl:text-[80px] w-auto text-white leading-tight"
               >
                 Funções de <br />
-                senha dinamica <br />
+                senha dinâmica <br />
                 para imobiliárias
               </h2>
             </div>
@@ -549,7 +520,7 @@ import "swiper/css/pagination";
               DE ENTRADA E SAÍDA
             </h3>
             <h4 class="max-w-96 titleh4 mt-5">
-              Com a função de Check-in e Check-out crise senhas com data de
+              Com a função de Check-in e Check-out você pode criar senhas com data de
               entrada e saída. Perfeito para Airbnb ou locações por temporada.
             </h4>
             <h3 class="titleh3 mt-5">LIBERE O ACESSO COM A SENHA DINÂMICA</h3>
@@ -593,7 +564,7 @@ import "swiper/css/pagination";
               </h4>
               <h4 class="lg:max-w-96 titleh4 mt-5">
                 Graças às rotinas da Alexa, os alto-falantes inteligentes da
-                Amazon podem responder às vinculações de cenários
+                Amazon podem responder às vinculações de cenários.
               </h4>
             </div>
           </div>
@@ -670,7 +641,7 @@ import "swiper/css/pagination";
                   >
                     <h3 class="titleh3">CONTROLE REMOTO</h3>
                     <h4 class="2xl:max-w-96 titleh4 mt-5">
-                      adicionando o getway da Elekro, com o Smart Life, os
+                      Adicionando o getway da Elekro, com o Smart Life, os
                       usuários podem controlar suas fechaduras inteligentes
                       remotamente por meio do aplicativo em seus dispositivos
                       móveis. isso permite destrancar portas de qualquer lugar,
@@ -700,7 +671,7 @@ import "swiper/css/pagination";
                       Ele mantém um registro detalhado de todas as atividades de
                       destravamento de fechadura, permitindo que os usuários
                       visualizem o histórico de acesso para monitoramento e
-                      segurança
+                      segurança.
                     </h4>
                   </div>
                 </div>
@@ -773,7 +744,7 @@ import "swiper/css/pagination";
                 >
                   <h3 class="titleh3">CONTROLE REMOTO</h3>
                   <h4 class="titleh4 mt-5">
-                    adicionando o getway da Elekro, com o Smart Life, os
+                    Adicionando o getway da Elekro, com o Smart Life, os
                     usuários podem controlar suas fechaduras inteligentes
                     remotamente por meio do aplicativo em seus dispositivos
                     móveis. isso permite destrancar portas de qualquer lugar,
@@ -803,7 +774,7 @@ import "swiper/css/pagination";
                     Ele mantém um registro detalhado de todas as atividades de
                     destravamento de fechadura, permitindo que os usuários
                     visualizem o histórico de acesso para monitoramento e
-                    segurança
+                    segurança.
                   </h4>
                 </div>
               </SwiperSlide>
