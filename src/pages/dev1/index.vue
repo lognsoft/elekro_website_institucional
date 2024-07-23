@@ -14,7 +14,7 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <GeneralBanner src="/images/Dupla_Fundo2.png" title="Proteção<br/>e Elegância" :hidden="true"/>
+        <GeneralBanner src="/images/bm-slide/bg3.png" title="Proteção<br/>e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
@@ -23,9 +23,9 @@
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
                         <figure>
                             <img
-                                class="max-w-[100%] mx-auto object-contain"
-                                src="/images/home/fechaduradupla.png"
-                                srcset="/images/home/fechaduradupla.png"
+                                class="max-w-[100%] h-full mx-auto object-contain"
+                                src="/images/fechaduradupla.png"
+                                srcset="/images/fechaduradupla.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
