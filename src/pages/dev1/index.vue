@@ -23,7 +23,7 @@
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
                         <figure>
                             <img
-                                class="max-w-[100%] h-full mx-auto object-contain"
+                                class="max-w-[100%] mx-auto object-contain"
                                 src="/images/fechaduradupla.png"
                                 srcset="/images/fechaduradupla.png"
                                 alt="Maçaneta preta de frente"
