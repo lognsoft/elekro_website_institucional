@@ -1,5 +1,12 @@
 /* Importar fontes */
 @font-face {
+  font-family: 'AustraliaSignature';
+  src: url('../fonts/australiasignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
     font-family: 'Lufga';
     src: url('../fonts/LufgaBlack.ttf') format('truetype');
     font-weight: 900;
