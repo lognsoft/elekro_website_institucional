@@ -19,8 +19,8 @@
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <TextH2Title class="text-center lg:hidden">Elekro One+</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Série FM-F31</TextH4SubTitle>
+                        <TextH2Title class="text-center lg:hidden">Elekro</TextH2Title>
+                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden">Signature</TextH4SubTitle>
                         <figure>
                             <img
                                 class="max-w-[100%] mx-auto object-contain"
@@ -37,11 +37,12 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure> -->
-                        <MyLinkTwo :icon="false" class="
+                        <!-- <MyLinkTwo :icon="false" class="
                             mt-7 hidden lg:inline-block my-link
                             " 
                             href="/elekro-one-plus"
-                        >Saiba mais</MyLinkTwo>
+                        >Saiba mais</MyLinkTwo> -->
+                        <MyButtonTwo href="/elekro-one-plus" class="mt-7 hidden lg:inline-block">Saiba mais</MyButtonTwo>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
                 </div>
@@ -49,8 +50,8 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block">Elekro One+</TextH2Title>
-                        <TextH4SubTitle class="text-center hidden lg:block">Série FM-F31</TextH4SubTitle>
+                        <TextH2Title class="text-center hidden lg:block">Elekro</TextH2Title>
+                        <TextH4SubTitle class="text-center hidden lg:block">Signature</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
@@ -64,7 +65,10 @@
                             
                         </ul>
                         <div class="text-center my-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                            <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
+                            <MyButtonTwo href="/elekro-one-plus" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
+
+
                         </div>
                     </div>
                 </div>

@@ -26,15 +26,15 @@ export const rotas:ReadonlyArray<Route> = [
         pathName: "Home",
     },
     {
-        path: "/elekro-one-plus",
-        pathName: "Fechadura inteligente",
+        path: "/colecao-signature",
+        pathName: "Coleção Signature",
     },
     {
         path: "/autorizado",
         pathName: "Seja um autorizado",
     },
     {
-        path: "/elekro",
+        path: "/sobre",
         pathName: "Sobre a Elekro",
     }
 ];
@@ -66,7 +66,7 @@ export const midiasSociais:ReadonlyArray<Midia> = [
 export const infos:ReadonlyArray<Info> = [
     {
         img:'/images/autorizado/futuro-elekro.jpeg',
-        title: 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro',
+        title: 'Explore os benefícios exclusivos e diferenciais da Elekro',
         text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
     },
     {
@@ -120,7 +120,7 @@ export const infos:ReadonlyArray<Info> = [
 export const features:ReadonlyArray<Feature> = [
     {
         icon:'mdi:shield-lock',
-        text:'Fechadura inteligente de embutir, para portas com espessura entre 30 e 60mm',
+        text:'Fechadura inteligente de embutir, para portas com espessura entre 35mm e 60mm',
         svg:false
     },
     {
@@ -132,6 +132,16 @@ export const features:ReadonlyArray<Feature> = [
         icon:'<svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192.756 192.756"><path d="M64.363 133.648c-17.218 0-31.24-14.021-31.24-31.191 0-17.218 14.022-31.239 31.24-31.239 17.17 0 31.192 14.021 31.192 31.239 0 17.17-14.022 31.191-31.192 31.191z" fill-rule="evenodd" clip-rule="evenodd"/><path d="M154.696 133.744c18.22-42.543 14.213-85.086-12.258-102.256-25.135-16.311-62.766-5.056-93.386 24.896 20.031-15.405 42.686-19.555 56.519-8.394 17.646 14.164 13.83 48.123-8.586 75.833-2.91 3.576-6.057 6.914-9.253 10.064l66.964-.143z" fill-rule="evenodd" clip-rule="evenodd"/></svg>',
         text:'Selo anatel',
         svg:true
+    },
+    {
+        icon:'fa:wifi',
+        text:'Wi-Fi 2.4',
+        svg:false
+    },
+    {
+        icon:'fa:mobile:screen',
+        text:'Campainha Digital Remota',
+        svg:false
     },
     {
         icon:'game-icons:door-handle',
@@ -157,11 +167,6 @@ export const features:ReadonlyArray<Feature> = [
         icon:'mingcute:volume-mute-fill',
         text:'Modo silencioso',
         svg:false
-    },
-    {
-        icon:'material-symbols:nest-doorbell-visitor',
-        text:'Modo de acesso para visitantes',
-        svg:false,
     },
     {
         icon:'ic:sharp-do-disturb-on',
@@ -218,6 +223,7 @@ export const features:ReadonlyArray<Feature> = [
         text:'Processador de alto desempenho',
         svg:false
     },
+    
 ]
 
 //página elekro one+

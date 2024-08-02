@@ -349,7 +349,7 @@ const messageSubmit = computed(():string => {
                             <td></td>
                         </tr>
                     </table>
-                    <div>
+                    <div class="flex justify-center">
                         <MyButton class="inline-flex items-center gap-x-1" type="submit" :disabled="submitAsync">
                             Enviar
                         </MyButton>

@@ -38,8 +38,8 @@
                                                 {{ text }}
                                             </p>
                                         </template>
-                                        <template v-if="info.title === 'Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro'">
-                                            <button class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado Elekro</button>
+                                        <template v-if="info.title === 'Explore os benefícios exclusivos e diferenciais da Elekro'">
+                                            <MyButtonTwo class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado</MyButtonTwo>
                                         </template>
                                     </div>
                                 </div>
@@ -93,6 +93,6 @@ onUnmounted(() => formulario = null);
 }
 
 .nav-form{
-    @apply duration-200 underline text-[#1a6bd9] mt-3
+    @apply duration-200 text-black mt-5 inline-block bg-white
 }
 </style>

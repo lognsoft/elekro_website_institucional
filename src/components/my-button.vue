@@ -1,6 +1,6 @@
 <template>
     <button
-        class="inline-block px-4 py-2 cursor-pointer text-base duration-200 rounded font-light"
+        class="inline-block px-7 py-2.5 cursor-pointer text-base duration-200 rounded-full font-light"
         :class="{'bg-white text-black':reverse, 'bg-black text-white':!reverse }"
     >
         <slot/>

@@ -5,13 +5,13 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import scroll from "~/components/scroll.vue";
+import Scroll from "~/components/scroll.vue";
 </script>
 
 <template>
   <!-- <Body class="bg-black text-white"/> -->
   <Head>
-    <Title>Elekro One Plus</Title>
+    <Title>Coleção Signature</Title>
   </Head>
   <main class="overflow-hidden">    
     <Scroll/>
@@ -28,7 +28,7 @@ import scroll from "~/components/scroll.vue";
               class="md:bg-black md:text-white h-[70%] py-12 px-12 max-sm:pt-0"
             >
               <a
-                class="lg:text-xl ml-0 border px-2 py-1 md:border-white border-black md:text-white rounded-lg"
+                class="lg:text-xl ml-0 border px-2 py-1 md:border-white border-black md:text-white rounded-lg cursor-default"
                 href="javascript:void(0)"
                 >Exclusiva no Brasil</a
               >
@@ -163,7 +163,7 @@ import scroll from "~/components/scroll.vue";
               <h2 class="titleh2">
                 O Início de uma nova geração de fechaduras inteligentes
               </h2>
-              <button class="linksB lg:!mb-40 flex items-center gap-2">
+              <MyButtonTwo class="lg:!mb-40 flex items-center gap-2 inline-flex">
                 <span>Assista ao vídeo</span>
                 <span
                   ><img
@@ -171,7 +171,7 @@ import scroll from "~/components/scroll.vue";
                     src="/images/elekro-one/iconplay.png"
                     alt=""
                 /></span>
-              </button>
+              </MyButtonTwo>
               <div
                 class="justify-self-end relative pt-10 pb-10 max-lg:block hidden"
               >
@@ -333,7 +333,7 @@ import scroll from "~/components/scroll.vue";
               </figure>
             </div>
             <div class="lg:absolute bottom-14 lg:bottom-24 right-0 pt-5">
-              <button class="m-0 linksB">Bateria inteligente</button>
+              <MyButtonTwo class="cursor-auto my-3 inline-block">Bateria inteligente</MyButtonTwo>
               <h3 class="titleh3">ALERTAS DE BATERIA E VIOLAMENTO</h3>
               <h4 class="lg:max-w-96 titleh4 mt-5">
                 Adicionando o getway da Elekro, receba aviso de bateria fraca,
@@ -864,8 +864,8 @@ import scroll from "~/components/scroll.vue";
       </div>
     </section>
     <section class="relative z-10">
-      <button
-        class="linksB absolute xl:-top-40 xl:right-[28%] max-sm:-top-20 -top-32 !cursor-pointer max-sm:right-[5%] max-md:!text-[10px] max-md!py-1 max-md:!px-1 right-[10%] flex items-center gap-2 z-40"
+      <MyButtonTwo
+        class="absolute xl:-top-40 xl:right-[28%] max-sm:-top-20 -top-32 !cursor-pointer max-sm:right-[5%] max-md:!text-[10px] max-md!py-1 max-md:!px-1.5 max-md:!py-1 right-[10%] flex items-center gap-2 z-40"
       >
         <span>Analisar de perto</span>
         <span
@@ -874,7 +874,7 @@ import scroll from "~/components/scroll.vue";
             src="/images/elekro-one/icom+.png"
             alt=""
         /></span>
-      </button>
+      </MyButtonTwo>
       <div class="bg-black text-white relative">
         <figure
           class="absolute left-1/2 -translate-x-1/2 -translate-y-3/4 max-xl:w-full max-md:max-w-[270px]"
@@ -1017,7 +1017,7 @@ import scroll from "~/components/scroll.vue";
             Venha ser Elekro <br />
             tambem, junte se a nos.
           </h2>
-          <button class="linksB flex items-center gap-2">
+          <MyButtonTwo class="flex items-center inline-flex gap-2 mt-5">
             <span>Comprar</span>
             <span
               ><img
@@ -1025,7 +1025,7 @@ import scroll from "~/components/scroll.vue";
                 src="/images/elekro-one/icom+.png"
                 alt=""
             /></span>
-          </button>
+          </MyButtonTwo>
         </div>
       </div>
     </section>
@@ -1049,9 +1049,9 @@ import scroll from "~/components/scroll.vue";
 .titleh4 {
   @apply text-base;
 }
-.linksB {
+/* .linksB {
   @apply px-4 py-2 cursor-pointer my-3 text-base md:text-xl rounded-md bg-black text-white;
-}
+} */
 </style>
 
 <!-- Por algum motivo o css do swiper estava renderizando depois do css da pagina, tive que estilizar globalmente para funcionar -->
