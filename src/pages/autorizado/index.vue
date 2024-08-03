@@ -26,7 +26,7 @@
                 <div class="grid grid-cols-1 gap-2 md:gap-0">
                     <template v-for="info,index in infos" :key="index">
                         <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="bg-black text-white aspect-[1/1] lg:aspect-[2/1.2] p-4 flex items-center">
+                            <div class="bg-white text-black aspect-[1/1] lg:aspect-[2/1.2] p-4 flex items-center">
                                 <div class="w-full container max-w-[900px]" :class="{'md:ml-0 md:mr-auto':(index + 1) % 2 == 0,'md:mr-0 md:ml-auto':(index + 1) % 2 > 0}">
                                     <TextH2Title class="mb-3">{{ info.title }}</TextH2Title>
                                     <div>

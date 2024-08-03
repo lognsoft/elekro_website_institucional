@@ -1,8 +1,9 @@
 <template>
     <button
-        class="inline-block px-7 py-2.5 cursor-pointer text-base duration-200 rounded-full font-light"
-        :class="{'bg-white text-black':reverse, 'bg-[#0071e3] hover:brightness-105 text-white':!reverse } "
-    >
+        class="inline-block cursor-pointer  px-7 rounded-full py-2.5 text-white bg-[#0071e3] font-light text-base md:text-lg hover:brightness-105 text-center"
+        
+        >
+        <!-- :class="{'bg-white text-black':reverse, 'bg-[#0071e3] hover:brightness-105 text-white':!reverse } " -->
         <slot/>
     </button>
 </template>
