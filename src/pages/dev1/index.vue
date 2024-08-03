@@ -24,8 +24,8 @@
                         <figure>
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
-                                src="/images/testeteste.png"
-                                srcset="/images/testeteste.png"
+                                src="/images/FechaduraDuplaHome.png"
+                                srcset="/images/FechaduraDuplaHome.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
