@@ -90,9 +90,9 @@ export const infos:ReadonlyArray<Info> = [
         text:'Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.',
     },
     {
-        img:'/images/autorizado/marketing.png',
-        title:"Marketing e Promoção",
-        text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
+        img:'/images/autorizado/capilaridade.jpeg',
+        title:"Capilaridade e Rede de instaladores",
+        text:'Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país.',
     },
     {
         img:'/images/autorizado/inovacoes-elekro.png',
@@ -110,9 +110,9 @@ export const infos:ReadonlyArray<Info> = [
         text:"Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.",
     },
     {
-        img:'/images/autorizado/capilaridade.jpeg',
-        title:"Capilaridade e Rede de instaladores",
-        text:'Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país.',
+        img:'/images/autorizado/marketing.png',
+        title:"Marketing e Promoção",
+        text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
     },
 ]
 
