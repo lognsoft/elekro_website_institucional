@@ -23,7 +23,7 @@
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden font-[AustraliaSignature] !text-3xl">Signature</TextH4SubTitle>
                         <figure>
                             <img
-                                class="max-w-[100%] -mt-12 -mb-10 mx-auto object-contain"
+                                class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
                                 src="/images/testeteste.png"
                                 srcset="/images/testeteste.png"
                                 alt="Maçaneta preta de frente"
