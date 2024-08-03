@@ -1,7 +1,7 @@
 <template>
     <main class="text-black">
         <Head>
-            <Title>Seja Um Autorizado</Title>
+            <Title>Seja um autorizado</Title>
             <Meta name="description" content="lorem ipsum"/>
             <Meta property="og:description" content="lorem ipsum"/>
             <Meta property="og:title" content="Elekro - Contato"/>
@@ -93,6 +93,6 @@ onUnmounted(() => formulario = null);
 }
 
 .nav-form{
-    @apply duration-200 mt-5 inline-block
+    @apply duration-200 mt-5 inline-block font-light text-base
 }
 </style>

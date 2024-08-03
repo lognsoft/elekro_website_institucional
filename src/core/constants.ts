@@ -139,8 +139,8 @@ export const features:ReadonlyArray<Feature> = [
         svg:false
     },
     {
-        icon:'fa:mobile:screen',
-        text:'Campainha',
+        icon:'fa:bell',
+        text:'Campainha digital',
         svg:false
     },
     {

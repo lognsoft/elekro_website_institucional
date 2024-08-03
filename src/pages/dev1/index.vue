@@ -23,9 +23,9 @@
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden font-[AustraliaSignature] !text-3xl">Signature</TextH4SubTitle>
                         <figure>
                             <img
-                                class="max-w-[100%] mx-auto object-contain"
-                                src="/images/fechaduradupla.png"
-                                srcset="/images/fechaduradupla.png"
+                                class="max-w-[100%] -mt-12 -mb-10 mx-auto object-contain"
+                                src="/images/testeteste.png"
+                                srcset="/images/testeteste.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>

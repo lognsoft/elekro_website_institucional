@@ -12,7 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <GeneralBanner src="/images/structure.jpg" title="Elekro" text="Design e tecnologia, aliados à segurança"/>
+        <GeneralBanner src="/images/Signature.png" title="Elekro" text="Design e tecnologia, aliados à segurança"/>
         <section class="elekro-text">
             <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
                 <div class="text-base mb-6">
@@ -52,7 +52,7 @@
                     <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
                         <TextH3Title class="mb-1">Comprometimento</TextH3Title>
                         <p>A base de nossa atuação, buscando sempre a inovação e a excelência, impactando positivamente a vida das pessoas para
-                        superar suas expectativas, o motivo de cada uma de nossas ações</p>
+                        superar suas expectativas, o motivo de cada uma de nossas ações.</p>
                     </div>
                     <!-- <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
                         <TextH3Title class="mb-1">Transparência</TextH3Title>
