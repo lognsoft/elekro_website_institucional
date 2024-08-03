@@ -5,8 +5,8 @@
       <img class="h-screen w-full lg:hidden" src="/images/elekro-one/mobile/02Mobile_HeaderFundo.png" alt="Fundo do cabeçalho" />
     </figure>
     <figure class="w-full h-full fixed">
-      <img class="w-[60%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/ElekroDupla.png" alt="Duas fechaduras" />
-      <img class="max-sm:w-full h-[60%] lg:hidden absolute top-[35.5%] sm:top-[35%] left-1/2 -translate-x-1/2 object-contain" src="/images/elekro-one/ElekroDupla.png" alt="Fechadura" />
+      <img class="w-[90%] h-auto object-cover absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/Dupla_SemFundo3.png" alt="Duas fechaduras" />
+      <img class="max-sm:w-full h-[60%] lg:hidden absolute top-[37%] sm:top-[37%] left-1/2 -translate-x-1/2 object-contain" src="/images/elekro-one/Dupla_SemFundo3.png" alt="Fechadura" />
     </figure>
       <div class="py-5 md:px-10 px-2 fixed z-[1] h-full w-full " >
         <div class="mx-auto max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center xl:pb-60 pb-28" >

@@ -40,7 +40,7 @@
                         <MyLinkTwo :icon="false" class="
                             mt-7 hidden lg:inline-block my-link
                             " 
-                            href="/elekro-one-plus"
+                            href="/colecao-signature"
                         >Saiba mais</MyLinkTwo>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
@@ -64,7 +64,7 @@
                             
                         </ul>
                         <div class="text-center my-7 pr-6">
-                            <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo>
+                            <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/colecao-signature">Saiba mais</MyLinkTwo>
                         </div>
                     </div>
                 </div>

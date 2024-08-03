@@ -21,10 +21,10 @@
             </div>
             <div class="border-t-[1px] border-[#1d1d1d]">
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 max-w-[650px] w-full mx-auto gap-x-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 max-w-[650px] w-full mx-auto gap-x-2">
 
                     <template v-for="card,index in cards" :key="index">
-                        <div class="py-3 px-2 text-center sm:text-start">
+                        <div class="py-3 px-2 text-center">
                             <h4 class="text-sm font-bold mb-1">{{ card.title }}</h4>
                             <a class="text-sm font-light" :href="`mailto:${card.email}`" target="_blank">{{ card.email }}</a>
                         </div>
@@ -80,10 +80,10 @@ const cards:Card[] = [
         title:'Suporte',
         email:'suporte@elekro.com.br'
     },
-    {
-        title:'Marketing',
-        email:'marketing@elekro.com.br'
-    }
+    // {
+    //     title:'Marketing',
+    //     email:'marketing@elekro.com.br'
+    // }
 ]
 </script>
 

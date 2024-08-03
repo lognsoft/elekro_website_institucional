@@ -90,7 +90,7 @@ export const infos:ReadonlyArray<Info> = [
         text:'Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.',
     },
     {
-        img:'/images/autorizado/marketing-promocao.png',
+        img:'/images/autorizado/marketing.png',
         title:"Marketing e Promoção",
         text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
     },
@@ -120,7 +120,7 @@ export const infos:ReadonlyArray<Info> = [
 export const features:ReadonlyArray<Feature> = [
     {
         icon:'mdi:shield-lock',
-        text:'Fechadura inteligente de embutir, para portas com espessura entre 35mm e 60mm',
+        text:'Fechadura inteligente de embutir, para portas com espessura entre 35mm e 85mm',
         svg:false
     },
     {
@@ -140,7 +140,7 @@ export const features:ReadonlyArray<Feature> = [
     },
     {
         icon:'fa:mobile:screen',
-        text:'Campainha Digital Remota',
+        text:'Campainha',
         svg:false
     },
     {
@@ -150,7 +150,7 @@ export const features:ReadonlyArray<Feature> = [
     },
     {
         icon:'fa6-solid:cloud-showers-water',
-        text:'IP65 - Boa proteção contra água e poeira',
+        text:'IP56 - Boa proteção contra água e poeira',
         svg:false,
     },
     {

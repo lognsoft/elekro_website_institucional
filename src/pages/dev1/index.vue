@@ -14,12 +14,12 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <GeneralBanner src="/images/bm-slide/bg3.png" title="Proteção<br/>e Elegância" :hidden="true"/>
+        <GeneralBanner src="/images/bm-slide/fechadura03.png" title="Proteção<br/>e Elegância" :hidden="true"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <TextH2Title class="text-center lg:hidden">Elekro</TextH2Title>
+                        <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden font-[AustraliaSignature] !text-3xl">Signature</TextH4SubTitle>
                         <figure>
                             <img
@@ -42,7 +42,7 @@
                             " 
                             href="/elekro-one-plus"
                         >Saiba mais</MyLinkTwo> -->
-                        <MyButtonTwo href="/elekro-one-plus" class="mt-7 hidden lg:inline-block">Saiba mais</MyButtonTwo>
+                        <MyButtonTwo href="/colecao-signature" class="mt-7 hidden lg:inline-block">Saiba mais</MyButtonTwo>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
                 </div>
@@ -50,7 +50,7 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block">Elekro</TextH2Title>
+                        <TextH2Title class="text-center hidden lg:block">Coleção</TextH2Title>
                         <TextH4SubTitle class="text-center hidden lg:block font-[AustraliaSignature] !text-3xl">Signature</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
@@ -66,7 +66,7 @@
                         </ul>
                         <div class="text-center my-7 pr-6">
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
-                            <MyButtonTwo href="/elekro-one-plus" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
+                            <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
 
 
                         </div>

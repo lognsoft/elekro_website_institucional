@@ -333,7 +333,7 @@ import Scroll from "~/components/scroll.vue";
               </figure>
             </div>
             <div class="lg:absolute bottom-14 lg:bottom-24 right-0 pt-5">
-              <MyButtonTwo class="cursor-auto my-3 inline-block">Bateria inteligente</MyButtonTwo>
+              <MyButtonTwo class="!cursor-default my-3 inline-block">Bateria inteligente</MyButtonTwo>
               <h3 class="titleh3">ALERTAS DE BATERIA E VIOLAMENTO</h3>
               <h4 class="lg:max-w-96 titleh4 mt-5">
                 Adicionando o getway da Elekro, receba aviso de bateria fraca,

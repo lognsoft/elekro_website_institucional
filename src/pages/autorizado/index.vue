@@ -93,6 +93,6 @@ onUnmounted(() => formulario = null);
 }
 
 .nav-form{
-    @apply duration-200 text-black mt-5 inline-block bg-white
+    @apply duration-200 mt-5 inline-block
 }
 </style>
