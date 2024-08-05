@@ -63,7 +63,7 @@ const links:Link[] = [
         sub:'encontre-nos no',
         store:'linkedin',
         icon:'fontisto:linkedin',
-        href:'https://www.linkedin.com/posts/elekro-best-price_parceiro-elekro-activity-7165984652757868544-Pol6?utm_source=share&utm_medium=member_ios',
+        href:'https://www.linkedin.com/company/elekro-best-price/',
     }
 ]
 type Card = {

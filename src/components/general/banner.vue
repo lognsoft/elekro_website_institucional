@@ -5,7 +5,11 @@
             'object-left':position == 'left',
             'object-right':position == 'right',
             }" :src="props.src" alt=""/>
-        <div class="content-container" :class="{'hidden md:block':hidden}" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
+        <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
+            <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
+            !h-full" :src="image" alt=""> -->
+            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !static !h-full" :src="image" alt="">
+
             <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
                 <p class="banner-text">{{ props.text }}</p>
@@ -28,6 +32,14 @@ const props = defineProps({
     src:{
         type:String,
         default:''
+    },
+    image:{
+        type:String,
+        default:''
+    },
+    showImage: {
+    type: Boolean,
+    default: false
     },
     hidden:{
         type:Boolean,
@@ -75,7 +87,7 @@ function scrollOpacity(){
     @apply absolute w-full h-full bg-black/30 top-0 left-0;
 }
 .content-container{
-    @apply fixed z-10 container mx-auto px-5 text-white gap-[-30px] top-[50%] left-[50%]
+    @apply fixed z-10 container mx-auto md:px-10 pl-3 text-white gap-[-30px] top-[50%] left-[50%]
 }
 .banner-title{
     @apply w-full text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px];
