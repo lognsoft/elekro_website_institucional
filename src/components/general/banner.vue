@@ -84,7 +84,7 @@ function scrollOpacity(){
 }
 .apresentacao:after{content:''}
 .apresentacao:after{
-    @apply absolute w-full h-full bg-black/30 top-0 left-0;
+    @apply absolute w-full h-full bg-black/5 top-0 left-0;
 }
 .content-container{
     @apply fixed z-10 container mx-auto md:px-10 pl-3 text-white gap-[-30px] top-[50%] left-[50%]

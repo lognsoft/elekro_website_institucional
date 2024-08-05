@@ -120,7 +120,7 @@ export const infos:ReadonlyArray<Info> = [
 export const features:ReadonlyArray<Feature> = [
     {
         icon:'mdi:shield-lock',
-        text:'Fechadura inteligente de embutir, para portas com espessura entre 35mm e 85mm',
+        text:'Fechadura de embutir, para portas de madeira com espessura entre 35 e 85 mm.',
         svg:false
     },
     {
