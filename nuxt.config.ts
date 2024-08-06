@@ -41,11 +41,4 @@ export default defineNuxtConfig({
     preference: "light",
     classSuffix: ''
   },
-  app: {
-    head: {
-      link: [
-        // { rel: 'icon', type: 'image/x-icon', href: '' }
-      ]
-    }
-  }
 })
