@@ -4,6 +4,7 @@
             'object-center':position == undefined || position == 'center',
             'object-left':position == 'left',
             'object-right':position == 'right',
+            'max-md:object-[-500px]':position == 'home'
             }" :src="props.src" alt=""/>
         <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static

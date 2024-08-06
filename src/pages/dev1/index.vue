@@ -14,7 +14,7 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <GeneralBanner src="/images/bm-slide/fechadura.png" title="Proteção<br/>e Elegância" :hidden="true"/>
+        <GeneralBanner src="/images/bm-slide/fechadura.png" title="Proteção<br/>e Elegância" :hidden="true" position="home"/>
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
