@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "nuxt-icon",
     "nuxt-aos",
-    'nuxt-swiper'
+    'nuxt-swiper',
+    "@nuxt/image"
   ],
   swiper:{
     modules: [
