@@ -204,11 +204,6 @@ export const features:ReadonlyArray<Feature> = [
         svg:false
     },
     {
-        icon:'fa6-solid:door-open',
-        text:'Interação com casa anteligente',
-        svg:false
-    },
-    {
         icon:'game-icons:battery-100',
         text:'Alimentação via pilhas AA',
         svg:false
