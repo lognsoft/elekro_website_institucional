@@ -77,7 +77,7 @@
 <script setup lang="ts">
 import { features, slide } from "~/core/constants";
 
-navigateTo("/dev");
+navigateTo("/home");
 </script>
 
 <style scoped>
