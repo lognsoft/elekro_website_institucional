@@ -12,7 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <GeneralBanner src="/images/autorizado/AdobeStock.jpeg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
+        <GeneralBanner src="/images/autorizado/AdobeStock.jpg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
         <section>
             <div class="mx-auto w-full">
                 <!-- <div class="text-center mb-[40px] px-3 max-w-[1350px] mx-auto">
