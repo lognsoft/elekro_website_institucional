@@ -5,7 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Scroll from "~/components/scroll.vue";
+import Scroll from "~/components/scrollFechadura.vue";
 </script>
 
 <template>
@@ -16,144 +16,21 @@ import Scroll from "~/components/scroll.vue";
   <main class="overflow-hidden">    
     <Scroll/>
 
-    <section class="lg:pt-52 pt-28 overflow-hidden z-10 relative">
-      <div class="max-w-[1900px] mx-auto md:px-10 px-1 h-full">
-        <div
-          class="md:grid md:grid-cols-3 content-center max-w-[1300px] mx-auto"
-        >
-          <div
-            class="col-span-2 md:border-2 md:border-black md:h-[800px] relative"
-          >
-            <div
-              class="md:bg-black md:text-white h-[70%] py-12 px-12 max-sm:pt-0"
-            >
-              <a
-                class="lg:text-xl ml-0 border px-2 py-1 md:border-white border-black md:text-white rounded-lg cursor-default"
-                href="javascript:void(0)"
-                >Exclusiva no Brasil</a
-              >
-              <h2
-                class="text-3xl lg:text-5xl sm:pt-32 pt-10 h2-title md:w-[413px] font-semibold"
-              >
-                Inspirada na obra de Stefano Boeri, Bosco Verticale.
-              </h2>
-              <h3 class="h3-title sm:pt-10 pt-5">/ Milão . Itália</h3>
-            </div>
-            <div
-              class="md:flex gap-10 h-[30%] items-center justify-around absolute bottom-0 w-full hidden"
-            >
-              <div class="flex items-center flex-col">
-                <figure>
-                  <img
-                    class="lg:block hidden"
-                    src="/images/elekro-one/IconeIP56.png"
-                    alt="Icone IP56"
-                  />
-                  <img
-                    class="lg:hidden block"
-                    src="/images/elekro-one/mobile/04Mobile_IconeIP56.png"
-                    alt="Icone IP56"
-                  />
-                </figure>
-                <h3 class="titleh3 text-center">
-                  Com sistema de <br />
-                  proteção IP56
-                </h3>
-              </div>
-              <div class="flex items-center flex-col">
-                <figure>
-                  <img
-                    class="lg:block hidden"
-                    src="/images/elekro-one/IconeLigaAluminio.png"
-                    alt="Icone Liga Aluminio"
-                  />
-                  <img
-                    class="lg:hidden block"
-                    src="/images/elekro-one/mobile/05Mobile_IconeLigadeAluminio.png"
-                    alt="Icone Liga Aluminio"
-                  />
-                </figure>
-                <h3 class="titleh3 text-center">
-                  Construída com <br />
-                  liga de alumínio
-                </h3>
-              </div>
-              <div class="flex items-center flex-col">
-                <figure>
-                  <img
-                    class="lg:block hidden"
-                    src="/images/elekro-one/IconeSmartLifeBlack.png"
-                    alt="Icone Smart Life"
-                  />
-                  <img
-                    class="lg:hidden block"
-                    src="/images/elekro-one/mobile/06Mobile_IconeSmartLifeBlack.png"
-                    alt="Icone Smart Life"
-                  />
-                </figure>
-                <h3 class="titleh3 text-center">
-                  Com gerenciamento <br />
-                  Smart Life
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="w-auto max-md:mx-[-5px] -ml-[2px] h-full col-span-1">
-            <figure class="w-full h-full">
-              <img
-                class="object-cover w-full h-[800px] max-md:hidden"
-                src="/images/elekro-one/BoscoVerticale.png"
-                alt="Prédios com varandas de flores"
-              />
-              <img
-                class="w-full md:hidden"
-                src="/images/elekro-one/mobile/03Mobile_BoscoVerticale.png"
-                alt="Prédios com varandas de flores"
-              />
-            </figure>
-          </div>
-          <div
-            class="flex flex-col gap-10 mt-10 h-[30%] items-center justify-around bottom-0 w-full md:hidden"
-          >
-            <div class="flex items-center flex-col">
-              <figure>
-                <img
-                  src="/images/elekro-one/mobile/04Mobile_IconeIP56.png"
-                  alt="Icone IP56"
-                />
-              </figure>
-              <h3 class="titleh3 max-md:!text-[14px] text-center">
-                Com sistema de <br />
-                proteção IP56
-              </h3>
-            </div>
-            <div class="flex items-center flex-col">
-              <figure>
-                <img
-                  src="/images/elekro-one/mobile/05Mobile_IconeLigadeAluminio.png"
-                  alt="Icone Liga Aluminio"
-                />
-              </figure>
-              <h3 class="titleh3 max-md:!text-[14px] text-center">
-                Construída com <br />
-                liga de alumínio
-              </h3>
-            </div>
-            <div class="flex items-center flex-col">
-              <figure>
-                <img
-                  src="/images/elekro-one/mobile/06Mobile_IconeSmartLifeBlack.png"
-                  alt="Icone Smart Life"
-                />
-              </figure>
-              <h3 class="titleh3 max-md:!text-[14px] text-center">
-                Com gerenciamento <br />
-                Smart Life
-              </h3>
-            </div>
-          </div>
-        </div>
+    <section class="pt-28 max-lg:sm:pt-56 z-10 relative">
+      <img class="max-sm:w-full h-full sm:h-[40%] lg:hidden absolute sm:-top-[20%] -top-1/2 left-[51%] -translate-x-1/2 object-contain" src="/images/FechaduraDuplaHome.png" alt="Fechadura" />
+
+     <div class="max-lg:pt-28">
+      <div class="max-w-[1300px] mx-auto h-full text-center" >
+        <h2 class="titleh2">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
+        <p>Milão / Itália</p>
       </div>
+      <div class="pt-28">
+        <img class="w-full h-auto object-cover" src="/images/elekro-one/boscoverticale.svg" alt="">
+        <video class="relative w-full h-auto" preload="metadata" controlslist="nodownload noplaybackrate foobar" controls>
+          <source src="/video/fechadura-elekro.mp4" type="video/mp4">
+        </video>
+      </div>
+     </div>
     </section>
     <section class="lg:pt-52 pt-28 lg:pb-64">
       <div class="max-w-[1900px] mx-auto md:px-10 max-md:pl-[40px] max-md:pr-[20px] h-full ">
