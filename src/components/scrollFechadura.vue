@@ -1,20 +1,20 @@
 <template>
   <section ref="section" class="relative overflow-hidden h-screen  z-[-10]" id="fixedSection">
   <figure class="h-full w-full fixed">
-      <img class="h-full object-cover max-lg:hidden w-full " src="/images/elekro-one/cadeira.svg" alt="Fundo do cabeçalho" />
-      <img class="h-full w-full object-cover max-lg:object-[85%] lg:hidden" src="/images/elekro-one/cadeira.svg" alt="Fundo do cabeçalho" />
+      <img class="h-full object-cover max-lg:hidden w-full " src="/images/elekro-one/view-futuristic-lighting-lamp-design.jpg" alt="Fundo do cabeçalho" />
+      <img class="h-full w-full object-cover max-lg:object-[85%] lg:hidden" src="/images/elekro-one/view-futuristic-lighting-lamp-design.jpg" alt="Fundo do cabeçalho" />
     </figure>
     <figure class="w-full h-full fixed">
-      <img class="w-[35%] h-auto object-cover absolute top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/fechadura_front02 1 (1).png" alt="Duas fechaduras" />
+      <img class="w-[35%] h-auto object-cover absolute top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/fechaduraSolo.png" alt="Duas fechaduras" />
       
     </figure>
-      <div class="py-5 md:px-10 px-2 fixed z-[1] h-full w-full pt-10" >
+      <div class="py-5 md:px-10 px-2 fixed z-[1] h-full w-full pt-24" >
         <div class="lg:ml-[20%] max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center" >
           <div class="max-lg:text-center relative max-lg:mt-56 max-w-[1700px] mx-auto w-full flex flex-col items-center text-white" :style="`opacity: ${opacity}%`">
-            <h1 class="banner-title  max-lg:!text-center">Revolucione</h1>
+            <!-- <h1 class="banner-title  max-lg:!text-center">Revolucione</h1>
             
-              <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p>
-              
+              <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p> -->
+              <img src="/images/elekro-one/03Desktop_TextoHeader.png" alt="">
     
             
           </div>

@@ -21,7 +21,7 @@ import Scroll from "~/components/scrollFechadura.vue";
 
      <div class="max-lg:pt-28">
       <div class="max-w-[1300px] mx-auto h-full text-center" >
-        <h2 class="titleh2">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
+        <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
         <p>Milão / Itália</p>
       </div>
       <div class="pt-28">
@@ -32,143 +32,68 @@ import Scroll from "~/components/scrollFechadura.vue";
       </div>
      </div>
     </section>
-    <section class="lg:pt-52 pt-28 lg:pb-64">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-md:pl-[40px] max-md:pr-[20px] h-full ">
+    <section class="pt-28">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[40px] max-sm:mr-[40px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[1300px] mx-auto h-full">
-          <div class="lg:grid lg:grid-cols-2">
-            <div class="items-center max-lg:flex flex-col max-lg:text-center">
-              <h2 class="titleh2">
-                O Início de uma nova geração de fechaduras inteligentes
-              </h2>
-              <MyButtonTwo class="lg:!mb-40 flex items-center gap-2 inline-flex">
-                <span>Assista ao vídeo</span>
-                <span
-                  ><img
-                    class="w-[25px] h-full"
-                    src="/images/elekro-one/iconplay.png"
-                    alt=""
-                /></span>
-              </MyButtonTwo>
-              <div
-                class="justify-self-end relative pt-10 pb-10 max-lg:block hidden"
-              >
+          <div class="flex justify-between items-center">
+            <h2 class="titleh2 text-center">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
+            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 items-center w-full">
+              <div>
                 <figure>
-                  <img
-                    class="max-lg:block hidden"
-                    src="/images/elekro-one/FechaduraGeracao.png"
-                    alt="Fechadura"
-                  />
+                  <img class="w-full h-full xl:-ml-36 xl:-mt-16 object-cover" src="/images/elekro-one/fechaduraSolo.png" alt="">
                 </figure>
-                <div class="absolute top-7 left-1/2 -translate-x-1/2">
-                  <img
-                    src="/images/elekro-one/mobile/07Mobile_SeloFechadura.png"
-                    alt="Selo de autenticação"
-                  />
+              </div>
+              <div class="lg:justify-self-center w-full">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-teste',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">WI-FI INTEGRADO</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
                 </div>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3 ">CAMPAINHA DIGITAL</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">Lorem ipsum </h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis dolorum provident in ratione voluptatibus placeat neque.</h4>
+                </div>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">Lorem ipsum</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore rerum dolorem, hic adipisci maiores quaerat eius eveniet amet.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+               <div class="col-start-1 pagination-teste max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               </div>
+              <div>
+                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                  <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
+                </button>
               </div>
-
-              <div class="lg:border-t-2 pt-10 max-w-96">
-                <h3 class="lg:max-w-[19rem] titleh3">
-                  A COMBINAÇÃO DE SOFISTICAÇÃO COM FUNCIONALIDADES AVANÇADAS
-                </h3>
-                <h4 class="lg:max-w-[19rem] titleh4 mt-5">
-                  Getway integrado, acesso biométrico, gestão de acesso em tempo
-                  real, remoto e muito mais.
-                </h4>
+          
+        </div>
               </div>
             </div>
-            <div class="lg:block hidden justify-self-end relative h-full">
-              <figure class="h-full">
-                <img
-                  class="h-full"
-                  src="/images/elekro-one/FechaduraGeracao.png"
-                  alt="Fechadura"
-                />
-              </figure>
-              <div class="absolute -bottom-14 left-1/2 -translate-x-1/2">
-                <img
-                  src="/images/elekro-one/SeloFechadura.png"
-                  alt="Selo de autenticação"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <section class="pt-10 lg:border-t-2">
-      <div
-        class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[40px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[40px] h-full"
-      >
-        <div
-          class="max-w-[1300px] mx-auto h-full max-md:pt-10 max-lg:border-t-2 pt-10"
-        >
-          <h2 class="titleh2">
-            Explore a <br />
-            Elekro Signature
-          </h2>
-          <h3 class="lg:max-w-96 titleh3">
-            PROJETADA PARA AS CONDIÇÕES CLIMÁTICAS DO BRASIL
-          </h3>
-          <h4 class="titleh4 mt-5">
-            Construída em liga de alumínio e com proteção IP56 (resistente à
-            corrosão, à <br />
-            água* e poeira)
-            <span class="text-[12px]"
-              >*Proteção limitada. Protegida de jatos de água de alta pressão de
-              qualquer direção.</span
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="w-full pt-10">
-        <div class="grid md:grid-cols-2">
-          <div class="relative">
-            <figure>
-              <img
-                class="max-h-[600px] object-cover w-full"
-                src="/images/elekro-one/DesignFuncional.png"
-                alt="Fechadura em porta de Madeira de fundo"
-              />
-            </figure>
-            <div
-              class="absolute lg:bottom-[10%] bottom-10 left-1/2 -translate-x-1/2 max-lg:text-center max-md:w-full"
-            >
-              <h2 class="text-[#aaaaaa] mb-4">COM DESIGN FUNCIONAL</h2>
-              <h3
-                class="w-[340px] max-sm:w-[320px] text-white text-md max-sm:text-sm mx-auto"
-              >
-                Construída com um design funcional, facilmente adaptada para
-                abrir tanto para o lado esquerdo, quanto direito.
-              </h3>
-            </div>
-          </div>
-          <div class="relative">
-            <figure>
-              <img
-                class="max-h-[600px] object-cover w-full"
-                src="/images/elekro-one/Ecossistemas.png"
-                alt="Sala com luminarias de fundo"
-              />
-            </figure>
-            <div
-              class="absolute lg:bottom-[10%] bottom-10 left-1/2 -translate-x-1/2 max-lg:text-center max-md:w-full"
-            >
-              <h2 class="text-[#aaaaaa] mb-4">CRIE ECOSISTEMAS DO SEU JEITO</h2>
-              <h3
-                class="w-[340px] max-sm:w-[320px] text-white text-md max-sm:text-sm mx-auto"
-              >
-                Ao abrir sua porta, luzes podem se acender, temperatura de
-                ambiente serem ajustadas e muito mais, tudo através do
-                aplicativo.
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
     <section>
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[40px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[40px] h-full pt-10">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[40px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[40px] h-full pt-28">
         <div class="max-w-[1300px] mx-auto h-full">
           <div class="grid lg:grid-cols-2">
             <div class="">
@@ -918,7 +843,7 @@ import Scroll from "~/components/scrollFechadura.vue";
 }
 
 .titleh2 {
-  @apply md:text-5xl mb-10 font-semibold text-3xl;
+  @apply md:text-5xl font-semibold text-3xl;
 }
 .titleh3 {
   @apply font-semibold  text-xl max-md:!leading-tight;
@@ -940,9 +865,9 @@ import Scroll from "~/components/scrollFechadura.vue";
   @apply w-auto;
 }
 .swiper-pagination-bullet {
-  @apply bg-black border border-white opacity-60;
+  @apply bg-[#666664] w-7 h-1 rounded-3xl opacity-60;
 }
 .swiper-pagination-bullet-active {
-  @apply bg-[#7CB44C] border-none opacity-100;
+  @apply bg-white border-none opacity-100;
 }
 </style>
