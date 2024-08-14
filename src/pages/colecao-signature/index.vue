@@ -16,7 +16,7 @@ import Scroll from "~/components/scrollFechadura.vue";
   <main class="overflow-hidden">    
     <Scroll/>
 
-    <section class="pt-28 max-lg:sm:pt-56 z-10 relative">
+    <section class="lg:pt-28 pt-20 max-lg:sm:pt-56 z-10 relative">
       <img class="max-sm:w-full h-full sm:h-[40%] lg:hidden absolute sm:-top-[20%] -top-1/2 left-[51%] -translate-x-1/2 object-contain" src="/images/FechaduraDuplaHome.png" alt="Fechadura" />
 
      <div class="max-lg:pt-28">
@@ -24,7 +24,7 @@ import Scroll from "~/components/scrollFechadura.vue";
         <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
         <p>Milão / Itália</p>
       </div>
-      <div class="pt-28">
+      <div class="lg:pt-28 pt-14">
         <img class="w-full h-auto object-cover" src="/images/elekro-one/boscoverticale.svg" alt="">
         <video class="relative w-full h-auto" preload="metadata" controlslist="nodownload noplaybackrate foobar" controls>
           <source src="/video/fechadura-elekro.mp4" type="video/mp4">
@@ -32,52 +32,53 @@ import Scroll from "~/components/scrollFechadura.vue";
       </div>
      </div>
     </section>
-    <section class="pt-28">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[40px] max-sm:mr-[40px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
-        <div class="max-w-[1300px] mx-auto h-full">
+    <section class="lg:pt-28 pt-14 lg:pb-14">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 text-center">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
+            <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 items-center w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72  w-full">
               <div>
                 <figure>
-                  <img class="w-full h-full xl:-ml-36 xl:-mt-16 object-cover" src="/images/elekro-one/fechaduraSolo.png" alt="">
+                  <img class="w-full max-h-[750px] xl:-ml-36 xl:-mt-16 object-cover max-lg:hidden" src="/images/elekro-one/fechaduraSolo.png" alt="">
+                  <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/05Mobile_Detalhes01-Fechadura02.png" alt="">
                 </figure>
               </div>
-              <div class="lg:justify-self-center w-full">
+              <div class="lg:justify-self-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
                 :pagination="{
                 clickable: true,
-                el: '.pagination-teste',
+                el: '.pagination-segurança',
                 type: 'bullets',
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
                 <div class="lg:pb-28 pb-10 max-lg:text-center">
                   <h3 class="titleh3">WI-FI INTEGRADO</h3>
-                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
                 </div>
                 <div class="max-lg:text-center">
                   <h3 class="titleh3 ">CAMPAINHA DIGITAL</h3>
-                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real.</h4>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real.</h4>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div class="lg:pb-28 pb-10 max-lg:text-center">
-                  <h3 class="titleh3">Lorem ipsum </h3>
-                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis dolorum provident in ratione voluptatibus placeat neque.</h4>
+                  <h3 class="titleh3">5 FORMAS DE ABERTURA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves</h4>
                 </div>
                 <div class="max-lg:text-center">
-                  <h3 class="titleh3">Lorem ipsum</h3>
-                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore rerum dolorem, hic adipisci maiores quaerat eius eveniet amet.</h4>
+                  <h3 class="titleh3">DESIGN FUNCIONAL</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag.</h4>
                 </div>
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-28 pt-10 items-center">
-               <div class="col-start-1 pagination-teste max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
                 <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
@@ -87,21 +88,373 @@ import Scroll from "~/components/scrollFechadura.vue";
           
         </div>
               </div>
+              <div class="lg:justify-self-center w-full lg:hidden block">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-segurança-mobile',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">WI-FI INTEGRADO</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3 ">CAMPAINHA DIGITAL</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">5 FORMAS DE ABERTURA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">DESIGN FUNCIONAL</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              </div>
             </div>
         </div>
+        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+                  <div class="col-start-1 pagination-segurança-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  </div>
+                  <div>
+                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+                    </button>
+                  </div>
+              
+                </div>
       </div>
     </section>
-  
+    <section class="lg:pt-28 pt-14 lg:bg-[#F2F2F2] lg:pb-28">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+          <div class="flex justify-between items-center">
+            <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
+            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72  w-full">
+              <div class="lg:justify-self-center w-full lg:block hidden">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-combinaçao',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
+                </div>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3 ">CADASTRE ATÉ <br> 100 USUÁRIOS</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Ideal para escritórios, você pode dar acesso a funcionários e parceiros com as senhas biométricas ou numéricas. Além disso, é possível verificar em tempo real os históricos de acessos.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">MODO PRIVACIDADE</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Acesso privado, apenas para o administrador e acesso restrito para usuários.</h4>
+                </div>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">LIBERE O ACESSO COM <br> A SENHA DINÂMICA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Ideal para imobiliarias: você pode criar uma senha dinâmica de uso único de forma segura, rápida e prática.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+               <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               </div>
+              <div>
+                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                  <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
+                </button>
+              </div>
+          
+        </div>
+              </div>
+              <div>
+                <figure>
+                  <img class="w-full max-h-[750px] xl:-ml-20 -mt-6  object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
+                  <img class="w-[70%] max-h-[350px]  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt="">
+                </figure>
+              </div>
+              <div class="lg:justify-self-center w-full lg:hidden block">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-combinaçao-mobile',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                  <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3 ">CADASTRE ATÉ 100 USUÁRIOS</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Ideal para escritórios, você pode dar acesso a funcionários e parceiros com as senhas biométricas ou numéricas. Além disso, é possível verificar em tempo real os históricos de acessos.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">MODO PRIVACIDADE</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Acesso privado, apenas para o administrador e acesso restrito para usuários.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">LIBERE O ACESSO COM <br> A SENHA DINÂMICA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Ideal para imobiliarias: você pode criar uma senha dinâmica de uso único de forma segura, rápida e prática.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              </div>
+            </div>
+        </div>
+        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+                  <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  </div>
+                  <div>
+                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+                    </button>
+                  </div>
+              
+                </div>
+      </div>
+    </section>
+    <section class="lg:pt-28 pt-14 lg:pb-28">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+          <div class="flex justify-between items-center">
+            <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na Palma da Mão</h2>
+            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 w-full">
+              <div>
+                <figure>
+                  <img class="w-full max-h-[750px] xl:-ml-36 xl:-mt-6 object-contain max-lg:hidden" src="/images/elekro-one/09Desktop_Detalhes03-Fechadura.png" alt="">
+                  <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/07Mobile_Detalhes03-Fechadura.png" alt="">
+                </figure>
+              </div>
+              <div class="lg:justify-self-center w-full lg:block hidden">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-life',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Silencie os alertas de voz da fechadura para maior conforto.</h4>
+                </div>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3 ">MENU EFICIENTE NA FECHADURA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Cadastre e exclua senhas diretamente na fechadura, sem necessidade de conexão ou aplicativo.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">ALERTAS DE BATERIA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba avisos de bateria fraca via aplicativo e na fechadura.</h4>
+                </div>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">ALERTAS DE SEGURANÇA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba notificações de tentativas de abertura de fechadura quando ocorreram mais de 5 tentativas consecutivas com erro de senha.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+               <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               </div>
+              <div>
+                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                  <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
+                </button>
+              </div>
+          
+        </div>
+              </div>
+              <div class="lg:justify-self-center w-full lg:hidden block">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-life-mobile',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                  <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Silencie os alertas de voz da fechadura para maior conforto.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3 ">MENU EFICIENTE NA FECHADURA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Cadastre e exclua senhas diretamente na fechadura, sem necessidade de conexão ou aplicativo.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">ALERTAS DE BATERIA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba avisos de bateria fraca via aplicativo e na fechadura.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">ALERTAS DE SEGURANÇA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba notificações de tentativas de abertura de fechadura quando ocorreram mais de 5 tentativas consecutivas com erro de senha.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              </div>
+            </div>
+        </div>
+        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+                  <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  </div>
+                  <div>
+                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+                    </button>
+                  </div>
+              
+                </div>
+      </div>
+    </section>
+    <section class="lg:pt-28 pt-14 lg:bg-[#F2F2F2] lg:pb-28">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+          <div class="flex justify-between items-center">
+            <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
+            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 w-full">
+            
+              <div class="lg:justify-self-center w-full lg:block hidden">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-design',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">CONECTE-SE</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">MÉTODOS ALTERNATIVOS DE ABERTURA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">IEle mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+               <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               </div>
+              <div>
+                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                  <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
+                </button>
+              </div>
+          
+        </div>
+              </div>
+              <div>
+                <figure>
+                  <img class="w-full max-h-[750px] xl:-ml-20 -mt-4 object-contain max-lg:hidden" src="/images/elekro-one/10Desktop_Detalhes04-Fechadura.png" alt="">
+                  <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/08Mobile_Detalhes04-Fechadura.png" alt="">
+                </figure>
+              </div>
+              <div class="lg:justify-self-center w-full lg:hidden block">
+                <Swiper
+                :modules="[Navigation, Pagination]"
+                :loop="true"
+                :pagination="{
+                clickable: true,
+                el: '.pagination-design-mobile',
+                type: 'bullets',
+              }"
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+                <SwiperSlide>
+                  <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">CONECTE-SE</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <h3 class="titleh3">MÉTODOS ALTERNATIVOS DE ABERTURA</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior.</h4>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="max-lg:text-center">
+                  <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">IEle mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança.</h4>
+                </div>
+              </SwiperSlide>
+              </Swiper>
+              </div>
+            </div>
+        </div>
+        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+                  <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  </div>
+                  <div>
+                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+                    </button>
+                  </div>
+              
+                </div>
+      </div>
+    </section>
     <section>
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[40px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[40px] h-full pt-28">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[40px] h-full pt-28">
         <div class="max-w-[1300px] mx-auto h-full">
           <div class="grid lg:grid-cols-2">
             <div class="">
-              <h2 class="titleh2">
-                Diversas funções e <br />
-                criptografia <br />
-                segura
-              </h2>
+              <h2 class="titleh2">A combinação de sofisticação com funcionalidades avançadas</h2>
               <h3 class="titleh3">
                 Criptografia com <br />
                 Chip integrado de proteção
