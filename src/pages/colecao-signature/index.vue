@@ -32,9 +32,9 @@ import Scroll from "~/components/scrollFechadura.vue";
       </div>
      </div>
     </section>
-    <section class="lg:pt-28 pt-14 lg:pb-14">
+    <section class="lg:pt-28 pt-14 lg:pb-14 max-lg:bg-[#f8f8f8]">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
-        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
@@ -138,9 +138,9 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 lg:bg-[#F2F2F2] lg:pb-28">
+    <section class="lg:pt-28 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-28">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
-        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
@@ -244,9 +244,9 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 lg:pb-28">
+    <section class="lg:pt-28 pt-14 lg:pb-28 max-lg:bg-[#f8f8f8]">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
-        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na Palma da Mão</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
@@ -350,9 +350,9 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 lg:bg-[#F2F2F2] lg:pb-28">
+    <section class="lg:pt-28 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-28">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
-        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-[#F2F2F2] max-lg:p-5 max-lg:rounded-xl">
+        <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>

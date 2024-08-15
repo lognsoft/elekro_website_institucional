@@ -1,8 +1,8 @@
 <template>
   <section ref="section" class="relative overflow-hidden h-screen  z-[-10]" id="fixedSection">
   <figure class="h-full w-full fixed">
-      <img class="h-full object-cover max-lg:hidden w-full " src="/images/elekro-one/view-futuristic-lighting-lamp-design.jpg" alt="Fundo do cabeçalho" />
-      <img class="h-full w-full object-cover max-lg:object-[85%] lg:hidden" src="/images/elekro-one/view-futuristic-lighting-lamp-design.jpg" alt="Fundo do cabeçalho" />
+      <img class="h-full object-cover max-lg:hidden w-full " src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
+      <img class="h-full w-full object-cover  lg:hidden" src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
     </figure>
     <figure class="w-full h-full fixed">
       <img class="w-[35%] h-auto object-cover absolute top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/fechaduraSolo.png" alt="Duas fechaduras" />
