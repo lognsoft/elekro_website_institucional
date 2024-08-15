@@ -2,19 +2,19 @@
   <section ref="section" class="relative overflow-hidden h-screen  z-[-10]" id="fixedSection">
   <figure class="h-full w-full fixed">
       <img class="h-full object-cover max-lg:hidden w-full " src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
-      <img class="h-full w-full object-cover  lg:hidden" src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
+      <img class="h-full w-full object-cover lg:hidden" src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
     </figure>
     <figure class="w-full h-full fixed">
-      <img class="w-[35%] h-auto object-cover absolute top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/fechaduraSolo.png" alt="Duas fechaduras" />
+      <img class="w-[35%] h-auto object-cover absolute xl:ml-[10%] top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/fechaduraSolo.png" alt="Duas fechaduras" />
       
     </figure>
       <div class="py-5 md:px-10 px-2 fixed z-[1] h-full w-full pt-24" >
-        <div class="lg:ml-[20%] max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center" >
+        <div class="lg:ml-[49%] max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center" >
           <div class="max-lg:text-center relative max-lg:mt-56 max-w-[1700px] mx-auto w-full flex flex-col items-center text-white" :style="`opacity: ${opacity}%`">
             <!-- <h1 class="banner-title  max-lg:!text-center">Revolucione</h1>
             
               <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p> -->
-              <img src="/images/elekro-one/03Desktop_TextoHeader.png" alt="">
+              <img class="xl:w-[60%]" src="/images/elekro-one/titulohome.png" alt="">
     
             
           </div>
