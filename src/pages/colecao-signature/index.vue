@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Scroll from "~/components/scrollFechadura.vue";
+import Video from "~/components/videoFechadura.vue";
 </script>
 
 <template>
@@ -16,45 +17,35 @@ import Scroll from "~/components/scrollFechadura.vue";
   <main class="overflow-hidden">    
     <Scroll/>
 
-    <section class="lg:pt-28 pt-20 max-lg:sm:pt-56 z-10 lg:h-screen relative lg:overflow-hidden">
+    <section class="lg:pt-24 pt-20 max-lg:sm:pt-56 z-10 lg:h-screen relative lg:overflow-hidden">
       <img 
         class="max-sm:w-full h-full sm:h-[40%] lg:hidden absolute sm:-top-[20%] -top-1/2 left-[51%] -translate-x-1/2 object-contain"
         src="/images/FechaduraDuplaHome.png" 
         alt="Fechadura" 
       />
 
-      <div class="flex flex-col max-lg:pt-28 lg:overflow-hidden">
+      <div class="flex flex-col max-lg:pt-24 lg:overflow-hidden">
         <div class="max-w-[1300px] mx-auto flex-grow text-center">
           <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
           <p>Milão / Itália</p>
         </div>
-        <div class="lg:pt-28 pt-14">
+        <div class="lg:pt-24 pt-14">
           <img class="w-full h-auto object-cover" src="/images/elekro-one/boscoverticale.svg" alt="">
         </div>
       </div>
     </section>
-    <section class="lg:h-screen">
-      <video 
-        class="top-0 left-0 w-full lg:h-screen h-auto object-cover"
-        preload="metadata" 
-        controlslist="nodownload noplaybackrate" 
-        controls
-        poster="/images/elekro-one/05Desktop_VideoFechadura.png"
-      >
-        <source src="/video/fechadura-elekro.mp4" type="video/mp4">
-      </video>
-    </section>
-    <section class="lg:pt-28 pt-14 lg:pb-14 max-lg:bg-[#f8f8f8]">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
+    <Video/>
+    <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8]">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 w-full h-full">
-              <div>
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 max-w-full">
+              <div >
                 <figure>
-                  <img class="w-full xl:-ml-28 xl:-mt-16 object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSolo.png" alt="">
+                  <img class="w-[60%] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
                   <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/05Mobile_Detalhes01-Fechadura02.png" alt="">
                 </figure>
               </div>
@@ -69,7 +60,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">WI-FI INTEGRADO</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
                 </div>
@@ -79,7 +70,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">5 FORMAS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves</h4>
                 </div>
@@ -89,7 +80,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
                <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
@@ -111,7 +102,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">WI-FI INTEGRADO</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
                 </div>
@@ -123,7 +114,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">5 FORMAS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves</h4>
                 </div>
@@ -138,7 +129,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
                   <div class="col-start-1 pagination-segurança-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
@@ -150,14 +141,14 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-28 ">
+    <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 ">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72  w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72  w-full">
               <div class="lg:justify-self-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
@@ -169,7 +160,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
                 </div>
@@ -179,7 +170,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MODO PRIVACIDADE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Acesso privado, apenas para o administrador e acesso restrito para usuários.</h4>
                 </div>
@@ -189,7 +180,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
                <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
@@ -202,7 +193,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               </div>
               <div>
                 <figure>
-                  <img class="w-full xl:-ml-20 -mt-6  object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
+                  <img class="w-[70%] xl:-ml-20 -mt-6  object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px]  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt="">
                 </figure>
               </div>
@@ -217,7 +208,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                  <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
                 </div>
@@ -229,7 +220,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MODO PRIVACIDADE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Acesso privado, apenas para o administrador e acesso restrito para usuários.</h4>
                 </div>
@@ -244,7 +235,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
                   <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
@@ -256,14 +247,14 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 lg:pb-28 max-lg:bg-[#f8f8f8] ">
+    <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] ">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na Palma da Mão</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 w-full">
               <div>
                 <figure>
                   <img class="w-full h-[500px] xl:-ml-36 xl:-mt-6 object-contain max-lg:hidden" src="/images/elekro-one/09Desktop_Detalhes03-Fechadura.png" alt="">
@@ -281,7 +272,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Silencie os alertas de voz da fechadura para maior conforto.</h4>
                 </div>
@@ -291,7 +282,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">ALERTAS DE BATERIA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba avisos de bateria fraca via aplicativo e na fechadura.</h4>
                 </div>
@@ -301,7 +292,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
                <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
@@ -323,7 +314,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                  <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Silencie os alertas de voz da fechadura para maior conforto.</h4>
                 </div>
@@ -335,7 +326,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">ALERTAS DE BATERIA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba avisos de bateria fraca via aplicativo e na fechadura.</h4>
                 </div>
@@ -350,7 +341,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
                   <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
@@ -362,14 +353,14 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-28 pb-14">
+    <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 pb-14">
       <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-28 lg:gap-72 w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 w-full">
             
               <div class="lg:justify-self-center w-full lg:block hidden">
                 <Swiper
@@ -382,13 +373,13 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONECTE-SE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados.</h4>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MÉTODOS ALTERNATIVOS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior.</h4>
                 </div>
@@ -400,7 +391,7 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-28 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
                <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
@@ -428,13 +419,13 @@ import Scroll from "~/components/scrollFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                  <div class="lg:pb-28 pb-10 max-lg:text-center">
+                  <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONECTE-SE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados.</h4>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-28 pb-10 max-lg:text-center">
+                <div class="lg:pb-24 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MÉTODOS ALTERNATIVOS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior.</h4>
                 </div>
@@ -449,7 +440,7 @@ import Scroll from "~/components/scrollFechadura.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-28 pt-5 items-center lg:hidden">
+        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
                   <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
@@ -461,14 +452,14 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-28 pt-14 lg:pb-28">
+    <section class="lg:pt-24 pt-14 lg:pb-24">
         <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
           <div
             class="max-w-[1300px] mx-auto h-full text-center"
           >
           <h2 class="titleh2 text-center">Projetada para as condições <br> climáticas do Brasil</h2>
             <div
-              class="grid md:grid-cols-4 grid-cols-2 border-b border-[#e4e3e3] pb-10 pt-28"
+              class="grid md:grid-cols-4 grid-cols-2 border-b border-[#e4e3e3] pb-10 pt-24"
             >
               <div
                 class="flex flex-col justify-between max-md:border-b max-md:border-[#e4e3e3] max-md:pb-10" 
@@ -592,6 +583,9 @@ import Scroll from "~/components/scrollFechadura.vue";
                 </h4>
                 <p class="text-sm">IP56, resistente <br> à corrosão, água <br> e poeira</p>
               </div>
+            </div>
+            <div class="lg:pt-24 pt-14 max-lg:pb-14">
+              <MyButtonTwo>Comprar</MyButtonTwo>
             </div>
           </div>
         </div>
