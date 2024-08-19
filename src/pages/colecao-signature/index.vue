@@ -437,7 +437,7 @@ import Video from "~/components/videoFechadura.vue";
               <SwiperSlide>
                 <div class="max-lg:text-center">
                   <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
-                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">IEle mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança.</h4>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">O aplicativo mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança.</h4>
                 </div>
               </SwiperSlide>
               </Swiper>
