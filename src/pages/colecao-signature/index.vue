@@ -42,18 +42,20 @@ import Video from "~/components/videoFechadura.vue";
             <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:gap-72 lg:pt-24 max-w-full ">
-              <div>
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 max-w-full ">
+              <div >
                 <figure class="relative 
-                after:lg:absolute after:top-[415px] after:left-[190px] after:w-[50px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]
+                after:lg:absolute after:top-[423px] after:left-[180px] after:w-[100px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/selotitanio.png')]
                 
-                before:lg:absolute before:top-[424px] before:left-[270px] before:w-[100px] before:h-full before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/cinza-titanio.png')]
+                
+                before:lg:absolute before:top-[415px] before:left-[310px] before:w-[50px] before:h-full before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]
+                
                 ">
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
                   <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/05Mobile_Detalhes01-Fechadura02.png" alt="">
                 </figure>
               </div>
-              <div class="lg:self-center w-full lg:block hidden">
+              <div class="lg:self-center lg:justify-self-end lg:w-[60%] lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -83,17 +85,17 @@ import Video from "~/components/videoFechadura.vue";
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag.</h4>
                 </div>
               </SwiperSlide>
-              </Swiper>
               <div class="flex gap-6 lg:pt-24 pt-10 items-center">
                <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
-              <div>
-                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
-                  <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
-                </button>
-              </div>
+                <div>
+                  <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                    <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
+                  </button>
+                </div>
           
-        </div>
+                </div>
+              </Swiper>
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
                 <Swiper
@@ -152,8 +154,8 @@ import Video from "~/components/videoFechadura.vue";
             <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72  w-full">
-              <div class="lg:self-center-center w-full lg:block hidden">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
+              <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -195,7 +197,7 @@ import Video from "~/components/videoFechadura.vue";
           
         </div>
               </div>
-              <div>
+              <div class="lg:justify-self-end">
                 <figure>
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px]  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt="">
@@ -258,14 +260,14 @@ import Video from "~/components/videoFechadura.vue";
             <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na palma da mão</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
               <div>
                 <figure>
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/09Desktop_Detalhes03-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/07Mobile_Detalhes03-Fechadura.png" alt="">
                 </figure>
               </div>
-              <div class="lg:self-center w-full lg:block hidden">
+              <div class="lg:self-center xl:w-[50%] lg:w-[80%] lg:justify-self-end lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -364,7 +366,7 @@ import Video from "~/components/videoFechadura.vue";
             <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
             
               <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
@@ -406,7 +408,7 @@ import Video from "~/components/videoFechadura.vue";
           
         </div>
               </div>
-              <div>
+              <div class="justify-self-end">
                 <figure>
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/10Desktop_Detalhes04-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/08Mobile_Detalhes04-Fechadura.png" alt="">
