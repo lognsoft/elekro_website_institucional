@@ -36,20 +36,24 @@ import Video from "~/components/videoFechadura.vue";
     </section>
     <Video/>
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8]">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
-          <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 max-w-full">
-              <div >
-                <figure>
-                  <img class="w-[60%] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
+          <div class="lg:grid lg:grid-cols-2 lg:gap-72 lg:pt-24 max-w-full ">
+              <div>
+                <figure class="relative 
+                after:lg:absolute after:top-[415px] after:left-[190px] after:w-[50px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]
+                
+                before:lg:absolute before:top-[424px] before:left-[270px] before:w-[100px] before:h-full before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/cinza-titanio.png')]
+                ">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
                   <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/05Mobile_Detalhes01-Fechadura02.png" alt="">
                 </figure>
               </div>
-              <div class="lg:justify-self-center w-full lg:block hidden">
+              <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -60,7 +64,7 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">WI-FI INTEGRADO</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
                 </div>
@@ -70,7 +74,7 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">5 FORMAS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves</h4>
                 </div>
@@ -102,7 +106,7 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">WI-FI INTEGRADO</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto.</h4>
                 </div>
@@ -114,7 +118,7 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">5 FORMAS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-2">Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves</h4>
                 </div>
@@ -142,14 +146,14 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 ">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72  w-full">
-              <div class="lg:justify-self-center w-full lg:block hidden">
+              <div class="lg:self-center-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -160,7 +164,7 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
                 </div>
@@ -170,7 +174,7 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MODO PRIVACIDADE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Acesso privado, apenas para o administrador e acesso restrito para usuários.</h4>
                 </div>
@@ -193,7 +197,7 @@ import Video from "~/components/videoFechadura.vue";
               </div>
               <div>
                 <figure>
-                  <img class="w-[70%] xl:-ml-20 -mt-6  object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px]  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt="">
                 </figure>
               </div>
@@ -208,7 +212,7 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                  <div class="lg:pb-24 pb-10 max-lg:text-center">
+                  <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
                 </div>
@@ -220,7 +224,7 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MODO PRIVACIDADE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Acesso privado, apenas para o administrador e acesso restrito para usuários.</h4>
                 </div>
@@ -248,20 +252,20 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] ">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na Palma da Mão</h2>
+            <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na palma da mão</h2>
             <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 w-full">
               <div>
                 <figure>
-                  <img class="w-full h-[500px] xl:-ml-36 xl:-mt-6 object-contain max-lg:hidden" src="/images/elekro-one/09Desktop_Detalhes03-Fechadura.png" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/09Desktop_Detalhes03-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/07Mobile_Detalhes03-Fechadura.png" alt="">
                 </figure>
               </div>
-              <div class="lg:justify-self-center w-full lg:block hidden">
+              <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -272,7 +276,7 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Silencie os alertas de voz da fechadura para maior conforto.</h4>
                 </div>
@@ -282,7 +286,7 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">ALERTAS DE BATERIA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba avisos de bateria fraca via aplicativo e na fechadura.</h4>
                 </div>
@@ -314,7 +318,7 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                  <div class="lg:pb-24 pb-10 max-lg:text-center">
+                  <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Silencie os alertas de voz da fechadura para maior conforto.</h4>
                 </div>
@@ -326,7 +330,7 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">ALERTAS DE BATERIA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Receba avisos de bateria fraca via aplicativo e na fechadura.</h4>
                 </div>
@@ -354,7 +358,7 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 pb-14">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
@@ -362,7 +366,7 @@ import Video from "~/components/videoFechadura.vue";
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 lg:gap-72 w-full">
             
-              <div class="lg:justify-self-center w-full lg:block hidden">
+              <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -373,13 +377,13 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONECTE-SE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados.</h4>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MÉTODOS ALTERNATIVOS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior.</h4>
                 </div>
@@ -387,7 +391,7 @@ import Video from "~/components/videoFechadura.vue";
               <SwiperSlide>
                 <div class="max-lg:text-center">
                   <h3 class="titleh3">HISTÓRICO DE ACESSOS</h3>
-                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">IEle mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança.</h4>
+                  <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">O aplicativo mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança.</h4>
                 </div>
               </SwiperSlide>
               </Swiper>
@@ -404,7 +408,7 @@ import Video from "~/components/videoFechadura.vue";
               </div>
               <div>
                 <figure>
-                  <img class="w-full xl:-ml-20 -mt-4 object-contain max-lg:hidden" src="/images/elekro-one/10Desktop_Detalhes04-Fechadura.png" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/10Desktop_Detalhes04-Fechadura.png" alt="">
                   <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/08Mobile_Detalhes04-Fechadura.png" alt="">
                 </figure>
               </div>
@@ -419,13 +423,13 @@ import Video from "~/components/videoFechadura.vue";
               }"
               :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
                 <SwiperSlide>
-                  <div class="lg:pb-24 pb-10 max-lg:text-center">
+                  <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONECTE-SE</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados.</h4>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="lg:pb-24 pb-10 max-lg:text-center">
+                <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">MÉTODOS ALTERNATIVOS DE ABERTURA</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior.</h4>
                 </div>
