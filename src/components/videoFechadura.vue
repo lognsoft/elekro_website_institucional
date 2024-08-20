@@ -13,7 +13,7 @@
     </video>
     
     <!-- Botão de Play Personalizado -->
-    <button v-if="isPaused" @click="togglePlay" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <button v-if="isPaused" @click="togglePlay" class="absolute inset-0 flex items-center justify-center">
       <img src="/video/videoplay.png" alt="Play">
     </button>
   </div>

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Scroll from "~/components/scrollFechadura.vue";
 import Video from "~/components/videoFechadura.vue";
+
 </script>
 
 <template>
@@ -36,7 +37,7 @@ import Video from "~/components/videoFechadura.vue";
     </section>
     <Video/>
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8]">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
+      <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
@@ -148,7 +149,7 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 ">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+      <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
@@ -254,7 +255,7 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] ">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
+      <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na palma da mão</h2>
@@ -267,7 +268,7 @@ import Video from "~/components/videoFechadura.vue";
                   <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/07Mobile_Detalhes03-Fechadura.png" alt="">
                 </figure>
               </div>
-              <div class="lg:self-center xl:w-[50%] lg:w-[80%] lg:justify-self-end lg:block hidden">
+              <div class="lg:self-center lg:justify-self-end lg:w-[80%] xl:w-[60%]  lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -360,7 +361,7 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 pb-14">
-      <div class="max-w-[1900px] mx-auto md:px-10 max-xl:lg:px-20 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+      <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[1300px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
@@ -459,7 +460,7 @@ import Video from "~/components/videoFechadura.vue";
       </div>
     </section>
     <section class="lg:pt-24 pt-14 lg:pb-24">
-        <div class="max-w-[1900px] mx-auto md:px-10 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
+        <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
           <div
             class="max-w-[1300px] mx-auto h-full text-center"
           >
