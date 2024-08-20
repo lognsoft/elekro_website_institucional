@@ -46,7 +46,7 @@ import Video from "~/components/videoFechadura.vue";
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 max-w-full ">
               <div >
                 <figure class="relative 
-                after:lg:absolute after:top-[423px] after:left-[180px] after:w-[100px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/selotitanio.png')]
+                after:lg:absolute after:top-[430px] after:left-[180px] after:w-[100px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/titanioselo.png')]
                 
                 
                 before:lg:absolute before:top-[415px] before:left-[310px] before:w-[50px] before:h-full before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]
