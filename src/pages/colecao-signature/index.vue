@@ -32,13 +32,13 @@ import Popup from "~/components/popup.vue";
           <p>Milão / Itália</p>
         </div>
         <div class="lg:pt-24 pt-14">
-          <NuxtImg 
-          class="w-full h-auto object-cover" 
-          src="/images/elekro-one/boscoverticale.png" 
-          alt="predio bosco verticale"
-          quality="75"
-          loading="eager"
-          />
+          <figure>
+            <img 
+            class="w-full h-auto object-cover" 
+            src="/images/elekro-one/boscoverticale.png" 
+            alt="predio bosco verticale"
+            />
+          </figure>
         </div>
       </div>
     </section>
