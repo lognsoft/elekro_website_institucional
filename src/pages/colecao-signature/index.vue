@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Scroll from "~/components/scrollFechadura.vue";
 import Video from "~/components/videoFechadura.vue";
+import Popup from "~/components/popup.vue";
 
 </script>
 
@@ -31,7 +32,13 @@ import Video from "~/components/videoFechadura.vue";
           <p>Milão / Itália</p>
         </div>
         <div class="lg:pt-24 pt-14">
-          <img class="w-full h-auto object-cover" src="/images/elekro-one/boscoverticale.svg" alt="">
+          <NuxtImg 
+          class="w-full h-auto object-cover" 
+          src="/images/elekro-one/boscoverticale.png" 
+          alt="predio bosco verticale"
+          quality="75"
+          loading="eager"
+          />
         </div>
       </div>
     </section>
@@ -41,7 +48,17 @@ import Video from "~/components/videoFechadura.vue";
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
-            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+            <Popup 
+            titulo-p="Criptografia avançada e segurança" 
+            titulo="WI-FI INTEGRADO"
+            texto="Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto."
+            titulo2="CAMPAINHA DIGITAL"
+            texto2="Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real."
+            titulo3="5 FORMAS DE ABERTURA"
+            texto3="Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves"
+            titulo4="DESIGN FUNCIONAL"
+            texto4="Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag."
+            />
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 max-w-full ">
               <div >
@@ -86,17 +103,17 @@ import Video from "~/components/videoFechadura.vue";
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag.</h4>
                 </div>
               </SwiperSlide>
-              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
-               <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
-               </div>
-                <div>
-                  <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
-                    <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
-                  </button>
-                </div>
-          
-                </div>
-              </Swiper>
+            </Swiper>
+            <div class="flex gap-6 lg:pt-24 pt-10 items-center">
+             <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+             </div>
+              <div>
+                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                  <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
+                </button>
+              </div>
+        
+              </div>
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
                 <Swiper
@@ -148,12 +165,22 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 ">
+    <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 ">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
-            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+            <Popup
+            titulo-p="A combinação de sofisticação com funcionalidades avançadas" 
+            titulo="CRIE SENHA COM HORÁRIO DE ENTRADA E SAÍDA"
+            texto="Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada."
+            titulo2="CADASTRE ATÉ 100 USUÁRIOS"
+            texto2="Ideal para escritórios, você pode dar acesso a funcionários e parceiros com as senhas biométricas ou numéricas. Além disso, é possível verificar em tempo real os históricos de acessos."
+            titulo3="MODO PRIVACIDADE"
+            texto3="Acesso privado, apenas para o administrador e acesso restrito para usuários."
+            titulo4="LIBERE O ACESSO COM A SENHA DINÂMICA"
+            texto4="Ideal para imobiliarias: você pode criar uma senha dinâmica de uso único de forma segura, rápida e prática."
+            />
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
               <div class="lg:self-center w-full lg:block hidden">
@@ -165,7 +192,7 @@ import Video from "~/components/videoFechadura.vue";
                 el: '.pagination-combinaçao',
                 type: 'bullets',
               }"
-              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button-combinaçao' }">
                 <SwiperSlide>
                 <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
@@ -187,11 +214,11 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-20 pt-10 items-center">
                <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
-                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-button-combinaçao bg-[#666664] py-2 px-3 rounded-2xl">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -213,7 +240,7 @@ import Video from "~/components/videoFechadura.vue";
                 el: '.pagination-combinaçao-mobile',
                 type: 'bullets',
               }"
-              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button-combinaçao' }">
                 <SwiperSlide>
                   <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CRIE SENHA COM HORÁRIO <br> DE ENTRADA E SAÍDA</h3>
@@ -246,7 +273,7 @@ import Video from "~/components/videoFechadura.vue";
                   <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-button-combinaçao bg-[#666664] py-2 px-3 rounded-2xl">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
@@ -259,7 +286,17 @@ import Video from "~/components/videoFechadura.vue";
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na palma da mão</h2>
-            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+            <Popup
+            titulo-p="Gerenciamento completo Smart Life na palma da mão" 
+            titulo="CONFIGURAÇÃO DE VOLUME"
+            texto="Silencie os alertas de voz da fechadura para maior conforto."
+            titulo2="MENU EFICIENTE NA FECHADURA"
+            texto2="Cadastre e exclua senhas diretamente na fechadura, sem necessidade de conexão ou aplicativo."
+            titulo3="ALERTAS DE BATERIA"
+            texto3="Receba avisos de bateria fraca via aplicativo e na fechadura."
+            titulo4="ALERTAS DE SEGURANÇA"
+            texto4="Receba notificações de tentativas de abertura de fechadura quando ocorreram mais de 5 tentativas consecutivas com erro de senha."
+            />
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
               <div>
@@ -277,7 +314,7 @@ import Video from "~/components/videoFechadura.vue";
                 el: '.pagination-life',
                 type: 'bullets',
               }"
-              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-life' }">
                 <SwiperSlide>
                 <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
@@ -299,11 +336,11 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-24 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-14 pt-10 items-center">
                <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
-                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-life bg-[#666664] py-2 px-3 rounded-2xl">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -319,7 +356,7 @@ import Video from "~/components/videoFechadura.vue";
                 el: '.pagination-life-mobile',
                 type: 'bullets',
               }"
-              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-life-mobile' }">
                 <SwiperSlide>
                   <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONFIGURAÇÃO DE VOLUME</h3>
@@ -352,7 +389,7 @@ import Video from "~/components/videoFechadura.vue";
                   <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-life-mobile bg-[#666664] py-2 px-3 rounded-2xl">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
@@ -360,12 +397,20 @@ import Video from "~/components/videoFechadura.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-24 pt-14 max-lg:bg-[#f8f8f8] lg:bg-[#F2F2F2] lg:pb-24 pb-14">
+    <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 pb-14">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
-            <MyButtonTwo class="lg:block hidden">+</MyButtonTwo>
+            <Popup
+            titulo-p="Design e tecnologia, aliados a segurança" 
+            titulo="CONECTE-SE"
+            texto="Utilize todo o potencial do aplicativo Smart Life para conectar a outros dispositivos inteligentes, compatíveis com a Smart Life, como sistemas de segurança, câmeras e iluminação, permitindo automação e cenários personalizados."
+            titulo2="MÉTODOS ALTERNATIVOS DE ABERTURA"
+            texto2="Em casos de falta de bateria, abra a porta utilizando a chave mestra ou energize-a via entrada USB C localizada na parte inferior."
+            titulo3="HISTÓRICO DE ACESSOS"
+            texto3="O aplicativo mantém um registro detalhado de todas as atividades de destravamento de fechadura, permitindo que os usuários visualizem o histórico de acesso para monitoramento e segurança."
+            />
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
             
@@ -378,7 +423,7 @@ import Video from "~/components/videoFechadura.vue";
                 el: '.pagination-design',
                 type: 'bullets',
               }"
-              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-design' }">
                 <SwiperSlide>
                 <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONECTE-SE</h3>
@@ -402,7 +447,7 @@ import Video from "~/components/videoFechadura.vue";
                <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
-                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-design bg-[#666664] py-2 px-3 rounded-2xl">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -424,7 +469,7 @@ import Video from "~/components/videoFechadura.vue";
                 el: '.pagination-design-mobile',
                 type: 'bullets',
               }"
-              :navigation="{ prevEl: '.prev-button', nextEl: '.next-button' }">
+              :navigation="{ prevEl: '.prev-button', nextEl: '.next-design-mobile' }">
                 <SwiperSlide>
                   <div class="lg:pb-20 pb-10 max-lg:text-center">
                   <h3 class="titleh3">CONECTE-SE</h3>
@@ -451,7 +496,7 @@ import Video from "~/components/videoFechadura.vue";
                   <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-design-mobile bg-[#666664] py-2 px-3 rounded-2xl">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
