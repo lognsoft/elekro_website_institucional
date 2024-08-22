@@ -35,7 +35,7 @@ import Popup from "~/components/popup.vue";
           <figure>
             <img 
             class="w-full h-auto object-cover" 
-            src="/images/elekro-one/boscoverticale.png" 
+            src="/images/elekro-one/Bosco-verticale.png" 
             alt="predio bosco verticale"
             />
           </figure>
