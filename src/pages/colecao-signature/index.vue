@@ -63,14 +63,14 @@ import Popup from "~/components/popup.vue";
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 max-w-full ">
               <div >
                 <figure class="relative 
-                after:lg:absolute after:top-[430px] after:left-[180px] after:w-[100px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/titanioselo.png')]
+                after:lg:absolute after:top-[430px] after:left-[180px] after:w-[100px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/cinzaTitanio.png')]
                 
                 
                 before:lg:absolute before:top-[415px] before:left-[310px] before:w-[50px] before:h-full before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]
                 
                 ">
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
-                  <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/05Mobile_Detalhes01-Fechadura02.png" alt="">
+                  <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/mobile-detalhes-fechadura.png" alt="">
                 </figure>
               </div>
               <div class="lg:self-center lg:justify-self-end lg:w-[60%] lg:block hidden">
@@ -637,7 +637,7 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
             <div class="lg:pt-24 pt-14 max-lg:pb-14">
-              <MyButtonTwo>Comprar</MyButtonTwo>
+              <MyButtonTwo href="/autorizado">Seja um autorizado Elekro</MyButtonTwo>
             </div>
           </div>
         </div>
