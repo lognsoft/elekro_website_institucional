@@ -20,6 +20,6 @@ const props:Readonly<MyButtonTwo> = defineProps({
 
 <style scoped>
 .link{
-  @apply cursor-pointer  px-7 rounded-full py-2.5 text-white bg-[#0171E3] font-light text-base md:text-lg hover:brightness-105 text-center
+  @apply cursor-pointer  px-7 rounded-full py-2.5 text-white bg-[#0171E3] font-light text-base hover:brightness-105 text-center
 }
 </style>

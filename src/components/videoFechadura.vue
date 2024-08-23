@@ -3,7 +3,7 @@
     <video 
       ref="videoPlayer"
       class="w-full lg:h-screen h-auto object-cover"
-      preload="metadata"
+      preload="auto"
       poster="/images/elekro-one/05Desktop_VideoFechadura.png"
       @play="hidePlayButton"
       @pause="showPlayButton"
