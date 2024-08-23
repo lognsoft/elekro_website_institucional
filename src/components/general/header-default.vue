@@ -97,7 +97,7 @@ watch(() => route.path, (newValue) => {
     }
 
     .nav-list{
-        @apply text-[30px] font-normal text-white
+        @apply text-2xl xl:text-3xl font-normal text-white
     }
     .nav-list:hover a{
         @apply opacity-70

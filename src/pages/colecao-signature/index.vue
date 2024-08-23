@@ -19,10 +19,10 @@ import Popup from "~/components/popup.vue";
   <main class="overflow-hidden">    
     <Scroll/>
 
-    <section class="lg:pt-24 pt-20 max-lg:sm:pt-56 z-10 lg:h-screen relative lg:overflow-hidden">
+    <section class="lg:pt-24 pt-28 max-lg:sm:pt-56 z-10 lg:h-screen relative lg:overflow-hidden">
       <img 
-        class="max-sm:w-full h-full sm:h-[40%] lg:hidden absolute sm:-top-[20%] -top-1/2 left-[51%] -translate-x-1/2 object-contain"
-        src="/images/FechaduraDuplaHome.png" 
+        class="max-sm:w-[90%] sm:h-[40%] lg:hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
+        src="/images/fechadura-dupla.png" 
         alt="Fechadura" 
       />
 
@@ -603,7 +603,7 @@ import Popup from "~/components/popup.vue";
                 <h4 class="titleh4 ">
                   Temperatura de <br> trabalho
                 </h4>
-                <p class="text-sm">25℃ a 70℃</p>
+                <p class="text-sm">-25℃ a 70℃</p>
               </div>
             </div>
             <div class="grid md:grid-cols-4 grid-cols-2 border-b border-[#e4e3e3] pb-10 pt-10">
