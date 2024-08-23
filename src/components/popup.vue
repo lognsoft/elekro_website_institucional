@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MyButtonTwo class="lg:block hidden !text-lg" @click="isModalOpen = true">+</MyButtonTwo>
+    <MyButtonTwo class="lg:block hidden !px-5" @click="isModalOpen = true"><img class="w-4" src="/images/icone-mais.png" alt=""></MyButtonTwo>
 
     <transition name="fade">
       <div v-if="isModalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
