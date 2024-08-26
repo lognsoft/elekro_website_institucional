@@ -2,14 +2,14 @@
     <main class="text-black">
         <Head>
             <Title>Seja um autorizado</Title>
-            <Meta name="description" content="lorem ipsum"/>
-            <Meta property="og:description" content="lorem ipsum"/>
-            <Meta property="og:title" content="Elekro - Contato"/>
-            <Meta property="og:image" content="/images/elekro-banner.jpg"/>
-            <Meta property="og:url" content="https://meuSite.com"/>
-            <Meta name="twitter:title" content="Elekro - Contato"/>
-            <Meta name="twitter:description" content="lorem ipsum"/>
-            <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
+            <Meta name="description" content="Tecnologia que protege, inovação que conecta"/>
+            <Meta property="og:description" content="Tecnologia que protege, inovação que conecta"/>
+            <Meta property="og:title" content=""/>
+            <Meta property="og:image" content="/images/elekro-logo.jpeg"/>
+            <Meta property="og:url" content="https://elekro.com.br/"/>
+            <Meta name="twitter:title" content="Elekro"/>
+            <Meta name="twitter:description" content="Tecnologia que protege, inovação que conecta"/>
+            <Meta name="twitter:image" content="/images/elekro-logo.jpeg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <GeneralBanner src="/images/autorizado/AdobeStock.jpg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>

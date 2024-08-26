@@ -15,6 +15,15 @@ import Popup from "~/components/popup.vue";
   <!-- <Body class="bg-black text-white"/> -->
   <Head>
     <Title>Coleção Signature</Title>
+    <Meta name="description" content="Tecnologia que protege, inovação que conecta"/>
+    <Meta property="og:description" content="Tecnologia que protege, inovação que conecta"/>
+    <Meta property="og:title" content=""/>
+    <Meta property="og:image" content="/images/elekro-logo.jpeg"/>
+    <Meta property="og:url" content="https://elekro.com.br/"/>
+    <Meta name="twitter:title" content="Elekro"/>
+    <Meta name="twitter:description" content="Tecnologia que protege, inovação que conecta"/>
+    <Meta name="twitter:image" content="/images/elekro-logo.jpeg"/>
+    <Meta name="twitter:card" content="summary_large_image"/>
   </Head>
   <main class="overflow-hidden">    
     <Scroll/>
@@ -507,7 +516,7 @@ import Popup from "~/components/popup.vue";
     <section class="lg:pt-24 pt-14 lg:pb-24">
         <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
           <div
-            class="max-w-[800px] mx-auto h-full text-center"
+            class="max-w-[1300px] mx-auto h-full text-center"
           >
           <h2 class="titleh2 text-center">Projetada para as condições <br> climáticas do Brasil</h2>
             <div
