@@ -38,9 +38,9 @@
                                                 {{ text }}
                                             </p>
                                         </template>
-                                        <template v-if="info.title === 'Explore os benefícios exclusivos e diferenciais da Elekro'">
+                                        <!-- <template v-if="info.title === 'Explore os benefícios exclusivos e diferenciais da Elekro'">
                                             <MyButtonTwo class="nav-form" aria-label="ir para formulário" @click="scrollEl()">Seja um autorizado</MyButtonTwo>
-                                        </template>
+                                        </template> -->
                                     </div>
                                 </div>
                             </div>

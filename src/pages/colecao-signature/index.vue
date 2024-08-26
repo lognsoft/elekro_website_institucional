@@ -47,7 +47,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center mx-auto">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
+            <h2 class="titleh2 max-lg:text-center">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <Popup 
             titulo-p="Criptografia avançada e segurança" 
             titulo="WI-FI INTEGRADO"
@@ -70,10 +70,10 @@ import Popup from "~/components/popup.vue";
                 
                 ">
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
-                  <img class="w-[70%] h-full mx-auto ml-14 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/mobile-detalhes-fechadura.png" alt="">
+                  <img class="w-full max-h-[350px] object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/mobile-detalhes-fechadura.png" alt="">
                 </figure>
               </div>
-              <div class="lg:self-center lg:justify-self-end lg:w-[60%] lg:block hidden">
+              <div class="lg:self-center lg:justify-self-end lg:w-[80%] lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -104,7 +104,7 @@ import Popup from "~/components/popup.vue";
                 </div>
               </SwiperSlide>
             </Swiper>
-            <div class="flex gap-6 lg:pt-24 pt-10 items-center">
+            <div class="flex gap-6 lg:pt-32 pt-10 items-center">
              <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
              </div>
               <div>
@@ -169,7 +169,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center mx-auto">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
+            <h2 class="titleh2 max-lg:text-center">A combinação de sofisticação <br class="lg:block hidden"> com funcionalidades avançadas</h2>
             <Popup
             titulo-p="A combinação de sofisticação com funcionalidades avançadas" 
             titulo="CRIE SENHA COM HORÁRIO DE ENTRADA E SAÍDA"
@@ -228,7 +228,7 @@ import Popup from "~/components/popup.vue";
               <div class="lg:justify-self-end">
                 <figure>
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
-                  <img class="w-[70%] max-h-[350px]  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt="">
+                  <img class="w-full max-h-[350px] -ml-12  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt="">
                 </figure>
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
@@ -285,7 +285,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center mx-auto">Gerenciamento completo <br> Smart Life na palma da mão</h2>
+            <h2 class="titleh2 max-lg:text-center">Gerenciamento completo <br> Smart Life na palma da mão</h2>
             <Popup
             titulo-p="Gerenciamento completo Smart Life na palma da mão" 
             titulo="CONFIGURAÇÃO DE VOLUME"
@@ -301,11 +301,11 @@ import Popup from "~/components/popup.vue";
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
               <div>
                 <figure>
-                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/09Desktop_Detalhes03-Fechadura.png" alt="">
-                  <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/07Mobile_Detalhes03-Fechadura.png" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechadura-detalhes.png" alt="">
+                  <img class="max-h-[350px] w-full -ml-12 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/fechadura-detalhes.png" alt="">
                 </figure>
               </div>
-              <div class="lg:self-center lg:justify-self-end lg:w-[80%] xl:w-[60%]  lg:block hidden">
+              <div class="lg:self-center lg:justify-self-end lg:w-[80%]  lg:block hidden">
                 <Swiper
                 :modules="[Navigation, Pagination]"
                 :loop="true"
@@ -336,7 +336,7 @@ import Popup from "~/components/popup.vue";
                 </div>
               </SwiperSlide>
               </Swiper>
-              <div class="flex gap-6 lg:pt-14 pt-10 items-center">
+              <div class="flex gap-6 lg:pt-40 pt-10 items-center">
                <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
                </div>
               <div>
@@ -401,7 +401,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center mx-auto">Design e tecnologia, <br> aliados a segurança</h2>
+            <h2 class="titleh2 max-lg:text-center">Design e tecnologia, <br> aliados a segurança</h2>
             <Popup
             titulo-p="Design e tecnologia, aliados a segurança" 
             titulo="CONECTE-SE"
