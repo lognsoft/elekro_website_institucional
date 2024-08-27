@@ -9,7 +9,7 @@
             :pagination="true"
             :navigation="true"
         >
-            <img class="w-full h-full object-cover" :src="`/images/${image}`" alt=""/>
+            <img class="w-full object-cover h-screen" :src="`/images/${image}`" alt=""/>
         </SwiperSlide>
     </Swiper>
 </template>
