@@ -33,6 +33,7 @@
 <script setup lang="ts">
 import type { Banner } from "~/core/types";
 import { SwiperAutoplay, SwiperNavigation, SwiperPagination } from '#imports';
+import type { Swiper as SwiperInstance } from 'swiper';
 const modules = [SwiperAutoplay, SwiperNavigation, SwiperPagination];
 
 const props = defineProps({
@@ -74,8 +75,8 @@ const transform:Ref<number> = ref(50);
 const bannerSingle:Ref<number> = ref(0);
 const bannerTextHeight:Ref<number> = ref(0);
 const bannerContent = ref<HTMLElement | null>(null);
-import type { Swiper as SwiperInstance } from 'swiper';
 const swiperRef = ref<SwiperInstance | null>(null);
+
 
 const scrollOpacity = () => {
   if (bannerContent.value) {
@@ -94,14 +95,16 @@ const scrollOpacity = () => {
   }
 };
 
-onMounted(() => {
+onMounted( async () => {
+
+    console.log(swiperRef.value)
   if (bannerContent.value) {
     bannerSingle.value = bannerContent.value.offsetTop;
     bannerTextHeight.value = bannerContent.value.clientHeight;
     window.addEventListener("scroll", scrollOpacity);
   }
-  if (swiperRef.value) {
-    swiperRef.value.update();
+  if (swiperRef.value !== null) {
+    await swiperRef.value.init();
   }
 });
 
@@ -123,7 +126,7 @@ onUnmounted(() => window.removeEventListener("scroll", scrollOpacity));
     @apply fixed z-10 container mx-auto md:px-10 pl-3 text-white gap-[-30px] top-[50%] left-[50%] xl:left-[45%] pointer-events-none
 }
 .banner-title{
-    @apply max-w-[440px] text-start text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px];
+    @apply max-w-[440px] lg:text-start text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px];
 }
 .banner-text{
     @apply w-full text-lg lg:text-2xl text-start;
