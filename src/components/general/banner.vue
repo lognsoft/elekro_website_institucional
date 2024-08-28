@@ -15,13 +15,15 @@
             'object-left':position == 'left',
             'object-right':position == 'right',
             'max-md:object-[46%]':position == 'home'
-        }" :src="`/images/banner/${image}`" alt="" />
+        }"
+        :style="`transform: translateY(${translateYImage}px)`"
+        :src="`/images/banner/${image}`" alt="" />
         </SwiperSlide>
     </Swiper>
         <div ref="bannerContent" class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
             !h-full" :src="image" alt=""> -->
-            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !static !h-full" :src="image" alt="">
+            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full relative" :src="image" alt="" loading="lazy">
 
             <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
@@ -31,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import type { Ref } from "vue";
 import type { Banner } from "~/core/types";
 import { SwiperAutoplay, SwiperNavigation, SwiperPagination } from '#imports';
 import type { Swiper as SwiperInstance } from 'swiper';
@@ -70,15 +73,16 @@ const props = defineProps({
     default: () => []
   },
 }) as Banner
+const translateYImage:Ref<number> = ref(0);
 const opacity:Ref<number> = ref(100);
 const transform:Ref<number> = ref(50);
 const bannerSingle:Ref<number> = ref(0);
 const bannerTextHeight:Ref<number> = ref(0);
-const bannerContent = ref<HTMLElement | null>(null);
-const swiperRef = ref<SwiperInstance | null>(null);
+const bannerContent:Ref<HTMLElement | null> = ref(null);
+const swiperRef:Ref<SwiperInstance | null> = ref(null);
 
 
-const scrollOpacity = () => {
+const scrollOpacity:() => void = ():void => {
   if (bannerContent.value) {
     const documentScroll = document.scrollingElement?.scrollTop || 0;
     const percent = Math.max(0, Math.min(100, 100 - (documentScroll / bannerSingle.value) * 100 + (bannerTextHeight.value / 100) * 10));
@@ -95,17 +99,23 @@ const scrollOpacity = () => {
   }
 };
 
-onMounted( async () => {
+const imageTranslateControl:() => void = ():void => {
+    const documentScroll = document.scrollingElement?.scrollTop || 0;
+    translateYImage.value = documentScroll
+}
 
-    console.log(swiperRef.value)
-  if (bannerContent.value) {
-    bannerSingle.value = bannerContent.value.offsetTop;
-    bannerTextHeight.value = bannerContent.value.clientHeight;
-    window.addEventListener("scroll", scrollOpacity);
-  }
-  if (swiperRef.value !== null) {
-    await swiperRef.value.init();
-  }
+onMounted(async () => {
+
+    // console.log(swiperRef.value)
+    if (bannerContent.value) {
+        bannerSingle.value = bannerContent.value.offsetTop;
+        bannerTextHeight.value = bannerContent.value.clientHeight;
+        window.addEventListener("scroll", scrollOpacity);
+        window.addEventListener("scroll", imageTranslateControl)
+    }
+    if (swiperRef.value.$) {
+        swiperRef.value.$.update()
+    }
 });
 
 onUnmounted(() => window.removeEventListener("scroll", scrollOpacity));
