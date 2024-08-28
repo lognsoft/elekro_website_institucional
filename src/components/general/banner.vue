@@ -1,25 +1,28 @@
 <template>
-    <Swiper 
-    ref="swiperRef"
-    :modules="modules"
-    :loop="true"
-    >
-        <SwiperSlide
-        
-        v-for="image,index in images"
-        :key="index"
-        class="carousel__slide"
-        >
-        <img :class="{
-            'object-center':position == undefined || position == 'center',
-            'object-left':position == 'left',
-            'object-right':position == 'right',
-            'max-md:object-[46%]':position == 'home'
-        }"
-        :style="`transform: translateY(${translateYImage}px)`"
-        :src="`/images/banner/${image}`" alt="" />
-        </SwiperSlide>
-    </Swiper>
+    <div class="container__carousel">
+        <div class="!relative" :style="`transform: translateY(${translateYImage}px)`">
+            <Swiper 
+                ref="swiperRef"
+                :modules="modules"
+                :loop="true"
+                class="h-screen"
+            >
+                <SwiperSlide
+                
+                v-for="image,index in images"
+                :key="index"
+                class="carousel__slide"
+                >
+                <img :class="{
+                    'object-center':position == undefined || position == 'center',
+                    'object-left':position == 'left',
+                    'object-right':position == 'right',
+                    'max-md:object-[46%]':position == 'home'
+                }"
+                :src="`/images/banner/${image}`" alt="" />
+                </SwiperSlide>
+            </Swiper>
+        </div>
         <div ref="bannerContent" class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
             !h-full" :src="image" alt=""> -->
@@ -30,6 +33,7 @@
                 <p class="banner-text">{{ props.text }}</p>
             </template>
         </div>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -101,6 +105,12 @@ const scrollOpacity:() => void = ():void => {
 
 const imageTranslateControl:() => void = ():void => {
     const documentScroll = document.scrollingElement?.scrollTop || 0;
+    // const documentHeight = document.body.offsetHeight;
+    // const windowHeight = window.innerHeight;
+
+    // const scrollPercentage = (documentScroll / (documentHeight - windowHeight)) * 100;
+    // console.log(scrollPercentage);
+
     translateYImage.value = documentScroll
 }
 
@@ -118,12 +128,18 @@ onMounted(async () => {
     }
 });
 
-onUnmounted(() => window.removeEventListener("scroll", scrollOpacity));
+onUnmounted(() => {
+    window.removeEventListener("scroll", scrollOpacity)
+    window.removeEventListener("scroll", imageTranslateControl)
+});
 </script>
 
 <style scoped>
+.container__carousel{
+    @apply h-screen w-full
+}
 .carousel__slide{
-    @apply !relative !w-full !flex !items-center !h-screen !overflow-hidden -z-10;
+    @apply h-screen !w-full !flex !items-center !overflow-hidden -z-10;
 }
 .carousel__slide img{
     @apply !w-full !h-screen !fixed !top-0 !left-0 !appearance-none !object-cover;
