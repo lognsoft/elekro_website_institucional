@@ -7,7 +7,7 @@
                 :modules="modules"
                 :loop="true"
                 class="h-screen !fixed top-0 left-0 w-full"
-                :autoplay="{delay: 4000}"
+                :autoplay="{delay: 6500}"
             >
                 <SwiperSlide
                 
