@@ -7,6 +7,7 @@
                 :modules="modules"
                 :loop="true"
                 class="h-screen fixed top-0 left-0 w-full"
+                :autoplay="{delay: 4000}"
             >
                 <SwiperSlide
                 
@@ -14,13 +15,24 @@
                 :key="index"
                 class="carousel__slide"
                 >
-                <img :class="{
-                    'object-center':position == undefined || position == 'center',
-                    'object-left':position == 'left',
-                    'object-right':position == 'right',
-                    'max-md:object-[46%]':position == 'home'
-                }"
-                :src="`/images/banner/${image}`" alt="" />
+                <div
+                    :class="{
+                        'bg-center': position == undefined || position == 'center',
+                        'bg-left': position == 'left',
+                        'bg-right': position == 'right',
+                        'max-md:bg-[46%]': position == 'home' && index == 1,
+                        'max-md:bg-[63%]': position == 'home' && index == 0,
+                        'bg-cover': true,
+                        'bg-no-repeat': true,
+                        'w-full': true,
+                        'h-full': true
+                    }"
+                    :style="{
+                        backgroundImage: `url('/images/banner/${image}')`
+                        
+                    }"
+                    alt=""
+                    ></div>
                 </SwiperSlide>
             </Swiper>
         </div>
@@ -150,7 +162,7 @@ onUnmounted(() => {
     @apply !absolute !w-full !h-full !bg-black/5 !top-0 !left-0;
 }
 .content-container{
-    @apply fixed z-10 container mx-auto md:px-10 pl-3 text-white gap-[-30px] top-[50%] left-[50%] xl:left-[45%] pointer-events-none
+    @apply fixed z-10 container mx-auto md:px-10 md:pl-3 text-white gap-[-30px] top-[50%] left-[50%] xl:left-[45%] pointer-events-none
 }
 .banner-title{
     @apply max-w-[440px] lg:text-start text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[80px] font-bold leading-[40px] md:leading-[50px] lg:leading-[100px];
