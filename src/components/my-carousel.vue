@@ -1,6 +1,6 @@
 <template>
     <div class="container__carousel">
-        <div class="!relative ease-in-out"">
+        <div class="!relative ease-in-out">
             <div class="h-screen !relative">
             <Swiper 
                 ref="swiperRef"
@@ -87,11 +87,10 @@ const props = defineProps({
         default:undefined
     },
     images: {
-    type: Array as () => string[],
-    default: () => []
+    type:Array,
+    default:[]
   },
 }) as Banner
-const translateYImage:Ref<number> = ref(0);
 const opacity:Ref<number> = ref(100);
 const transform:Ref<number> = ref(50);
 const bannerSingle:Ref<number> = ref(0);
@@ -117,33 +116,18 @@ const scrollOpacity:() => void = ():void => {
   }
 };
 
-const imageTranslateControl:() => void = ():void => {
-    const documentScroll = document.scrollingElement?.scrollTop || 0;
-    // const documentHeight = document.body.offsetHeight;
-    // const windowHeight = window.innerHeight;
-
-    // const scrollPercentage = (documentScroll / (documentHeight - windowHeight)) * 100;
-    // console.log(scrollPercentage);
-    translateYImage.value = documentScroll
-}
-
-onMounted(async () => {
+onMounted(() => {
 
     // console.log(swiperRef.value)
     if (bannerContent.value) {
         bannerSingle.value = bannerContent.value.offsetTop;
         bannerTextHeight.value = bannerContent.value.clientHeight;
         window.addEventListener("scroll", scrollOpacity);
-        window.addEventListener("scroll", imageTranslateControl)
     }
-    // if (swiperRef.value.$) {
-    //     swiperRef.value.$.update()
-    // }
 });
 
 onUnmounted(() => {
     window.removeEventListener("scroll", scrollOpacity)
-    window.removeEventListener("scroll", imageTranslateControl)
 });
 </script>
 
