@@ -65,7 +65,7 @@
                             </template>
                             
                         </ul>
-                        <div class="text-center my-7 pr-6">
+                        <div class="text-center my-7">
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
 
