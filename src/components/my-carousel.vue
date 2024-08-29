@@ -1,12 +1,12 @@
 <template>
     <div class="container__carousel">
-        <div class="!relative ease-in-out" :style="`transform: translateY(${translateYImage}px)`">
-            <div class="h-screen">
+        <div class="!relative ease-in-out"">
+            <div class="h-screen !relative">
             <Swiper 
                 ref="swiperRef"
                 :modules="modules"
                 :loop="true"
-                class="h-screen fixed top-0 left-0 w-full"
+                class="h-screen !fixed top-0 left-0 w-full"
                 :autoplay="{delay: 4000}"
             >
                 <SwiperSlide
@@ -136,9 +136,9 @@ onMounted(async () => {
         window.addEventListener("scroll", scrollOpacity);
         window.addEventListener("scroll", imageTranslateControl)
     }
-    if (swiperRef.value.$) {
-        swiperRef.value.$.update()
-    }
+    // if (swiperRef.value.$) {
+    //     swiperRef.value.$.update()
+    // }
 });
 
 onUnmounted(() => {
