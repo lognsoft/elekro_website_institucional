@@ -12,7 +12,7 @@
             <Meta name="twitter:image" content="/images/elekro-banner.jpg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <GeneralBanner :images="['bg4.jpg']" image="/images/elekro-branco.png" :showImage="true" text="Design e tecnologia, aliados à segurança"/>
+        <GeneralBanner src="/images/banner/bg4.jpg" image="/images/elekro-branco.png" :showImage="true" text="Design e tecnologia, aliados à segurança"/>
         <section class="elekro-text">
             <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
                 <div class="text-base mb-6">

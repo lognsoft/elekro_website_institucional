@@ -14,7 +14,7 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <GeneralBanner :images="['FOTO_FECHADURA_ELEKRO.png','fechadura.png']" title="Proteção<br/>e Elegância" position="home"/>
+        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','fechadura.png']" title="Proteção<br/>e Elegância" position="home"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
@@ -65,7 +65,7 @@
                             </template>
                             
                         </ul>
-                        <div class="text-center my-7 ">
+                        <div class="text-center my-7 pr-6">
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
 
