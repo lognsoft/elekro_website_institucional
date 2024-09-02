@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-aos",
     'nuxt-swiper',
-    "@nuxt/image"
+    "@nuxt/image",
+    "nuxt-gtag",
   ],
   swiper:{
     modules: [
@@ -41,5 +42,8 @@ export default defineNuxtConfig({
   colorMode:{
     preference: "light",
     classSuffix: ''
+  },
+  gtag: {
+    id: process.env.GTAG_ID,
   },
 })
