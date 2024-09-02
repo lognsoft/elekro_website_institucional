@@ -1,8 +1,29 @@
+import { Head } from './.nuxt/components.d';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // typescript: {
   //   typeCheck: true
   // },
+  app:{
+    head: {
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-0SE5FCCKT2',
+          async: true
+        },
+        {
+          type: 'text/javascript',
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0SE5FCCKT2');
+          `,
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
+    }
+  },
   devtools: { enabled: true },
   modules:[
     "@pinia/nuxt",
@@ -42,8 +63,5 @@ export default defineNuxtConfig({
   colorMode:{
     preference: "light",
     classSuffix: ''
-  },
-  gtag: {
-    id: process.env.GTAG_ID,
   },
 })
