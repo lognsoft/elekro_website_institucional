@@ -646,7 +646,7 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
             <div class="lg:pt-24 pt-14 max-lg:pb-14">
-              <MyButtonTwo href="/autorizado">Seja um autorizado Elekro</MyButtonTwo>
+              <MyButtonTwo href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/" target="_blank">Comprar</MyButtonTwo>
             </div>
           </div>
         </div>
