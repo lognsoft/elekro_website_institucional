@@ -3,6 +3,7 @@
         <div class="py-5 md:px-10 pr-4 pl-3 relative z-10">
             <nav class="w-full max-w-[1900px] mx-auto flex justify-between items-center">
                 <div class="logo">
+                    <h1 style="display:none">Elekro</h1>
                     <NuxtLink to="/" @click="navigateOpen = false">
                         <img class="max-w-[110px]" src="/images/general/logo.png" srcset="/images/general/logo.png" alt=""/>
                     </NuxtLink>
