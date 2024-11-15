@@ -2,7 +2,7 @@
    <Head>
         <Meta name="description" content="Tecnologia que protege, inovação que conecta"/>
         <Meta property="og:description" content="Tecnologia que protege, inovação que conecta"/>
-        <Meta property="og:title" content=""/>
+        <Meta property="og:title" content="elekro"/>
         <Meta property="og:image" content="/images/elekro-logo.jpeg"/>
         <Meta property="og:url" content="https://elekro.com.br/"/>
         <Meta name="twitter:title" content="Elekro"/>
