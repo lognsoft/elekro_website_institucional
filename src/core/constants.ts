@@ -36,7 +36,12 @@ export const rotas:ReadonlyArray<Route> = [
     {
         path: "/sobre",
         pathName: "Sobre a Elekro",
+    },
+    {
+        path: "/blog",
+        pathName: "Blog"
     }
+
 ];
 
 export const midiasSociais:ReadonlyArray<Midia> = [
