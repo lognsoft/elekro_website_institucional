@@ -59,7 +59,7 @@ import { rotas } from "~/core/constants";
 
 const bgWhite: Ref<boolean> = ref(false);
 const route = useRoute();
-if (route.path === "/doc") {
+if (route.path === "/doc" || route.path === '/blog' || route.path.startsWith("/blog")) {
   bgWhite.value = true;
 } else {
   bgWhite.value = false;

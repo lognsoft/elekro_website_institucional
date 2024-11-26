@@ -183,3 +183,36 @@ export type MyLink = {
     href: string;
     reverse: boolean;
 }
+
+//interfaces blog
+
+//Requests
+export interface IGeneric {
+    count: number;
+    name: string;
+    slug: string;
+}
+export interface IPost {
+    id: number;
+    views: 0;
+    title: string;
+    slug: string;
+    excerpt: string;
+    thumbnail: string;
+    categories: IGeneric[];
+    tags: IGeneric[];
+}
+
+export interface IArticle extends IPost{
+    content: string;
+}
+
+// Pages
+export interface IBlog<T> {
+    status:{
+        value: "idle" | "pending" | "success" | "error"
+    };
+    data:{
+        value: T | T[]
+    };
+}
