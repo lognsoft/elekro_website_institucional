@@ -3,7 +3,7 @@
     ref="header"
     class="header"
     :class="{
-      'bg-black/80 backdrop-blur-lg': navigateOpen || scrollTopPage > 1,
+      'bg-black/80 backdrop-blur-lg': navigateOpen || scrollTopPage > 1 || permanent ||route.path === '/blog' || route.path.startsWith('/blog'),
       'bg-black/80 backdrop-blur-lg text-white': bgWhite,
     }"
   >
@@ -59,11 +59,13 @@ import { rotas } from "~/core/constants";
 
 const bgWhite: Ref<boolean> = ref(false);
 const route = useRoute();
-if (route.path === "/doc" || route.path === '/blog' || route.path.startsWith("/blog")) {
+if (route.path === "/doc") {
   bgWhite.value = true;
 } else {
   bgWhite.value = false;
 }
+
+defineProps<{permanent?: true | null}>();
 
 const navigateOpen: Ref<boolean> = ref(false);
 const scrollTopPage: Ref<number> = ref(0);

@@ -15,7 +15,7 @@
     <section class="pb-20 pt-24">
       <div class="container lg:max-w-[1200px] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-8 gap-y-5">
-          <template v-if="data && data.posts">
+          <template v-if="data && data.posts && status !== 'pending'">
             <div class="lg:col-span-5">
 
               <BlogCardArticle v-for="post of data.posts" :key="post.id" :post="post" :loading="status"/>
@@ -23,13 +23,16 @@
                 <BlogPagination :base-url="createBaseUrl" :total_pages="data.total_pages" :current_page="!queryParams.page ? 1 : Number(queryParams.page)"/>
               </div>
             </div>
-            <div class="lg:col-span-3">
-              <BlogSidebar/>
-            </div>
           </template>
           <template v-if="status === 'pending'">
             <LoadingsCardLoading class="lg:col-span-5"/>
           </template>
+          <template v-if="!data || !data.posts">
+            <div class="lg:col-span-5"></div>
+          </template>
+          <div class="lg:col-span-3">
+            <BlogSidebar/>
+          </div>
         </div>
       </div>
     </section>

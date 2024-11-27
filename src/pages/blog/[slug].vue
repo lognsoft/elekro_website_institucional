@@ -15,7 +15,7 @@
   <div class="pb-20 pt-24">
     <div class="container lg:max-w-[1200px] mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-8 gap-y-5">
-        <article v-if="data" class="lg:col-span-5">
+        <article v-if="data && status !== 'pending'" class="lg:col-span-5">
           <div class="px-4">
             <div class="w-full h-full" v-if="data.thumbnail">
               <NuxtImg :src="data.thumbnail" :alt="data.title" fit="cover" class="w-full h-full"/>

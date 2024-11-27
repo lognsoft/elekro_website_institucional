@@ -3,8 +3,8 @@
         <Link rel="stylesheet" href="/css/font.css"/>
     </Head>
     <div>
-        <GeneralHeaderDefault/>
-        <main class="bg-black text-white">
+        <GeneralHeaderDefault :permanent="true"/>
+        <main class="text-black">
             <section class="py-11 h-screen">
                 <div class="container mx-auto py-11 px-2 h-full flex justify-center items-center flex-col gap-3">
                     <h1 class="font-extrabold text-6xl sm:text-8xl md:text-[100px] lg:text-[200px] xl:text-[300px]">404</h1>
