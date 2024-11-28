@@ -6,9 +6,12 @@
         <div class="border-b pb-3 mb-6 mt-12">
           <TextH4SubTitle>Posts Recentes</TextH4SubTitle>
         </div>
-        <div>
+        <template v-if="status === 'pending'">
+          <LoadingsSidebarLoading content-type="posts" />
+        </template>
+        <div v-if="AsideData && AsideData.posts && status !== 'pending'">
           <ul class="list-none">
-            <li v-for="(post) in AsideData.posts.posts"
+            <li v-for="(post) in AsideData.posts.posts "
                 class="border-b pb-3 mb-3 last:border-none last:pb-0 last:mb-0">
               <NuxtLink :to="`/blog/${post.slug}`">
                 {{ post.title}}
@@ -21,7 +24,10 @@
         <div class="border-b pb-3 mb-6 mt-12">
           <TextH4SubTitle>Categorias</TextH4SubTitle>
         </div>
-        <div>
+        <template v-if="status === 'pending'">
+          <LoadingsSidebarLoading content-type="categories" />
+        </template>
+        <div v-if="AsideData && AsideData.categories && status !== 'pending'">
           <ul class="list-none">
             <li v-for="(categorie) in AsideData.categories" class="pb-3 mb-3" >
               <NuxtLink :to="`/blog?category=${categorie.slug}`">
@@ -35,7 +41,10 @@
         <div class="border-b pb-3 mb-6 mt-12">
           <TextH4SubTitle>tags</TextH4SubTitle>
         </div>
-        <div>
+        <template v-if="status === 'pending'">
+          <LoadingsSidebarLoading content-type="tags"/>
+        </template>
+        <div v-if="AsideData && AsideData.tags && status !== 'pending'">
           <ul class="flex gap-2 flex-wrap">
             <li v-for="(tag) in AsideData.tags" class="inline-block">
               <NuxtLink :to="`/blog?tag=${tag.slug}`" class="py-2 px-4 border block">
