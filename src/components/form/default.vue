@@ -344,11 +344,6 @@ const messageSubmit = computed(():string => {
                     <div class="mb-[15px]">
                         <FormTextareaForm id="mensagem" name="mensagem" label="Mensagem*" placeholder="Mensagem" v-model="state.message" :required="true" :disabled="submitAsync"/>
                     </div>
-                    <table>
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </table>
                     <div class="flex justify-center">
                         <MyButton class="inline-flex items-center gap-x-1" type="submit" :disabled="submitAsync">
                             Enviar
