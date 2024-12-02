@@ -28,7 +28,7 @@
             <LoadingsCardLoading class="lg:col-span-5"/>
           </template>
 
-          <template v-if="!data || !data.posts">
+          <template v-if="(!data || !data.posts) && (status === 'success' || status === 'error')">
             <div class="lg:col-span-5">
               <div class="content-center w-full h-full flex flex-col items-center text-center justify-between">
                 <TextH3Title> Ops! Não encontramos nada para "{{ queryParams.search }}"</TextH3Title>

@@ -16,7 +16,7 @@
           <Skeleton class="w-14 h-5 rounded-md"/>
         </div>
         <div v-if="contentType === 'tags'"  class="flex gap-2">
-          <skeleton v-for="(_, index) in 3" :key="index" class="w-20 h-10 border" />
+          <Skeleton v-for="(_, index) in 3" :key="index" class="w-20 h-10 border" />
         </div>
       </div>
     </div>
