@@ -327,7 +327,7 @@ export const recursos:ReadonlyArray<Recurso> = [
     },
     {
         title:'Fonte de Alimentação',
-        text: '4 Pilhas AAA',
+        text: '4 Pilhas AA',
     },
     {
         title:'Tensão de Alimentação',
@@ -414,7 +414,7 @@ export const capacidades:ReadonlyArray<Capacidade> = [
     },
     {
         icon:'game-icons:metal-bar',
-        title:'Construção em Liga de Alumínio e Proteção IP56',
+        title:'Construção em Liga de Alumínio e Proteção IP66',
         text:'Resistente à corrosão, água e poeira, ideal para as condições climáticas do Brasil.'
     }
 ];

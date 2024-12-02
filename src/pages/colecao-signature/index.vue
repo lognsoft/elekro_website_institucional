@@ -629,7 +629,7 @@ import Popup from "~/components/popup.vue";
               >
                 <h4 class="titleh4 ">Fontes de <br> alimentação</h4>
                 <p class="text-sm">
-                  4 Pilhas AAA <br> 6V(1.5V*4)
+                  4 Pilhas AA <br> 6V(1.5V*4)
                 </p>
               </div>
               <div class="flex flex-col gap-3 pt-10">
@@ -642,7 +642,7 @@ import Popup from "~/components/popup.vue";
                 <h4 class="titleh4 ">
                   Sistema de <br> Proteção
                 </h4>
-                <p class="text-sm">IP56, resistente <br> à corrosão, água <br> e poeira</p>
+                <p class="text-sm">IP66, resistente <br> à corrosão, água <br> e poeira</p>
               </div>
             </div>
             <div class="lg:pt-24 pt-14 max-lg:pb-14">
