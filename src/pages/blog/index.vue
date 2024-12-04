@@ -72,8 +72,8 @@
     return first ? `${baseUrl}?` : `${baseUrl}&`;
   })
 
-  const { status, data }:IBlog<IPost[]> = useLazyAsyncData(createKey.value, async () => {
-    const response = await $fetch<IPost[]>(`${baseUrl}/posts`,{
+  const { status, data } = useLazyAsyncData<IBlog, Error>(createKey.value, async () => {
+    const response = await $fetch<IBlog>(`${baseUrl}/posts`,{
       params: queryParams.value
     });
     return response

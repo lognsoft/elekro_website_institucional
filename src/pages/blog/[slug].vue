@@ -97,8 +97,8 @@ import baseUrl from "~/constants/baseUrl";
 const route = useRoute()
 
 const slug = computed(():string => route.params.slug.toString());
-const { status, data }:IBlog<IArticle> = useLazyAsyncData(`post-${slug.value}`, async () => {
-  const response = await $fetch(`${baseUrl}/post-single`,{
+const { status, data } = useLazyAsyncData<IArticle, Error>(`post-${slug.value}`, async () => {
+  const response = await $fetch<IArticle>(`${baseUrl}/post-single`,{
     params:{
       slug: slug.value,
     }

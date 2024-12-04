@@ -192,7 +192,8 @@ export interface IGeneric {
     name: string;
     slug: string;
 }
-export interface IPost {
+
+export interface IPost{
     id: number;
     views: 0;
     title: string;
@@ -203,16 +204,11 @@ export interface IPost {
     tags: IGeneric[];
 }
 
-export interface IArticle extends IPost{
-    content: string;
+export interface IBlog {
+    total_pages:number;
+    posts:IPost[]
 }
 
-// Pages
-export interface IBlog<T> {
-    status:{
-        value: "idle" | "pending" | "success" | "error"
-    };
-    data:{
-        value: T | T[]
-    };
+export interface IArticle extends IPost{
+    content: string;
 }

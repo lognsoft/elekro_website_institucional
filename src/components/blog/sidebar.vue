@@ -11,7 +11,7 @@
         </template>
         <div v-if="AsideData && AsideData.posts && status !== 'pending'">
           <ul class="list-none">
-            <li v-for="(post) in AsideData.posts.posts "
+            <li v-for="(post) in AsideData.posts.posts"
                 class="border-b pb-3 mb-3 last:border-none last:pb-0 last:mb-0">
               <NuxtLink :to="`/blog/${post.slug}`">
                 {{ post.title}}
@@ -60,26 +60,19 @@
 </template>
 <script setup lang="ts">
   import baseUrl from "~/constants/baseUrl";
-  import type { IPost, IGeneric } from "~/core/types";
+  import type { IBlog, IGeneric } from "~/core/types";
 
   interface IAsideRequest{
-    status:{
-      value: "idle" | "pending" | "success" | "error"
-    };
-    data:{
-      value:{
-        posts:IPost[],
-        tags:IGeneric[],
-        categories:IGeneric[],
-      }
-    };
+    posts:IBlog,
+    tags:IGeneric[],
+    categories:IGeneric[]
   }
 
-  const { status, data:AsideData }:IAsideRequest = await useLazyAsyncData('sidebar', async () => {
+  const { status, data:AsideData } = await useLazyAsyncData<IAsideRequest, Error>('sidebar', async () => {
     const [posts, tags, categories] = await Promise.all([
-        $fetch(`${baseUrl}/posts?limit=5`),
-        $fetch(`${baseUrl}/tags`),
-        $fetch(`${baseUrl}/categories`),
+        $fetch<IBlog>(`${baseUrl}/posts?limit=5`),
+        $fetch<IGeneric[]>(`${baseUrl}/tags`),
+        $fetch<IGeneric[]>(`${baseUrl}/categories`),
     ])
 
     return { posts, tags, categories }
