@@ -114,10 +114,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
             </Swiper>
             <div class="flex gap-6 lg:pt-32 pt-10 items-center">
-             <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+             <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3  items-center w-auto bg-black justify-self-start">
              </div>
               <div>
-                <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-button bg-[#666664] w-10 h-8 flex justify-center items-center ">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -163,10 +163,10 @@ import Popup from "~/components/popup.vue";
             </div>
         </div>
         <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-segurança-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  <div class="col-start-1 pagination-segurança-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-button bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-button bg-[#666664] w-10 h-6 flex justify-center items-center">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
@@ -224,10 +224,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-20 pt-10 items-center">
-               <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
                </div>
               <div>
-                <button class="next-button-combinaçao bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-button-combinaçao bg-[#666664] w-10 h-8 flex justify-center items-center ">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -279,10 +279,10 @@ import Popup from "~/components/popup.vue";
             </div>
         </div>
         <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-button-combinaçao bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-button-combinaçao bg-[#666664] w-10 h-6 flex justify-center items-center">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
@@ -346,10 +346,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-40 pt-10 items-center">
-               <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
                </div>
               <div>
-                <button class="next-life bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-life bg-[#666664] w-10 h-8 flex justify-center items-center ">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -395,10 +395,10 @@ import Popup from "~/components/popup.vue";
             </div>
         </div>
         <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-life-mobile bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-life-mobile bg-[#666664] w-10 h-6 flex justify-center items-center">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
@@ -453,10 +453,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-24 pt-10 items-center">
-               <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
                </div>
               <div>
-                <button class="next-design bg-[#666664] py-2 px-3 rounded-2xl">
+                <button class="next-design bg-[#666664] w-10 h-8 flex justify-center items-center ">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -502,10 +502,10 @@ import Popup from "~/components/popup.vue";
             </div>
         </div>
         <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3 rounded-2xl items-center w-auto bg-black justify-self-start">
+                  <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3  items-center w-auto bg-black justify-self-start">
                   </div>
                   <div>
-                    <button class="next-design-mobile bg-[#666664] py-2 px-3 rounded-2xl">
+                    <button class="next-design-mobile bg-[#666664] w-10 h-6 flex justify-center items-center">
                       <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
                     </button>
                   </div>
@@ -646,7 +646,7 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
             <div class="lg:pt-24 pt-14 max-lg:pb-14">
-              <MyButtonTwo href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/" target="_blank">Comprar</MyButtonTwo>
+              <MyButtonTwo href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/" target="_blank">Comprar</MyButtonTwo>
             </div>
           </div>
         </div>
