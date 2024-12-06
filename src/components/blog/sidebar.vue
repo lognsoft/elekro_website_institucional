@@ -13,7 +13,7 @@
           <ul class="list-none">
             <li v-for="(post) in AsideData.posts.posts"
                 class="border-b pb-3 mb-3 last:border-none last:pb-0 last:mb-0">
-              <NuxtLink :to="`/blog/${post.slug}`">
+              <NuxtLink :to="`/updates/${post.slug}`">
                 {{ post.title}}
               </NuxtLink>
             </li>
@@ -30,7 +30,7 @@
         <div v-if="AsideData && AsideData.categories && status !== 'pending'">
           <ul class="list-none">
             <li v-for="(categorie) in AsideData.categories" class="pb-3 mb-3" >
-              <NuxtLink :to="`/blog?category=${categorie.slug}`">
+              <NuxtLink :to="`/updates?category=${categorie.slug}`">
                 - {{ categorie.name}}
               </NuxtLink>
             </li>
@@ -47,7 +47,7 @@
         <div v-if="AsideData && AsideData.tags && status !== 'pending'">
           <ul class="flex gap-2 flex-wrap">
             <li v-for="(tag) in AsideData.tags" class="inline-block">
-              <NuxtLink :to="`/blog?tag=${tag.slug}`" class="py-2 px-4 border block">
+              <NuxtLink :to="`/updates?tag=${tag.slug}`" class="py-2 px-4 border block">
                 {{ tag.name }}
               </NuxtLink>
             </li>

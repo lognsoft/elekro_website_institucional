@@ -19,7 +19,7 @@
   const route = useRoute();
   const searchValue = ref<string>("")
   const baseUrl = computed(() => {
-    let url = '/blog', first = true;
+    let url = '/updates', first = true;
     for(const [key, value] of Object.entries(route.query)) {
       if(key === 'search' || key === 'page') continue;
       url = first ? `?${key}=${value}` : `&${key}=${value}`;
