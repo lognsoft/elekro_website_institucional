@@ -52,7 +52,7 @@ import Popup from "~/components/popup.vue";
       </div>
     </section>
     <Video/>
-    <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8]">
+    <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
@@ -174,7 +174,7 @@ import Popup from "~/components/popup.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 ">
+    <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
@@ -290,7 +290,7 @@ import Popup from "~/components/popup.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] ">
+    <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
@@ -406,7 +406,7 @@ import Popup from "~/components/popup.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 pb-14">
+    <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 pb-14 z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
@@ -513,7 +513,7 @@ import Popup from "~/components/popup.vue";
                 </div>
       </div>
     </section>
-    <section class="lg:pt-24 pt-14 lg:pb-24">
+    <section class="lg:pt-24 pt-14 lg:pb-24 z-10 relative">
         <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
           <div
             class="max-w-[1300px] mx-auto h-full text-center"

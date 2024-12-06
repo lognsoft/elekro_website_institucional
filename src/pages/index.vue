@@ -44,7 +44,12 @@
                             " 
                             href="/elekro-one-plus"
                         >Saiba mais</MyLinkTwo> -->
-                        <MyButtonTwo href="/colecao-signature" class="mt-7 hidden lg:inline-block">Saiba mais</MyButtonTwo>
+                      <div class="flex gap-4 justify-center mt-7">
+                          <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block">Saiba mais</MyButtonTwo>
+                        <MyButtonTwo
+                            href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/"
+                            target="_blank" class="hidden lg:inline-block">Comprar</MyButtonTwo>
+                      </div>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
                 </div>
@@ -66,9 +71,13 @@
                             </template>
                             
                         </ul>
-                        <div class="text-center my-7">
+                        <div class="text-center my-7 gap-4 flex justify-center">
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
+                            <MyButtonTwo
+                                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/"
+                                target="_blank" class="lg:hidden inline-block">Comprar</MyButtonTwo>
+
 
 
                         </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative z-10">
     <video 
       ref="videoPlayer"
       class="w-full lg:h-screen h-auto object-cover"
