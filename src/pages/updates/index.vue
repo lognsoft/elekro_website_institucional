@@ -1,9 +1,9 @@
 <template>
   <Head>
-    <Title>Blog</Title>
+    <Title>Updates</Title>
     <Meta name="description" content="lorem ipsum" />
     <Meta property="og:description" content="lorem ipsum" />
-    <Meta property="og:title" content="Elekro - Blog" />
+    <Meta property="og:title" content="Elekro - Updates" />
     <Meta property="og:image" content="/images/elekro-banner.jpg" />
     <Meta property="og:url" content="https://meuSite.com" />
     <Meta name="twitter:title" content="Elekro - Blog" />
@@ -38,7 +38,7 @@
                 <text-h4-sub-title class="text-gray-500 mt-2">
                   Tente ajustar sua busca ou explore nossos conteúdos.
                 </text-h4-sub-title>
-                <NuxtLink to="/blog" class="px-3 py-5 border-2 rounded-lg mt-3 flex items-center gap-2 max-w-48">
+                <NuxtLink to="/updates" class="px-3 py-5 border-2 rounded-lg mt-3 flex items-center gap-2 max-w-48">
                   <Icon name="material-symbols:arrow-left-alt-rounded" size="24" /> Voltar para Início
                 </NuxtLink>
 
@@ -61,7 +61,7 @@
   const queryParams = computed(() => ({ ...route.query }));
   const createKey = computed(() => `posts-${JSON.stringify(queryParams.value)}`);
   const createBaseUrl = computed(() => {
-    let baseUrl = '/blog';
+    let baseUrl = '/updates';
     let first = true;
     for (const [key, value] of Object.entries(queryParams.value)) {
       if(key === 'page') continue;

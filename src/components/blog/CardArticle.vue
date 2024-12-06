@@ -20,13 +20,13 @@ defineProps<ICardArticleProps>();
           <div class="flex flex-col gap-3">
 
               <text-h4-sub-title v-if="post.categories.length > 0">
-                <NuxtLink :to="`/blog?category=${post.categories[0].slug}`" @click.stop>
+                <NuxtLink :to="`/updates?category=${post.categories[0].slug}`" @click.stop>
                   {{ post.categories[0].name }}
                 </NuxtLink>
               </text-h4-sub-title>
 
             <text-h2-title>
-              <NuxtLink :to="`/blog/${post.slug}`">{{ post.title }}</NuxtLink>
+              <NuxtLink :to="`/updates/${post.slug}`">{{ post.title }}</NuxtLink>
             </text-h2-title>
           </div>
           <div class="border-y py-6 my-6">
@@ -39,7 +39,7 @@ defineProps<ICardArticleProps>();
             <div >
               <ul class="flex gap-1 list-none">
                 <li v-for="(tag,index) in post.tags" :key="tag.slug">
-                  <NuxtLink :to="`/blog?tag[]=${tag.slug}`" @click.stop>
+                  <NuxtLink :to="`/updates?tag[]=${tag.slug}`" @click.stop>
                     {{tag.name}}<span v-if="index !== post.tags.length - 1">, </span>
                   </NuxtLink>
                 </li>

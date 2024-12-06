@@ -22,7 +22,7 @@
             </div>
             <div class="border p-10">
               <div class="flex flex-col gap-3">
-                <NuxtLink :to="`/blog?category${data.categories[0].slug}`" >
+                <NuxtLink :to="`/updates?category${data.categories[0].slug}`" >
                   <text-h4-sub-title>{{ data.categories[0].name }}</text-h4-sub-title>
                 </NuxtLink>
                 <text-h2-title>{{ data.title }}</text-h2-title>
@@ -37,7 +37,7 @@
                 <div>
                   <ul class="flex gap-1">
                     <li v-for="(tag,index) in data.tags" :key="tag.slug" class="list-none">
-                      <NuxtLink :to="`/blog?tag=${tag.slug}`">
+                      <NuxtLink :to="`/updates?tag=${tag.slug}`">
                         {{tag.name}}<span v-if="index !== data.tags.length - 1">, </span>
                       </NuxtLink>
                     </li>
