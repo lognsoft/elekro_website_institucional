@@ -18,6 +18,7 @@
       alt="Elekro"
       :showImage="true"
       text="Design e tecnologia, aliados à segurança"
+
     />
     <section class="elekro-text">
       <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">

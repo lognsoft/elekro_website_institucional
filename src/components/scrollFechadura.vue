@@ -12,7 +12,7 @@
         <div
             class="lg:ml-[49%] max-w-[1900px] flex h-full relative lg:items-center max-lg:justify-center max-lg:text-center " >
           <div
-              class="spacing-height max-lg:text-center relative max-md:mt-6 max-w-[1700px] mx-auto w-full flex flex-col gap-10 md:gap-2 items-center text-white" :style="`opacity: ${opacity}%`">
+              class="spacing-height max-lg:text-center relative max-md:mt-20 max-w-[1700px] mx-auto w-full flex flex-col gap-10 md:gap-2 items-center text-white" :style="`opacity: ${opacity}%`">
             <!-- <h1 class="banner-title  max-lg:!text-center">Revolucione</h1>
 
               <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p> -->

@@ -15,7 +15,7 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']" title="Proteção<br/>e Elegância"
+        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']" title="Proteção e Elegância"
                     position="home"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
@@ -76,7 +76,7 @@
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
                             <MyButtonTwo
-                                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/"
+                                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
                                 target="_blank" class="lg:hidden inline-block">Comprar</MyButtonTwo>
 
 

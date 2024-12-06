@@ -9,7 +9,7 @@
         <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
             <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
             !h-full" :src="image" alt=""> -->
-            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full !relative max-lg:mx-auto" :src="image" alt="" loading="lazy">
+            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full !relative mx-auto" :src="image" alt="" loading="lazy">
 
             <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
@@ -90,13 +90,14 @@ function scrollOpacity(){
     @apply absolute w-full h-full bg-black/5 top-0 left-0;
 }
 .content-container{
-    @apply fixed z-10 container mx-auto md:px-10 md:pl-3 text-white gap-[-30px] top-[50%] left-[50%] xl:left-[45%] pointer-events-none
+    @apply fixed z-10 w-full mx-auto  text-white gap-[-30px] top-[50%] left-[50%]
+    pointer-events-none
 }
 .banner-title{
-  @apply max-w-[440px] lg:text-start text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
+  @apply text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
   leading-[40px] md:leading-[50px] lg:leading-[80px];
 }
 .banner-text{
-    @apply w-full text-lg lg:text-2xl text-center lg:text-start;
+    @apply w-full text-lg lg:text-2xl text-center ;
 }
 </style>
