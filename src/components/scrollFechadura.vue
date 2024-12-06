@@ -9,9 +9,10 @@
 
     </figure>
       <div class="py-5 md:px-10 px-2 fixed z-[1] h-full w-full pt-24" >
-        <div class="lg:ml-[49%] max-w-[1900px] flex max-lg:mt-14 h-full relative lg:items-center max-lg:justify-center max-lg:text-center" >
+        <div
+            class="lg:ml-[49%] max-w-[1900px] flex h-full relative lg:items-center max-lg:justify-center max-lg:text-center " >
           <div
-              class="max-lg:text-center relative max-md:mt-32 max-w-[1700px] mx-auto w-full flex flex-col gap-10 md:gap-2 items-center text-white" :style="`opacity: ${opacity}%`">
+              class="spacing-height max-lg:text-center relative max-md:mt-6 max-w-[1700px] mx-auto w-full flex flex-col gap-10 md:gap-2 items-center text-white" :style="`opacity: ${opacity}%`">
             <!-- <h1 class="banner-title  max-lg:!text-center">Revolucione</h1>
 
               <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p> -->
@@ -19,7 +20,7 @@
               <img class="xl:w-[60%] w-[80%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt="">
             <MyButtonTwo
                 href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/"
-                target="_blank" class="">Comprar</MyButtonTwo>
+                target="_blank" class="!bg-black">Comprar</MyButtonTwo>
 
           </div>
         </div>
@@ -65,5 +66,11 @@ function scrollEffects() {
   height: 100vh;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   background-color: lightblue; /* Ajuste conforme necessário */
+}
+@media (min-height: 750px) {
+  
+  .spacing-height{
+    @apply max-md:mt-32
+  }
 }
 </style>

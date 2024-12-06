@@ -3,7 +3,7 @@
     ref="header"
     class="header"
     :class="{
-      'bg-black/80 backdrop-blur-lg': navigateOpen || scrollTopPage > 1 || permanent ||route.path === '/blog' || route.path.startsWith('/blog'),
+      'bg-black/80 backdrop-blur-lg': navigateOpen || scrollTopPage > 1 || permanent ||route.path === '/updates' || route.path.startsWith('/updates'),
       'bg-black/80 backdrop-blur-lg text-white': bgWhite,
     }"
   >

@@ -40,6 +40,10 @@ export const rotas:ReadonlyArray<Route> = [
     {
         path: "/blog",
         pathName: "Blog"
+    },
+    {
+        path: "https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/",
+        pathName: "Comprar"
     }
 
 ];
