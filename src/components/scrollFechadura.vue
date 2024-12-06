@@ -19,8 +19,8 @@
               <!-- <img class="xl:w-[60%] w-[80%] " src="/images/elekro-one/titulohome.png" alt=""> -->
               <img class="xl:w-[60%] w-[80%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt="">
             <MyButtonTwo
-                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-elekro-signature/"
-                target="_blank" class="!bg-black">Comprar</MyButtonTwo>
+                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
+                target="_blank">Comprar</MyButtonTwo>
 
           </div>
         </div>

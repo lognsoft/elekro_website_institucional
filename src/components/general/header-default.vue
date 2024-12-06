@@ -39,7 +39,7 @@
     <div class="navigation">
       <ul class="nav-list">
         <template v-for="(rota, index) in rotas" :key="index">
-          <li class="mb-9 overflow-hidden">
+          <li class="mb-2 pb-2 overflow-hidden border-b border-[#252525]">
             <NuxtLink
               @click="navigateOpen = false"
               class="hover:opacity-100 duration-200"
@@ -109,19 +109,21 @@ watch(
   @apply w-screen fixed text-slate-50 z-[999] duration-500  top-0 left-0;
 }
 .navigate {
-  @apply fixed w-full bg-black h-screen duration-700 top-0 left-[-100%] overflow-hidden text-white z-[998];
+  @apply fixed max-md:w-[290px] w-[350px] bg-black h-screen duration-700 transition-all top-0 right-[-100%] overflow-hidden
+  text-white
+  z-[998];
 }
 
 .navigate.active {
-  @apply left-0;
+  @apply right-0;
 }
 
 .navigation {
-  @apply pt-[10rem] container max-w-5xl mx-auto pr-4 pl-3 md:px-10;
+  @apply pt-[10rem]  mx-auto pr-4 pl-3 md:px-10;
 }
 
 .nav-list {
-  @apply text-2xl xl:text-3xl font-normal text-white;
+  @apply text-base font-normal text-right text-white;
 }
 .nav-list:hover a {
   @apply opacity-70;
