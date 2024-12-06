@@ -55,7 +55,6 @@
 </template>
 <script setup lang="ts">
   import type { IPost, IBlog } from "~/core/types";
-  import baseUrl from "~/constants/baseUrl";
 
   const route = useRoute();
 
@@ -73,7 +72,7 @@
   })
 
   const { status, data } = useLazyAsyncData<IBlog, Error>(createKey.value, async () => {
-    const response = await $fetch<IBlog>(`${baseUrl}/posts`,{
+    const response = await $fetch<IBlog>(`/api/posts`,{
       params: queryParams.value
     });
     return response

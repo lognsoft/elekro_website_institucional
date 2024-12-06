@@ -68,14 +68,9 @@
     categories:IGeneric[]
   }
 
-  const { status, data:AsideData } = await useLazyAsyncData<IAsideRequest, Error>('sidebar', async () => {
-    const [posts, tags, categories] = await Promise.all([
-        $fetch<IBlog>(`${baseUrl}/posts?limit=5`),
-        $fetch<IGeneric[]>(`${baseUrl}/tags`),
-        $fetch<IGeneric[]>(`${baseUrl}/categories`),
-    ])
-
-    return { posts, tags, categories }
-  })
+  const { status, data:AsideData } = await useLazyAsyncData<IAsideRequest, Error>(
+    'sidebar',
+    () => $fetch<IAsideRequest>('/api/aside')
+  );
 
 </script>

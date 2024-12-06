@@ -93,12 +93,11 @@
 
 <script setup lang="ts">
 import type { IArticle, IBlog } from "~/core/types";
-import baseUrl from "~/constants/baseUrl";
 const route = useRoute()
 
 const slug = computed(():string => route.params.slug.toString());
 const { status, data } = useLazyAsyncData<IArticle, Error>(`post-${slug.value}`, async () => {
-  const response = await $fetch<IArticle>(`${baseUrl}/post-single`,{
+  const response = await $fetch<IArticle>(`/api/article`,{
     params:{
       slug: slug.value,
     }
