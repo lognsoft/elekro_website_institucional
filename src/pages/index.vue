@@ -15,7 +15,7 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']" title="Proteção e Elegância"
+        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']" title="Design, Tecnologia e Segurança"
                     position="home"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
