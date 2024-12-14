@@ -15,15 +15,15 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :images="['fechadura_v03.png','sala-slide-home.png']" title="Design, Tecnologia e Segurança"
-                    position="home"/>
+        <MyCarousel :images="['bg-home.png']" title="Elegância <br> E Sofisticação"
+                    buttonText="DESCUBRA" link="/colecao-signature"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
                         <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature</TextH4SubTitle>
+                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature, Milão</TextH4SubTitle>
                         <figure>
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
@@ -59,7 +59,7 @@
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
                         <TextH2Title class="text-center hidden lg:block">Coleção</TextH2Title>
-                        <TextH4SubTitle class="text-center hidden lg:block !text-xl">Signature</TextH4SubTitle>
+                        <TextH4SubTitle class="text-center hidden lg:block !text-xl">Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">

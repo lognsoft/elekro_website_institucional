@@ -12,8 +12,9 @@
             <Meta name="twitter:image" content="/images/elekro-logo.jpeg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <GeneralBanner src="/images/banner/AdobeStock.jpg" title="Seja um autorizado" text="Entrega eficiente, tecnologia de ponta"/>
-        <section>
+        <MyCarousel :images="['AdobeStock.jpg']" title="Seja um autorizado"
+                    text="Entrega eficiente, tecnologia de ponta" buttonText="Faça parte" link="#formSection"/>
+        <section class="z-20 relative">
             <div class="mx-auto w-full">
                 <!-- <div class="text-center mb-[40px] px-3 max-w-[1350px] mx-auto">
                     <TextH2Title class="mb-3">Abra as portas para o futuro e explore os benefícios exclusivos e diferenciais da Elekro</TextH2Title>

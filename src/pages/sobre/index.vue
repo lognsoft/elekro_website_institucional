@@ -13,11 +13,9 @@
       <Meta name="twitter:card" content="summary_large_image" />
     </Head>
     <GeneralBanner
-      src="/images/banner/bg4.jpg"
-      image="/images/elekro-branco.png"
+      src="/images/banner/bg-sobre.jpg"
       alt="Elekro"
-      :showImage="true"
-      text="Design e tecnologia, aliados à segurança"
+      title="Design e tecnologia, <br> aliados à segurança"
     />
     <section class="elekro-text">
       <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
@@ -39,19 +37,19 @@
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH2Title class="mb-5">Soluções Que Inspiram Liderança</TextH2Title>
             <p>
-              As fechaduras eletrônicas da Elekro são mais do que produtos. Elas representam a fusão perfeita entre inovação, funcionalidade e estética, refletindo nosso compromisso inabalável em entregar confiabilidade e excelência. Essas soluções posicionam nossos parceiros e clientes na vanguarda de um mercado em rápida evolução.
+              As fechaduras eletrônicas da Elekro representam a fusão perfeita entre inovação, funcionalidade e estética, refletindo nosso compromisso inabalável em entregar confiabilidade e excelência. Essas soluções posicionam nossos parceiros e clientes na vanguarda de um mercado em rápida evolução.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH2Title class="mb-5">Missão</TextH2Title>
             <p>
-              Liderar o mercado de soluções inteligentes com produtos inovadores, robustos e seguros que proporcionem excelência e elevem o padrão de conforto e produtividade para nossos clientes.
+              Entregar design e tecnologias inovadoras que sejam seguras, robustas e eficientes, proporcionando soluções de excelência que elevem o conforto, a produtividade e a praticidade na vida de nossos clientes.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH2Title class="mb-5">Visão</TextH2Title>
             <p>
-              Ser reconhecida como líder global em soluções tecnológicas premium, definindo tendências e moldando o futuro com inovação e excelência.
+              Liderar pela inovação e excelência em soluções tecnológicas, fortalecendo nossa posição como a primeira escolha de consumidores e parceiros.
             </p>
           </div>
           <TextH2Title class="mb-5" data-aos="fade-up" data-aos-duration="1000"
@@ -60,24 +58,24 @@
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH3Title class="mb-1">Inovação</TextH3Title>
             <p>
-              Impulsionamos mudanças significativas por meio de tecnologias disruptivas e confiáveis.
+              Nossa paixão é explorar novas tecnologias para criar soluções disruptivas e confiáveis.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH3Title class="mb-1">Excelência</TextH3Title>
             <p>
-              Garantimos um padrão superior em todas as etapas do processo, superando expectativas consistentemente.
+              Garantimos qualidade em todas as etapas, superando expectativas.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
-            <TextH3Title class="mb-1">Liderança</TextH3Title>
+            <TextH3Title class="mb-1">Comprometimento</TextH3Title>
             <p>
-              Atuamos com visão estratégica para criar valor sustentável e impacto positivo em tudo o que fazemos.
+              Atuamos para impactar positivamente a vida das pessoas, criando valor em tudo o que fazemos.
             </p>
           </div>
          <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH3Title class="mb-1">Elekro Dynamic Industries</TextH3Title>
-            <p>Liderando com inovação, design e segurança.</p>
+            <p>Design e tecnologia aliados à segurança.</p>
          </div>
         </div>
       </div>

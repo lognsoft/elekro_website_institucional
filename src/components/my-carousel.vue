@@ -46,6 +46,10 @@
             <template v-if="props.text != ''">
                 <p class="banner-text">{{ props.text }}</p>
             </template>
+            <NuxtLink :href="props.link"
+                      class="inline-block lg:px-28 px-20 py-3 border-4 text-xl text-nowrap !mt-7 font-bold">
+              {{ props.buttonText }}
+            </NuxtLink>
         </div>
     </div>
 </template>
@@ -58,6 +62,10 @@ import type { Swiper as SwiperInstance } from 'swiper';
 const modules = [SwiperAutoplay, SwiperNavigation, SwiperPagination];
 
 const props = defineProps({
+    link:{
+      type:String,
+      default:''
+    },
     title:{
         type:String,
         default:''
@@ -85,6 +93,10 @@ const props = defineProps({
     position:{
         type:String,
         default:undefined
+    },
+    buttonText:{
+      type:String,
+      default: ''
     },
     images: {
     type:Array,
@@ -146,11 +158,10 @@ onUnmounted(() => {
     @apply !absolute !w-full !h-full !bg-black/5 !top-0 !left-0;
 }
 .content-container{
-    @apply fixed z-10 w-full mx-auto  text-white gap-[-30px] top-[50%] left-[50%]
-    pointer-events-none
+    @apply fixed z-10 max-w-[420px] mx-auto  text-white bottom-[10%] lg:left-[250px] left-[50%]
 }
 .banner-title{
-    @apply  text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
+    @apply  text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
     leading-[40px] md:leading-[50px] lg:leading-[80px];
 }
 .banner-text{
