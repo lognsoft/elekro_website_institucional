@@ -409,7 +409,7 @@ import Popup from "~/components/popup.vue";
     <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 pb-14 z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
-          <div class="flex justify-center items-center ">
+          <div class="flex max-lg:justify-center justify-between items-center ">
             <h2 class="titleh2 max-lg:text-center">Design e tecnologia, <br> aliados a segurança</h2>
             <Popup
             titulo-p="Design e tecnologia, aliados a segurança" 

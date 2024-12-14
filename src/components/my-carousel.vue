@@ -21,7 +21,7 @@
                         'bg-left': position == 'left',
                         'bg-right': position == 'right',
                         'max-md:bg-[46%]': position == 'home' && index == 1,
-                        'max-md:bg-[63%]': position == 'home' && index == 0,
+                        'max-xl:bg-[50%]': position == 'home' && index == 0,
                         'bg-cover': true,
                         'bg-no-repeat': true,
                         'w-full': true,

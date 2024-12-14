@@ -30,37 +30,28 @@
                 data-aos-delay="1000"
                 data-aos-duration="1000"
                 ><Icon name="bi:quote" /></span
-              >A Elekro projeta fechaduras eletrônicas, incorporando tecnologia
-              biométrica, chaves eletrônicas e conectividade inteligente e
-              representa o início de nosso avanço e compromisso em antecipar e
-              satisfazer as necessidades no mundo dos eletrodomésticos
-              inteligentes no Brasil.
+              >Nos últimos 10 anos, a Elekro tem sido o parceiro estratégico de grandes corporações globais, desenvolvendo tecnologias customizadas e fornecendo soluções OEM de alta performance para setores como automotivo, IoT e mercados conectados. Com expertise em inteligência artificial, veículos elétricos e sistemas integrados, a Elekro construiu uma reputação sólida como catalisadora de avanços tecnológicos.
+              <br><br>
+              Agora, com o lançamento de sua marca própria, a Elekro canaliza sua experiência para liderar com autoridade em novos mercados. Design sofisticado, tecnologia avançada e segurança inigualável são os pilares que definem nossa visão e consolidam nossa posição como referência em soluções premium.
+
             </p>
-            <!-- <p class="mb-2">Em 2023, projetamos a Elekro One+, série FM-F31, e ao darmos início à fabricação de fechaduras inteligentes projetadas para o Brasil, reiteramos nosso compromisso em proporcionar tecnologia, design e praticidade através de soluções inteligentes e conectadas.</p>
-                        <p class="mb-2">A fechadura inteligente Elekro One+, e o aplicativo Smart Life, abrem caminhos para inovações futuras que transformam a interação das pessoas com seus lares.</p>
-                        <p>Este marco representa nosso firme compromisso em antecipar e atender às demandas da automação residencial, promovendo conforto, segurança e praticidade para os lares modernos.</p> -->
+          </div>
+          <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+            <TextH2Title class="mb-5">Soluções Que Inspiram Liderança</TextH2Title>
+            <p>
+              As fechaduras eletrônicas da Elekro são mais do que produtos. Elas representam a fusão perfeita entre inovação, funcionalidade e estética, refletindo nosso compromisso inabalável em entregar confiabilidade e excelência. Essas soluções posicionam nossos parceiros e clientes na vanguarda de um mercado em rápida evolução.
+            </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH2Title class="mb-5">Missão</TextH2Title>
             <p>
-              Proporcionar segurança e conforto excepcionais aos nossos
-              clientes, comprometidos em estabelecer uma conexão próxima,
-              compreendendo suas necessidades individuais e superando
-              expectativas. Buscamos preencher as lacunas do mercado, oferecendo
-              inovação e excelência em cada produto e que permeia todas as
-              etapas, desde o design até o suporte pós-venda. Na Elekro, nossa
-              missão é criar lares mais seguros, confortáveis e conectados.
+              Liderar o mercado de soluções inteligentes com produtos inovadores, robustos e seguros que proporcionem excelência e elevem o padrão de conforto e produtividade para nossos clientes.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH2Title class="mb-5">Visão</TextH2Title>
             <p>
-              Tornar-se a marca líder de eletrodomésticos no Brasil, reconhecida
-              por sua qualidade excepcional. Visamos ser a primeira escolha dos
-              consumidores quando se trata de eletrodomésticos, estabelecendo um
-              padrão de excelência que redefine o mercado. Quando as pessoas
-              pensarem em eletrodomésticos, automaticamente pensem na Elekro,
-              associando nossa marca à confiança, inovação e valor.
+              Ser reconhecida como líder global em soluções tecnológicas premium, definindo tendências e moldando o futuro com inovação e excelência.
             </p>
           </div>
           <TextH2Title class="mb-5" data-aos="fade-up" data-aos-duration="1000"
@@ -69,40 +60,33 @@
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH3Title class="mb-1">Inovação</TextH3Title>
             <p>
-              Nossa paixão pela inovação nos impulsiona a buscar constantemente
-              novas ideias e tecnologias, garantindo produtos de alta qualidade,
-              desempenho e confiabilidade que revolucionam a experiência de
-              segurança e o conforto dos nossos clientes.
+              Impulsionamos mudanças significativas por meio de tecnologias disruptivas e confiáveis.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <TextH3Title class="mb-1">Excelência</TextH3Title>
             <p>
-              Nosso compromisso com a excelência é guiado pela transparência e
-              pela honestidade, refletindo-se em cada etapa do nosso processo,
-              garantindo assim a satisfação e alta qualidade dos nossos
-              produtos.
+              Garantimos um padrão superior em todas as etapas do processo, superando expectativas consistentemente.
             </p>
           </div>
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
-            <TextH3Title class="mb-1">Comprometimento</TextH3Title>
+            <TextH3Title class="mb-1">Liderança</TextH3Title>
             <p>
-              A base de nossa atuação, buscando sempre a inovação e a
-              excelência, impactando positivamente a vida das pessoas para
-              superar suas expectativas, o motivo de cada uma de nossas ações.
+              Atuamos com visão estratégica para criar valor sustentável e impacto positivo em tudo o que fazemos.
             </p>
           </div>
-          <!-- <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
-                        <TextH3Title class="mb-1">Transparência</TextH3Title>
-                        <p>O valor de transparência da Elekro é evidenciado em seu compromisso com a comunicação aberta, clara e precisa em suas operações. Almejamos construir relacionamentos sólidos e de confiança com clientes, colaboradores, parceiros e todas as partes interessadas.</p>
-                    </div> -->
+         <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
+            <TextH3Title class="mb-1">Elekro Dynamic Industries</TextH3Title>
+            <p>Liderando com inovação, design e segurança.</p>
+         </div>
         </div>
       </div>
     </section>
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped>
 .elekro-text {
