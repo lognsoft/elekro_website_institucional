@@ -158,6 +158,11 @@ export const features:ReadonlyArray<Feature> = [
         svg:false
     },
     {
+        icon:'fa-solid:keyboard',
+        text:'Teclado fosco em tom carbono - Projetado para ser resistente a marcas de digitais.',
+        svg:false
+    },
+    {
         icon:'game-icons:door-handle',
         text:'Maçaneta reversível',
         svg:false

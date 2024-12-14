@@ -84,8 +84,11 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="lg:self-center lg:justify-self-end lg:w-[80%] lg:block hidden">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-segurança',
@@ -126,8 +129,11 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-segurança-mobile',
@@ -194,8 +200,11 @@ import Popup from "~/components/popup.vue";
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">
               <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-combinaçao',
@@ -242,8 +251,11 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-combinaçao-mobile',
@@ -316,8 +328,11 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="lg:self-center lg:justify-self-end lg:w-[80%]  lg:block hidden">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-life',
@@ -358,8 +373,11 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-life-mobile',
@@ -425,8 +443,11 @@ import Popup from "~/components/popup.vue";
             
               <div class="lg:self-center w-full lg:block hidden">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-design',
@@ -471,8 +492,11 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
                 <Swiper
-                :modules="[Navigation, Pagination]"
+                :modules="[Navigation, Pagination, Autoplay]"
                 :loop="true"
+                :autoplay="{
+                  delay: 2000,
+                }"
                 :pagination="{
                 clickable: true,
                 el: '.pagination-design-mobile',
