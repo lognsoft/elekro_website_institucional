@@ -28,14 +28,14 @@ import Popup from "~/components/popup.vue";
   <main class="overflow-hidden">    
     <Scroll/>
 
-    <section class="lg:pt-24 pt-28 max-lg:sm:pt-56 z-10 lg:h-screen relative lg:overflow-hidden">
+    <section class="pt-0 z-10 lg:h-screen relative lg:overflow-hidden">
       <img 
         class="max-sm:w-[90%] sm:h-[40%] lg:hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
         src="/images/fechadura-dupla.png" 
         alt="Fechadura" 
       />
 
-      <div class="flex flex-col max-lg:pt-24 lg:overflow-hidden">
+      <div class="flex flex-col pt-56 lg:pt-24 lg:overflow-hidden">
         <div class="max-w-[800px] mx-auto flex-grow text-center">
           <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
           <p>Milão / Itália</p>
