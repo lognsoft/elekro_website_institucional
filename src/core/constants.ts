@@ -39,7 +39,7 @@ export const rotas:ReadonlyArray<Route> = [
     },
     {
         path: "/insights",
-        pathName: "Updates",
+        pathName: "Insights",
     },
     {
         path: "https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/",
