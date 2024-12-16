@@ -1,55 +1,3 @@
-<template>
-    <div class="container__carousel">
-        <div class="!relative ease-in-out">
-            <div class="h-screen !relative">
-            <Swiper 
-                ref="swiperRef"
-                :modules="modules"
-                :loop="true"
-                class="h-screen !fixed top-0 left-0 w-full"
-                :autoplay="{delay: 6500}"
-            >
-                <SwiperSlide
-                
-                v-for="image,index in images"
-                :key="index"
-                class="carousel__slide"
-                >
-                <div
-                    :class="{
-                        'bg-center': position == undefined || position == 'center',
-                        'bg-left': position == 'left',
-                        'bg-right': position == 'right',
-                        'max-md:bg-[46%]': position == 'home' && index == 1,
-                        'max-md:bg-[63%]': position == 'home' && index == 0,
-                        'bg-cover': true,
-                        'bg-no-repeat': true,
-                        'w-full': true,
-                        'h-full': true
-                    }"
-                    :style="{
-                        backgroundImage: `url('/images/banner/${image}')`
-                        
-                    }"
-                    alt=""
-                    ></div>
-                </SwiperSlide>
-            </Swiper>
-        </div>
-        </div>
-        <div ref="bannerContent" class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
-            <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
-            !h-full" :src="image" alt=""> -->
-            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full relative" :src="image" alt="" loading="lazy">
-
-            <h1 class="banner-title" v-html="props.title"></h1>
-            <template v-if="props.text != ''">
-                <p class="banner-text">{{ props.text }}</p>
-            </template>
-        </div>
-    </div>
-</template>
-
 <script setup lang="ts">
 import type { Ref } from "vue";
 import type { Banner } from "~/core/types";
@@ -58,35 +6,43 @@ import type { Swiper as SwiperInstance } from 'swiper';
 const modules = [SwiperAutoplay, SwiperNavigation, SwiperPagination];
 
 const props = defineProps({
-    title:{
-        type:String,
-        default:''
-    },
-    text:{
-        type:String,
-        default:''
-    },
-    src:{
-        type:String,
-        default:''
-    },
-    image:{
-        type:String,
-        default:''
-    },
-    showImage: {
+  link:{
+    type:String,
+    default:''
+  },
+  title:{
+    type:String,
+    default:''
+  },
+  text:{
+    type:String,
+    default:''
+  },
+  src:{
+    type:String,
+    default:''
+  },
+  image:{
+    type:String,
+    default:''
+  },
+  showImage: {
     type: Boolean,
     default: false
-    },
-    hidden:{
-        type:Boolean,
-        default:false
-    },
-    position:{
-        type:String,
-        default:undefined
-    },
-    images: {
+  },
+  hidden:{
+    type:Boolean,
+    default:false
+  },
+  position:{
+    type:String,
+    default:undefined
+  },
+  buttonText:{
+    type:String,
+    default: ''
+  },
+  images: {
     type:Array,
     default:[]
   },
@@ -118,18 +74,74 @@ const scrollOpacity:() => void = ():void => {
 
 onMounted(() => {
 
-    // console.log(swiperRef.value)
-    if (bannerContent.value) {
-        bannerSingle.value = bannerContent.value.offsetTop;
-        bannerTextHeight.value = bannerContent.value.clientHeight;
-        window.addEventListener("scroll", scrollOpacity);
-    }
+  // console.log(swiperRef.value)
+  if (bannerContent.value) {
+    bannerSingle.value = bannerContent.value.offsetTop;
+    bannerTextHeight.value = bannerContent.value.clientHeight;
+    window.addEventListener("scroll", scrollOpacity);
+  }
 });
 
 onUnmounted(() => {
-    window.removeEventListener("scroll", scrollOpacity)
+  window.removeEventListener("scroll", scrollOpacity)
 });
 </script>
+
+<template>
+    <div class="container__carousel">
+        <div class="!relative ease-in-out">
+            <div class="h-screen !relative">
+            <Swiper 
+                ref="swiperRef"
+                :modules="modules"
+                :loop="true"
+                class="h-screen !fixed top-0 left-0 w-full"
+                :autoplay="{delay: 6500}"
+            >
+                <SwiperSlide
+                
+                v-for="image,index in images"
+                :key="index"
+                class="carousel__slide"
+                >
+                <div
+                    :class="{
+                        'bg-center': position == undefined || position == 'center',
+                        'bg-left': position == 'left',
+                        'bg-right': position == 'right',
+                        'max-md:bg-[46%]': position == 'home' && index == 1,
+                        'max-xl:bg-[50%]': position == 'home' && index == 0,
+                        'bg-cover': true,
+                        'bg-no-repeat': true,
+                        'w-full': true,
+                        'h-full': true
+                    }"
+                    :style="{
+                        backgroundImage: `url('/images/banner/${image}')`
+                        
+                    }"
+                    alt=""
+                    ></div>
+                </SwiperSlide>
+            </Swiper>
+        </div>
+        </div>
+        <div ref="bannerContent" class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
+            <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
+            !h-full" :src="image" alt=""> -->
+            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full relative" :src="image" alt="" loading="lazy">
+
+            <h1 class="banner-title" v-html="props.title"></h1>
+            <template v-if="props.text != ''">
+                <p class="banner-text">{{ props.text }}</p>
+            </template>
+            <NuxtLink :href="props.link"
+                      class="inline-block lg:px-28 px-20 py-3 border-4 text-xl text-nowrap !mt-7 font-bold">
+              {{ props.buttonText }}
+            </NuxtLink>
+        </div>
+    </div>
+</template>
 
 <style scoped>
 .container__carousel{
@@ -143,14 +155,13 @@ onUnmounted(() => {
 }
 .carousel__slide:after{content:''}
 .carousel__slide:after{
-    @apply !absolute !w-full !h-full !bg-black/5 !top-0 !left-0;
+    @apply !absolute !w-full !h-full !bg-black/10 !top-0 !left-0;
 }
 .content-container{
-    @apply fixed z-10 w-full mx-auto  text-white gap-[-30px] top-[50%] left-[50%]
-    pointer-events-none
+    @apply fixed z-10 max-w-[420px] mx-auto text-white top-[50%] lg:left-[250px] left-[50%]
 }
 .banner-title{
-    @apply  text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
+    @apply  text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
     leading-[40px] md:leading-[50px] lg:leading-[80px];
 }
 .banner-text{

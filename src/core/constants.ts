@@ -158,13 +158,18 @@ export const features:ReadonlyArray<Feature> = [
         svg:false
     },
     {
+        icon:'fa-solid:keyboard',
+        text:'Teclado fosco em tom carbono - Projetado para ser resistente a marcas de digitais.',
+        svg:false
+    },
+    {
         icon:'game-icons:door-handle',
         text:'Maçaneta reversível',
         svg:false
     },
     {
         icon:'fa6-solid:cloud-showers-water',
-        text:'IP66 - Boa proteção contra água e poeira',
+        text:'IP66 - Proteção contra água e poeira',
         svg:false,
     },
     {

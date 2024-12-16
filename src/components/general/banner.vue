@@ -90,14 +90,13 @@ function scrollOpacity(){
     @apply absolute w-full h-full bg-black/5 top-0 left-0;
 }
 .content-container{
-    @apply fixed z-10 w-full mx-auto  text-white gap-[-30px] top-[50%] left-[50%]
-    pointer-events-none
+    @apply fixed z-10  mx-auto  text-white  bottom-[20%] lg:left-[330px] left-[50%]
 }
 .banner-title{
-  @apply text-center max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
+  @apply text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
   leading-[40px] md:leading-[50px] lg:leading-[80px];
 }
 .banner-text{
-    @apply w-full text-lg lg:text-2xl text-center ;
+    @apply w-full text-lg lg:text-2xl text-left;
 }
 </style>

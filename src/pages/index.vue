@@ -15,14 +15,13 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']" title="Proteção e Elegância"
-                    position="home"/>
+        <MyCarousel :images="['bg-home.png']" title="Elegância <br> e Sofisticação"
+                    buttonText="DESCUBRA" link="/colecao-signature"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-
                         <figure>
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
