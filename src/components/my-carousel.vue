@@ -93,8 +93,8 @@ onUnmounted(() => {
 
 <template>
     <div class="container__carousel" :class="{
-      'h-[80vh] lg:h-screen': props.isHome,
-      'h-screen': !props.isHome
+      'h-[80vh] lg:h-screen': isHome,
+      'h-screen': !isHome
     }">
         <div class="!relative ease-in-out">
             <div class="!relative">
@@ -145,7 +145,7 @@ onUnmounted(() => {
             <template v-if="props.text != ''">
                 <p class="banner-text">{{ props.text }}</p>
             </template>
-            <NuxtLink :href="props.link"
+            <NuxtLink v-if="!isHome" :href="props.link"
                       class="inline-block lg:px-28 px-20 py-3 border-4 text-xl text-nowrap !mt-7 font-bold">
               {{ props.buttonText }}
             </NuxtLink>

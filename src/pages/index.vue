@@ -22,7 +22,7 @@
             <div class="col-span-1 relative">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <figure class="w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[53.7%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
+                        <figure class="w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
                                 src="/images/FechaduraDuplaHome.png"
@@ -30,7 +30,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <TextH2Title class="text-center lg:hidden mt-[10rem]">Fechadura Digital Elekro</TextH2Title>
+                        <TextH2Title class="text-center lg:hidden mt-[6rem]">Fechadura Digital Elekro</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
                       <div class="flex gap-4 justify-center mt-7">
