@@ -2,7 +2,7 @@
 <!--  <div v-if="data" class="lg:flex flex-wrap justify-evenly max-xl:mx-auto">-->
 <!--    <div v-if="data.posts" class="max-w-[700px] max-lg:mx-auto">-->
 <!--      <div v-for="([slug]) in data.posts" :key="[slug].slug" class="mb-8">-->
-<!--        <NuxtLink :to="'/updates/[slug]/' + [slug].slug">-->
+<!--        <NuxtLink :to="'/insights/[slug]/' + [slug].slug">-->
 <!--          <div class="px-4">-->
 <!--            <div class="w-full h-full">-->
 <!--              <NuxtImg v-if="[slug].thumbnail" :src="[slug].thumbnail" :alt="[slug].title" fit="cover" class="w-full h-full"/>-->
@@ -10,7 +10,7 @@
 <!--            </div>-->
 <!--            <div class="border p-10">-->
 <!--              <div class="flex flex-col gap-3">-->
-<!--                <NuxtLink :to="`/updates/categories/${[slug].categories[0].slug}`" @click.stop>-->
+<!--                <NuxtLink :to="`/insights/categories/${[slug].categories[0].slug}`" @click.stop>-->
 <!--                  <text-h4-sub-title>{{ [slug].categories[0].name }}</text-h4-sub-title>-->
 <!--                </NuxtLink>-->
 <!--                <text-h2-title>{{ [slug].title }}</text-h2-title>-->
@@ -25,7 +25,7 @@
 <!--                <div >-->
 <!--                  <ul class="flex gap-1 list-none">-->
 <!--                    <li v-for="(tag,index) in [slug].tags" :key="tag.slug">-->
-<!--                      <NuxtLink :to="`/updates/tags/${tag.slug}`" @click.stop>-->
+<!--                      <NuxtLink :to="`/insights/tags/${tag.slug}`" @click.stop>-->
 <!--                        {{tag.name}}<span v-if="index !== [slug].tags.length - 1">, </span>-->
 <!--                      </NuxtLink>-->
 <!--                    </li>-->

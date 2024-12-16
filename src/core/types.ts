@@ -186,7 +186,7 @@ export type MyLink = {
     reverse: boolean;
 }
 
-//interfaces updates
+//interfaces insights
 
 //Requests
 export interface IGeneric {
