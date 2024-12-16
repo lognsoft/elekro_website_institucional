@@ -57,7 +57,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
+            <h2 class="titleh2 max-lg:text-center">Desempenho Inteligente:<br class="lg:block hidden">Menu Guiado, Alertas e Autonomia</h2>
             <Popup 
             titulo-p="Criptografia avançada e segurança" 
             titulo="WI-FI INTEGRADO"
