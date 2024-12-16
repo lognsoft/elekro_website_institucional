@@ -196,37 +196,37 @@ export const features:ReadonlyArray<Feature> = [
     },
     {
         icon:'fa:wifi',
-        text:'Esqueça os gateways: sem necessidade de dispositivos adicionais, com Wi-Fi integrado',
+        text:'Esqueça os gateways: sem necessidade de dispositivos adicionais, com Wi-Fi integrado.',
         svg:false
     },
     {
         icon:'mingcute:volume-mute-fill',
-        text:'Modo silencioso: para maior comodidade',
+        text:'Modo silencioso: para maior comodidade.',
         svg:false
     },
     {
         icon:'game-icons:door-handle',
-        text:'Maçaneta reversível: escolha o lado direito ou esquerdo da porta',
+        text:'Maçaneta reversível: escolha o lado direito ou esquerdo da porta.',
         svg:false
     },
     {
         icon:'teenyicons:password-solid',
-        text:'Cadastre até 200 acessos personalizados: (biometria e senhas)',
+        text:'Cadastre até 200 acessos personalizados: (biometria e senhas).',
         svg:false
     },
     {
         icon:'fa-solid:key',
-        text:'Chave mecânica: para uso em caso de falta de bateria nas pilhas',
+        text:'Chave mecânica: para uso em caso de falta de bateria nas pilhas.',
         svg:false
     },
     {
         icon:'bi:usb-c-fill',
-        text:'Energize a fechadura: via entrada USB-C em caso de falta de bateria nas pilhas',
+        text:'Energize a fechadura: via entrada USB-C em caso de falta de bateria nas pilhas.',
         svg:false
     },
     {
         icon:'ri:contract-fill',
-        text:'Fácil de instalar e configurar: compatível com portas de espessura entre 35 e 85 mm, padrão ABNT',
+        text:'Fácil de instalar e configurar: compatível com portas de espessura entre 35 e 85 mm, padrão ABNT.',
         svg:false
     },
     // Nova ordem ^
@@ -234,7 +234,7 @@ export const features:ReadonlyArray<Feature> = [
 
     {
         icon:'<svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192.756 192.756"><path d="M64.363 133.648c-17.218 0-31.24-14.021-31.24-31.191 0-17.218 14.022-31.239 31.24-31.239 17.17 0 31.192 14.021 31.192 31.239 0 17.17-14.022 31.191-31.192 31.191z" fill-rule="evenodd" clip-rule="evenodd"/><path d="M154.696 133.744c18.22-42.543 14.213-85.086-12.258-102.256-25.135-16.311-62.766-5.056-93.386 24.896 20.031-15.405 42.686-19.555 56.519-8.394 17.646 14.164 13.83 48.123-8.586 75.833-2.91 3.576-6.057 6.914-9.253 10.064l66.964-.143z" fill-rule="evenodd" clip-rule="evenodd"/></svg>',
-        text:'Certificação Anatel: garantindo qualidade e confiabilidade',
+        text:'Certificação Anatel: garantindo qualidade e confiabilidade.',
         svg:true
     },
     // {

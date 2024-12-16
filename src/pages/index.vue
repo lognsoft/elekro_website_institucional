@@ -15,14 +15,14 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :images="['bg-home.png']" title="Elegância <br> e Sofisticação"
+        <MyCarousel :isHome="true" :images="['bg-home.png']" title="Elegância <br> e Sofisticação"
                     buttonText="DESCUBRA" link="/colecao-signature"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
-        <section class="grid grid-cols-1 lg:grid-cols-2  relative z-20 !py-0">
-            <div class="col-span-1 relative bottom-[40%] sm:bottom-[45%] lg:static">
+        <section class="grid grid-cols-1 lg:grid-cols-2  relative z-20 !pt-0">
+            <div class="col-span-1 relative">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <figure>
+                        <figure class="w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[53.7%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
                                 src="/images/FechaduraDuplaHome.png"
@@ -30,8 +30,8 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <TextH2Title class="text-center lg:hidden">Fechadura Digital Elekro, Coleção</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature, Milão</TextH4SubTitle>
+                        <TextH2Title class="text-center lg:hidden mt-[10rem]">Fechadura Digital Elekro</TextH2Title>
+                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
                       <div class="flex gap-4 justify-center mt-7">
                           <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block">Saiba mais</MyButtonTwo>
@@ -43,11 +43,11 @@
                     </div>
                 </div>
             </div>
-            <div class="text-black col-span-1 relative -top-[230px] sm:-top-[300px] lg:static">
+            <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block">Fechadura Digital Elekro, Coleção</TextH2Title>
-                        <TextH4SubTitle class="text-center hidden lg:block !text-xl">Signature, Milão</TextH4SubTitle>
+                        <TextH2Title class="text-center hidden lg:block">Fechadura Digital Elekro</TextH2Title>
+                        <TextH4SubTitle class="text-center hidden lg:block !text-xl">Coleção Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
@@ -60,6 +60,7 @@
                             </template>
                             
                         </ul>
+                        <TextH4SubTitle class="text-center block lg:hidden !text-xl pt-[28px]">Tecnologia inteligente para sua casa ou escritório na palma da mão</TextH4SubTitle>
                         <div class="text-center my-7 gap-4 flex justify-center">
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>

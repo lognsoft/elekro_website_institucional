@@ -6,6 +6,10 @@ import type { Swiper as SwiperInstance } from 'swiper';
 const modules = [SwiperAutoplay, SwiperNavigation, SwiperPagination];
 
 const props = defineProps({
+  isHome:{
+    type: Boolean,
+    default: false
+  },
   link:{
     type:String,
     default:''
@@ -88,7 +92,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="container__carousel">
+    <div class="container__carousel" :class="{
+      'h-[80vh] lg:h-screen': props.isHome,
+      'h-screen': !props.isHome
+    }">
         <div class="!relative ease-in-out">
             <div class="!relative">
             <Swiper 
@@ -126,9 +133,12 @@ onUnmounted(() => {
             </Swiper>
         </div>
         </div>
-        <div ref="bannerContent" class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
-            <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
-            !h-full" :src="image" alt=""> -->
+        <div ref="bannerContent" class="content-container" :class="{
+          'hidden md:block':hidden,
+          'top-[40%] sm:top-[35%] lg:top-[50%]': isHome,
+          'top-[50%]': !isHome,
+        }"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
+
             <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full relative" :src="image" alt="" loading="lazy">
 
             <h1 class="banner-title" v-html="props.title"></h1>
@@ -145,7 +155,7 @@ onUnmounted(() => {
 
 <style scoped>
 .container__carousel{
-    @apply h-[80vh] lg:h-screen w-full
+    @apply  w-full
 }
 .carousel__slide{
     @apply h-full !w-full !flex !items-center !overflow-hidden -z-10;
@@ -155,10 +165,10 @@ onUnmounted(() => {
 }
 .carousel__slide:after{content:''}
 .carousel__slide:after{
-    @apply !absolute !w-full !h-full !bg-black/10 !top-0 !left-0;
+    @apply !absolute !w-full !h-full !bg-black/50 !top-0 !left-0;
 }
 .content-container{
-    @apply fixed z-10 max-w-[420px] mx-auto text-white top-[40%] sm:top-[35%] lg:top-[50%] lg:left-[250px] left-[50%]
+    @apply fixed z-10 max-w-[420px] mx-auto text-white lg:left-[250px] left-[50%]
 }
 .banner-title{
     @apply  text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
