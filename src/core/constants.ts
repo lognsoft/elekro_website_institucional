@@ -169,7 +169,7 @@ export const features:ReadonlyArray<Feature> = [
     },
     {
         icon:'fa6-solid:cloud-showers-water',
-        text:'IP66 - Boa proteção contra água e poeira',
+        text:'IP66 - Proteção contra água e poeira',
         svg:false,
     },
     {
