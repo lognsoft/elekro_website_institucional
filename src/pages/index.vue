@@ -22,8 +22,7 @@
             <div class="col-span-1">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature</TextH4SubTitle>
+
                         <figure>
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
@@ -32,6 +31,8 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
+                        <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
+                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature</TextH4SubTitle>
                         <!-- <figure class="col-span-1 md:hidden">
                             <img
                                 class="w-auto h-full max-h-[690px] mx-auto object-cover"
