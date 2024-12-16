@@ -30,7 +30,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
+                        <TextH2Title class="text-center lg:hidden">Fechadura Digital Elekro, Coleção</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature, Milão</TextH4SubTitle>
 
                       <div class="flex gap-4 justify-center mt-7">
@@ -46,7 +46,7 @@
             <div class="text-black col-span-1 relative -top-[230px] sm:-top-[300px] lg:static">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block">Coleção</TextH2Title>
+                        <TextH2Title class="text-center hidden lg:block">Fechadura Digital Elekro, Coleção</TextH2Title>
                         <TextH4SubTitle class="text-center hidden lg:block !text-xl">Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
