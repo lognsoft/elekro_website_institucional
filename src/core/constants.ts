@@ -125,118 +125,143 @@ export const infos:ReadonlyArray<Info> = [
     },
 ]
 
+
+// 1.	Ideal para áreas externas: faça chuva ou sol, sua durabilidade está garantida com proteção reforçada IP66
+// 2.	Campainha digital: atenda e libere a entrada de qualquer lugar
+// 3.	Chega de chaves: use o APP, senha, biometria ou chaveiro tag para acessar
+// 4.	Segurança em dobro: com verificação em duas etapas
+// 5.	Teclado fosco em tom carbono: resistente a marcas de digitais
+// 6.	Compartilhe senhas temporárias: para visitantes sem expor sua senha real
+// 7.	Trava de privacidade: para maior segurança
+// 8.	Abra sua porta em segundos: com biometria de alta precisão
+// 9.	Processador de alto desempenho: para respostas rápidas e confiáveis
+// 10.	Esqueça os gateways: sem necessidade de dispositivos adicionais, com Wi-Fi integrado
+// 11.	Modo silencioso: para maior comodidade
+// 12.	Menu guiado por áudio em português: para configuração prática e intuitiva
+// 13.	Maçaneta reversível: escolha o lado direito ou esquerdo da porta
+// 14.	Cadastre até 200 acessos personalizados: (biometria e senhas)
+// 15.	Chave mecânica: para uso em caso de falta de bateria nas pilhas
+// 16.	Energize a fechadura: via entrada USB-C em caso de falta de bateria nas pilhas
+// 17.	Fácil de instalar e configurar: compatível com portas de espessura entre 35 e 85 mm, padrão ABNT
+
+
+// 18.	Certificação Anatel: garantindo qualidade e confiabilidade
+
 //página home
 export const features:ReadonlyArray<Feature> = [
     {
-        icon:'mdi:shield-lock',
-        text:'Fechadura de embutir para portas de madeira com espessura entre 35 e 85 mm.',
-        svg:false
-    },
-    {
-        icon:'ri:contract-fill',
-        text:'Padrão ABNT',
-        svg:false
-    },
-    {
-        icon:'<svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192.756 192.756"><path d="M64.363 133.648c-17.218 0-31.24-14.021-31.24-31.191 0-17.218 14.022-31.239 31.24-31.239 17.17 0 31.192 14.021 31.192 31.239 0 17.17-14.022 31.191-31.192 31.191z" fill-rule="evenodd" clip-rule="evenodd"/><path d="M154.696 133.744c18.22-42.543 14.213-85.086-12.258-102.256-25.135-16.311-62.766-5.056-93.386 24.896 20.031-15.405 42.686-19.555 56.519-8.394 17.646 14.164 13.83 48.123-8.586 75.833-2.91 3.576-6.057 6.914-9.253 10.064l66.964-.143z" fill-rule="evenodd" clip-rule="evenodd"/></svg>',
-        text:'Selo anatel',
-        svg:true
-    },
-    {
-        icon:'fa:wifi',
-        text:'Wi-Fi 2.4',
-        svg:false
-    },
-    {
-        icon:'fa:bell',
-        text:'Campainha digital',
-        svg:false
-    },
-    {
-        icon:'fa:shield',
-        text:'Verificação em duas etapas',
-        svg:false
-    },
-    {
-        icon:'fa-solid:keyboard',
-        text:'Teclado fosco em tom carbono - Projetado para ser resistente a marcas de digitais.',
-        svg:false
-    },
-    {
-        icon:'game-icons:door-handle',
-        text:'Maçaneta reversível',
-        svg:false
-    },
-    {
         icon:'fa6-solid:cloud-showers-water',
-        text:'IP66 - Proteção contra água e poeira',
+        text:'Ideal para áreas externas: faça chuva ou sol, sua durabilidade está garantida com proteção reforçada IP66.',
         svg:false,
     },
     {
-        icon:'game-icons:metal-bar',
-        text:'Alumínio - Tratamento anticorrosivo',
+        icon:'fa:bell',
+        text:'Campainha digital: atenda e libere a entrada de qualquer lugar.',
         svg:false
     },
     {
         icon:'fluent:phone-tablet-20-filled',
-        text:'Gestão de abertura via aplicativo',
+        text:'Chega de chaves: use o APP, senha, biometria ou chaveiro tag para acessar.',
         svg:false
     },
     {
-        icon:'mingcute:volume-mute-fill',
-        text:'Modo silencioso',
+        icon:'fa:shield',
+        text:'Segurança em dobro: com verificação em duas etapas.',
         svg:false
     },
     {
-        icon:'ic:sharp-do-disturb-on',
-        text:'Modo não perturbe',
-        svg:false,
-    },
-    {
-        icon:'material-symbols:notifications-unread-rounded',
-        text:'Notificação em tempo real',
-        svg:false,
+        icon:'fa-solid:keyboard',
+        text:'Teclado fosco em tom carbono: resistente a marcas de digitais.',
+        svg:false
     },
     {
         icon:'teenyicons:password-solid',
-        text:'Senhas dinâmicas',
+        text:'Compartilhe senhas temporárias: para visitantes sem expor sua senha real.',
         svg:false,
+    },
+    {
+        icon:'mdi:shield-lock',
+        text:'Trava de privacidade: para maior segurança.',
+        svg:false
     },
     {
         icon:'fa-solid:fingerprint',
-        text:'Até 100 cadastros de biometria',
-        svg:false
-    },
-    {
-        icon:'teenyicons:password-solid',
-        text:'Até 100 cadastros de senhas numéricas',
-        svg:false
-    },
-    {
-        icon:'fa-solid:key',
-        text:'Acesso através de chave mestra',
-        svg:false
-    },
-    {
-        icon:'mdi:card',
-        text:'Acesso através de tag',
-        svg:false
-    },
-    {
-        icon:'game-icons:battery-100',
-        text:'Alimentação via pilhas AA',
-        svg:false
-    },
-    {
-        icon:'bi:usb-c-fill',
-        text:'USB C',
+        text:'Abra sua porta em segundos: com biometria de alta precisão.',
         svg:false
     },
     {
         icon:'basil:processor-solid',
-        text:'Processador de alto desempenho',
+        text:'Processador de alto desempenho: para respostas rápidas e confiáveis.',
         svg:false
     },
+    {
+        icon:'fa:wifi',
+        text:'Esqueça os gateways: sem necessidade de dispositivos adicionais, com Wi-Fi integrado',
+        svg:false
+    },
+    {
+        icon:'mingcute:volume-mute-fill',
+        text:'Modo silencioso: para maior comodidade',
+        svg:false
+    },
+    {
+        icon:'game-icons:door-handle',
+        text:'Maçaneta reversível: escolha o lado direito ou esquerdo da porta',
+        svg:false
+    },
+    {
+        icon:'teenyicons:password-solid',
+        text:'Cadastre até 200 acessos personalizados: (biometria e senhas)',
+        svg:false
+    },
+    {
+        icon:'fa-solid:key',
+        text:'Chave mecânica: para uso em caso de falta de bateria nas pilhas',
+        svg:false
+    },
+    {
+        icon:'bi:usb-c-fill',
+        text:'Energize a fechadura: via entrada USB-C em caso de falta de bateria nas pilhas',
+        svg:false
+    },
+    {
+        icon:'ri:contract-fill',
+        text:'Fácil de instalar e configurar: compatível com portas de espessura entre 35 e 85 mm, padrão ABNT',
+        svg:false
+    },
+    // Nova ordem ^
+
+
+    {
+        icon:'<svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192.756 192.756"><path d="M64.363 133.648c-17.218 0-31.24-14.021-31.24-31.191 0-17.218 14.022-31.239 31.24-31.239 17.17 0 31.192 14.021 31.192 31.239 0 17.17-14.022 31.191-31.192 31.191z" fill-rule="evenodd" clip-rule="evenodd"/><path d="M154.696 133.744c18.22-42.543 14.213-85.086-12.258-102.256-25.135-16.311-62.766-5.056-93.386 24.896 20.031-15.405 42.686-19.555 56.519-8.394 17.646 14.164 13.83 48.123-8.586 75.833-2.91 3.576-6.057 6.914-9.253 10.064l66.964-.143z" fill-rule="evenodd" clip-rule="evenodd"/></svg>',
+        text:'Certificação Anatel: garantindo qualidade e confiabilidade',
+        svg:true
+    },
+    // {
+    //     icon:'game-icons:metal-bar',
+    //     text:'Alumínio - Tratamento anticorrosivo',
+    //     svg:false
+    // },
+    // {
+    //     icon:'ic:sharp-do-disturb-on',
+    //     text:'Modo não perturbe',
+    //     svg:false,
+    // },
+    // {
+    //     icon:'material-symbols:notifications-unread-rounded',
+    //     text:'Notificação em tempo real',
+    //     svg:false,
+    // },
+    // {
+    //     icon:'mdi:card',
+    //     text:'Acesso através de tag',
+    //     svg:false
+    // },
+    // {
+    //     icon:'game-icons:battery-100',
+    //     text:'Alimentação via pilhas AA',
+    //     svg:false
+    // },
     
 ]
 

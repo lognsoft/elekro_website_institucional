@@ -18,8 +18,8 @@
         <MyCarousel :images="['bg-home.png']" title="Elegância <br> e Sofisticação"
                     buttonText="DESCUBRA" link="/colecao-signature"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
-        <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
-            <div class="col-span-1">
+        <section class="grid grid-cols-1 lg:grid-cols-2  relative z-20 !py-0">
+            <div class="col-span-1 relative bottom-[40%] sm:bottom-[45%] lg:static">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
                         <figure>
@@ -32,22 +32,10 @@
                         </figure>
                         <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature, Milão</TextH4SubTitle>
-                        <!-- <figure class="col-span-1 md:hidden">
-                            <img
-                                class="w-auto h-full max-h-[690px] mx-auto object-cover"
-                                src="/images/home/fechaduraunica.png"
-                                srcset="/images/home/fechaduraunica.png"
-                                alt="Maçaneta preta de frente"
-                            />
-                        </figure> -->
-                        <!-- <MyLinkTwo :icon="false" class="
-                            mt-7 hidden lg:inline-block my-link
-                            " 
-                            href="/elekro-one-plus"
-                        >Saiba mais</MyLinkTwo> -->
+
                       <div class="flex gap-4 justify-center mt-7">
                           <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block">Saiba mais</MyButtonTwo>
-                        <MyButtonTwo
+                          <MyButtonTwo
                             href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
                             target="_blank" class="hidden lg:inline-block">Comprar</MyButtonTwo>
                       </div>
@@ -55,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-black col-span-1">
+            <div class="text-black col-span-1 relative -top-[230px] sm:-top-[300px] lg:static">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
                         <TextH2Title class="text-center hidden lg:block">Coleção</TextH2Title>
@@ -78,14 +66,10 @@
                             <MyButtonTwo
                                 href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
                                 target="_blank" class="lg:hidden inline-block">Comprar</MyButtonTwo>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
     </main>
 </template>

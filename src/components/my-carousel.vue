@@ -90,12 +90,12 @@ onUnmounted(() => {
 <template>
     <div class="container__carousel">
         <div class="!relative ease-in-out">
-            <div class="h-screen !relative">
+            <div class="!relative">
             <Swiper 
                 ref="swiperRef"
                 :modules="modules"
                 :loop="true"
-                class="h-screen !fixed top-0 left-0 w-full"
+                class="!h-full !fixed top-0 left-0 w-full"
                 :autoplay="{delay: 6500}"
             >
                 <SwiperSlide
@@ -145,20 +145,20 @@ onUnmounted(() => {
 
 <style scoped>
 .container__carousel{
-    @apply h-screen w-full
+    @apply h-[80vh] lg:h-screen w-full
 }
 .carousel__slide{
-    @apply h-screen !w-full !flex !items-center !overflow-hidden -z-10;
+    @apply h-full !w-full !flex !items-center !overflow-hidden -z-10;
 }
 .carousel__slide img{
-    @apply !w-full !h-screen !fixed !top-0 !left-0 !appearance-none !object-cover;
+    @apply !w-full !h-full !fixed !top-0 !left-0 !appearance-none !object-cover;
 }
 .carousel__slide:after{content:''}
 .carousel__slide:after{
     @apply !absolute !w-full !h-full !bg-black/10 !top-0 !left-0;
 }
 .content-container{
-    @apply fixed z-10 max-w-[420px] mx-auto text-white top-[50%] lg:left-[250px] left-[50%]
+    @apply fixed z-10 max-w-[420px] mx-auto text-white top-[40%] sm:top-[35%] lg:top-[50%] lg:left-[250px] left-[50%]
 }
 .banner-title{
     @apply  text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
