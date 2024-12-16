@@ -30,12 +30,12 @@ import Popup from "~/components/popup.vue";
 
     <section class="pt-0 z-10 lg:h-screen relative lg:overflow-hidden">
       <img 
-        class="max-sm:w-[90%] sm:h-[40%] lg:hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
+        class="max-sm:w-[90%] sm:h-[40%] hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
         src="/images/fechadura-dupla.png" 
         alt="Fechadura" 
       />
 
-      <div class="flex flex-col pt-56 lg:pt-24 lg:overflow-hidden">
+      <div class="flex flex-col pt-14 pt-24 lglg:overflow-hidden">
         <div class="max-w-[800px] mx-auto flex-grow text-center">
           <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
           <p>Milão / Itália</p>
@@ -57,7 +57,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center">Desempenho Inteligente:<br class="lg:block hidden">Menu Guiado, Alertas e Autonomia</h2>
+            <h2 class="titleh2 max-lg:text-center">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
             <Popup 
             titulo-p="Criptografia avançada e segurança" 
             titulo="WI-FI INTEGRADO"
@@ -307,9 +307,9 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center">Gerenciamento completo <br> Smart Life na palma da mão</h2>
+            <h2 class="titleh2 max-lg:text-center">Configuração Descomplicada:<br class="lg:block hidden">Segurança Inteligente em Minutos</h2>
             <Popup
-            titulo-p="Gerenciamento completo Smart Life na palma da mão" 
+            titulo-p="Gerenciamento completo Smart Life na palma da mão"
             titulo="CONFIGURAÇÃO DE VOLUME"
             texto="Silencie os alertas de voz da fechadura para maior conforto."
             titulo2="MENU EFICIENTE NA FECHADURA"
