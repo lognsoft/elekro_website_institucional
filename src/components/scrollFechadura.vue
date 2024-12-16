@@ -19,6 +19,7 @@
               <!-- <img class="xl:w-[60%] w-[80%] " src="/images/elekro-one/titulohome.png" alt=""> -->
               <img class="xl:w-[60%] w-[80%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt="">
             <MyButtonTwo
+                class="hidden lg:inline-block"
                 href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
                 target="_blank">Comprar</MyButtonTwo>
 

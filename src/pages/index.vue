@@ -31,7 +31,7 @@
                             />
                         </figure>
                         <TextH2Title class="text-center lg:hidden">Coleção</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature</TextH4SubTitle>
+                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Signature, Milão</TextH4SubTitle>
                         <!-- <figure class="col-span-1 md:hidden">
                             <img
                                 class="w-auto h-full max-h-[690px] mx-auto object-cover"
