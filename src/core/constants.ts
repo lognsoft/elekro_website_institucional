@@ -38,7 +38,7 @@ export const rotas:ReadonlyArray<Route> = [
         pathName: "Sobre a Elekro",
     },
     {
-        path: "/updates",
+        path: "/insights",
         pathName: "Updates",
     },
     {
