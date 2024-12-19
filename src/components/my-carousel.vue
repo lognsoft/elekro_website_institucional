@@ -92,10 +92,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="container__carousel" :class="{
-      'h-[80vh] lg:h-screen': isHome,
-      'h-screen': !isHome
-    }">
+    <div class="container__carousel h-screen"> <!--:class="{'h-[80vh] lg:h-screen': isHome,'h-screen': !isHome}"-->
         <div class="!relative ease-in-out">
             <div class="!relative">
             <Swiper 

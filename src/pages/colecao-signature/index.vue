@@ -307,7 +307,7 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center">Configuração Descomplicada:<br class="lg:block hidden">Segurança Inteligente em Minutos</h2>
+            <h2 class="titleh2 max-lg:text-center">Configuração Descomplicada: <br class="lg:block hidden">Segurança Inteligente em Minutos</h2>
             <Popup
             titulo-p="Gerenciamento completo Smart Life na palma da mão"
             titulo="CONFIGURAÇÃO DE VOLUME"
