@@ -92,7 +92,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="container__carousel h-screen"> <!--:class="{'h-[80vh] lg:h-screen': isHome,'h-screen': !isHome}"-->
+    <div class="container__carousel h-screen min-h-[700px]"> <!--:class="{'h-[80vh] lg:h-screen': isHome,'h-screen': !isHome}"-->
         <div class="!relative ease-in-out">
             <div class="!relative">
             <Swiper 
@@ -136,7 +136,7 @@ onUnmounted(() => {
           'top-[50%]': !isHome,
         }"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
 
-            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full relative" :src="image" alt="" loading="lazy">
+            <img v-if="showImage" class="w-full h-full min-h-[700px] object-cover relative" :src="image" alt="" loading="lazy">
 
             <h1 class="banner-title" v-html="props.title"></h1>
             <template v-if="props.text != ''">
