@@ -162,7 +162,7 @@ onUnmounted(() => {
 }
 .carousel__slide:after{content:''}
 .carousel__slide:after{
-    @apply !absolute !w-full !h-full !bg-black/15 !top-0 !left-0;
+    @apply !absolute !w-full !h-full !bg-black/10 !top-0 !left-0;
 }
 .content-container{
     @apply fixed z-10 max-w-[420px] mx-auto text-white lg:left-[250px] left-[50%]

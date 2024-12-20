@@ -22,7 +22,7 @@
             <div class="col-span-1 relative">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <figure class="w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[97%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
+                        <figure class="w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
                                 src="/images/FechaduraDuplaHome.png"
