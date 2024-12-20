@@ -607,7 +607,7 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="flex flex-col gap-3 pt-10">
                 <h4 class="titleh4 ">Número de <br> usuários</h4>
-                <p class="text-sm">100</p>
+                <p class="text-sm">200</p>
               </div>
             </div>
             <div class="grid md:grid-cols-4 grid-cols-2 border-b border-[#e4e3e3] pb-10 pt-10">
