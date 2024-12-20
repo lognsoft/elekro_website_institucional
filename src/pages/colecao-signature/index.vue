@@ -35,7 +35,7 @@ import Popup from "~/components/popup.vue";
         alt="Fechadura" 
       />
 
-      <div class="flex flex-col pt-14 pt-24 lglg:overflow-hidden">
+      <div class="flex flex-col pt-14 lg:pt-24 lglg:overflow-hidden">
         <div class="max-w-[800px] mx-auto flex-grow text-center">
           <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
           <p>Milão / Itália</p>
