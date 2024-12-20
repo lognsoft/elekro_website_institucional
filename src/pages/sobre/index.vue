@@ -22,13 +22,15 @@
         <div class="text-base mb-6">
           <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
             <p class="mb-2">
-              <span
+              <!-- <span
                 class="quote"
                 data-aos="fade-up"
                 data-aos-delay="1000"
                 data-aos-duration="1000"
                 ><Icon name="bi:quote" /></span
-              >Nos últimos 10 anos, a Elekro tem sido o parceiro estratégico de grandes corporações globais, desenvolvendo tecnologias customizadas e fornecendo soluções OEM de alta performance para setores como automotivo, IoT e mercados conectados. Com expertise em inteligência artificial, veículos elétricos e sistemas integrados, a Elekro construiu uma reputação sólida como catalisadora de avanços tecnológicos.
+              > -->
+              
+              Nos últimos 10 anos, a Elekro tem sido o parceiro estratégico de grandes corporações globais, desenvolvendo tecnologias customizadas e fornecendo soluções OEM de alta performance para setores como automotivo, IoT e mercados conectados. Com expertise em inteligência artificial, veículos elétricos e sistemas integrados, a Elekro construiu uma reputação sólida como catalisadora de avanços tecnológicos.
               <br><br>
               Agora, com o lançamento de sua marca própria, a Elekro canaliza sua experiência para liderar com autoridade em novos mercados. Design sofisticado, tecnologia avançada e segurança inigualável são os pilares que definem nossa visão e consolidam nossa posição como referência em soluções premium.
 
