@@ -22,20 +22,13 @@
             />
           </NuxtLink>
         </div>
-        <ClientOnly>
-          <div
-            class="font-light cursor-pointer text-[15px] flex justify-center items-center"
-            @click="openNavigate"
-          >
-            <Icon class="text-2xl" name="mdi-light:menu" mode="css" />
-            <!-- <span class="text-center" v-if="navigateOpen === false" data-aos="fade-in">Menu</span>
-                        <span class="text-center" v-else data-aos="fade-in">Close</span> -->
-          </div>
-        </ClientOnly>
+        <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" ref="btnToggle">
+          <Icon class="text-2xl" name="mdi-light:menu" mode="css" />
+        </div>
       </nav>
     </div>
   </header>
-  <div class="navigate" :class="{ active: navigateOpen }">
+  <div class="navigate" ref="listRouteMenu" :class="{ active: navigateOpen }">
     <div class="navigation">
       <ul class="nav-list">
         <template v-for="(rota, index) in rotas" :key="index">
@@ -71,10 +64,14 @@ const navigateOpen: Ref<boolean> = ref(false);
 const scrollTopPage: Ref<number> = ref(0);
 const janela: Window = window as Window;
 
+const btnToggle:Ref<HTMLDivElement | null> = ref(null);
+const listRouteMenu:Ref<HTMLUListElement | null> = ref(null);
+
 onMounted(() => {
   let newValue: number = janela.document.scrollingElement?.scrollTop as number;
   scrollTopPage.value = newValue;
   janela.addEventListener("scroll", scrollingHeaderColor);
+  document.body.addEventListener("click", openNavigate);
 });
 
 const scrollingHeaderColor = (e: Event) => {
@@ -83,8 +80,23 @@ const scrollingHeaderColor = (e: Event) => {
   scrollTopPage.value = newValue;
 };
 
-const openNavigate = () => {
-  navigateOpen.value = !navigateOpen.value;
+const openNavigate = (e:Event) => {
+  if(btnToggle.value && listRouteMenu.value){
+    const clickedElement:HTMLElement = e.target as HTMLElement;
+    console.log("clicado");
+    if(btnToggle.value === clickedElement || btnToggle.value.contains(clickedElement)){
+      navigateOpen.value = !navigateOpen.value;
+      return;
+    }
+
+    if(
+      (btnToggle.value !== clickedElement || !btnToggle.value.contains(clickedElement)) &&
+      (listRouteMenu.value !== clickedElement || !listRouteMenu.value.contains(clickedElement))
+    ) {
+      navigateOpen.value = false;
+      return
+    }
+  }
 };
 
 watch(
