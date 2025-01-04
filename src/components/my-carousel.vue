@@ -110,19 +110,21 @@ onUnmounted(() => {
                 >
                 <div
                     :class="{
-                        'bg-center': position == undefined || position == 'center',
-                        'bg-left': position == 'left',
+                        // 'bg-center': position == undefined || position == 'center',
+                        // 'bg-left': position == 'left',
                         'bg-right': position == 'right',
                         'max-md:bg-[46%]': position == 'home' && index == 1,
                         'max-xl:bg-[50%]': position == 'home' && index == 0,
                         'bg-cover': true,
                         'bg-no-repeat': true,
                         'w-full': true,
-                        'h-full': true
+                        'h-full': true,
+                        'bg-center': !isHome,
+                        'bg-[61%_center] md:bg-center': isHome,
+                        
                     }"
                     :style="{
                         backgroundImage: `url('/images/banner/${image}')`
-                        
                     }"
                     alt=""
                     ></div>

@@ -15,7 +15,7 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :isHome="true" :images="['bg-home.png']" title="Tecnologia<br>Sofisticação"
+        <MyCarousel :isHome="true" :images="['bg-home-2.png']" title="Tecnologia<br>Sofisticação"
                     buttonText="DESCUBRA" link="/colecao-signature"/>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2  relative z-20 !pt-0">
