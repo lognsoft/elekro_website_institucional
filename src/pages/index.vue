@@ -30,7 +30,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <TextH2Title class="text-center lg:hidden mt-[3rem]">Fechadura Digital Elekro</TextH2Title>
+                        <TextH2Title class="text-center lg:hidden mt-[3rem]">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
                       <div class="flex gap-4 justify-center mt-7">
@@ -65,6 +65,7 @@
                             <!-- <MyLinkTwo :icon="false" class="my-link lg:hidden inline-block" href="/elekro-one-plus">Saiba mais</MyLinkTwo> -->
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
                             <MyButtonTwo
+                                :transparent="true"
                                 href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
                                 target="_blank" class="lg:hidden inline-block">Comprar</MyButtonTwo>
                         </div>
