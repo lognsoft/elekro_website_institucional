@@ -1,12 +1,12 @@
 <template>
   <section ref="section" class="relative h-[100vh]" id="fixedSection">
     <figure class="h-full w-full fixed top-0 left-0">
-      <img class="h-full object-cover max-lg:hidden w-full " src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
-      <img class="w-full object-cover h-[100vh] object-[20%] lg:hidden" src="/images/elekro-one/Signature-3.png" alt="Fundo do cabeçalho" />
+      <img class="h-full object-cover max-lg:hidden w-full " src="/images/signature-2.png" alt="Fundo do cabeçalho" />
+      <img class="w-full object-cover h-[100vh] object-[20%] lg:hidden" src="/images/signature-2.png" alt="Fundo do cabeçalho" />
     </figure>
-    <figure class="w-full h-full fixed">
+    <!-- <figure class="w-full h-full fixed">
       <img class="w-[35%] h-auto object-cover absolute xl:ml-[10%] top-1/2 -translate-y-1/2 hidden lg:block" src="/images/elekro-one/fechaduraSolo.png" alt="Duas fechaduras" />
-    </figure>
+    </figure> -->
       <div class="md:px-10 px-2 fixed z-[1] h-[100vh] w-full" >
         <div
             class="lg:ml-[49%] max-w-[1900px] flex h-full relative items-center max-lg:justify-center max-lg:text-center " >
@@ -16,7 +16,7 @@
 
               <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p> -->
               <!-- <img class="xl:w-[60%] w-[80%] " src="/images/elekro-one/titulohome.png" alt=""> -->
-            <img class="w-[95%] md:w-[60%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt="">
+            <!-- <img class="w-[95%] md:w-[60%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt=""> -->
             <MyButtonTwo
                 class="hidden"
                 href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"

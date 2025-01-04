@@ -37,7 +37,7 @@
                 <!-- <figure class="mb-1">
                     <img class="max-w-[40px] inline-block" src="/images/logo-icon.png" alt="logo" srcset="/images/logo-icon.png">
                 </figure> -->
-                <p class="font-light text-sm">Design e tecnologia, aliados à segurança.</p>
+                <p class="font-light text-sm">Tecnologia que protege, inovação que conecta</p>
                 <p class="text-[#aaaaaa] font-light text-xs">Copyright Elekro Best Price do Brasil LTDA © 2024 — Todos os direitos reservados.</p>
             </div>
         </div>

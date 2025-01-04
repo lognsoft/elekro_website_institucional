@@ -28,23 +28,23 @@ import Popup from "~/components/popup.vue";
   <main class="overflow-hidden">    
     <Scroll/>
 
-    <section class="pt-0 z-10 lg:h-screen relative lg:overflow-hidden">
+    <section class="py-0 z-10 lg:h-screen relative lg:overflow-hidden">
       <img 
         class="max-sm:w-[90%] sm:h-[40%] hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
         src="/images/fechadura-dupla.png" 
         alt="Fechadura" 
       />
 
-      <div class="flex flex-col pt-14 lg:pt-24 lglg:overflow-hidden">
-        <div class="max-w-[800px] mx-auto flex-grow text-center">
-          <h2 class="titleh2 mb-10">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
-          <p>Milão / Itália</p>
-          <MyButtonTwo class="inline-block mt-2" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/" target="_blank">Comprar</MyButtonTwo>
+      <div class="flex flex-col pt-14 lg:pt-24 lglg:overflow-hidden h-screen md:h-auto">
+        <div class="w-full max-w-[800px] mx-auto flex flex-col justify-center items-center text-center min-h-[50%] md:min-h-auto">
+          <h2 class="titleh2 mb-10 w-full">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
+          <p class="w-full">Milão / Itália</p>
+          <MyButtonTwo class="inline-block max-w-[150px] mt-2" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/" target="_blank">Comprar</MyButtonTwo>
         </div>
-        <div class="lg:pt-24 pt-14">
-          <figure>
+        <div class="lg:pt-24 pt-0 h-[100%] md:h-auto">
+          <figure class="h-full block">
             <img 
-            class="w-full h-auto object-cover" 
+            class="w-full h-full md:h-auto object-cover object-center" 
             src="/images/elekro-one/Bosco-verticale.png" 
             alt="predio bosco verticale"
             />
@@ -118,8 +118,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
             </Swiper>
             <div class="flex gap-6 lg:pt-32 pt-10 items-center">
-             <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3  items-center w-auto bg-black justify-self-start">
+              <!-- dotted -->
+             <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
              </div>
+
               <div>
                 <button class="next-button bg-[#666664] w-10 h-8 flex justify-center items-center ">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
