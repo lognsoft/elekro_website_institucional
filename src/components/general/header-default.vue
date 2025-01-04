@@ -83,7 +83,7 @@ const scrollingHeaderColor = (e: Event) => {
 const openNavigate = (e:Event) => {
   if(btnToggle.value && listRouteMenu.value){
     const clickedElement:HTMLElement = e.target as HTMLElement;
-    console.log("clicado");
+    
     if(btnToggle.value === clickedElement || btnToggle.value.contains(clickedElement)){
       navigateOpen.value = !navigateOpen.value;
       return;
@@ -118,7 +118,7 @@ watch(
   @apply text-3xl font-extrabold cursor-pointer;
 }
 .header {
-  @apply w-screen fixed text-slate-50 z-[999] duration-500  top-0 left-0;
+  @apply w-screen fixed text-slate-50 z-[999] duration-500  top-0 left-0 bg-black/80 md:bg-transparent;
 }
 .navigate {
   @apply fixed max-md:w-[290px] w-[350px] bg-black h-screen duration-700 transition-all top-0 right-[-100%] overflow-hidden

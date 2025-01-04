@@ -32,12 +32,12 @@ defineProps<ICardArticleProps>();
           <div class="border-y py-6 my-6">
             <p v-html="post.excerpt"></p>
           </div>
-          <div v-if="post.tags.length >= 1" class="flex gap-3 items-center" >
+          <div v-if="post.tags.length >= 1" class="flex gap-3 items-start" >
             <div>
               <Icon name="material-symbols:bookmarks" size="20" />
             </div>
             <div >
-              <ul class="flex gap-1 list-none">
+              <ul class="flex gap-1 list-none flex-wrap">
                 <li v-for="(tag,index) in post.tags" :key="tag.slug">
                   <NuxtLink :to="`/insights?tag[]=${tag.slug}`" @click.stop>
                     {{tag.name}}<span v-if="index !== post.tags.length - 1">, </span>

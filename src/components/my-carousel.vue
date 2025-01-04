@@ -168,7 +168,7 @@ onUnmounted(() => {
     @apply fixed z-10 max-w-[420px] mx-auto text-white lg:left-[250px] left-[50%]
 }
 .banner-title{
-    @apply  text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
+    @apply  text-center md:text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
     leading-[40px] md:leading-[50px] lg:leading-[80px];
 }
 .banner-text{
