@@ -3,8 +3,8 @@
     ref="header"
     class="header"
     :class="{
-      'bg-black/80 backdrop-blur-lg': navigateOpen || scrollTopPage > 1 || permanent ||route.path === '/insights' || route.path.startsWith('/insights'),
-      'bg-black/80 backdrop-blur-lg text-white': bgWhite,
+      'active': navigateOpen || scrollTopPage > 1 || permanent ||route.path === '/insights' || route.path.startsWith('/insights'),
+      'back-white': bgWhite,
     }"
   >
     <div class="py-5 md:px-10 pr-4 pl-3 relative z-10">
@@ -120,6 +120,20 @@ watch(
 .header {
   @apply w-screen fixed text-slate-50 z-[999] duration-500  top-0 left-0 bg-black/80 md:bg-transparent;
 }
+
+.header.back-white,
+.header.active{
+  @apply
+  backdrop-blur-lg
+  bg-black/80
+  md:bg-black/80
+}
+
+.header.back-white{
+  @apply
+  text-white
+}
+
 .navigate {
   @apply fixed max-md:w-[290px] w-[350px] bg-black h-screen duration-700 transition-all top-0 right-[-100%] overflow-hidden
   text-white

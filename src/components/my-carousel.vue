@@ -128,11 +128,11 @@ onUnmounted(() => {
                     ></div>
                 </SwiperSlide>
             </Swiper>
-        </div>
+          </div>
         </div>
         <div ref="bannerContent" class="content-container" :class="{
           'hidden md:block':hidden,
-          'top-[40%] sm:top-[35%] lg:top-[50%]': isHome,
+          'top-[50%] sm:top-[35%] lg:top-[50%]': isHome,
           'top-[50%]': !isHome,
         }"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
 

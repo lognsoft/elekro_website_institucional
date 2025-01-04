@@ -16,7 +16,7 @@
 
               <p class="banner-text left-[10%] relative after:content-['Signature'] after:absolute after:top-full after:-right-full after:font-[AustraliaSignature] after:text-6xl">Coleção</p> -->
               <!-- <img class="xl:w-[60%] w-[80%] " src="/images/elekro-one/titulohome.png" alt=""> -->
-              <img class="xl:w-[60%] w-[80%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt="">
+            <img class="w-[95%] md:w-[60%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt="">
             <MyButtonTwo
                 class="hidden"
                 href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"

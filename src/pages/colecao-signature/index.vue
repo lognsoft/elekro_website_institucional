@@ -58,16 +58,16 @@ import Popup from "~/components/popup.vue";
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
             <h2 class="titleh2 max-lg:text-center">Criptografia avançada <br class="lg:block hidden"> e segurança</h2>
-            <Popup 
-            titulo-p="Criptografia avançada e segurança" 
-            titulo="WI-FI INTEGRADO"
-            texto="Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto."
-            titulo2="CAMPAINHA DIGITAL"
-            texto2="Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real."
-            titulo3="5 FORMAS DE ABERTURA"
-            texto3="Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves"
-            titulo4="DESIGN FUNCIONAL"
-            texto4="Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag."
+            <Popup
+              titulo-p="Criptografia avançada e segurança" 
+              titulo="WI-FI INTEGRADO"
+              texto="Wi-Fi 2.4 integrado eliminando necessidade de gateway para acesso remoto."
+              titulo2="CAMPAINHA DIGITAL"
+              texto2="Autorize acessos remotos em seu celular, com a tecnologia da campainha digital e tenha acesso a todas as atividades de acesso em tempo real."
+              titulo3="5 FORMAS DE ABERTURA"
+              texto3="Aplicativo + Impressão digital + Senha + Cartão Tag + Chaves"
+              titulo4="DESIGN FUNCIONAL"
+              texto4="Facilmente adaptada para abrir tanto para o lado esquerdo, quanto direito com acesso facilitado via senhas numéricas, biométricas e tag."
             />
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 max-w-full ">
