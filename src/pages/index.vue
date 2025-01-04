@@ -38,7 +38,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <TextH2Title class="text-center lg:hidden mt-[3rem]">Fechadura Digital Wi-Fi</TextH2Title>
+                        <TextH2Title class="text-center lg:hidden mt-[3rem] font-normal">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
                       <div class="flex gap-5 justify-center mt-7 lg:mt-20">
@@ -54,7 +54,7 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block">Fechadura Digital Wi-Fi</TextH2Title>
+                        <TextH2Title class="text-center hidden lg:block font-normal">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center hidden lg:block !text-xl">Coleção Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
