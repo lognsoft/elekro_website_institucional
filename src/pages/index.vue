@@ -30,7 +30,7 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[800px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-4">
+                        <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[700px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-[45px]">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
                                 src="/images/fechadura-dupla-desktop.png"
@@ -41,7 +41,7 @@
                         <TextH2Title class="text-center lg:hidden mt-[3rem] font-normal">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
-                      <div class="flex gap-5 justify-center mt-7 lg:mt-20">
+                      <div class="flex gap-5 justify-center mt-7 lg:mt-24">
                           <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block w-full max-w-[144px]">Saiba mais</MyButtonTwo>
                           <MyButtonTwo
                             href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
