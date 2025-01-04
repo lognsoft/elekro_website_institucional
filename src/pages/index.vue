@@ -22,7 +22,7 @@
             <div class="col-span-1 relative">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
                     <div class="relative text-center mb-2 mt-[20px] lg:mb-0 lg:mt-0">
-                        <figure class="w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
+                        <figure class="inline-block lg:hidden w-full max-w-[450px] lg:max-w-full absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-0">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
                                 src="/images/FechaduraDuplaHome.png"
@@ -30,14 +30,22 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
+                        <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[800px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-4">
+                            <img
+                                class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
+                                src="/images/fechadura-dupla-desktop.png"
+                                srcset="/images/fechadura-dupla-desktop.png"
+                                alt="Maçaneta preta de frente"
+                            />
+                        </figure>
                         <TextH2Title class="text-center lg:hidden mt-[3rem]">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
-                      <div class="flex gap-4 justify-center mt-7">
-                          <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block">Saiba mais</MyButtonTwo>
+                      <div class="flex gap-5 justify-center mt-7 lg:mt-20">
+                          <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block w-full max-w-[144px]">Saiba mais</MyButtonTwo>
                           <MyButtonTwo
                             href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
-                            target="_blank" class="hidden lg:inline-block">Comprar</MyButtonTwo>
+                            target="_blank" class="hidden lg:inline-block w-full max-w-[144px]">Comprar</MyButtonTwo>
                       </div>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
                     </div>
