@@ -120,7 +120,7 @@ onUnmounted(() => {
                         'w-full': true,
                         'h-full': true,
                         'bg-center': !isHome,
-                        'bg-[61%_center] md:bg-center': isHome,
+                        'bg-[59%_center] scale-[1.33] md:bg-center md:scale-100': isHome,
                         
                     }"
                     :style="{

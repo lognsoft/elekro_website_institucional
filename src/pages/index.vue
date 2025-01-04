@@ -46,7 +46,7 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block">Fechadura Digital Elekro</TextH2Title>
+                        <TextH2Title class="text-center hidden lg:block">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center hidden lg:block !text-xl">Coleção Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
