@@ -26,7 +26,7 @@ import Popup from "~/components/popup.vue";
     <Meta name="twitter:card" content="summary_large_image"/>
   </Head>
   <main class="overflow-hidden">    
-    <Scroll/>
+    <!-- <Scroll/> -->
 
     <section class="py-0 z-10 lg:h-screen relative lg:overflow-hidden">
       <img 
@@ -35,16 +35,16 @@ import Popup from "~/components/popup.vue";
         alt="Fechadura" 
       />
 
-      <div class="flex flex-col pt-14 lg:pt-24 lglg:overflow-hidden h-screen md:h-auto">
-        <div class="w-full max-w-[800px] mx-auto flex flex-col justify-center items-center text-center min-h-[50%] md:min-h-auto">
+      <div class="flex flex-col pt-14 lg:pt-24 lg:overflow-hidden h-screen">
+        <div class="w-full max-w-[800px] mx-auto flex flex-col justify-center items-center text-center min-h-[50%]">
           <h2 class="titleh2 mb-10 w-full">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
           <p class="w-full">Milão / Itália</p>
           <MyButtonTwo class="inline-block max-w-[150px] mt-2" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/" target="_blank">Comprar</MyButtonTwo>
         </div>
-        <div class="lg:pt-24 pt-0 h-[100%] md:h-auto">
+        <div class="pt-0 h-[100%]">
           <figure class="h-full block">
             <img 
-            class="w-full h-full md:h-auto object-cover object-center" 
+            class="w-full h-full object-cover object-center" 
             src="/images/elekro-one/Bosco-verticale.png" 
             alt="predio bosco verticale"
             />
@@ -53,6 +53,8 @@ import Popup from "~/components/popup.vue";
       </div>
     </section>
     <Video/>
+
+    <!-- slider 1 -->
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
@@ -118,12 +120,12 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
             </Swiper>
             <div class="flex gap-6 lg:pt-32 pt-10 items-center">
-              <!-- dotted -->
-             <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
-             </div>
+              <!-- dotted desktop -->
+              <div class="col-start-1 pagination-segurança max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
+              </div>
 
               <div>
-                <button class="next-button bg-[#666664] w-10 h-8 flex justify-center items-center ">
+                <button class="next-button bg-[#666664] w-10 h-8 flex justify-center items-center rounded-lg">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -171,18 +173,20 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-segurança-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start">
-                  </div>
-                  <div>
-                    <button class="next-button bg-[#666664] w-10 h-6 flex justify-center items-center">
-                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
-                    </button>
-                  </div>
-              
-                </div>
+        <div class="flex justify-center lg:pt-24 pt-5 items-center lg:hidden relative">
+            <div class="col-start-1 pagination-segurança-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
+            </div>
+            <div class="absolute right-0">
+              <button class="next-button bg-[#666664] w-10 h-6 flex justify-center items-center rounded-lg">
+                <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+              </button>
+            </div>
+        </div>
       </div>
     </section>
+    <!-- fim slider 1 -->
+
+    <!-- slider 2 -->
     <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
@@ -236,10 +240,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-20 pt-10 items-center">
-               <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-combinaçao max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
                </div>
               <div>
-                <button class="next-button-combinaçao bg-[#666664] w-10 h-8 flex justify-center items-center ">
+                <button class="next-button-combinaçao bg-[#666664] w-10 h-8 flex justify-center items-center rounded-lg">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -293,18 +297,21 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start">
-                  </div>
-                  <div>
-                    <button class="next-button-combinaçao bg-[#666664] w-10 h-6 flex justify-center items-center">
-                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
-                    </button>
-                  </div>
-              
-                </div>
+        <div class="flex justify-center lg:pt-24 pt-5 items-center lg:hidden relative">
+          <div class="col-start-1 pagination-combinaçao-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
+          </div>
+          <div class="absolute right-0">
+            <button class="next-button-combinaçao bg-[#666664] w-10 h-6 flex justify-center items-center rounded-lg">
+              <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+            </button>
+          </div>
+      
+        </div>
       </div>
     </section>
+    <!-- fim slider 2 -->
+
+    <!-- slider 3 -->
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
@@ -364,10 +371,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-40 pt-10 items-center">
-               <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-life max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
                </div>
               <div>
-                <button class="next-life bg-[#666664] w-10 h-8 flex justify-center items-center ">
+                <button class="next-life bg-[#666664] w-10 h-8 flex justify-center items-center rounded-lg">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -415,18 +422,21 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start">
-                  </div>
-                  <div>
-                    <button class="next-life-mobile bg-[#666664] w-10 h-6 flex justify-center items-center">
-                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
-                    </button>
-                  </div>
-              
-                </div>
+        <div class="flex justify-center lg:pt-24 pt-5 items-center lg:hidden relative">
+          <div class="col-start-1 pagination-life-mobile max-xl:mr-10 h-3 flex py-3 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
+          </div>
+          <div class="absolute right-0">
+            <button class="next-life-mobile bg-[#666664] w-10 h-6 flex justify-center items-center rounded-lg">
+              <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+            </button>
+          </div>
+      
+        </div>
       </div>
     </section>
+    <!-- fim slider 3 -->
+
+    <!-- slider 4 -->
     <section class="lg:pt-24 pt-14 bg-[#f8f8f8] lg:pb-24 pb-14 z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
@@ -477,10 +487,10 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               </Swiper>
               <div class="flex gap-6 lg:pt-24 pt-10 items-center">
-               <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start">
+               <div class="col-start-1 pagination-design max-xl:mr-10 h-3 flex py-4 px-3 items-center w-auto bg-black justify-self-start rounded-lg">
                </div>
               <div>
-                <button class="next-design bg-[#666664] w-10 h-8 flex justify-center items-center ">
+                <button class="next-design bg-[#666664] w-10 h-8 flex justify-center items-center rounded-lg">
                   <img class="w-5" src="/images/elekro-one/arrow-right-white.png" alt="">
                 </button>
               </div>
@@ -528,18 +538,21 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
         </div>
-        <div class="flex justify-between lg:pt-24 pt-5 items-center lg:hidden">
-                  <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3  items-center w-auto bg-black justify-self-start">
-                  </div>
-                  <div>
-                    <button class="next-design-mobile bg-[#666664] w-10 h-6 flex justify-center items-center">
-                      <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
-                    </button>
-                  </div>
-              
-                </div>
+        <div class="flex justify-center lg:pt-24 pt-5 items-center lg:hidden relative">
+          <div class="col-start-1 pagination-design-mobile max-xl:mr-10 h-3 flex py-3 px-3  items-center w-auto bg-black justify-self-start rounded-lg">
+          </div>
+          <div class="absolute right-0">
+            <button class="next-design-mobile bg-[#666664] w-10 h-6 flex justify-center items-center rounded-lg">
+              <img class="w-4" src="/images/elekro-one/arrow-right-white.png" alt="">
+            </button>
+          </div>
+      
+        </div>
       </div>
     </section>
+    <!-- fim slider 4 -->
+
+    
     <section class="lg:pt-24 pt-14 lg:pb-24 z-10 relative">
         <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full ">
           <div

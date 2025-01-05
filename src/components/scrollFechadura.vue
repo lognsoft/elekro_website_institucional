@@ -56,11 +56,7 @@ function scrollEffects() {
 </script>
 
 <style scoped>
-section{
-  @apply
-  hidden
-  lg:block
-}
+
 .banner-title {
   @apply text-[50px] xl:text-[100px] font-bold leading-[40px] md:leading-[70px] xl:leading-[100px] lg:mt-5 mt-8;
 }
