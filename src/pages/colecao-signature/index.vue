@@ -65,9 +65,7 @@ import Popup from "~/components/popup.vue";
     <div class="hidden md:block">
       <VideoFechadura/>
     </div>
-    <video autoplay class="md:hidden">
-      <source src="/video/mobile-video.mp4"/>
-    </video>
+    <VideoMobile/>
 
     <!-- slider 1 -->
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">

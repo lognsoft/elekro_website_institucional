@@ -39,9 +39,9 @@
                             />
                         </figure>
                         <TextH2Title class="text-center lg:hidden mt-[3rem] font-normal" bold="normal">Fechadura Digital Wi-Fi</TextH2Title>
-                        <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
+                        <TextH4SubTitle class="text-center mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
-                      <div class="flex gap-5 justify-center mt-7 lg:mt-24">
+                      <div class="flex gap-5 justify-center mt-0 lg:mt-24">
                           <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block w-full max-w-[144px]">Saiba mais</MyButtonTwo>
                           <MyButtonTwo
                             href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
@@ -55,7 +55,7 @@
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
                         <TextH2Title class="text-center hidden lg:block font-normal" bold="normal">Fechadura Digital Wi-Fi</TextH2Title>
-                        <TextH4SubTitle class="text-center hidden lg:block !text-xl">Coleção Signature, Milão</TextH4SubTitle>
+                        <TextH4SubTitle class="text-center hidden lg:block !text-xl" style="margin-bottom: 0;">Coleção Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
                                 <li class="border-[#ddd]">
