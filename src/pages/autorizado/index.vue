@@ -12,8 +12,10 @@
             <Meta name="twitter:image" content="/images/elekro-logo.jpeg"/>
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
-        <MyCarousel :images="['AdobeStock.jpg']" title="Seja um autorizado"
+        <div class="hidden md:block">
+            <MyCarousel :images="['AdobeStock.jpg']" title="Seja um autorizado"
                     text="Entrega eficiente, tecnologia de ponta" buttonText="Faça parte" link="#formSection"/>
+        </div>
         <section class="z-20 relative">
             <div class="mx-auto w-full">
                 <!-- <div class="text-center mb-[40px] px-3 max-w-[1350px] mx-auto">

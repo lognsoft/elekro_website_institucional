@@ -12,11 +12,11 @@
       <Meta name="twitter:image" content="/images/elekro-banner.jpg" />
       <Meta name="twitter:card" content="summary_large_image" />
     </Head>
-    <GeneralBanner
+    <!-- <GeneralBanner
       src="/images/banner/bg-sobre-2.png"
       alt="Elekro"
       title="Tecnologia que Protege,<br>Inovação que Conecta"
-    />
+    /> -->
     <section class="elekro-text">
       <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
         <div class="text-base mb-6">
@@ -90,7 +90,7 @@
 
 <style scoped>
 .elekro-text {
-  @apply py-9 text-black bg-center bg-cover min-h-96 flex items-center relative;
+  @apply py-20 text-black bg-center bg-cover min-h-96 flex items-center relative;
 }
 
 .quote {
