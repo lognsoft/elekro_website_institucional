@@ -1,27 +1,5 @@
-<template>
-    <section class="apresentacao">
-        <NuxtImg :class="{
-            'object-center':position == undefined || position == 'center',
-            'object-left':position == 'left',
-            'object-right':position == 'right',
-            'max-md:object-[46%]':position == 'home'
-            }" :src="props.src" alt="" quality="75" loading="eager"/>
-        <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
-            <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
-            !h-full" :src="image" alt=""> -->
-            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full !relative mx-auto" :src="image" alt="" loading="lazy">
-
-            <h1 class="banner-title" v-html="props.title"></h1>
-            <template v-if="props.text != ''">
-                <p class="banner-text">{{ props.text }}</p>
-            </template>
-        </div>
-    </section>
-</template>
-
 <script setup lang="ts">
 import type { Ref } from "vue";
-import type { Banner } from "~/core/types";
 const props = defineProps({
     title:{
         type:String,
@@ -51,7 +29,7 @@ const props = defineProps({
         type:String,
         default:undefined
     }
-}) as Banner
+})
 const translateYImage:Ref<number> = ref(0);
 const opacity:Ref<number> = ref(100);
 const transform:Ref<number> = ref(50);
@@ -78,9 +56,30 @@ function scrollOpacity(){
 };
 </script>
 
+<template>
+    <section class="apresentacao">
+        <NuxtImg :class="{
+            'object-center':position == undefined || position == 'center',
+            'object-left':position == 'left',
+            'object-right':position == 'right',
+            'max-md:object-[46%]':position == 'home'
+            }" :src="props.src" alt="" quality="75" loading="eager"/>
+        <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-30%,-${transform}%)`">
+            <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
+            !h-full" :src="image" alt=""> -->
+            <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full !relative mx-auto" :src="image" alt="" loading="lazy">
+
+            <h1 class="banner-title" v-html="props.title"></h1>
+            <template v-if="props.text != ''">
+                <p class="banner-text">{{ props.text }}</p>
+            </template>
+        </div>
+    </section>
+</template>
+
 <style scoped>
 .apresentacao{
-    @apply relative w-full flex items-center h-screen overflow-hidden z-[-1];
+    @apply relative w-full flex items-center h-screen overflow-hidden z-[-1] py-0;
 }
 .apresentacao img{
     @apply w-full h-screen fixed top-0 left-0 appearance-none object-cover;
@@ -90,7 +89,7 @@ function scrollOpacity(){
     @apply absolute w-full h-full bg-black/5 top-0 left-0;
 }
 .content-container{
-    @apply fixed z-10  mx-auto  text-white  bottom-[20%] lg:left-[330px] left-[50%]
+    @apply fixed z-10  mx-auto  text-white  top-[50%] lg:left-[330px] left-[50%]
 }
 .banner-title{
   @apply text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold

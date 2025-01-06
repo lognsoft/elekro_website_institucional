@@ -13,9 +13,9 @@
       <Meta name="twitter:card" content="summary_large_image" />
     </Head>
     <GeneralBanner
-      src="/images/banner/bg-sobre.jpg"
+      src="/images/banner/bg-sobre-2.png"
       alt="Elekro"
-      title="Design e tecnologia, <br> aliados à segurança"
+      title="Tecnologia que protege,<br>inovação que conecta"
     />
     <section class="elekro-text">
       <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">
