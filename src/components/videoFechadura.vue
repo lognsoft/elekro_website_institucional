@@ -13,9 +13,12 @@
     </video>
     
     <!-- Botão de Play Personalizado -->
-    <button v-if="isPaused" @click="togglePlay" class="absolute inset-0 flex items-center justify-center">
-      <img src="/video/videoplay.png" alt="Play">
-    </button>
+    <div v-if="isPaused" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-y-3 text-white">
+      <button @click="togglePlay" class="flex items-center justify-center">
+        <img src="/video/videoplay.png" alt="Play">
+      </button>
+      <h3>Explore</h3>
+    </div>
   </div>
 </template>
 

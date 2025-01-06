@@ -88,17 +88,22 @@ import Popup from "~/components/popup.vue";
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 max-w-full ">
               <div >
                 <figure class="relative 
-                after:lg:absolute after:top-[430px] after:left-[180px] after:w-[100px] after:h-full after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/cinzaTitanio.png')]
+                after:lg:absolute after:top-[430px] after:left-[180px] after:w-[100px] after:h-full after:max-h-[80px] after:bg-no-repeat after:bg-contain after:bg-[url('/images/elekro-one/cinzaTitanio.png')]
                 
-                
-                before:lg:absolute before:top-[415px] before:left-[310px] before:w-[50px] before:h-full before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]
-                
-                ">
+                before:lg:absolute before:top-[415px] before:left-[310px] before:w-[50px] before:h-full before:max-h-[80px] before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]">
                   <!-- <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
                   <img class="w-full max-h-[350px] object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/mobile-detalhes-fechadura.png" alt=""> -->
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0002.png" alt="">
-                  <img class="w-full max-h-[350px] relative translate-x-[12%] object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0002.png" alt="">
+                  <img class="w-full max-h-[350px] relative translate-x-[12%] object-contain pt-5 pb-4 lg:hidden" src="/images/signature/Fotos0002.png" alt="">
                 </figure>
+                <div class="flex lg:hidden flex-wrap items-center justify-center gap-3 mb-10">
+                  <figure class="block">
+                    <img src="/images/elekro-one/cinzaTitanio.png" alt=""/>
+                  </figure>
+                  <figure class="block">
+                    <img src="/images/elekro-one/07Desktop_Detalhes01-Tag.png" alt=""/>
+                  </figure>
+                </div>
               </div>
               <div class="lg:self-center lg:justify-self-end lg:w-[80%] lg:block hidden">
                 <Swiper
@@ -333,17 +338,17 @@ import Popup from "~/components/popup.vue";
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px] h-full">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white  max-lg:p-5 max-lg:rounded-xl">
           <div class="flex justify-between items-center">
-            <h2 class="titleh2 max-lg:text-center">Configuração Descomplicada: <br class="lg:block hidden">Segurança Inteligente em Minutos</h2>
+            <h2 class="titleh2 max-lg:text-center">Configuração descomplicada: <br class="lg:block hidden">segurança inteligente em minutos</h2>
             <Popup
-            titulo-p="Gerenciamento completo Smart Life na palma da mão"
-            titulo="CONFIGURAÇÃO DE VOLUME"
-            texto="Silencie os alertas de voz da fechadura para maior conforto."
-            titulo2="MENU EFICIENTE NA FECHADURA"
-            texto2="Cadastre e exclua senhas diretamente na fechadura, sem necessidade de conexão ou aplicativo."
-            titulo3="ALERTAS DE BATERIA"
-            texto3="Receba avisos de bateria fraca via aplicativo e na fechadura."
-            titulo4="ALERTAS DE SEGURANÇA"
-            texto4="Receba notificações de tentativas de abertura de fechadura quando ocorreram mais de 5 tentativas consecutivas com erro de senha."
+              titulo-p="Gerenciamento completo Smart Life na palma da mão"
+              titulo="CONFIGURAÇÃO DE VOLUME"
+              texto="Silencie os alertas de voz da fechadura para maior conforto."
+              titulo2="MENU EFICIENTE NA FECHADURA"
+              texto2="Cadastre e exclua senhas diretamente na fechadura, sem necessidade de conexão ou aplicativo."
+              titulo3="ALERTAS DE BATERIA"
+              texto3="Receba avisos de bateria fraca via aplicativo e na fechadura."
+              titulo4="ALERTAS DE SEGURANÇA"
+              texto4="Receba notificações de tentativas de abertura de fechadura quando ocorreram mais de 5 tentativas consecutivas com erro de senha."
             />
           </div>
           <div class="lg:grid lg:grid-cols-2 lg:pt-24 w-full">

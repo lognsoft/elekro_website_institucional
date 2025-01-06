@@ -31,7 +31,7 @@ export const rotas:ReadonlyArray<Route> = [
     },
     {
         path: "/autorizado",
-        pathName: "Seja um autorizado",
+        pathName: "Seja um Autorizado",
     },
     {
         path: "/sobre",
