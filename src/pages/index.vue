@@ -30,15 +30,15 @@
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[700px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-[45px]">
+                        <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[800px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-[45px]">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
-                                src="/images/fechadura-dupla-desktop.png"
-                                srcset="/images/fechadura-dupla-desktop.png"
+                                src="/images/signature/Fotos0001.png"
+                                srcset="/images/signature/Fotos0001.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
-                        <TextH2Title class="text-center lg:hidden mt-[3rem] font-normal">Fechadura Digital Wi-Fi</TextH2Title>
+                        <TextH2Title class="text-center lg:hidden mt-[3rem] font-normal" bold="normal">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center mb-[20px] lg:mb-0 lg:hidden !text-xl">Coleção Signature, Milão</TextH4SubTitle>
 
                       <div class="flex gap-5 justify-center mt-7 lg:mt-24">
@@ -54,7 +54,7 @@
             <div class="text-black col-span-1">
                 <div class="my__container mx-auto lg:ml-0">
                     <div class="features_elekro">
-                        <TextH2Title class="text-center hidden lg:block font-normal">Fechadura Digital Wi-Fi</TextH2Title>
+                        <TextH2Title class="text-center hidden lg:block font-normal" bold="normal">Fechadura Digital Wi-Fi</TextH2Title>
                         <TextH4SubTitle class="text-center hidden lg:block !text-xl">Coleção Signature, Milão</TextH4SubTitle>
                         <ul class="flex flex-col">
                             <template v-for="feature,index in features" :key="index">
