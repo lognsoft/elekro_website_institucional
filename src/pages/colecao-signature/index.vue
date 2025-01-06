@@ -96,14 +96,14 @@ import Popup from "~/components/popup.vue";
                   <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0002.png" alt="">
                   <img class="w-full max-h-[350px] relative translate-x-[12%] object-contain pt-5 pb-4 lg:hidden" src="/images/signature/Fotos0002.png" alt="">
                 </figure>
-                <div class="flex lg:hidden flex-wrap items-center justify-center gap-3 mb-10">
+                <!-- <div class="flex lg:hidden flex-wrap items-center justify-center gap-3 mb-10">
                   <figure class="block">
                     <img src="/images/elekro-one/cinzaTitanio.png" alt=""/>
                   </figure>
                   <figure class="block">
                     <img src="/images/elekro-one/07Desktop_Detalhes01-Tag.png" alt=""/>
                   </figure>
-                </div>
+                </div> -->
               </div>
               <div class="lg:self-center lg:justify-self-end lg:w-[80%] lg:block hidden">
                 <Swiper

@@ -16,7 +16,7 @@
 
 <template>
     <div class="container-video" @click="initVideo">
-        <video ref="HTMLVideo" @ended="endVideo">
+        <video ref="HTMLVideo" @ended="endVideo" poster="/images/thumbnail.jpg">
             <source src="/video/mobile-video.mp4"/>
         </video>
         <div class="play-button" v-show="playVideo === false">
