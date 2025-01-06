@@ -15,7 +15,7 @@
     <GeneralBanner
       src="/images/banner/bg-sobre-2.png"
       alt="Elekro"
-      title="Tecnologia que protege,<br>inovação que conecta"
+      title="Tecnologia que Protege,<br>Inovação que Conecta"
     />
     <section class="elekro-text">
       <div class="mx-auto container max-w-[1200px] px-5 md:px-3 relative z-20">

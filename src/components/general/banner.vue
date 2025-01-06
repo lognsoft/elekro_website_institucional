@@ -64,7 +64,7 @@ function scrollOpacity(){
             'object-right':position == 'right',
             'max-md:object-[46%]':position == 'home'
             }" :src="props.src" alt="" quality="75" loading="eager"/>
-        <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translate(-30%,-${transform}%)`">
+        <div class="content-container" :class="{'hidden md:block':hidden}"  :style="`opacity: ${opacity}%; transform: translateY(-${transform}%)`">
             <!-- <img class="lg:!w-60 !w-36 pb-2 md:pb-5 !static
             !h-full" :src="image" alt=""> -->
             <img v-if="showImage" class="lg:!w-60 !w-36 pb-2 md:pb-5 !h-full !relative mx-auto" :src="image" alt="" loading="lazy">
@@ -89,7 +89,7 @@ function scrollOpacity(){
     @apply absolute w-full h-full bg-black/5 top-0 left-0;
 }
 .content-container{
-    @apply fixed z-10  mx-auto  text-white  top-[50%] lg:left-[330px] left-[50%]
+    @apply fixed z-10  mx-auto  text-white top-[50%] lg:left-[330px] left-[30%] translate-x-[-50%] md:translate-x-[-30%]
 }
 .banner-title{
   @apply text-left max-lg:mx-auto text-[40px] md:text-[50px] lg:text-[60px] font-bold
