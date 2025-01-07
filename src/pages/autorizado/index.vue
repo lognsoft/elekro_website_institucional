@@ -13,7 +13,7 @@
             <Meta name="twitter:card" content="summary_large_image"/>
         </Head>
         <div class="hidden md:block">
-            <MyCarousel :images="['AdobeStock.jpg']" title="Seja um autorizado"
+            <MyCarousel :images="['AdobeStock.jpg']" title="Seja um Autorizado"
                     text="Entrega eficiente, tecnologia de ponta" buttonText="Faça parte" link="#formSection"/>
         </div>
         <section class="z-20 relative">
