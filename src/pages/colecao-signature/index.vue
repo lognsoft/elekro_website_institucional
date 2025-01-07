@@ -244,7 +244,7 @@ import Popup from "~/components/popup.vue";
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Com a função de Check-In e Check-Out você pode criar senhas com data de entrada e saída. Perfeito para Airbnb ou locações por temporada.</h4>
                 </div>
                 <div class="max-lg:text-center">
-                  <h3 class="titleh3 uppercase">Cadastre até <br> 100 usuários</h3>
+                  <h3 class="titleh3 uppercase">Cadastre até <br> 200 usuários</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Ideal para escritórios, você pode dar acesso a funcionários e parceiros com as senhas biométricas ou numéricas. Além disso, é possível verificar em tempo real os históricos de acessos.</h4>
                 </div>
               </SwiperSlide>
@@ -299,7 +299,7 @@ import Popup from "~/components/popup.vue";
               </SwiperSlide>
               <SwiperSlide>
                 <div class="max-lg:text-center">
-                  <h3 class="titleh3 uppercase">Cadastre até <br> 100 usuários</h3>
+                  <h3 class="titleh3 uppercase">Cadastre até <br> 200 usuários</h3>
                   <h4 class="titleh4 max-w-96 max-lg:mx-auto mt-3">Ideal para escritórios, você pode dar acesso a funcionários e parceiros com as senhas biométricas ou numéricas. Além disso, é possível verificar em tempo real os históricos de acessos.</h4>
                 </div>
               </SwiperSlide>
