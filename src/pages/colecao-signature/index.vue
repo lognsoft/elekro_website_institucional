@@ -47,7 +47,8 @@ import Popup from "~/components/popup.vue";
 
       <div class="flex flex-col pt-14 lg:pt-24 lg:overflow-hidden h-screen">
         <div class="w-full max-w-[800px] mx-auto flex flex-col justify-center items-center text-center min-h-[50%]">
-          <h2 class="titleh2 mb-10 w-full">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2>
+          <!-- <h2 class="titleh2 mb-10 w-full">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2> -->
+          <h2 class="titleh2 mb-10 w-full px-2 md:px-0">Inspirado na harmonia entre natureza e arquitetura dos edifícios contemporâneos</h2>
           <p class="w-full">Milão / Itália</p>
           <MyButtonTwo class="inline-block max-w-[150px] mt-2" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/" target="_blank">Comprar</MyButtonTwo>
         </div>
