@@ -93,6 +93,7 @@ onUnmounted(() => {
     fixed
     text-white
     top-[50%]
+    md:top-[60%]
     left-[50%]
     mx-auto
     container
