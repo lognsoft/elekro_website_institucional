@@ -22,9 +22,22 @@
             />
           </NuxtLink>
         </div>
-        <div class="font-light cursor-pointer text-[15px] flex justify-center items-center" ref="btnToggle">
-          <Icon class="text-2xl" name="mdi-light:menu" mode="css" />
-        </div>
+        <ul class="flex items-center gap-3 text-2xl">
+          <li class="flex items-center justify-center">
+            <a class="flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro" target="_blank">
+              <Icon name="tdesign:user"/>
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a class="flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro" target="_blank">
+              <Icon name="solar:bag-4-linear"/>
+            </a>
+          </li>
+          <li class="font-light cursor-pointer text-[15px] flex justify-center items-center" ref="btnToggle">
+            <Icon class="text-2xl" name="mdi-light:menu" mode="css"/>
+          </li>
+          
+        </ul>
       </nav>
     </div>
   </header>
