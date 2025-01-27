@@ -60,6 +60,7 @@ onUnmounted(() => {
 .home-banner-screen{
     @apply
     h-screen
+    min-h-[800px]
     w-full
     bg-blue-200
     relative
@@ -73,6 +74,7 @@ onUnmounted(() => {
     left-0
     w-full
     h-screen
+    min-h-[800px]
     object-cover
 }
 
