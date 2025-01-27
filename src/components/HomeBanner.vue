@@ -62,7 +62,6 @@ onUnmounted(() => {
     h-screen
     min-h-[800px]
     w-full
-    bg-blue-200
     relative
 }
 
