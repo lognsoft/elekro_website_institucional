@@ -25,12 +25,12 @@
         <ul class="flex items-center gap-3 text-2xl">
           <li class="flex items-center justify-center">
             <a class="flex items-center justify-center" href="https://www.elekrobrasil.com.br/account/login/" target="_blank">
-              <Icon name="iwwa:user"/>
+              <!-- <Icon name="solar:user-linear"/> -->
+               <User/>
             </a>
           </li>
           <li class="flex items-center justify-center">
             <a class="text-white flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro" target="_blank">
-              
                <Bag/>
             </a>
           </li>
@@ -64,6 +64,7 @@
 <script setup lang="ts">
 import { rotas } from "~/core/constants";
 import Bag from "@/components/icons/Bag.vue";
+import User from "@/components/icons/User.vue";
 
 const bgWhite: Ref<boolean> = ref(false);
 const route = useRoute();
