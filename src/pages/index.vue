@@ -15,9 +15,10 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :isHome="true" :images="['bg-home-2.png']" title="Tecnologia<br>Sofisticação"
-                    buttonText="DESCUBRA" link="/colecao-signature"/>
+        <!-- <MyCarousel :isHome="true" :images="['bg-home-2.png']" title="Tecnologia<br>Sofisticação"
+                    buttonText="DESCUBRA" link="/colecao-signature"/> -->
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
+        <HomeBanner image-desktop="/images/banner/banner-desktop.png" image-mobile="/images/banner/banner-mobile.png"/>
         <section class="grid grid-cols-1 lg:grid-cols-2  relative z-20 !pt-0">
             <div class="col-span-1 relative">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
