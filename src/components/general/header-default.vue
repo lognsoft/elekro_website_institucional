@@ -24,13 +24,14 @@
         </div>
         <ul class="flex items-center gap-3 text-2xl">
           <li class="flex items-center justify-center">
-            <a class="flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro" target="_blank">
-              <Icon name="tdesign:user"/>
+            <a class="flex items-center justify-center" href="https://www.elekrobrasil.com.br/account/login/" target="_blank">
+              <Icon name="iwwa:user"/>
             </a>
           </li>
           <li class="flex items-center justify-center">
-            <a class="flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro" target="_blank">
-              <Icon name="solar:bag-4-linear"/>
+            <a class="text-white flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro" target="_blank">
+              
+               <Bag/>
             </a>
           </li>
           <li class="font-light cursor-pointer text-[15px] flex justify-center items-center" ref="btnToggle">
@@ -62,6 +63,7 @@
 
 <script setup lang="ts">
 import { rotas } from "~/core/constants";
+import Bag from "@/components/icons/Bag.vue";
 
 const bgWhite: Ref<boolean> = ref(false);
 const route = useRoute();
