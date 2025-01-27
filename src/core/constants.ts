@@ -42,7 +42,7 @@ export const rotas:ReadonlyArray<Route> = [
         pathName: "Insights",
     },
     {
-        path: "https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/",
+        path: "https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro",
         pathName: "Comprar"
     }
 

@@ -19,7 +19,7 @@
             <!-- <img class="w-[95%] md:w-[60%]" src="/images/elekro-one/mobile/titulo-home-mobile.png" alt=""> -->
             <MyButtonTwo
                 class="hidden"
-                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
+                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro"
                 target="_blank">Comprar</MyButtonTwo>
 
           </div>

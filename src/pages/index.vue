@@ -44,7 +44,7 @@
                       <div class="flex gap-5 justify-center mt-0 lg:mt-24">
                           <MyButtonTwo href="/colecao-signature" class="hidden lg:inline-block w-full max-w-[144px]">Saiba mais</MyButtonTwo>
                           <MyButtonTwo
-                            href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
+                            href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro"
                             target="_blank" class="hidden lg:inline-block w-full max-w-[144px]">Comprar</MyButtonTwo>
                       </div>
                         <!-- md:translate-x-[0%] absolute md:static translate-x-[-100%] left-[80%] bottom-[20%] -->
@@ -74,7 +74,7 @@
                             <MyButtonTwo href="/colecao-signature" class="lg:hidden inline-block">Saiba mais</MyButtonTwo>
                             <MyButtonTwo
                                 :transparent="true"
-                                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-wi-fi-elekro/"
+                                href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro"
                                 target="_blank" class="lg:hidden inline-block">Comprar</MyButtonTwo>
                         </div>
                     </div>
