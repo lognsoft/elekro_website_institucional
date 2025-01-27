@@ -5,7 +5,7 @@ interface IProps{
 }
 defineProps<IProps>();
 const bannerContent:Ref<HTMLElement | null> = ref(null);
-const transform:Ref<number> = ref(95);
+const transform:Ref<number> = ref(50);
 const opacity:Ref<number> = ref(100);
 const bannerSingle:Ref<number> = ref(0);
 const bannerTextHeight:Ref<number> = ref(0);
@@ -14,7 +14,7 @@ const scrollOpacity:() => void = ():void => {
   if (bannerContent.value) {
     const documentScroll = document.scrollingElement?.scrollTop || 0;
     const percent = Math.max(0, Math.min(100, 100 - (documentScroll / bannerSingle.value) * 100 + (bannerTextHeight.value / 100) * 10));
-    const translate = Math.max(80, Math.min(200, 50 + (documentScroll / bannerSingle.value) * 50));
+    const translate = Math.max(50, Math.min(200, 50 + (documentScroll / bannerSingle.value) * 50));
 
     transform.value = translate;
     opacity.value = percent;
@@ -94,7 +94,6 @@ onUnmounted(() => {
     fixed
     text-white
     top-[50%]
-    md:top-[60%]
     left-[50%]
     mx-auto
     container
