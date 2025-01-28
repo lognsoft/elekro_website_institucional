@@ -50,7 +50,7 @@ onUnmounted(() => {
             <h2 class="banner-title">Um novo jeito<br/>para você<br/>curtir a vida</h2>
             <div class="smart-life">
                 <img class="smart-image" src="/images/smart-life-icon.png" alt="" width="40" height="40"/>
-                <p class="smart-text">smart life</p>
+                <p class="smart-text">Smart Life</p>
             </div>
         </div>
     </div>
@@ -111,6 +111,7 @@ onUnmounted(() => {
     md:text-[50px]
     lg:text-[60px]
     font-bold
+    mb-5
 }
 
 .smart-life{
