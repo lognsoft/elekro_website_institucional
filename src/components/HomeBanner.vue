@@ -53,7 +53,7 @@ onUnmounted(() => {
                 </div>
                 <h3 class="banner-title">
                     Mod<br/>
-                    Férias
+                    Digital
                 </h3>
             </div>
             <h2 class="banner-title">Um novo jeito<br/>para você<br/>curtir a vida</h2>
@@ -77,7 +77,7 @@ onUnmounted(() => {
     after:left-0
     after:w-full
     after:h-full
-    after:bg-black/20
+    after:bg-black/15
 }
 
 .image-desktop,
@@ -137,12 +137,12 @@ onUnmounted(() => {
     aspect-[2/1]
     top-0
     right-0
-    translate-x-[44%]
+    translate-x-[25%]
     translate-y-[29%]
     lg:translate-y-[60%]
-    lg:translate-x-[38%]
+    lg:translate-x-[20%]
     md:translate-y-[26%]
-    md:translate-x-[43%]
+    md:translate-x-[25%]
     rounded-full
     after:absolute
     after:top-0
