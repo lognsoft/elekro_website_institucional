@@ -47,6 +47,15 @@ onUnmounted(() => {
         <img class="image-desktop" :src="imageDesktop" alt=""/>
         <img class="image-mobile" :src="imageMobile" alt=""/>
         <div class="content-banner" ref="bannerContent" :style="`opacity: ${opacity}%; transform: translate(-50%,-${transform}%)`">
+            <div class="banner-label">
+                <div class="banner-label-toggle">
+
+                </div>
+                <h3 class="banner-title">
+                    Mod<br/>
+                    Férias
+                </h3>
+            </div>
             <h2 class="banner-title">Um novo jeito<br/>para você<br/>curtir a vida</h2>
             <div class="smart-life">
                 <img class="smart-image" src="/images/smart-life-icon.png" alt="" width="40" height="40"/>
@@ -63,6 +72,12 @@ onUnmounted(() => {
     min-h-[800px]
     w-full
     relative
+    after:absolute
+    after:top-0
+    after:left-0
+    after:w-full
+    after:h-full
+    after:bg-black/20
 }
 
 .image-desktop,
@@ -103,9 +118,42 @@ onUnmounted(() => {
     leading-[40px]
     md:leading-[50px]
     lg:leading-[80px]
+    z-10
 }
 
-.banner-title{
+.content-banner .banner-label{
+    @apply
+    relative
+    inline-block
+}
+
+.content-banner .banner-label .banner-label-toggle{
+    @apply
+    absolute
+    bg-[#bbbbbb]
+    h-[26px]
+    lg:h-[37px]
+    md:h-[33px]
+    aspect-[2/1]
+    top-0
+    right-0
+    translate-x-[44%]
+    translate-y-[29%]
+    lg:translate-y-[60%]
+    lg:translate-x-[38%]
+    md:translate-y-[26%]
+    md:translate-x-[43%]
+    rounded-full
+    after:absolute
+    after:top-0
+    after:left-0
+    after:h-full
+    after:aspect-[1/1]
+    after:bg-white
+    after:rounded-full
+}
+
+.content-banner .banner-title{
     @apply
     text-[40px]
     md:text-[50px]
@@ -114,21 +162,21 @@ onUnmounted(() => {
     mb-5
 }
 
-.smart-life{
+.content-banner .smart-life{
     @apply
     flex
     items-center
     gap-x-3
 }
 
-.smart-life .smart-image{
+.content-banner .smart-life .smart-image{
     @apply
     w-auto
     h-auto
     max-w-[40px]
 }
 
-.smart-life .smart-text{
+.content-banner .smart-life .smart-text{
     @apply
     font-semibold
     text-xl
