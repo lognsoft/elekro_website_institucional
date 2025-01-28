@@ -53,7 +53,7 @@ onUnmounted(() => {
                 </div>
                 <h3 class="banner-title">
                     Mod<br/>
-                    Férias
+                    Digital
                 </h3>
             </div>
             <h2 class="banner-title">Um novo jeito<br/>para você<br/>curtir a vida</h2>
