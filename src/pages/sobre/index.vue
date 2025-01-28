@@ -76,7 +76,7 @@
             </p>
           </div>
          <div class="mb-9" data-aos="fade-up" data-aos-duration="1000">
-            <TextH3Title class="mb-1">Elekro Dynamic Industries</TextH3Title>
+            <TextH3Title class="mb-1">Elekro</TextH3Title>
             <p>Design e tecnologia aliados à segurança.</p>
          </div>
         </div>
