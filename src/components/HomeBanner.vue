@@ -130,7 +130,8 @@ onUnmounted(() => {
 .content-banner .banner-label .banner-label-toggle{
     @apply
     absolute
-    bg-[#bbbbbb]
+    /* bg-[#bbbbbb] */
+    bg-[#78ba62]
     h-[26px]
     lg:h-[37px]
     md:h-[33px]
