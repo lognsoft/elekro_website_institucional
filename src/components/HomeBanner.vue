@@ -137,7 +137,7 @@ onUnmounted(() => {
     aspect-[2/1]
     top-0
     right-0
-    translate-x-[44%]
+    translate-x-[25%]
     translate-y-[29%]
     lg:translate-y-[60%]
     lg:translate-x-[20%]
