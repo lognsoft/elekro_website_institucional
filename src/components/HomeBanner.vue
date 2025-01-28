@@ -140,7 +140,7 @@ onUnmounted(() => {
     translate-x-[44%]
     translate-y-[29%]
     lg:translate-y-[60%]
-    lg:translate-x-[38%]
+    lg:translate-x-[20%]
     md:translate-y-[26%]
     md:translate-x-[43%]
     rounded-full
