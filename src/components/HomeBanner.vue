@@ -77,7 +77,7 @@ onUnmounted(() => {
     after:left-0
     after:w-full
     after:h-full
-    after:bg-black/10
+    after:bg-black/[0.02]
 }
 
 .image-desktop,
