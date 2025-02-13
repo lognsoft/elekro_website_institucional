@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useSeoMeta({
+    robots: "noindex,nofollow"
+})
 definePageMeta({
     layout: "en-layout"
 })

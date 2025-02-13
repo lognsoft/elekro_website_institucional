@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useSeoMeta({
+    robots: "noindex,nofollow"
+})
 
 // const route = useRoute();
 // console.log(route.path);
