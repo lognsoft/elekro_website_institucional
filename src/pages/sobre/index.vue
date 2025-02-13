@@ -86,6 +86,11 @@
 </template>
 
 <script setup lang="ts">
+useHeadSafe({
+    link:[
+        { rel: "canonical", href: "https://elekro.com.br/sobre" }
+    ]
+})
 </script>
 
 <style scoped>

@@ -54,7 +54,12 @@
   </main>
 </template>
 <script setup lang="ts">
-  import type { IPost, IBlog } from "~/core/types";
+useHeadSafe({
+    link:[
+        { rel: "canonical", href: "https://elekro.com.br/insights" }
+    ]
+})
+  import type { IBlog } from "~/core/types";
 
   const route = useRoute();
 

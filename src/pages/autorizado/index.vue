@@ -60,6 +60,11 @@
 </template>
 
 <script setup lang="ts">
+useHeadSafe({
+    link:[
+        { rel: "canonical", href: "https://elekro.com.br/autorizado" }
+    ]
+})
 //tipos
 import { infos } from '~/core/constants';
 let formulario:HTMLElement | null = null;

@@ -96,6 +96,14 @@ import type { IArticle, IBlog } from "~/core/types";
 const route = useRoute()
 
 const slug = computed(():string => route.params.slug.toString());
+
+useHeadSafe({
+    link:[
+        { rel: "canonical", href: `https://elekro.com.br/insights/${route.params.slug}` }
+    ]
+})
+
+
 const { status, data } = useLazyAsyncData<IArticle, Error>(`post-${slug.value}`, async () => {
   const response = await $fetch<IArticle>(`/api/article`,{
     params:{

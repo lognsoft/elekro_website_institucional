@@ -88,9 +88,14 @@
 </template>
 
 <script setup lang="ts">
-import { features, slide } from "~/core/constants";
+import { features } from "~/core/constants";
 
-// navigateTo("/dev");
+useHeadSafe({
+    link:[
+        { rel: "canonical", href: "https://elekro.com.br/" }
+    ]
+})
+
 </script>
 
 <style scoped>

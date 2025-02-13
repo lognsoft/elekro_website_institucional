@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useHeadSafe({
+    link:[
+        { rel: "canonical", href: "https://elekro.com.br/colecao-signature" }
+    ]
+})
 // import { texts, recursos, capacidades, praticidades } from "~/core/constants";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
