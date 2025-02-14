@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHeadSafe({
+useHead({
     link:[
         { rel: "canonical", href: "https://elekro.com.br/colecao-signature" }
     ]

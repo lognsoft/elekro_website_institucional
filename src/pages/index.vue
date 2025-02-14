@@ -90,7 +90,7 @@
 <script setup lang="ts">
 import { features } from "~/core/constants";
 
-useHeadSafe({
+useHead({
     link:[
         { rel: "canonical", href: "https://elekro.com.br/" }
     ]

@@ -97,7 +97,7 @@ const route = useRoute()
 
 const slug = computed(():string => route.params.slug.toString());
 
-useHeadSafe({
+useHead({
     link:[
         { rel: "canonical", href: `https://elekro.com.br/insights/${route.params.slug}` }
     ]

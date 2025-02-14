@@ -60,7 +60,7 @@
 </template>
 
 <script setup lang="ts">
-useHeadSafe({
+useHead({
     link:[
         { rel: "canonical", href: "https://elekro.com.br/autorizado" }
     ]
