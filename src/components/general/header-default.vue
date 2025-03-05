@@ -30,7 +30,7 @@
             </a>
           </li>
           <li class="flex items-center justify-center">
-            <a class="text-white flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro" target="_blank">
+            <a class="text-white flex items-center justify-center" href="https://www.elekrobrasil.com.br/produtos/fechadura-eletronica-digital-biometria-senha-campainha-wi-fi/" target="_blank">
                <Bag/>
             </a>
           </li>

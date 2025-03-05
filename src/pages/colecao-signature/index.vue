@@ -55,7 +55,7 @@ import Popup from "~/components/popup.vue";
           <!-- <h2 class="titleh2 mb-10 w-full">Inspirado na obra <br class="lg:hidden"> de <br class="max-lg:hidden"> Stefano Boeri, <br class="lg:hidden"> Bosco Verticale.</h2> -->
           <h2 class="titleh2 mb-10 w-full px-2 md:px-0">Inspirado na harmonia entre natureza e arquitetura dos edifícios contemporâneos</h2>
           <p class="w-full">Milão / Itália</p>
-          <MyButtonTwo class="inline-block max-w-[150px] mt-2" href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro" target="_blank">Comprar</MyButtonTwo>
+          <MyButtonTwo class="inline-block max-w-[150px] mt-2" href="https://www.elekrobrasil.com.br/produtos/fechadura-eletronica-digital-biometria-senha-campainha-wi-fi/" target="_blank">Comprar</MyButtonTwo>
         </div>
         <div class="pt-0 h-[100%]">
           <figure class="h-full block">
@@ -716,7 +716,7 @@ import Popup from "~/components/popup.vue";
               </div>
             </div>
             <div class="lg:pt-24 pt-14 max-lg:pb-14">
-              <MyButtonTwo href="https://www.elekrobrasil.com.br/produtos/fechadura-digital-signature-design-moderno-e-inteligencia-elekro" target="_blank">Comprar</MyButtonTwo>
+              <MyButtonTwo href="https://www.elekrobrasil.com.br/produtos/fechadura-eletronica-digital-biometria-senha-campainha-wi-fi/" target="_blank">Comprar</MyButtonTwo>
             </div>
           </div>
         </div>
