@@ -14,18 +14,32 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-0SE5FCCKT2',
-          async: true
+          src: "https://www.googletagmanager.com/gtag/js?id=AW-16634268572",
+          async: true,
         },
         {
-          type: 'text/javascript',
+          type: "text/javascript",
           innerHTML: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-0SE5FCCKT2');
-          `,
+
+            gtag('config', 'AW-16634268572');
+          `
         }
+        // {
+        //   src: 'https://www.googletagmanager.com/gtag/js?id=G-0SE5FCCKT2',
+        //   async: true
+        // },
+        // {
+        //   type: 'text/javascript',
+        //   innerHTML: `
+        //     window.dataLayer = window.dataLayer || [];
+        //     function gtag(){dataLayer.push(arguments);}
+        //     gtag('js', new Date());
+        //     gtag('config', 'G-0SE5FCCKT2');
+        //   `,
+        // }
       ],
       __dangerouslyDisableSanitizers: ['script']
     }
