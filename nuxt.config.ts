@@ -26,6 +26,17 @@ export default defineNuxtConfig({
 
             gtag('config', 'AW-16634268572');
           `
+        },
+        {
+          type: "text/javascript",
+          innerHTML: `
+            gtag('event', 'conversion', {
+              'send_to': 'AW-16634268572/ILXQCJez0N4ZEJyX6_s9',
+              'value': 15.0,
+              'currency': 'BRL',
+              'transaction_id': ''
+            });
+          `
         }
         // {
         //   src: 'https://www.googletagmanager.com/gtag/js?id=G-0SE5FCCKT2',
