@@ -74,7 +74,7 @@ type Card = {
 const cards:Card[] = [
     {
         title:'Comercial',
-        email:'vendas@elekro.com.br'
+        email:'comercial@elekro.com.br'
     },
     {
         title:'Suporte',
