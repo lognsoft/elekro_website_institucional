@@ -1,9 +1,9 @@
 <template>
   <div>
-    
     <NuxtLayout>
-      <NuxtPage/>
+        <NuxtPage/>
     </NuxtLayout>
+    <WhatsappLink/>
   </div>
 </template>
 
@@ -41,8 +41,8 @@ useHead({
     htmlAttrs:{
         lang: 'pt-BR',
     },
-    script:[
-        { src:"//code.jivosite.com/widget/Q2hasbDhZi", async:'' }
-    ],
+    // script:[
+    //     { src:"//code.jivosite.com/widget/Q2hasbDhZi", async:'' }
+    // ],
 })
 </script>

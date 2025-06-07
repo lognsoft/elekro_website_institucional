@@ -15,8 +15,17 @@
         <!-- <div class="w-full h-screen overflow-hidden">
             <GeneralSlide :images="slide"/>
         </div> -->
-        <MyCarousel :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']" title="Proteção e Elegância"
-                    position="home"/>
+        <div class="relative">
+            <MyCarousel
+            :images="['FOTO_FECHADURA_ELEKRO.png','sala-slide-home.png']"
+            title="Proteção e Elegância"
+            position="home"
+            />
+            <div class="absolute text-white arrow-icon bottom-[60px] z-10 w-full flex items-center justify-center">
+                <IconArrow></IconArrow>
+            </div>
+                
+        </div>
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
         <section class="grid grid-cols-1 lg:grid-cols-2 bg-white relative z-20">
             <div class="col-span-1">
@@ -86,6 +95,11 @@
                 </div>
             </div>
             
+        </section>
+        <section class="!bg-white relative z-20 py-10">
+            <div class="w-full max-w-[1400px] mx-auto px-5">
+                <AvaliableContainer/>
+            </div>
         </section>
     </main>
 </template>

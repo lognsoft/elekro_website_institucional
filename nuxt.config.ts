@@ -30,7 +30,9 @@ export default defineNuxtConfig({
       __dangerouslyDisableSanitizers: ['script']
     }
   },
+
   devtools: { enabled: true },
+
   modules:[
     "@pinia/nuxt",
     "@nuxt/ui",
@@ -40,6 +42,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-gtag",
   ],
+
   swiper:{
     modules: [
       'navigation',
@@ -49,25 +52,34 @@ export default defineNuxtConfig({
       'parallax'
     ],
   },
+
   plugins:[
     "~/plugins/axios",
   ],
+
   srcDir: 'src',
+
   tailwindcss: {
     exposeConfig: true,
     viewer: false,
   },
+
   ssr: true,
+
   nitro: {
     prerender:{
       
     }
   },
+
   css:[
     "animate.css/animate.min.css",
   ],
+
   colorMode:{
     preference: "light",
     classSuffix: ''
   },
+
+  compatibilityDate: '2025-06-06',
 })

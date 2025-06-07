@@ -9,7 +9,7 @@
       @pause="showPlayButton"
       @click="togglePlay"
     >
-      <source src="/video/fechadura-elekro.mp4" type="video/mp4">
+      <source :src="midia" type="video/mp4">
     </video>
     
     <!-- Botão de Play Personalizado -->
@@ -19,33 +19,40 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isPaused: true
-    };
-  },
-  methods: {
-    togglePlay() {
-      const videoPlayer = this.$refs.videoPlayer;
-      
-      if (videoPlayer.paused) {
-        videoPlayer.play();
-      } else {
-        videoPlayer.pause();
-      }
-    },
-    hidePlayButton() {
-      this.isPaused = false;
-    },
-    showPlayButton() {
-      this.isPaused = true;
+<script setup lang="ts">
+const isPaused = ref<boolean>(true)
+const videoPlayer = ref<HTMLVideoElement | null>(null)
+const midia = ref<string>(`/video/fechadura-elekro.mp4`)
+
+
+function togglePlay(): void {
+  if (videoPlayer.value) {
+    if (videoPlayer.value.paused) {
+      videoPlayer.value.play()
+    } else {
+      videoPlayer.value.pause()
     }
   }
 }
-</script>
 
-<style scoped>
-/* Adicione aqui estilos personalizados, se necessário */
-</style>
+function hidePlayButton(): void {
+  isPaused.value = false
+}
+
+function showPlayButton(): void {
+  isPaused.value = true
+}
+
+onMounted(() => {
+  const mobile:string = `/video/fechadura-elekro-responsive.mp4`;
+
+  const wind = window.innerWidth
+  if(wind <= 748){
+    midia.value = mobile
+
+    nextTick(() => {
+      videoPlayer.value && videoPlayer.value.load()
+    })
+  }
+})
+</script>

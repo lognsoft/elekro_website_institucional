@@ -212,3 +212,10 @@ export interface IBlog {
 export interface IArticle extends IPost{
     content: string;
 }
+
+// Avaliacoes
+export interface IAvaliableCard{
+    name:string;
+    avaliable:string[];
+    stars:number
+}

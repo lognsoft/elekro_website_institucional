@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Scroll from "~/components/scrollFechadura.vue";
-import Video from "~/components/videoFechadura.vue";
 import Popup from "~/components/popup.vue";
 
 </script>
@@ -44,14 +43,14 @@ import Popup from "~/components/popup.vue";
           <figure>
             <img 
             class="w-full h-auto object-cover" 
-            src="/images/elekro-one/Bosco-verticale.png" 
+            src="/images/elekro-one/Bosco-verticale.jpg"
             alt="predio bosco verticale"
             />
           </figure>
         </div>
       </div>
     </section>
-    <Video/>
+    <VideoFechadura/>
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">
       <div class="max-w-[1900px] mx-auto md:px-10 xl:px-60 max-sm:ml-[20px] max-sm:mr-[20px] max-lg:ml-[80px] max-lg:mr-[80px]">
         <div class="max-w-[800px] mx-auto h-full max-lg:bg-white max-lg:p-5 max-lg:rounded-xl">
