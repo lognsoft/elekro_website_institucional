@@ -6,7 +6,7 @@
     <WhatsappLink/>
   </div>
 </template>
-
+ <!---->
 <style>
     body{
         @apply bg-white;
