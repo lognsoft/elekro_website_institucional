@@ -18,7 +18,13 @@
         <!-- <MyCarousel :isHome="true" :images="['bg-home-2.png']" title="Tecnologia<br>Sofisticação"
                     buttonText="DESCUBRA" link="/colecao-signature"/> -->
         <!-- <MyCarousel :images="['fechadura.png', 'FOTO_FECHADURA_ELEKRO.jpg']"/> -->
-        <HomeBanner image-desktop="/images/banner/banner-desktop.png" image-mobile="/images/banner/banner-mobile.png"/>
+        <div class="relative">
+            <HomeBanner image-desktop="/images/banner/banner-desktop.jpg" image-mobile="/images/banner/banner-mobile.jpg"/>
+            <div class="absolute text-white arrow-icon bottom-[60px] z-10 w-full flex items-center justify-center">
+                <IconArrow></IconArrow>
+            </div>
+                
+        </div>
         <section class="grid grid-cols-1 lg:grid-cols-2  relative z-20 !pt-0">
             <div class="col-span-1 relative">
                 <div class="my__container mx-auto lg:mr-0 sticky top-[7%]">
@@ -35,8 +41,8 @@
                         <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[800px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-[45px]">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
-                                src="/images/signature/Fotos0001.png"
-                                srcset="/images/signature/Fotos0001.png"
+                                src="/images/signature/Fotos0001.jpg"
+                                srcset="/images/signature/Fotos0001.jpg"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>
@@ -82,6 +88,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="!bg-white relative z-20 py-10">
+            <div class="w-full max-w-[1400px] mx-auto px-5">
+                <AvaliableContainer/>
             </div>
         </section>
     </main>

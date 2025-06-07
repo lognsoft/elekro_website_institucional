@@ -64,6 +64,12 @@ const links:Link[] = [
         store:'linkedin',
         icon:'fontisto:linkedin',
         href:'https://www.linkedin.com/company/elekro-best-price/',
+    },
+    {
+        sub:'encontre-nos no',
+        store:'Instagram',
+        icon:'ri:instagram-fill',
+        href:'https://www.instagram.com/elekrobrasil/',
     }
 ]
 type Card = {
@@ -89,7 +95,7 @@ const cards:Card[] = [
 
 <style scoped>
 .stores{
-    @apply w-full max-w-[200px] sm:max-w-[650px] grid grid-cols-1 sm:grid-cols-3 items-center justify-center gap-2 mx-auto
+    @apply w-full max-w-[200px] sm:max-w-[800px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center justify-center gap-2 mx-auto
 }
 
 .stores a{
@@ -98,4 +104,4 @@ const cards:Card[] = [
 .icon-store{
     @apply text-3xl inline-flex items-center justify-center
 }
-</style>~/app/constants~/core/types
+</style>

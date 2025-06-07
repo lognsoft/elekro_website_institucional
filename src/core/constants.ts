@@ -27,7 +27,7 @@ export const rotas:ReadonlyArray<Route> = [
     },
     {
         path: "/colecao-signature",
-        pathName: "Coleção Signature",
+        pathName: "Fechadura Wi-Fi Signature",
     },
     {
         path: "/autorizado",
@@ -71,10 +71,9 @@ export const midiasSociais:ReadonlyArray<Midia> = [
     }
 ]
 
-//página autorizado
 export const infos:ReadonlyArray<Info> = [
     {
-        img:'/images/autorizado/futuro-elekro.jpeg',
+        img:'/images/autorizado/futuro-elekro.jpg',
         title: 'Explore os benefícios exclusivos e diferenciais da Elekro',
         text: 'Como parceiro Elekro, você terá acesso a condições comerciais vantajosas. Nosso objetivo é fortalecer sua posição no mercado, fornecendo todas as ferramentas necessárias para crescer e prosperar.',
     },
@@ -89,37 +88,37 @@ export const infos:ReadonlyArray<Info> = [
         text:'Oferecemos condições especiais de prazo de pagamento para parceiros estratégicos da Elekro.',
     },
     {
-        img:'/images/autorizado/entrega-eficiente.png',
+        img:'/images/autorizado/entrega-eficiente.jpg',
         title:'Entrega eficiente',
         text:'Em até duas semanas após a aprovação do pedido.',
     },
     {
-        img:'/images/autorizado/suporte-tecnico.png',
+        img:'/images/autorizado/suporte-tecnico.jpg',
         title:'Tecnologia de ponta',
         text:'Os autorizados têm acesso ao programa de capacitação de equipe de vendas, realizado trimestralmente, e suporte técnico local.',
     },
     {
-        img:'/images/autorizado/capilaridade.jpeg',
+        img:'/images/autorizado/capilaridade.jpg',
         title:"Capilaridade e Rede de instaladores",
         text:'Operamos de norte a sul do Brasil empenhados em capacitar instaladores em cada cidade do país.',
     },
     {
-        img:'/images/autorizado/inovacoes-elekro.png',
+        img:'/images/autorizado/inovacoes-elekro.jpg',
         title:"Participação nas inovações da Elekro",
         text:"Implementamos suas sugestões de melhorias em conjunto com nossa equipe de P&D.",
     },
     {
-        img:'/images/autorizado/roadmap.png',
+        img:'/images/autorizado/roadmap.jpg',
         title:"Roadmap",
         text:"Entramos em contato com nossos autorizados semestralmente para alinhar o plano estratégico de produtos, que antecipam as tendências de mercado.",
     },
     {
-        img:'/images/autorizado/conformidade.png',
+        img:'/images/autorizado/conformidade.jpg',
         title:"Conformidade",
         text:"Seguimos rigorosamente todos os padrões estabelecidos pela Anatel, assegurando qualidade e conformidade conforme a lei nº 9.472.",
     },
     {
-        img:'/images/autorizado/marketing.png',
+        img:'/images/autorizado/marketing.jpg',
         title:"Marketing e Promoção",
         text:"Oferecemos os materiais de apoio de marketing, ajudando a impulsionar a visibilidade da marca em sua loja.",
     },

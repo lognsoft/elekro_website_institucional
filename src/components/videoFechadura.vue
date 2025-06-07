@@ -9,46 +9,50 @@
       @pause="showPlayButton"
       @click="togglePlay"
     >
-      <source src="/video/fechadura-elekro.mp4" type="video/mp4">
+      <source :src="midia" type="video/mp4">
     </video>
     
     <!-- Botão de Play Personalizado -->
-    <div v-if="isPaused" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-y-3 text-white">
-      <button @click="togglePlay" class="flex items-center justify-center">
-        <img src="/video/videoplay.png" alt="Play">
-      </button>
-      <h3>Explore</h3>
-    </div>
+    <button v-if="isPaused" @click="togglePlay" class="absolute inset-0 flex items-center justify-center">
+      <img src="/video/videoplay.png" alt="Play">
+    </button>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isPaused: true
-    };
-  },
-  methods: {
-    togglePlay() {
-      const videoPlayer = this.$refs.videoPlayer;
-      
-      if (videoPlayer.paused) {
-        videoPlayer.play();
-      } else {
-        videoPlayer.pause();
-      }
-    },
-    hidePlayButton() {
-      this.isPaused = false;
-    },
-    showPlayButton() {
-      this.isPaused = true;
+<script setup lang="ts">
+const isPaused = ref<boolean>(true)
+const videoPlayer = ref<HTMLVideoElement | null>(null)
+const midia = ref<string>(`/video/fechadura-elekro.mp4`)
+
+
+function togglePlay(): void {
+  if (videoPlayer.value) {
+    if (videoPlayer.value.paused) {
+      videoPlayer.value.play()
+    } else {
+      videoPlayer.value.pause()
     }
   }
 }
-</script>
 
-<style scoped>
-/* Adicione aqui estilos personalizados, se necessário */
-</style>
+function hidePlayButton(): void {
+  isPaused.value = false
+}
+
+function showPlayButton(): void {
+  isPaused.value = true
+}
+
+onMounted(() => {
+  const mobile:string = `/video/fechadura-elekro-responsive.mp4`;
+
+  const wind = window.innerWidth
+  if(wind <= 748){
+    midia.value = mobile
+
+    nextTick(() => {
+      videoPlayer.value && videoPlayer.value.load()
+    })
+  }
+})
+</script>
