@@ -41,8 +41,8 @@
                         <figure class="mx-auto hidden lg:inline-block w-full max-w-[450px] lg:max-w-[800px] absolute top-0 -translate-x-1/2 -translate-y-[80%] left-[50%] lg:static lg:translate-x-0 lg:translate-y-[45px]">
                             <img
                                 class="max-w-[100%] lg:-mt-12 lg:-mb-10 mx-auto object-contain"
-                                src="/images/signature/Fotos0001.jpg"
-                                srcset="/images/signature/Fotos0001.jpg"
+                                src="/images/signature/Fotos0001.png"
+                                srcset="/images/signature/Fotos0001.png"
                                 alt="Maçaneta preta de frente"
                             />
                         </figure>

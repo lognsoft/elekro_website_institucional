@@ -61,17 +61,17 @@ import Popup from "~/components/popup.vue";
           <figure class="h-full block">
             <img 
             class="w-full h-full object-cover object-center" 
-            src="/images/elekro-one/Bosco-verticale.png" 
+            src="/images/elekro-one/Bosco-verticale.jpg" 
             alt="predio bosco verticale"
             />
           </figure>
         </div>
       </div>
     </section>
-    <div class="hidden md:block">
+    <div>
       <VideoFechadura/>
     </div>
-    <VideoMobile/>
+    <!-- <VideoMobile/> -->
 
     <!-- slider 1 -->
     <section class="lg:pt-24 pt-14 lg:pb-24 max-lg:bg-[#f8f8f8] z-10 relative">
@@ -99,8 +99,8 @@ import Popup from "~/components/popup.vue";
                 before:lg:absolute before:top-[415px] before:left-[310px] before:w-[50px] before:h-full before:max-h-[80px] before:bg-no-repeat before:bg-contain before:bg-[url('/images/elekro-one/07Desktop_Detalhes01-Tag.png')]">
                   <!-- <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechaduraSoloCard.png" alt="">
                   <img class="w-full max-h-[350px] object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/mobile-detalhes-fechadura.png" alt=""> -->
-                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0002.jpg" alt="">
-                  <img class="w-full max-h-[350px] relative translate-x-[12%] object-contain pt-5 pb-4 lg:hidden" src="/images/signature/Fotos0002.jpg" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0002.png" alt="">
+                  <img class="w-full max-h-[350px] relative translate-x-[12%] object-contain pt-5 pb-4 lg:hidden" src="/images/signature/Fotos0002.png" alt="">
                 </figure>
                 <!-- <div class="flex lg:hidden flex-wrap items-center justify-center gap-3 mb-10">
                   <figure class="block">
@@ -280,8 +280,8 @@ import Popup from "~/components/popup.vue";
                 <figure>
                   <!-- <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/08Desktop_Detalhes02-Fechadura.png" alt="">
                   <img class="w-full max-h-[350px] -ml-12  object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/mobile/06Mobile_Detalhes02-Fechadura.png" alt=""> -->
-                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0004.jpg" alt="">
-                  <img class="w-full max-h-[350px] -ml-12  object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0004.jpg" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0004.png" alt="">
+                  <img class="w-full max-h-[350px] -ml-12  object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0004.png" alt="">
                 </figure>
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">
@@ -362,8 +362,8 @@ import Popup from "~/components/popup.vue";
                 <figure>
                   <!-- <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/elekro-one/fechadura-detalhes.png" alt="">
                   <img class="max-h-[350px] w-full -ml-12 object-contain pt-5 pb-10 lg:hidden" src="/images/elekro-one/fechadura-detalhes.png" alt=""> -->
-                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0005.jpg" alt="">
-                  <img class="max-h-[350px] w-full -ml-12 object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0005.jpg" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0005.png" alt="">
+                  <img class="max-h-[350px] w-full -ml-12 object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0005.png" alt="">
                 </figure>
               </div>
               <div class="lg:self-center lg:justify-self-end lg:w-[80%]  lg:block hidden">
@@ -529,8 +529,8 @@ import Popup from "~/components/popup.vue";
               </div>
               <div class="justify-self-end">
                 <figure>
-                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0003.jpg" alt="">
-                  <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0003.jpg" alt="">
+                  <img class="max-h-[500px] object-contain max-lg:hidden" src="/images/signature/Fotos0003.png" alt="">
+                  <img class="w-[70%] max-h-[350px] mx-auto object-contain pt-5 pb-10 lg:hidden" src="/images/signature/Fotos0003.png" alt="">
                 </figure>
               </div>
               <div class="lg:justify-self-center w-full lg:hidden block">

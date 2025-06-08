@@ -82,9 +82,10 @@
     :space-between="10"
     :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
     :autoplay="{
-      delay: 2600
+      delay: 6600
     }"
     :loop="true"
+    :speed="2000"
     @swiper="(swiper) => swiperRef = swiper"
   >
     <SwiperSlide v-for="{avaliable, name, stars}, index in avaliables" :key="`avaliable-${index}`">
