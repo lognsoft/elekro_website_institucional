@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página inicial -->
+  <url>
+    <loc>https://elekro.com.br/</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Coleção Signature (Fechadura Wi-Fi Signature) -->
+  <url>
+    <loc>https://elekro.com.br/colecao-signature</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Seja um Autorizado -->
+  <url>
+    <loc>https://elekro.com.br/seja-um-autorizado</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Sobre a Elekro -->
+  <url>
+    <loc>https://elekro.com.br/sobre-a-elekro</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Insights (lista de posts) -->
+  <url>
+    <loc>https://elekro.com.br/insights</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Posts do blog Insights -->
+  <url>
+    <loc>https://elekro.com.br/insights/termos-de-garantia</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://elekro.com.br/insights/descubra-os-beneficios-da-fechadura-digital-wi-fi-elekro-signature</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://elekro.com.br/insights/fechaduras-eletronicas-especialistas-alertam-para-os-perigos-de-produtos-sem-certificacao-anatel</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://elekro.com.br/insights/elekro</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

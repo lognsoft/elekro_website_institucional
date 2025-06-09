@@ -1,0 +1,6 @@
+# robots.txt for https://elekro.com.br/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://elekro.com.br/sitemap.xml
