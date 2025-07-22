@@ -10,6 +10,7 @@
         <Meta name="twitter:image" content="/images/elekro-logo.jpeg"/>
         <meta name="keywords" content="Fechadura digital, fechadura eletrônica Elekro, fechadura biométrica, fechadura inteligente, fechadura Wi-Fi, fechadura sem chave, fechadura premium, fechadura de alto padrão, fechadura para portas pivotantes, fechadura para apartamento, fechadura residencial, fechadura comercial, segurança eletrônica, segurança residencial, controle de acesso digital, fechadura com senha e biometria, automação residencial, casa conectada, fechadura com abertura remota, fechadura com app, Elekro">
         <Meta name="twitter:card" content="summary_large_image"/>
+        <meta name="google-site-verification" content="nZb4bRb9Z8nbCOp4HoeKzeTO821jsUmyTRb0lJfQgoI" />
     </Head>
     <main>
         <!-- <div class="w-full h-screen overflow-hidden">
