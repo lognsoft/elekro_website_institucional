@@ -80,7 +80,7 @@ type Card = {
 const cards:Card[] = [
     {
         title:'Comercial',
-        email:'comercial@elekro.com.br'
+        email:'vendas@elekro.com.br'
     },
     {
         title:'Suporte',
